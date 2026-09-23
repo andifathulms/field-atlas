@@ -6,7 +6,7 @@
   { "id": "lobachevsky", "name": "Nikolai Lobachevsky", "turning_point_ids": ["lobachevsky-bolyai"] },
   { "id": "bolyai", "name": "János Bolyai", "turning_point_ids": ["lobachevsky-bolyai"] },
   { "id": "beltrami", "name": "Eugenio Beltrami", "turning_point_ids": ["beltrami-model"] },
-  { "id": "klein", "name": "Felix Klein", "turning_point_ids": ["erlangen-program"] },
+  { "id": "klein", "name": "Felix Klein", "turning_point_ids": ["erlangen-program", "cayley-klein"] },
   { "id": "euler", "name": "Leonhard Euler", "turning_point_ids": ["euler-polyhedron-formula", "euler-curvature"] },
   { "id": "bonnet", "name": "Pierre Ossian Bonnet", "turning_point_ids": ["gauss-bonnet"] },
   { "id": "riemann", "name": "Bernhard Riemann", "turning_point_ids": ["riemann-habilitation"] },
@@ -42,5 +42,12 @@
   { "id": "smale", "name": "Stephen Smale", "turning_point_ids": ["smale-high-dimensions"] },
   { "id": "freedman", "name": "Michael Freedman", "turning_point_ids": ["freedman-four-dimensions"] },
   { "id": "sacks", "name": "Jonathan Sacks", "turning_point_ids": ["sacks-uhlenbeck-bubbling"] },
-  { "id": "uhlenbeck", "name": "Karen Uhlenbeck", "turning_point_ids": ["sacks-uhlenbeck-bubbling"] }
+  { "id": "uhlenbeck", "name": "Karen Uhlenbeck", "turning_point_ids": ["sacks-uhlenbeck-bubbling"] },
+  { "id": "brunelleschi", "name": "Filippo Brunelleschi", "turning_point_ids": ["renaissance-perspective"] },
+  { "id": "alberti", "name": "Leon Battista Alberti", "turning_point_ids": ["renaissance-perspective"] },
+  { "id": "desargues", "name": "Girard Desargues", "turning_point_ids": ["desargues-pascal"] },
+  { "id": "pascal", "name": "Blaise Pascal", "turning_point_ids": ["desargues-pascal"] },
+  { "id": "poncelet", "name": "Jean-Victor Poncelet", "turning_point_ids": ["poncelet-traite", "projective-duality"] },
+  { "id": "gergonne", "name": "Joseph Gergonne", "turning_point_ids": ["projective-duality"] },
+  { "id": "cayley", "name": "Arthur Cayley", "turning_point_ids": ["cayley-klein"] }
 ]
