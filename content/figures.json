@@ -34,5 +34,8 @@
   { "id": "lindemann", "name": "Ferdinand von Lindemann", "turning_point_ids": ["wantzel-constructions"] },
   { "id": "frenet", "name": "Jean Frédéric Frenet", "turning_point_ids": ["frenet-serret"] },
   { "id": "serret", "name": "Joseph Serret", "turning_point_ids": ["frenet-serret"] },
-  { "id": "myers", "name": "Sumner Myers", "turning_point_ids": ["myers-theorem"] }
+  { "id": "myers", "name": "Sumner Myers", "turning_point_ids": ["myers-theorem"] },
+  { "id": "hopf", "name": "Heinz Hopf", "turning_point_ids": ["hopf-fibration"] },
+  { "id": "eilenberg", "name": "Samuel Eilenberg", "turning_point_ids": ["eilenberg-steenrod"] },
+  { "id": "steenrod", "name": "Norman Steenrod", "turning_point_ids": ["eilenberg-steenrod"] }
 ]

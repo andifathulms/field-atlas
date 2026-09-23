@@ -7,6 +7,42 @@ parent_ids:
 era_emerged: 1895 (roots from 1750)
 core_question: Which features of a shape survive any amount of stretching, and how can algebra detect them?
 
+summary: |-
+  Algebraic topology studies the features of a shape that survive any stretching or bending without tearing: how many pieces it has, how many holes, how loops can wind around it. It detects them by attaching algebraic objects (numbers, groups) to each space.
+
+  The logic is simple and powerful. Deforming a shape never changes its algebra, so if two spaces have different algebra, no deformation can turn one into the other. It began with Euler counting the corners, edges and faces of solids.
+
+key_ideas:
+  - term: Euler characteristic
+    definition: >-
+      $\chi = V - E + F$ for a surface cut into faces, and an alternating count of cells
+      in any dimension. It is 2 for a sphere, 0 for a torus, and $2 - 2g$ for a surface
+      with $g$ holes.
+    turning_point_id: euler-polyhedron-formula
+  - term: Fundamental group
+    definition: >-
+      The loops in a space based at a point, where two loops count as the same if one
+      can be deformed into the other. A sphere's is trivial. A torus's records loops
+      around each of its two circles.
+    turning_point_id: analysis-situs
+  - term: Homology
+    definition: >-
+      A sequence of groups $H_0, H_1, H_2, \ldots$ that count a space's holes of each
+      dimension: components, tunnels, enclosed voids. Computable, and unchanged by
+      deformation.
+    turning_point_id: noether-homology-groups
+  - term: Homotopy
+    definition: >-
+      A continuous deformation of one map into another. Two spaces are homotopy
+      equivalent if each can be squeezed onto the other. Most invariants in the field
+      only see a space up to homotopy.
+    turning_point_id: hopf-fibration
+  - term: Fixed point
+    definition: >-
+      A point a map leaves where it is. Topology can guarantee one exists without
+      finding it, as Brouwer's theorem does for any continuous map of a disc to itself.
+    turning_point_id: brouwer-fixed-point
+
 turning_points:
   - id: euler-polyhedron-formula
     date: 1750 – 1758
@@ -92,6 +128,36 @@ turning_points:
       - citation: "Dieudonné, J. (1989). A History of Algebraic and Differential Topology, 1900–1960. Birkhäuser."
         url: null
 
+  - id: hopf-fibration
+    date: "1931"
+    type: PROOF
+    title: The Hopf fibration wraps a 3-sphere around a 2-sphere
+    description: >-
+      Heinz Hopf finds a map from the 3-sphere onto the ordinary 2-sphere that cannot be
+      deformed to a constant. Above every point sits a whole circle, and any two of those
+      circles are linked. Higher homotopy groups of spheres turned out to be nonzero,
+      and the long problem of computing them began.
+    contested: false
+    sources:
+      - citation: "Hopf, H. (1931). Über die Abbildungen der dreidimensionalen Sphäre auf die Kugelfläche. Mathematische Annalen 104: 637–665."
+        url: null
+
+  - id: eilenberg-steenrod
+    date: 1945 – 1952
+    type: REFORMULATION
+    title: Homology is given axioms
+    description: >-
+      Samuel Eilenberg and Norman Steenrod characterise homology theories by a short list
+      of axioms, announced in 1945 and developed in their 1952 book. The many competing
+      constructions of homology turn out to agree wherever the axioms hold, giving the
+      field a foundation as clean as Hilbert's for geometry.
+    contested: false
+    sources:
+      - citation: "Eilenberg, S. & Steenrod, N. E. (1945). Axiomatic approach to homology theory. Proceedings of the National Academy of Sciences 31(4): 117–120."
+        url: null
+      - citation: "Eilenberg, S. & Steenrod, N. (1952). Foundations of Algebraic Topology. Princeton University Press."
+        url: null
+
 open_problems:
   - id: homotopy-groups-of-spheres
     name: The homotopy groups of spheres
@@ -141,6 +207,60 @@ open_problems:
         url: https://arxiv.org/abs/0908.3724
       - citation: "Lin, W., Wang, G. & Xu, Z. (2024). On the last Kervaire invariant problem. Preprint."
         url: null
+
+applications:
+  - area: Data science
+    title: Topological data analysis
+    description: >-
+      *Persistent homology* looks for loops, voids and clusters in a cloud of data points
+      at every scale at once, and keeps the features that persist. It finds structure
+      that clustering and linear methods miss, in data from protein shapes to neuron
+      activity to materials.
+    sources:
+      - citation: "Carlsson, G. (2009). Topology and data. Bulletin of the AMS 46(2): 255–308."
+        url: null
+  - area: Engineering
+    title: Proving sensor coverage without coordinates
+    description: >-
+      Scatter cheap sensors that know only which neighbours they can hear, not where they
+      are. De Silva and Ghrist showed that a homology computation on that communication
+      network can certify that the sensors cover a region with no holes.
+    sources:
+      - citation: "de Silva, V. & Ghrist, R. (2007). Coverage in sensor networks via persistent homology. Algebraic & Geometric Topology 7: 339–358."
+        url: null
+  - area: Economics
+    title: Why equilibria exist
+    description: >-
+      John Nash's 1950 proof that every finite game has an equilibrium is a fixed-point
+      argument. His one-page paper used Kakutani's extension of Brouwer's theorem, and a
+      1951 version used Brouwer's directly. Existence theorems for market equilibria in
+      economics follow the same topological route.
+    sources:
+      - citation: "Nash, J. F. (1950). Equilibrium points in n-person games. Proceedings of the National Academy of Sciences 36(1): 48–49."
+        url: null
+  - area: Condensed matter physics
+    title: Topological phases of matter
+    description: >-
+      Some materials conduct electricity in steps fixed by integers that no impurity can
+      change. Thouless and collaborators showed in 1982 that those integers are
+      topological invariants of the electrons' quantum states. The idea grew into the
+      field of topological insulators, and it earned a share of the 2016 Nobel Prize in
+      Physics.
+    domain: physics
+    sources:
+      - citation: "Thouless, D. J., Kohmoto, M., Nightingale, M. P. & den Nijs, M. (1982). Quantized Hall conductance in a two-dimensional periodic potential. Physical Review Letters 49: 405–408."
+        url: null
+
+further_reading:
+  - citation: "Hatcher, A. (2002). Algebraic Topology. Cambridge University Press."
+    url: https://pi.math.cornell.edu/~hatcher/AT/ATpage.html
+    note: The standard graduate text. Its author keeps a free edition online.
+  - citation: "Richeson, D. S. (2008). Euler's Gem: The Polyhedron Formula and the Birth of Topology. Princeton University Press."
+    url: null
+    note: A popular history, from Euler's formula to modern topology, needing no background.
+  - citation: "Lakatos, I. (1976). Proofs and Refutations: The Logic of Mathematical Discovery. Cambridge University Press."
+    url: null
+    note: A dialogue retracing how counterexamples reshaped Euler's formula. A classic of the philosophy of mathematics.
 ---
 
 ## A Formula That Ignored Measurement
@@ -171,8 +291,8 @@ His work was brilliant and famously loose. Proofs depended on intuitions that la
 
 The decisive shift came from algebra. Around 1925 {{fig:noether|Emmy Noether}}, in her Göttingen lectures and in conversation with visiting topologists, pointed out that Betti numbers are only the sizes of richer objects: homology *groups*. A group can be mapped to another group, and a continuous map between spaces induces exactly such a map between their homology groups. Topology became *functorial*. Spaces and maps on one side are matched faithfully by algebra on the other, so a question about shape can be answered by computing with algebra.
 
-The rest of the century built on that insight: cohomology, homotopy groups, fibrations and spectral sequences. By 1950 the field had its own axioms (Eilenberg and Steenrod) and had spread across mathematics. And it fed directly into [geometric topology](/math/geometric-topology/). Poincaré's conjecture was stated in terms of his own fundamental group.
+The rest of the century built on that insight: cohomology, homotopy groups, fibrations and spectral sequences. By 1950 the field had its own axioms, from {{fig:eilenberg|Samuel Eilenberg}} and {{fig:steenrod|Norman Steenrod}}, and had spread across mathematics. And it fed directly into [geometric topology](/math/geometric-topology/). Poincaré's conjecture was stated in terms of his own fundamental group.
 
 ## Wrapping Spheres Around Spheres
 
-The simplest-looking questions in the field are still unanswered. How many ways can one sphere be wrapped around another? Heinz Hopf's discovery in 1931 that a 3-sphere wraps nontrivially around a 2-sphere, in infinitely many distinct ways, showed that these *homotopy groups of spheres* are wild. Computing them has driven the field's most powerful machinery for ninety years. Some of the answers now come from computer-assisted calculation, and the table still has no visible end.
+The simplest-looking questions in the field are still unanswered. How many ways can one sphere be wrapped around another? {{fig:hopf|Heinz Hopf}}'s discovery in 1931 that a 3-sphere wraps nontrivially around a 2-sphere, in infinitely many distinct ways, showed that these *homotopy groups of spheres* are wild. Computing them has driven the field's most powerful machinery for ninety years. Some of the answers now come from computer-assisted calculation, and the table still has no visible end.
