@@ -72,9 +72,13 @@ export interface TreeLayout {
   edges: TreeEdge[];
 }
 
-/** The text of a waypoint label, shared with FieldTree so widths stay in step. */
+/**
+ * The text of a waypoint label, shared with FieldTree so widths stay in step.
+ * Contested points are marked by colour, hatch and tooltip rather than a word,
+ * which keeps columns narrow enough for skipped-row branches to pass between them.
+ */
 export function tickLabel(tp: TurningPoint): string {
-  return `${tp.date.toUpperCase()}  ${tp.type}${tp.contested ? " · CONTESTED" : ""}`;
+  return `${tp.date.toUpperCase()}  ${tp.type}`;
 }
 
 export function eraLabel(field: Field): string {
@@ -241,22 +245,33 @@ function sampleEdge(e: TreeEdge, steps: number): Array<[number, number]> {
   });
 }
 
-function segmentsCross(a: [number, number], b: [number, number], c: [number, number], d: [number, number]): boolean {
-  const orient = (p: [number, number], q: [number, number], r: [number, number]) =>
-    Math.sign((q[0] - p[0]) * (r[1] - p[1]) - (q[1] - p[1]) * (r[0] - p[0]));
-  return orient(a, b, c) * orient(a, b, d) < 0 && orient(c, d, a) * orient(c, d, b) < 0;
+/** x of a y-monotone sampled curve at height y (linear interpolation). */
+function xAt(points: Array<[number, number]>, y: number): number {
+  let lo = 0;
+  let hi = points.length - 1;
+  if (y <= points[lo][1]) return points[lo][0];
+  if (y >= points[hi][1]) return points[hi][0];
+  while (hi - lo > 1) {
+    const mid = (lo + hi) >> 1;
+    if (points[mid][1] <= y) lo = mid;
+    else hi = mid;
+  }
+  const [x0, y0] = points[lo];
+  const [x1, y1] = points[hi];
+  return y1 === y0 ? x0 : x0 + ((x1 - x0) * (y - y0)) / (y1 - y0);
 }
 
 /**
- * How badly a layout reads. Branches running through another field's labels
- * or trail cost the most, then branch crossings. Small terms prefer nodes near
+ * How badly a layout reads. A branch through another field's dot or trail costs
+ * the most (it suggests a lineage that isn't there), then branches through
+ * labels, then branch crossings. Small terms prefer nodes near
  * their parents' barycenter and branches that don't travel far sideways.
  */
 function cost(nodes: TreeNode[]): number {
   const { fogLength } = TREE;
   const edges = buildEdges(nodes);
   const byId = new Map(nodes.map((n) => [n.field.id, n]));
-  const samples = edges.map((e) => sampleEdge(e, 16));
+  const samples = edges.map((e) => sampleEdge(e, 24));
   let total = 0;
 
   edges.forEach((e, i) => {
@@ -265,24 +280,37 @@ function cost(nodes: TreeNode[]): number {
       const bottom = n.trailEnd + (n.fadesOut ? fogLength : 0);
       for (const [x, y] of samples[i]) {
         if (y < n.y - 22 || y > bottom + 8) continue;
-        if (x > n.x - 14 && x < n.x + n.labelWidth) total += 10;
+        // Crossing another field's dot or trail misstates the lineage; brushing its labels only clutters.
+        if (Math.abs(x - n.x) < 18) total += 40;
+        else if (x > n.x && x < n.x + n.labelWidth) total += 10;
       }
     }
     total += 0.002 * Math.abs(e.source[0] - e.target[0]);
   });
 
+  // Every branch is monotone in y, so two branches cross exactly when the sign
+  // of their horizontal gap flips somewhere in the height range they share.
   for (let i = 0; i < edges.length; i++) {
     for (let j = i + 1; j < edges.length; j++) {
       const a = edges[i];
       const b = edges[j];
       if (a.from === b.from || a.to === b.to) continue;
-      let crossed = false;
-      for (let s = 0; s < samples[i].length - 1 && !crossed; s++) {
-        for (let t = 0; t < samples[j].length - 1 && !crossed; t++) {
-          crossed = segmentsCross(samples[i][s], samples[i][s + 1], samples[j][t], samples[j][t + 1]);
+      const top = Math.max(a.source[1], b.source[1]);
+      const bottom = Math.min(a.target[1], b.target[1]);
+      if (bottom <= top) continue;
+      const [aLo, aHi] = [Math.min(a.source[0], a.target[0]), Math.max(a.source[0], a.target[0])];
+      const [bLo, bHi] = [Math.min(b.source[0], b.target[0]), Math.max(b.source[0], b.target[0])];
+      if (aHi < bLo || bHi < aLo) continue;
+      let prev = 0;
+      for (let k = 0; k <= 12; k++) {
+        const y = top + ((bottom - top) * k) / 12;
+        const gap = Math.sign(xAt(samples[i], y) - xAt(samples[j], y));
+        if (gap !== 0 && prev !== 0 && gap !== prev) {
+          total += 6;
+          break;
         }
+        if (gap !== 0) prev = gap;
       }
-      if (crossed) total += 6;
     }
   }
 
@@ -302,7 +330,8 @@ function refine(layers: TreeNode[][], width: number, start: number): number {
       layer.forEach((node, i) => {
         const [lo, hi] = bounds(layer, i, width);
         let bestX = node.x;
-        for (let x = lo; x <= hi; x += 16) {
+        const tryAt = (x: number) => {
+          if (x < lo || x > hi) return;
           node.x = x;
           const c = cost(all);
           if (c < best - 1e-6) {
@@ -310,7 +339,11 @@ function refine(layers: TreeNode[][], width: number, start: number): number {
             bestX = x;
             improved = true;
           }
-        }
+        };
+        // Coarse pass across the whole range, then a fine pass around the best spot.
+        for (let x = lo; x <= hi; x += 48) tryAt(x);
+        const centre = bestX;
+        for (let dx = -40; dx <= 40; dx += 8) tryAt(centre + dx);
         node.x = bestX;
       });
     }
@@ -321,8 +354,8 @@ function refine(layers: TreeNode[][], width: number, start: number): number {
 
 /** Upper bound on layer-order combinations to score; beyond it, keep the default order. */
 const MAX_CANDIDATES = 5000;
-/** How many of the best-scoring orderings get the slower sideways refinement. */
-const REFINE_TOP = 4;
+/** How many of the best-scoring orderings get the sideways refinement (at this scale, all of them). */
+const REFINE_TOP = 120;
 
 export function layoutTree(fields: Field[]): TreeLayout {
   const { marginX, gap, fogLength } = TREE;
