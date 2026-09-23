@@ -1,6 +1,6 @@
 import { linkVertical } from "d3-shape";
 import { fieldPath, withBase } from "@/lib/paths";
-import { TREE, type TreeLayout } from "@/lib/treeLayout";
+import { eraLabel, tickLabel, TREE, type TreeLayout } from "@/lib/treeLayout";
 
 const link = linkVertical<{ source: [number, number]; target: [number, number] }, [number, number]>()
   .x((d) => d[0])
@@ -120,7 +120,7 @@ export function FieldTree({ layout, domain }: { layout: TreeLayout; domain: stri
                   {n.field.name}
                 </text>
                 <text x={n.x + 18} y={n.y + 26} className="fill-ink-faint font-mono text-[10.5px] tracking-[0.12em]">
-                  {`EMERGED ${n.field.era_emerged.toUpperCase()}`}
+                  {eraLabel(n.field)}
                 </text>
               </g>
             </a>
@@ -145,7 +145,7 @@ export function FieldTree({ layout, domain }: { layout: TreeLayout; domain: stri
                       tp.contested ? "fill-contested" : "fill-ink-soft"
                     } group-hover:underline`}
                   >
-                    {`${tp.date.toUpperCase()}  ${tp.type}${tp.contested ? " · CONTESTED" : ""}`}
+                    {tickLabel(tp)}
                   </text>
                 </g>
               </a>

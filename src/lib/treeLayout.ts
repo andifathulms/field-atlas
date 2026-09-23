@@ -1,18 +1,25 @@
-// Manual layered layout for the field DAG. Longest-path layers; each node sits
-// at the barycenter of its parents. At this scale (a handful of fields per
-// layer) every left-to-right ordering is scored and the cleanest one wins, so
-// no general graph-layout library is needed. Labels sit to the right of each
-// node, and the scoring keeps branches out of them.
+// Manual layered layout for the field DAG, sized for a handful of fields per
+// layer, so no general graph-layout library is needed.
+//
+// 1. Longest-path layers give each field its row.
+// 2. Every left-to-right ordering of every layer is placed (each node at the
+//    barycenter of its parents) and scored.
+// 3. The best few orderings are refined by sliding nodes sideways one at a time
+//    while the score improves. This lets a branch that skips a row pass beside
+//    another field's labels instead of through them.
+//
+// Labels sit to the right of each node, so the score mostly measures branches
+// that run through another field's label block or trail.
 import type { Field, TurningPoint } from "./types";
 import { unresolvedCount } from "./stats";
 
 export const TREE = {
+  /** Minimum canvas width. */
   width: 820,
   top: 44,
   marginX: 40,
-  /** Horizontal room reserved to the right of a node for its labels. */
-  labelWidth: 270,
-  columnGap: 300,
+  /** Space between one node's label block and the next node in its layer. */
+  gap: 36,
   /** Name + era block above the first waypoint. */
   head: 50,
   row: 22,
@@ -20,6 +27,11 @@ export const TREE = {
   layerGap: 76,
   fogLength: 70,
 } as const;
+
+// Approximate advance widths for the SVG label styles in FieldTree.
+const NAME_CHAR = 10.4; // 19px serif semibold
+const STAMP_CHAR = 7.4; // 10.5px mono, tracked
+const FOG_LABEL = 160; // "n unresolved problems" plus its fading dashes
 
 export interface TreeTick {
   tp: TurningPoint;
@@ -31,6 +43,8 @@ export interface TreeNode {
   layer: number;
   x: number;
   y: number;
+  /** Horizontal room the node's labels need, measured from x. */
+  labelWidth: number;
   ticks: TreeTick[];
   /** y of the unresolved-problems row, if the field has any. */
   fogRowY: number | null;
@@ -57,6 +71,25 @@ export interface TreeLayout {
   edges: TreeEdge[];
 }
 
+/** The text of a waypoint label, shared with FieldTree so widths stay in step. */
+export function tickLabel(tp: TurningPoint): string {
+  return `${tp.date.toUpperCase()}  ${tp.type}${tp.contested ? " · CONTESTED" : ""}`;
+}
+
+export function eraLabel(field: Field): string {
+  return `EMERGED ${field.era_emerged.toUpperCase()}`;
+}
+
+function labelWidth(field: Field): number {
+  const text = Math.max(
+    field.name.length * NAME_CHAR,
+    eraLabel(field).length * STAMP_CHAR,
+    ...field.turning_points.map((tp) => tickLabel(tp).length * STAMP_CHAR),
+    unresolvedCount(field) > 0 ? FOG_LABEL : 0,
+  );
+  return Math.ceil(18 + text + 8);
+}
+
 function assignLayers(fields: Field[]): Map<string, number> {
   const byId = new Map(fields.map((f) => [f.id, f]));
   const layers = new Map<string, number>();
@@ -72,17 +105,6 @@ function assignLayers(fields: Field[]): Map<string, number> {
   return layers;
 }
 
-/** Spread nodes around their ideal x positions with at least `gap` between them, keeping their order. */
-function spread(ideal: number[], gap: number, min: number, max: number): number[] {
-  const pos: number[] = [];
-  ideal.forEach((x, i) => pos.push(i === 0 ? x : Math.max(x, pos[i - 1] + gap)));
-  const mean = (a: number[]) => a.reduce((s, v) => s + v, 0) / a.length;
-  let shift = mean(ideal) - mean(pos);
-  if (pos[0] + shift < min) shift = min - pos[0];
-  if (pos[pos.length - 1] + shift > max) shift = max - pos[pos.length - 1];
-  return pos.map((x) => x + shift);
-}
-
 function permutations<T>(items: T[]): T[][] {
   if (items.length <= 1) return [items];
   return items.flatMap((item, i) =>
@@ -90,39 +112,71 @@ function permutations<T>(items: T[]): T[][] {
   );
 }
 
-/** Position every node for a given left-to-right order of each layer. */
-function place(orders: Field[][], width: number): TreeLayout {
-  const { top, marginX, labelWidth, columnGap, head, row, trailPad, layerGap, fogLength } = TREE;
-  const minX = marginX;
-  const maxX = width - labelWidth;
-  const nodes = new Map<string, TreeNode>();
+/** Build nodes (with y geometry) for a given left-to-right order of each layer. */
+function buildNodes(orders: Field[][]): TreeNode[][] {
+  const { top, head, row, trailPad, layerGap, fogLength } = TREE;
   let y: number = top;
-
-  orders.forEach((inLayer, l) => {
-    const bary = (f: Field) => {
-      const ps = f.parent_ids.map((p) => nodes.get(p)).filter(Boolean) as TreeNode[];
-      return ps.length ? ps.reduce((s, p) => s + p.x, 0) / ps.length : (minX + maxX) / 2;
-    };
-    const xs = spread(inLayer.map(bary), columnGap, minX, maxX);
-
+  return orders.map((inLayer, l) => {
     let layerBottom = y;
-    inLayer.forEach((field, i) => {
+    const nodes = inLayer.map((field) => {
       const ticks = field.turning_points.map((tp, j) => ({ tp, y: y + head + j * row }));
       const unresolved = unresolvedCount(field);
       const fogRowY = unresolved > 0 ? y + head + ticks.length * row + 4 : null;
       const rows = ticks.length + (unresolved > 0 ? 1 : 0);
       const trailEnd = y + head + Math.max(0, rows - 1) * row + trailPad;
       const fadesOut = unresolved > 0 && field.successor_ids.length === 0;
-      nodes.set(field.id, { field, layer: l, x: xs[i], y, ticks, fogRowY, unresolved, trailEnd, fadesOut });
       layerBottom = Math.max(layerBottom, trailEnd + (fadesOut ? fogLength : 0));
+      return { field, layer: l, x: 0, y, labelWidth: labelWidth(field), ticks, fogRowY, unresolved, trailEnd, fadesOut };
     });
     y = layerBottom + layerGap;
+    return nodes;
   });
+}
 
+/** Leftmost and rightmost x a node may take without crowding its layer neighbours. */
+function bounds(layer: TreeNode[], i: number, width: number): [number, number] {
+  const { marginX, gap } = TREE;
+  const lo = i === 0 ? marginX : layer[i - 1].x + layer[i - 1].labelWidth + gap;
+  const hi =
+    i === layer.length - 1 ? width - marginX - layer[i].labelWidth : layer[i + 1].x - layer[i].labelWidth - gap;
+  return [lo, hi];
+}
+
+function parentBary(node: TreeNode, byId: Map<string, TreeNode>, fallback: number): number {
+  const ps = node.field.parent_ids.map((p) => byId.get(p)).filter(Boolean) as TreeNode[];
+  return ps.length ? ps.reduce((s, p) => s + p.x, 0) / ps.length : fallback;
+}
+
+/** Initial x: each node at its parents' barycenter, pushed apart to fit its layer. */
+function placeAtBarycenters(layers: TreeNode[][], width: number) {
+  const { marginX, gap } = TREE;
+  const byId = new Map(layers.flat().map((n) => [n.field.id, n]));
+  for (const layer of layers) {
+    const total = layer.reduce((s, n) => s + n.labelWidth, 0) + gap * (layer.length - 1);
+    const center = (width - total) / 2;
+    const ideal = layer.map((n) => parentBary(n, byId, center));
+    let x = -Infinity;
+    layer.forEach((n, i) => {
+      x = i === 0 ? ideal[0] : Math.max(ideal[i], x + layer[i - 1].labelWidth + gap);
+      n.x = x;
+    });
+    // Recentre on the ideals, then clamp inside the canvas.
+    const meanIdeal = ideal.reduce((s, v) => s + v, 0) / ideal.length;
+    const meanPos = layer.reduce((s, n) => s + n.x, 0) / layer.length;
+    let shift = meanIdeal - meanPos;
+    const last = layer[layer.length - 1];
+    if (last.x + shift > width - marginX - last.labelWidth) shift = width - marginX - last.labelWidth - last.x;
+    if (layer[0].x + shift < marginX) shift = marginX - layer[0].x;
+    layer.forEach((n) => (n.x += shift));
+  }
+}
+
+function buildEdges(nodes: TreeNode[]): TreeEdge[] {
+  const byId = new Map(nodes.map((n) => [n.field.id, n]));
   const edges: TreeEdge[] = [];
-  for (const node of nodes.values()) {
+  for (const node of nodes) {
     for (const p of node.field.parent_ids) {
-      const parent = nodes.get(p);
+      const parent = byId.get(p);
       if (!parent) continue;
       edges.push({
         from: parent.field.id,
@@ -133,20 +187,21 @@ function place(orders: Field[][], width: number): TreeLayout {
       });
     }
   }
-
-  const height = Math.max(...[...nodes.values()].map((n) => n.trailEnd + (n.fadesOut ? fogLength : 0))) + 36;
-  return { width, height, nodes: [...nodes.values()], edges };
+  return edges;
 }
 
 /** Points along the same vertical cubic that d3's linkVertical draws. */
-function sampleEdge(e: TreeEdge, steps = 24): Array<[number, number]> {
+function sampleEdge(e: TreeEdge, steps: number): Array<[number, number]> {
   const [x0, y0] = e.source;
   const [x1, y1] = e.target;
   const ym = (y0 + y1) / 2;
   return Array.from({ length: steps + 1 }, (_, i) => {
     const t = i / steps;
     const u = 1 - t;
-    return [u * u * u * x0 + 3 * u * u * t * x0 + 3 * u * t * t * x1 + t * t * t * x1, u * u * u * y0 + 3 * u * u * t * ym + 3 * u * t * t * ym + t * t * t * y1];
+    return [
+      u * u * u * x0 + 3 * u * u * t * x0 + 3 * u * t * t * x1 + t * t * t * x1,
+      u * u * u * y0 + 3 * u * u * t * ym + 3 * u * t * t * ym + t * t * t * y1,
+    ];
   });
 }
 
@@ -157,80 +212,129 @@ function segmentsCross(a: [number, number], b: [number, number], c: [number, num
 }
 
 /**
- * How badly a layout reads: branches running through another field's labels
- * or trail cost the most, then branch crossings, then (as a tie-break) how far
- * branches travel sideways.
+ * How badly a layout reads. Branches running through another field's labels
+ * or trail cost the most, then branch crossings. Small terms prefer nodes near
+ * their parents' barycenter and branches that don't travel far sideways.
  */
-function cost(layout: TreeLayout): number {
-  const { labelWidth, fogLength } = TREE;
-  const samples = layout.edges.map((e) => sampleEdge(e));
+function cost(nodes: TreeNode[]): number {
+  const { fogLength } = TREE;
+  const edges = buildEdges(nodes);
+  const byId = new Map(nodes.map((n) => [n.field.id, n]));
+  const samples = edges.map((e) => sampleEdge(e, 16));
   let total = 0;
 
-  layout.edges.forEach((e, i) => {
-    for (const n of layout.nodes) {
+  edges.forEach((e, i) => {
+    for (const n of nodes) {
       if (n.field.id === e.from || n.field.id === e.to) continue;
       const bottom = n.trailEnd + (n.fadesOut ? fogLength : 0);
       for (const [x, y] of samples[i]) {
-        if (y < n.y - 20 || y > bottom + 6) continue;
-        if (x > n.x - 10 && x < n.x + labelWidth - 10) total += 10;
+        if (y < n.y - 22 || y > bottom + 8) continue;
+        if (x > n.x - 14 && x < n.x + n.labelWidth) total += 10;
       }
     }
-    total += 0.001 * Math.abs(e.source[0] - e.target[0]);
+    total += 0.002 * Math.abs(e.source[0] - e.target[0]);
   });
 
-  for (let i = 0; i < layout.edges.length; i++) {
-    for (let j = i + 1; j < layout.edges.length; j++) {
-      const a = layout.edges[i];
-      const b = layout.edges[j];
+  for (let i = 0; i < edges.length; i++) {
+    for (let j = i + 1; j < edges.length; j++) {
+      const a = edges[i];
+      const b = edges[j];
       if (a.from === b.from || a.to === b.to) continue;
-      const pa = samples[i];
-      const pb = samples[j];
       let crossed = false;
-      for (let s = 0; s < pa.length - 1 && !crossed; s++) {
-        for (let t = 0; t < pb.length - 1 && !crossed; t++) {
-          crossed = segmentsCross(pa[s], pa[s + 1], pb[t], pb[t + 1]);
+      for (let s = 0; s < samples[i].length - 1 && !crossed; s++) {
+        for (let t = 0; t < samples[j].length - 1 && !crossed; t++) {
+          crossed = segmentsCross(samples[i][s], samples[i][s + 1], samples[j][t], samples[j][t + 1]);
         }
       }
-      if (crossed) total += 5;
+      if (crossed) total += 6;
     }
+  }
+
+  for (const n of nodes) {
+    if (n.field.parent_ids.length) total += 0.01 * Math.abs(n.x - parentBary(n, byId, n.x));
   }
   return total;
 }
 
+/** Slide nodes sideways one at a time while the score improves. */
+function refine(layers: TreeNode[][], width: number, start: number): number {
+  const all = layers.flat();
+  let best = start;
+  for (let sweep = 0; sweep < 4; sweep++) {
+    let improved = false;
+    for (const layer of layers) {
+      layer.forEach((node, i) => {
+        const [lo, hi] = bounds(layer, i, width);
+        let bestX = node.x;
+        for (let x = lo; x <= hi; x += 16) {
+          node.x = x;
+          const c = cost(all);
+          if (c < best - 1e-6) {
+            best = c;
+            bestX = x;
+            improved = true;
+          }
+        }
+        node.x = bestX;
+      });
+    }
+    if (!improved) break;
+  }
+  return best;
+}
+
 /** Upper bound on layer-order combinations to score; beyond it, keep the default order. */
-const MAX_CANDIDATES = 20000;
+const MAX_CANDIDATES = 5000;
+/** How many of the best-scoring orderings get the slower sideways refinement. */
+const REFINE_TOP = 4;
 
 export function layoutTree(fields: Field[]): TreeLayout {
-  const { marginX, labelWidth, columnGap } = TREE;
-  const layers = assignLayers(fields);
-  const depth = Math.max(0, ...layers.values());
+  const { marginX, gap, fogLength } = TREE;
+  const layerOf = assignLayers(fields);
+  const depth = Math.max(0, ...layerOf.values());
   const byLayer = Array.from({ length: depth + 1 }, (_, l) =>
-    fields.filter((f) => layers.get(f.id) === l).sort((a, b) => a.name.localeCompare(b.name)),
+    fields.filter((f) => layerOf.get(f.id) === l).sort((a, b) => a.name.localeCompare(b.name)),
   );
-  const widest = Math.max(...byLayer.map((l) => l.length));
-  const width = Math.max(TREE.width, marginX + (widest - 1) * columnGap + labelWidth);
 
-  // At v1 scale every left-to-right ordering can simply be scored.
+  // Room for the widest layer, plus slack so branches can pass beside labels.
+  const widest = Math.max(
+    ...byLayer.map((l) => l.reduce((s, f) => s + labelWidth(f), 0) + gap * (l.length - 1)),
+  );
+  const width = Math.max(TREE.width, Math.ceil(2 * marginX + widest + 200));
+
   const options = byLayer.map((l) => permutations(l));
   const combos = options.reduce((n, o) => n * o.length, 1);
-  if (combos > MAX_CANDIDATES) return place(byLayer, width);
+  const orderings: Field[][][] = [];
+  if (combos > MAX_CANDIDATES) {
+    orderings.push(byLayer);
+  } else {
+    const choose = (l: number, chosen: Field[][]) => {
+      if (l === options.length) return void orderings.push(chosen);
+      for (const order of options[l]) choose(l + 1, [...chosen, order]);
+    };
+    choose(0, []);
+  }
 
-  let best: TreeLayout | null = null;
-  let bestCost = Infinity;
-  const choose = (l: number, chosen: Field[][]) => {
-    if (l === options.length) {
-      const layout = place(chosen, width);
-      const c = cost(layout);
-      if (c < bestCost - 1e-9) {
-        best = layout;
-        bestCost = c;
-      }
-      return;
-    }
-    for (const order of options[l]) choose(l + 1, [...chosen, order]);
-  };
-  choose(0, []);
-  return best!;
+  const scored = orderings.map((orders) => {
+    const layers = buildNodes(orders);
+    placeAtBarycenters(layers, width);
+    return { layers, score: cost(layers.flat()) };
+  });
+  scored.sort((a, b) => a.score - b.score);
+
+  let best = scored[0];
+  for (const candidate of scored.slice(0, REFINE_TOP)) {
+    candidate.score = refine(candidate.layers, width, candidate.score);
+    if (candidate.score < best.score) best = candidate;
+  }
+
+  // Trim the canvas to what the chosen layout actually uses.
+  const nodes = best.layers.flat();
+  const minX = Math.min(...nodes.map((n) => n.x));
+  nodes.forEach((n) => (n.x += marginX - minX));
+  const usedWidth = Math.max(TREE.width, Math.ceil(Math.max(...nodes.map((n) => n.x + n.labelWidth)) + marginX));
+  const height = Math.max(...nodes.map((n) => n.trailEnd + (n.fadesOut ? fogLength : 0))) + 36;
+  return { width: usedWidth, height, nodes, edges: buildEdges(nodes) };
 }
 
 /** Fields in reading order: by layer, then left to right. */
