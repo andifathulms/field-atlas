@@ -46,6 +46,32 @@ export interface OpenProblem {
   sources: Source[];
 }
 
+/** A core concept a newcomer needs, tied to the turning point that introduced it. */
+export interface KeyIdea {
+  term: string;
+  /** Markdown; short. */
+  definition: string;
+  /** The turning point (in any field) where the idea entered; links the glossary to the history. */
+  turning_point_id?: string;
+}
+
+/** Where a field's results are used outside pure mathematics (or outside the field). */
+export interface Application {
+  /** Short area label, e.g. "Cartography", "Machine learning". */
+  area: string;
+  title: string;
+  /** Markdown. */
+  description: string;
+  /** Set when the use lands in another surveyed domain: a seed for the cross-domain view. */
+  domain?: Domain;
+  sources: Source[];
+}
+
+export interface Reading extends Source {
+  /** One line on who the reading is for or what it does well. */
+  note: string;
+}
+
 export interface Figure {
   id: string;
   name: string;
@@ -65,9 +91,14 @@ export interface Field {
   successor_ids: string[];
   era_emerged: string;
   core_question: string;
+  /** "In brief": a plain-language orientation for newcomers (Markdown, one or two paragraphs). */
+  summary: string | null;
+  key_ideas: KeyIdea[];
   chapters: Chapter[];
   turning_points: TurningPoint[];
   open_problems: OpenProblem[];
+  applications: Application[];
+  further_reading: Reading[];
   /** Derived from the figures collection at load time. */
   figure_ids: string[];
 }

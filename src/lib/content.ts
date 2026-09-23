@@ -6,12 +6,14 @@ import path from "node:path";
 import matter from "gray-matter";
 import {
   TURNING_POINT_TYPES,
+  type Application,
   type Chapter,
   type Domain,
   type Field,
   type Figure,
   type OpenProblem,
   type OpenProblemStatus,
+  type Reading,
   type TurningPoint,
 } from "./types";
 
@@ -84,6 +86,20 @@ function readField(file: string): Field {
     },
   );
 
+  const applications: Application[] = (data.applications ?? []).map((a: Application) => {
+    for (const key of ["area", "title", "description"] as const) {
+      if (!a[key]) fail(file, `an application is missing "${key}"`);
+    }
+    if (a.domain !== undefined && !DOMAIN_IDS.includes(a.domain)) {
+      fail(file, `application "${a.title}" has unknown domain "${a.domain}"`);
+    }
+    return { ...a, sources: a.sources ?? [] };
+  });
+  const further_reading: Reading[] = (data.further_reading ?? []).map((r: Reading) => {
+    if (!r.citation || !r.note) fail(file, `further reading entries need a citation and a note`);
+    return { ...r, url: r.url ?? null };
+  });
+
   return {
     id,
     domain,
@@ -92,9 +108,13 @@ function readField(file: string): Field {
     successor_ids: [],
     era_emerged: String(data.era_emerged),
     core_question: data.core_question,
+    summary: data.summary ?? null,
+    key_ideas: data.key_ideas ?? [],
     chapters: parseChapters(content, file),
     turning_points,
     open_problems,
+    applications,
+    further_reading,
     figure_ids: [],
   };
 }
@@ -135,6 +155,15 @@ function load(): Collections {
     }
   }
   assertAcyclic(fields);
+
+  for (const f of fields) {
+    for (const idea of f.key_ideas) {
+      if (!idea.term || !idea.definition) fail(`${f.id}.md`, `key ideas need a term and a definition`);
+      if (idea.turning_point_id && !tpIds.has(idea.turning_point_id)) {
+        fail(`${f.id}.md`, `key idea "${idea.term}" references unknown turning point "${idea.turning_point_id}"`);
+      }
+    }
+  }
 
   const rawFigures: Array<Pick<Figure, "id" | "name" | "turning_point_ids">> = fs.existsSync(FIGURES_FILE)
     ? JSON.parse(fs.readFileSync(FIGURES_FILE, "utf8"))
