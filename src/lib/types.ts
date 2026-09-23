@@ -11,7 +11,7 @@ export interface Source {
 export interface Chapter {
   /** Free text, no fixed template. */
   title: string;
-  /** Markdown, with KaTeX math (`$…$`, `$$…$$`) and `{{fig:id}}` figure mentions. */
+  /** Markdown, with KaTeX math (`$…$`, `$$…$$`) and `{{fig:id}}` or `{{fig:id|Short name}}` figure mentions. */
   body: string;
 }
 

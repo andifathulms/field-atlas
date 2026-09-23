@@ -22,6 +22,9 @@ const FIGURES_FILE = path.join(CONTENT_DIR, "figures.json");
 const DOMAIN_IDS: Domain[] = ["math", "physics", "biology"];
 const STATUSES: OpenProblemStatus[] = ["open", "recently_resolved", "conjectured"];
 
+/** `{{fig:gauss}}` or `{{fig:gauss|Gauss}}` inside chapter prose. */
+export const FIGURE_MENTION = /\{\{fig:([a-z0-9-]+)(?:\|([^}]+))?\}\}/g;
+
 interface Collections {
   fields: Field[];
   figures: Figure[];
@@ -147,11 +150,11 @@ function load(): Collections {
     return { ...fig, field_ids };
   });
 
-  // Every {{fig:id}} mention in prose must resolve.
+  // Every {{fig:id}} or {{fig:id|display text}} mention in prose must resolve.
   const figureIds = new Set(figures.map((f) => f.id));
   for (const f of fields) {
     for (const c of f.chapters) {
-      for (const m of c.body.matchAll(/\{\{fig:([a-z0-9-]+)\}\}/g)) {
+      for (const m of c.body.matchAll(FIGURE_MENTION)) {
         if (!figureIds.has(m[1])) fail(`${f.id}.md`, `unknown figure mention "${m[1]}"`);
       }
     }
