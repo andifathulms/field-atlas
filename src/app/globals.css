@@ -150,3 +150,51 @@ button:focus-visible {
     radial-gradient(ellipse at 30% 40%, color-mix(in srgb, var(--fog) 18%, transparent), transparent 60%),
     radial-gradient(ellipse at 75% 65%, color-mix(in srgb, var(--fog) 14%, transparent), transparent 55%);
 }
+
+/* Long-form chapter prose. */
+.prose-atlas {
+  font-size: 1.1875rem;
+  line-height: 1.72;
+}
+.prose-atlas p + p,
+.prose-atlas p + blockquote,
+.prose-atlas blockquote + p,
+.prose-atlas p + .katex-display,
+.prose-atlas .katex-display + p {
+  margin-top: 1.1em;
+}
+.prose-atlas blockquote {
+  border-left: 2px solid var(--accent);
+  padding: 0.1em 0 0.1em 1.25em;
+  font-style: italic;
+  color: var(--ink-soft);
+}
+.prose-atlas em { font-style: italic; }
+.prose-atlas strong { font-weight: 600; }
+
+.katex { font-size: 1.05em; }
+.katex-display {
+  margin: 1.3em 0;
+  overflow-x: auto;
+  overflow-y: hidden;
+  padding: 0.25em 0;
+}
+
+/* A person mentioned in prose, linked to the turning point they took part in. */
+.figure-link {
+  color: var(--accent);
+  text-decoration-line: underline;
+  text-decoration-style: dotted;
+  text-decoration-thickness: 1.5px;
+  text-underline-offset: 4px;
+  transition: text-decoration-style 200ms var(--ease-house);
+}
+.figure-link:hover { text-decoration-style: solid; }
+
+/* Anchor targets briefly glow when jumped to. */
+:target { scroll-margin-top: 1.5rem; }
+@keyframes target-flash {
+  from { background-color: color-mix(in srgb, var(--accent) 12%, transparent); }
+  to { background-color: transparent; }
+}
+.waypoint:target { animation: target-flash 1800ms var(--ease-house); }

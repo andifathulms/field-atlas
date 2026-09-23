@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { IBM_Plex_Mono, Source_Serif_4 } from "next/font/google";
 import { SiteFooter } from "@/components/SiteFooter";
 import { SiteHeader } from "@/components/SiteHeader";
+import "katex/dist/katex.min.css";
 import "./globals.css";
 
 const serif = Source_Serif_4({
