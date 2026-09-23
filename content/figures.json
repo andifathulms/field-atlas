@@ -27,5 +27,9 @@
   { "id": "schoen", "name": "Richard Schoen", "turning_point_ids": ["positive-mass-theorem"] },
   { "id": "marques", "name": "Fernando Codá Marques", "turning_point_ids": ["yau-conjecture-minimal-surfaces"] },
   { "id": "neves", "name": "André Neves", "turning_point_ids": ["yau-conjecture-minimal-surfaces"] },
-  { "id": "song", "name": "Antoine Song", "turning_point_ids": ["yau-conjecture-minimal-surfaces"] }
+  { "id": "song", "name": "Antoine Song", "turning_point_ids": ["yau-conjecture-minimal-surfaces"] },
+  { "id": "descartes", "name": "René Descartes", "turning_point_ids": ["descartes-coordinates"] },
+  { "id": "fermat", "name": "Pierre de Fermat", "turning_point_ids": ["descartes-coordinates"] },
+  { "id": "wantzel", "name": "Pierre Wantzel", "turning_point_ids": ["wantzel-constructions"] },
+  { "id": "lindemann", "name": "Ferdinand von Lindemann", "turning_point_ids": ["wantzel-constructions"] }
 ]
