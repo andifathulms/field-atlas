@@ -1,7 +1,9 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
+import { Applications, FurtherReading, InBrief, KeyIdeas } from "@/components/FieldSections";
 import { Markdown } from "@/components/Markdown";
+import { Sources } from "@/components/Sources";
 import { getField, getFields, getFigure, getFiguresForTurningPoint } from "@/lib/content";
 import { getDomain } from "@/lib/domains";
 import { figureAnchor, resolveFigureMentions } from "@/lib/mentions";
@@ -10,7 +12,6 @@ import {
   OPEN_PROBLEM_STATUS_LABEL,
   type Field,
   type OpenProblem,
-  type Source,
   type TurningPoint,
 } from "@/lib/types";
 
@@ -28,31 +29,6 @@ export function generateMetadata({ params }: Params): Metadata {
 }
 
 const ROMAN = ["I", "II", "III", "IV", "V", "VI", "VII", "VIII", "IX", "X"];
-
-function Sources({ sources }: { sources: Source[] }) {
-  if (sources.length === 0) return null;
-  return (
-    <details className="group mt-3">
-      <summary className="stamp cursor-pointer list-none text-ink-faint transition-colors hover:text-ink">
-        <span className="inline-block transition-transform duration-200 group-open:rotate-90">›</span> Sources (
-        {sources.length})
-      </summary>
-      <ul className="mt-2 space-y-1.5 border-l border-rule pl-3 text-sm leading-snug text-ink-soft">
-        {sources.map((s) => (
-          <li key={s.citation}>
-            {s.url ? (
-              <a href={s.url} className="ink-link" target="_blank" rel="noreferrer">
-                {s.citation}
-              </a>
-            ) : (
-              s.citation
-            )}
-          </li>
-        ))}
-      </ul>
-    </details>
-  );
-}
 
 function Waypoint({ tp }: { tp: TurningPoint }) {
   const figures = getFiguresForTurningPoint(tp.id);
@@ -208,15 +184,19 @@ export default function FieldPage({ params }: Params) {
       </header>
 
       <div className="mt-14 lg:grid lg:grid-cols-[minmax(0,40rem)_minmax(0,1fr)] lg:gap-20">
-        <article className="prose-atlas">
-          {field.chapters.map((c, i) => (
-            <section key={c.title} className="mb-14">
-              <p className="stamp text-ink-faint">Chapter {ROMAN[i] ?? i + 1}</p>
-              <h2 className="mb-5 mt-2 text-3xl font-semibold leading-tight tracking-tight">{c.title}</h2>
-              <Markdown>{resolveFigureMentions(c.body, field)}</Markdown>
-            </section>
-          ))}
-        </article>
+        <div>
+          {field.summary && <InBrief summary={field.summary} />}
+          {field.key_ideas.length > 0 && <KeyIdeas ideas={field.key_ideas} field={field} />}
+          <article className="prose-atlas">
+            {field.chapters.map((c, i) => (
+              <section key={c.title} className="mb-14">
+                <p className="stamp text-ink-faint">Chapter {ROMAN[i] ?? i + 1}</p>
+                <h2 className="mb-5 mt-2 text-3xl font-semibold leading-tight tracking-tight">{c.title}</h2>
+                <Markdown>{resolveFigureMentions(c.body, field)}</Markdown>
+              </section>
+            ))}
+          </article>
+        </div>
 
         <aside aria-labelledby="tp-heading" className="mt-6 border-t border-ink pt-4 lg:mt-0 lg:border-t-0 lg:pt-0">
           <h2 id="tp-heading" className="stamp mb-8 text-ink-faint">
@@ -229,6 +209,8 @@ export default function FieldPage({ params }: Params) {
           </ol>
         </aside>
       </div>
+
+      {field.applications.length > 0 && <Applications applications={field.applications} />}
 
       <section id="open-problems" aria-labelledby="op-heading" className="mt-20">
         <div className="border border-dashed border-fog/60 px-5 py-8 sm:px-10">
@@ -256,6 +238,8 @@ export default function FieldPage({ params }: Params) {
           )}
         </div>
       </section>
+
+      {field.further_reading.length > 0 && <FurtherReading readings={field.further_reading} />}
 
       <nav aria-label="Continue the survey" className="mt-16 flex flex-wrap justify-between gap-6 border-t border-rule pt-6">
         <Link href={`/${domain.id}/`} className="stamp ink-link text-ink-soft">
