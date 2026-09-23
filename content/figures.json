@@ -20,5 +20,12 @@
   { "id": "agol", "name": "Ian Agol", "turning_point_ids": ["agol-virtual-haken"] },
   { "id": "lhuilier", "name": "Simon Lhuilier", "turning_point_ids": ["lhuilier-counterexamples"] },
   { "id": "brouwer", "name": "L. E. J. Brouwer", "turning_point_ids": ["brouwer-fixed-point"] },
-  { "id": "noether", "name": "Emmy Noether", "turning_point_ids": ["noether-homology-groups"] }
+  { "id": "noether", "name": "Emmy Noether", "turning_point_ids": ["noether-homology-groups"] },
+  { "id": "rado", "name": "Tibor Radó", "turning_point_ids": ["plateau-problem-solved"] },
+  { "id": "douglas", "name": "Jesse Douglas", "turning_point_ids": ["plateau-problem-solved"] },
+  { "id": "yau", "name": "Shing-Tung Yau", "turning_point_ids": ["calabi-yau", "positive-mass-theorem"] },
+  { "id": "schoen", "name": "Richard Schoen", "turning_point_ids": ["positive-mass-theorem"] },
+  { "id": "marques", "name": "Fernando Codá Marques", "turning_point_ids": ["yau-conjecture-minimal-surfaces"] },
+  { "id": "neves", "name": "André Neves", "turning_point_ids": ["yau-conjecture-minimal-surfaces"] },
+  { "id": "song", "name": "Antoine Song", "turning_point_ids": ["yau-conjecture-minimal-surfaces"] }
 ]
