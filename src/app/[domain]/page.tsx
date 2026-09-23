@@ -68,7 +68,7 @@ export default function DomainPage({ params }: { params: { domain: string } }) {
       <section aria-label="Field tree">
         <p className="stamp mb-2 text-ink-faint sm:hidden">Scroll the map sideways →</p>
         <div className="survey-grid overflow-x-auto border border-rule">
-          <div className="mx-auto max-w-[56rem] px-2 py-6 sm:px-6">
+          <div className="mx-auto px-2 py-6 sm:px-6" style={{ maxWidth: layout.width + 48 }}>
             <FieldTree layout={layout} domain={domain.id} />
           </div>
         </div>
