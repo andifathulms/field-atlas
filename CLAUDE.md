@@ -1,0 +1,84 @@
+# Frontier — CLAUDE.md
+
+Technical build notes for Claude Code. Read PRD.md and DESIGN.md first — this file is implementation, not product intent.
+
+## Stack
+- Frontend-only, static site — no backend, per standing preference for portfolio apps that deploy on GitHub Pages.
+- Next.js 14 (static export) + Tailwind CSS, matching the established frontend stack.
+- Content lives as structured files in the repo (JSON or MDX — see Content authoring below), not a database. Corrections are a PR, not an admin panel, matching the sibling apps' read-only/no-accounts model.
+- D3.js for the field-tree/spine view (branching DAG layout); Recharts is unlikely to fit here since there's no time-series or ranked-table data in v1 (no rating layer).
+- KaTeX for math notation rendering if the v1 vertical is mathematics; swap for the domain's equivalent (e.g. none needed for most physics/biology prose, chemical/reaction notation if biology touches biochemistry).
+
+## Data model (implement shared from day one)
+
+```
+Field {
+  id: string
+  domain: "math" | "physics" | "biology"
+  name: string
+  parent_ids: string[]        // supports multiple parents (DAG, not strict tree)
+  successor_ids: string[]     // inverse of parent_ids, denormalized for fast rendering
+  era_emerged: string         // free text date/period, not always a precise year
+  core_question: string       // one line
+  chapters: Chapter[]
+  turning_points: TurningPoint[]
+  open_problems: OpenProblem[]
+  figure_ids: string[]
+}
+
+Chapter {
+  title: string                // free text, no fixed template
+  body: string                 // markdown/MDX
+}
+
+TurningPoint {
+  id: string
+  field_id: string
+  date: string
+  type: string                 // domain-specific vocabulary, see PRD.md
+  description: string
+  contested: boolean
+  sources: Source[]
+}
+
+OpenProblem {
+  id: string
+  field_id: string
+  name: string
+  status: "open" | "recently_resolved" | "conjectured"
+  description: string
+  why_hard: string
+  unlocks: string
+}
+
+Figure {
+  id: string
+  name: string
+  field_ids: string[]
+  turning_point_ids: string[]  // contributions tied to specific events, not standalone bio
+}
+
+Source {
+  citation: string
+  url: string | null
+}
+```
+
+Keep `Field`, `TurningPoint`, `OpenProblem`, and `Figure` as one shared collection each across all three domains (filter by `domain` field), not three parallel per-domain tables. This is what makes the width-phase cross-domain view a filter/join instead of a rewrite.
+
+## Content authoring
+Prefer one file per Field (e.g. `content/fields/analytic-number-theory.json` or `.mdx` with frontmatter for the structured fields and MDX body for chapters) so a correction is a single-file diff, consistent with the "corrections via repo edit" model in the sibling apps.
+
+## Pages / routing
+- `/` — domain landing (v1: single domain, but route structure should already branch to `/math`, `/physics`, `/biology` even if only one has content)
+- `/[domain]` — field tree / spine view for that domain
+- `/[domain]/[field-slug]` — field page
+
+## Field tree rendering
+This is a DAG, not a strict linear chain — a field can have more than one parent. Don't reuse a pure linear-timeline component from [[empire-rankings]] unmodified; the layout needs to handle branch/merge points (e.g. a field born at the seam of two parents). D3's DAG/tree layout utilities (or a simple manual layered layout, given v1 is only 3–5 nodes) are enough for v1 — no need for a general graph-layout library at this scale.
+
+## Deployment
+Static export → GitHub Pages, same as the other portfolio-vertical apps (Ruleset, empire-rankings, etc.).
+
+## Visual identity
+Do not reuse [[empire-rankings]] or [[ruleset]]'s color/typeface/layout wholesale — per the standing preference, apps should read as siblings (shared rhythm, motion timing, quality floor) but have their own per-app color, type, and layout. See DESIGN.md.
