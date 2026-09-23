@@ -132,11 +132,14 @@ open_problems:
     name: The volume conjecture
     status: conjectured
     status_note: Proved for the figure-eight knot and a few other families; open in general.
-    description: >-
+    description: |-
       Kashaev (1997) and H. and J. Murakami (2001) conjectured that the coloured Jones
       polynomials of a knot, which are invariants computed from diagrams and algebra,
       know the hyperbolic volume of the space around the knot:
-      $2\pi \lim_{N\to\infty} \frac{\log\lvert J_N(K;\,e^{2\pi i/N})\rvert}{N} = \mathrm{Vol}(S^3 \setminus K)$.
+
+      $$
+      2\pi \lim_{N\to\infty} \frac{\log\lvert J_N(K;\,e^{2\pi i/N})\rvert}{N} = \mathrm{Vol}(S^3 \setminus K)
+      $$
     why_hard: >-
       One side is combinatorial and comes from quantum physics. The other is the geometry
       of hyperbolic space. No known mechanism connects them. Individual cases are checked
