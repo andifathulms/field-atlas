@@ -7,15 +7,18 @@
   { "id": "bolyai", "name": "János Bolyai", "turning_point_ids": ["lobachevsky-bolyai"] },
   { "id": "beltrami", "name": "Eugenio Beltrami", "turning_point_ids": ["beltrami-model"] },
   { "id": "klein", "name": "Felix Klein", "turning_point_ids": ["erlangen-program"] },
-  { "id": "euler", "name": "Leonhard Euler", "turning_point_ids": ["euler-curvature"] },
+  { "id": "euler", "name": "Leonhard Euler", "turning_point_ids": ["euler-polyhedron-formula", "euler-curvature"] },
   { "id": "bonnet", "name": "Pierre Ossian Bonnet", "turning_point_ids": ["gauss-bonnet"] },
   { "id": "riemann", "name": "Bernhard Riemann", "turning_point_ids": ["riemann-habilitation"] },
   { "id": "ricci-curbastro", "name": "Gregorio Ricci-Curbastro", "turning_point_ids": ["ricci-levi-civita"] },
   { "id": "levi-civita", "name": "Tullio Levi-Civita", "turning_point_ids": ["ricci-levi-civita"] },
   { "id": "nash", "name": "John Nash", "turning_point_ids": ["nash-embedding"] },
   { "id": "hamilton", "name": "Richard Hamilton", "turning_point_ids": ["hamilton-ricci-flow"] },
-  { "id": "poincare", "name": "Henri Poincaré", "turning_point_ids": ["poincare-conjecture-posed"] },
+  { "id": "poincare", "name": "Henri Poincaré", "turning_point_ids": ["analysis-situs", "poincare-conjecture-posed"] },
   { "id": "thurston", "name": "William Thurston", "turning_point_ids": ["thurston-geometrization"] },
   { "id": "perelman", "name": "Grigori Perelman", "turning_point_ids": ["perelman-proof"] },
-  { "id": "agol", "name": "Ian Agol", "turning_point_ids": ["agol-virtual-haken"] }
+  { "id": "agol", "name": "Ian Agol", "turning_point_ids": ["agol-virtual-haken"] },
+  { "id": "lhuilier", "name": "Simon Lhuilier", "turning_point_ids": ["lhuilier-counterexamples"] },
+  { "id": "brouwer", "name": "L. E. J. Brouwer", "turning_point_ids": ["brouwer-fixed-point"] },
+  { "id": "noether", "name": "Emmy Noether", "turning_point_ids": ["noether-homology-groups"] }
 ]
