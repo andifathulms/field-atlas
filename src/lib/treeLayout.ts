@@ -1,7 +1,8 @@
 // Manual layered layout for the field DAG, sized for a handful of fields per
 // layer, so no general graph-layout library is needed.
 //
-// 1. Longest-path layers give each field its row.
+// 1. Longest-path layers give each field its row; a crowded row sends its
+//    latest-born field down one row.
 // 2. Every left-to-right ordering of every layer is placed (each node at the
 //    barycenter of its parents) and scored.
 // 3. The best few orderings are refined by sliding nodes sideways one at a time
@@ -90,18 +91,53 @@ function labelWidth(field: Field): number {
   return Math.ceil(18 + text + 8);
 }
 
-function assignLayers(fields: Field[]): Map<string, number> {
+/** Longest-path layers, where `minLayer` can push a field further down than its parents require. */
+function assignLayers(fields: Field[], minLayer: Map<string, number> = new Map()): Map<string, number> {
   const byId = new Map(fields.map((f) => [f.id, f]));
   const layers = new Map<string, number>();
   const layerOf = (id: string): number => {
     const known = layers.get(id);
     if (known !== undefined) return known;
     const parents = byId.get(id)!.parent_ids.filter((p) => byId.has(p));
-    const l = parents.length === 0 ? 0 : 1 + Math.max(...parents.map(layerOf));
+    const l = Math.max(minLayer.get(id) ?? 0, parents.length === 0 ? 0 : 1 + Math.max(...parents.map(layerOf)));
     layers.set(id, l);
     return l;
   };
   fields.forEach((f) => layerOf(f.id));
+  return layers;
+}
+
+/** A sortable year for when a field emerged ("c. 300 BCE" → -300, "18th century – 1820s" → 1820). */
+function eraYear(field: Field): number {
+  const m = /\d{3,4}/.exec(field.era_emerged);
+  if (m) return /BCE/.test(field.era_emerged) ? -Number(m[0]) : Number(m[0]);
+  const tp = field.turning_points.map((t) => /\d{3,4}/.exec(t.date)).find(Boolean);
+  return tp ? Number(tp[0]) : 0;
+}
+
+/** Most fields a single row of the tree holds before the latest-born one moves down a row. */
+const MAX_PER_LAYER = 3;
+
+/**
+ * Longest-path layering, then relieve crowded rows: the latest-born field in an
+ * over-full row moves down one row (its descendants follow). This keeps the map
+ * readable at laptop width and roughly chronological top to bottom.
+ */
+function balancedLayers(fields: Field[]): Map<string, number> {
+  const minLayer = new Map<string, number>();
+  let layers = assignLayers(fields);
+  for (let i = 0; i < fields.length * 2; i++) {
+    const counts = new Map<number, number>();
+    layers.forEach((l) => counts.set(l, (counts.get(l) ?? 0) + 1));
+    const [crowded, count] = [...counts.entries()].sort((a, b) => b[1] - a[1] || a[0] - b[0])[0];
+    if (count <= MAX_PER_LAYER) break;
+    const candidate = fields
+      .filter((f) => layers.get(f.id) === crowded && f.parent_ids.length > 0)
+      .sort((a, b) => eraYear(b) - eraYear(a))[0];
+    if (!candidate) break;
+    minLayer.set(candidate.id, crowded + 1);
+    layers = assignLayers(fields, minLayer);
+  }
   return layers;
 }
 
@@ -290,7 +326,7 @@ const REFINE_TOP = 4;
 
 export function layoutTree(fields: Field[]): TreeLayout {
   const { marginX, gap, fogLength } = TREE;
-  const layerOf = assignLayers(fields);
+  const layerOf = balancedLayers(fields);
   const depth = Math.max(0, ...layerOf.values());
   const byLayer = Array.from({ length: depth + 1 }, (_, l) =>
     fields.filter((f) => layerOf.get(f.id) === l).sort((a, b) => a.name.localeCompare(b.name)),
