@@ -13,6 +13,8 @@ Wants an app in his own voice explaining how a field of knowledge came to be div
 ## Scope — v1
 One narrow vertical, picked before build starts (deliberately not number theory by default — the field to pilot is chosen at build time, same discipline as picking the Iranian Intermezzo thread for [[empire-rankings]]). v1 proves the format on a single branching thread of 3–5 subfields within one domain (math, physics, or biology — domain also chosen at build time). Depth and width — more subfields, then the other two domains — come after the format is proven, not before.
 
+**v1 pilot, as chosen at build time:** mathematics, the geometry thread. Five fields form a real DAG with two merge points: Euclidean Geometry → Non-Euclidean Geometry and Differential Geometry of Surfaces → Riemannian Geometry (both as parents) → Geometric Topology (Riemannian and Non-Euclidean as parents). It was chosen because Euclid's fifth postulate is a clean "what forced the split" story, and because the thread ends at live open problems (the smooth 4D Poincaré conjecture, the volume conjecture).
+
 ## Non-goals (v1)
 - No rating/metric/percentile layer — unlike [[empire-rankings]], this app has no computed scoring axis, by design.
 - No user accounts, no editing, no contributions. Static site; corrections are made by editing content files in the repo, same as the sibling apps.

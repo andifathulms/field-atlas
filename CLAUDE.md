@@ -64,10 +64,28 @@ Source {
 }
 ```
 
+As built (see `src/lib/types.ts`), a few fields were added beyond the sketch above:
+- `TurningPoint.title` — a short headline, used on waypoints and tree tooltips.
+- `TurningPoint.contested_note` — required when `contested` is true; states what is disputed rather than picking a side.
+- `OpenProblem.status_note` — the "as of" qualifier for the status (open-problem status is recorded at time of writing, not tracked live).
+- `OpenProblem.sources` — citations, same shape as turning-point sources.
+
+Derived at load time, never authored (so a correction stays a single-file diff):
+- `Field.successor_ids` — the inverse of `parent_ids`.
+- `Figure.field_ids` and `Field.figure_ids` — from `Figure.turning_point_ids`.
+- `TurningPoint.field_id` / `OpenProblem.field_id` — from the file they live in.
+
 Keep `Field`, `TurningPoint`, `OpenProblem`, and `Figure` as one shared collection each across all three domains (filter by `domain` field), not three parallel per-domain tables. This is what makes the width-phase cross-domain view a filter/join instead of a rewrite.
 
 ## Content authoring
-Prefer one file per Field (e.g. `content/fields/analytic-number-theory.json` or `.mdx` with frontmatter for the structured fields and MDX body for chapters) so a correction is a single-file diff, consistent with the "corrections via repo edit" model in the sibling apps.
+One file per Field so a correction is a single-file diff, consistent with the "corrections via repo edit" model in the sibling apps.
+
+- `content/fields/<field-id>.md`: YAML frontmatter holds the structured fields (id, domain, name, parent_ids, era_emerged, core_question, turning_points, open_problems). The Markdown body is split into chapters on `## ` headings, so chapter count and titles are free per field.
+- `content/figures.json`: the shared figures collection, each figure tied to turning point ids.
+- Math: KaTeX via `$…$` and `$$…$$`. Display math needs `$$` on its own lines, so use a literal (`|-`) YAML block for any frontmatter text that contains display math.
+- Figure mentions in chapter prose: `{{fig:gauss}}` or `{{fig:gauss|Gauss}}` links the name to that figure's turning point.
+- Internal links in prose use root-relative paths (`/math/riemannian-geometry/`); the renderer applies the base path.
+- `src/lib/content.ts` validates everything at build time: unknown parents, cycles, cross-domain parents, turning-point types outside the domain vocabulary, contested points without a note, and unresolved figure references all fail the build.
 
 ## Pages / routing
 - `/` — domain landing (v1: single domain, but route structure should already branch to `/math`, `/physics`, `/biology` even if only one has content)
@@ -77,8 +95,11 @@ Prefer one file per Field (e.g. `content/fields/analytic-number-theory.json` or 
 ## Field tree rendering
 This is a DAG, not a strict linear chain — a field can have more than one parent. Don't reuse a pure linear-timeline component from [[empire-rankings]] unmodified; the layout needs to handle branch/merge points (e.g. a field born at the seam of two parents). D3's DAG/tree layout utilities (or a simple manual layered layout, given v1 is only 3–5 nodes) are enough for v1 — no need for a general graph-layout library at this scale.
 
+## Field tree rendering — as built
+`src/lib/treeLayout.ts` is a manual layered layout: longest-path layers, then barycenter ordering. Ties go to the field whose branches reach furthest down, placed left, so long edges pass left of the labels. `src/components/FieldTree.tsx` draws it as SVG, using `d3-shape` for the branch curves. Branches draw in with a `pathLength` dash animation. Unresolved open problems render as fading dashes and fog. Straight lines can't take an `objectBoundingBox` gradient stroke, which is why the fading is done with individual dashes.
+
 ## Deployment
-Static export → GitHub Pages, same as the other portfolio-vertical apps (Ruleset, empire-rankings, etc.).
+Static export → GitHub Pages, same as the other portfolio-vertical apps (Ruleset, empire-rankings, etc.). `.github/workflows/deploy.yml` builds on push to `main` and sets `NEXT_PUBLIC_BASE_PATH` from `actions/configure-pages`. Anything not rendered through `next/link` (e.g. `<a>` inside SVG) must use `withBase()` from `src/lib/paths.ts`.
 
 ## Visual identity
 Do not reuse [[empire-rankings]] or [[ruleset]]'s color/typeface/layout wholesale — per the standing preference, apps should read as siblings (shared rhythm, motion timing, quality floor) but have their own per-app color, type, and layout. See DESIGN.md.
