@@ -14,7 +14,7 @@
   { "id": "levi-civita", "name": "Tullio Levi-Civita", "turning_point_ids": ["ricci-levi-civita"] },
   { "id": "nash", "name": "John Nash", "turning_point_ids": ["nash-embedding"] },
   { "id": "hamilton", "name": "Richard Hamilton", "turning_point_ids": ["hamilton-ricci-flow"] },
-  { "id": "poincare", "name": "Henri Poincaré", "turning_point_ids": ["analysis-situs", "poincare-conjecture-posed"] },
+  { "id": "poincare", "name": "Henri Poincaré", "turning_point_ids": ["analysis-situs", "poincare-conjecture-posed", "poincare-models"] },
   { "id": "thurston", "name": "William Thurston", "turning_point_ids": ["thurston-geometrization"] },
   { "id": "perelman", "name": "Grigori Perelman", "turning_point_ids": ["perelman-proof"] },
   { "id": "agol", "name": "Ian Agol", "turning_point_ids": ["agol-virtual-haken"] },

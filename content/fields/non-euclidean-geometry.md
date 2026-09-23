@@ -7,6 +7,42 @@ parent_ids:
 era_emerged: 1820s – 1830s
 core_question: What does geometry look like if the parallel postulate is simply false?
 
+summary: |-
+  Non-Euclidean geometry is what you get by keeping all of Euclid's assumptions except the parallel postulate. Allow many parallels through a point and you get *hyperbolic* geometry, where space spreads out faster than flat space and a triangle's angles add up to less than 180°. Allow none and you get *elliptic* (spherical) geometry, where the angles add up to more.
+
+  Its discovery changed what an axiom is. Geometry's starting assumptions turned out to be choices, not self-evident truths, and choosing differently gave perfectly consistent worlds.
+
+key_ideas:
+  - term: Hyperbolic geometry
+    definition: >-
+      The geometry in which infinitely many lines through a point miss a given line.
+      Space has constant negative curvature, triangle angles sum to less than $\pi$,
+      and the area of a disc grows exponentially with its radius.
+    turning_point_id: lobachevsky-bolyai
+  - term: Elliptic (spherical) geometry
+    definition: >-
+      The geometry with no parallels at all: every two "lines" (great circles on a
+      sphere) meet. Curvature is positive and triangle angles sum to more than $\pi$.
+      Pilots and navigators work in it every day.
+  - term: Model
+    definition: >-
+      A concrete construction inside familiar mathematics in which a set of axioms all
+      hold. A model proves the axioms are consistent, as long as the familiar
+      mathematics is.
+    turning_point_id: beltrami-model
+  - term: Independence
+    definition: >-
+      A statement is independent of a set of axioms if neither it nor its negation can
+      be proved from them. The parallel postulate was the first famous case. The
+      continuum hypothesis in set theory (Gödel 1940, Cohen 1963) is the most famous
+      later one.
+    turning_point_id: beltrami-model
+  - term: Transformation group
+    definition: >-
+      Klein's organising idea: a geometry is determined by its group of allowed motions,
+      and studies whatever those motions leave unchanged.
+    turning_point_id: erlangen-program
+
 turning_points:
   - id: lobachevsky-bolyai
     date: 1829 – 1832
@@ -63,7 +99,74 @@ turning_points:
       - citation: "Klein, F. (1872). Vergleichende Betrachtungen über neuere geometrische Forschungen. Erlangen."
         url: null
 
+  - id: poincare-models
+    date: "1882"
+    type: REFORMULATION
+    title: Poincaré finds hyperbolic geometry inside complex analysis
+    description: >-
+      Studying functions of a complex variable that are unchanged under certain groups
+      of transformations, Henri Poincaré realises those transformations are exactly the
+      rigid motions of the hyperbolic plane, drawn in a disc or a half-plane. Hyperbolic
+      geometry stops being a curiosity about parallels and becomes a working tool in
+      complex analysis and number theory.
+    contested: false
+    sources:
+      - citation: "Poincaré, H. (1882). Théorie des groupes fuchsiens. Acta Mathematica 1: 1–62."
+        url: null
+      - citation: "Gray, J. (2000). Linear Differential Equations and Group Theory from Riemann to Poincaré (2nd ed.). Birkhäuser."
+        url: null
+
 open_problems: []
+
+applications:
+  - area: Navigation
+    title: Great-circle routes
+    description: >-
+      On the curved surface of the Earth the shortest path between two cities is an arc
+      of a great circle, the "straight line" of spherical geometry. Long-haul flights
+      and shipping routes follow them, which is why a flight from Europe to North America
+      arcs far north on a flat map. Spherical trigonometry, where triangle angles exceed
+      180°, is the everyday arithmetic of navigation.
+    sources: []
+  - area: Special relativity
+    title: The geometry of velocities
+    description: >-
+      In special relativity, velocities do not simply add. Composing two boosts behaves
+      like adding lengths in hyperbolic space, and the natural measure of speed (rapidity)
+      is hyperbolic distance. Vladimir Varićak pointed this out in 1910. It is one of
+      the cleanest places where non-Euclidean geometry is physically real.
+    domain: physics
+    sources: []
+  - area: Machine learning
+    title: Hyperbolic embeddings of hierarchies
+    description: >-
+      Trees and hierarchies, like taxonomies and word hierarchies, grow exponentially,
+      and so does hyperbolic space. Embedding such data in the Poincaré disc keeps
+      distances far more faithful in a few dimensions than any flat embedding can. This
+      is now a widely used technique in representation learning.
+    sources:
+      - citation: "Nickel, M. & Kiela, D. (2017). Poincaré embeddings for learning hierarchical representations. Advances in Neural Information Processing Systems 30."
+        url: https://arxiv.org/abs/1705.08039
+  - area: Art
+    title: Escher's Circle Limit prints
+    description: >-
+      After seeing a hyperbolic tiling in a paper by H. S. M. Coxeter in 1958, M. C.
+      Escher made his *Circle Limit* woodcuts (1958–60). Fish and angels shrink toward
+      the edge of a disc. In the Poincaré model's own measure they are all the same size.
+    sources:
+      - citation: "Coxeter, H. S. M. (1979). The non-Euclidean symmetry of Escher's picture 'Circle Limit III'. Leonardo 12(1): 19–25."
+        url: null
+
+further_reading:
+  - citation: "Greenberg, M. J. (2008). Euclidean and Non-Euclidean Geometries: Development and History (4th ed.). W. H. Freeman."
+    url: null
+    note: The standard undergraduate route from Euclid's axioms to hyperbolic geometry, with the history built in.
+  - citation: "Gray, J. (1989). Ideas of Space: Euclidean, Non-Euclidean, and Relativistic (2nd ed.). Oxford University Press."
+    url: null
+    note: A historian's account of how geometry changed from a description of space to a family of choices.
+  - citation: "Bonola, R. (1955). Non-Euclidean Geometry. Dover. (Includes translations of Bolyai's and Lobachevsky's original works.)"
+    url: null
+    note: The classic history, bundled with the two founding texts themselves.
 ---
 
 ## Denying the Postulate
@@ -90,7 +193,7 @@ What none of them had was proof that the new geometry was *consistent*. Lobachev
 
 {{fig:beltrami|Eugenio Beltrami}} closed the question in 1868. He showed that hyperbolic geometry already lives inside ordinary Euclidean space: on surfaces of constant negative curvature, like the trumpet-shaped pseudosphere, and in a disc whose chords play the role of straight lines. A contradiction in hyperbolic geometry would therefore be a contradiction in Euclidean geometry too. The parallel postulate is *independent*: it can neither be proved nor disproved from the other four.
 
-Beltrami's surfaces came straight out of Gauss's theory of curvature, from the neighbouring [differential-geometry](/math/differential-geometry/) branch. The two branches were already converging. Felix Klein and, in 1882, Henri Poincaré later added the models that are standard today: the projective disc, the Poincaré disc, and the upper half-plane.
+Beltrami's surfaces came straight out of Gauss's theory of curvature, from the neighbouring [differential-geometry](/math/differential-geometry/) branch. The two branches were already converging. Felix Klein and, in 1882, {{fig:poincare|Henri Poincaré}} later added the models that are standard today: the projective disc, the Poincaré disc, and the upper half-plane.
 
 ## Geometry as a Choice
 
