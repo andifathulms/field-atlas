@@ -8,6 +8,40 @@ parent_ids:
 era_emerged: "1854"
 core_question: What is geometry when a space is known only from the inside, in any number of dimensions?
 
+summary: |-
+  Riemannian geometry studies spaces of any number of dimensions that are curved from the inside, with no surrounding space for them to bend in. A space is given only by a rule for measuring tiny distances at each point. Everything else (straight lines, angles, areas, curvature) is derived from that rule.
+
+  It is the geometry of Einstein's gravity, where spacetime itself is curved, and it is the common setting for most of modern geometry. Euclid's flat space, the sphere and the hyperbolic plane all become special cases of one framework.
+
+key_ideas:
+  - term: Manifold
+    definition: >-
+      A space that looks like ordinary $\mathbb{R}^n$ up close but may be curved or
+      closed up overall, the way the Earth's surface looks flat locally.
+    turning_point_id: riemann-habilitation
+  - term: Metric
+    definition: >-
+      The rule $ds^2 = \sum g_{ij}\,dx^i dx^j$ for measuring small lengths at each point.
+      A Riemannian manifold is a manifold together with a metric, and all of its
+      geometry flows from $g_{ij}$.
+    turning_point_id: riemann-habilitation
+  - term: Parallel transport
+    definition: >-
+      A way of carrying a direction along a path without turning it. Around a closed
+      loop in a curved space, it comes back rotated, and that rotation is what curvature
+      *is*.
+    turning_point_id: levi-civita-parallel
+  - term: Sectional curvature
+    definition: >-
+      The Gaussian curvature of a two-dimensional slice through a point. In higher
+      dimensions, curvature is a whole family of numbers, one for each such slice.
+  - term: Ricci curvature
+    definition: >-
+      An average of sectional curvatures, measuring how the volume of a small ball
+      deviates from flat space. It is the curvature in Einstein's field equations, and
+      the one that Ricci flow evolves.
+    turning_point_id: ricci-levi-civita
+
 turning_points:
   - id: riemann-habilitation
     date: 1854 (published 1868)
@@ -36,6 +70,35 @@ turning_points:
     contested: false
     sources:
       - citation: "Ricci, G. & Levi-Civita, T. (1900). Méthodes de calcul différentiel absolu et leurs applications. Mathematische Annalen 54: 125–201."
+        url: null
+
+  - id: levi-civita-parallel
+    date: "1917"
+    type: REFORMULATION
+    title: Levi-Civita introduces parallel transport
+    description: >-
+      Tullio Levi-Civita gives Riemann's curvature a geometric meaning. Carry a vector
+      around a closed loop, keeping it "as parallel as possible" at each step, and in a
+      curved space it returns rotated. The amount of rotation per unit of enclosed area
+      is the curvature. Connections, the modern language of both geometry and gauge
+      physics, grow from this idea.
+    contested: false
+    sources:
+      - citation: "Levi-Civita, T. (1917). Nozione di parallelismo in una varietà qualunque e conseguente specificazione geometrica della curvatura riemanniana. Rendiconti del Circolo Matematico di Palermo 42: 173–205."
+        url: null
+
+  - id: myers-theorem
+    date: "1941"
+    type: PROOF
+    title: Positive curvature forces a space to close up
+    description: >-
+      Sumner Myers proves that a complete Riemannian manifold whose Ricci curvature is
+      bounded below by a positive constant must be compact, with a bounded diameter and a
+      finite fundamental group. A local inequality, checked point by point, dictates the
+      global shape. It is a founding result of comparison geometry.
+    contested: false
+    sources:
+      - citation: "Myers, S. B. (1941). Riemannian manifolds with positive mean curvature. Duke Mathematical Journal 8(2): 401–404."
         url: null
 
   - id: nash-embedding
@@ -90,6 +153,52 @@ open_problems:
     sources:
       - citation: "Berger, M. (2003). A Panoramic View of Riemannian Geometry. Springer."
         url: null
+
+applications:
+  - area: Relativity and GPS
+    title: Gravity is curvature, and satellites notice
+    description: >-
+      General relativity describes gravity as the curvature of a four-dimensional
+      spacetime with a Riemannian-type metric. It is not only theory. GPS satellite
+      clocks run about 38 microseconds per day fast relative to clocks on the ground:
+      roughly +45 from weaker gravity, minus 7 from orbital speed. Without correcting
+      for it, positions would drift by kilometres within a day.
+    domain: physics
+    sources:
+      - citation: "Ashby, N. (2003). Relativity in the Global Positioning System. Living Reviews in Relativity 6: 1."
+        url: https://doi.org/10.12942/lrr-2003-1
+  - area: Machine learning
+    title: Information geometry and the natural gradient
+    description: >-
+      The set of all probability distributions in a statistical model forms a manifold,
+      with a natural Riemannian metric (the Fisher information). Following gradients in
+      that metric rather than in flat coordinates, the *natural gradient*, makes
+      learning algorithms insensitive to how a model happens to be parametrised.
+    sources:
+      - citation: "Amari, S. (1998). Natural gradient works efficiently in learning. Neural Computation 10(2): 251–276."
+        url: null
+  - area: Medical imaging
+    title: Averaging diffusion tensors in brain scans
+    description: >-
+      Diffusion tensor MRI records, at every point of the brain, a positive-definite
+      matrix describing how water diffuses along nerve fibres. Those matrices form a
+      curved space. Averaging or interpolating them with a Riemannian metric instead of
+      naively avoids artefacts and keeps them physically valid.
+    domain: biology
+    sources:
+      - citation: "Pennec, X., Fillard, P. & Ayache, N. (2006). A Riemannian framework for tensor computing. International Journal of Computer Vision 66(1): 41–66."
+        url: null
+
+further_reading:
+  - citation: "Lee, J. M. (2018). Introduction to Riemannian Manifolds (2nd ed.). Springer."
+    url: null
+    note: A clear modern textbook, from the definitions through the major comparison theorems.
+  - citation: "do Carmo, M. P. (1992). Riemannian Geometry. Birkhäuser."
+    url: null
+    note: A compact classic, the natural sequel to do Carmo's book on curves and surfaces.
+  - citation: "Berger, M. (2003). A Panoramic View of Riemannian Geometry. Springer."
+    url: null
+    note: A survey of the whole field's landscape, results and open problems, with few proofs. Best for orientation.
 ---
 
 ## A Lecture at the Seam
@@ -110,13 +219,13 @@ The lecture was published only in 1868, two years after his death. By then Beltr
 
 ## The Calculus of Tensors
 
-Riemann's sketch needed machinery. Elwin Christoffel supplied part of it in 1869. {{fig:ricci-curbastro|Gregorio Ricci-Curbastro}} and {{fig:levi-civita|Tullio Levi-Civita}} supplied the rest in 1900, with their *absolute differential calculus*, now called tensor calculus. It makes it possible to write geometric statements that remain true whatever coordinates are chosen. In 1917 Levi-Civita added *parallel transport*: a way of carrying a direction along a curve in a curved space.
+Riemann's sketch needed machinery. Elwin Christoffel supplied part of it in 1869. {{fig:ricci-curbastro|Gregorio Ricci-Curbastro}} and {{fig:levi-civita|Tullio Levi-Civita}} supplied the rest in 1900, with their *absolute differential calculus*, now called tensor calculus. It makes it possible to write geometric statements that remain true whatever coordinates are chosen. In 1917 {{fig:levi-civita|Levi-Civita}} added *parallel transport*: a way of carrying a direction along a curve in a curved space.
 
 The payoff arrived from outside mathematics. Einstein spent years learning this calculus, with help from his friend Marcel Grossmann, to write general relativity (1915). In it, gravity *is* the curvature of a four-dimensional Riemannian-type spacetime. That link between a mathematical turning point and a physical one is exactly the kind of connection this atlas will draw once physics is surveyed.
 
 ## Curvature and Shape
 
-The twentieth century asked how local curvature constrains global shape. If a space is positively curved everywhere, must it be small and closed, like a sphere? If it is negatively curved, must it be large and open? Theorems of this kind, from Hopf, Myers, Cartan and Hadamard onward, made up *comparison geometry*.
+The twentieth century asked how local curvature constrains global shape. If a space is positively curved everywhere, must it be small and closed, like a sphere? If it is negatively curved, must it be large and open? Theorems of this kind, from Hadamard, Cartan and Hopf onward, made up *comparison geometry*. A landmark came in 1941, when {{fig:myers|Sumner Myers}} proved that a complete space whose Ricci curvature stays above a positive constant must close up on itself, with a bounded diameter, just as a sphere does.
 
 Two results changed the field's footing. In 1956 {{fig:nash|John Nash}} proved that every Riemannian manifold can be placed isometrically in some Euclidean space. Riemann's abstraction had lost nothing, since every intrinsic geometry does occur on some concrete shape, in enough dimensions. In 1982 {{fig:hamilton|Richard Hamilton}} introduced the Ricci flow:
 
