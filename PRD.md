@@ -15,7 +15,7 @@ One narrow vertical, picked before build starts (deliberately not number theory 
 
 **v1 pilot, as chosen at build time:** mathematics, the geometry thread. Five fields form a real DAG with two merge points: Euclidean Geometry → Non-Euclidean Geometry and Differential Geometry of Surfaces → Riemannian Geometry (both as parents) → Geometric Topology (Riemannian and Non-Euclidean as parents). It was chosen because Euclid's fifth postulate is a clean "what forced the split" story, and because the thread ends at live open problems (the smooth 4D Poincaré conjecture, the volume conjecture).
 
-**Depth phase, first step (done):** the geometry thread widened to seven fields. Algebraic Topology branches from Euclidean Geometry via Euler's polyhedron formula and becomes Geometric Topology's third parent. Geometric Analysis branches from Riemannian Geometry and Differential Geometry of Surfaces. Width (physics, biology) is still deferred until the format has been reviewed.
+**Depth phase, first step (done):** the geometry thread widened to seven fields. Algebraic Topology branches from Euclidean Geometry via Euler's polyhedron formula and becomes Geometric Topology's third parent. Geometric Analysis branches from Riemannian Geometry and Differential Geometry of Surfaces. A second step added a branch through perspective: Projective Geometry (from Euclidean Geometry) and Algebraic Geometry (from Projective Geometry and Algebraic Topology), bringing the thread to nine fields. Width (physics, biology) is still deferred until the format has been reviewed.
 
 ## Non-goals (v1)
 - No rating/metric/percentile layer — unlike [[empire-rankings]], this app has no computed scoring axis, by design.
