@@ -7,6 +7,42 @@ parent_ids:
 era_emerged: 18th century – 1820s
 core_question: How do you measure the bending of a curve or surface with calculus, and how much of that bending can be detected from inside the surface?
 
+summary: |-
+  Differential geometry uses calculus to measure how curves and surfaces bend. A curve's bending is captured by two numbers at each point, and a surface's by two more. Gauss's central discovery was that the *product* of a surface's two curvatures can be measured by a creature living on the surface who never leaves it.
+
+  That split between how a shape bends *in space* and how it is curved *in itself* is the idea everything later in this thread builds on. It is also why no flat map of the Earth can be perfect.
+
+key_ideas:
+  - term: Curvature and torsion of a curve
+    definition: >-
+      Curvature $\kappa$ measures how fast a curve turns ($1/r$ for the best-fitting
+      circle). Torsion $\tau$ measures how fast it twists out of its plane. Together
+      they determine a space curve completely.
+    turning_point_id: frenet-serret
+  - term: Principal curvatures
+    definition: >-
+      At each point of a surface, the largest and smallest bending among all directions,
+      $\kappa_1$ and $\kappa_2$. They always occur in perpendicular directions.
+    turning_point_id: euler-curvature
+  - term: Gaussian curvature
+    definition: >-
+      $K = \kappa_1\kappa_2$. Positive on a sphere, zero on a cylinder or a flat sheet,
+      negative on a saddle. Its sign alone tells you whether small triangles have
+      angles summing to more, exactly, or less than $\pi$.
+    turning_point_id: theorema-egregium
+  - term: Intrinsic vs. extrinsic
+    definition: >-
+      An *intrinsic* property can be measured from inside the surface, using only
+      lengths and angles on it. An *extrinsic* one depends on how the surface sits in
+      space. Gaussian curvature is intrinsic, and each principal curvature alone is not.
+    turning_point_id: theorema-egregium
+  - term: Geodesic
+    definition: >-
+      The straightest possible path on a surface, which locally is also the shortest.
+      Great circles on a sphere are geodesics. They play the role of straight lines in
+      the surface's own geometry.
+    turning_point_id: gauss-bonnet
+
 turning_points:
   - id: euler-curvature
     date: 1760 (published 1767)
@@ -35,6 +71,23 @@ turning_points:
     contested: false
     sources:
       - citation: "Gauss, C. F. (1828). Disquisitiones generales circa superficies curvas. Commentationes Societatis Regiae Scientiarum Gottingensis Recentiores 6. (Presented 1827.)"
+        url: null
+
+  - id: frenet-serret
+    date: 1847 – 1851
+    type: PROOF
+    title: The Frenet–Serret formulas describe every space curve
+    description: >-
+      Jean Frédéric Frenet, in his 1847 thesis, and Joseph Serret, in 1851, independently
+      derive the formulas that govern a moving frame along a curve. Two functions,
+      curvature $\kappa$ and torsion $\tau$, determine the curve completely up to a rigid
+      motion. The theory of curves in space was essentially finished, and surfaces
+      became the frontier.
+    contested: false
+    sources:
+      - citation: "Frenet, F. (1852). Sur les courbes à double courbure. Journal de Mathématiques Pures et Appliquées 17: 437–447."
+        url: null
+      - citation: "Serret, J. A. (1851). Sur quelques formules relatives à la théorie des courbes à double courbure. Journal de Mathématiques Pures et Appliquées 16: 193–207."
         url: null
 
   - id: gauss-bonnet
@@ -115,13 +168,70 @@ open_problems:
     sources:
       - citation: "Han, Q. & Hong, J.-X. (2006). Isometric Embedding of Riemannian Manifolds in Euclidean Spaces. American Mathematical Society."
         url: null
+
+applications:
+  - area: Cartography
+    title: Why every map projection distorts
+    description: >-
+      The Theorema Egregium says a sphere ($K > 0$) cannot be flattened onto a plane
+      ($K = 0$) without changing some distances. Every map projection is therefore a
+      choice of what to sacrifice. Mercator keeps angles and inflates areas near the
+      poles. Equal-area projections keep areas and distort shapes. Geodesy, the science
+      of measuring the Earth, still runs on Gauss's surface theory.
+    sources:
+      - citation: "Snyder, J. P. (1987). Map Projections: A Working Manual. U.S. Geological Survey Professional Paper 1395."
+        url: null
+  - area: Computer graphics
+    title: Curvature on digital meshes
+    description: >-
+      3D models are meshes of tiny triangles, and graphics software estimates their
+      curvature to smooth noise, simplify models and place detail where the surface
+      bends most. Car and product designers demand surfaces whose curvature varies
+      smoothly across seams, because reflections reveal every kink.
+    sources:
+      - citation: "Botsch, M., Kobbelt, L., Pauly, M., Alliez, P. & Lévy, B. (2010). Polygon Mesh Processing. A K Peters."
+        url: null
+  - area: Architecture
+    title: Building curved forms from flat sheets
+    description: >-
+      A surface with zero Gaussian curvature, a *developable* surface, can be bent from a
+      flat sheet without stretching. Architects and engineers use this to make curved
+      facades from sheet metal or glass. Doubly curved panels ($K \neq 0$) need costly
+      moulds.
+    sources:
+      - citation: "Pottmann, H., Asperl, A., Hofer, M. & Kilian, A. (2007). Architectural Geometry. Bentley Institute Press."
+        url: null
+  - area: Cell biology
+    title: The shape of membranes and red blood cells
+    description: >-
+      A cell membrane resists bending, and its elastic energy is an integral of squared
+      mean curvature, the same quantity as the Willmore energy below. Minimising it
+      explains the biconcave disc shape of human red blood cells, as Canham (1970) and
+      Helfrich (1973) showed.
+    domain: biology
+    sources:
+      - citation: "Canham, P. B. (1970). The minimum energy of bending as a possible explanation of the biconcave shape of the human red blood cell. Journal of Theoretical Biology 26(1): 61–81."
+        url: null
+      - citation: "Helfrich, W. (1973). Elastic properties of lipid bilayers: theory and possible experiments. Zeitschrift für Naturforschung C 28: 693–703."
+        url: null
+
+further_reading:
+  - citation: "do Carmo, M. P. (1976). Differential Geometry of Curves and Surfaces. Prentice-Hall."
+    url: null
+    note: The classic textbook. Rigorous but concrete, and still the standard first course.
+  - citation: "Needham, T. (2021). Visual Differential Geometry and Forms. Princeton University Press."
+    url: null
+    note: Builds geometric intuition through pictures first, formulas second. Ideal before or alongside a textbook.
+  - citation: "Pressley, A. (2010). Elementary Differential Geometry (2nd ed.). Springer."
+    url: null
+    note: A gentle, carefully paced introduction for readers who know multivariable calculus.
 ---
 
 ## Calculus Meets Shape
 
 When Newton and Leibniz made calculus in the late seventeenth century, curvature was one of the first things it could measure. The curvature of a plane curve at a point is the reciprocal of the radius of the circle that best hugs it there: $\kappa = 1/r$. Huygens had already used such circles to study pendulum clocks, and Clairaut soon extended the idea to curves twisting through space.
 
-Surfaces were harder, because a surface curves differently in different directions. A cylinder is curved around its circumference and flat along its length. A saddle curves up one way and down the other. {{fig:euler|Leonhard Euler}} showed in 1760 that all of this is controlled by two numbers, the *principal curvatures* $\kappa_1$ and $\kappa_2$, which occur in perpendicular directions. Gaspard Monge's school in France then built a whole descriptive theory of surfaces on that idea.
+Surfaces were harder, because a surface curves differently in different directions. A cylinder is curved around its circumference and flat along its length. A saddle curves up one way and down the other. {{fig:euler|Leonhard Euler}} showed in 1760 that all of this is controlled by two numbers, the *principal curvatures* $\kappa_1$ and $\kappa_2$, which occur in perpendicular directions. Gaspard Monge's school in France then built a whole descriptive theory of surfaces on that idea. For curves the story was essentially finished by the 1850s. {{fig:frenet|Frenet}} and {{fig:serret|Serret}} showed that two functions, curvature $\kappa$ and torsion $\tau$, determine any curve in space.
 
 Up to here, this is still Euclid's space. Curves and surfaces are objects sitting in flat three-dimensional space, and their curvature describes how they bend within it.
 

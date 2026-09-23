@@ -31,5 +31,7 @@
   { "id": "descartes", "name": "René Descartes", "turning_point_ids": ["descartes-coordinates"] },
   { "id": "fermat", "name": "Pierre de Fermat", "turning_point_ids": ["descartes-coordinates"] },
   { "id": "wantzel", "name": "Pierre Wantzel", "turning_point_ids": ["wantzel-constructions"] },
-  { "id": "lindemann", "name": "Ferdinand von Lindemann", "turning_point_ids": ["wantzel-constructions"] }
+  { "id": "lindemann", "name": "Ferdinand von Lindemann", "turning_point_ids": ["wantzel-constructions"] },
+  { "id": "frenet", "name": "Jean Frédéric Frenet", "turning_point_ids": ["frenet-serret"] },
+  { "id": "serret", "name": "Joseph Serret", "turning_point_ids": ["frenet-serret"] }
 ]
