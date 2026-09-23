@@ -40,5 +40,7 @@
   { "id": "steenrod", "name": "Norman Steenrod", "turning_point_ids": ["eilenberg-steenrod"] },
   { "id": "milnor", "name": "John Milnor", "turning_point_ids": ["milnor-exotic-spheres"] },
   { "id": "smale", "name": "Stephen Smale", "turning_point_ids": ["smale-high-dimensions"] },
-  { "id": "freedman", "name": "Michael Freedman", "turning_point_ids": ["freedman-four-dimensions"] }
+  { "id": "freedman", "name": "Michael Freedman", "turning_point_ids": ["freedman-four-dimensions"] },
+  { "id": "sacks", "name": "Jonathan Sacks", "turning_point_ids": ["sacks-uhlenbeck-bubbling"] },
+  { "id": "uhlenbeck", "name": "Karen Uhlenbeck", "turning_point_ids": ["sacks-uhlenbeck-bubbling"] }
 ]
