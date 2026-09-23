@@ -37,5 +37,8 @@
   { "id": "myers", "name": "Sumner Myers", "turning_point_ids": ["myers-theorem"] },
   { "id": "hopf", "name": "Heinz Hopf", "turning_point_ids": ["hopf-fibration"] },
   { "id": "eilenberg", "name": "Samuel Eilenberg", "turning_point_ids": ["eilenberg-steenrod"] },
-  { "id": "steenrod", "name": "Norman Steenrod", "turning_point_ids": ["eilenberg-steenrod"] }
+  { "id": "steenrod", "name": "Norman Steenrod", "turning_point_ids": ["eilenberg-steenrod"] },
+  { "id": "milnor", "name": "John Milnor", "turning_point_ids": ["milnor-exotic-spheres"] },
+  { "id": "smale", "name": "Stephen Smale", "turning_point_ids": ["smale-high-dimensions"] },
+  { "id": "freedman", "name": "Michael Freedman", "turning_point_ids": ["freedman-four-dimensions"] }
 ]

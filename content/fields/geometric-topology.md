@@ -9,6 +9,42 @@ parent_ids:
 era_emerged: 1904 – 1980s
 core_question: Can every three-dimensional space be classified, and does geometry decide its shape?
 
+summary: |-
+  Geometric topology studies the shapes of manifolds, spaces that look like ordinary space up close, especially in three and four dimensions, where our own universe lives. Its central question is classification: what are all the possible shapes, and how do you tell two apart?
+
+  Its great surprise was that three-dimensional shapes are governed by geometry. Almost every one of them carries a natural, uniform geometry (usually hyperbolic), and that geometry determines its topology. Dimension four is still the least understood, and the fog on this map is thickest there.
+
+key_ideas:
+  - term: Homeomorphism and diffeomorphism
+    definition: >-
+      Two spaces are *homeomorphic* if one can be continuously deformed into the other
+      and back. They are *diffeomorphic* if the deformation can also be made smooth.
+      These can differ, and where they do is one of the field's deepest themes.
+    turning_point_id: milnor-exotic-spheres
+  - term: Simply connected
+    definition: >-
+      Every loop in the space can be shrunk to a point. A sphere is simply connected, a
+      torus is not. Poincaré asked whether this alone identifies the 3-sphere.
+    turning_point_id: poincare-conjecture-posed
+  - term: The eight geometries
+    definition: >-
+      Thurston's list of the uniform geometries a 3-dimensional piece can carry:
+      spherical, Euclidean, hyperbolic, $S^2 \times \mathbb{R}$,
+      $\mathbb{H}^2 \times \mathbb{R}$, Nil, Sol, and $\widetilde{SL_2\mathbb{R}}$.
+    turning_point_id: thurston-geometrization
+  - term: Ricci flow with surgery
+    definition: >-
+      Let the metric flow to even out its curvature, and whenever a region pinches off,
+      cut it out, cap the ends and restart. Perelman showed the process ends by revealing
+      the pieces of geometrization.
+    turning_point_id: perelman-proof
+  - term: Exotic smooth structure
+    definition: >-
+      A way of making a space smooth that is genuinely different from the standard one,
+      even though the underlying topological space is the same. Exotic 7-spheres exist.
+      Whether an exotic 4-sphere exists is open.
+    turning_point_id: milnor-exotic-spheres
+
 turning_points:
   - id: poincare-conjecture-posed
     date: "1904"
@@ -24,6 +60,35 @@ turning_points:
       - citation: "Poincaré, H. (1904). Cinquième complément à l'analysis situs. Rendiconti del Circolo Matematico di Palermo 18: 45–110."
         url: null
 
+  - id: milnor-exotic-spheres
+    date: "1956"
+    type: DISPROOF
+    title: Milnor finds exotic 7-spheres
+    description: >-
+      John Milnor constructs smooth manifolds that are topologically the 7-sphere but not
+      smoothly the same as it. The quiet assumption that a topological sphere can be made
+      smooth in only one way was false. From here on, classifying shapes topologically
+      and classifying them smoothly were different problems.
+    contested: false
+    sources:
+      - citation: "Milnor, J. (1956). On manifolds homeomorphic to the 7-sphere. Annals of Mathematics 64(2): 399–405."
+        url: null
+
+  - id: smale-high-dimensions
+    date: "1961"
+    type: PROOF
+    title: The Poincaré conjecture falls in dimensions five and up
+    description: >-
+      Stephen Smale proves the higher-dimensional Poincaré conjecture for every dimension
+      $n \ge 5$, using handle decompositions and what became the h-cobordism theorem.
+      John Stallings and Christopher Zeeman gave independent proofs for most of these
+      dimensions at about the same time. The original, three-dimensional case was left
+      standing.
+    contested: false
+    sources:
+      - citation: "Smale, S. (1961). Generalized Poincaré's conjecture in dimensions greater than four. Annals of Mathematics 74(2): 391–406."
+        url: null
+
   - id: thurston-geometrization
     date: "1982"
     type: CONJECTURE
@@ -36,6 +101,21 @@ turning_points:
     contested: false
     sources:
       - citation: "Thurston, W. P. (1982). Three dimensional manifolds, Kleinian groups and hyperbolic geometry. Bulletin of the AMS 6(3): 357–381."
+        url: null
+
+  - id: freedman-four-dimensions
+    date: "1982"
+    type: PROOF
+    title: Freedman settles the topological 4-dimensional case
+    description: >-
+      Michael Freedman proves the Poincaré conjecture in dimension four in the
+      topological sense, and classifies all simply connected closed topological
+      4-manifolds. A year later Simon Donaldson's work showed that smooth 4-manifolds
+      behave completely differently. Dimension four split in two, and the smooth half is
+      still largely unmapped.
+    contested: false
+    sources:
+      - citation: "Freedman, M. H. (1982). The topology of four-dimensional manifolds. Journal of Differential Geometry 17(3): 357–453."
         url: null
 
   - id: perelman-proof
@@ -154,6 +234,56 @@ open_problems:
         url: null
       - citation: "Murakami, H. & Murakami, J. (2001). The colored Jones polynomials and the simplicial volume of a knot. Acta Mathematica 186: 85–104."
         url: null
+
+applications:
+  - area: Cosmology
+    title: What shape is the universe?
+    description: >-
+      General relativity fixes the local curvature of space, but not its global
+      topology. Space could be a finite 3-manifold that wraps around. If it were small
+      enough, the cosmic microwave background would show matching circles on opposite
+      sides of the sky. A dodecahedral space was proposed in 2003. Searches in Planck
+      satellite data found no such circles, which rules out small wrap-arounds but not
+      large ones.
+    domain: physics
+    sources:
+      - citation: "Luminet, J.-P., Weeks, J. R., Riazuelo, A., Lehoucq, R. & Uzan, J.-P. (2003). Dodecahedral space topology as an explanation for weak wide-angle temperature correlations in the cosmic microwave background. Nature 425: 593–595."
+        url: null
+      - citation: "Planck Collaboration (2016). Planck 2015 results. XVIII. Background geometry and topology of the Universe. Astronomy & Astrophysics 594: A18."
+        url: null
+  - area: Molecular biology
+    title: Knotted DNA
+    description: >-
+      Enzymes that cut and rejoin DNA (topoisomerases and recombinases) change how its
+      strands are knotted and linked. Knot theory lets biologists read an enzyme's
+      mechanism from the knots it produces. Ernst and Sumners' tangle model turned this
+      into a calculation.
+    domain: biology
+    sources:
+      - citation: "Ernst, C. & Sumners, D. W. (1990). A calculus for rational tangles: applications to DNA recombination. Mathematical Proceedings of the Cambridge Philosophical Society 108(3): 489–515."
+        url: null
+  - area: Quantum computing
+    title: Computing with braids
+    description: >-
+      In *topological* quantum computing, information would be stored in how certain
+      quasiparticles are braided around each other in a two-dimensional material. Small
+      disturbances cannot change the braid's topology, so the stored information would
+      protect itself from noise. The mathematics is knot and 3-manifold invariants.
+    domain: physics
+    sources:
+      - citation: "Freedman, M. H., Kitaev, A., Larsen, M. J. & Wang, Z. (2003). Topological quantum computation. Bulletin of the AMS 40(1): 31–38."
+        url: null
+
+further_reading:
+  - citation: "Weeks, J. R. (2002). The Shape of Space (2nd ed.). Marcel Dekker."
+    url: null
+    note: An intuitive, well-illustrated introduction to 3-manifolds and cosmic topology for any curious reader.
+  - citation: "O'Shea, D. (2007). The Poincaré Conjecture: In Search of the Shape of the Universe. Walker & Company."
+    url: null
+    note: A narrative history of the conjecture, from Poincaré to Perelman, for general readers.
+  - citation: "Thurston, W. P. (1997). Three-Dimensional Geometry and Topology, Vol. 1. Princeton University Press."
+    url: null
+    note: Thurston's own account of the geometric viewpoint. Demanding, but full of insight.
 ---
 
 ## Poincaré's Question
@@ -164,7 +294,7 @@ It starts with {{fig:poincare|Henri Poincaré}}, whose *Analysis Situs* (1895) h
 
 ## Higher Dimensions Fall First
 
-For half a century the question resisted everyone, and attention moved to other dimensions. In 1961 Stephen Smale proved the analogous statement in every dimension five and above, where there is enough room to untangle things. In 1982 Michael Freedman proved the topological version in dimension four. Dimension three, the original, remained. Many false proofs were published along the way.
+For half a century the question resisted everyone, and attention moved to other dimensions. The territory turned out to be stranger than expected. In 1956 {{fig:milnor|John Milnor}} found spheres of dimension seven that are topologically ordinary but smooth in a genuinely different way. In 1961 {{fig:smale|Stephen Smale}} proved the analogous Poincaré statement in every dimension five and above, where there is enough room to untangle things. In 1982 {{fig:freedman|Michael Freedman}} proved the topological version in dimension four. Dimension three, the original, remained. Many false proofs were published along the way.
 
 ## Thurston's Picture
 
