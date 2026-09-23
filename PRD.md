@@ -36,6 +36,12 @@ A Field is a subfield-level entry (e.g. "Analytic Number Theory," not "Fermat's 
 - A list of Open Problems
 - A list of Figures, each tied to specific turning points rather than given standalone biography treatment
 
+Added in the depth phase, to help readers who meet a field for the first time:
+- **In brief**: a plain-language orientation of one or two paragraphs, placed before the chapters.
+- **Key ideas**: a short glossary of the field's core concepts, each linked to the turning point where it entered.
+- **Where it is used**: applications outside the field, each with a source. Uses that land in physics or biology are tagged with that domain, as early seeds of the cross-domain view.
+- **Further reading**: a few books, each with a one-line note on who it is for.
+
 ## Turning Points
 Dated events inside a field's history, each tagged by type. Type vocabulary is domain-specific:
 - Math: CONJECTURE, PROOF, DISPROOF, REFORMULATION, CRISIS

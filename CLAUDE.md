@@ -81,6 +81,7 @@ Keep `Field`, `TurningPoint`, `OpenProblem`, and `Figure` as one shared collecti
 One file per Field so a correction is a single-file diff, consistent with the "corrections via repo edit" model in the sibling apps.
 
 - `content/fields/<field-id>.md`: YAML frontmatter holds the structured fields (id, domain, name, parent_ids, era_emerged, core_question, turning_points, open_problems). The Markdown body is split into chapters on `## ` headings, so chapter count and titles are free per field.
+- Optional depth keys in the same frontmatter: `summary` (literal block, Markdown), `key_ideas` (`term`, `definition`, optional `turning_point_id` in any field), `applications` (`area`, `title`, `description`, optional `domain` for a cross-domain seed, `sources`), and `further_reading` (`citation`, `url`, `note`). The field page renders each section only when it is present.
 - `content/figures.json`: the shared figures collection, each figure tied to turning point ids.
 - Math: KaTeX via `$…$` and `$$…$$`. Display math needs `$$` on its own lines, so use a literal (`|-`) YAML block for any frontmatter text that contains display math.
 - Figure mentions in chapter prose: `{{fig:gauss}}` or `{{fig:gauss|Gauss}}` links the name to that figure's turning point.
