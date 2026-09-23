@@ -1,9 +1,9 @@
-# Frontier — DESIGN.md
+# Field Atlas — DESIGN.md
 
 ## Concept
-The name is the design brief: a frontier is the edge of mapped territory. Render resolved knowledge (proven theorems, settled discoveries) as charted ground — solid lines, filled shapes, confident typography. Render open problems as literally unmapped — fading linework, dotted boundaries, a "fog" that doesn't resolve into a shape. The field tree isn't drawn as a corporate org-chart; it's drawn as a hand-surveyed map of terrain that was explored gradually, branch by branch.
+The name is the design brief: an atlas is a book of surveyed maps, and every honest map shows where the survey stops. Field Atlas maps each field of knowledge the same way, edges included. Render resolved knowledge (proven theorems, settled discoveries) as charted ground — solid lines, filled shapes, confident typography. Render open problems as literally unmapped — fading linework, dotted boundaries, a "fog" that doesn't resolve into a shape. The field tree isn't drawn as a corporate org-chart; it's drawn as a hand-surveyed map of terrain that was explored gradually, branch by branch.
 
-This gives the app a visual identity distinct from both siblings: [[empire-rankings]] reads as an atlas of a closed, finished past (peak-extent polygons, dynastic weight); [[ruleset]] reads as a live scoreboard/rulebook. Frontier should read as a **field notebook / survey map** — provisional, exploratory, honest about where the ink runs out.
+This gives the app a visual identity distinct from both siblings: [[empire-rankings]] reads as an atlas of a closed, finished past (peak-extent polygons, dynastic weight); [[ruleset]] reads as a live scoreboard/rulebook. Field Atlas should read as a **field notebook / survey map** — provisional, exploratory, honest about where the ink runs out. The name says "atlas" too, so the difference from [[empire-rankings]] has to show in the drawing: that app's atlas is finished, and this one is still being surveyed.
 
 ## Typography
 - **Headings / field names:** a serif with some age to it (e.g. a slab or transitional serif — Source Serif 4, Lora, or similar) — reads as "written down," not "generated."

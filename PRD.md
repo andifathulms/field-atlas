@@ -1,9 +1,11 @@
-# Frontier — PRD
+# Field Atlas — PRD
+
+> Working title was "Frontier"; renamed to **Field Atlas**.
 
 ## What this is
 A read-only narrative encyclopedia of scientific fields — starting with mathematics, extending to physics and biology — built around three things: how a field's subfields branched from one another, the dated turning points (proofs, discoveries, crises) that forced each branch to exist, and the open problems that field still hasn't answered.
 
-It's a sibling project to [[empire-rankings]] (narrative succession + causation, applied to polities) and [[ruleset]] (rule-change timeline, applied to sports). Frontier applies the same shape to ideas: a field is the unit, and it earns a page the way a polity or a sport does.
+It's a sibling project to [[empire-rankings]] (narrative succession + causation, applied to polities) and [[ruleset]] (rule-change timeline, applied to sports). Field Atlas applies the same shape to ideas: a field is the unit, and it earns a page the way a polity or a sport does.
 
 ## Motivation
 Wants an app in his own voice explaining how a field of knowledge came to be divided the way it is — not a textbook table of contents, but "why does algebraic number theory exist as a separate thing from number theory, and what forced the split." The open-problems layer is new relative to the sibling apps: math/physics/biology have live, unresolved frontiers that empires and sports rules mostly don't.

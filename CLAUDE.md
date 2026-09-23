@@ -1,4 +1,4 @@
-# Frontier — CLAUDE.md
+# Field Atlas — CLAUDE.md
 
 Technical build notes for Claude Code. Read PRD.md and DESIGN.md first — this file is implementation, not product intent.
 
