@@ -1,3 +1,111 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+:root {
+  color-scheme: light;
+
+  /* Ink on aged paper — never pure white or black. */
+  --paper: #f3eee3;
+  --paper-deep: #e9e2d2;
+  --ink: #1e1c19;
+  --ink-soft: #48443e;
+  --ink-faint: #8a8378;
+  --rule: #d2c9b6;
+  --fog: #a29b8e;
+
+  /* One accent per domain. Physics and biology are reserved for the width phase. */
+  --math: #28356c;
+  --physics: #a65b27;
+  --biology: #596c4a;
+  --accent: var(--ink);
+
+  --contested: #a53a2b;
+
+  /* House motion rhythm, shared with the sibling apps. */
+  --ease-house: cubic-bezier(0.22, 1, 0.36, 1);
+  --dur-house: 700ms;
+}
+
+[data-domain="math"] { --accent: var(--math); }
+[data-domain="physics"] { --accent: var(--physics); }
+[data-domain="biology"] { --accent: var(--biology); }
+
+html {
+  background: var(--paper);
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  background: var(--paper);
+  color: var(--ink);
+  font-family: var(--font-serif), Georgia, serif;
+  font-size: 1.0625rem;
+  line-height: 1.65;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+
+::selection {
+  background: color-mix(in srgb, var(--accent) 22%, transparent);
+}
+
+a:focus-visible,
+button:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 3px;
+  border-radius: 1px;
+}
+
+@layer components {
+  /* The surveyor's field stamp: dates, type tags, metadata. */
+  .stamp {
+    font-family: var(--font-mono), ui-monospace, monospace;
+    font-size: 0.6875rem;
+    line-height: 1.4;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+  }
+
+  /* Hatched underline marking a contested turning point. */
+  .hatch-contested {
+    background-image: repeating-linear-gradient(
+      -45deg,
+      var(--contested) 0 1.5px,
+      transparent 1.5px 4px
+    );
+    background-size: 100% 4px;
+    background-position: 0 100%;
+    background-repeat: no-repeat;
+    padding-bottom: 6px;
+  }
+
+  .ink-link {
+    text-decoration-line: underline;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 3px;
+    text-decoration-color: color-mix(in srgb, currentColor 35%, transparent);
+    transition: text-decoration-color 200ms var(--ease-house), color 200ms var(--ease-house);
+  }
+  .ink-link:hover {
+    text-decoration-color: currentColor;
+    color: var(--accent);
+  }
+}
+
+/* Ink settling: text blocks arrive with a small upward drift. */
+@keyframes settle {
+  from { opacity: 0; transform: translateY(6px); }
+  to { opacity: 1; transform: none; }
+}
+.settle {
+  animation: settle var(--dur-house) var(--ease-house) both;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 1ms !important;
+    animation-delay: 0ms !important;
+    transition-duration: 1ms !important;
+  }
+}
