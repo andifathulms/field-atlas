@@ -3,6 +3,7 @@ id: geometric-topology
 domain: math
 name: Geometric Topology
 parent_ids:
+  - algebraic-topology
   - riemannian-geometry
   - non-euclidean-geometry
 era_emerged: 1904 – 1980s
@@ -157,9 +158,9 @@ open_problems:
 
 ## Poincaré's Question
 
-Topology itself has roots outside this thread: Euler's bridges of Königsberg, Riemann's surfaces, and the study of knots. The branch followed here is the one where geometry came back to decide questions of shape.
+This field has three parents, and it needed all of them. From [algebraic topology](/math/algebraic-topology/) it took the invariants that tell spaces apart. From [Riemannian](/math/riemannian-geometry/) and [non-Euclidean](/math/non-euclidean-geometry/) geometry it eventually took the methods that decided its hardest question. The field covers the shapes of manifolds in low dimensions, especially three and four, where geometry turned out to settle questions that algebra alone could not.
 
-It starts with {{fig:poincare|Henri Poincaré}}. His *Analysis Situs* (1895) and its supplements invented much of algebraic topology, in order to tell three-dimensional spaces apart. In 1900 he claimed that a closed three-manifold with the same homology as the three-sphere must *be* the three-sphere. By 1904 he had found his own counterexample, now called the Poincaré homology sphere. So he asked a sharper question: if every loop in such a space can be shrunk to a point, must it be $S^3$?
+It starts with {{fig:poincare|Henri Poincaré}}, whose *Analysis Situs* (1895) had just given topology its algebraic tools. He wanted to use them to tell three-dimensional spaces apart. In 1900 he claimed that a closed three-manifold with the same homology as the three-sphere must *be* the three-sphere. By 1904 he had found his own counterexample, now called the Poincaré homology sphere. So he asked a sharper question: if every loop in such a space can be shrunk to a point, must it be $S^3$?
 
 ## Higher Dimensions Fall First
 
