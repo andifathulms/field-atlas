@@ -123,7 +123,10 @@ export default function FieldPage({ params }: Params) {
   if (!field || !domain || field.domain !== domain.id) notFound();
 
   const allFields = new Map(getFields(field.domain).map((f) => [f.id, f]));
-  const figures = field.figure_ids.map((id) => getFigure(id)!);
+  // In order of each person's first turning point in this field's history.
+  const tpOrder = (figId: string) =>
+    Math.min(...getFigure(figId)!.turning_point_ids.map((t) => field.turning_points.findIndex((tp) => tp.id === t)).filter((i) => i >= 0));
+  const figures = [...field.figure_ids].sort((a, b) => tpOrder(a) - tpOrder(b)).map((id) => getFigure(id)!);
   const problems = [...field.open_problems].sort(
     (a, b) => Number(a.status === "recently_resolved") - Number(b.status === "recently_resolved"),
   );
