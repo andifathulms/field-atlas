@@ -109,3 +109,44 @@ button:focus-visible {
     transition-duration: 1ms !important;
   }
 }
+
+/* Field tree: branches draw themselves in (pathLength=1), labels settle. */
+@keyframes tree-draw {
+  to { stroke-dashoffset: 0; }
+}
+.tree-draw {
+  stroke-dasharray: 1;
+  stroke-dashoffset: 1;
+  animation: tree-draw 1100ms var(--ease-house) forwards;
+}
+@keyframes tree-fade {
+  to { opacity: 1; }
+}
+.tree-fade {
+  opacity: 0;
+  animation: tree-fade 600ms var(--ease-house) forwards;
+}
+.tree-node:focus-visible {
+  outline: none;
+}
+.tree-node:focus-visible text:first-of-type {
+  text-decoration: underline;
+}
+
+/* Survey paper: a faint grid behind the map. */
+.survey-grid {
+  --grid: color-mix(in srgb, var(--accent) 7%, transparent);
+  background-color: color-mix(in srgb, var(--paper-deep) 45%, var(--paper));
+  background-image:
+    linear-gradient(var(--grid) 1px, transparent 1px),
+    linear-gradient(90deg, var(--grid) 1px, transparent 1px);
+  background-size: 24px 24px;
+  background-position: -1px -1px;
+}
+
+/* Unsurveyed territory. */
+.fog-field {
+  background:
+    radial-gradient(ellipse at 30% 40%, color-mix(in srgb, var(--fog) 18%, transparent), transparent 60%),
+    radial-gradient(ellipse at 75% 65%, color-mix(in srgb, var(--fog) 14%, transparent), transparent 55%);
+}

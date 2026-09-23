@@ -26,13 +26,19 @@ export function Legend({ className = "" }: { className?: string }) {
       <div className="flex items-center gap-3">
         <dt aria-hidden>
           <svg width="36" height="10" viewBox="0 0 36 10">
-            <defs>
-              <linearGradient id="legend-fade" x1="0" x2="1">
-                <stop offset="0" stopColor="var(--fog)" stopOpacity="1" />
-                <stop offset="1" stopColor="var(--fog)" stopOpacity="0" />
-              </linearGradient>
-            </defs>
-            <line x1="2" y1="5" x2="34" y2="5" stroke="url(#legend-fade)" strokeWidth="1.75" strokeDasharray="2 4" strokeLinecap="round" />
+            {[0, 1, 2, 3, 4].map((i) => (
+              <line
+                key={i}
+                x1={2 + i * 7}
+                y1="5"
+                x2={4 + i * 7}
+                y2="5"
+                stroke="var(--fog)"
+                strokeWidth="1.75"
+                strokeLinecap="round"
+                strokeOpacity={1 - i * 0.2}
+              />
+            ))}
           </svg>
         </dt>
         <dd>Unmapped: open problems</dd>
