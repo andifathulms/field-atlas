@@ -9,7 +9,7 @@
   { "id": "klein", "name": "Felix Klein", "turning_point_ids": ["erlangen-program", "cayley-klein"] },
   { "id": "euler", "name": "Leonhard Euler", "turning_point_ids": ["euler-polyhedron-formula", "euler-curvature"] },
   { "id": "bonnet", "name": "Pierre Ossian Bonnet", "turning_point_ids": ["gauss-bonnet"] },
-  { "id": "riemann", "name": "Bernhard Riemann", "turning_point_ids": ["riemann-habilitation"] },
+  { "id": "riemann", "name": "Bernhard Riemann", "turning_point_ids": ["riemann-habilitation", "riemann-surfaces"] },
   { "id": "ricci-curbastro", "name": "Gregorio Ricci-Curbastro", "turning_point_ids": ["ricci-levi-civita"] },
   { "id": "levi-civita", "name": "Tullio Levi-Civita", "turning_point_ids": ["ricci-levi-civita", "levi-civita-parallel"] },
   { "id": "nash", "name": "John Nash", "turning_point_ids": ["nash-embedding"] },
@@ -49,5 +49,15 @@
   { "id": "pascal", "name": "Blaise Pascal", "turning_point_ids": ["desargues-pascal"] },
   { "id": "poncelet", "name": "Jean-Victor Poncelet", "turning_point_ids": ["poncelet-traite", "projective-duality"] },
   { "id": "gergonne", "name": "Joseph Gergonne", "turning_point_ids": ["projective-duality"] },
-  { "id": "cayley", "name": "Arthur Cayley", "turning_point_ids": ["cayley-klein"] }
+  { "id": "cayley", "name": "Arthur Cayley", "turning_point_ids": ["cayley-klein"] },
+  { "id": "bezout", "name": "Étienne Bézout", "turning_point_ids": ["bezout-theorem"] },
+  { "id": "castelnuovo", "name": "Guido Castelnuovo", "turning_point_ids": ["italian-school-crisis"] },
+  { "id": "enriques", "name": "Federigo Enriques", "turning_point_ids": ["italian-school-crisis"] },
+  { "id": "severi", "name": "Francesco Severi", "turning_point_ids": ["italian-school-crisis"] },
+  { "id": "zariski", "name": "Oscar Zariski", "turning_point_ids": ["italian-school-crisis"] },
+  { "id": "weil", "name": "André Weil", "turning_point_ids": ["italian-school-crisis", "weil-conjectures"] },
+  { "id": "grothendieck", "name": "Alexander Grothendieck", "turning_point_ids": ["grothendieck-schemes"] },
+  { "id": "deligne", "name": "Pierre Deligne", "turning_point_ids": ["deligne-weil"] },
+  { "id": "wiles", "name": "Andrew Wiles", "turning_point_ids": ["wiles-fermat"] },
+  { "id": "taylor", "name": "Richard Taylor", "turning_point_ids": ["wiles-fermat"] }
 ]
