@@ -305,6 +305,32 @@ Within weeks of the final equations, {{fig:schwarzschild|Karl Schwarzschild}}, w
 
 The theory also predicts that accelerating masses shake spacetime itself, sending out gravitational waves. Einstein doubted they could ever be detected. In 2015 the two LIGO observatories, whose four-kilometre laser arms change length by a small fraction of a proton's width, caught the waves from two black holes merging over a billion light years away. In 2019 the Event Horizon Telescope photographed the glowing ring around a black hole's shadow.
 
+## A Closer Look: Forty-Three Seconds of Arc
+
+Newton's gravity predicts that a single planet orbiting the Sun traces the same ellipse forever. In reality Mercury's ellipse slowly turns, its closest point to the Sun advancing by 574 arcseconds per century. The pulls of the other planets account for 531. The remaining 43 arcseconds per century, about a hundredth of a degree, was unexplained from 1859 until 1915.
+
+General relativity predicts that any orbit around a mass $M$ turns a little each lap, by the angle
+
+$$
+\Delta\phi = \frac{6\pi G M}{c^2 a (1 - e^2)} ,
+$$
+
+where $a$ is the orbit's average radius and $e$ its eccentricity. For Mercury, $a = 5.79 \times 10^{10}$ m and $e = 0.206$. With the Sun's $GM = 1.327 \times 10^{20}$ m³/s² and $c = 3.00 \times 10^8$ m/s:
+
+$$
+\Delta\phi = \frac{6\pi \times 1.327 \times 10^{20}}{(3.00 \times 10^8)^2 \times 5.79 \times 10^{10} \times (1 - 0.206^2)} \approx 5.0 \times 10^{-7} \text{ radians per orbit} .
+$$
+
+Mercury completes an orbit every 88 days, about 415 times a century. Converting radians to arcseconds (one radian is 206,265 arcseconds):
+
+$$
+5.0 \times 10^{-7} \times 415 \times 206{,}265 \approx 43 \text{ arcseconds per century} .
+$$
+
+Einstein found this number in November 1915 with no adjustable constants, and wrote that he was beside himself with joy for days.
+
+The same theory predicts how much starlight bends grazing the Sun: $4GM/(c^2 R)$, where $R$ is the Sun's radius, about 1.75 arcseconds. That is twice what a Newtonian argument gives, which is why the 1919 eclipse could tell the two apart. Both effects are tiny because $GM/c^2$ for the Sun is only 1.5 km, compared with distances of tens of millions of kilometres. Where that ratio is not small, near black holes, the theory's effects dominate.
+
 ## Where the Map Runs Out
 
 General relativity predicts its own breakdown. In 1965 Roger Penrose proved that under very general conditions collapse produces a *singularity*, where curvature becomes infinite and the equations stop making sense. The universe's own beginning is another. At those points gravity and quantum physics must be combined, and no one knows how. Whether singularities always hide behind horizons is Penrose's cosmic censorship conjecture, a problem now pursued as much by [geometric analysts](/math/geometric-analysis/) as by physicists.
