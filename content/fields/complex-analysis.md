@@ -178,6 +178,7 @@ applications:
       the heart of quantum behaviour, comes from adding complex amplitudes. Unlike in
       classical physics, the complex numbers here cannot be removed.
     domain: physics
+    field_id: quantum-mechanics
     sources:
       - citation: "Schrödinger, E. (1926). Quantisierung als Eigenwertproblem. Annalen der Physik 79: 361–376."
         url: null

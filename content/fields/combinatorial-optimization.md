@@ -187,6 +187,7 @@ applications:
       matching problem and can be solved efficiently. In three dimensions it is NP-hard.
       The boundary between easy and hard optimisation matches a boundary in the physics.
     domain: physics
+    field_id: statistical-mechanics
     sources:
       - citation: "Barahona, F. (1982). On the computational complexity of Ising spin glass models. Journal of Physics A 15(10): 3241–3253."
         url: null

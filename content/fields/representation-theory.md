@@ -163,6 +163,7 @@ applications:
       existence of spin all follow from how rotation symmetry is represented on quantum
       states. Wigner's book made representation theory standard physics.
     domain: physics
+    field_id: quantum-mechanics
     sources:
       - citation: "Wigner, E. P. (1931). Gruppentheorie und ihre Anwendung auf die Quantenmechanik der Atomspektren. Vieweg."
         url: null
@@ -174,6 +175,7 @@ applications:
       particle, the $\Omega^-$, found in 1964. The Standard Model of particle physics is
       built on Lie groups and their representations.
     domain: physics
+    field_id: particle-physics
     sources:
       - citation: "Ne'eman, Y. (1961). Derivation of strong interactions from a gauge invariance. Nuclear Physics 26(2): 222–229."
         url: null

@@ -273,6 +273,7 @@ applications:
       disturbances cannot change the braid's topology, so the stored information would
       protect itself from noise. The mathematics is knot and 3-manifold invariants.
     domain: physics
+    field_id: quantum-information
     sources:
       - citation: "Freedman, M. H., Kitaev, A., Larsen, M. J. & Wang, Z. (2003). Topological quantum computation. Bulletin of the AMS 40(1): 31–38."
         url: null

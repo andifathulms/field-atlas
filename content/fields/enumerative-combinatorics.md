@@ -181,6 +181,7 @@ applications:
       arrangements consistent with what is observed. The laws of thermodynamics become
       statements about which kinds of arrangement vastly outnumber the others.
     domain: physics
+    field_id: statistical-mechanics
     sources:
       - citation: "Boltzmann, L. (1877). Über die Beziehung zwischen dem zweiten Hauptsatze der mechanischen Wärmetheorie und der Wahrscheinlichkeitsrechnung. Sitzungsberichte der Kaiserlichen Akademie der Wissenschaften Wien 76: 373–435."
         url: null

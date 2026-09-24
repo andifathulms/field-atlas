@@ -167,6 +167,7 @@ applications:
       measurements confirmed it, convincing sceptics that atoms exist. Random walks are
       now a basic tool of physics.
     domain: physics
+    field_id: kinetic-theory
     sources:
       - citation: "Einstein, A. (1905). Über die von der molekularkinetischen Theorie der Wärme geforderte Bewegung von in ruhenden Flüssigkeiten suspendierten Teilchen. Annalen der Physik 17: 549–560."
         url: null

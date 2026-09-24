@@ -177,6 +177,7 @@ applications:
       the justification: when a system is ergodic, this average equals what a
       measurement, taken over time, actually records.
     domain: physics
+    field_id: statistical-mechanics
     sources:
       - citation: "Moore, C. C. (2015). Ergodic theorem, ergodic theory, and statistical mechanics. Proceedings of the National Academy of Sciences 112(7): 1907–1911."
         url: null
