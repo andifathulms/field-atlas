@@ -597,5 +597,12 @@
   { "id": "g-evelyn-hutchinson", "name": "G. Evelyn Hutchinson", "turning_point_ids": ["hutchinson-niche"] },
   { "id": "joseph-connell", "name": "Joseph Connell", "turning_point_ids": ["connell-barnacles"] },
   { "id": "robert-paine", "name": "Robert Paine", "turning_point_ids": ["paine-keystone"] },
-  { "id": "stephen-hubbell", "name": "Stephen Hubbell", "turning_point_ids": ["hubbell-neutral"] }
+  { "id": "stephen-hubbell", "name": "Stephen Hubbell", "turning_point_ids": ["hubbell-neutral"] },
+  { "id": "arthur-tansley", "name": "Arthur Tansley", "turning_point_ids": ["tansley-ecosystem"] },
+  { "id": "raymond-lindeman", "name": "Raymond Lindeman", "turning_point_ids": ["lindeman-trophic-dynamics"] },
+  { "id": "eugene-odum", "name": "Eugene Odum", "turning_point_ids": ["odum-energy-flow"] },
+  { "id": "howard-odum", "name": "Howard T. Odum", "turning_point_ids": ["odum-energy-flow"] },
+  { "id": "charles-david-keeling", "name": "Charles David Keeling", "turning_point_ids": ["keeling-curve"] },
+  { "id": "gene-likens", "name": "Gene Likens", "turning_point_ids": ["hubbard-brook"] },
+  { "id": "herbert-bormann", "name": "F. Herbert Bormann", "turning_point_ids": ["hubbard-brook"] }
 ]
