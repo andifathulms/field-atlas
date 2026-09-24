@@ -56,11 +56,11 @@ turning_points:
     contested: false
     sources:
       - citation: "McGinnis, W., Garber, R. L., Wirz, J., Kuroiwa, A. & Gehring, W. J. (1984). A homologous protein-coding sequence in Drosophila homeotic genes and its conservation in other metazoans. Cell 37(2): 403–408."
-        url: null
+        url: https://doi.org/10.1016/0092-8674(84)90370-2
       - citation: "Duboule, D. & Dollé, P. (1989). The structural and functional organization of the murine HOX gene family resembles that of Drosophila homeotic genes. EMBO Journal 8(5): 1497–1505."
-        url: null
+        url: https://doi.org/10.1002/j.1460-2075.1989.tb03534.x
       - citation: "Graham, A., Papalopulu, N. & Krumlauf, R. (1989). The murine and Drosophila homeobox gene complexes have common features of organization and expression. Cell 57(3): 367–378."
-        url: null
+        url: https://doi.org/10.1016/0092-8674(89)90912-4
 
   - id: pax6-eyeless
     date: 1994 – 1995
@@ -80,9 +80,9 @@ turning_points:
       Pax6 implies about the history of eyes is still debated.
     sources:
       - citation: "Quiring, R., Walldorf, U., Kloter, U. & Gehring, W. J. (1994). Homology of the eyeless gene of Drosophila to the Small eye gene in mice and Aniridia in humans. Science 265(5173): 785–789."
-        url: null
+        url: https://doi.org/10.1126/science.7914031
       - citation: "Halder, G., Callaerts, P. & Gehring, W. J. (1995). Induction of ectopic eyes by targeted expression of the eyeless gene in Drosophila. Science 267(5205): 1788–1792."
-        url: null
+        url: https://doi.org/10.1126/science.7892602
 
   - id: evodevo-deep-homology
     date: "1997"
@@ -95,10 +95,10 @@ turning_points:
       older than the organs, and were borrowed again and again to build new ones.
     contested: false
     sources:
-      - citation: "Shubin, N., Tabin, C. & Carroll, S. (1997). Fossils, genes and the evolution of animal limbs. Nature 388: 639–648."
-        url: null
-      - citation: "Shubin, N., Tabin, C. & Carroll, S. (2009). Deep homology and the origins of evolutionary novelty. Nature 457: 818–823."
-        url: null
+      - citation: "Shubin, N., Tabin, C. & Carroll, S. (1997). Fossils, genes and the evolution of animal limbs. Nature 388(6643): 639–648."
+        url: https://doi.org/10.1038/41710
+      - citation: "Shubin, N., Tabin, C. & Carroll, S. (2009). Deep homology and the origins of evolutionary novelty. Nature 457(7231): 818–823."
+        url: https://doi.org/10.1038/nature07891
 
   - id: stickleback-pitx1
     date: 2004 – 2010
@@ -112,10 +112,10 @@ turning_points:
       have deleted that switch independently, again and again.
     contested: false
     sources:
-      - citation: "Shapiro, M. D. et al. (2004). Genetic and developmental basis of evolutionary pelvic reduction in threespine sticklebacks. Nature 428: 717–723."
-        url: null
+      - citation: "Shapiro, M. D. et al. (2004). Genetic and developmental basis of evolutionary pelvic reduction in threespine sticklebacks. Nature 428(6984): 717–723."
+        url: https://doi.org/10.1038/nature02415
       - citation: "Chan, Y. F. et al. (2010). Adaptive evolution of pelvic reduction in sticklebacks by recurrent deletion of a Pitx1 enhancer. Science 327(5963): 302–305."
-        url: null
+        url: https://doi.org/10.1126/science.1182213
 
   - id: evodevo-tiktaalik
     date: 2004 – 2006
@@ -129,10 +129,10 @@ turning_points:
       those of the limb, and gave developmental genetics a fossil to test itself against.
     contested: false
     sources:
-      - citation: "Daeschler, E. B., Shubin, N. H. & Jenkins, F. A. (2006). A Devonian tetrapod-like fish and the evolution of the tetrapod body plan. Nature 440: 757–763."
-        url: null
-      - citation: "Shubin, N. H., Daeschler, E. B. & Jenkins, F. A. (2006). The pectoral fin of Tiktaalik roseae and the origin of the tetrapod limb. Nature 440: 764–771."
-        url: null
+      - citation: "Daeschler, E. B., Shubin, N. H. & Jenkins, F. A. (2006). A Devonian tetrapod-like fish and the evolution of the tetrapod body plan. Nature 440(7085): 757–763."
+        url: https://doi.org/10.1038/nature04639
+      - citation: "Shubin, N. H., Daeschler, E. B. & Jenkins, F. A. (2006). The pectoral fin of Tiktaalik roseae and the origin of the tetrapod limb. Nature 440(7085): 764–771."
+        url: https://doi.org/10.1038/nature04637
 
   - id: evodevo-cis-regulation
     date: 1975 – 2007
@@ -152,11 +152,11 @@ turning_points:
       is still argued.
     sources:
       - citation: "King, M.-C. & Wilson, A. C. (1975). Evolution at two levels in humans and chimpanzees. Science 188(4184): 107–116."
-        url: null
+        url: https://doi.org/10.1126/science.1090005
       - citation: "Carroll, S. B. (2005). Endless Forms Most Beautiful: The New Science of Evo Devo. W. W. Norton."
         url: null
       - citation: "Hoekstra, H. E. & Coyne, J. A. (2007). The locus of evolution: evo devo and the genetics of adaptation. Evolution 61(5): 995–1016."
-        url: null
+        url: https://doi.org/10.1111/j.1558-5646.2007.00105.x
 
 open_problems:
   - id: evodevo-novelty
@@ -177,8 +177,8 @@ open_problems:
       A theory of how evolution creates, not only modifies, and of the origin of the major
       animal body plans.
     sources:
-      - citation: "Shubin, N., Tabin, C. & Carroll, S. (2009). Deep homology and the origins of evolutionary novelty. Nature 457: 818–823."
-        url: null
+      - citation: "Shubin, N., Tabin, C. & Carroll, S. (2009). Deep homology and the origins of evolutionary novelty. Nature 457(7231): 818–823."
+        url: https://doi.org/10.1038/nature07891
       - citation: "Wagner, G. P. (2014). Homology, Genes, and Evolutionary Innovation. Princeton University Press."
         url: null
 
@@ -191,7 +191,7 @@ applications:
       limbs in mice and chicks explained why.
     sources:
       - citation: "Muragaki, Y., Mundlos, S., Upton, J. & Olsen, B. R. (1996). Altered growth and branching patterns in synpolydactyly caused by mutations in HOXD13. Science 272(5261): 548–551."
-        url: null
+        url: https://doi.org/10.1126/science.272.5261.548
   - area: Agriculture
     title: How maize was made
     description: >-
@@ -199,8 +199,8 @@ applications:
       from the gene teosinte branched1, whose switch is set higher in maize, suppressing
       side branches. Crop domestication is evo-devo at speed, driven by human selection.
     sources:
-      - citation: "Doebley, J., Stec, A. & Hubbard, L. (1997). The evolution of apical dominance in maize. Nature 386: 485–488."
-        url: null
+      - citation: "Doebley, J., Stec, A. & Hubbard, L. (1997). The evolution of apical dominance in maize. Nature 386(6624): 485–488."
+        url: https://doi.org/10.1038/386485a0
 
 further_reading:
   - citation: "Carroll, S. B. (2005). Endless Forms Most Beautiful: The New Science of Evo Devo. W. W. Norton."
@@ -216,7 +216,7 @@ further_reading:
 
 ## An Unexpected Unity
 
-{{fig:darwin|Darwin}}, in an 1860 letter, called embryology "by far the strongest single class of facts" in favour of evolution, and Haeckel built a theory on it. But in the twentieth century [evolutionary biology](/biology/evolutionary-biology/) became a science of gene frequencies in populations, and development dropped out of it. Most biologists assumed that a fly and a mouse, which share no body parts, are built by unrelated genes.
+{{fig:darwin|Darwin}} wrote in an 1860 letter that embryology was to him "by far strongest single class of facts in favour of change of form", and Haeckel built a theory on it. But in the twentieth century [evolutionary biology](/biology/evolutionary-biology/) became a science of gene frequencies in populations, and development dropped out of it. Most biologists assumed that a fly and a mouse, which share no body parts, are built by unrelated genes.
 
 The homeobox overturned that. Within months of its discovery in fly genes by [developmental genetics](/biology/developmental-genetics/), {{fig:william-mcginnis|William McGinnis}} and others found it in frogs, mice and humans. By 1989 the mouse Hox genes were known to sit in clusters, in the same order as the fly's, and to be switched on along the body in the same order, head to tail. The last common ancestor of flies and mice, a small animal living well over 550 million years ago, already used them to tell its front from its back.
 

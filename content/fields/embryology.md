@@ -118,8 +118,8 @@ turning_points:
     type: SYNTHESIS
     title: Haeckel's biogenetic law and his drawings
     description: >-
-      Ernst Haeckel, Darwin's leading German champion, proposes that "ontogeny recapitulates
-      phylogeny": an embryo climbs its own family tree, passing through fish-like and
+      Ernst Haeckel, Darwin's leading German champion, proposes what became the slogan
+      "ontogeny recapitulates phylogeny": an embryo climbs its own family tree, passing through fish-like and
       reptile-like stages. His plates of vertebrate embryos side by side, published from
       1868 and in Anthropogenie in 1874, made the argument vivid and were copied into
       textbooks for a century.
@@ -135,7 +135,7 @@ turning_points:
       - citation: "Haeckel, E. (1874). Anthropogenie oder Entwickelungsgeschichte des Menschen. Engelmann, Leipzig."
         url: null
       - citation: "Richardson, M. K. et al. (1997). There is no highly conserved embryonic stage in the vertebrates: implications for current theories of evolution and development. Anatomy and Embryology 196(2): 91–106."
-        url: null
+        url: https://doi.org/10.1007/s004290050082
       - citation: "Hopwood, N. (2015). Haeckel's Embryos: Images, Evolution, and Fraud. University of Chicago Press."
         url: null
 
@@ -158,10 +158,10 @@ open_problems:
       An understanding of why body plans have stayed fixed for five hundred million years
       while everything else about animals has changed.
     sources:
-      - citation: "Kalinka, A. T. et al. (2010). Gene expression divergence recapitulates the developmental hourglass model. Nature 468: 811–814."
-        url: null
-      - citation: "Domazet-Lošo, T. & Tautz, D. (2010). A phylogenetically based transcriptome age index mirrors ontogenetic divergence patterns. Nature 468: 815–818."
-        url: null
+      - citation: "Kalinka, A. T. et al. (2010). Gene expression divergence recapitulates the developmental hourglass model. Nature 468(7325): 811–814."
+        url: https://doi.org/10.1038/nature09634
+      - citation: "Domazet-Lošo, T. & Tautz, D. (2010). A phylogenetically based transcriptome age index mirrors ontogenetic divergence patterns. Nature 468(7325): 815–818."
+        url: https://doi.org/10.1038/nature09632
 
 applications:
   - area: Medicine
@@ -173,7 +173,7 @@ applications:
       been born by IVF.
     sources:
       - citation: "Steptoe, P. C. & Edwards, R. G. (1978). Birth after the reimplantation of a human embryo. The Lancet 312(8085): 366."
-        url: null
+        url: https://doi.org/10.1016/S0140-6736(78)92957-4
   - area: Medicine
     title: Birth defects and their timing
     description: >-
@@ -183,7 +183,7 @@ applications:
       form. Drugs are now tested for such effects before approval.
     sources:
       - citation: "Vargesson, N. (2015). Thalidomide-induced teratogenesis: history and mechanisms. Birth Defects Research Part C 105(2): 140–156."
-        url: null
+        url: https://doi.org/10.1002/bdrc.21096
 
 further_reading:
   - citation: "Needham, J. (1934). A History of Embryology. Cambridge University Press."

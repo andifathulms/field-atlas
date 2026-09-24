@@ -56,8 +56,8 @@ turning_points:
       later called colinearity.
     contested: false
     sources:
-      - citation: "Lewis, E. B. (1978). A gene complex controlling segmentation in Drosophila. Nature 276: 565–570."
-        url: null
+      - citation: "Lewis, E. B. (1978). A gene complex controlling segmentation in Drosophila. Nature 276(5688): 565–570."
+        url: https://doi.org/10.1038/276565a0
 
   - id: worm-cell-lineage
     date: 1974 – 1983
@@ -72,9 +72,9 @@ turning_points:
     contested: false
     sources:
       - citation: "Brenner, S. (1974). The genetics of Caenorhabditis elegans. Genetics 77(1): 71–94."
-        url: null
+        url: https://doi.org/10.1093/genetics/77.1.71
       - citation: "Sulston, J. E., Schierenberg, E., White, J. G. & Thomson, J. N. (1983). The embryonic cell lineage of the nematode Caenorhabditis elegans. Developmental Biology 100(1): 64–119."
-        url: null
+        url: https://doi.org/10.1016/0012-1606(83)90201-4
 
   - id: heidelberg-screen
     date: "1980"
@@ -88,8 +88,8 @@ turning_points:
       classes by the defects they cause. With Lewis they shared the 1995 Nobel prize.
     contested: false
     sources:
-      - citation: "Nüsslein-Volhard, C. & Wieschaus, E. (1980). Mutations affecting segment number and polarity in Drosophila. Nature 287: 795–801."
-        url: null
+      - citation: "Nüsslein-Volhard, C. & Wieschaus, E. (1980). Mutations affecting segment number and polarity in Drosophila. Nature 287(5785): 795–801."
+        url: https://doi.org/10.1038/287795a0
 
   - id: homeobox-discovery
     date: "1984"
@@ -103,10 +103,10 @@ turning_points:
       frogs, mice and humans.
     contested: false
     sources:
-      - citation: "McGinnis, W., Levine, M. S., Hafen, E., Kuroiwa, A. & Gehring, W. J. (1984). A conserved DNA sequence in homoeotic genes of the Drosophila Antennapedia and bithorax complexes. Nature 308: 428–433."
-        url: null
+      - citation: "McGinnis, W., Levine, M. S., Hafen, E., Kuroiwa, A. & Gehring, W. J. (1984). A conserved DNA sequence in homoeotic genes of the Drosophila Antennapedia and bithorax complexes. Nature 308(5958): 428–433."
+        url: https://doi.org/10.1038/308428a0
       - citation: "Scott, M. P. & Weiner, A. J. (1984). Structural relationships among genes that control development: sequence homology between the Antennapedia, Ultrabithorax, and fushi tarazu loci of Drosophila. Proceedings of the National Academy of Sciences 81(13): 4115–4119."
-        url: null
+        url: https://doi.org/10.1073/pnas.81.13.4115
 
   - id: worm-programmed-cell-death
     date: "1986"
@@ -121,24 +121,26 @@ turning_points:
     contested: false
     sources:
       - citation: "Ellis, H. M. & Horvitz, H. R. (1986). Genetic control of programmed cell death in the nematode C. elegans. Cell 44(6): 817–829."
-        url: null
+        url: https://doi.org/10.1016/0092-8674(86)90004-8
 
   - id: bicoid-gradient
     date: "1988"
     type: DISCOVERY
     title: The Bicoid gradient
     description: >-
-      Wolfgang Driever and Christiane Nüsslein-Volhard show that the mother deposits the
-      messenger RNA of the gene bicoid at the front end of the egg. Its protein spreads
+      Wolfgang Driever, Christiane Nüsslein-Volhard and colleagues show that the mother
+      deposits the messenger RNA of the gene bicoid at the front end of the egg. Its protein spreads
       back to form a gradient, highest at the head. Adding extra copies of the gene shifts
       the pattern of the embryo towards the rear. It was the first molecule shown to act as
       a morphogen, as Wolpert had predicted.
     contested: false
     sources:
       - citation: "Driever, W. & Nüsslein-Volhard, C. (1988). A gradient of bicoid protein in Drosophila embryos. Cell 54(1): 83–93."
-        url: null
+        url: https://doi.org/10.1016/0092-8674(88)90182-1
       - citation: "Driever, W. & Nüsslein-Volhard, C. (1988). The bicoid protein determines position in the Drosophila embryo in a concentration-dependent manner. Cell 54(1): 95–104."
-        url: null
+        url: https://doi.org/10.1016/0092-8674(88)90183-3
+      - citation: "Berleth, T., Burri, M., Thoma, G., Bopp, D., Richstein, S., Frigerio, G., Noll, M. & Nüsslein-Volhard, C. (1988). The role of localization of bicoid RNA in organizing the anterior pattern of the Drosophila embryo. EMBO Journal 7(6): 1749–1756."
+        url: https://doi.org/10.1002/j.1460-2075.1988.tb03004.x
 
 open_problems:
   - id: dev-organ-size-control
@@ -160,7 +162,7 @@ open_problems:
       grow tissues to the right size for repair.
     sources:
       - citation: "Pan, D. (2010). The Hippo signaling pathway in development and cancer. Developmental Cell 19(4): 491–505."
-        url: null
+        url: https://doi.org/10.1016/j.devcel.2010.09.011
 
 applications:
   - area: Physics
@@ -175,7 +177,7 @@ applications:
     field_id: kinetic-theory
     sources:
       - citation: "Gregor, T., Tank, D. W., Wieschaus, E. F. & Bialek, W. (2007). Probing the limits to positional information. Cell 130(1): 153–164."
-        url: null
+        url: https://doi.org/10.1016/j.cell.2007.05.025
   - area: Cancer medicine
     title: Drugs from the fly's patterning genes
     description: >-
@@ -185,7 +187,7 @@ applications:
       was approved in 2012.
     sources:
       - citation: "Von Hoff, D. D. et al. (2009). Inhibition of the hedgehog pathway in advanced basal-cell carcinoma. New England Journal of Medicine 361(12): 1164–1172."
-        url: null
+        url: https://doi.org/10.1056/NEJMoa0905360
   - area: Cancer medicine
     title: Switching cell death back on
     description: >-
@@ -194,7 +196,7 @@ applications:
       to treat chronic lymphocytic leukaemia.
     sources:
       - citation: "Roberts, A. W. et al. (2016). Targeting BCL2 with venetoclax in relapsed chronic lymphocytic leukemia. New England Journal of Medicine 374(4): 311–322."
-        url: null
+        url: https://doi.org/10.1056/NEJMoa1513257
 
 further_reading:
   - citation: "Nüsslein-Volhard, C. (2006). Coming to Life: How Genes Drive Development. Kales Press."
@@ -218,7 +220,7 @@ A few kept the link alive. In 1915 Calvin Bridges found a fly whose tiny balanci
 
 In 1979 {{fig:christiane-nusslein-volhard|Christiane Nüsslein-Volhard}} and {{fig:eric-wieschaus|Eric Wieschaus}} set out to find every gene needed to lay out the body of a fly larva. They mutated flies, bred thousands of lines and examined the dead embryos of each under a two-headed microscope. The mutants fell into classes. Gap mutants lacked a broad block of segments. Pair-rule mutants lacked every other segment. Segment-polarity mutants had each segment's pattern half replaced by a mirror image of the other half. The classes turned out to be tiers of a cascade that divides the embryo more and more finely.
 
-The cascade starts with the mother. {{fig:wolfgang-driever|Wolfgang Driever}} and Nüsslein-Volhard showed in 1988 that the mother places the messenger RNA of bicoid at the front of the egg. Its protein spreads backwards and forms a gradient, and the genes below it read the concentration. Here was Wolpert's [positional information](/biology/experimental-embryology/), as a molecule.
+The cascade starts with the mother. {{fig:wolfgang-driever|Wolfgang Driever}}, Nüsslein-Volhard and colleagues showed in 1988 that the mother places the messenger RNA of bicoid at the front of the egg. Its protein spreads backwards and forms a gradient, and the genes below it read the concentration. Here was Wolpert's [positional information](/biology/experimental-embryology/), as a molecule.
 
 Why did the genes work? In 1984 {{fig:william-mcginnis|William McGinnis}} and Michael Levine in {{fig:walter-gehring|Walter Gehring}}'s laboratory, and {{fig:matthew-scott|Matthew Scott}} and Amy Weiner in Indiana, found that homeotic genes share a stretch of DNA, the homeobox. It encodes part of a protein that binds DNA. These genes make switches that turn other genes on and off. Within months the homeobox turned up in vertebrates, and [evolutionary developmental biology](/biology/evo-devo/) was born.
 

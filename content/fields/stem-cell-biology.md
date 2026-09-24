@@ -46,13 +46,13 @@ turning_points:
       own marrow has been destroyed by radiation. Lumps appear on the spleen, and their
       number rises in proportion to the number of cells injected. In 1963 they show that
       each lump is a clone, descended from a single cell, containing several kinds of blood
-      cell and more cells like its founder. It was the first proof that stem cells exist.
+      cell and more cells like its founder. It was the first direct evidence that stem cells exist.
     contested: false
     sources:
       - citation: "Till, J. E. & McCulloch, E. A. (1961). A direct measurement of the radiation sensitivity of normal mouse bone marrow cells. Radiation Research 14(2): 213–222."
-        url: null
-      - citation: "Becker, A. J., McCulloch, E. A. & Till, J. E. (1963). Cytological demonstration of the clonal nature of spleen colonies derived from transplanted mouse marrow cells. Nature 197: 452–454."
-        url: null
+        url: https://doi.org/10.2307/3570892
+      - citation: "Becker, A. J., McCulloch, E. A. & Till, J. E. (1963). Cytological demonstration of the clonal nature of spleen colonies derived from transplanted mouse marrow cells. Nature 197(4866): 452–454."
+        url: https://doi.org/10.1038/197452a0
 
   - id: mouse-es-cells
     date: "1981"
@@ -66,10 +66,10 @@ turning_points:
       engineer mice with chosen genes altered. Evans shared the 2007 Nobel prize for that.
     contested: false
     sources:
-      - citation: "Evans, M. J. & Kaufman, M. H. (1981). Establishment in culture of pluripotential cells from mouse embryos. Nature 292: 154–156."
-        url: null
+      - citation: "Evans, M. J. & Kaufman, M. H. (1981). Establishment in culture of pluripotential cells from mouse embryos. Nature 292(5819): 154–156."
+        url: https://doi.org/10.1038/292154a0
       - citation: "Martin, G. R. (1981). Isolation of a pluripotent cell line from early mouse embryos cultured in medium conditioned by teratocarcinoma stem cells. Proceedings of the National Academy of Sciences 78(12): 7634–7638."
-        url: null
+        url: https://doi.org/10.1073/pnas.78.12.7634
 
   - id: human-es-cells
     date: "1998"
@@ -84,7 +84,7 @@ turning_points:
     contested: false
     sources:
       - citation: "Thomson, J. A. et al. (1998). Embryonic stem cell lines derived from human blastocysts. Science 282(5391): 1145–1147."
-        url: null
+        url: https://doi.org/10.1126/science.282.5391.1145
 
   - id: hwang-fraud
     date: 2004 – 2006
@@ -100,9 +100,9 @@ turning_points:
     contested: false
     sources:
       - citation: "Kennedy, D. (2006). Editorial retraction. Science 311(5759): 335."
-        url: null
+        url: https://doi.org/10.1126/science.1124926
       - citation: "Kim, K. et al. (2007). Recombination signatures distinguish embryonic stem cells derived by parthenogenesis and somatic cell nuclear transfer. Cell Stem Cell 1(3): 346–352."
-        url: null
+        url: https://doi.org/10.1016/j.stem.2007.07.001
 
   - id: ips-cells
     date: 2006 – 2007
@@ -117,9 +117,9 @@ turning_points:
     contested: false
     sources:
       - citation: "Takahashi, K. & Yamanaka, S. (2006). Induction of pluripotent stem cells from mouse embryonic and adult fibroblast cultures by defined factors. Cell 126(4): 663–676."
-        url: null
+        url: https://doi.org/10.1016/j.cell.2006.07.024
       - citation: "Takahashi, K. et al. (2007). Induction of pluripotent stem cells from adult human fibroblasts by defined factors. Cell 131(5): 861–872."
-        url: null
+        url: https://doi.org/10.1016/j.cell.2007.11.019
 
   - id: intestinal-organoids
     date: "2009"
@@ -133,8 +133,8 @@ turning_points:
       pluripotent stem cells.
     contested: false
     sources:
-      - citation: "Sato, T. et al. (2009). Single Lgr5 stem cells build crypt–villus structures in vitro without a mesenchymal niche. Nature 459: 262–265."
-        url: null
+      - citation: "Sato, T. et al. (2009). Single Lgr5 stem cells build crypt–villus structures in vitro without a mesenchymal niche. Nature 459(7244): 262–265."
+        url: https://doi.org/10.1038/nature07935
 
   - id: stap-retraction
     date: "2014"
@@ -148,14 +148,14 @@ turning_points:
       One of the senior authors, Yoshiki Sasai, took his own life.
     contested: false
     sources:
-      - citation: "Obokata, H. et al. (2014). Stimulus-triggered fate conversion of somatic cells into pluripotency. Nature 505: 641–647. Retracted."
-        url: null
+      - citation: "Obokata, H. et al. (2014). Stimulus-triggered fate conversion of somatic cells into pluripotency. Nature 505(7485): 641–647. Retracted."
+        url: https://doi.org/10.1038/nature12968
 
 open_problems:
   - id: stem-cell-organ-replacement
     name: Can stem cells rebuild a working organ?
     status: open
-    status_note: Open as of writing; cells for a few tissues are in trials, whole organs are not in reach.
+    status_note: Open as of writing; the first iPS-derived cell therapies won conditional approval in Japan in 2026, but whole organs are not in reach.
     description: >-
       Stem cells can now be turned into heart muscle, nerve cells, retina and insulin-making
       cells, and organoids mimic parts of many organs. None of these is yet a replacement
@@ -171,7 +171,9 @@ open_problems:
       and degenerative diseases of the brain and eye.
     sources:
       - citation: "Lancaster, M. A. & Knoblich, J. A. (2014). Organogenesis in a dish: modeling development and disease using organoid technologies. Science 345(6194): 1247125."
-        url: null
+        url: https://doi.org/10.1126/science.1247125
+      - citation: "Sumitomo Pharma (2026). Approval of the allogeneic iPS cell-derived dopaminergic neural progenitor cell product AMCHEPRY in Japan. Press release, 6 March 2026."
+        url: https://www.sumitomo-pharma.com/news/20260306.html
 
 applications:
   - area: Medicine
@@ -183,7 +185,7 @@ applications:
       million transplants have been performed.
     sources:
       - citation: "Appelbaum, F. R. (2007). Hematopoietic-cell transplantation at 50. New England Journal of Medicine 357(15): 1472–1475."
-        url: null
+        url: https://doi.org/10.1056/NEJMp078166
   - area: Medicine
     title: A retina from the patient's own cells
     description: >-
@@ -193,7 +195,7 @@ applications:
       have followed.
     sources:
       - citation: "Mandai, M. et al. (2017). Autologous induced stem-cell–derived retinal cells for macular degeneration. New England Journal of Medicine 376(11): 1038–1046."
-        url: null
+        url: https://doi.org/10.1056/NEJMoa1608368
   - area: Mathematics
     title: Reprogramming as a random process
     description: >-
@@ -204,8 +206,8 @@ applications:
     domain: math
     field_id: probability-theory
     sources:
-      - citation: "Hanna, J. et al. (2009). Direct cell reprogramming is a stochastic process amenable to acceleration. Nature 462: 595–601."
-        url: null
+      - citation: "Hanna, J. et al. (2009). Direct cell reprogramming is a stochastic process amenable to acceleration. Nature 462(7273): 595–601."
+        url: https://doi.org/10.1038/nature08592
 
 further_reading:
   - citation: "Slack, J. M. W. (2012). Stem Cells: A Very Short Introduction. Oxford University Press."
@@ -215,7 +217,7 @@ further_reading:
     url: null
     note: A practical guide, including how to judge claims of stem cell cures.
   - citation: "Gurdon, J. B. & Melton, D. A. (2008). Nuclear reprogramming in cells. Science 322(5909): 1811–1815."
-    url: null
+    url: https://doi.org/10.1126/science.1160810
     note: A review of reprogramming, from frogs to induced stem cells.
 ---
 
@@ -263,4 +265,4 @@ Reprogramming was rare. In the early experiments only a small fraction of cells,
 
 ## Cells to Organs
 
-iPS cells spread quickly because anyone could make them from a skin sample, with no embryo involved. Patients' own cells could be turned into neurons or heart cells to study their disease in a dish. In 2009 {{fig:toshiro-sato|Toshiro Sato}} and {{fig:hans-clevers|Hans Clevers}} showed that single stem cells from the gut, given the right signals, build miniature gut linings, a founding result for the modern study of organoids. The field also suffered a second scandal in 2014, when claims that an acid bath could make stem cells collapsed within months. The first treatments with cells made from iPS cells are in trials. Replacing a whole organ remains out of reach. It will need what [developmental genetics](/biology/developmental-genetics/) has learned about how organs are laid out, and what [cell biology](/biology/cell-biology/) knows about how cells hold their shape and identity.
+iPS cells spread quickly because anyone could make them from a skin sample, with no embryo involved. Patients' own cells could be turned into neurons or heart cells to study their disease in a dish. In 2009 {{fig:toshiro-sato|Toshiro Sato}} and {{fig:hans-clevers|Hans Clevers}} showed that single stem cells from the gut, given the right signals, build miniature gut linings, a founding result for the modern study of organoids. The field also suffered a second scandal in 2014, when claims that an acid bath could make stem cells collapsed within months. In 2026 Japan gave conditional, time-limited approval to the first two treatments made from iPS cells: nerve cells for Parkinson's disease and sheets of heart muscle for heart failure. Replacing a whole organ remains out of reach. It will need what [developmental genetics](/biology/developmental-genetics/) has learned about how organs are laid out, and what [cell biology](/biology/cell-biology/) knows about how cells hold their shape and identity.
