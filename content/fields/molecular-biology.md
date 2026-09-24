@@ -57,9 +57,9 @@ turning_points:
     contested: false
     sources:
       - citation: "Avery, O. T., MacLeod, C. M. & McCarty, M. (1944). Studies on the chemical nature of the substance inducing transformation of pneumococcal types. Journal of Experimental Medicine 79(2): 137–158."
-        url: null
+        url: https://doi.org/10.1084/jem.79.2.137
       - citation: "Hershey, A. D. & Chase, M. (1952). Independent functions of viral protein and nucleic acid in growth of bacteriophage. Journal of General Physiology 36(1): 39–56."
-        url: null
+        url: https://doi.org/10.1085/jgp.36.1.39
 
   - id: double-helix
     date: "1953"
@@ -84,9 +84,9 @@ turning_points:
       portrayal of her in *The Double Helix* (1968).
     sources:
       - citation: "Watson, J. D. & Crick, F. H. C. (1953). Molecular structure of nucleic acids: a structure for deoxyribose nucleic acid. Nature 171(4356): 737–738."
-        url: null
+        url: https://doi.org/10.1038/171737a0
       - citation: "Franklin, R. E. & Gosling, R. G. (1953). Molecular configuration in sodium thymonucleate. Nature 171(4356): 740–741."
-        url: null
+        url: https://doi.org/10.1038/171740a0
       - citation: "Maddox, B. (2002). Rosalind Franklin: The Dark Lady of DNA. HarperCollins."
         url: null
       - citation: "Cobb, M. & Comfort, N. (2023). What Rosalind Franklin truly contributed to the discovery of DNA's structure. Nature 616(7958): 657–660."
@@ -119,7 +119,7 @@ turning_points:
     contested: false
     sources:
       - citation: "Nirenberg, M. W. & Matthaei, J. H. (1961). The dependence of cell-free protein synthesis in E. coli upon naturally occurring or synthetic polyribonucleotides. Proceedings of the National Academy of Sciences 47(10): 1588–1602."
-        url: null
+        url: https://doi.org/10.1073/pnas.47.10.1588
 
   - id: reverse-transcriptase
     date: "1970"
@@ -134,9 +134,9 @@ turning_points:
     contested: false
     sources:
       - citation: "Temin, H. M. & Mizutani, S. (1970). RNA-dependent DNA polymerase in virions of Rous sarcoma virus. Nature 226(5252): 1211–1213."
-        url: null
+        url: https://doi.org/10.1038/2261211a0
       - citation: "Baltimore, D. (1970). RNA-dependent DNA polymerase in virions of RNA tumour viruses. Nature 226(5252): 1209–1211."
-        url: null
+        url: https://doi.org/10.1038/2261209a0
 
   - id: recombinant-dna
     date: "1973"
@@ -144,14 +144,15 @@ turning_points:
     title: Genes are cut, joined and moved between organisms
     description: >-
       Stanley Cohen and Herbert Boyer combine restriction enzymes, which cut DNA at
-      specific sequences, with bacterial plasmids to move a gene from one organism into
-      another, where it works. Genetic engineering begins. Concern about its risks led
+      specific sequences, with bacterial plasmids to splice genes into new, working
+      combinations. Within months they move genes from other species into bacteria.
+      Genetic engineering begins. Concern about its risks led
       scientists to pause and set their own safety rules at the Asilomar conference in
       1975.
     contested: false
     sources:
       - citation: "Cohen, S. N., Chang, A. C. Y., Boyer, H. W. & Helling, R. B. (1973). Construction of biologically functional bacterial plasmids in vitro. Proceedings of the National Academy of Sciences 70(11): 3240–3244."
-        url: null
+        url: https://doi.org/10.1073/pnas.70.11.3240
 
 open_problems:
   - id: protein-folding
@@ -173,8 +174,8 @@ open_problems:
       the study of disease. Understanding folding itself, and misfolding in diseases
       like Alzheimer's, is still open.
     sources:
-      - citation: "Jumper, J. et al. (2021). Highly accurate protein structure prediction with AlphaFold. Nature 596: 583–589."
-        url: null
+      - citation: "Jumper, J. et al. (2021). Highly accurate protein structure prediction with AlphaFold. Nature 596(7873): 583–589."
+        url: https://doi.org/10.1038/s41586-021-03819-2
 
   - id: origin-of-genetic-code
     name: The origin of the genetic code
@@ -194,7 +195,7 @@ open_problems:
       the origin of life itself happened.
     sources:
       - citation: "Koonin, E. V. & Novozhilov, A. S. (2009). Origin and evolution of the genetic code: the universal enigma. IUBMB Life 61(2): 99–111."
-        url: null
+        url: https://doi.org/10.1002/iub.146
 
 applications:
   - area: Medicine
@@ -205,7 +206,7 @@ applications:
       genetic engineering, and it replaced insulin taken from pigs and cattle.
     sources:
       - citation: "Goeddel, D. V. et al. (1979). Expression in Escherichia coli of chemically synthesized genes for human insulin. Proceedings of the National Academy of Sciences 76(1): 106–110."
-        url: null
+        url: https://doi.org/10.1073/pnas.76.1.106
   - area: Vaccines
     title: mRNA vaccines
     description: >-
@@ -215,7 +216,7 @@ applications:
       inflammation made the COVID-19 vaccines possible.
     sources:
       - citation: "Karikó, K., Buckstein, M., Ni, H. & Weissman, D. (2005). Suppression of RNA recognition by Toll-like receptors: the impact of nucleoside modification and the evolutionary origin of RNA. Immunity 23(2): 165–175."
-        url: null
+        url: https://doi.org/10.1016/j.immuni.2005.06.008
   - area: Forensics
     title: DNA fingerprinting
     description: >-
@@ -223,8 +224,8 @@ applications:
       people that they identify individuals. DNA evidence was first used in a criminal
       case in 1986–88, and it is now routine in forensics and paternity testing.
     sources:
-      - citation: "Jeffreys, A. J., Wilson, V. & Thein, S. L. (1985). Hypervariable 'minisatellite' regions in human DNA. Nature 314: 67–73."
-        url: null
+      - citation: "Jeffreys, A. J., Wilson, V. & Thein, S. L. (1985). Hypervariable 'minisatellite' regions in human DNA. Nature 314(6006): 67–73."
+        url: https://doi.org/10.1038/314067a0
 
 further_reading:
   - citation: "Judson, H. F. (1979). The Eighth Day of Creation: Makers of the Revolution in Biology. Simon & Schuster."
@@ -286,4 +287,4 @@ Copying is astonishingly accurate. The enzymes that copy DNA make roughly one er
 
 The popular version of the dogma soon needed revising. In 1970 {{fig:temin|Howard Temin}} and {{fig:baltimore|David Baltimore}} found that some viruses copy RNA back into DNA using reverse transcriptase, an enzyme that later made HIV understandable, and treatable.
 
-Then biologists learned to write. In 1973 {{fig:stanley-cohen|Stanley Cohen}} and {{fig:boyer|Herbert Boyer}} cut DNA with enzymes that snip at specific sequences, stitched a gene into a small bacterial chromosome, and watched bacteria express it. Worried about what they had unleashed, scientists paused their own research and drew up safety rules at Asilomar in 1975. Within a decade bacteria were making human insulin. The ability to read DNA at scale, not just gene by gene, is the story of [genomics](/biology/genomics/).
+Then biologists learned to write. In 1973 {{fig:stanley-cohen|Stanley Cohen}} and {{fig:boyer|Herbert Boyer}} cut DNA with enzymes that snip at specific sequences, stitched a gene into a plasmid, a small ring of bacterial DNA, and watched bacteria express it. Worried about what they had unleashed, scientists paused their own research and drew up safety rules at Asilomar in 1975. Within a decade bacteria were making human insulin. The ability to read DNA at scale, not just gene by gene, is the story of [genomics](/biology/genomics/).

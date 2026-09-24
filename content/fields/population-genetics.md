@@ -63,7 +63,7 @@ turning_points:
       Pearson and Udny Yule had discussed related results.
     sources:
       - citation: "Hardy, G. H. (1908). Mendelian proportions in a mixed population. Science 28(706): 49–50."
-        url: null
+        url: https://doi.org/10.1126/science.28.706.49
       - citation: "Weinberg, W. (1908). Über den Nachweis der Vererbung beim Menschen. Jahreshefte des Vereins für vaterländische Naturkunde in Württemberg 64: 368–382."
         url: null
 
@@ -79,8 +79,8 @@ turning_points:
       introduces the idea of analysing variance.
     contested: false
     sources:
-      - citation: "Fisher, R. A. (1918). The correlation between relatives on the supposition of Mendelian inheritance. Transactions of the Royal Society of Edinburgh 52: 399–433."
-        url: null
+      - citation: "Fisher, R. A. (1918). The correlation between relatives on the supposition of Mendelian inheritance. Transactions of the Royal Society of Edinburgh 52(2): 399–433."
+        url: https://doi.org/10.1017/S0080456800012163
 
   - id: classical-population-genetics
     date: 1930 – 1932
@@ -102,7 +102,7 @@ turning_points:
       - citation: "Fisher, R. A. (1930). The Genetical Theory of Natural Selection. Clarendon Press, Oxford."
         url: null
       - citation: "Wright, S. (1931). Evolution in Mendelian populations. Genetics 16(2): 97–159."
-        url: null
+        url: https://doi.org/10.1093/genetics/16.2.97
       - citation: "Haldane, J. B. S. (1932). The Causes of Evolution. Longmans, Green."
         url: null
 
@@ -141,7 +141,7 @@ turning_points:
       selection on nearby sites shapes the rest, is still argued with genome-scale data.
     sources:
       - citation: "Kimura, M. (1968). Evolutionary rate at the molecular level. Nature 217(5129): 624–626."
-        url: null
+        url: https://doi.org/10.1038/217624a0
 
 open_problems:
   - id: lewontins-paradox
@@ -150,7 +150,7 @@ open_problems:
     status_note: Open as of writing; candidate explanations exist, but none accounts for the full pattern.
     description: >-
       Simple theory says a species' genetic diversity should scale with its population
-      size. Yet diversity varies only about a hundredfold across species whose
+      size. Yet diversity varies less than a thousandfold across animal species whose
       populations differ by many orders of magnitude, from whales to
       insects. Richard Lewontin highlighted the puzzle in 1974.
     why_hard: >-
@@ -165,7 +165,7 @@ open_problems:
       - citation: "Lewontin, R. C. (1974). The Genetic Basis of Evolutionary Change. Columbia University Press."
         url: null
       - citation: "Leffler, E. M. et al. (2012). Revisiting an old riddle: what determines genetic diversity levels within species? PLoS Biology 10(9): e1001388."
-        url: null
+        url: https://doi.org/10.1371/journal.pbio.1001388
 
 applications:
   - area: Statistics
@@ -189,7 +189,7 @@ applications:
       the population grew, as population-genetic theory predicted.
     sources:
       - citation: "Johnson, W. E. et al. (2010). Genetic restoration of the Florida panther. Science 329(5999): 1641–1645."
-        url: null
+        url: https://doi.org/10.1126/science.1192891
   - area: Human history
     title: Reading migrations from gene frequencies
     description: >-

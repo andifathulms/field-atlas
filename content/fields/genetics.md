@@ -63,7 +63,7 @@ turning_points:
       - citation: "Mendel, G. (1866). Versuche über Pflanzen-Hybriden. Verhandlungen des naturforschenden Vereines in Brünn 4: 3–47."
         url: null
       - citation: "Fisher, R. A. (1936). Has Mendel's work been rediscovered? Annals of Science 1(2): 115–137."
-        url: null
+        url: https://doi.org/10.1080/00033793600200111
       - citation: "Franklin, A., Edwards, A. W. F., Fairbanks, D. J., Hartl, D. L. & Seidenfeld, T. (2008). Ending the Mendel–Fisher Controversy. University of Pittsburgh Press."
         url: null
 
@@ -99,9 +99,9 @@ turning_points:
     contested: false
     sources:
       - citation: "Morgan, T. H. (1910). Sex limited inheritance in Drosophila. Science 32(812): 120–122."
-        url: null
+        url: https://doi.org/10.1126/science.32.812.120
       - citation: "Sturtevant, A. H. (1913). The linear arrangement of six sex-linked factors in Drosophila, as shown by their mode of association. Journal of Experimental Zoology 14(1): 43–59."
-        url: null
+        url: https://doi.org/10.1002/jez.1400140104
 
   - id: muller-xrays
     date: "1927"
@@ -115,7 +115,7 @@ turning_points:
     contested: false
     sources:
       - citation: "Muller, H. J. (1927). Artificial transmutation of the gene. Science 66(1699): 84–87."
-        url: null
+        url: https://doi.org/10.1126/science.66.1699.84
 
   - id: one-gene-one-enzyme
     date: "1941"
@@ -129,7 +129,7 @@ turning_points:
     contested: false
     sources:
       - citation: "Beadle, G. W. & Tatum, E. L. (1941). Genetic control of biochemical reactions in Neurospora. Proceedings of the National Academy of Sciences 27(11): 499–506."
-        url: null
+        url: https://doi.org/10.1073/pnas.27.11.499
 
 open_problems:
   - id: transgenerational-epigenetics
@@ -153,7 +153,7 @@ open_problems:
       alongside DNA.
     sources:
       - citation: "Heard, E. & Martienssen, R. A. (2014). Transgenerational epigenetic inheritance: myths and mechanisms. Cell 157(1): 95–109."
-        url: null
+        url: https://doi.org/10.1016/j.cell.2014.02.045
 
 applications:
   - area: Agriculture
@@ -173,7 +173,7 @@ applications:
       dozens of inherited conditions at birth.
     sources:
       - citation: "Guthrie, R. & Susi, A. (1963). A simple phenylalanine method for detecting phenylketonuria in large populations of newborn infants. Pediatrics 32(3): 338–343."
-        url: null
+        url: https://doi.org/10.1542/peds.32.3.338
 
 further_reading:
   - citation: "Mukherjee, S. (2016). The Gene: An Intimate History. Scribner."

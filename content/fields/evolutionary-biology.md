@@ -60,8 +60,8 @@ turning_points:
       historians argue that he has been unfairly overshadowed, and how closely his
       concept matched Darwin's is itself debated.
     sources:
-      - citation: "Darwin, C. & Wallace, A. R. (1858). On the tendency of species to form varieties; and on the perpetuation of varieties and species by natural means of selection. Journal of the Proceedings of the Linnean Society of London. Zoology 3: 45–62."
-        url: null
+      - citation: "Darwin, C. & Wallace, A. R. (1858). On the tendency of species to form varieties; and on the perpetuation of varieties and species by natural means of selection. Journal of the Proceedings of the Linnean Society of London. Zoology 3(9): 45–62."
+        url: https://doi.org/10.1111/j.1096-3642.1858.tb02500.x
 
   - id: origin-of-species
     date: "1859"
@@ -91,7 +91,7 @@ turning_points:
     contested: false
     sources:
       - citation: "Owen, R. (1863). On the Archeopteryx of von Meyer, with a description of the fossil remains of a long-tailed species, from the lithographic stone of Solenhofen. Philosophical Transactions of the Royal Society of London 153: 33–47."
-        url: null
+        url: https://doi.org/10.1098/rstl.1863.0003
 
   - id: endosymbiosis
     date: "1967"
@@ -106,7 +106,7 @@ turning_points:
     contested: false
     sources:
       - citation: "Sagan, L. [Margulis] (1967). On the origin of mitosing cells. Journal of Theoretical Biology 14(3): 225–274."
-        url: null
+        url: https://doi.org/10.1016/0022-5193(67)90079-3
 
   - id: three-domains
     date: 1977 – 1990
@@ -121,7 +121,7 @@ turning_points:
     contested: false
     sources:
       - citation: "Woese, C. R. & Fox, G. E. (1977). Phylogenetic structure of the prokaryotic domain: the primary kingdoms. Proceedings of the National Academy of Sciences 74(11): 5088–5090."
-        url: null
+        url: https://doi.org/10.1073/pnas.74.11.5088
 
 open_problems:
   - id: origin-of-life
@@ -144,7 +144,7 @@ open_problems:
       whether we should expect it elsewhere in the universe.
     sources:
       - citation: "Miller, S. L. (1953). A production of amino acids under possible primitive earth conditions. Science 117(3046): 528–529."
-        url: null
+        url: https://doi.org/10.1126/science.117.3046.528
 
   - id: evolution-of-sex
     name: Why sex?
@@ -177,7 +177,7 @@ applications:
       evolves.
     sources:
       - citation: "Davies, J. & Davies, D. (2010). Origins and evolution of antibiotic resistance. Microbiology and Molecular Biology Reviews 74(3): 417–433."
-        url: null
+        url: https://doi.org/10.1128/MMBR.00016-10
   - area: Protein engineering
     title: Directed evolution
     description: >-
@@ -186,7 +186,7 @@ applications:
       2018 Nobel Prize in Chemistry, now produces industrial catalysts and drugs.
     sources:
       - citation: "Chen, K. & Arnold, F. H. (1993). Tuning the activity of an enzyme for unusual environments: sequential random mutagenesis of subtilisin E for catalysis in dimethylformamide. Proceedings of the National Academy of Sciences 90(12): 5618–5622."
-        url: null
+        url: https://doi.org/10.1073/pnas.90.12.5618
   - area: Computing
     title: Evolutionary algorithms
     description: >-

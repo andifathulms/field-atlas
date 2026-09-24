@@ -57,7 +57,7 @@ turning_points:
     contested: false
     sources:
       - citation: "Sanger, F., Nicklen, S. & Coulson, A. R. (1977). DNA sequencing with chain-terminating inhibitors. Proceedings of the National Academy of Sciences 74(12): 5463–5467."
-        url: null
+        url: https://doi.org/10.1073/pnas.74.12.5463
 
   - id: pcr
     date: 1983 – 1985
@@ -77,7 +77,7 @@ turning_points:
       was fought over in patent litigation and among historians.
     sources:
       - citation: "Saiki, R. K. et al. (1985). Enzymatic amplification of β-globin genomic sequences and restriction site analysis for diagnosis of sickle cell anemia. Science 230(4732): 1350–1354."
-        url: null
+        url: https://doi.org/10.1126/science.2999980
       - citation: "Rabinow, P. (1996). Making PCR: A Story of Biotechnology. University of Chicago Press."
         url: null
 
@@ -101,11 +101,11 @@ turning_points:
       negotiated truce.
     sources:
       - citation: "International Human Genome Sequencing Consortium (2001). Initial sequencing and analysis of the human genome. Nature 409(6822): 860–921."
-        url: null
+        url: https://doi.org/10.1038/35057062
       - citation: "Venter, J. C. et al. (2001). The sequence of the human genome. Science 291(5507): 1304–1351."
-        url: null
+        url: https://doi.org/10.1126/science.1058040
       - citation: "Nurk, S. et al. (2022). The complete sequence of a human genome. Science 376(6588): 44–53."
-        url: null
+        url: https://doi.org/10.1126/science.abj6987
 
   - id: neanderthal-genome
     date: "2010"
@@ -120,7 +120,7 @@ turning_points:
     contested: false
     sources:
       - citation: "Green, R. E. et al. (2010). A draft sequence of the Neandertal genome. Science 328(5979): 710–722."
-        url: null
+        url: https://doi.org/10.1126/science.1188021
 
   - id: crispr-editing
     date: "2012"
@@ -136,13 +136,14 @@ turning_points:
     contested_note: >-
       Priority and patents were fiercely contested. Virginijus Šikšnys's group reached
       similar results independently in 2012. Feng Zhang's group at the Broad Institute
-      published editing in human cells in early 2013 and won key US patents after a
-      long legal dispute with Doudna's and Charpentier's institutions. Scientists who
+      published editing in human cells in early 2013 and holds key US patents. Its long
+      legal dispute with Doudna's and Charpentier's institutions over who invented it
+      first was reopened on appeal in 2025. Scientists who
       discovered and characterised CRISPR in bacteria years earlier, such as Francisco
       Mojica, are often left out of the story.
     sources:
       - citation: "Jinek, M., Chylinski, K., Fonfara, I., Hauer, M., Doudna, J. A. & Charpentier, E. (2012). A programmable dual-RNA-guided DNA endonuclease in adaptive bacterial immunity. Science 337(6096): 816–821."
-        url: null
+        url: https://doi.org/10.1126/science.1225829
       - citation: "Doudna, J. A. & Sternberg, S. H. (2017). A Crack in Creation: Gene Editing and the Unthinkable Power to Control Evolution. Houghton Mifflin Harcourt."
         url: null
 
@@ -164,8 +165,8 @@ open_problems:
       It would determine how far disease risk can be predicted from DNA, and clarify
       what heritability does and does not mean.
     sources:
-      - citation: "Manolio, T. A. et al. (2009). Finding the missing heritability of complex diseases. Nature 461: 747–753."
-        url: null
+      - citation: "Manolio, T. A. et al. (2009). Finding the missing heritability of complex diseases. Nature 461(7265): 747–753."
+        url: https://doi.org/10.1038/nature08494
 
   - id: noncoding-function
     name: How much of the genome does anything?
@@ -185,10 +186,10 @@ open_problems:
       It would identify which non-coding mutations can cause disease, and settle how much
       of our DNA is, in effect, evolutionary debris.
     sources:
-      - citation: "ENCODE Project Consortium (2012). An integrated encyclopedia of DNA elements in the human genome. Nature 489: 57–74."
-        url: null
+      - citation: "ENCODE Project Consortium (2012). An integrated encyclopedia of DNA elements in the human genome. Nature 489(7414): 57–74."
+        url: https://doi.org/10.1038/nature11247
       - citation: "Graur, D. et al. (2013). On the immortality of television sets: \"function\" in the human genome according to the evolution-free gospel of ENCODE. Genome Biology and Evolution 5(3): 578–590."
-        url: null
+        url: https://doi.org/10.1093/gbe/evt028
 
 applications:
   - area: Public health
@@ -199,8 +200,8 @@ applications:
       of viral genomes were then sequenced worldwide to track new variants as they
       spread.
     sources:
-      - citation: "Wu, F. et al. (2020). A new coronavirus associated with human respiratory disease in China. Nature 579: 265–269."
-        url: null
+      - citation: "Wu, F. et al. (2020). A new coronavirus associated with human respiratory disease in China. Nature 579(7798): 265–269."
+        url: https://doi.org/10.1038/s41586-020-2008-3
   - area: Oncology
     title: Treating cancers by their mutations
     description: >-
@@ -208,8 +209,8 @@ applications:
       drive it, and increasingly the treatment is chosen by the mutation rather than the
       organ where the cancer started.
     sources:
-      - citation: "Stratton, M. R., Campbell, P. J. & Futreal, P. A. (2009). The cancer genome. Nature 458: 719–724."
-        url: null
+      - citation: "Stratton, M. R., Campbell, P. J. & Futreal, P. A. (2009). The cancer genome. Nature 458(7239): 719–724."
+        url: https://doi.org/10.1038/nature07943
   - area: Diagnosis
     title: Finding the cause of rare diseases
     description: >-
