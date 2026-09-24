@@ -272,6 +272,6 @@ Both now hold the shared secret 2, which never crossed the wire. An eavesdropper
 
 ## The Quantum Threat
 
-In 1994 {{fig:shor|Peter Shor}} showed that a quantum computer could factor numbers and compute discrete logarithms efficiently. RSA, Diffie–Hellman and elliptic curves would all fall. No machine is yet large enough, but data intercepted now could be read later, so the replacement has already begun. In 2024 the US standards body published its first post-quantum standards, built on hard problems in lattices over rings of [algebraic integers](/math/algebraic-number-theory/).
+In 1994 {{fig:shor|Peter Shor}} showed that a quantum computer could factor numbers and compute discrete logarithms efficiently. RSA, Diffie–Hellman and elliptic curves would all fall. No machine is yet large enough, but data intercepted now could be read later, so the replacement has already begun. In 2024 the US standards body published its first post-quantum standards, most of them built on hard problems in lattices over rings of [algebraic integers](/math/algebraic-number-theory/).
 
 Beneath it all lies an unproved assumption. Every public-key system presumes that some problems are genuinely hard, that one-way functions exist, and no one has proved it. That question belongs to [computational complexity](/math/computational-complexity/), where it sits beside P versus NP. The security of the digital world rests, in the end, on a conjecture.

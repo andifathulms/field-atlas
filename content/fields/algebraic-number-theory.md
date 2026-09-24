@@ -219,7 +219,7 @@ It was natural to try the same trick on [Fermat's Last Theorem](/math/elementary
 
 ## The Proof That Failed
 
-On 1 March 1847 {{fig:lame|Gabriel Lamé}} announced exactly that proof to the Paris Academy. {{fig:liouville|Joseph Liouville}} rose at once to ask the obvious question: is factorisation unique there? Augustin Cauchy, meanwhile, claimed to have a proof of his own. Within weeks the question was answered from Breslau. {{fig:kummer|Ernst Kummer}} had shown three years earlier that unique factorisation fails for many exponents, and he already had a way around it.
+On 1 March 1847 {{fig:lame|Gabriel Lamé}} announced exactly that proof to the Paris Academy. {{fig:liouville|Joseph Liouville}} rose at once to ask the obvious question: is factorisation unique there? Augustin Cauchy, meanwhile, claimed to have a proof of his own. Within weeks the question was answered from Breslau. {{fig:kummer|Ernst Kummer}} had shown three years earlier that unique factorisation fails for some exponents, and he already had a way around it.
 
 The failure is easy to see in a simpler system. Among numbers $a + b\sqrt{-5}$,
 

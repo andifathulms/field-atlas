@@ -109,8 +109,8 @@ turning_points:
       At 24, Carl Friedrich Gauss publishes a book that turns scattered results into a
       discipline. It introduces congruence notation, gives the first complete proof of
       quadratic reciprocity (which he called the *theorema aureum*, the golden
-      theorem), develops the theory of quadratic forms, and shows which regular polygons
-      can be drawn with ruler and compass.
+      theorem), develops the theory of quadratic forms, and shows that a regular
+      17-sided polygon can be drawn with ruler and compass.
     contested: true
     contested_note: >-
       Adrien-Marie Legendre had stated quadratic reciprocity in 1785 and published
