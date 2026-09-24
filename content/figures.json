@@ -312,5 +312,15 @@
   { "id": "aleksandr-lyapunov", "name": "Aleksandr Lyapunov", "turning_point_ids": ["lyapunov-stability"] },
   { "id": "george-birkhoff", "name": "George David Birkhoff", "turning_point_ids": ["birkhoff-last-geometric"] },
   { "id": "vladimir-arnold", "name": "Vladimir Arnold", "turning_point_ids": ["kam-theorem"] },
-  { "id": "jurgen-moser", "name": "Jürgen Moser", "turning_point_ids": ["kam-theorem"] }
+  { "id": "jurgen-moser", "name": "Jürgen Moser", "turning_point_ids": ["kam-theorem"] },
+  { "id": "mary-cartwright", "name": "Mary Cartwright", "turning_point_ids": ["cartwright-littlewood"] },
+  { "id": "john-littlewood", "name": "J. E. Littlewood", "turning_point_ids": ["cartwright-littlewood"] },
+  { "id": "edward-lorenz", "name": "Edward Lorenz", "turning_point_ids": ["lorenz-weather"] },
+  { "id": "tien-yien-li", "name": "Tien-Yien Li", "turning_point_ids": ["period-three-chaos"] },
+  { "id": "james-yorke", "name": "James Yorke", "turning_point_ids": ["period-three-chaos"] },
+  { "id": "oleksandr-sharkovsky", "name": "Oleksandr Sharkovsky", "turning_point_ids": ["period-three-chaos"] },
+  { "id": "robert-may", "name": "Robert May", "turning_point_ids": ["may-logistic-map"] },
+  { "id": "mitchell-feigenbaum", "name": "Mitchell Feigenbaum", "turning_point_ids": ["feigenbaum-universality"] },
+  { "id": "oscar-lanford", "name": "Oscar Lanford", "turning_point_ids": ["feigenbaum-universality"] },
+  { "id": "warwick-tucker", "name": "Warwick Tucker", "turning_point_ids": ["tucker-lorenz-attractor"] }
 ]
