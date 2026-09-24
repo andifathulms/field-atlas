@@ -221,6 +221,22 @@ In June 1858 a letter arrived from {{fig:wallace|Alfred Russel Wallace}}, collec
 
 The argument had two parts. The first, that species share common ancestors and change over time, persuaded most naturalists within about fifteen years, helped by fossils like *Archaeopteryx*, described by {{fig:owen|Richard Owen}} in 1863. The second, that natural selection is the main cause, did not. Darwin could not explain inheritance. The theory of his day, that offspring blend their parents' traits, would dilute any favourable variation to nothing within a few generations. By 1900 many biologists spoke of the "eclipse of Darwinism".
 
+## A Closer Look: Time Enough for an Eye
+
+Paley's strongest example of design was the eye, and Darwin admitted that it seemed absurd to suppose it formed by natural selection. In 1994 Dan-Eric Nilsson and Susanne Pelger estimated how long it would actually take. They modelled a flat patch of light-sensitive cells, with a transparent layer above and dark pigment below, and let it change in small steps, each improving vision slightly: the patch cups, deepens, its opening narrows, and a lens forms with a gradient of density.
+
+They made each step a change of 1% in some dimension of the structure, and counted the steps needed to turn a flat patch into a camera eye like a fish's. The answer was 1,829 steps. Compounded, that is an enormous total change:
+
+$$
+1.01^{1829} \approx 8 \times 10^7 ,
+$$
+
+an eighty-million-fold change in the relevant proportions. But each step is tiny.
+
+How many generations does a 1% change take? From measurements of heritability and selection in natural populations, they deliberately chose pessimistic values: heritability of 0.5, and selection so weak that each generation changes the average by only 0.005% of the trait. That gives about 364,000 generations for the whole sequence. For small aquatic animals, a generation is typically a year. So a complete camera eye could evolve in fewer than 400,000 years.
+
+The Cambrian explosion, when eyes first appear in the fossil record, lasted around twenty million years. By this estimate, eyes could have evolved from scratch dozens of times over in that span. And eyes have evolved independently many times, in molluscs, vertebrates and arthropods. The calculation does not show how eyes did evolve, which depends on genes and development. It shows that the time available is not a problem.
+
 ## The Synthesis and After
 
 The rescue came from Mendel's [genetics](/biology/genetics/). Inheritance works through discrete units that do not blend, so variation is preserved. In the 1920s and 30s, the two were joined mathematically in [population genetics](/biology/population-genetics/), which made natural selection the core of modern biology.
