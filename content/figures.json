@@ -554,5 +554,18 @@
   { "id": "jean-pierre-changeux", "name": "Jean-Pierre Changeux", "turning_point_ids": ["nicotinic-receptor-isolated"] },
   { "id": "eric-kandel", "name": "Eric Kandel", "turning_point_ids": ["synaptic-plasticity-memory"] },
   { "id": "tim-bliss", "name": "Tim Bliss", "turning_point_ids": ["synaptic-plasticity-memory"] },
-  { "id": "terje-lomo", "name": "Terje Lømo", "turning_point_ids": ["synaptic-plasticity-memory"] }
+  { "id": "terje-lomo", "name": "Terje Lømo", "turning_point_ids": ["synaptic-plasticity-memory"] },
+  { "id": "william-scoville", "name": "William Scoville", "turning_point_ids": ["scoville-milner-hm"] },
+  { "id": "brenda-milner", "name": "Brenda Milner", "turning_point_ids": ["scoville-milner-hm"] },
+  { "id": "david-hubel", "name": "David Hubel", "turning_point_ids": ["hubel-wiesel-visual-cortex"] },
+  { "id": "torsten-wiesel", "name": "Torsten Wiesel", "turning_point_ids": ["hubel-wiesel-visual-cortex"] },
+  { "id": "john-okeefe", "name": "John O'Keefe", "turning_point_ids": ["okeefe-place-cells"] },
+  { "id": "may-britt-moser", "name": "May-Britt Moser", "turning_point_ids": ["moser-grid-cells"] },
+  { "id": "edvard-moser", "name": "Edvard Moser", "turning_point_ids": ["moser-grid-cells"] },
+  { "id": "seiji-ogawa", "name": "Seiji Ogawa", "turning_point_ids": ["ogawa-bold-fmri"] },
+  { "id": "gero-miesenbock", "name": "Gero Miesenböck", "turning_point_ids": ["brain-optogenetics"] },
+  { "id": "georg-nagel", "name": "Georg Nagel", "turning_point_ids": ["brain-optogenetics"] },
+  { "id": "peter-hegemann", "name": "Peter Hegemann", "turning_point_ids": ["brain-optogenetics"] },
+  { "id": "karl-deisseroth", "name": "Karl Deisseroth", "turning_point_ids": ["brain-optogenetics"] },
+  { "id": "edward-boyden", "name": "Edward Boyden", "turning_point_ids": ["brain-optogenetics"] }
 ]
