@@ -213,6 +213,26 @@ Fermat filled its margins with claims. Beside a problem about writing a square a
 
 {{fig:euler|Leonhard Euler}} took Fermat's claims seriously and proved most of them: that $a^{p-1}$ leaves remainder 1 when divided by a prime $p$ (Fermat's little theorem), and that primes of the form $4k + 1$ are sums of two squares. He also found one claim false. In 1732 he showed that $2^{32} + 1$, which Fermat believed prime, is divisible by 641. Number theory stopped being a collection of confident guesses and became a subject of proofs.
 
+## A Closer Look: Why Fermat's Little Theorem Is True
+
+Fermat's little theorem says that if $p$ is prime and $a$ is not a multiple of $p$, then $a^{p-1}$ leaves remainder 1 when divided by $p$. Check it with $p = 7$ and $a = 3$: $3^6 = 729 = 7 \times 104 + 1$. The remainder is 1, as promised. But why should it always work?
+
+Work "modulo 7", keeping only remainders. Multiply each of the nonzero remainders $1, 2, 3, 4, 5, 6$ by 3:
+
+$$
+3, \; 6, \; 9 \equiv 2, \; 12 \equiv 5, \; 15 \equiv 1, \; 18 \equiv 4 .
+$$
+
+The results are $3, 6, 2, 5, 1, 4$: the same six numbers, shuffled. That is no accident. If two of them coincided, 7 would divide 3 times a number smaller than 7, which is impossible for a prime. So multiplying everything by 3 only permutes the list, and the product of the list is unchanged:
+
+$$
+(3 \cdot 1)(3 \cdot 2)(3 \cdot 3)(3 \cdot 4)(3 \cdot 5)(3 \cdot 6) \equiv 1 \cdot 2 \cdot 3 \cdot 4 \cdot 5 \cdot 6 \pmod 7 .
+$$
+
+The left side is $3^6 \times 6!$. Since $6!$ shares no factor with 7, it can be cancelled, leaving $3^6 \equiv 1 \pmod 7$. The same argument works for any prime and any $a$.
+
+That half-page argument, essentially Euler's, has three lives in this atlas. It is the germ of group theory: the nonzero remainders form a group, and the theorem is a case of Lagrange's theorem. It is the basis of fast primality tests: if $a^{n-1} \not\equiv 1 \pmod n$, then $n$ is certainly not prime. And, generalised by Euler to non-prime moduli, it is exactly why RSA decryption undoes encryption.
+
 ## Gauss Makes a Discipline
 
 {{fig:gauss|Carl Friedrich Gauss}} called mathematics the queen of the sciences and number theory the queen of mathematics. His *Disquisitiones Arithmeticae* (1801), written in his early twenties, organised the whole subject. It introduced the congruence notation $a \equiv b \pmod n$ and proved the law of quadratic reciprocity that Euler and {{fig:legendre|Adrien-Marie Legendre}} had conjectured. He later gave several more proofs of that law.
