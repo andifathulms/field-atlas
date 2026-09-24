@@ -2,7 +2,7 @@
 
 A read-only narrative atlas of scientific fields. It shows how subfields branched from one another, the dated turning points that forced each branch, and the open problems each field still hasn't answered.
 
-v1 surveys one thread in mathematics: the **geometry thread**, from Euclid's axioms to the shape of three-dimensional space. Physics and biology are reserved for the width phase.
+Two domains are surveyed so far: mathematics (the **Geometry Thread**, nine fields from Euclid to algebraic geometry) and physics (the **Relativity Thread**, five fields from Galileo to cosmology), with the first links between them. Biology is still unsurveyed.
 
 - Product intent: [PRD.md](PRD.md)
 - Visual identity: [DESIGN.md](DESIGN.md)

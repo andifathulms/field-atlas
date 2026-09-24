@@ -81,7 +81,9 @@ Keep `Field`, `TurningPoint`, `OpenProblem`, and `Figure` as one shared collecti
 One file per Field so a correction is a single-file diff, consistent with the "corrections via repo edit" model in the sibling apps.
 
 - `content/fields/<field-id>.md`: YAML frontmatter holds the structured fields (id, domain, name, parent_ids, era_emerged, core_question, turning_points, open_problems). The Markdown body is split into chapters on `## ` headings, so chapter count and titles are free per field.
-- Optional depth keys in the same frontmatter: `summary` (literal block, Markdown), `key_ideas` (`term`, `definition`, optional `turning_point_id` in any field), `applications` (`area`, `title`, `description`, optional `domain` for a cross-domain seed, `sources`), and `further_reading` (`citation`, `url`, `note`). The field page renders each section only when it is present.
+- Optional depth keys in the same frontmatter: `summary` (literal block, Markdown), `key_ideas` (`term`, `definition`, optional `turning_point_id` in any field), `applications` (`area`, `title`, `description`, optional `domain` for a cross-domain seed plus optional `field_id` naming the field it lands in, `sources`), and `further_reading` (`citation`, `url`, `note`). The field page renders each section only when it is present.
+- A `field_id` on an application must name a field in the application's `domain`; the target field page derives a "Draws on other domains" list from these (`getIncomingLinks`), so the link is authored once, on the source side.
+- Turning-point ids are global across domains, so physics and math events can't collide (the loader rejects duplicates).
 - `content/figures.json`: the shared figures collection, each figure tied to turning point ids.
 - Math: KaTeX via `$…$` and `$$…$$`. Display math needs `$$` on its own lines, so use a literal (`|-`) YAML block for any frontmatter text that contains display math.
 - Figure mentions in chapter prose: `{{fig:gauss}}` or `{{fig:gauss|Gauss}}` links the name to that figure's turning point.
