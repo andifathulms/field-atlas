@@ -65,7 +65,7 @@ turning_points:
       Paolo Ruffini (1799) and Niels Henrik Abel (1824) show that the general equation of
       degree five cannot be solved by radicals. There is no quintic formula, and none will
       ever be found. Abel, poor and largely unrecognised, died of tuberculosis in 1829 at
-      26, two days before a letter arrived offering him a professorship in Berlin.
+      26. Two days later a letter was sent telling him of a professorship in Berlin.
     contested: true
     contested_note: >-
       Credit is shared unevenly. Ruffini's long 1799 proof was the first, but it had a gap
@@ -163,13 +163,13 @@ After the cubic and quartic were solved in the sixteenth century, the quintic re
 
 ## No Quintic Formula
 
-In 1799 {{fig:ruffini|Paolo Ruffini}} published a proof that no formula built from radicals solves the general quintic. It was long, had a gap, and was ignored. In 1824 {{fig:abel|Niels Henrik Abel}}, a young Norwegian mathematician, gave a proof that was accepted. Abel spent years seeking a position, and died of tuberculosis at 26. A letter offering him a professorship in Berlin arrived two days later.
+In 1799 {{fig:ruffini|Paolo Ruffini}} published a proof that no formula built from radicals solves the general quintic. It was long, had a gap, and was ignored. In 1824 {{fig:abel|Niels Henrik Abel}}, a young Norwegian mathematician, gave a proof that was accepted. Abel spent years seeking a position, and died of tuberculosis at 26. Two days later a letter was sent telling him he had a professorship in Berlin.
 
 Abel had shown that the general quintic has no formula. But some particular quintics do. Which ones, and why?
 
 ## Galois
 
-The answer came from {{fig:galois|Évariste Galois}}, a French teenager whose life was as turbulent as his mathematics was deep. He failed the entrance examination of the École Polytechnique twice, was expelled from the École Normale for his republican politics, and spent time in prison. His papers to the Academy were lost or rejected, and Poisson found one incomprehensible. In May 1832, aged twenty, he was killed in a duel whose circumstances are still unclear. The night before, he wrote a letter to a friend summarising his discoveries, scribbling in the margin, "I have no time."
+The answer came from {{fig:galois|Évariste Galois}}, a French teenager whose life was as turbulent as his mathematics was deep. He failed the entrance examination of the École Polytechnique twice, was expelled from the École Normale for his republican politics, and spent time in prison. His papers to the Academy were lost or rejected, and Poisson found one incomprehensible. In May 1832, aged twenty, he was killed in a duel whose circumstances are still unclear. The night before, he wrote a letter to a friend summarising his discoveries. In the margin of a manuscript he was correcting he scribbled, "I have no time."
 
 His idea was to study an equation through the *group* of symmetries of its roots. An equation is solvable by radicals exactly when that group can be taken apart into simple abelian steps, and the symmetric group on five letters, the group of the general quintic, cannot. The same insight explains the ruler-and-compass impossibilities of [Euclidean geometry](/math/euclidean-geometry/). Liouville published Galois's work in 1846, and {{fig:camille-jordan|Camille Jordan}}'s 1870 treatise made it widely understood.
 

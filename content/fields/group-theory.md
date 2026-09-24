@@ -186,7 +186,7 @@ The abstraction paid off. {{fig:sylow|Ludwig Sylow}}, teaching at a Norwegian se
 
 ## Atoms of Symmetry
 
-Every finite group can be broken down into *simple* groups, which cannot be broken down further, much as molecules break into atoms. The grand question became: what are all the finite simple groups? Some come in infinite families, such as the rotation groups of higher-dimensional polyhedra. Others, discovered one by one from 1861 onward, seemed to fit nowhere.
+Every finite group can be broken down into *simple* groups, which cannot be broken down further, much as molecules break into atoms. The grand question became: what are all the finite simple groups? Some come in infinite families, such as the alternating groups, the even shuffles of $n$ objects. Others, discovered one by one from 1861 onward, seemed to fit nowhere.
 
 In 1963 {{fig:feit|Walter Feit}} and {{fig:john-thompson|John Thompson}} proved that every finite simple group other than the cyclic ones has even order. It was a single theorem whose proof filled an entire issue of a journal. It showed the classification might be possible, and a coordinated campaign followed, led by {{fig:gorenstein|Daniel Gorenstein}}. It found eighteen infinite families and exactly twenty-six "sporadic" exceptions. The largest, the Monster, with about $8 \times 10^{53}$ elements, was constructed by {{fig:griess|Robert Griess}} in 1982.
 

@@ -56,7 +56,7 @@ turning_points:
       necessities.
     contested: false
     sources:
-      - citation: "Hamilton, W. R. (1844). On quaternions; or on a new system of imaginaries in algebra. Philosophical Magazine 25(163): 10–13."
+      - citation: "Hamilton, W. R. (1844). On quaternions; or on a new system of imaginaries in algebra. Philosophical Magazine (3rd series) 25: 10–13."
         url: null
 
   - id: hilbert-basis
@@ -93,9 +93,9 @@ turning_points:
     type: REFORMULATION
     title: Emmy Noether's theory of ideals
     description: >-
-      In "Idealtheorie in Ringbereichen", Emmy Noether shows that the factorisation
-      theorems of number theory and of polynomial algebra follow from a single abstract
-      condition on chains of ideals. Long computations are replaced by structural
+      In "Idealtheorie in Ringbereichen", Emmy Noether shows that the decomposition of
+      ideals, known separately in number theory and in polynomial algebra, follows from a
+      single abstract condition on chains of ideals. Long computations are replaced by structural
       arguments. Her Göttingen seminar, which she taught for years without a salary, spread
       the style across a generation.
     contested: false
@@ -154,7 +154,7 @@ applications:
   - area: Cryptography
     title: Finite fields inside AES
     description: >-
-      The Advanced Encryption Standard, which encrypts most stored and transmitted data,
+      The Advanced Encryption Standard, which encrypts much of the world's stored and transmitted data,
       does its mixing with arithmetic in the finite field of 256 elements. Abstract
       field theory is what makes its design analysable.
     sources:
@@ -175,7 +175,7 @@ further_reading:
 
 ## Numbers That Don't Commute
 
-For a long time algebra meant manipulating numbers, and the laws of arithmetic, like $ab = ba$, seemed beyond question. In 1843 {{fig:rowan-hamilton|William Rowan Hamilton}} broke one. He had spent years trying to build a three-dimensional analogue of the complex numbers. Walking along a canal in Dublin, he saw that it worked in four dimensions if multiplication was allowed to depend on order. He carved the rule into the stone of Broome Bridge. Quaternions showed that algebraic laws could be chosen, and within a few years Cayley and others were studying matrices, which do not commute either.
+For a long time algebra meant manipulating numbers, and the laws of arithmetic, like $ab = ba$, seemed beyond question. In 1843 {{fig:rowan-hamilton|William Rowan Hamilton}} broke one. He had spent years trying to build a three-dimensional analogue of the complex numbers. Walking along a canal in Dublin, he saw that it worked in four dimensions if multiplication was allowed to depend on order. He carved the rule into the stone of Broome Bridge. Quaternions showed that algebraic laws could be chosen, and by 1858 Cayley was studying matrices, which do not commute either.
 
 ## Existence Without Construction
 
@@ -201,13 +201,13 @@ $$
 ij = k, \qquad ji = -k .
 $$
 
-Multiplication is not commutative, yet every nonzero quaternion has an inverse, so division still works (on the correct side). Quaternions form a *division ring*, not a field. That is precisely why they describe three-dimensional rotations, which also depend on order.
+Multiplication is not commutative, yet every nonzero quaternion has an inverse, so division still works (on the correct side). Quaternions form a *division ring*, not a field. That suits them to describing three-dimensional rotations, which also depend on order.
 
 Abstract algebra's method is to list the rules a system obeys, find the theorems that follow from those rules alone, and then recognise the same structure wherever it recurs: in remainders, polynomials, matrices, rotations or cryptographic codes.
 
 ## Noether's Revolution
 
-The decisive figure was {{fig:noether|Emmy Noether}}. Barred as a woman from a regular position at Göttingen, she lectured for years under Hilbert's name without pay. In 1921 she showed that the factorisation theorems of number theory and of polynomial algebra all follow from one abstract condition: every increasing chain of ideals stops. Rings satisfying it are now called *Noetherian*. Calculations gave way to structure: study objects through the maps that preserve their operations. Her students, the "Noether boys", carried the style everywhere.
+The decisive figure was {{fig:noether|Emmy Noether}}. Barred as a woman from a regular position at Göttingen, she lectured for years under Hilbert's name without pay. In 1921 she showed that the decomposition of ideals, known separately in number theory and in polynomial algebra, follows from one abstract condition: every increasing chain of ideals stops. Rings satisfying it are now called *Noetherian*. Calculations gave way to structure: study objects through the maps that preserve their operations. Her students, the "Noether boys", carried the style everywhere.
 
 {{fig:van-der-waerden|Bartel van der Waerden}}, who attended her lectures and Artin's, wrote them up as *Moderne Algebra* (1930–31). It presented algebra as the study of groups, rings and fields, and became the template of algebra courses worldwide. In 1933 Noether, who was Jewish, was dismissed by the Nazi government and emigrated to Bryn Mawr, where she died in 1935. Einstein called her the most significant creative mathematical genius since higher education for women began.
 

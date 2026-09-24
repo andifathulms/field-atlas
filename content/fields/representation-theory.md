@@ -64,7 +64,7 @@ turning_points:
     type: PROOF
     title: The simple Lie algebras are classified
     description: >-
-      Wilhelm Killing, a schoolteacher in a small Prussian town, classifies all simple Lie
+      Wilhelm Killing, teaching at a lyceum in the small Prussian town of Braunsberg, classifies all simple Lie
       algebras over the complex numbers: four infinite families and five exceptional ones,
       including the remarkable $E_8$. His proofs have gaps and errors. Élie Cartan's 1894
       thesis gives rigorous proofs and extends the theory.
@@ -124,7 +124,7 @@ turning_points:
       number theory, is one more than $196883$, the dimension of the Monster group's
       smallest non-trivial representation. John Conway and Simon Norton turn the coincidence
       into a web of conjectures (1979). Richard Borcherds proves them in 1992, using ideas
-      from string theory, and receives a Fields Medal.
+      from string theory, and receives a Fields Medal in 1998.
     contested: false
     sources:
       - citation: "Conway, J. H. & Norton, S. P. (1979). Monstrous moonshine. Bulletin of the London Mathematical Society 11(3): 308–339."
@@ -136,9 +136,10 @@ open_problems:
   - id: mckay-conjecture
     name: The McKay conjecture
     status: recently_resolved
-    status_note: A proof by Britta Späth and Marc Cabanes was announced in 2023–24 as a preprint; it was being checked as of writing.
+    status_note: Proved by Marc Cabanes and Britta Späth, announced in 2023 and published in the Annals of Mathematics in 2026.
     description: >-
-      John McKay conjectured in 1972 that for any finite group and prime $p$, the number of
+      John McKay conjectured in the early 1970s, first for the prime 2, that for any finite
+      group and prime $p$, the number of
       irreducible representations whose dimension is not divisible by $p$ can be read off
       from a much smaller subgroup. It is a striking "local–global" principle for
       representations.
@@ -152,8 +153,8 @@ open_problems:
     sources:
       - citation: "McKay, J. (1972). Irreducible representations of odd degree. Journal of Algebra 20(2): 416–418."
         url: null
-      - citation: "Cabanes, M. & Späth, B. (2024). The McKay conjecture on character degrees. Preprint."
-        url: null
+      - citation: "Cabanes, M. & Späth, B. (2026). The McKay conjecture on character degrees. Annals of Mathematics 203(3): 933–1032."
+        url: https://doi.org/10.4007/annals.2026.203.3.5
 
 applications:
   - area: Quantum physics

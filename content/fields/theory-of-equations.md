@@ -144,8 +144,8 @@ open_problems:
     why_hard: >-
       For continuous functions Kolmogorov and Arnold showed, surprisingly, that two
       variables always suffice, but their functions are wild. For algebraic functions, the
-      natural setting, it is unknown even whether the general quintic's roots can avoid
-      two-variable functions in certain senses. The modern theory of "resolvent degree"
+      natural setting, no degree is yet known to need algebraic functions of more than one
+      variable, even though the septic seems to need three. The modern theory of "resolvent degree"
       reformulates the question geometrically but has not answered it.
     unlocks: >-
       A precise measure of how complex the solutions of polynomial equations really are,
@@ -180,7 +180,7 @@ further_reading:
 
 ## Recipes on Clay
 
-The oldest algebra is nearly four thousand years old. Old Babylonian scribes posed problems like "I added the area and the side of a square: 45" and solved them with fixed procedures: halve this, square that, add, take the square root. These are the steps of completing the square, stated as recipes without symbols. Greek mathematicians treated such problems geometrically, as rectangles and squares of unknown size.
+The oldest algebra is nearly four thousand years old. Old Babylonian scribes posed problems like adding the area and the side of a square to get three-quarters, and solved them with fixed procedures: halve this, square that, add, take the square root. These are the steps of completing the square, stated as recipes without symbols. Greek mathematicians treated such problems geometrically, as rectangles and squares of unknown size.
 
 ## Al-Jabr
 
@@ -188,7 +188,7 @@ Around 820, at the House of Wisdom in Baghdad, {{fig:al-khwarizmi|Muḥammad ibn
 
 ## Duels in Italy
 
-It was found in sixteenth-century Italy, where mathematicians made their reputations in public problem-solving contests and guarded their methods. Around 1515 Scipione del Ferro found a formula for one kind of cubic and told only a student. In 1535 {{fig:tartaglia|Niccolò Tartaglia}} rediscovered it and won a contest with it. {{fig:cardano|Gerolamo Cardano}} persuaded Tartaglia to reveal it under a solemn oath of secrecy. Then, having seen del Ferro's older notes, he published it in *Ars Magna* (1545), with his student Lodovico Ferrari's solution of the quartic. Tartaglia never forgave him.
+It was found in sixteenth-century Italy, where mathematicians made their reputations in public problem-solving contests and guarded their methods. Around 1515 Scipione del Ferro found a formula for one kind of cubic and told only a few people, among them a student. In 1535 {{fig:tartaglia|Niccolò Tartaglia}} rediscovered it and won a contest with it. {{fig:cardano|Gerolamo Cardano}} persuaded Tartaglia to reveal it under a solemn oath of secrecy. Then, having seen del Ferro's older notes, he published it in *Ars Magna* (1545), with his student Lodovico Ferrari's solution of the quartic. Tartaglia never forgave him.
 
 The formula had a strange feature. For some cubics with three real roots it passes through square roots of negative numbers. Working with those "impossible" numbers was the start of [complex analysis](/math/complex-analysis/).
 
@@ -206,7 +206,7 @@ $$
 \frac{q^2}{4} - \frac{p^3}{27} = 4 - 125 = -121, \qquad x = \sqrt[3]{2 + \sqrt{-121}} + \sqrt[3]{2 - \sqrt{-121}} .
 $$
 
-A perfectly real equation with a perfectly real answer leads straight through the square root of a negative number. Cardano called such cases "irreducible" and gave up. Bombelli decided to calculate anyway, treating $\sqrt{-1}$ as a new kind of number with $(\sqrt{-1})^2 = -1$. Writing $i$ for it, $\sqrt{-121} = 11i$. He guessed that the cube roots might have the form $2 \pm i$, and checked:
+A perfectly real equation with a perfectly real answer leads straight through the square root of a negative number. Such cases came to be called "irreducible", and Cardano set them aside. Bombelli decided to calculate anyway, treating $\sqrt{-1}$ as a new kind of number with $(\sqrt{-1})^2 = -1$. Writing $i$ for it, $\sqrt{-121} = 11i$. He guessed that the cube roots might have the form $2 \pm i$, and checked:
 
 $$
 (2 + i)^3 = 8 + 12i + 6i^2 + i^3 = 8 + 12i - 6 - i = 2 + 11i .
@@ -214,7 +214,7 @@ $$
 
 So $\sqrt[3]{2 + 11i} = 2 + i$ and $\sqrt[3]{2 - 11i} = 2 - i$, and the formula gives $x = (2 + i) + (2 - i) = 4$. The imaginary parts cancel and the true answer appears.
 
-It was the first time anyone had computed with complex numbers and got a meaningful result. Bombelli could not say what these numbers *were*, only that the rules worked. It took another two centuries, and the picture of numbers as points in a plane, before [complex analysis](/math/complex-analysis/) could say.
+It was one of the first times anyone had computed with complex numbers and got a meaningful result. Bombelli could not say what these numbers *were*, only that the rules worked. It took another two centuries, and the picture of numbers as points in a plane, before [complex analysis](/math/complex-analysis/) could say.
 
 ## Symbols and Existence
 
