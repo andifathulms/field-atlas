@@ -54,8 +54,8 @@ turning_points:
     description: >-
       At the end of the fifth supplement to his *Analysis Situs*, Henri Poincaré asks
       whether every closed three-dimensional manifold on which every loop can be shrunk
-      to a point must be the three-sphere $S^3$. He had already refuted his own earlier,
-      weaker version with a counterexample: the Poincaré homology sphere.
+      to a point must be the three-sphere $S^3$. In the same paper he refuted his own
+      earlier, weaker version with a counterexample: the Poincaré homology sphere.
     contested: false
     sources:
       - citation: "Poincaré, H. (1904). Cinquième complément à l'analysis situs. Rendiconti del Circolo Matematico di Palermo 18: 45–110."
@@ -156,8 +156,8 @@ turning_points:
       Building on Daniel Wise's theory of special cube complexes and on work by Kahn and
       Markovic, Ian Agol proves that every closed hyperbolic three-manifold has a finite
       cover containing an embedded incompressible surface, and in fact one that fibres
-      over the circle. This settled the last of Thurston's major open questions about
-      hyperbolic three-manifolds.
+      over the circle. This settled some of the last open questions on Thurston's 1982
+      list about hyperbolic three-manifolds.
     contested: false
     sources:
       - citation: "Agol, I. (2013). The virtual Haken conjecture. Documenta Mathematica 18: 1045–1087."
@@ -314,7 +314,7 @@ In 2002–2003 {{fig:perelman|Grigori Perelman}} posted three preprints to arXiv
 
 ## A Closer Look: From Surfaces to Three-Manifolds
 
-The model for Thurston's geometrization is the classical theory of surfaces, completed around 1900. Every closed orientable surface is a sphere, a torus, or a torus with extra handles, classified by its genus $g$, the number of holes. And every one carries a uniform geometry that matches its topology:
+The model for Thurston's geometrization is the classical theory of surfaces, completed in the early 1900s. Every closed orientable surface is a sphere, a torus, or a torus with extra handles, classified by its genus $g$, the number of holes. And every one carries a uniform geometry that matches its topology:
 
 | Surface | Genus | Euler characteristic | Natural geometry |
 |---|---|---|---|

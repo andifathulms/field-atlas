@@ -325,7 +325,7 @@ The simplest question to ask is how often two curves meet. A line meets a conic 
 
 The second reason came from topology. In 1857 {{fig:riemann|Bernhard Riemann}} looked at the complex solutions of a polynomial equation in two variables and saw a surface, a real two-dimensional object. For a smooth cubic curve, that surface is a torus. The number of holes, the *genus*, turned out to govern the curve's algebra: which functions live on it, and how it can be mapped to other curves.
 
-From then on, the topology of complex varieties and the algebra of their equations were studied together, which is why this field's second parent is [algebraic topology](/math/algebraic-topology/). Lefschetz and Hodge carried the connection into higher dimensions in the early twentieth century. The link became decisive when the topology of equations over *finite* fields was needed.
+From then on, the topology of complex varieties and the algebra of their equations were studied together, which is why this field's second parent is [algebraic topology](/math/algebraic-topology/). Lefschetz and Hodge carried the connection into higher dimensions in the first half of the twentieth century. The link became decisive when the topology of equations over *finite* fields was needed.
 
 ## The Italian Crisis
 

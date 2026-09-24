@@ -56,7 +56,7 @@ turning_points:
       Riemann's death.
     contested: false
     sources:
-      - citation: "Riemann, B. (1868). Über die Hypothesen, welche der Geometrie zu Grunde liegen. Abhandlungen der Königlichen Gesellschaft der Wissenschaften zu Göttingen 13: 133–152."
+      - citation: "Riemann, B. (1868). Über die Hypothesen, welche der Geometrie zu Grunde liegen. Abhandlungen der Königlichen Gesellschaft der Wissenschaften zu Göttingen 13."
         url: null
 
   - id: ricci-levi-civita

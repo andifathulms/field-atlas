@@ -239,7 +239,7 @@ Up to here, this is still Euclid's space. Curves and surfaces are objects sittin
 
 ## The Remarkable Theorem
 
-The turn came from surveying. From 1818 to 1832, {{fig:gauss|Gauss}} ran a geodetic survey of the Kingdom of Hanover, measuring huge triangles on the curved Earth. That work led to his *Disquisitiones generales circa superficies curvas* (1827). In it, he described a surface entirely by how distances are measured on it, the *first fundamental form*:
+The turn came from surveying. In the 1820s {{fig:gauss|Gauss}} ran a geodetic survey of the Kingdom of Hanover, measuring huge triangles on the curved Earth. That work led to his *Disquisitiones generales circa superficies curvas* (1827). In it, he described a surface entirely by how distances are measured on it, the *first fundamental form*:
 
 $$
 ds^2 = E\,du^2 + 2F\,du\,dv + G\,dv^2 .
