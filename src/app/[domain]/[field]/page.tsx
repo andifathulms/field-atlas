@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { Applications, DrawsOn, FurtherReading, InBrief, KeyIdeas } from "@/components/FieldSections";
+import { FieldContents, type ContentsEntry } from "@/components/FieldContents";
 import { Markdown } from "@/components/Markdown";
 import { Sources } from "@/components/Sources";
 import { getField, getFields, getFigure, getFiguresForTurningPoint, getIncomingLinks } from "@/lib/content";
@@ -29,6 +30,37 @@ export function generateMetadata({ params }: Params): Metadata {
 }
 
 const ROMAN = ["I", "II", "III", "IV", "V", "VI", "VII", "VIII", "IX", "X"];
+
+/** Anchor for a chapter heading. */
+function chapterId(title: string): string {
+  return `ch-${title.toLowerCase().replace(/\$[^$]*\$/g, "").replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "")}`;
+}
+
+/** Minutes to read the page's prose at an unhurried 220 words a minute. */
+function readingMinutes(field: Field): number {
+  const text = [field.summary ?? "", ...field.chapters.map((c) => c.body)].join(" ");
+  return Math.max(1, Math.round(text.split(/\s+/).filter(Boolean).length / 220));
+}
+
+/** A neighbouring field at the foot of the page, shown with its core question. */
+function NextField({ field, relation }: { field: Field; relation: string }) {
+  return (
+    <Link
+      href={fieldPath(field.domain, field.id)}
+      className="group flex h-full flex-col border border-rule p-5 transition-colors duration-300 hover:border-accent/60 hover:bg-paper-deep/60 sm:p-6"
+    >
+      <span className="stamp text-ink-faint">{relation}</span>
+      <span className="mt-2 flex items-baseline justify-between gap-4 text-2xl font-semibold tracking-tight transition-colors duration-200 group-hover:text-accent">
+        {field.name}
+        <span aria-hidden className="text-xl text-accent transition-transform duration-300 ease-house group-hover:translate-x-1">
+          {relation === "Branched from" ? "↖" : "→"}
+        </span>
+      </span>
+      <span className="mt-2 italic leading-snug text-ink-soft">{field.core_question}</span>
+      <span className="stamp mt-auto pt-4 text-ink-faint">{field.era_emerged}</span>
+    </Link>
+  );
+}
 
 function Waypoint({ tp }: { tp: TurningPoint }) {
   const figures = getFiguresForTurningPoint(tp.id);
@@ -131,13 +163,21 @@ export default function FieldPage({ params }: Params) {
   const tpOrder = (figId: string) =>
     Math.min(...getFigure(figId)!.turning_point_ids.map((t) => field.turning_points.findIndex((tp) => tp.id === t)).filter((i) => i >= 0));
   const figures = [...field.figure_ids].sort((a, b) => tpOrder(a) - tpOrder(b)).map((id) => getFigure(id)!);
+  const unresolved = field.open_problems.filter((p) => p.status !== "recently_resolved").length;
+  const contents: ContentsEntry[] = [
+    ...field.chapters.map((c, i) => ({ href: `#${chapterId(c.title)}`, label: c.title, numeral: ROMAN[i] ?? String(i + 1) })),
+    { href: "#turning-points", label: "Turning points", numeral: null },
+    ...(field.applications.length ? [{ href: "#applications", label: "Applications", numeral: null }] : []),
+    { href: "#open-problems", label: "Open problems", numeral: null },
+    ...(field.further_reading.length ? [{ href: "#further-reading", label: "Further reading", numeral: null }] : []),
+  ];
   const problems = [...field.open_problems].sort(
     (a, b) => Number(a.status === "recently_resolved") - Number(b.status === "recently_resolved"),
   );
 
   return (
     <main data-domain={field.domain} className="mx-auto max-w-6xl px-4 sm:px-8">
-      <header className="settle border-b border-rule pb-10 pt-14">
+      <header className="settle border-b border-rule pb-10 pt-12">
         <p className="stamp text-ink-faint">
           <Link href="/" className="ink-link">
             Atlas
@@ -152,10 +192,23 @@ export default function FieldPage({ params }: Params) {
           </Link>
         </p>
         <p className="stamp mt-8 text-accent">Field · Emerged {field.era_emerged}</p>
-        <h1 className="mt-3 max-w-4xl text-5xl font-semibold leading-[1.05] tracking-tight sm:text-6xl">
+        <h1 className="mt-3 max-w-4xl text-[2.75rem] font-semibold leading-[1.04] tracking-[-0.02em] sm:text-6xl lg:text-7xl">
           {field.name}
         </h1>
         <p className="mt-5 max-w-2xl text-xl italic leading-snug text-ink-soft sm:text-2xl">{field.core_question}</p>
+        <p className="stamp mt-7 flex flex-wrap gap-x-3 gap-y-1 text-ink-faint">
+          <span>{field.chapters.length} chapters</span>
+          <span aria-hidden>·</span>
+          <span>{readingMinutes(field)} min read</span>
+          <span aria-hidden>·</span>
+          <a href="#turning-points" className="ink-link">
+            {field.turning_points.length} turning points
+          </a>
+          <span aria-hidden>·</span>
+          <a href="#open-problems" className="ink-link">
+            {unresolved === 1 ? "1 open problem" : `${unresolved} open problems`}
+          </a>
+        </p>
 
         <dl className="mt-10 grid gap-x-10 gap-y-4 text-[0.98rem] sm:grid-cols-3">
           <div>
@@ -198,23 +251,32 @@ export default function FieldPage({ params }: Params) {
 
       <div className="mt-14 lg:grid lg:grid-cols-[minmax(0,40rem)_minmax(0,1fr)] lg:gap-20">
         <div>
+          <FieldContents entries={contents} />
           {field.summary && <InBrief summary={field.summary} />}
           {field.key_ideas.length > 0 && <KeyIdeas ideas={field.key_ideas} field={field} />}
           {incoming.length > 0 && <DrawsOn links={incoming} />}
           <article className="prose-atlas">
             {field.chapters.map((c, i) => (
-              <section key={c.title} className="mb-14">
-                <p className="stamp text-ink-faint">Chapter {ROMAN[i] ?? i + 1}</p>
-                <h2 className="mb-5 mt-2 text-3xl font-semibold leading-tight tracking-tight">{c.title}</h2>
-                <Markdown>{resolveFigureMentions(c.body, field)}</Markdown>
+              <section key={c.title} id={chapterId(c.title)} className="mb-16">
+                <p className="stamp flex items-center gap-3 text-accent">
+                  <span>Chapter {ROMAN[i] ?? i + 1}</span>
+                  <span aria-hidden className="h-px w-10 bg-accent/40" />
+                </p>
+                <h2 className="mb-6 mt-3 text-[1.75rem] font-semibold leading-tight tracking-[-0.01em] sm:text-[2rem]">
+                  <Markdown inline>{c.title}</Markdown>
+                </h2>
+                <div className={i === 0 ? "dropcap" : undefined}>
+                  <Markdown>{resolveFigureMentions(c.body, field)}</Markdown>
+                </div>
               </section>
             ))}
           </article>
         </div>
 
-        <aside aria-labelledby="tp-heading" className="mt-6 border-t border-ink pt-4 lg:mt-0 lg:border-t-0 lg:pt-0">
-          <h2 id="tp-heading" className="stamp mb-8 text-ink-faint">
-            Turning points
+        <aside id="turning-points" aria-labelledby="tp-heading" className="mt-6 border-t border-ink pt-4 lg:mt-0 lg:border-t-0 lg:pt-0">
+          <h2 id="tp-heading" className="stamp mb-8 flex items-baseline justify-between border-b border-rule pb-3 text-ink-faint">
+            <span>Turning points</span>
+            <span>{field.turning_points.length}</span>
           </h2>
           <ol className="ml-1">
             {field.turning_points.map((tp) => (
@@ -255,22 +317,34 @@ export default function FieldPage({ params }: Params) {
 
       {field.further_reading.length > 0 && <FurtherReading readings={field.further_reading} />}
 
-      <nav aria-label="Continue the survey" className="mt-16 flex flex-wrap justify-between gap-6 border-t border-rule pt-6">
-        <Link href={threadPath(domain.id, field.thread)} className="stamp ink-link text-ink-soft">
-          ← Back to the {thread?.title ?? "field tree"}
-        </Link>
-        {field.successor_ids.length > 0 && (
-          <p className="stamp text-ink-soft">
-            Continue to{" "}
-            {field.successor_ids.map((id, i) => (
-              <span key={id}>
-                {i > 0 && " · "}
-                <Link href={fieldPath(field.domain, id)} className="ink-link text-accent">
-                  {allFields.get(id)!.name} →
-                </Link>
-              </span>
+      <nav aria-labelledby="continue-heading" className="mt-24 border-t border-ink pt-6">
+        <div className="flex flex-wrap items-baseline justify-between gap-4">
+          <h2 id="continue-heading" className="stamp text-ink-faint">
+            Continue the survey
+          </h2>
+          <Link href={threadPath(domain.id, field.thread)} className="stamp ink-link text-ink-soft">
+            ← {thread?.title ?? "Field tree"} map
+          </Link>
+        </div>
+        {field.parent_ids.length + field.successor_ids.length > 0 ? (
+          <ul
+            className={`mt-6 grid gap-4 sm:grid-cols-2 ${
+              [1, 2, 4].includes(field.parent_ids.length + field.successor_ids.length) ? "" : "lg:grid-cols-3"
+            }`}
+          >
+            {field.parent_ids.map((id) => (
+              <li key={id}>
+                <NextField field={allFields.get(id)!} relation="Branched from" />
+              </li>
             ))}
-          </p>
+            {field.successor_ids.map((id) => (
+              <li key={id}>
+                <NextField field={allFields.get(id)!} relation="Onward into" />
+              </li>
+            ))}
+          </ul>
+        ) : (
+          <p className="mt-6 italic text-ink-faint">This field stands alone on its thread&apos;s map.</p>
         )}
       </nav>
     </main>

@@ -102,11 +102,12 @@ body::before {
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='220' height='220'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='3' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 0.5 0 0 0 0 0.45 0 0 0 0 0.4 0 0 0 1 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
 }
 
+/* The longhand, so KaTeX's own no-wrap spans are left alone. */
 h1, h2, h3 {
-  text-wrap: balance;
+  text-wrap-style: balance;
 }
 p, li, dd {
-  text-wrap: pretty;
+  text-wrap-style: pretty;
 }
 
 ::selection {
@@ -239,6 +240,16 @@ button:focus-visible {
   color: var(--ink-soft);
 }
 .prose-atlas em { font-style: italic; }
+
+/* Chapter I opens with a drop cap in the domain's ink. */
+.dropcap > p:first-of-type::first-letter {
+  float: left;
+  margin: 0.06em 0.12em 0 -0.02em;
+  font-size: 3.55em;
+  line-height: 0.82;
+  font-weight: 600;
+  color: var(--accent);
+}
 .prose-atlas strong { font-weight: 600; }
 
 .katex { font-size: 1.05em; }

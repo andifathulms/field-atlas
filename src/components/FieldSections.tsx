@@ -20,7 +20,7 @@ export function InBrief({ summary }: { summary: string }) {
       <h2 id="brief-heading" className="stamp text-ink-faint">
         In brief
       </h2>
-      <div className="mt-3 border-l-2 border-accent pl-5 text-[1.3rem] leading-relaxed text-ink [&_p+p]:mt-3">
+      <div className="mt-3 border-l-2 border-accent pl-5 text-[1.1875rem] leading-relaxed text-ink sm:text-[1.3125rem] [&_p+p]:mt-3">
         <Markdown>{summary}</Markdown>
       </div>
     </section>
@@ -159,7 +159,7 @@ export function DrawsOn({ links }: { links: Array<{ from: Field; application: Ap
 
 export function FurtherReading({ readings }: { readings: Reading[] }) {
   return (
-    <section aria-labelledby="reading-heading" className="mt-20">
+    <section id="further-reading" aria-labelledby="reading-heading" className="mt-20">
       <h2 id="reading-heading" className="stamp border-b border-rule pb-3 text-ink-faint">
         Further reading
       </h2>
