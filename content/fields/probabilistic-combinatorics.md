@@ -93,9 +93,9 @@ turning_points:
     description: >-
       Paul Erdős and László Lovász prove that if many unlikely bad events each depend on
       only a few others, there is a positive probability that none occurs. It extends the
-      probabilistic method to cases where success is exponentially rare. For 35 years it
-      gave no way to find the good outcome, until Robin Moser and Gábor Tardos found a
-      simple algorithm in 2009.
+      probabilistic method to cases where success is exponentially rare. For over three
+      decades there was no general way to find the good outcome, until Robin Moser and
+      Gábor Tardos found a simple algorithm in 2009.
     contested: false
     sources:
       - citation: "Erdős, P. & Lovász, L. (1975). Problems and results on 3-chromatic hypergraphs and some related questions. In Infinite and Finite Sets, Colloquia Mathematica Societatis János Bolyai 10: 609–627."
@@ -121,7 +121,7 @@ open_problems:
   - id: explicit-ramsey-graphs
     name: Explicit Ramsey graphs
     status: open
-    status_note: Open as of writing; explicit constructions have improved greatly since 2016 but remain far from random ones.
+    status_note: Open as of 2026; explicit constructions have improved greatly since 2016 but remain far from random ones.
     description: >-
       Erdős proved in 1947 that most colourings of a network on $2^{k/2}$ points have no
       single-coloured cluster of size $k$. Can anyone describe such a colouring
@@ -133,7 +133,7 @@ open_problems:
       strength are closely connected to producing good randomness from weak sources, a
       central problem in theoretical computer science.
     unlocks: >-
-      Explicit Ramsey graphs are equivalent to strong "randomness extractors", which
+      Explicit Ramsey graphs are closely tied to strong "randomness extractors", which
       convert imperfect random sources, like physical noise, into nearly perfect random
       bits for cryptography and algorithms.
     sources:
@@ -179,7 +179,7 @@ further_reading:
     note: A biography of Paul Erdős, for general readers.
   - citation: "Alon, N. & Spencer, J. H. (2016). The Probabilistic Method (4th ed.). Wiley."
     url: null
-    note: The standard textbook, with a short essay on Erdős's style between chapters.
+    note: The standard textbook, with short "Probabilistic Lens" examples between chapters.
   - citation: "Bollobás, B. (2001). Random Graphs (2nd ed.). Cambridge University Press."
     url: null
     note: The comprehensive account of random graph theory.
@@ -213,6 +213,6 @@ Yet no one knows how to write down such a colouring. Checking a proposed colouri
 
 ## Thresholds and Algorithms
 
-The method kept growing. In 1975 Erdős and {{fig:laszlo-lovasz|László Lovász}} proved the local lemma, which finds good outcomes even when they are extremely rare, provided the bad events are only locally dependent. For decades it proved existence only, until {{fig:robin-moser|Robin Moser}} and {{fig:gabor-tardos|Gábor Tardos}} showed in 2009 that a simple procedure, fixing any violated condition by resampling its random choices, finds a good outcome quickly.
+The method kept growing. In 1975 Erdős and {{fig:laszlo-lovasz|László Lovász}} proved the local lemma, which finds good outcomes even when they are extremely rare, provided the bad events are only locally dependent. For decades it proved existence only, apart from special cases, until {{fig:robin-moser|Robin Moser}} and {{fig:gabor-tardos|Gábor Tardos}} showed in 2009 that a simple procedure, fixing any violated condition by resampling its random choices, finds a good outcome quickly.
 
 In 2006 {{fig:jeff-kahn|Jeff Kahn}} and {{fig:gil-kalai|Gil Kalai}} conjectured that the threshold for any property of random graphs is determined, up to a logarithmic factor, by a simple counting estimate. Most experts expected it to be very hard. In 2022 {{fig:jinyoung-park|Jinyoung Park}} and {{fig:huy-tuan-pham|Huy Tuan Pham}} proved it in a few pages. The field's oldest question, how to construct explicitly what randomness produces so easily, is still open, and it is now also a central question of [computational complexity](/math/computational-complexity/).

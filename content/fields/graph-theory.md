@@ -163,7 +163,7 @@ open_problems:
   - id: hadwiger-conjecture
     name: Hadwiger's conjecture
     status: open
-    status_note: Open as of writing; proved for up to six colours, the six-colour case in 1993.
+    status_note: Open as of 2026. Proved for up to six colours, the six-colour case in 1993.
     description: >-
       Hugo Hadwiger conjectured in 1943 that any graph that needs $t$ colours contains
       the complete graph on $t$ vertices as a minor. For $t = 5$ this is equivalent to the
@@ -259,7 +259,7 @@ The total is $5 + 3 + 3 + 3 = 14$, twice the seven bridges, because each bridge 
 
 Now imagine a walk that crosses every bridge once. Every time the walker passes *through* a land mass, they use two bridges, one in and one out. So a land mass that is neither the start nor the end of the walk must have an even number of bridges. Only the start and the end can be odd. Königsberg has *four* odd land masses, so no such walk exists, however it is planned.
 
-Euler also saw the converse, proved in full by Carl Hierholzer in 1873: if a connected graph has zero or two odd vertices, such a walk exists. That makes the question easy to answer for any map, however large. Two of the bridges were destroyed in the Second World War, and in today's Kaliningrad a walk crossing each remaining bridge once is possible.
+Euler also saw the converse, proved in full by Carl Hierholzer in 1873: if a connected graph has zero or two odd vertices, such a walk exists. That makes the question easy to answer for any map, however large. Two of the bridges were destroyed in the Second World War and two more were later replaced by a highway. With the five bridges that now stand on the old sites in Kaliningrad, a walk crossing each once is possible.
 
 ## Structure
 

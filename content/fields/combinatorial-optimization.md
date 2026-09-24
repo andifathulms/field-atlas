@@ -121,13 +121,15 @@ turning_points:
     contested: true
     contested_note: >-
       Anatoliy Serdyukov found the same algorithm independently in the Soviet Union, and
-      published it in 1978. His work was largely unknown in the West until the 2010s, and
-      the method is now often called the Christofides–Serdyukov algorithm.
+      published it in 1978. His work was largely unknown in the West until an English translation and
+      historical note appeared in 2020, and the method is now often called the Christofides–Serdyukov algorithm.
     sources:
       - citation: "Christofides, N. (1976). Worst-case analysis of a new heuristic for the travelling salesman problem. Report 388, Graduate School of Industrial Administration, Carnegie Mellon University."
         url: null
       - citation: "Karlin, A. R., Klein, N. & Oveis Gharan, S. (2021). A (slightly) improved approximation algorithm for metric TSP. Proceedings of the 53rd ACM Symposium on Theory of Computing: 32–45."
         url: null
+      - citation: "van Bevern, R. & Slugina, V. A. (2020). A historical note on the 3/2-approximation algorithm for the metric traveling salesman problem. Historia Mathematica 53: 118–127."
+        url: https://doi.org/10.1016/j.hm.2020.04.003
 
   - id: khachiyan-ellipsoid
     date: "1979"
@@ -148,7 +150,7 @@ open_problems:
   - id: strongly-polynomial-lp
     name: A strongly polynomial algorithm for linear programming
     status: open
-    status_note: Open as of writing; one of Stephen Smale's eighteen problems for the twenty-first century.
+    status_note: Open as of 2026; one of Stephen Smale's eighteen problems for the twenty-first century.
     description: >-
       Known polynomial algorithms for linear programming take longer when the numbers in
       the problem have more digits. Is there an algorithm whose number of arithmetic steps

@@ -150,7 +150,7 @@ open_problems:
       There are several clever constructions, from finite fields and from smaller
       matrices, but each covers only some sizes. The rest have been found by computer
       searches, and the search space grows far too fast to be covered by brute force.
-      Order 428 was found only in 2005, and 668, the smallest gap for two decades, only in
+      Order 428 was found only in 2004, and 668, the smallest gap for two decades, only in
       2026.
     unlocks: >-
       Hadamard matrices give the best error-correcting codes of certain kinds, efficient
@@ -160,7 +160,7 @@ open_problems:
       - citation: "Paley, R. E. A. C. (1933). On orthogonal matrices. Journal of Mathematics and Physics 12: 311–320."
         url: null
       - citation: "Kharaghani, H. & Tayfeh-Rezaie, B. (2005). A Hadamard matrix of order 428. Journal of Combinatorial Designs 13(6): 435–440."
-        url: null
+        url: https://doi.org/10.1002/jcd.20043
 
 applications:
   - area: Phylogenetics

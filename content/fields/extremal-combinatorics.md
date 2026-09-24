@@ -75,7 +75,7 @@ turning_points:
       Frank Ramsey, a Cambridge philosopher, economist and mathematician, proves as a lemma
       in a paper on logic that any sufficiently large system, however its pairs are
       coloured, contains a large system whose pairs all have the same colour. He died in
-      January 1930, aged twenty-six, before the paper appeared. The lemma gave its name
+      January 1930, aged twenty-six, the year the paper appeared. The lemma gave its name
       to a field.
     contested: false
     sources:
@@ -147,7 +147,7 @@ open_problems:
   - id: ramsey-r55
     name: The value of R(5,5)
     status: open
-    status_note: Open as of writing; known to lie between 43 and 46 (upper bound 2024).
+    status_note: Open as of 2026; known to lie between 43 and 46 (upper bound 2024).
     description: >-
       What is the smallest number of guests at a party that guarantees five mutual
       acquaintances or five mutual strangers? It is at least 43, since Geoffrey Exoo found
@@ -170,7 +170,7 @@ open_problems:
   - id: happy-ending-conjecture
     name: The happy ending conjecture
     status: open
-    status_note: Open as of writing; proved for hexagons in 2006 and nearly proved asymptotically in 2017.
+    status_note: Open as of 2026; proved for hexagons in 2006 and nearly proved asymptotically in 2017.
     description: >-
       Erdős and Szekeres conjectured that $2^{n-2} + 1$ points in the plane, no three in a
       line, always contain a convex $n$-gon, and showed that $2^{n-2}$ points need not.
@@ -242,4 +242,4 @@ The next case is much harder. $R(4,4) = 18$, proved in 1955 with a clever colour
 
 In 1936 Erdős and Turán conjectured that density alone forces arithmetic progressions: any set containing a fixed positive fraction of the whole numbers contains progressions of every length. {{fig:endre-szemeredi|Endre Szemerédi}} proved it in 1975, in a proof so intricate that his own diagram of its logical structure became famous. Its key tool, the regularity lemma, says that every large graph can be split into pieces between which it behaves almost randomly. Two years later Hillel Furstenberg found a completely different proof using [ergodic theory](/math/ergodic-theory/), and a third proof came from Fourier analysis.
 
-These methods then reached the primes. In 2004 {{fig:ben-green|Ben Green}} and {{fig:terence-tao|Terence Tao}} proved that the primes contain arithmetic progressions of every length. And in 2023 {{fig:marcelo-campos|Marcelo Campos}}, {{fig:simon-griffiths|Simon Griffiths}}, {{fig:rob-morris|Robert Morris}} and {{fig:julian-sahasrabudhe|Julian Sahasrabudhe}} made the first exponential improvement in almost ninety years to the upper bound for Ramsey numbers. Lower bounds have barely moved since 1947, because the best ones come from randomness, the subject of [probabilistic combinatorics](/math/probabilistic-combinatorics/).
+These methods then reached the primes. In 2004 {{fig:ben-green|Ben Green}} and {{fig:terence-tao|Terence Tao}} proved that the primes contain arithmetic progressions of every length. And in 2023 {{fig:marcelo-campos|Marcelo Campos}}, {{fig:simon-griffiths|Simon Griffiths}}, {{fig:rob-morris|Robert Morris}} and {{fig:julian-sahasrabudhe|Julian Sahasrabudhe}} made the first exponential improvement in almost ninety years to the upper bound for Ramsey numbers. Lower bounds for $R(k, k)$ have barely moved since 1947, because the best ones come from randomness, the subject of [probabilistic combinatorics](/math/probabilistic-combinatorics/).
