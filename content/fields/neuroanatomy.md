@@ -178,9 +178,9 @@ open_problems:
       understanding of why neurons die in ageing brains.
     sources:
       - citation: "Hardy, J. & Selkoe, D. J. (2002). The amyloid hypothesis of Alzheimer's disease: progress and problems on the road to therapeutics. Science 297(5580): 353–356."
-        url: null
+        url: https://doi.org/10.1126/science.1072994
       - citation: "van Dyck, C. H. et al. (2023). Lecanemab in early Alzheimer's disease. New England Journal of Medicine 388(1): 9–21."
-        url: null
+        url: https://doi.org/10.1056/NEJMoa2212948
 
 applications:
   - area: Neurology
@@ -201,7 +201,7 @@ applications:
       Wilder Penfield's maps of the body laid out along the cortex came from such operations.
     sources:
       - citation: "Penfield, W. & Boldrey, E. (1937). Somatic motor and sensory representation in the cerebral cortex of man as studied by electrical stimulation. Brain 60(4): 389–443."
-        url: null
+        url: https://doi.org/10.1093/brain/60.4.389
 
 further_reading:
   - citation: "Shepherd, G. M. (1991). Foundations of the Neuron Doctrine. Oxford University Press."
@@ -229,7 +229,7 @@ Experiment soon supported the clinic. In 1870 Gustav Fritsch and Eduard Hitzig p
 
 ## One Cell at a Time
 
-In 1873 {{fig:camillo-golgi|Camillo Golgi}}, working in a hospital kitchen converted into a laboratory, found a way to cut through the tangle. Tissue hardened in potassium dichromate and soaked in silver nitrate showed a few nerve cells, apparently chosen at random, stained black from end to end. Because only a small fraction took the stain, each one stood out whole against a clear background, with its cell body, its branching dendrites and its long axon.
+In 1873 {{fig:camillo-golgi|Camillo Golgi}}, working in a makeshift laboratory at a hospital for the chronically ill, found a way to cut through the tangle. Tissue hardened in potassium dichromate and soaked in silver nitrate showed a few nerve cells, apparently chosen at random, stained black from end to end. Because only a small fraction took the stain, each one stood out whole against a clear background, with its cell body, its branching dendrites and its long axon.
 
 Golgi read his own images as showing that the fine fibres fused into one continuous net, the reticular theory held by most anatomists. {{fig:santiago-ramon-y-cajal|Santiago Ramón y Cajal}}, a Spanish anatomist who learned of the stain in 1887, read them differently. By staining young birds and mammals, whose axons had not yet grown their fatty insulation, he could follow fibres to their ends, and they ended freely. Every nerve cell was a separate cell, as [cell theory](/biology/cell-theory/) required of every other tissue. Heinrich Waldeyer named it the neuron in 1891. Cajal also argued, from the direction of branching, that signals flow one way, in through the dendrites and out along the axon.
 
@@ -239,7 +239,7 @@ Meanwhile {{fig:korbinian-brodmann|Korbinian Brodmann}} applied a different stai
 
 ## A Closer Look: Counting the Brain
 
-How many neurons are there? Old textbooks said a hundred billion, with ten supporting glial cells for each, but nobody had counted. In 2009 Frederico Azevedo, Suzana Herculano-Houzel and colleagues dissolved whole human brains into a uniform soup of cell nuclei, counted samples, and stained the nuclei that belong to neurons. The totals for an adult man were:
+How many neurons are there? Old textbooks said a hundred billion, with ten supporting glial cells for each, but nobody had counted. In 2009 Frederico Azevedo, Suzana Herculano-Houzel and colleagues dissolved whole human brains into a uniform soup of cell nuclei, counted samples, and stained the nuclei that belong to neurons. The averages for four adult men were:
 
 | Region | Neurons (billions) | Share of neurons |
 |---|---|---|

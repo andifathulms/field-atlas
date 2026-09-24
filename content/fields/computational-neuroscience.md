@@ -55,7 +55,7 @@ turning_points:
     contested: false
     sources:
       - citation: "McCulloch, W. S. & Pitts, W. (1943). A logical calculus of the ideas immanent in nervous activity. Bulletin of Mathematical Biophysics 5(4): 115–133."
-        url: null
+        url: https://doi.org/10.1007/BF02478259
 
   - id: brain-hebb-rule
     date: "1949"
@@ -91,11 +91,11 @@ turning_points:
       day mattered as much, and Minsky and Papert said their results were misread.
     sources:
       - citation: "Rosenblatt, F. (1958). The perceptron: a probabilistic model for information storage and organization in the brain. Psychological Review 65(6): 386–408."
-        url: null
+        url: https://doi.org/10.1037/h0042519
       - citation: "Minsky, M. & Papert, S. (1969). Perceptrons: An Introduction to Computational Geometry. MIT Press."
         url: null
       - citation: "Olazaran, M. (1996). A sociological study of the official history of the perceptrons controversy. Social Studies of Science 26(3): 611–659."
-        url: null
+        url: https://doi.org/10.1177/030631296026003005
 
   - id: brain-marr-levels
     date: 1969 – 1982
@@ -110,7 +110,7 @@ turning_points:
     contested: false
     sources:
       - citation: "Marr, D. (1969). A theory of cerebellar cortex. Journal of Physiology 202(2): 437–470."
-        url: null
+        url: https://doi.org/10.1113/jphysiol.1969.sp008820
       - citation: "Marr, D. (1982). Vision: A Computational Investigation into the Human Representation and Processing of Visual Information. W. H. Freeman."
         url: null
 
@@ -133,9 +133,9 @@ turning_points:
       2024 prize was rightly a physics prize was also debated.
     sources:
       - citation: "Hopfield, J. J. (1982). Neural networks and physical systems with emergent collective computational abilities. Proceedings of the National Academy of Sciences 79(8): 2554–2558."
-        url: null
-      - citation: "Rumelhart, D. E., Hinton, G. E. & Williams, R. J. (1986). Learning representations by back-propagating errors. Nature 323: 533–536."
-        url: null
+        url: https://doi.org/10.1073/pnas.79.8.2554
+      - citation: "Rumelhart, D. E., Hinton, G. E. & Williams, R. J. (1986). Learning representations by back-propagating errors. Nature 323(6088): 533–536."
+        url: https://doi.org/10.1038/323533a0
 
   - id: brain-connectomes
     date: 1986 – 2024
@@ -151,9 +151,9 @@ turning_points:
     contested: false
     sources:
       - citation: "White, J. G., Southgate, E., Thomson, J. N. & Brenner, S. (1986). The structure of the nervous system of the nematode Caenorhabditis elegans. Philosophical Transactions of the Royal Society of London B 314(1165): 1–340."
-        url: null
-      - citation: "Dorkenwald, S. et al. (2024). Neuronal wiring diagram of an adult brain. Nature 634: 124–138."
-        url: null
+        url: https://doi.org/10.1098/rstb.1986.0056
+      - citation: "Dorkenwald, S. et al. (2024). Neuronal wiring diagram of an adult brain. Nature 634(8032): 124–138."
+        url: https://doi.org/10.1038/s41586-024-07558-y
 
 open_problems:
   - id: brain-credit-assignment
@@ -174,8 +174,8 @@ open_problems:
       A theory of learning that links synapses to behaviour, and possibly artificial
       systems that learn from far less data and energy than today's.
     sources:
-      - citation: "Lillicrap, T. P., Santoro, A., Marris, L., Akerman, C. J. & Hinton, G. (2020). Backpropagation and the brain. Nature Reviews Neuroscience 21: 335–346."
-        url: null
+      - citation: "Lillicrap, T. P., Santoro, A., Marris, L., Akerman, C. J. & Hinton, G. (2020). Backpropagation and the brain. Nature Reviews Neuroscience 21(6): 335–346."
+        url: https://doi.org/10.1038/s41583-020-0277-3
 
 applications:
   - area: Mathematics
@@ -197,8 +197,8 @@ applications:
       sets, now recognise speech and images and generate text. They descend directly from
       the perceptron and the connectionist models of the 1980s.
     sources:
-      - citation: "LeCun, Y., Bengio, Y. & Hinton, G. (2015). Deep learning. Nature 521: 436–444."
-        url: null
+      - citation: "LeCun, Y., Bengio, Y. & Hinton, G. (2015). Deep learning. Nature 521(7553): 436–444."
+        url: https://doi.org/10.1038/nature14539
   - area: Engineering
     title: Neuromorphic chips
     description: >-
@@ -207,7 +207,7 @@ applications:
       small fraction of the power of ordinary processors.
     sources:
       - citation: "Mead, C. (1990). Neuromorphic electronic systems. Proceedings of the IEEE 78(10): 1629–1636."
-        url: null
+        url: https://doi.org/10.1109/5.58356
 
 further_reading:
   - citation: "Cobb, M. (2020). The Idea of the Brain: The Past and Future of Neuroscience. Profile Books."
@@ -237,7 +237,7 @@ Meanwhile {{fig:david-marr|David Marr}} in Cambridge and then at MIT built theor
 
 ## A Closer Look: Logic from Thresholds
 
-A McCulloch–Pitts unit takes inputs $x_1, x_2, \ldots$ that are each 0 or 1, multiplies each by a weight $w_i$, and fires, giving output 1, if
+A McCulloch–Pitts unit, in the simplified form usually taught today, takes inputs $x_1, x_2, \ldots$ that are each 0 or 1, multiplies each by a weight $w_i$, and fires, giving output 1, if
 
 $$
 w_1 x_1 + w_2 x_2 + \cdots \geq \theta ,

@@ -50,14 +50,14 @@ turning_points:
       Otto Loewi stimulates the vagus nerve of a frog's heart, which slows its beat, and
       transfers the fluid bathing it to a second heart with no nerve attached. The second
       heart slows too. The nerve had released a chemical, which Loewi called Vagusstoff.
-      Henry Dale's group identified it with acetylcholine and showed the same substance
-      acts at the junction of nerve and muscle. Loewi and Dale shared the 1936 Nobel prize.
+      It proved to be acetylcholine, and Henry Dale's group showed the same substance acts
+      at the junction of nerve and muscle. Loewi and Dale shared the 1936 Nobel prize.
     contested: false
     sources:
-      - citation: "Loewi, O. (1921). Über humorale Übertragbarkeit der Herznervenwirkung. Pflügers Archiv für die gesamte Physiologie 189: 239–242."
-        url: null
+      - citation: "Loewi, O. (1921). Über humorale Übertragbarkeit der Herznervenwirkung. Pflügers Archiv für die gesamte Physiologie 189(1): 239–242."
+        url: https://doi.org/10.1007/BF01738910
       - citation: "Dale, H. H., Feldberg, W. & Vogt, M. (1936). Release of acetylcholine at voluntary motor nerve endings. Journal of Physiology 86(4): 353–380."
-        url: null
+        url: https://doi.org/10.1113/jphysiol.1936.sp003371
 
   - id: soups-and-sparks
     date: 1935 – 1952
@@ -74,7 +74,7 @@ turning_points:
     contested: false
     sources:
       - citation: "Brock, L. G., Coombs, J. S. & Eccles, J. C. (1952). The recording of potentials from motoneurones with an intracellular electrode. Journal of Physiology 117(4): 431–460."
-        url: null
+        url: https://doi.org/10.1113/jphysiol.1952.sp004759
       - citation: "Valenstein, E. S. (2005). The War of the Soups and the Sparks. Columbia University Press."
         url: null
 
@@ -92,9 +92,9 @@ turning_points:
     contested: false
     sources:
       - citation: "Fatt, P. & Katz, B. (1952). Spontaneous subthreshold activity at motor nerve endings. Journal of Physiology 117(1): 109–128."
-        url: null
+        url: https://doi.org/10.1113/jphysiol.1952.sp004735
       - citation: "del Castillo, J. & Katz, B. (1954). Quantal components of the end-plate potential. Journal of Physiology 124(3): 560–573."
-        url: null
+        url: https://doi.org/10.1113/jphysiol.1954.sp005129
 
   - id: carlsson-dopamine
     date: 1957 – 1960
@@ -114,10 +114,10 @@ turning_points:
       treatment, was not included, and more than two hundred neuroscientists signed a
       letter protesting the omission.
     sources:
-      - citation: "Carlsson, A., Lindqvist, M. & Magnusson, T. (1957). 3,4-Dihydroxyphenylalanine and 5-hydroxytryptophan as reserpine antagonists. Nature 180: 1200."
-        url: null
-      - citation: "Ehringer, H. & Hornykiewicz, O. (1960). Verteilung von Noradrenalin und Dopamin (3-Hydroxytyramin) im Gehirn des Menschen und ihr Verhalten bei Erkrankungen des extrapyramidalen Systems. Klinische Wochenschrift 38: 1236–1239."
-        url: null
+      - citation: "Carlsson, A., Lindqvist, M. & Magnusson, T. (1957). 3,4-Dihydroxyphenylalanine and 5-hydroxytryptophan as reserpine antagonists. Nature 180(4596): 1200."
+        url: https://doi.org/10.1038/1801200a0
+      - citation: "Ehringer, H. & Hornykiewicz, O. (1960). Verteilung von Noradrenalin und Dopamin (3-Hydroxytyramin) im Gehirn des Menschen und ihr Verhalten bei Erkrankungen des extrapyramidalen Systems. Klinische Wochenschrift 38(24): 1236–1239."
+        url: https://doi.org/10.1007/BF01485901
 
   - id: nicotinic-receptor-isolated
     date: "1970"
@@ -126,13 +126,13 @@ turning_points:
     description: >-
       The idea of a "receptive substance" on the muscle goes back to John Langley in 1905,
       but no one had held one. Jean-Pierre Changeux and colleagues use a snake venom toxin,
-      which binds the acetylcholine receptor tightly, to pick the receptor out of the
-      electric organ of an eel. It was a protein. Later work showed that it is itself an ion
+      which binds the acetylcholine receptor tightly, to label the receptor in the electric
+      organ of an eel and extract it. It was a protein. Later work showed that it is itself an ion
       channel, opened by acetylcholine, the model for a large family of receptors.
     contested: false
     sources:
       - citation: "Changeux, J.-P., Kasai, M. & Lee, C. Y. (1970). Use of a snake venom toxin to characterize the cholinergic receptor protein. Proceedings of the National Academy of Sciences 67(3): 1241–1247."
-        url: null
+        url: https://doi.org/10.1073/pnas.67.3.1241
 
   - id: synaptic-plasticity-memory
     date: 1970 – 1973
@@ -148,9 +148,9 @@ turning_points:
     contested: false
     sources:
       - citation: "Castellucci, V., Pinsker, H., Kupfermann, I. & Kandel, E. R. (1970). Neuronal mechanisms of habituation and dishabituation of the gill-withdrawal reflex in Aplysia. Science 167(3926): 1745–1748."
-        url: null
+        url: https://doi.org/10.1126/science.167.3926.1745
       - citation: "Bliss, T. V. P. & Lømo, T. (1973). Long-lasting potentiation of synaptic transmission in the dentate area of the anaesthetized rabbit following stimulation of the perforant path. Journal of Physiology 232(2): 331–356."
-        url: null
+        url: https://doi.org/10.1113/jphysiol.1973.sp010273
 
 open_problems:
   - id: brain-memory-engram
@@ -174,9 +174,9 @@ open_problems:
       post-traumatic stress, and a physical account of how experience is kept.
     sources:
       - citation: "Martin, S. J., Grimwood, P. D. & Morris, R. G. M. (2000). Synaptic plasticity and memory: an evaluation of the hypothesis. Annual Review of Neuroscience 23: 649–711."
-        url: null
+        url: https://doi.org/10.1146/annurev.neuro.23.1.649
       - citation: "Josselyn, S. A. & Tonegawa, S. (2020). Memory engrams: recalling the past and imagining the future. Science 367(6473): eaaw4325."
-        url: null
+        url: https://doi.org/10.1126/science.aaw4325
 
 applications:
   - area: Medicine
@@ -188,7 +188,7 @@ applications:
       the late 1960s.
     sources:
       - citation: "Cotzias, G. C., Van Woert, M. H. & Schiffer, L. M. (1967). Aromatic amino acids and modification of parkinsonism. New England Journal of Medicine 276(7): 374–379."
-        url: null
+        url: https://doi.org/10.1056/NEJM196702162760703
   - area: Psychiatry
     title: Drugs that act at synapses
     description: >-
@@ -197,8 +197,8 @@ applications:
       lingers longer in the synapse. Why such drugs help some patients and not others is
       still poorly understood.
     sources:
-      - citation: "Wong, D. T., Perry, K. W. & Bymaster, F. P. (2005). The discovery of fluoxetine hydrochloride (Prozac). Nature Reviews Drug Discovery 4: 764–774."
-        url: null
+      - citation: "Wong, D. T., Perry, K. W. & Bymaster, F. P. (2005). The discovery of fluoxetine hydrochloride (Prozac). Nature Reviews Drug Discovery 4(9): 764–774."
+        url: https://doi.org/10.1038/nrd1821
 
 further_reading:
   - citation: "Valenstein, E. S. (2005). The War of the Soups and the Sparks. Columbia University Press."
@@ -216,7 +216,7 @@ further_reading:
 
 [Neuroanatomy](/biology/neuroanatomy/) had shown that neurons are separate cells, and [electrophysiology](/biology/electrophysiology/) that they signal with electrical pulses. How did a pulse cross the gap? In 1904 Thomas Elliott, a Cambridge student, noticed that adrenaline mimics the effects of certain nerves and suggested that the nerves might release it. Few followed up.
 
-The decisive experiment, by his own account, came to {{fig:otto-loewi|Otto Loewi}} in a dream on the night before Easter Sunday 1921. He woke, scribbled a note, and in the morning could not read it. The next night the dream returned, and he went straight to his laboratory in Graz. He stimulated the vagus nerve of a frog's heart, which slowed it, then moved the fluid bathing that heart to a second heart. The second heart slowed as well. The nerve had released a substance. {{fig:henry-dale|Henry Dale}} in London identified it as acetylcholine and in 1936 showed that it also carries the signal from nerve to skeletal muscle. Loewi and Dale shared the Nobel prize that year. Two years later Loewi, who was Jewish, was arrested after the Nazi annexation of Austria and released only after handing over his prize money.
+The decisive experiment, by his own account, came to {{fig:otto-loewi|Otto Loewi}} in a dream on the night before Easter Sunday 1921. He woke, scribbled a note, and in the morning could not read it. The next night the dream returned, and he went straight to his laboratory in Graz. He stimulated the vagus nerve of a frog's heart, which slowed it, then moved the fluid bathing that heart to a second heart. The second heart slowed as well. The nerve had released a substance. It proved to be acetylcholine, and in 1936 {{fig:henry-dale|Henry Dale}} in London showed that it also carries the signal from nerve to skeletal muscle. Loewi and Dale shared the Nobel prize that year. Two years later Loewi, who was Jewish, was arrested after the Nazi annexation of Austria and released only after handing over his prize money.
 
 ## And Sparks
 
@@ -228,7 +228,7 @@ Sparks were not wholly extinguished. In 1957 Edwin Furshpan and David Potter fou
 
 At University College London, {{fig:bernard-katz|Bernard Katz}}, a refugee from Leipzig, studied the junction between nerve and muscle in frogs. In 1952 he and Paul Fatt saw that even when the nerve was silent, the muscle showed small random blips of about half a millivolt. With José del Castillo he lowered the calcium in the bathing fluid so that each nerve impulse released only a little transmitter. The responses then jumped in steps the size of a blip. Transmitter was released in fixed packets, and at the same time electron microscopists were seeing nerve endings crammed with tiny vesicles, each about 50 nanometres across, which proved to be the packets.
 
-Acetylcholine was soon joined by others. {{fig:arvid-carlsson|Arvid Carlsson}} showed in 1957 and 1958 that dopamine is a transmitter in its own right, concentrated in the basal ganglia, and {{fig:oleh-hornykiewicz|Oleh Hornykiewicz}} found it depleted in Parkinson's disease. Glutamate turned out to be the main excitatory transmitter of the brain and GABA the main inhibitory one. In 1970 {{fig:jean-pierre-changeux|Jean-Pierre Changeux}} used a snake toxin to isolate the acetylcholine receptor, the first receptor to be purified. It was a protein with a channel through its middle, and the chemistry of [biochemistry](/biology/biochemistry/) had reached the synapse.
+Acetylcholine was soon joined by others. {{fig:arvid-carlsson|Arvid Carlsson}} showed in 1957 and 1958 that dopamine is a transmitter in its own right, concentrated in the basal ganglia, and {{fig:oleh-hornykiewicz|Oleh Hornykiewicz}} found it depleted in Parkinson's disease. Glutamate turned out to be the main excitatory transmitter of the brain and GABA the main inhibitory one. In 1970 {{fig:jean-pierre-changeux|Jean-Pierre Changeux}} used a snake toxin to extract the acetylcholine receptor, among the first receptors to be isolated. It was a protein with a channel through its middle, and the chemistry of [biochemistry](/biology/biochemistry/) had reached the synapse.
 
 ## A Closer Look: Counting Packets
 

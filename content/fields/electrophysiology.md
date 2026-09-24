@@ -64,7 +64,7 @@ turning_points:
       - citation: "Pera, M. (1992). The Ambiguous Frog: The Galvani–Volta Controversy on Animal Electricity. Princeton University Press."
         url: null
       - citation: "Piccolino, M. (1998). Animal electricity and the birth of electrophysiology: the legacy of Luigi Galvani. Brain Research Bulletin 46(5): 381–407."
-        url: null
+        url: https://doi.org/10.1016/S0361-9230(98)00026-4
 
   - id: du-bois-reymond-action-current
     date: 1843 – 1849
@@ -113,7 +113,7 @@ turning_points:
     contested: false
     sources:
       - citation: "Adrian, E. D. & Zotterman, Y. (1926). The impulses produced by sensory nerve endings. Part 2. The response of a single end-organ. Journal of Physiology 61(2): 151–171."
-        url: null
+        url: https://doi.org/10.1113/jphysiol.1926.sp002281
       - citation: "Adrian, E. D. (1928). The Basis of Sensation. Christophers, London."
         url: null
 
@@ -130,10 +130,10 @@ turning_points:
       They shared the 1963 Nobel prize with John Eccles.
     contested: false
     sources:
-      - citation: "Hodgkin, A. L. & Huxley, A. F. (1939). Action potentials recorded from inside a nerve fibre. Nature 144: 710–711."
-        url: null
+      - citation: "Hodgkin, A. L. & Huxley, A. F. (1939). Action potentials recorded from inside a nerve fibre. Nature 144(3651): 710–711."
+        url: https://doi.org/10.1038/144710a0
       - citation: "Hodgkin, A. L. & Huxley, A. F. (1952). A quantitative description of membrane current and its application to conduction and excitation in nerve. Journal of Physiology 117(4): 500–544."
-        url: null
+        url: https://doi.org/10.1113/jphysiol.1952.sp004764
 
   - id: neher-sakmann-patch-clamp
     date: 1976 – 1981
@@ -147,10 +147,10 @@ turning_points:
       found in 1980, made the method routine. They shared the 1991 Nobel prize.
     contested: false
     sources:
-      - citation: "Neher, E. & Sakmann, B. (1976). Single-channel currents recorded from membrane of denervated frog muscle fibres. Nature 260: 799–802."
-        url: null
+      - citation: "Neher, E. & Sakmann, B. (1976). Single-channel currents recorded from membrane of denervated frog muscle fibres. Nature 260(5554): 799–802."
+        url: https://doi.org/10.1038/260799a0
       - citation: "Hamill, O. P., Marty, A., Neher, E., Sakmann, B. & Sigworth, F. J. (1981). Improved patch-clamp techniques for high-resolution current recording from cells and cell-free membrane patches. Pflügers Archiv 391(2): 85–100."
-        url: null
+        url: https://doi.org/10.1007/BF00656997
 
 open_problems:
   - id: brain-neuron-homeostasis
@@ -172,8 +172,8 @@ open_problems:
       An understanding of why nervous systems are robust to change and injury, and why that
       robustness sometimes fails, as in epilepsy.
     sources:
-      - citation: "Marder, E. & Goaillard, J.-M. (2006). Variability, compensation and homeostasis in neuron and network function. Nature Reviews Neuroscience 7: 563–574."
-        url: null
+      - citation: "Marder, E. & Goaillard, J.-M. (2006). Variability, compensation and homeostasis in neuron and network function. Nature Reviews Neuroscience 7(7): 563–574."
+        url: https://doi.org/10.1038/nrn1949
 
 applications:
   - area: Electricity
@@ -187,7 +187,7 @@ applications:
     field_id: electromagnetism
     sources:
       - citation: "Volta, A. (1800). On the electricity excited by the mere contact of conducting substances of different kinds. Philosophical Transactions of the Royal Society of London 90: 403–431."
-        url: null
+        url: https://doi.org/10.1098/rstl.1800.0018
   - area: Mathematics
     title: Excitable systems
     description: >-
@@ -199,7 +199,7 @@ applications:
     field_id: dynamical-systems
     sources:
       - citation: "FitzHugh, R. (1961). Impulses and physiological states in theoretical models of nerve membrane. Biophysical Journal 1(6): 445–466."
-        url: null
+        url: https://doi.org/10.1016/S0006-3495(61)86902-6
   - area: Medicine
     title: Drugs that block channels
     description: >-

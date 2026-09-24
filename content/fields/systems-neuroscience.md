@@ -58,7 +58,7 @@ turning_points:
     contested: false
     sources:
       - citation: "Scoville, W. B. & Milner, B. (1957). Loss of recent memory after bilateral hippocampal lesions. Journal of Neurology, Neurosurgery and Psychiatry 20(1): 11–21."
-        url: null
+        url: https://doi.org/10.1136/jnnp.20.1.11
       - citation: "Corkin, S. (2013). Permanent Present Tense: The Unforgettable Life of the Amnesic Patient, H. M. Basic Books."
         url: null
 
@@ -72,13 +72,13 @@ turning_points:
       when the edge of a glass slide is moved across the projector. Cells in the primary
       visual cortex respond to lines and edges at particular angles, arranged in columns.
       Later work showed that vision in each eye needs normal experience early in life. They
-      shared the 1981 Nobel prize.
+      shared the 1981 Nobel prize with Roger Sperry.
     contested: false
     sources:
       - citation: "Hubel, D. H. & Wiesel, T. N. (1959). Receptive fields of single neurones in the cat's striate cortex. Journal of Physiology 148(3): 574–591."
-        url: null
+        url: https://doi.org/10.1113/jphysiol.1959.sp006308
       - citation: "Hubel, D. H. & Wiesel, T. N. (1962). Receptive fields, binocular interaction and functional architecture in the cat's visual cortex. Journal of Physiology 160(1): 106–154."
-        url: null
+        url: https://doi.org/10.1113/jphysiol.1962.sp006837
 
   - id: okeefe-place-cells
     date: "1971"
@@ -93,7 +93,7 @@ turning_points:
     contested: false
     sources:
       - citation: "O'Keefe, J. & Dostrovsky, J. (1971). The hippocampus as a spatial map. Preliminary evidence from unit activity in the freely-moving rat. Brain Research 34(1): 171–175."
-        url: null
+        url: https://doi.org/10.1016/0006-8993(71)90358-1
       - citation: "O'Keefe, J. & Nadel, L. (1978). The Hippocampus as a Cognitive Map. Oxford University Press."
         url: null
 
@@ -109,8 +109,8 @@ turning_points:
       shared the 2014 Nobel prize with O'Keefe.
     contested: false
     sources:
-      - citation: "Hafting, T., Fyhn, M., Molden, S., Moser, M.-B. & Moser, E. I. (2005). Microstructure of a spatial map in the entorhinal cortex. Nature 436: 801–806."
-        url: null
+      - citation: "Hafting, T., Fyhn, M., Molden, S., Moser, M.-B. & Moser, E. I. (2005). Microstructure of a spatial map in the entorhinal cortex. Nature 436(7052): 801–806."
+        url: https://doi.org/10.1038/nature03721
 
   - id: ogawa-bold-fmri
     date: 1990 – 1992
@@ -126,9 +126,9 @@ turning_points:
     contested: false
     sources:
       - citation: "Ogawa, S., Lee, T. M., Kay, A. R. & Tank, D. W. (1990). Brain magnetic resonance imaging with contrast dependent on blood oxygenation. Proceedings of the National Academy of Sciences 87(24): 9868–9872."
-        url: null
+        url: https://doi.org/10.1073/pnas.87.24.9868
       - citation: "Kwong, K. K. et al. (1992). Dynamic magnetic resonance imaging of human brain activity during primary sensory stimulation. Proceedings of the National Academy of Sciences 89(12): 5675–5679."
-        url: null
+        url: https://doi.org/10.1073/pnas.89.12.5675
 
   - id: brain-optogenetics
     date: 2002 – 2005
@@ -149,15 +149,15 @@ turning_points:
       to six people, the 2021 Lasker award to Deisseroth, Hegemann and Dieter Oesterhelt.
     sources:
       - citation: "Boyden, E. S., Zhang, F., Bamberg, E., Nagel, G. & Deisseroth, K. (2005). Millisecond-timescale, genetically targeted optical control of neural activity. Nature Neuroscience 8(9): 1263–1268."
-        url: null
+        url: https://doi.org/10.1038/nn1525
       - citation: "Zemelman, B. V., Lee, G. A., Ng, M. & Miesenböck, G. (2002). Selective photostimulation of genetically chARGed neurons. Neuron 33(1): 15–22."
-        url: null
+        url: https://doi.org/10.1016/S0896-6273(01)00574-8
 
 open_problems:
   - id: brain-consciousness
     name: How does the brain give rise to conscious experience?
     status: open
-    status_note: Open as of writing; rival theories make different predictions, and tests are under way.
+    status_note: Open as of 2026; the first large adversarial test of two leading theories, published in 2025, challenged both without settling the question.
     description: >-
       Neuroscience can say which brain activity goes with seeing red or feeling pain. It
       cannot yet say why that activity is accompanied by experience at all, or which
@@ -177,6 +177,8 @@ open_problems:
         url: null
       - citation: "Crick, F. & Koch, C. (1990). Towards a neurobiological theory of consciousness. Seminars in the Neurosciences 2: 263–275."
         url: null
+      - citation: "Cogitate Consortium (2025). Adversarial testing of global neuronal workspace and integrated information theories of consciousness. Nature 642(8066): 133–142."
+        url: https://doi.org/10.1038/s41586-025-08888-1
 
 applications:
   - area: Medicine
@@ -188,7 +190,7 @@ applications:
       still adapt.
     sources:
       - citation: "Wiesel, T. N. & Hubel, D. H. (1963). Single-cell responses in striate cortex of kittens deprived of vision in one eye. Journal of Neurophysiology 26(6): 1003–1017."
-        url: null
+        url: https://doi.org/10.1152/jn.1963.26.6.1003
   - area: Computing
     title: Networks that see
     description: >-
@@ -197,15 +199,15 @@ applications:
       faces and read medical scans.
     sources:
       - citation: "Fukushima, K. (1980). Neocognitron: a self-organizing neural network model for a mechanism of pattern recognition unaffected by shift in position. Biological Cybernetics 36(4): 193–202."
-        url: null
+        url: https://doi.org/10.1007/BF00344251
   - area: Medicine
     title: Brain–computer interfaces
     description: >-
       Electrodes in the motor cortex of people with paralysis record the firing of dozens
       of neurons, and a computer translates it into movements of a cursor or robotic arm.
     sources:
-      - citation: "Hochberg, L. R. et al. (2006). Neuronal ensemble control of prosthetic devices by a human with tetraplegia. Nature 442: 164–171."
-        url: null
+      - citation: "Hochberg, L. R. et al. (2006). Neuronal ensemble control of prosthetic devices by a human with tetraplegia. Nature 442(7099): 164–171."
+        url: https://doi.org/10.1038/nature04970
 
 further_reading:
   - citation: "Hubel, D. H. (1988). Eye, Brain, and Vision. Scientific American Library."
