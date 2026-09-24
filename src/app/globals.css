@@ -198,3 +198,33 @@ button:focus-visible {
   to { background-color: transparent; }
 }
 .waypoint:target { animation: target-flash 1800ms var(--ease-house); }
+
+/* Tables inside prose: a surveyor's ledger, not a spreadsheet. */
+.prose-atlas table {
+  width: 100%;
+  margin: 1.4em 0;
+  border-collapse: collapse;
+  font-size: 0.95em;
+  display: block;
+  overflow-x: auto;
+}
+.prose-atlas thead th {
+  font-family: var(--font-mono), ui-monospace, monospace;
+  font-size: 0.6875rem;
+  font-weight: 500;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--ink-faint);
+  text-align: left;
+  padding: 0 1.25em 0.6em 0;
+  border-bottom: 1px solid var(--ink);
+  white-space: nowrap;
+}
+.prose-atlas thead th .katex { text-transform: none; font-size: 1.15em; }
+.prose-atlas tbody td {
+  padding: 0.55em 1.25em 0.55em 0;
+  border-bottom: 1px solid var(--rule);
+  vertical-align: baseline;
+}
+.prose-atlas td .katex,
+.prose-atlas td .katex .base { white-space: nowrap; }
