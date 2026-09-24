@@ -199,6 +199,27 @@ In 1900 three botanists, {{fig:de-vries|Hugo de Vries}}, {{fig:correns|Carl Corr
 
 Where were the genes? Chromosomes, the thread-like bodies that pair up and separate when cells divide, behaved exactly as Mendel's factors should. In 1910 {{fig:morgan|Thomas Hunt Morgan}} found a single white-eyed male fruit fly in his crowded Columbia lab and traced the trait to the X chromosome. His student {{fig:sturtevant|Alfred Sturtevant}}, then an undergraduate, realised overnight that how often linked genes are separated measures their distance, and drew the first genetic map.
 
+## A Closer Look: Mendel's Counts
+
+Mendel's key experiment crossed pure-breeding round-seeded peas with pure-breeding wrinkled ones. All the offspring were round. He then let those hybrids self-fertilise and counted their seeds:
+
+| Trait | Dominant | Recessive | Ratio |
+|---|---|---|---|
+| Seed shape | 5,474 round | 1,850 wrinkled | 2.96 : 1 |
+| Seed colour | 6,022 yellow | 2,001 green | 3.01 : 1 |
+
+Why three to one? Suppose each plant carries two copies of a factor, now called a gene, one from each parent. Write $R$ for round, which is dominant, and $r$ for wrinkled. The hybrids are all $Rr$. Each passes on $R$ or $r$ with equal chance, so their offspring are
+
+$$
+\tfrac14\, RR + \tfrac12\, Rr + \tfrac14\, rr .
+$$
+
+Anything with at least one $R$ looks round, so three-quarters are round and a quarter wrinkled. The wrinkled factor was hidden in the hybrids, not lost.
+
+Mendel then tracked two traits at once. If the genes for shape and colour are passed on independently, the combinations should appear in the proportions $\tfrac34 \times \tfrac34$, $\tfrac34 \times \tfrac14$, $\tfrac14 \times \tfrac34$ and $\tfrac14 \times \tfrac14$, a ratio of 9 : 3 : 3 : 1. Of 556 seeds, the expected numbers are 312.75, 104.25, 104.25 and 34.75. He counted 315 round yellow, 101 wrinkled yellow, 108 round green and 32 wrinkled green.
+
+The fit is close, perhaps too close. In 1936 Ronald Fisher calculated that Mendel's data agree with the theory better than chance would usually allow, and suggested that someone, perhaps an assistant, had tidied them. Others have argued that Mendel's methods, such as when he stopped counting, explain the fit. Either way, the ratios have been confirmed countless times since. Independence also has limits: genes close together on the same chromosome tend to travel together, which is how Sturtevant built the first genetic map.
+
 ## From Heredity to Chemistry
 
 Genetics then learned to intervene. In 1927 {{fig:muller|Hermann Muller}} found that X-rays multiply the mutation rate, giving geneticists an endless supply of mutants and giving the world an early warning about radiation. In 1941 {{fig:beadle|George Beadle}} and {{fig:tatum|Edward Tatum}} used that trick on bread mould and found that each mutation disabled one enzyme. Genes work by making proteins.
