@@ -252,6 +252,30 @@ If DNA is a message, how is it read? In 1958 Crick set out the *central dogma*: 
 
 The spelling was cracked by experiment. In 1961 {{fig:nirenberg|Marshall Nirenberg}} and Heinrich Matthaei made an RNA of nothing but U and got a protein of nothing but phenylalanine. Within five years every three-letter codon had been assigned. The code turned out to be nearly identical in bacteria, plants and people, powerful evidence for the common descent Darwin had argued from anatomy.
 
+## A Closer Look: How Much Information Is in DNA?
+
+DNA spells its messages in four letters, A, C, G and T. Proteins are built from twenty kinds of amino acid. How many letters does the code need per amino acid?
+
+With one letter per amino acid, there are only 4 possible "words". With two, $4^2 = 16$, still fewer than 20. With three, $4^3 = 64$, enough for all twenty amino acids plus stop signals, with room to spare. George Gamow and others argued from this counting that the code must use triplets, before any experiment. Crick and Brenner's genetic experiments in 1961 confirmed it, and the spare codons explain why most amino acids have several.
+
+Each letter carries two bits of information, since $4 = 2^2$. The human genome has about 3.1 billion base pairs in one set of chromosomes, so
+
+$$
+3.1 \times 10^9 \times 2 \text{ bits} = 6.2 \times 10^9 \text{ bits} \approx 775 \text{ megabytes} ,
+$$
+
+about the capacity of a CD-ROM. Every cell with a nucleus holds two sets, one from each parent.
+
+It is also long. Adjacent base pairs are 0.34 nanometres apart along the helix. The two sets in a single cell, about 6.4 billion base pairs, stretch to
+
+$$
+6.4 \times 10^9 \times 0.34 \times 10^{-9} \text{ m} \approx 2.2 \text{ m} ,
+$$
+
+packed into a nucleus about 6 micrometres across, like fitting about 25 km of fine thread into a tennis ball. It is wound around protein spools and folded in loops, and still has to be unwound, copied and read in a precise order.
+
+Copying is astonishingly accurate. The enzymes that copy DNA make roughly one error per billion letters after proofreading and repair, so a human cell division introduces only a handful of new mutations across the whole genome. That accuracy, and the rare errors it lets through, are the raw material of evolution.
+
 ## Reading and Writing DNA
 
 The dogma soon needed revising. In 1970 {{fig:temin|Howard Temin}} and {{fig:baltimore|David Baltimore}} found that some viruses copy RNA back into DNA using reverse transcriptase, an enzyme that later made HIV understandable, and treatable.
