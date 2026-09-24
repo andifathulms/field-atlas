@@ -648,5 +648,15 @@
   { "id": "shinya-yamanaka", "name": "Shinya Yamanaka", "turning_point_ids": ["ips-cells"] },
   { "id": "kazutoshi-takahashi", "name": "Kazutoshi Takahashi", "turning_point_ids": ["ips-cells"] },
   { "id": "toshiro-sato", "name": "Toshiro Sato", "turning_point_ids": ["intestinal-organoids"] },
-  { "id": "hans-clevers", "name": "Hans Clevers", "turning_point_ids": ["intestinal-organoids"] }
+  { "id": "hans-clevers", "name": "Hans Clevers", "turning_point_ids": ["intestinal-organoids"] },
+  { "id": "rene-just-hauy", "name": "René Just Haüy", "turning_point_ids": ["xtal-hauy-molecules"] },
+  { "id": "auguste-bravais", "name": "Auguste Bravais", "turning_point_ids": ["xtal-bravais-lattices"] },
+  { "id": "max-von-laue", "name": "Max von Laue", "turning_point_ids": ["xtal-laue-diffraction"] },
+  { "id": "walter-friedrich", "name": "Walter Friedrich", "turning_point_ids": ["xtal-laue-diffraction"] },
+  { "id": "paul-knipping", "name": "Paul Knipping", "turning_point_ids": ["xtal-laue-diffraction"] },
+  { "id": "william-lawrence-bragg", "name": "William Lawrence Bragg", "turning_point_ids": ["xtal-bragg-law"] },
+  { "id": "william-henry-bragg", "name": "William Henry Bragg", "turning_point_ids": ["xtal-bragg-law"] },
+  { "id": "kathleen-lonsdale", "name": "Kathleen Lonsdale", "turning_point_ids": ["xtal-lonsdale-benzene"] },
+  { "id": "dorothy-hodgkin", "name": "Dorothy Hodgkin", "turning_point_ids": ["xtal-hodgkin-structures"] },
+  { "id": "dan-shechtman", "name": "Dan Shechtman", "turning_point_ids": ["xtal-quasicrystals"] }
 ]

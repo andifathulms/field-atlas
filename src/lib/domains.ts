@@ -69,7 +69,7 @@ export const DOMAINS: DomainInfo[] = [
   {
     id: "physics",
     name: "Physics",
-    blurb: "How motion, light and gravity were rebuilt around the speed of light, how the laws of heat became the statistics of atoms, how energy turned out to come in lumps, how starlight revealed what stars are made of, and what is still dark.",
+    blurb: "How motion, light and gravity were rebuilt around the speed of light, how the laws of heat became the statistics of atoms, how energy turned out to come in lumps, how starlight revealed what stars are made of, how the order inside crystals explained metals, magnets and superconductors, and what is still dark.",
     threads: [
       {
         id: "relativity",
@@ -94,6 +94,12 @@ export const DOMAINS: DomainInfo[] = [
         title: "The Stars Thread",
         intro:
           "From dark lines in sunlight to planets around other suns. In 1835 a philosopher declared that the chemistry of the stars could never be known. Within thirty years spectroscopy was reading it from starlight, and the colours of stars became a code for their temperature, composition and motion. Physics then explained what makes stars shine and how they forge the elements, what is left when they die, and how they gather into galaxies around black holes. The fog here is the interior of neutron stars, the Sun's own composition, and whether any of the thousands of known planets carries life.",
+      },
+      {
+        id: "matter",
+        title: "The Matter Thread",
+        intro:
+          "From the shapes of crystals to phases defined by topology. For a century the regular faces of crystals hinted at an inner order no one could see, until in 1912 X-rays revealed the rows of atoms directly. Quantum mechanics then explained why electrons race through some of those lattices and are trapped in others, and control of the difference produced the transistor. Cooled far enough, some metals lose all resistance, iron's magnetism turned out to be an electric effect of the exclusion principle, and a strip of electrons in a magnetic field gave a resistance fixed by constants of nature, because its quantum states have a shape that cannot be smoothly undone. The fog here is how the copper oxides superconduct, whether anything can superconduct at room temperature, and whether the exotic particles of topological matter can be tamed for computing.",
       },
     ],
   },
