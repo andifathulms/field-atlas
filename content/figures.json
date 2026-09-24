@@ -145,11 +145,11 @@
   { "id": "yitang-zhang", "name": "Yitang Zhang", "turning_point_ids": ["bounded-gaps"] },
   { "id": "maynard", "name": "James Maynard", "turning_point_ids": ["bounded-gaps"] },
   { "id": "lame", "name": "Gabriel Lamé", "turning_point_ids": ["lame-kummer"] },
-  { "id": "liouville", "name": "Joseph Liouville", "turning_point_ids": ["lame-kummer"] },
+  { "id": "liouville", "name": "Joseph Liouville", "turning_point_ids": ["lame-kummer", "galois-memoir"] },
   { "id": "kummer", "name": "Ernst Kummer", "turning_point_ids": ["lame-kummer", "kummer-ideal-numbers"] },
   { "id": "dedekind", "name": "Richard Dedekind", "turning_point_ids": ["dedekind-ideals", "dedekind-cantor-reals"] },
   { "id": "takagi", "name": "Teiji Takagi", "turning_point_ids": ["class-field-theory"] },
-  { "id": "artin", "name": "Emil Artin", "turning_point_ids": ["class-field-theory"] },
+  { "id": "artin", "name": "Emil Artin", "turning_point_ids": ["class-field-theory", "artin-galois"] },
   { "id": "heegner", "name": "Kurt Heegner", "turning_point_ids": ["class-number-one"] },
   { "id": "alan-baker", "name": "Alan Baker", "turning_point_ids": ["class-number-one"] },
   { "id": "stark", "name": "Harold Stark", "turning_point_ids": ["class-number-one"] },
@@ -228,5 +228,10 @@
   { "id": "del-ferro", "name": "Scipione del Ferro", "turning_point_ids": ["cubic-formula"] },
   { "id": "tartaglia", "name": "Niccolò Tartaglia", "turning_point_ids": ["cubic-formula"] },
   { "id": "lodovico-ferrari", "name": "Lodovico Ferrari", "turning_point_ids": ["cubic-formula"] },
-  { "id": "viete", "name": "François Viète", "turning_point_ids": ["viete-notation"] }
+  { "id": "viete", "name": "François Viète", "turning_point_ids": ["viete-notation"] },
+  { "id": "lagrange", "name": "Joseph-Louis Lagrange", "turning_point_ids": ["lagrange-reflexions"] },
+  { "id": "ruffini", "name": "Paolo Ruffini", "turning_point_ids": ["abel-ruffini"] },
+  { "id": "abel", "name": "Niels Henrik Abel", "turning_point_ids": ["abel-ruffini"] },
+  { "id": "galois", "name": "Évariste Galois", "turning_point_ids": ["galois-memoir"] },
+  { "id": "camille-jordan", "name": "Camille Jordan", "turning_point_ids": ["jordan-traite"] }
 ]
