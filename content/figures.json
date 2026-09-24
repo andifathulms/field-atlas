@@ -55,11 +55,11 @@
   { "id": "enriques", "name": "Federigo Enriques", "turning_point_ids": ["italian-school-crisis"] },
   { "id": "severi", "name": "Francesco Severi", "turning_point_ids": ["italian-school-crisis"] },
   { "id": "zariski", "name": "Oscar Zariski", "turning_point_ids": ["italian-school-crisis"] },
-  { "id": "weil", "name": "André Weil", "turning_point_ids": ["italian-school-crisis", "weil-conjectures"] },
+  { "id": "weil", "name": "André Weil", "turning_point_ids": ["italian-school-crisis", "weil-conjectures", "taniyama-shimura"] },
   { "id": "grothendieck", "name": "Alexander Grothendieck", "turning_point_ids": ["grothendieck-schemes"] },
   { "id": "deligne", "name": "Pierre Deligne", "turning_point_ids": ["deligne-weil"] },
   { "id": "wiles", "name": "Andrew Wiles", "turning_point_ids": ["wiles-fermat"] },
-  { "id": "taylor", "name": "Richard Taylor", "turning_point_ids": ["wiles-fermat"] },
+  { "id": "taylor", "name": "Richard Taylor", "turning_point_ids": ["wiles-fermat", "modularity-theorem"] },
   { "id": "galileo", "name": "Galileo Galilei", "turning_point_ids": ["galileo-falling-bodies"] },
   { "id": "kepler", "name": "Johannes Kepler", "turning_point_ids": ["kepler-laws"] },
   { "id": "newton", "name": "Isaac Newton", "turning_point_ids": ["newton-principia"] },
@@ -152,5 +152,13 @@
   { "id": "artin", "name": "Emil Artin", "turning_point_ids": ["class-field-theory"] },
   { "id": "heegner", "name": "Kurt Heegner", "turning_point_ids": ["class-number-one"] },
   { "id": "alan-baker", "name": "Alan Baker", "turning_point_ids": ["class-number-one"] },
-  { "id": "stark", "name": "Harold Stark", "turning_point_ids": ["class-number-one"] }
+  { "id": "stark", "name": "Harold Stark", "turning_point_ids": ["class-number-one"] },
+  { "id": "mordell", "name": "Louis Mordell", "turning_point_ids": ["mordell-1922"] },
+  { "id": "taniyama", "name": "Yutaka Taniyama", "turning_point_ids": ["taniyama-shimura"] },
+  { "id": "shimura", "name": "Goro Shimura", "turning_point_ids": ["taniyama-shimura"] },
+  { "id": "faltings", "name": "Gerd Faltings", "turning_point_ids": ["faltings-1983"] },
+  { "id": "frey", "name": "Gerhard Frey", "turning_point_ids": ["frey-ribet"] },
+  { "id": "serre", "name": "Jean-Pierre Serre", "turning_point_ids": ["frey-ribet"] },
+  { "id": "ribet", "name": "Ken Ribet", "turning_point_ids": ["frey-ribet"] },
+  { "id": "breuil", "name": "Christophe Breuil", "turning_point_ids": ["modularity-theorem"] }
 ]
