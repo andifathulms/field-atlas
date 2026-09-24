@@ -237,6 +237,30 @@ export function getIncomingLinks(fieldId: string): Array<{ from: Field; applicat
   );
 }
 
+export interface Crossing {
+  from: Field;
+  application: Application;
+  /** Set when the application names a surveyed field in the other domain. */
+  to: Field | null;
+}
+
+/**
+ * Every application that reaches into another domain: linked crossings land in
+ * a surveyed field, seeds reach a domain whose relevant field isn't surveyed yet.
+ */
+export function getCrossings(): { links: Crossing[]; seeds: Crossing[] } {
+  const all = collections().fields.flatMap((from) =>
+    from.applications
+      .filter((a) => a.domain && a.domain !== from.domain)
+      .map((application) => ({
+        from,
+        application,
+        to: application.field_id ? getField(application.field_id) ?? null : null,
+      })),
+  );
+  return { links: all.filter((c) => c.to), seeds: all.filter((c) => !c.to) };
+}
+
 /** Figures who contributed to a given turning point. */
 export function getFiguresForTurningPoint(tpId: string): Figure[] {
   return collections().figures.filter((fig) => fig.turning_point_ids.includes(tpId));

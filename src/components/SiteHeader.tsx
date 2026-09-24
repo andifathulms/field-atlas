@@ -19,6 +19,12 @@ export function SiteHeader() {
               {d.name}
             </Link>
           ))}
+          <Link
+            href="/crossings/"
+            className="stamp border-l border-rule pl-5 text-ink-soft transition-colors duration-200 hover:text-ink"
+          >
+            Crossings
+          </Link>
         </nav>
       </div>
     </header>
