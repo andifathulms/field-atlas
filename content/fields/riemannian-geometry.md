@@ -225,6 +225,20 @@ Riemann's sketch needed machinery. Elwin Christoffel supplied part of it in 1869
 
 The payoff arrived from outside mathematics. Einstein spent years learning this calculus, with help from his friend Marcel Grossmann, to write general relativity (1915). In it, gravity *is* the curvature of a four-dimensional Riemannian-type spacetime. That link between a mathematical turning point and a physical one is exactly the kind of connection this atlas will draw once physics is surveyed.
 
+## A Closer Look: An Arrow That Comes Back Rotated
+
+Curvature in any dimension can be detected by *parallel transport*, carrying a direction along a path without ever turning it. Try it on a sphere of radius $R$.
+
+Stand at the North Pole holding an arrow pointing along a line of longitude towards Africa. Walk straight down that meridian to the equator, keeping the arrow pointing "south", straight ahead. At the equator turn left and walk a quarter of the way round the globe, not rotating the arrow at all: it now points sideways, perpendicular to your path. Then walk straight back up to the pole along the new meridian. The arrow never turned, yet at the pole it points in a direction $90°$ away from where it started.
+
+The rotation measures the curvature enclosed by the loop. The triangle you walked covers one eighth of the sphere, an area of $\frac{4\pi R^2}{8} = \frac{\pi R^2}{2}$, and
+
+$$
+\text{rotation angle} = K \times \text{Area} = \frac{1}{R^2} \cdot \frac{\pi R^2}{2} = \frac{\pi}{2} ,
+$$
+
+exactly a right angle. On a flat plane the arrow would return unrotated. The same idea works in any dimension and needs no surrounding space. Levi-Civita's parallel transport is how curvature is defined in Riemannian geometry, and in general relativity it is how gravity turns the axis of a gyroscope orbiting the Earth, an effect measured by the Gravity Probe B satellite.
+
 ## Curvature and Shape
 
 The twentieth century asked how local curvature constrains global shape. If a space is positively curved everywhere, must it be small and closed, like a sphere? If it is negatively curved, must it be large and open? Theorems of this kind, from Hadamard, Cartan and Hopf onward, made up *comparison geometry*. A landmark came in 1941, when {{fig:myers|Sumner Myers}} proved that a complete space whose Ricci curvature stays above a positive constant must close up on itself, with a bounded diameter, just as a sphere does.
