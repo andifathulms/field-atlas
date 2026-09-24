@@ -248,7 +248,7 @@ applications:
       field of topological insulators, and it earned a share of the 2016 Nobel Prize in
       Physics.
     domain: physics
-    field_id: phase-transitions
+    field_id: topological-matter
     sources:
       - citation: "Thouless, D. J., Kohmoto, M., Nightingale, M. P. & den Nijs, M. (1982). Quantized Hall conductance in a two-dimensional periodic potential. Physical Review Letters 49: 405–408."
         url: null
