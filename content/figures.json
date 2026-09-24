@@ -141,7 +141,7 @@
   { "id": "hadamard", "name": "Jacques Hadamard", "turning_point_ids": ["pnt-proved"] },
   { "id": "de-la-vallee-poussin", "name": "Charles-Jean de la Vallée Poussin", "turning_point_ids": ["pnt-proved"] },
   { "id": "selberg", "name": "Atle Selberg", "turning_point_ids": ["erdos-selberg"] },
-  { "id": "erdos", "name": "Paul Erdős", "turning_point_ids": ["erdos-selberg", "erdos-szekeres"] },
+  { "id": "erdos", "name": "Paul Erdős", "turning_point_ids": ["erdos-selberg", "erdos-szekeres", "erdos-random-ramsey", "erdos-girth-chromatic", "erdos-renyi-graphs", "lovasz-local-lemma"] },
   { "id": "yitang-zhang", "name": "Yitang Zhang", "turning_point_ids": ["bounded-gaps"] },
   { "id": "maynard", "name": "James Maynard", "turning_point_ids": ["bounded-gaps"] },
   { "id": "lame", "name": "Gabriel Lamé", "turning_point_ids": ["lame-kummer"] },
@@ -282,5 +282,14 @@
   { "id": "marcelo-campos", "name": "Marcelo Campos", "turning_point_ids": ["diagonal-ramsey-2023"] },
   { "id": "simon-griffiths", "name": "Simon Griffiths", "turning_point_ids": ["diagonal-ramsey-2023"] },
   { "id": "rob-morris", "name": "Robert Morris", "turning_point_ids": ["diagonal-ramsey-2023"] },
-  { "id": "julian-sahasrabudhe", "name": "Julian Sahasrabudhe", "turning_point_ids": ["diagonal-ramsey-2023"] }
+  { "id": "julian-sahasrabudhe", "name": "Julian Sahasrabudhe", "turning_point_ids": ["diagonal-ramsey-2023"] },
+  { "id": "alfred-renyi", "name": "Alfréd Rényi", "turning_point_ids": ["erdos-renyi-graphs"] },
+  { "id": "edgar-gilbert", "name": "Edgar Gilbert", "turning_point_ids": ["erdos-renyi-graphs"] },
+  { "id": "laszlo-lovasz", "name": "László Lovász", "turning_point_ids": ["lovasz-local-lemma"] },
+  { "id": "robin-moser", "name": "Robin Moser", "turning_point_ids": ["lovasz-local-lemma"] },
+  { "id": "gabor-tardos", "name": "Gábor Tardos", "turning_point_ids": ["lovasz-local-lemma"] },
+  { "id": "jeff-kahn", "name": "Jeff Kahn", "turning_point_ids": ["kahn-kalai-proof"] },
+  { "id": "gil-kalai", "name": "Gil Kalai", "turning_point_ids": ["kahn-kalai-proof"] },
+  { "id": "jinyoung-park", "name": "Jinyoung Park", "turning_point_ids": ["kahn-kalai-proof"] },
+  { "id": "huy-tuan-pham", "name": "Huy Tuan Pham", "turning_point_ids": ["kahn-kalai-proof"] }
 ]
