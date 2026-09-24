@@ -86,7 +86,7 @@ One file per Field so a correction is a single-file diff, consistent with the "c
 - Turning-point ids are global across domains, so physics and math events can't collide (the loader rejects duplicates).
 - `content/figures.json`: the shared figures collection, each figure tied to turning point ids.
 - Math: KaTeX via `$…$` and `$$…$$`. Display math needs `$$` on its own lines, so use a literal (`|-`) YAML block for any frontmatter text that contains display math.
-- Each math field has an "A Closer Look: …" chapter just before its closing chapter: one worked example or key argument with real numbers, so readers see the central idea work. Verify every calculation in such a chapter before committing it. Prose supports GFM tables, lists and code blocks (styled in `globals.css` under `.prose-atlas`).
+- Every field, in all three domains, has an "A Closer Look: …" chapter just before its closing chapter: one worked example or key argument with real numbers, so readers see the central idea work. Verify every calculation in such a chapter before committing it. Prose supports GFM tables, lists and code blocks (styled in `globals.css` under `.prose-atlas`).
 - Figure mentions in chapter prose: `{{fig:gauss}}` or `{{fig:gauss|Gauss}}` links the name to that figure's turning point.
 - Internal links in prose use root-relative paths (`/math/riemannian-geometry/`); the renderer applies the base path.
 - `src/lib/content.ts` validates everything at build time: unknown parents, cycles, cross-domain parents, turning-point types outside the domain vocabulary, contested points without a note, and unresolved figure references all fail the build.
