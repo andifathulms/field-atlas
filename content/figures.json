@@ -350,7 +350,7 @@
   { "id": "josiah-willard-gibbs", "name": "Josiah Willard Gibbs", "turning_point_ids": ["gibbs-ensembles"] },
   { "id": "satyendra-nath-bose", "name": "Satyendra Nath Bose", "turning_point_ids": ["bose-einstein-statistics"] },
   { "id": "enrico-fermi", "name": "Enrico Fermi", "turning_point_ids": ["fermi-dirac-statistics"] },
-  { "id": "paul-dirac", "name": "Paul Dirac", "turning_point_ids": ["fermi-dirac-statistics"] },
+  { "id": "paul-dirac", "name": "Paul Dirac", "turning_point_ids": ["fermi-dirac-statistics", "dirac-equation"] },
   { "id": "eric-cornell", "name": "Eric Cornell", "turning_point_ids": ["bose-einstein-condensate"] },
   { "id": "carl-wieman", "name": "Carl Wieman", "turning_point_ids": ["bose-einstein-condensate"] },
   { "id": "wolfgang-ketterle", "name": "Wolfgang Ketterle", "turning_point_ids": ["bose-einstein-condensate"] },
@@ -388,5 +388,15 @@
   { "id": "erwin-schrodinger", "name": "Erwin Schrödinger", "turning_point_ids": ["schrodinger-equation"] },
   { "id": "clinton-davisson", "name": "Clinton Davisson", "turning_point_ids": ["electron-diffraction"] },
   { "id": "lester-germer", "name": "Lester Germer", "turning_point_ids": ["electron-diffraction"] },
-  { "id": "george-paget-thomson", "name": "George Paget Thomson", "turning_point_ids": ["electron-diffraction"] }
+  { "id": "george-paget-thomson", "name": "George Paget Thomson", "turning_point_ids": ["electron-diffraction"] },
+  { "id": "carl-anderson", "name": "Carl Anderson", "turning_point_ids": ["positron-discovery"] },
+  { "id": "willis-lamb", "name": "Willis Lamb", "turning_point_ids": ["lamb-shift"] },
+  { "id": "robert-retherford", "name": "Robert Retherford", "turning_point_ids": ["lamb-shift"] },
+  { "id": "hans-bethe", "name": "Hans Bethe", "turning_point_ids": ["lamb-shift"] },
+  { "id": "sin-itiro-tomonaga", "name": "Sin-Itiro Tomonaga", "turning_point_ids": ["qed-renormalization"] },
+  { "id": "julian-schwinger", "name": "Julian Schwinger", "turning_point_ids": ["qed-renormalization"] },
+  { "id": "richard-feynman", "name": "Richard Feynman", "turning_point_ids": ["qed-renormalization"] },
+  { "id": "freeman-dyson", "name": "Freeman Dyson", "turning_point_ids": ["qed-renormalization"] },
+  { "id": "chen-ning-yang", "name": "Chen-Ning Yang", "turning_point_ids": ["yang-mills"] },
+  { "id": "robert-mills", "name": "Robert Mills", "turning_point_ids": ["yang-mills"] }
 ]
