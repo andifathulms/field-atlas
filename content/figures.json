@@ -486,12 +486,19 @@
   { "id": "walther-flemming", "name": "Walther Flemming", "turning_point_ids": ["flemming-mitosis"] },
   { "id": "ignaz-semmelweis", "name": "Ignaz Semmelweis", "turning_point_ids": ["semmelweis-handwashing"] },
   { "id": "john-snow", "name": "John Snow", "turning_point_ids": ["snow-cholera"] },
-  { "id": "louis-pasteur", "name": "Louis Pasteur", "turning_point_ids": ["pasteur-spontaneous-generation"] },
+  { "id": "louis-pasteur", "name": "Louis Pasteur", "turning_point_ids": ["pasteur-spontaneous-generation", "buchner-cell-free"] },
   { "id": "joseph-lister", "name": "Joseph Lister", "turning_point_ids": ["lister-antisepsis"] },
   { "id": "robert-koch", "name": "Robert Koch", "turning_point_ids": ["koch-tuberculosis"] },
   { "id": "fanny-hesse", "name": "Fanny Hesse", "turning_point_ids": ["koch-tuberculosis"] },
   { "id": "alexander-fleming", "name": "Alexander Fleming", "turning_point_ids": ["penicillin"] },
   { "id": "howard-florey", "name": "Howard Florey", "turning_point_ids": ["penicillin"] },
   { "id": "ernst-chain", "name": "Ernst Chain", "turning_point_ids": ["penicillin"] },
-  { "id": "norman-heatley", "name": "Norman Heatley", "turning_point_ids": ["penicillin"] }
+  { "id": "norman-heatley", "name": "Norman Heatley", "turning_point_ids": ["penicillin"] },
+  { "id": "friedrich-wohler", "name": "Friedrich Wöhler", "turning_point_ids": ["wohler-urea"] },
+  { "id": "eduard-buchner", "name": "Eduard Buchner", "turning_point_ids": ["buchner-cell-free"] },
+  { "id": "leonor-michaelis", "name": "Leonor Michaelis", "turning_point_ids": ["michaelis-menten"] },
+  { "id": "maud-menten", "name": "Maud Menten", "turning_point_ids": ["michaelis-menten"] },
+  { "id": "james-sumner", "name": "James Sumner", "turning_point_ids": ["sumner-urease"] },
+  { "id": "hans-krebs", "name": "Hans Krebs", "turning_point_ids": ["krebs-cycle"] },
+  { "id": "peter-mitchell", "name": "Peter Mitchell", "turning_point_ids": ["chemiosmosis"] }
 ]

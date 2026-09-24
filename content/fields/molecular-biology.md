@@ -5,6 +5,7 @@ thread: heredity
 name: Molecular Biology
 parent_ids:
   - genetics
+  - biochemistry
 era_emerged: 1944 – 1966
 core_question: What are genes made of, and how do they build a living cell?
 
