@@ -192,6 +192,30 @@ It was found in sixteenth-century Italy, where mathematicians made their reputat
 
 The formula had a strange feature. For some cubics with three real roots it passes through square roots of negative numbers. Working with those "impossible" numbers was the start of [complex analysis](/math/complex-analysis/).
 
+## A Closer Look: Bombelli's Impossible Numbers
+
+Cardano's formula solves the cubic $x^3 = px + q$ by
+
+$$
+x = \sqrt[3]{\frac{q}{2} + \sqrt{\frac{q^2}{4} - \frac{p^3}{27}}} \;+\; \sqrt[3]{\frac{q}{2} - \sqrt{\frac{q^2}{4} - \frac{p^3}{27}}} .
+$$
+
+Apply it, as Rafael Bombelli did in 1572, to $x^3 = 15x + 4$. The obvious solution is $x = 4$, since $64 = 60 + 4$. But the formula gives
+
+$$
+\frac{q^2}{4} - \frac{p^3}{27} = 4 - 125 = -121, \qquad x = \sqrt[3]{2 + \sqrt{-121}} + \sqrt[3]{2 - \sqrt{-121}} .
+$$
+
+A perfectly real equation with a perfectly real answer leads straight through the square root of a negative number. Cardano called such cases "irreducible" and gave up. Bombelli decided to calculate anyway, treating $\sqrt{-1}$ as a new kind of number with $(\sqrt{-1})^2 = -1$. Writing $i$ for it, $\sqrt{-121} = 11i$. He guessed that the cube roots might have the form $2 \pm i$, and checked:
+
+$$
+(2 + i)^3 = 8 + 12i + 6i^2 + i^3 = 8 + 12i - 6 - i = 2 + 11i .
+$$
+
+So $\sqrt[3]{2 + 11i} = 2 + i$ and $\sqrt[3]{2 - 11i} = 2 - i$, and the formula gives $x = (2 + i) + (2 - i) = 4$. The imaginary parts cancel and the true answer appears.
+
+It was the first time anyone had computed with complex numbers and got a meaningful result. Bombelli could not say what these numbers *were*, only that the rules worked. It took another two centuries, and the picture of numbers as points in a plane, before [complex analysis](/math/complex-analysis/) could say.
+
 ## Symbols and Existence
 
 Notation turned recipes into theory. {{fig:viete|François Viète}} in 1591 used letters for known quantities as well as unknowns, so that one equation could stand for every problem of its type. Descartes, in 1637, gave the modern convention of $x$ and $y$.
