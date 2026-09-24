@@ -2,7 +2,7 @@
 
 A read-only narrative atlas of scientific fields. It shows how subfields branched from one another, the dated turning points that forced each branch, and the open problems each field still hasn't answered.
 
-Three domains are surveyed, 99 fields in 21 threads. Mathematics has nine threads: Geometry, Number Theory, Analysis, Foundations, Algebra, Combinatorics, Dynamics, Statistics and Computation. Physics has six: Relativity, Entropy, Quantum, Stars, Matter and Nuclear. Biology has five: Heredity, Cell, Brain, Ecology and Development. Every field has a closer-look chapter with a worked example. The **Crossings** page maps where results in one domain land in another.
+Three domains are surveyed, 104 fields in 20 threads. Mathematics has nine threads: Geometry, Number Theory, Analysis, Foundations, Algebra, Combinatorics, Dynamics, Statistics and Computation. Physics has six: Relativity, Entropy, Quantum, Stars, Matter and Nuclear. Biology has five: Heredity, Cell, Brain, Ecology and Development. Every field has a closer-look chapter with a worked example. The **Crossings** page maps where results in one domain land in another.
 
 - Product intent: [PRD.md](PRD.md)
 - Visual identity: [DESIGN.md](DESIGN.md)
