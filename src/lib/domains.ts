@@ -20,7 +20,7 @@ export const DOMAINS: DomainInfo[] = [
   {
     id: "math",
     name: "Mathematics",
-    blurb: "How the study of space split into many geometries, how the study of whole numbers split into theories of its own, how calculus was made rigorous, where mathematics meets its own limits, how solving equations became the study of symmetry, how counting puzzles became the mathematics of networks, how equations of motion led to chaos, how reasoning from data became the mathematics of information and learning, how calculation by hand became the mathematics of trustworthy computing, and what forced each split.",
+    blurb: "How space split into many geometries and whole numbers into theories of their own, how calculus was made rigorous and mathematics met its own limits, and how solving equations became the study of symmetry. How counting puzzles became the mathematics of networks and equations of motion led to chaos, how reasoning from data and calculating by machine became mathematics of their own, and what forced each split.",
     threads: [
       {
         id: "geometry",
@@ -81,7 +81,7 @@ export const DOMAINS: DomainInfo[] = [
   {
     id: "physics",
     name: "Physics",
-    blurb: "How motion, light and gravity were rebuilt around the speed of light, how the laws of heat became the statistics of atoms, how energy turned out to come in lumps, how starlight revealed what stars are made of, how the order inside crystals explained metals, magnets and superconductors, how a fogged photographic plate led to the nucleus, the bomb and the age of the Earth, and what is still dark.",
+    blurb: "How motion, light and gravity were rebuilt around the speed of light, how heat became the statistics of atoms, and how energy turned out to come in lumps. How starlight revealed what stars are made of, how crystals explained metals and magnets, how a fogged photographic plate led to the nucleus, and what is still dark.",
     threads: [
       {
         id: "relativity",
