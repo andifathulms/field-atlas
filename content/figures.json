@@ -1,7 +1,7 @@
 [
   { "id": "euclid", "name": "Euclid of Alexandria", "turning_point_ids": ["elements-compiled"] },
   { "id": "saccheri", "name": "Girolamo Saccheri", "turning_point_ids": ["parallel-postulate-crisis"] },
-  { "id": "hilbert", "name": "David Hilbert", "turning_point_ids": ["hilbert-grundlagen", "hilbert-no-hyperbolic-surface"] },
+  { "id": "hilbert", "name": "David Hilbert", "turning_point_ids": ["hilbert-grundlagen", "hilbert-no-hyperbolic-surface", "einstein-field-equations"] },
   { "id": "gauss", "name": "Carl Friedrich Gauss", "turning_point_ids": ["lobachevsky-bolyai", "theorema-egregium"] },
   { "id": "lobachevsky", "name": "Nikolai Lobachevsky", "turning_point_ids": ["lobachevsky-bolyai"] },
   { "id": "bolyai", "name": "János Bolyai", "turning_point_ids": ["lobachevsky-bolyai"] },
@@ -75,7 +75,14 @@
   { "id": "michelson", "name": "Albert Michelson", "turning_point_ids": ["michelson-morley"] },
   { "id": "morley", "name": "Edward Morley", "turning_point_ids": ["michelson-morley"] },
   { "id": "lorentz", "name": "Hendrik Lorentz", "turning_point_ids": ["michelson-morley", "lorentz-transformation"] },
-  { "id": "einstein", "name": "Albert Einstein", "turning_point_ids": ["einstein-special-1905"] },
+  { "id": "einstein", "name": "Albert Einstein", "turning_point_ids": ["einstein-special-1905", "equivalence-principle", "einstein-field-equations"] },
   { "id": "minkowski", "name": "Hermann Minkowski", "turning_point_ids": ["minkowski-spacetime"] },
-  { "id": "rossi", "name": "Bruno Rossi", "turning_point_ids": ["rossi-hall-muons"] }
+  { "id": "rossi", "name": "Bruno Rossi", "turning_point_ids": ["rossi-hall-muons"] },
+  { "id": "grossmann", "name": "Marcel Grossmann", "turning_point_ids": ["einstein-field-equations"] },
+  { "id": "schwarzschild", "name": "Karl Schwarzschild", "turning_point_ids": ["schwarzschild-solution"] },
+  { "id": "eddington", "name": "Arthur Eddington", "turning_point_ids": ["eclipse-1919"] },
+  { "id": "frank-dyson", "name": "Frank Dyson", "turning_point_ids": ["eclipse-1919"] },
+  { "id": "weiss", "name": "Rainer Weiss", "turning_point_ids": ["ligo-gravitational-waves"] },
+  { "id": "barish", "name": "Barry Barish", "turning_point_ids": ["ligo-gravitational-waves"] },
+  { "id": "thorne", "name": "Kip Thorne", "turning_point_ids": ["ligo-gravitational-waves"] }
 ]
