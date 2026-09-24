@@ -155,7 +155,7 @@ open_problems:
   - id: stem-cell-organ-replacement
     name: Can stem cells rebuild a working organ?
     status: open
-    status_note: Open as of writing; the first iPS-derived cell therapies won conditional approval in Japan in 2026, but whole organs are not in reach.
+    status_note: Open as of 2026; the first iPS-derived cell therapies won conditional approval in Japan in 2026, but whole organs are not in reach.
     description: >-
       Stem cells can now be turned into heart muscle, nerve cells, retina and insulin-making
       cells, and organoids mimic parts of many organs. None of these is yet a replacement

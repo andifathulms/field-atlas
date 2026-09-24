@@ -121,7 +121,7 @@ open_problems:
   - id: glass-transition
     name: What is a glass?
     status: open
-    status_note: Open as of writing; there is no accepted theory of the glass transition.
+    status_note: Open as of 2026; there is no accepted theory of the glass transition.
     description: >-
       Cool most liquids quickly and they do not crystallise. They become ever more viscous
       until they are rigid, a glass, while their molecules remain as disordered as in a

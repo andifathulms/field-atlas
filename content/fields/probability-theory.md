@@ -128,7 +128,7 @@ open_problems:
   - id: percolation-3d
     name: Is 3D percolation continuous at its critical point?
     status: open
-    status_note: Proved in two dimensions and in high dimensions; open in three dimensions as of writing.
+    status_note: Proved in two dimensions and in high dimensions; open in three dimensions as of 2026.
     description: >-
       Randomly keep each edge of a three-dimensional grid with probability $p$. Above a
       critical value, an infinite connected cluster appears. Does an infinite cluster

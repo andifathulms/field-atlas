@@ -163,7 +163,7 @@ open_problems:
   - id: dev-regeneration-limits
     name: Why can some animals regrow lost parts?
     status: open
-    status_note: Open as of writing; the cells involved are increasingly well known, the reasons for the differences are not.
+    status_note: Open as of 2026; the cells involved are increasingly well known, the reasons for the differences are not.
     description: >-
       A flatworm cut into pieces grows each piece into a whole worm. A salamander regrows
       a lost leg, and a zebrafish regrows part of its heart. Mammals heal most wounds with

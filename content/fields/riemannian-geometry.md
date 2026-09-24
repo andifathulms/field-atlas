@@ -135,7 +135,7 @@ open_problems:
   - id: hopf-conjecture
     name: The Hopf conjecture on $S^2 \times S^2$
     status: open
-    status_note: Open as of writing.
+    status_note: Open as of 2026.
     description: >-
       Heinz Hopf asked in the 1930s whether $S^2 \times S^2$, the product of two ordinary
       spheres, can be given a metric of strictly positive sectional curvature. That would

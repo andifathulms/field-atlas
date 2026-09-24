@@ -146,7 +146,7 @@ open_problems:
   - id: dev-organ-size-control
     name: How do organs know when to stop growing?
     status: open
-    status_note: Open as of writing; several signalling pathways are known to be involved, but not how size itself is measured.
+    status_note: Open as of 2026; several signalling pathways are known to be involved, but not how size itself is measured.
     description: >-
       A mouse liver, a fly wing and a human hand each grow to a consistent size and stop.
       A fly wing made of fewer, larger cells still reaches the normal size, and a partly

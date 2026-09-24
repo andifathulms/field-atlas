@@ -149,7 +149,7 @@ open_problems:
   - id: ising-3d
     name: The three-dimensional Ising model
     status: open
-    status_note: Open as of writing; the critical exponents are known numerically to many digits, but there is no exact solution.
+    status_note: Open as of 2026; the critical exponents are known numerically to many digits, but there is no exact solution.
     description: >-
       Onsager solved the Ising model on a flat grid. The same model in three dimensions,
       the dimension of real magnets and fluids, has resisted every attempt at an exact

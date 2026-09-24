@@ -132,7 +132,7 @@ open_problems:
   - id: arrow-of-time
     name: Why does time have a direction?
     status: open
-    status_note: Open as of writing; there is no consensus explanation.
+    status_note: Open as of 2026; there is no consensus explanation.
     description: >-
       The fundamental laws of motion work equally well forwards and backwards in time,
       yet entropy increases only towards the future. The standard answer is that the

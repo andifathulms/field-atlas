@@ -159,7 +159,7 @@ open_problems:
   - id: brain-credit-assignment
     name: How does the brain learn?
     status: open
-    status_note: Open as of writing; several biologically plausible learning rules have been proposed, none established.
+    status_note: Open as of 2026; several biologically plausible learning rules have been proposed, none established.
     description: >-
       Artificial networks learn by backpropagation, which sends precise error signals
       backwards through every layer. Real neurons do not seem able to do this. Yet the brain

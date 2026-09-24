@@ -147,7 +147,7 @@ open_problems:
   - id: langlands-program
     name: The Langlands program
     status: conjectured
-    status_note: Proved in many special cases; the general conjectures remain open as of writing.
+    status_note: Proved in many special cases; the general conjectures remain open as of 2026.
     description: >-
       In a 1967 letter to André Weil, Robert Langlands proposed a web of conjectures
       linking number theory (Galois groups, which describe symmetries of solutions to
@@ -171,7 +171,7 @@ open_problems:
   - id: real-quadratic-class-number
     name: Infinitely many real quadratic fields with unique factorisation?
     status: conjectured
-    status_note: Conjectured by Gauss; open as of writing.
+    status_note: Conjectured by Gauss; open as of 2026.
     description: >-
       For number systems like $a + b\sqrt{d}$ with $d$ positive, factorisation seems to
       be unique surprisingly often. Gauss conjectured that it happens for infinitely many

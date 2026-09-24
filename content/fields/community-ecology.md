@@ -161,7 +161,7 @@ open_problems:
   - id: paradox-of-the-plankton
     name: The paradox of the plankton
     status: open
-    status_note: Open as of writing; many mechanisms are known to help, and their relative importance is unresolved.
+    status_note: Open as of 2026; many mechanisms are known to help, and their relative importance is unresolved.
     description: >-
       A lake or the open sea holds dozens of species of phytoplankton in the same mixed
       water, all competing for light and a handful of nutrients. Competitive exclusion

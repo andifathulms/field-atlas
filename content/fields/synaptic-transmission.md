@@ -156,7 +156,7 @@ open_problems:
   - id: brain-memory-engram
     name: Where and how is a memory stored?
     status: open
-    status_note: Open as of writing; memory traces can be tagged in mice, but how they last for decades is unknown.
+    status_note: Open as of 2026; memory traces can be tagged in mice, but how they last for decades is unknown.
     description: >-
       A memory must leave a physical trace, which Richard Semon called an engram in 1904.
       The leading idea is that it is stored as a pattern of changed synaptic strengths

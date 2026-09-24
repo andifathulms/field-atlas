@@ -134,7 +134,7 @@ open_problems:
   - id: hilberts-thirteenth
     name: Hilbert's thirteenth problem
     status: open
-    status_note: The continuous version was solved by Kolmogorov and Arnold (1957); the algebraic version is open as of writing.
+    status_note: The continuous version was solved by Kolmogorov and Arnold (1957); the algebraic version is open as of 2026.
     description: >-
       Hilbert asked whether the roots of the general degree-7 equation can be written using
       only functions of two variables. More broadly: how many variables do you really need

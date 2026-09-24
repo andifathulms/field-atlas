@@ -151,7 +151,7 @@ open_problems:
   - id: far-from-equilibrium-theory
     name: A general theory far from equilibrium
     status: open
-    status_note: Open as of writing; exact results exist only in special cases.
+    status_note: Open as of 2026; exact results exist only in special cases.
     description: >-
       Equilibrium has one universal recipe: weight each state by $e^{-E/kT}$. Is there
       anything comparable for systems held far from equilibrium by a constant flow of

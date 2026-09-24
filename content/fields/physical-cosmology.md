@@ -141,7 +141,7 @@ open_problems:
   - id: dark-matter
     name: What is dark matter?
     status: open
-    status_note: Not identified as of writing, despite decades of direct searches.
+    status_note: Not identified as of 2026, despite decades of direct searches.
     description: >-
       Galaxies rotate too fast, and clusters hold together too tightly, for the visible
       matter in them. Something invisible supplies about five times as much gravity as
@@ -164,7 +164,7 @@ open_problems:
   - id: dark-energy
     name: What is dark energy?
     status: open
-    status_note: Open as of writing. Some recent galaxy surveys hint that it may change over time, which a pure cosmological constant cannot.
+    status_note: Open as of 2026. Some recent galaxy surveys hint that it may change over time, which a pure cosmological constant cannot.
     description: >-
       About two-thirds of the universe's energy is something that makes the expansion
       accelerate. The simplest explanation is the energy of empty space, Einstein's
@@ -184,7 +184,7 @@ open_problems:
   - id: hubble-tension
     name: The Hubble tension
     status: open
-    status_note: Unresolved as of writing. The microwave-background and Cepheid–supernova values have stayed apart as measurements improved, though some other local methods land in between.
+    status_note: Unresolved as of 2026. The microwave-background and Cepheid–supernova values have stayed apart as measurements improved, though some other local methods land in between.
     description: >-
       The universe's current expansion rate, $H_0$, comes out at about 67 km/s per
       megaparsec when inferred from the early universe (the microwave background) but

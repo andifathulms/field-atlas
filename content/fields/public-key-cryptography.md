@@ -155,7 +155,7 @@ open_problems:
   - id: one-way-functions
     name: Do one-way functions exist?
     status: conjectured
-    status_note: Unproven as of writing; would imply P ≠ NP.
+    status_note: Unproven as of 2026; would imply P ≠ NP.
     description: >-
       All of public-key cryptography assumes that some functions are easy to compute but
       infeasible to invert, and that factoring and discrete logarithms are among them.
@@ -174,7 +174,7 @@ open_problems:
   - id: lattice-hardness
     name: Are lattice problems truly quantum-hard?
     status: open
-    status_note: Open as of writing; the new standards assume so.
+    status_note: Open as of 2026; the new standards assume so.
     description: >-
       Post-quantum cryptography assumes that finding short vectors in high-dimensional
       lattices, and related "learning with errors" problems, stay hard even for quantum

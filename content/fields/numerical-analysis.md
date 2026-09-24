@@ -161,7 +161,7 @@ open_problems:
   - id: smale-mean-value-conjecture
     name: Smale's mean value conjecture
     status: open
-    status_note: Open as of writing; proved with the constant 4 in place of 1, and improved only slightly since.
+    status_note: Open as of 2026; proved with the constant 4 in place of 1, and improved only slightly since.
     description: >-
       Let $p$ be a polynomial and $z$ a point where its derivative is not zero. Stephen Smale
       conjectured in 1981 that there is always a critical point $c$, where $p'(c) = 0$, with

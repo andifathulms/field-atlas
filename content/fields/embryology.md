@@ -143,7 +143,7 @@ open_problems:
   - id: phylotypic-hourglass
     name: Why do embryos converge in the middle?
     status: open
-    status_note: Open as of writing; the pattern is supported by gene-expression data, but its cause is debated.
+    status_note: Open as of 2026; the pattern is supported by gene-expression data, but its cause is debated.
     description: >-
       Animals of a large group look most alike not at the very start of development but
       in the middle, the so-called phylotypic stage, when the basic body plan is laid down.

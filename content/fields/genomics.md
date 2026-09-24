@@ -151,7 +151,7 @@ open_problems:
   - id: missing-heritability
     name: Missing heritability
     status: open
-    status_note: Narrowed by very large studies but not closed, as of writing.
+    status_note: Narrowed by very large studies but not closed, as of 2026.
     description: >-
       Twin and family studies show that traits like height and many common diseases are
       highly heritable. Yet the genetic variants found by early genome-wide scans
@@ -171,7 +171,7 @@ open_problems:
   - id: noncoding-function
     name: How much of the genome does anything?
     status: open
-    status_note: Actively disputed as of writing; estimates of the functional fraction range from under 10% to much higher.
+    status_note: Actively disputed as of 2026; estimates of the functional fraction range from under 10% to much higher.
     description: >-
       Only about 1–2% of the human genome codes for proteins. In 2012 the ENCODE project
       reported biochemical activity across about 80% of the genome and called it

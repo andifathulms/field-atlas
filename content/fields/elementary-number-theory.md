@@ -129,7 +129,7 @@ open_problems:
   - id: goldbach-conjecture
     name: The Goldbach conjecture
     status: open
-    status_note: Open as of writing. Verified by computer up to 4 × 10¹⁸; the "weak" version for odd numbers was proved by Harald Helfgott (2013 preprint).
+    status_note: Open as of 2026. Verified by computer up to 4 × 10¹⁸; the "weak" version for odd numbers was proved by Harald Helfgott (2013 preprint).
     description: >-
       In a 1742 exchange of letters, Christian Goldbach and Leonhard Euler arrived at
       the claim that every even number greater than 2 is the sum of two primes: $4 = 2 + 2$, $28 = 5 + 23$,
@@ -150,7 +150,7 @@ open_problems:
   - id: odd-perfect-numbers
     name: Is there an odd perfect number?
     status: open
-    status_note: Open as of writing; any odd perfect number would have to exceed 10¹⁵⁰⁰.
+    status_note: Open as of 2026; any odd perfect number would have to exceed 10¹⁵⁰⁰.
     description: >-
       A perfect number equals the sum of its proper divisors: $6 = 1 + 2 + 3$,
       $28 = 1 + 2 + 4 + 7 + 14$. Euclid showed how to build even perfect numbers from

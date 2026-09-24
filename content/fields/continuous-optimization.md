@@ -156,7 +156,7 @@ open_problems:
   - id: why-deep-networks-train
     name: Why gradient descent trains deep networks
     status: open
-    status_note: Open as of writing; understood for some simplified models, not for networks used in practice.
+    status_note: Open as of 2026; understood for some simplified models, not for networks used in practice.
     description: >-
       Training a neural network means minimising a function of millions or billions of
       variables that is far from convex, with countless local minima and saddle points.

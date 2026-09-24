@@ -156,7 +156,7 @@ open_problems:
   - id: brain-neuron-homeostasis
     name: How do neurons keep their electrical character?
     status: open
-    status_note: Open as of writing; the rules of homeostatic regulation are only partly known.
+    status_note: Open as of 2026; the rules of homeostatic regulation are only partly known.
     description: >-
       A neuron's firing pattern depends on the numbers of a dozen or more kinds of ion
       channel in its membrane. The channel proteins are replaced every few days or weeks,

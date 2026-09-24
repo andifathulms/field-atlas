@@ -174,7 +174,7 @@ open_problems:
   - id: how-many-species
     name: How many species are there?
     status: open
-    status_note: Open as of writing; about two million species have been named, and estimates of the total vary more than tenfold.
+    status_note: Open as of 2026; about two million species have been named, and estimates of the total vary more than tenfold.
     description: >-
       Nobody knows how many species live on Earth, even to the nearest million. One
       widely cited estimate, from 2011, puts the number of species with complex cells,

@@ -170,7 +170,7 @@ open_problems:
   - id: sp-self-avoiding-walk
     name: The self-avoiding walk
     status: open
-    status_note: Open as of writing in two, three and four dimensions; solved above four dimensions (1992).
+    status_note: Open as of 2026 in two, three and four dimensions; solved above four dimensions (1992).
     description: >-
       A self-avoiding walk on a grid never visits the same point twice, a simple model of
       a long polymer molecule. How far from its start does a typical walk of $n$ steps

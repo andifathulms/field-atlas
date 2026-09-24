@@ -170,7 +170,7 @@ open_problems:
   - id: hiv-vaccine
     name: Why is there still no HIV vaccine?
     status: open
-    status_note: Open as of writing; every large efficacy trial so far has failed or shown only modest protection.
+    status_note: Open as of 2026; every large efficacy trial so far has failed or shown only modest protection.
     description: >-
       Vaccines exist against dozens of diseases, but after forty years of effort none
       reliably prevents HIV infection. What would it take for a vaccine to make the body

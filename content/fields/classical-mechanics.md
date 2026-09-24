@@ -139,7 +139,7 @@ open_problems:
   - id: navier-stokes
     name: Navier–Stokes existence and smoothness
     status: open
-    status_note: Open as of writing; a Clay Millennium Prize Problem.
+    status_note: Open as of 2026; a Clay Millennium Prize Problem.
     description: >-
       The Navier–Stokes equations describe how fluids like water and air flow: they are
       Newton's second law applied to every parcel of a fluid. Do smooth starting flows in

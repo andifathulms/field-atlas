@@ -128,7 +128,7 @@ open_problems:
   - id: abc-conjecture
     name: The abc conjecture
     status: conjectured
-    status_note: A claimed proof (Mochizuki, 2012; published 2021) is not accepted by most number theorists as of writing.
+    status_note: A claimed proof (Mochizuki, 2012; published 2021) is not accepted by most number theorists as of 2026.
     description: >-
       If $a + b = c$ for whole numbers with no common factor, then $c$ is rarely much
       larger than the product of the distinct primes dividing $abc$. Proposed by Masser

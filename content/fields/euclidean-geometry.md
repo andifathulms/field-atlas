@@ -162,7 +162,7 @@ open_problems:
   - id: square-peg-problem
     name: The square peg problem
     status: open
-    status_note: Open for general continuous closed curves as of writing.
+    status_note: Open for general continuous closed curves as of 2026.
     description: >-
       Otto Toeplitz asked in 1911 whether every closed curve in the plane that does not
       cross itself passes through the four corners of some square. It has been proved for

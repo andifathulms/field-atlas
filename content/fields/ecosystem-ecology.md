@@ -159,7 +159,7 @@ open_problems:
   - id: ecosystem-tipping-points
     name: Predicting ecosystem tipping points
     status: open
-    status_note: Open as of writing; early-warning signals have worked in experiments but are not yet reliable forecasts.
+    status_note: Open as of 2026; early-warning signals have worked in experiments but are not yet reliable forecasts.
     description: >-
       Some ecosystems change abruptly instead of gradually. A clear lake turns green and
       murky, a coral reef becomes a bed of seaweed, a savanna becomes grassland, and

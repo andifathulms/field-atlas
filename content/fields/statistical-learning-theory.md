@@ -173,7 +173,7 @@ open_problems:
   - id: slt-deep-generalisation
     name: Why do overparameterised networks generalise?
     status: open
-    status_note: Open as of writing; partial explanations exist for simplified models.
+    status_note: Open as of 2026; partial explanations exist for simplified models.
     description: >-
       Modern neural networks have far more adjustable parameters than training examples.
       They can fit random noise perfectly, yet trained on real data they predict new

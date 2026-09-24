@@ -134,7 +134,7 @@ open_problems:
   - id: p-vs-np
     name: P versus NP
     status: open
-    status_note: Open as of writing; a Clay Millennium Prize Problem. Most researchers believe P ≠ NP.
+    status_note: Open as of 2026; a Clay Millennium Prize Problem. Most researchers believe P ≠ NP.
     description: >-
       Can every problem whose solution can be checked quickly also be solved quickly? If
       P = NP, finding would be no harder than checking: proofs, schedules and designs could

@@ -126,7 +126,7 @@ open_problems:
   - id: tarski-exponential
     name: Is the theory of the real numbers with exponentiation decidable?
     status: open
-    status_note: Decidable if Schanuel's conjecture holds (Macintyre–Wilkie, 1996); open unconditionally as of writing.
+    status_note: Decidable if Schanuel's conjecture holds (Macintyre–Wilkie, 1996); open unconditionally as of 2026.
     description: >-
       Alfred Tarski proved in the 1930s–40s that every statement about real numbers
       built from addition, multiplication and quantifiers can be decided by an algorithm.

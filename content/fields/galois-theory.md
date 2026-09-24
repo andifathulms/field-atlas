@@ -128,7 +128,7 @@ open_problems:
   - id: inverse-galois-problem
     name: The inverse Galois problem
     status: open
-    status_note: Open as of writing; known for all solvable groups and many simple ones, including the Monster.
+    status_note: Open as of 2026; known for all solvable groups and many simple ones, including the Monster.
     description: >-
       Galois theory attaches a group to each equation. The inverse question asks whether
       every finite group arises this way, as the Galois group of some polynomial with

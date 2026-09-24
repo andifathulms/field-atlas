@@ -140,7 +140,7 @@ open_problems:
   - id: finite-projective-planes
     name: Finite projective planes of non-prime-power order
     status: open
-    status_note: Open as of writing. Order 12 is the smallest unsettled case.
+    status_note: Open as of 2026. Order 12 is the smallest unsettled case.
     description: >-
       A projective plane can be finite: $n^2 + n + 1$ points and as many lines, each
       line holding $n + 1$ points, any two points on exactly one line. Such planes exist

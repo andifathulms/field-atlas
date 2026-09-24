@@ -160,7 +160,7 @@ open_problems:
   - id: brain-alzheimers-cause
     name: What causes Alzheimer's disease?
     status: open
-    status_note: Open as of writing; drugs that clear amyloid slow decline only modestly.
+    status_note: Open as of 2026; drugs that clear amyloid slow decline only modestly.
     description: >-
       In 1906 Alois Alzheimer used silver stains to find two lesions in the brain of a woman
       who had died with dementia: clumps between the cells, now known to be amyloid protein,

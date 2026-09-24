@@ -190,7 +190,7 @@ open_problems:
   - id: twin-prime-conjecture
     name: The twin prime conjecture
     status: open
-    status_note: Open as of writing. Bounded gaps proved in 2013; the best unconditional gap is 246.
+    status_note: Open as of 2026. Bounded gaps proved in 2013; the best unconditional gap is 246.
     description: >-
       Are there infinitely many pairs of primes that differ by 2, like 11 and 13, or
       101 and 103? They grow rarer but never seem to stop, and the largest known pair

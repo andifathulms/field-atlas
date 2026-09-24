@@ -188,7 +188,7 @@ open_problems:
   - id: smooth-4d-poincare
     name: The smooth four-dimensional Poincaré conjecture
     status: open
-    status_note: Open as of writing. Dimension four is the one case the higher-dimensional methods cannot reach.
+    status_note: Open as of 2026. Dimension four is the one case the higher-dimensional methods cannot reach.
     description: >-
       Is every smooth four-manifold that is homotopy equivalent to the four-sphere $S^4$
       actually diffeomorphic to it? In other words, is there an "exotic" four-sphere: one

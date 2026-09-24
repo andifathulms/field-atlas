@@ -152,7 +152,7 @@ open_problems:
   - id: solid-strong-correlation
     name: Electrons that defy band theory
     status: open
-    status_note: Open as of writing; there is no general theory of strongly correlated electrons.
+    status_note: Open as of 2026; there is no general theory of strongly correlated electrons.
     description: >-
       Band theory treats each electron as moving alone in the average field of the others.
       In some materials this fails badly. Nickel oxide should be a metal by band theory,

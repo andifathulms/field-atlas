@@ -164,7 +164,7 @@ open_problems:
   - id: magnet-spin-liquids
     name: Quantum spin liquids
     status: open
-    status_note: Open as of writing; several materials are strong candidates, but none is universally accepted.
+    status_note: Open as of 2026; several materials are strong candidates, but none is universally accepted.
     description: >-
       In 1973 Philip Anderson proposed that in some magnets the spins never order, even at
       absolute zero, but form a fluctuating quantum superposition of paired states. Such a

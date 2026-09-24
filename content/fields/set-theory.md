@@ -139,7 +139,7 @@ open_problems:
   - id: continuum-hypothesis-truth
     name: Is the continuum hypothesis true?
     status: open
-    status_note: Independent of ZFC. Whether new axioms should, or can, settle it is disputed as of writing.
+    status_note: Independent of ZFC. Whether new axioms should, or can, settle it is disputed as of 2026.
     description: >-
       Independence means ZFC cannot decide the question. Many set theorists think it still
       has a definite answer, to be found by adopting new, well-motivated axioms. Others

@@ -162,7 +162,7 @@ open_problems:
   - id: evodevo-novelty
     name: How do genuinely new structures evolve?
     status: open
-    status_note: Open as of writing; case studies exist, a general account does not.
+    status_note: Open as of 2026; case studies exist, a general account does not.
     description: >-
       Evo-devo explains well how existing parts change shape or are lost. It is less clear
       how wholly new structures arise, such as feathers, the turtle's shell or the

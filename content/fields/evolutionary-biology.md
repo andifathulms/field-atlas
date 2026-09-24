@@ -127,7 +127,7 @@ open_problems:
   - id: origin-of-life
     name: The origin of life
     status: open
-    status_note: Open as of writing, though laboratory chemistry has made several steps plausible.
+    status_note: Open as of 2026, though laboratory chemistry has made several steps plausible.
     description: >-
       Evolution explains how life diversified once it existed, but not how it began.
       How did non-living chemistry on the early Earth produce the first self-copying
@@ -149,7 +149,7 @@ open_problems:
   - id: evolution-of-sex
     name: Why sex?
     status: open
-    status_note: Several hypotheses are supported in particular cases; no general answer as of writing.
+    status_note: Several hypotheses are supported in particular cases; no general answer as of 2026.
     description: >-
       An asexual female passes all her genes to every offspring. A sexual one passes
       only half, and half her offspring are males who bear no young themselves. This

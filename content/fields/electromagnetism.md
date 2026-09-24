@@ -122,7 +122,7 @@ open_problems:
   - id: magnetic-monopoles
     name: Magnetic monopoles
     status: conjectured
-    status_note: No confirmed detection as of writing.
+    status_note: No confirmed detection as of 2026.
     description: >-
       Every magnet ever found has both a north and a south pole. Cut one in half and you
       get two smaller magnets. Paul Dirac showed in 1931 that isolated magnetic charges,

@@ -145,7 +145,7 @@ open_problems:
   - id: latitudinal-diversity-gradient
     name: Why the tropics hold so many species
     status: open
-    status_note: Open as of writing; more than two dozen explanations have been proposed, and none is accepted as sufficient.
+    status_note: Open as of 2026; more than two dozen explanations have been proposed, and none is accepted as sufficient.
     description: >-
       For almost every group of organisms, from trees and ants to birds and marine
       plankton, the number of species rises from the poles towards the equator. A few

@@ -164,7 +164,7 @@ open_problems:
   - id: xtal-structure-prediction
     name: Predicting a crystal from its molecule
     status: open
-    status_note: Open as of writing; computer predictions now often succeed for small, rigid molecules, but not reliably.
+    status_note: Open as of 2026; computer predictions now often succeed for small, rigid molecules, but not reliably.
     description: >-
       Given a molecule, which crystal will it form? Many molecules can pack in several
       different ways, called polymorphs, with different solubility, strength and colour. In

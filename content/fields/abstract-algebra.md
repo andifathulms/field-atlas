@@ -123,7 +123,7 @@ open_problems:
   - id: jacobian-conjecture
     name: The Jacobian conjecture
     status: open
-    status_note: Open as of writing; many published proofs have been wrong.
+    status_note: Open as of 2026; many published proofs have been wrong.
     description: >-
       Take a polynomial map from $n$-dimensional space to itself whose Jacobian determinant
       (its local stretching factor) is a non-zero constant everywhere. Ott-Heinrich Keller

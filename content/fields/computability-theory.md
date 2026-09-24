@@ -139,7 +139,7 @@ open_problems:
   - id: busy-beaver-6
     name: What is BB(6)?
     status: open
-    status_note: Open as of writing; known to be astronomically large.
+    status_note: Open as of 2026; known to be astronomically large.
     description: >-
       For six states the Busy Beaver value is unknown, and known lower bounds are
       unimaginably large. Some 6-state machines behave like unsolved problems in number

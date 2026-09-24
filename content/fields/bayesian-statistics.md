@@ -151,7 +151,7 @@ open_problems:
   - id: bs-mcmc-mixing
     name: How long must a sampler run?
     status: open
-    status_note: Open in general as of writing; sharp answers exist only for special classes of chains.
+    status_note: Open in general as of 2026; sharp answers exist only for special classes of chains.
     description: >-
       A Markov chain Monte Carlo sampler is only correct in the long run. How many steps
       are needed before its output is a fair sample from the posterior? In practice,

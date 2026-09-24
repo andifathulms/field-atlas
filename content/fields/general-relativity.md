@@ -157,7 +157,7 @@ open_problems:
   - id: quantum-gravity
     name: Quantum gravity
     status: open
-    status_note: No accepted theory as of writing; candidates include string theory and loop quantum gravity.
+    status_note: No accepted theory as of 2026; candidates include string theory and loop quantum gravity.
     description: >-
       General relativity treats spacetime as smooth and definite. Quantum theory, which
       describes everything else, treats all physical quantities as uncertain and
@@ -180,7 +180,7 @@ open_problems:
   - id: black-hole-information
     name: The black hole information paradox
     status: open
-    status_note: Recent calculations suggest information does escape, but how is still debated as of writing.
+    status_note: Recent calculations suggest information does escape, but how is still debated as of 2026.
     description: >-
       Hawking showed in 1974–76 that black holes slowly evaporate by emitting radiation
       that appears perfectly random. If a black hole evaporates completely, the

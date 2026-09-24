@@ -156,7 +156,7 @@ open_problems:
   - id: uncultured-majority
     name: The uncultured majority
     status: open
-    status_note: Open as of writing; most microbial species are known only from their DNA.
+    status_note: Open as of 2026; most microbial species are known only from their DNA.
     description: >-
       Counting microbes under a microscope finds hundreds of times more cells than grow on
       culture plates, the "great plate count anomaly". DNA sequencing of soil, oceans and

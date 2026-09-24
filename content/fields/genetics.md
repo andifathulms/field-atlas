@@ -135,7 +135,7 @@ open_problems:
   - id: transgenerational-epigenetics
     name: Can acquired traits be inherited?
     status: conjectured
-    status_note: Well documented in plants and worms; contested in mammals, including humans, as of writing.
+    status_note: Well documented in plants and worms; contested in mammals, including humans, as of 2026.
     description: >-
       Genes can be switched on and off by chemical marks that are not changes in the DNA
       sequence. In some organisms such epigenetic marks, influenced by diet or stress,

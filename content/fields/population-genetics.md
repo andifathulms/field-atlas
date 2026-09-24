@@ -147,7 +147,7 @@ open_problems:
   - id: lewontins-paradox
     name: Lewontin's paradox
     status: open
-    status_note: Open as of writing; candidate explanations exist, but none accounts for the full pattern.
+    status_note: Open as of 2026; candidate explanations exist, but none accounts for the full pattern.
     description: >-
       Simple theory says a species' genetic diversity should scale with its population
       size. Yet diversity varies less than a thousandfold across animal species whose

@@ -140,7 +140,7 @@ open_problems:
   - id: minimal-cell
     name: What is the least a cell needs to live?
     status: open
-    status_note: Open as of writing; the smallest synthetic cell still contains genes of unknown function.
+    status_note: Open as of 2026; the smallest synthetic cell still contains genes of unknown function.
     description: >-
       In 2016 researchers at the J. Craig Venter Institute built JCVI-syn3.0, a bacterium
       with a synthetic genome stripped to 473 genes, fewer than any known free-living

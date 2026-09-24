@@ -180,7 +180,7 @@ open_problems:
   - id: origin-of-genetic-code
     name: The origin of the genetic code
     status: open
-    status_note: Open as of writing.
+    status_note: Open as of 2026.
     description: >-
       Why does life use this particular table of 64 codons to 20 amino acids, nearly the
       same in every organism? Is the code a "frozen accident" of early history, or did

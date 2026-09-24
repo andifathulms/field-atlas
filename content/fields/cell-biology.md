@@ -144,7 +144,7 @@ open_problems:
   - id: cell-size-control
     name: How do cells know their own size?
     status: open
-    status_note: Open as of writing; several mechanisms have been found, none fully general.
+    status_note: Open as of 2026; several mechanisms have been found, none fully general.
     description: >-
       Cells of a given type keep a remarkably constant size. Small cells grow for longer
       before dividing, and large cells divide sooner. How does a cell measure its own size

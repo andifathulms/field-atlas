@@ -136,7 +136,7 @@ open_problems:
   - id: kakeya-conjecture
     name: The Kakeya conjecture
     status: open
-    status_note: Proved in three dimensions (Hong Wang and Joshua Zahl, 2025 preprint); open in four or more dimensions as of writing.
+    status_note: Proved in three dimensions (Hong Wang and Joshua Zahl, 2025 preprint); open in four or more dimensions as of 2026.
     description: >-
       A Kakeya set contains a unit line segment pointing in every direction, like the
       region needed to turn a needle all the way round. Such sets can have zero volume.

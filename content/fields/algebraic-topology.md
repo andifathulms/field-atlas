@@ -163,7 +163,7 @@ open_problems:
   - id: homotopy-groups-of-spheres
     name: The homotopy groups of spheres
     status: open
-    status_note: Open. Stable groups are computed through about dimension 90 as of writing, with no general formula.
+    status_note: Open. Stable groups are computed through about dimension 90 as of 2026, with no general formula.
     description: >-
       In how many essentially different ways can a sphere of one dimension be wrapped
       around a sphere of another? The answers, the homotopy groups

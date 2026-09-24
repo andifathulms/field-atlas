@@ -149,7 +149,7 @@ open_problems:
   - id: it-interference-channel
     name: The capacity of the interference channel
     status: open
-    status_note: Open as of writing; the Gaussian case is known to within one bit (2008).
+    status_note: Open as of 2026; the Gaussian case is known to within one bit (2008).
     description: >-
       Two senders talk to two receivers at once, and each receiver hears the other
       sender as noise. What combinations of rates can both pairs achieve reliably? For a

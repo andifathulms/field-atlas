@@ -164,7 +164,7 @@ open_problems:
   - id: rodent-population-cycles
     name: Why voles and lemmings cycle
     status: open
-    status_note: Open as of writing; a century after Elton described them, no single explanation is accepted.
+    status_note: Open as of 2026; a century after Elton described them, no single explanation is accepted.
     description: >-
       Voles and lemmings in northern Europe and North America often rise to plagues and
       crash every three to five years. Elton described the lemming cycles in 1924. In

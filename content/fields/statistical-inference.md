@@ -180,7 +180,7 @@ open_problems:
   - id: si-reliable-inference
     name: Making published findings reliable
     status: open
-    status_note: Open as of writing; proposed remedies are being tried, and none is agreed as sufficient.
+    status_note: Open as of 2026; proposed remedies are being tried, and none is agreed as sufficient.
     description: >-
       How should evidence from data be summarised and reported so that published
       findings replicate at the rate their stated error rates promise? Proposals include

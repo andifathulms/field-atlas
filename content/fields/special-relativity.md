@@ -128,7 +128,7 @@ open_problems:
   - id: lorentz-invariance-violation
     name: Is Lorentz invariance exact?
     status: open
-    status_note: No violation detected as of writing, with bounds far tighter than any direct test at the Planck scale.
+    status_note: No violation detected as of 2026, with bounds far tighter than any direct test at the Planck scale.
     description: >-
       Special relativity's symmetry, Lorentz invariance, has passed every test. But many
       approaches to quantum gravity suggest that spacetime might have structure at the
