@@ -136,6 +136,7 @@ applications:
       is hyperbolic distance. Vladimir Varićak pointed this out in 1910. It is one of
       the cleanest places where non-Euclidean geometry is physically real.
     domain: physics
+    field_id: special-relativity
     sources: []
   - area: Machine learning
     title: Hyperbolic embeddings of hierarchies

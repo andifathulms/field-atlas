@@ -246,6 +246,7 @@ applications:
       satellite data found no such circles, which rules out small wrap-arounds but not
       large ones.
     domain: physics
+    field_id: physical-cosmology
     sources:
       - citation: "Luminet, J.-P., Weeks, J. R., Riazuelo, A., Lehoucq, R. & Uzan, J.-P. (2003). Dodecahedral space topology as an explanation for weak wide-angle temperature correlations in the cosmic microwave background. Nature 425: 593–595."
         url: null

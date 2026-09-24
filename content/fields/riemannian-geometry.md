@@ -164,6 +164,7 @@ applications:
       roughly +45 from weaker gravity, minus 7 from orbital speed. Without correcting
       for it, positions would drift by kilometres within a day.
     domain: physics
+    field_id: general-relativity
     sources:
       - citation: "Ashby, N. (2003). Relativity in the Global Positioning System. Living Reviews in Relativity 6: 1."
         url: https://doi.org/10.12942/lrr-2003-1
