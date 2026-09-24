@@ -213,6 +213,26 @@ Undecidability spread. In 1953 Rice proved that *every* non-trivial question abo
 
 Turing's paper held a second idea. A machine's rule table can itself be written on a tape, so one *universal* machine can read any other machine's description and simulate it. Hardware need not change for each task, only software. In 1945 {{fig:von-neumann|John von Neumann}}'s report on the EDVAC described an electronic computer that stored its program in memory alongside its data. The report bore only his name, to the lasting anger of ENIAC's builders, J. Presper Eckert and John Mauchly. Turing designed his own stored-program computer that same year. Every computer since has been a universal machine.
 
+## A Closer Look: The Halting Problem in Five Lines
+
+Suppose someone claims to have written a program `halts(P, x)` that always answers correctly, in finite time, whether program `P` run on input `x` eventually stops. Use it to build a troublemaker:
+
+```
+troublemaker(P):
+    if halts(P, P):      # would P stop when fed its own code?
+        loop forever
+    else:
+        stop
+```
+
+Now run `troublemaker` on its own code. If `halts(troublemaker, troublemaker)` says "it stops", the program loops forever. If it says "it runs forever", the program stops. Either way `halts` gave the wrong answer about this one input. So no program `halts` can be correct on every input.
+
+This is Cantor's diagonal argument again. Picture a table with a row for every program and a column for every input, showing whether that program halts on that input. `troublemaker` is built to disagree with the diagonal, so it cannot be any row of the table, and yet it is a perfectly good program if `halts` exists. The contradiction lies in assuming `halts` exists.
+
+The consequences are practical. A compiler cannot warn about every infinite loop. A verifier cannot check every property of every program (Rice's theorem). An antivirus cannot recognise every virus. Tools in all three areas work around the limit with approximations: they answer "yes", "no" or "don't know", and the undecidable part lives in the "don't know".
+
+It also explains the Busy Beaver function. If $BB(n)$ could be computed, then to decide whether an $n$-state machine halts you could run it for $BB(n)$ steps and see. That would solve the halting problem, so $BB$ cannot be computable, and it must eventually grow faster than any function a program can compute.
+
 ## The Edge of the Computable
 
 Some functions outgrow computation itself. The Busy Beaver number $BB(n)$ is the longest any halting $n$-state Turing machine can run, and it eventually exceeds every computable function. In 2024 an online collaboration determined $BB(5) = 47{,}176{,}870$, with a machine-checked proof. $BB(6)$ is out of reach. Some 6-state machines mimic unsolved problems in number theory, and at some finite size the values are provably beyond the axioms of mathematics. Knowing what *can* be computed raised the next question, what can be computed *efficiently*, which is the subject of [computational complexity](/math/computational-complexity/).
