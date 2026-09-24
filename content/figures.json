@@ -66,5 +66,13 @@
   { "id": "hooke", "name": "Robert Hooke", "turning_point_ids": ["newton-principia"] },
   { "id": "le-verrier", "name": "Urbain Le Verrier", "turning_point_ids": ["neptune-discovery", "mercury-perihelion-anomaly"] },
   { "id": "galle", "name": "Johann Galle", "turning_point_ids": ["neptune-discovery"] },
-  { "id": "adams", "name": "John Couch Adams", "turning_point_ids": ["neptune-discovery"] }
+  { "id": "adams", "name": "John Couch Adams", "turning_point_ids": ["neptune-discovery"] },
+  { "id": "oersted", "name": "Hans Christian Ørsted", "turning_point_ids": ["oersted-deflection"] },
+  { "id": "faraday", "name": "Michael Faraday", "turning_point_ids": ["faraday-induction"] },
+  { "id": "henry", "name": "Joseph Henry", "turning_point_ids": ["faraday-induction"] },
+  { "id": "maxwell", "name": "James Clerk Maxwell", "turning_point_ids": ["maxwell-equations"] },
+  { "id": "hertz", "name": "Heinrich Hertz", "turning_point_ids": ["hertz-radio-waves"] },
+  { "id": "michelson", "name": "Albert Michelson", "turning_point_ids": ["michelson-morley"] },
+  { "id": "morley", "name": "Edward Morley", "turning_point_ids": ["michelson-morley"] },
+  { "id": "lorentz", "name": "Hendrik Lorentz", "turning_point_ids": ["michelson-morley"] }
 ]
