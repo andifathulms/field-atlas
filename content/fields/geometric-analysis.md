@@ -253,6 +253,26 @@ In 1979 {{fig:schoen|Richard Schoen}} and Yau proved the *positive mass theorem*
 
 This is the field's recurring pattern. A statement that sounds physical is really a statement about curvature, and the right equation proves it. Hamilton's Ricci flow, which grew up alongside this field, followed the same philosophy all the way to Perelman's proof of the Poincaré conjecture in [geometric topology](/math/geometric-topology/).
 
+## A Closer Look: Why a Soap Film Has Zero Mean Curvature
+
+A soap film is a physical minimisation problem that turns into a differential equation. Surface tension $\gamma$ pulls the film to reduce its area, and the pressure difference across a curved film is given by the Young–Laplace law,
+
+$$
+\Delta P = 2\gamma H ,
+$$
+
+where $H$ is the mean curvature, the average of the two principal curvatures. That is for a single surface; a soap film has two, which doubles the jump. A soap *bubble* holds higher pressure inside, so it curves with $H > 0$ and becomes a sphere. A film spanning a wire loop has the same air pressure on both sides, so $\Delta P = 0$, which forces $H = 0$ everywhere. The film bends one way in one direction and equally the other way in the perpendicular direction, like a saddle.
+
+The same equation comes from calculus. Push a surface slightly in the normal direction by an amount $\varphi$. The area changes, to first order, by
+
+$$
+\frac{d}{dt}\text{Area} = -\int H\,\varphi\,dA
+$$
+
+(up to a convention factor). A surface of least area cannot decrease under any small push, so $H$ must vanish. Minimal surfaces are exactly the critical points of area.
+
+Dip two parallel rings into soapy water and pull them apart, and the film between them forms a *catenoid*, the surface made by spinning the curve $y = a\cosh(x/a)$. Pull the rings too far apart and the catenoid snaps into two flat discs: beyond a critical distance, the equation has no stable solution. Deciding when solutions exist and when they break down is the central work of geometric analysis.
+
 ## The Min-Max Revival
 
 Minimal surfaces returned to the centre after 2012. The methods {{fig:marques|Fernando Codá Marques}} and {{fig:neves|André Neves}} revived to prove the Willmore conjecture could find minimal surfaces that are *not* area-minimising: saddle points of area rather than minima. Within six years they, together with Kei Irie, and then {{fig:song|Antoine Song}} had proved Yau's 1982 conjecture that every closed three-manifold contains infinitely many of them.
