@@ -27,9 +27,10 @@ function ThreadSection({
   fields,
   domainFields,
   headingLevel,
-  index,
+  eyebrow,
 }: {
-  index: number;
+  /** The stamp line above the thread title. */
+  eyebrow: string;
   thread: ThreadInfo;
   fields: Field[];
   domainFields: Map<string, Field>;
@@ -55,9 +56,7 @@ function ThreadSection({
   return (
     <section id={`thread-${thread.id}`} aria-labelledby={`thread-${thread.id}-heading`} className="scroll-mt-14">
       <header className="settle pb-10">
-        <p className="stamp mb-3 text-accent">
-          Thread {String(index + 1).padStart(2, "0")} · {fields.length} fields
-        </p>
+        <p className="stamp mb-3 text-accent">{eyebrow}</p>
         <Heading id={`thread-${thread.id}-heading`} className="text-4xl font-semibold tracking-[-0.015em] sm:text-5xl">
           {thread.title}
         </Heading>
@@ -145,11 +144,7 @@ export default function DomainPage({ params }: { params: { domain: string } }) {
         / {domain.name}
       </p>
 
-      {single ? (
-        <p className="stamp mt-8 text-accent">
-          {domain.name} · {fields.length} fields surveyed
-        </p>
-      ) : (
+      {!single && (
         <>
           <header className="settle pb-12 pt-6">
             <p className="stamp text-accent">
@@ -190,11 +185,15 @@ export default function DomainPage({ params }: { params: { domain: string } }) {
         </>
       )}
 
-      <div className={single ? "mt-4" : "mt-16"}>
+      <div className={single ? "mt-8" : "mt-16"}>
         {threads.map(({ thread, fields: tf }, i) => (
           <div key={thread.id} className={i > 0 ? "mt-20 border-t border-rule pt-14 sm:mt-28 sm:pt-16" : ""}>
             <ThreadSection
-              index={i}
+              eyebrow={
+                single
+                  ? `${domain.name} · ${tf.length} fields surveyed`
+                  : `Thread ${String(i + 1).padStart(2, "0")} · ${tf.length} fields`
+              }
               thread={thread}
               fields={tf}
               domainFields={domainFields}
