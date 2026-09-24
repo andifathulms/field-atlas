@@ -1,13 +1,13 @@
 [
-  { "id": "euclid", "name": "Euclid of Alexandria", "turning_point_ids": ["elements-compiled"] },
+  { "id": "euclid", "name": "Euclid of Alexandria", "turning_point_ids": ["elements-compiled", "euclid-primes"] },
   { "id": "saccheri", "name": "Girolamo Saccheri", "turning_point_ids": ["parallel-postulate-crisis"] },
   { "id": "hilbert", "name": "David Hilbert", "turning_point_ids": ["hilbert-grundlagen", "hilbert-no-hyperbolic-surface", "einstein-field-equations"] },
-  { "id": "gauss", "name": "Carl Friedrich Gauss", "turning_point_ids": ["lobachevsky-bolyai", "theorema-egregium"] },
+  { "id": "gauss", "name": "Carl Friedrich Gauss", "turning_point_ids": ["lobachevsky-bolyai", "theorema-egregium", "gauss-disquisitiones"] },
   { "id": "lobachevsky", "name": "Nikolai Lobachevsky", "turning_point_ids": ["lobachevsky-bolyai"] },
   { "id": "bolyai", "name": "János Bolyai", "turning_point_ids": ["lobachevsky-bolyai"] },
   { "id": "beltrami", "name": "Eugenio Beltrami", "turning_point_ids": ["beltrami-model"] },
   { "id": "klein", "name": "Felix Klein", "turning_point_ids": ["erlangen-program", "cayley-klein"] },
-  { "id": "euler", "name": "Leonhard Euler", "turning_point_ids": ["euler-polyhedron-formula", "euler-curvature"] },
+  { "id": "euler", "name": "Leonhard Euler", "turning_point_ids": ["euler-polyhedron-formula", "euler-curvature", "euler-fermat-numbers"] },
   { "id": "bonnet", "name": "Pierre Ossian Bonnet", "turning_point_ids": ["gauss-bonnet"] },
   { "id": "riemann", "name": "Bernhard Riemann", "turning_point_ids": ["riemann-habilitation", "riemann-surfaces"] },
   { "id": "ricci-curbastro", "name": "Gregorio Ricci-Curbastro", "turning_point_ids": ["ricci-levi-civita"] },
@@ -29,7 +29,7 @@
   { "id": "neves", "name": "André Neves", "turning_point_ids": ["yau-conjecture-minimal-surfaces"] },
   { "id": "song", "name": "Antoine Song", "turning_point_ids": ["yau-conjecture-minimal-surfaces"] },
   { "id": "descartes", "name": "René Descartes", "turning_point_ids": ["descartes-coordinates"] },
-  { "id": "fermat", "name": "Pierre de Fermat", "turning_point_ids": ["descartes-coordinates"] },
+  { "id": "fermat", "name": "Pierre de Fermat", "turning_point_ids": ["descartes-coordinates", "fermat-last-theorem-stated"] },
   { "id": "wantzel", "name": "Pierre Wantzel", "turning_point_ids": ["wantzel-constructions"] },
   { "id": "lindemann", "name": "Ferdinand von Lindemann", "turning_point_ids": ["wantzel-constructions"] },
   { "id": "frenet", "name": "Jean Frédéric Frenet", "turning_point_ids": ["frenet-serret"] },
@@ -134,5 +134,7 @@
   { "id": "paabo", "name": "Svante Pääbo", "turning_point_ids": ["neanderthal-genome"] },
   { "id": "doudna", "name": "Jennifer Doudna", "turning_point_ids": ["crispr-editing"] },
   { "id": "charpentier", "name": "Emmanuelle Charpentier", "turning_point_ids": ["crispr-editing"] },
-  { "id": "feng-zhang", "name": "Feng Zhang", "turning_point_ids": ["crispr-editing"] }
+  { "id": "feng-zhang", "name": "Feng Zhang", "turning_point_ids": ["crispr-editing"] },
+  { "id": "diophantus", "name": "Diophantus of Alexandria", "turning_point_ids": ["diophantus-arithmetica"] },
+  { "id": "legendre", "name": "Adrien-Marie Legendre", "turning_point_ids": ["gauss-disquisitiones"] }
 ]
