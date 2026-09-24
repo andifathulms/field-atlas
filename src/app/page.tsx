@@ -1,10 +1,11 @@
 import Link from "next/link";
 import { Legend } from "@/components/Legend";
-import { getFields } from "@/lib/content";
+import { getCrossings, getFields } from "@/lib/content";
 import { DOMAINS } from "@/lib/domains";
 import { surveySummary } from "@/lib/stats";
 
 export default function Home() {
+  const crossings = getCrossings();
   return (
     <main className="mx-auto max-w-6xl px-4 sm:px-8">
       <section className="settle pb-16 pt-16 sm:pt-24">
@@ -75,6 +76,34 @@ export default function Home() {
             );
           })}
         </ol>
+      </section>
+
+      <section aria-labelledby="crossings-heading" className="border-t border-ink">
+        <Link
+          href="/crossings/"
+          className="group grid gap-x-8 gap-y-2 py-8 sm:grid-cols-[6rem_minmax(0,1fr)_14rem] sm:items-baseline"
+        >
+          <span className="stamp text-ink-faint">Across</span>
+          <span>
+            <span id="crossings-heading" className="block text-3xl font-semibold tracking-tight sm:text-4xl">
+              Crossings
+              <span
+                aria-hidden
+                className="ml-3 inline-block text-2xl transition-transform duration-300 ease-house group-hover:translate-x-1"
+              >
+                →
+              </span>
+            </span>
+            <span className="mt-2 block max-w-prose text-ink-soft">
+              Where a result in one domain lands in another: geometry becoming gravity, physics revealing the
+              double helix.
+            </span>
+          </span>
+          <span className="stamp flex flex-col gap-1 text-ink-soft sm:text-right">
+            <span>{crossings.links.length} linked crossings</span>
+            <span className="text-fog">{crossings.seeds.length} reaching unmapped ground</span>
+          </span>
+        </Link>
       </section>
 
       <section className="mt-16 border-t border-rule pt-6">
