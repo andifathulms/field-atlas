@@ -311,6 +311,20 @@ Hamilton's Ricci flow offered a method: start with any metric, let it flow, and 
 
 In 2002–2003 {{fig:perelman|Grigori Perelman}} posted three preprints to arXiv. They introduced new monotone quantities that rule out the bad singularities, and a way to cut out the rest by surgery and continue the flow. Several independent teams spent three years checking the argument and wrote it out in hundreds of pages. It held. Geometrization, and with it the Poincaré conjecture, was proved. The dispute that followed was about credit, not correctness; the turning point below records it as contested.
 
+## A Closer Look: From Surfaces to Three-Manifolds
+
+The model for Thurston's geometrization is a nineteenth-century theorem about surfaces. Every closed orientable surface is a sphere, a torus, or a torus with extra handles, classified by its genus $g$, the number of holes. And every one carries a uniform geometry that matches its topology:
+
+| Surface | Genus | Euler characteristic | Natural geometry |
+|---|---|---|---|
+| Sphere | 0 | 2 | spherical (curvature $+1$) |
+| Torus | 1 | 0 | flat (curvature $0$) |
+| Two or more holes | $g \ge 2$ | $2 - 2g < 0$ | hyperbolic (curvature $-1$) |
+
+The Gauss–Bonnet theorem ties the two columns together: total curvature equals $2\pi$ times the Euler characteristic. So the sign of the curvature is forced by the topology. Most surfaces, all those with two or more holes, are hyperbolic.
+
+Thurston's conjecture was that three dimensions work the same way, with two complications. First, a 3-manifold may need to be cut along spheres and tori into pieces before each piece carries a uniform geometry. Second, there are eight model geometries instead of three: spherical, flat and hyperbolic, plus five that exist only in three dimensions and mix directions of different kinds. As with surfaces, hyperbolic geometry is the typical case. Perelman's proof via Ricci flow confirmed the whole picture, including Poincaré's conjecture, the special case of a single spherical piece.
+
 ## After Geometrization
 
 With the classification settled, the field turned to finer structure. In 2012 {{fig:agol|Ian Agol}}, building on Daniel Wise's work, proved the virtual Haken and virtual fibering conjectures. Every hyperbolic three-manifold is, up to a finite cover, remarkably well organised.
