@@ -218,7 +218,7 @@
   { "id": "julia-robinson", "name": "Julia Robinson", "turning_point_ids": ["hilberts-tenth"] },
   { "id": "matiyasevich", "name": "Yuri Matiyasevich", "turning_point_ids": ["hilberts-tenth"] },
   { "id": "hartmanis", "name": "Juris Hartmanis", "turning_point_ids": ["cobham-edmonds"] },
-  { "id": "edmonds", "name": "Jack Edmonds", "turning_point_ids": ["cobham-edmonds"] },
+  { "id": "edmonds", "name": "Jack Edmonds", "turning_point_ids": ["cobham-edmonds", "edmonds-blossom"] },
   { "id": "stephen-cook", "name": "Stephen Cook", "turning_point_ids": ["cook-levin"] },
   { "id": "levin", "name": "Leonid Levin", "turning_point_ids": ["cook-levin"] },
   { "id": "karp", "name": "Richard Karp", "turning_point_ids": ["karp-21"] },
@@ -291,5 +291,16 @@
   { "id": "jeff-kahn", "name": "Jeff Kahn", "turning_point_ids": ["kahn-kalai-proof"] },
   { "id": "gil-kalai", "name": "Gil Kalai", "turning_point_ids": ["kahn-kalai-proof"] },
   { "id": "jinyoung-park", "name": "Jinyoung Park", "turning_point_ids": ["kahn-kalai-proof"] },
-  { "id": "huy-tuan-pham", "name": "Huy Tuan Pham", "turning_point_ids": ["kahn-kalai-proof"] }
+  { "id": "huy-tuan-pham", "name": "Huy Tuan Pham", "turning_point_ids": ["kahn-kalai-proof"] },
+  { "id": "leonid-kantorovich", "name": "Leonid Kantorovich", "turning_point_ids": ["linear-programming"] },
+  { "id": "george-dantzig", "name": "George Dantzig", "turning_point_ids": ["linear-programming"] },
+  { "id": "lester-ford", "name": "Lester Ford Jr.", "turning_point_ids": ["max-flow-min-cut"] },
+  { "id": "delbert-fulkerson", "name": "Delbert Ray Fulkerson", "turning_point_ids": ["max-flow-min-cut"] },
+  { "id": "edsger-dijkstra", "name": "Edsger Dijkstra", "turning_point_ids": ["dijkstra-shortest-paths"] },
+  { "id": "nicos-christofides", "name": "Nicos Christofides", "turning_point_ids": ["metric-tsp-approximation"] },
+  { "id": "anatoliy-serdyukov", "name": "Anatoliy Serdyukov", "turning_point_ids": ["metric-tsp-approximation"] },
+  { "id": "anna-karlin", "name": "Anna Karlin", "turning_point_ids": ["metric-tsp-approximation"] },
+  { "id": "nathan-klein", "name": "Nathan Klein", "turning_point_ids": ["metric-tsp-approximation"] },
+  { "id": "shayan-oveis-gharan", "name": "Shayan Oveis Gharan", "turning_point_ids": ["metric-tsp-approximation"] },
+  { "id": "leonid-khachiyan", "name": "Leonid Khachiyan", "turning_point_ids": ["khachiyan-ellipsoid"] }
 ]
