@@ -178,6 +178,26 @@ The answer came from a quiet 25-year-old in Vienna. In 1931 {{fig:goedel|Kurt G�
 
 It was not the end of the programme but a change of question. In 1936 {{fig:gentzen|Gerhard Gentzen}} proved arithmetic consistent after all, by assuming a principle of transfinite induction arithmetic cannot prove. Four decades later, {{fig:paris|Jeff Paris}} and Leo Harrington found a natural statement about colouring finite sets that is true but unprovable in ordinary arithmetic. Incompleteness reached everyday mathematics.
 
+## A Closer Look: How a Sentence Can Talk About Itself
+
+Gödel's first incompleteness theorem rests on building an arithmetic statement that says "I am not provable". Here is the idea in four steps.
+
+**Numbering.** Give every symbol a code number, and encode any string of symbols as a single number, for example as a product of primes $2^{a_1} 3^{a_2} 5^{a_3} \cdots$ with the codes as exponents. Formulas, and whole proofs, become numbers.
+
+**Proof as arithmetic.** Checking whether a sequence of formulas is a valid proof is mechanical: each line must be an axiom or follow from earlier lines by a rule. So "$x$ is the code of a proof of the formula with code $y$" can be expressed as an ordinary, if enormous, arithmetic relation between $x$ and $y$. Then "the formula with code $y$ is provable", written $\mathrm{Prov}(y)$, is a formula of arithmetic.
+
+**Self-reference.** A diagonal construction, like Cantor's, produces a sentence $G$ with
+
+$$
+G \;\longleftrightarrow\; \neg\,\mathrm{Prov}(\ulcorner G \urcorner),
+$$
+
+where $\ulcorner G \urcorner$ is $G$'s own code number. $G$ asserts its own unprovability. (The philosopher W. V. O. Quine gave an everyday analogue: "yields falsehood when preceded by its quotation" yields falsehood when preceded by its quotation.)
+
+**The trap.** If the system proved $G$, it would prove a statement asserting that $G$ is unprovable, which is false. A consistent system cannot do that. So if the system is consistent, $G$ is unprovable, and since that is exactly what $G$ says, $G$ is *true*. A true, unprovable sentence.
+
+The second theorem follows by formalising this very argument inside the system: "if I am consistent, then $G$" is provable. If the system could also prove its own consistency, it would prove $G$, which is impossible. Adding $G$ as a new axiom does not help, because the stronger system has its own Gödel sentence. Incompleteness cannot be patched.
+
 ## Proofs by Machine
 
 Gödel's encoding of proofs as numbers had a second consequence: checking a proof is a mechanical operation. Within five years that insight became the theory of [computation](/math/computability-theory/). Eighty years later it became practical. Proof assistants now check proofs down to the axioms. {{fig:gonthier|Georges Gonthier}} formalised the four colour theorem in 2005, and in 2022 a Lean collaboration verified a new theorem that Peter Scholze himself had doubts about. Hilbert's hope of certainty from inside failed, but his idea of mechanically checkable proof has become everyday practice.
