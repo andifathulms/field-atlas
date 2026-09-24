@@ -353,5 +353,16 @@
   { "id": "paul-dirac", "name": "Paul Dirac", "turning_point_ids": ["fermi-dirac-statistics"] },
   { "id": "eric-cornell", "name": "Eric Cornell", "turning_point_ids": ["bose-einstein-condensate"] },
   { "id": "carl-wieman", "name": "Carl Wieman", "turning_point_ids": ["bose-einstein-condensate"] },
-  { "id": "wolfgang-ketterle", "name": "Wolfgang Ketterle", "turning_point_ids": ["bose-einstein-condensate"] }
+  { "id": "wolfgang-ketterle", "name": "Wolfgang Ketterle", "turning_point_ids": ["bose-einstein-condensate"] },
+  { "id": "thomas-andrews", "name": "Thomas Andrews", "turning_point_ids": ["andrews-critical-point"] },
+  { "id": "johannes-van-der-waals", "name": "Johannes Diderik van der Waals", "turning_point_ids": ["van-der-waals-equation"] },
+  { "id": "lev-landau", "name": "Lev Landau", "turning_point_ids": ["landau-theory"] },
+  { "id": "ernst-ising", "name": "Ernst Ising", "turning_point_ids": ["onsager-ising"] },
+  { "id": "lars-onsager", "name": "Lars Onsager", "turning_point_ids": ["onsager-ising"] },
+  { "id": "leo-kadanoff", "name": "Leo Kadanoff", "turning_point_ids": ["wilson-renormalization"] },
+  { "id": "kenneth-wilson", "name": "Kenneth Wilson", "turning_point_ids": ["wilson-renormalization"] },
+  { "id": "michael-fisher", "name": "Michael Fisher", "turning_point_ids": ["wilson-renormalization"] },
+  { "id": "michael-kosterlitz", "name": "Michael Kosterlitz", "turning_point_ids": ["kosterlitz-thouless"] },
+  { "id": "david-thouless", "name": "David Thouless", "turning_point_ids": ["kosterlitz-thouless"] },
+  { "id": "vadim-berezinskii", "name": "Vadim Berezinskii", "turning_point_ids": ["kosterlitz-thouless"] }
 ]
