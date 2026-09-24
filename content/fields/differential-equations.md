@@ -112,7 +112,7 @@ turning_points:
       with Weierstrass in Berlin. Her doctoral thesis, awarded by Göttingen in 1874,
       proves that a wide class of partial differential equations has solutions given by
       convergent power series. She was the first woman in modern Europe to receive a
-      doctorate in mathematics, and later the first to hold a full professorship.
+      doctorate in mathematics, and in 1889 one of the first women to hold a full professorship.
     contested: false
     sources:
       - citation: "von Kowalevsky, S. (1875). Zur Theorie der partiellen Differentialgleichungen. Journal für die reine und angewandte Mathematik 80: 1–32."
@@ -132,7 +132,7 @@ open_problems:
       maximum number and their possible arrangements.
     why_hard: >-
       Even the statement that each such system has finitely many limit cycles took until
-      1991–92 to prove, by Yulij Ilyashenko and Jean Écalle independently, after an 1923
+      1991–92 to prove, by Yulij Ilyashenko and Jean Écalle independently, after a 1923
       proof by Dulac was found to be flawed. Systems of degree two are known that have
       four limit cycles, but no one has proved that there cannot be more.
     unlocks: >-
