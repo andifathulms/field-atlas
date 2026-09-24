@@ -236,6 +236,16 @@ By mid-century projective geometry had grown ambitious. In 1859 {{fig:cayley|Art
 
 Projective space also became the natural home for curves defined by equations. In the projective plane, allowing complex points, two curves of degrees $m$ and $n$ always meet in exactly $mn$ points, counted properly. That clean count fails in the ordinary plane, where intersection points can escape to infinity. This is where [algebraic geometry](/math/algebraic-geometry/) takes up the story.
 
+## A Closer Look: Desargues' Theorem
+
+Desargues' theorem is the signature result of projective geometry, a statement about points and lines only, with no lengths or angles.
+
+Take two triangles $ABC$ and $A'B'C'$ in *perspective from a point*: the lines $AA'$, $BB'$ and $CC'$ all pass through one point $O$, as if one triangle were a shadow of the other cast by a lamp at $O$. Now extend corresponding sides until they meet: $AB$ with $A'B'$, $BC$ with $B'C'$, and $CA$ with $C'A'$. The theorem says these three meeting points always lie on a single straight line. (If two sides are parallel, they meet at a point at infinity, and the statement still holds, one reason projective geometry adds those points.)
+
+The slickest proof leaves the plane. Suppose the two triangles lie in different planes in space. Each pair of corresponding sides, like $AB$ and $A'B'$, lies in the plane through $O$, $A$ and $B$, so they meet. All three meeting points lie in the plane of triangle $ABC$ *and* in the plane of triangle $A'B'C'$. Two different planes meet in a line, so the three points are collinear. The flat case follows by viewing a flat drawing as the shadow of the three-dimensional one.
+
+The converse also holds, and by duality, swapping "point" and "line", the theorem proves its own converse. Stranger still, there exist projective planes where Desargues' theorem fails. Hilbert showed that it holds exactly when the plane can be given coordinates from a number system in which multiplication is associative. A theorem about lines in a drawing is secretly a theorem about algebra.
+
 ## Finite Planes
 
 Nothing in the axioms of a projective plane requires infinitely many points. The smallest possible one has seven points and seven lines, each line holding three points: the Fano plane. More generally, finite planes exist with $n^2 + n + 1$ points whenever $n$ is a prime power. Whether any other orders are possible is one of the oldest open questions in combinatorics. Order 10 took a supercomputer search in the 1980s to rule out, and order 12 is still unknown.
