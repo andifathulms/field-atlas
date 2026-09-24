@@ -208,6 +208,30 @@ just as rotated observers in ordinary space disagree about $x$ and $y$ but agree
 
 Einstein at first called this "superfluous learnedness". Within a few years he found he could not build a theory of gravity without it.
 
+## A Closer Look: Muons That Should Not Reach the Ground
+
+Cosmic rays striking the upper atmosphere produce muons, unstable particles that decay with a half-life, in their own rest frame, of about 1.5 microseconds, and an average lifetime of 2.2 microseconds. Suppose a muon is made 10 km up and travels down at 99.5% of the speed of light.
+
+**Without relativity.** The trip takes
+
+$$
+t = \frac{10{,}000 \text{ m}}{0.995 \times 3.00 \times 10^8 \text{ m/s}} \approx 33.5 \ \mu\text{s} ,
+$$
+
+about fifteen average lifetimes. The fraction surviving would be $e^{-33.5/2.2} \approx 2 \times 10^{-7}$, roughly one in four million. Almost none should reach the ground.
+
+**With relativity.** A clock moving at $v = 0.995c$ runs slow by the factor
+
+$$
+\gamma = \frac{1}{\sqrt{1 - v^2/c^2}} = \frac{1}{\sqrt{1 - 0.995^2}} \approx 10 .
+$$
+
+The muon's own clock records only $33.5 / 10 \approx 3.35$ microseconds for the trip, about one and a half lifetimes, so the fraction surviving is $e^{-3.35/2.2} \approx 0.22$. About one muon in five arrives.
+
+Muons do reach the ground in large numbers, about one per square centimetre per minute. Rossi and Hall measured it in 1941, and in 1963 David Frisch and James Smith compared the muon counts on the summit of Mount Washington and at sea level, 1,907 metres lower. Far more survived the descent than the muons' lifetime would allow without time dilation, in close agreement with Einstein's factor.
+
+From the muon's point of view, its clock is normal. Instead the atmosphere, rushing past at 0.995c, is contracted by the same factor of 10, to about 1 km thick. Both descriptions give the same count of surviving muons. They are the same prediction, seen from two frames.
+
 ## Checked to Many Decimal Places
 
 The predictions are strange but testable. In 1941 {{fig:rossi|Bruno Rossi}} and David Hall showed that muons from cosmic rays survive the trip through the atmosphere only because their internal clocks run slow. Particle accelerators, atomic clocks flown on aircraft and the GPS constellation have confirmed special relativity many times over, to extraordinary precision.
