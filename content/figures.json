@@ -335,5 +335,12 @@
   { "id": "adrien-douady", "name": "Adrien Douady", "turning_point_ids": ["douady-hubbard-connected"] },
   { "id": "john-hubbard", "name": "John Hubbard", "turning_point_ids": ["douady-hubbard-connected"] },
   { "id": "dennis-sullivan", "name": "Dennis Sullivan", "turning_point_ids": ["sullivan-no-wandering"] },
-  { "id": "mitsuhiro-shishikura", "name": "Mitsuhiro Shishikura", "turning_point_ids": ["shishikura-dimension"] }
+  { "id": "mitsuhiro-shishikura", "name": "Mitsuhiro Shishikura", "turning_point_ids": ["shishikura-dimension"] },
+  { "id": "sadi-carnot", "name": "Sadi Carnot", "turning_point_ids": ["carnot-engine"] },
+  { "id": "julius-robert-mayer", "name": "Julius Robert Mayer", "turning_point_ids": ["mechanical-equivalent-of-heat"] },
+  { "id": "james-joule", "name": "James Prescott Joule", "turning_point_ids": ["mechanical-equivalent-of-heat"] },
+  { "id": "hermann-helmholtz", "name": "Hermann von Helmholtz", "turning_point_ids": ["mechanical-equivalent-of-heat"] },
+  { "id": "william-thomson", "name": "William Thomson (Lord Kelvin)", "turning_point_ids": ["kelvin-absolute-temperature"] },
+  { "id": "rudolf-clausius", "name": "Rudolf Clausius", "turning_point_ids": ["clausius-entropy"] },
+  { "id": "walther-nernst", "name": "Walther Nernst", "turning_point_ids": ["nernst-third-law"] }
 ]
