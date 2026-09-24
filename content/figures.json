@@ -326,5 +326,14 @@
   { "id": "boltzmann", "name": "Ludwig Boltzmann", "turning_point_ids": ["boltzmann-ergodic-hypothesis"] },
   { "id": "yakov-sinai", "name": "Yakov Sinai", "turning_point_ids": ["kolmogorov-sinai-entropy"] },
   { "id": "donald-ornstein", "name": "Donald Ornstein", "turning_point_ids": ["ornstein-isomorphism"] },
-  { "id": "hillel-furstenberg", "name": "Hillel Furstenberg", "turning_point_ids": ["furstenberg-szemeredi"] }
+  { "id": "hillel-furstenberg", "name": "Hillel Furstenberg", "turning_point_ids": ["furstenberg-szemeredi"] },
+  { "id": "gaston-julia", "name": "Gaston Julia", "turning_point_ids": ["fatou-julia"] },
+  { "id": "pierre-fatou", "name": "Pierre Fatou", "turning_point_ids": ["fatou-julia"] },
+  { "id": "robert-brooks", "name": "Robert Brooks", "turning_point_ids": ["mandelbrot-set-pictures"] },
+  { "id": "peter-matelski", "name": "J. Peter Matelski", "turning_point_ids": ["mandelbrot-set-pictures"] },
+  { "id": "benoit-mandelbrot", "name": "Benoit Mandelbrot", "turning_point_ids": ["mandelbrot-set-pictures"] },
+  { "id": "adrien-douady", "name": "Adrien Douady", "turning_point_ids": ["douady-hubbard-connected"] },
+  { "id": "john-hubbard", "name": "John Hubbard", "turning_point_ids": ["douady-hubbard-connected"] },
+  { "id": "dennis-sullivan", "name": "Dennis Sullivan", "turning_point_ids": ["sullivan-no-wandering"] },
+  { "id": "mitsuhiro-shishikura", "name": "Mitsuhiro Shishikura", "turning_point_ids": ["shishikura-dimension"] }
 ]
