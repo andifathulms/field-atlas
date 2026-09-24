@@ -75,7 +75,7 @@
   { "id": "michelson", "name": "Albert Michelson", "turning_point_ids": ["michelson-morley"] },
   { "id": "morley", "name": "Edward Morley", "turning_point_ids": ["michelson-morley"] },
   { "id": "lorentz", "name": "Hendrik Lorentz", "turning_point_ids": ["michelson-morley", "lorentz-transformation"] },
-  { "id": "einstein", "name": "Albert Einstein", "turning_point_ids": ["einstein-special-1905", "equivalence-principle", "einstein-field-equations"] },
+  { "id": "einstein", "name": "Albert Einstein", "turning_point_ids": ["einstein-special-1905", "equivalence-principle", "einstein-field-equations", "einstein-static-universe"] },
   { "id": "minkowski", "name": "Hermann Minkowski", "turning_point_ids": ["minkowski-spacetime"] },
   { "id": "rossi", "name": "Bruno Rossi", "turning_point_ids": ["rossi-hall-muons"] },
   { "id": "grossmann", "name": "Marcel Grossmann", "turning_point_ids": ["einstein-field-equations"] },
@@ -84,5 +84,17 @@
   { "id": "frank-dyson", "name": "Frank Dyson", "turning_point_ids": ["eclipse-1919"] },
   { "id": "weiss", "name": "Rainer Weiss", "turning_point_ids": ["ligo-gravitational-waves"] },
   { "id": "barish", "name": "Barry Barish", "turning_point_ids": ["ligo-gravitational-waves"] },
-  { "id": "thorne", "name": "Kip Thorne", "turning_point_ids": ["ligo-gravitational-waves"] }
+  { "id": "thorne", "name": "Kip Thorne", "turning_point_ids": ["ligo-gravitational-waves"] },
+  { "id": "friedmann", "name": "Alexander Friedmann", "turning_point_ids": ["friedmann-lemaitre"] },
+  { "id": "lemaitre", "name": "Georges Lemaître", "turning_point_ids": ["friedmann-lemaitre", "hubble-lemaitre-law"] },
+  { "id": "slipher", "name": "Vesto Slipher", "turning_point_ids": ["hubble-lemaitre-law"] },
+  { "id": "hubble", "name": "Edwin Hubble", "turning_point_ids": ["hubble-lemaitre-law"] },
+  { "id": "leavitt", "name": "Henrietta Leavitt", "turning_point_ids": ["hubble-lemaitre-law"] },
+  { "id": "penzias", "name": "Arno Penzias", "turning_point_ids": ["cmb-discovery"] },
+  { "id": "robert-wilson", "name": "Robert Wilson", "turning_point_ids": ["cmb-discovery"] },
+  { "id": "alpher", "name": "Ralph Alpher", "turning_point_ids": ["cmb-discovery"] },
+  { "id": "herman", "name": "Robert Herman", "turning_point_ids": ["cmb-discovery"] },
+  { "id": "perlmutter", "name": "Saul Perlmutter", "turning_point_ids": ["accelerating-expansion"] },
+  { "id": "brian-schmidt", "name": "Brian Schmidt", "turning_point_ids": ["accelerating-expansion"] },
+  { "id": "riess", "name": "Adam Riess", "turning_point_ids": ["accelerating-expansion"] }
 ]
