@@ -96,5 +96,10 @@
   { "id": "herman", "name": "Robert Herman", "turning_point_ids": ["cmb-discovery"] },
   { "id": "perlmutter", "name": "Saul Perlmutter", "turning_point_ids": ["accelerating-expansion"] },
   { "id": "brian-schmidt", "name": "Brian Schmidt", "turning_point_ids": ["accelerating-expansion"] },
-  { "id": "riess", "name": "Adam Riess", "turning_point_ids": ["accelerating-expansion"] }
+  { "id": "riess", "name": "Adam Riess", "turning_point_ids": ["accelerating-expansion"] },
+  { "id": "darwin", "name": "Charles Darwin", "turning_point_ids": ["darwin-wallace-1858", "origin-of-species"] },
+  { "id": "wallace", "name": "Alfred Russel Wallace", "turning_point_ids": ["darwin-wallace-1858"] },
+  { "id": "owen", "name": "Richard Owen", "turning_point_ids": ["archaeopteryx"] },
+  { "id": "margulis", "name": "Lynn Margulis", "turning_point_ids": ["endosymbiosis"] },
+  { "id": "woese", "name": "Carl Woese", "turning_point_ids": ["three-domains"] }
 ]

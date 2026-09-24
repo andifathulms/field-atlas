@@ -33,7 +33,12 @@ export const DOMAINS: DomainInfo[] = [
   {
     id: "biology",
     name: "Biology",
-    blurb: "Not yet surveyed. Moss green is reserved for it.",
+    blurb: "How evolution and heredity, long at odds, merged, and how reading DNA rewrote both.",
+    thread: {
+      title: "The Heredity Thread",
+      intro:
+        "From Darwin's natural selection and Mendel's peas to the genome. For decades the two founding ideas of modern biology seemed incompatible: Darwin needed variation to accumulate, and the heredity of his day blended it away. Mendel's discrete genes rescued natural selection, molecular biology found what genes are made of, and genomics now reads them by the billion. The map runs into fog at life's origin, and in the long stretches of DNA whose purpose no one knows.",
+    },
   },
 ];
 
