@@ -229,6 +229,26 @@ Over the next century and a half, Euler, Lagrange, Laplace and Hamilton rewrote 
 
 The theory's greatest triumph came in 1846. Uranus was drifting from its predicted path, and {{fig:le-verrier|Urbain Le Verrier}} worked backwards to the position of an unseen planet pulling on it. {{fig:galle|Johann Galle}} pointed his telescope there and found Neptune on his first night. In England, {{fig:adams|John Couch Adams}}'s unpublished calculations were later put forward as a rival prediction, and how seriously to take them is still argued.
 
+## A Closer Look: The Moon Is Falling
+
+Newton's key test of universal gravitation, which he said he first tried in the plague years of 1665–66, needs only a few numbers. If the same force that pulls an apple also holds the Moon, and it weakens with the square of distance, then the Moon's acceleration towards the Earth should be the apple's divided by the square of how much farther away it is.
+
+The Moon orbits at about 384,400 km from the Earth's centre, about 60 times the Earth's radius of 6,371 km. So gravity there should be $60^2 = 3{,}600$ times weaker than at the surface:
+
+$$
+\frac{9.81 \text{ m/s}^2}{3600} \approx 0.00272 \text{ m/s}^2 .
+$$
+
+Now measure the Moon's actual acceleration, from its orbit alone. A body moving in a circle of radius $r$ with period $T$ accelerates towards the centre at $4\pi^2 r / T^2$. The Moon's period is 27.32 days, or $2.36 \times 10^6$ seconds:
+
+$$
+\frac{4\pi^2 \times 3.844 \times 10^8 \text{ m}}{(2.36 \times 10^6 \text{ s})^2} \approx 0.00272 \text{ m/s}^2 .
+$$
+
+The two agree. The fall of an apple in an orchard and the orbit of the Moon are the same phenomenon, given one rule about how gravity weakens with distance.
+
+Put differently, in one second the Moon falls about $\tfrac12 \times 0.00272 \approx 1.4$ millimetres towards the Earth, while moving about a kilometre sideways. The curve of its path is exactly that fall. Newton's first attempt did not match as well, partly because the Earth's radius was poorly known. The close agreement, published in the *Principia*, was the first time a law found on Earth was shown to govern the heavens.
+
 ## Cracks at the Edges
 
 The same method failed with Mercury. In 1859 Le Verrier found that its orbit swings around the Sun slightly faster than the other planets' pulls allow: 43 arcseconds per century by modern measurement. He predicted another unseen planet, Vulcan, inside Mercury's orbit. Astronomers looked for decades and never found it. The problem was not a missing planet but Newton's gravity itself.
