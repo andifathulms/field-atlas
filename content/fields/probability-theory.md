@@ -24,7 +24,7 @@ key_ideas:
   - term: Expected value
     definition: >-
       The long-run average of a random quantity, each outcome weighted by its
-      probability. Pascal and Fermat's solution to the problem of points introduced it.
+      probability. The idea grew from Pascal and Fermat's solution to the problem of points, and Huygens made it explicit in 1657.
     turning_point_id: pascal-fermat
   - term: Law of large numbers
     definition: >-
@@ -52,7 +52,7 @@ turning_points:
       Asked how to divide the stakes fairly when a game of chance is interrupted, Blaise
       Pascal and Pierre de Fermat work out the answer in a series of letters, by counting
       the ways the game could have continued. Reasoning about chance became mathematics,
-      and the expected value was born.
+      and the idea of expected value, which Huygens made explicit three years later, was born.
     contested: false
     sources:
       - citation: "Devlin, K. (2008). The Unfinished Game: Pascal, Fermat, and the Seventeenth-Century Letter that Made the World Modern. Basic Books."
