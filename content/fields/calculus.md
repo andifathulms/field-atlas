@@ -77,8 +77,8 @@ turning_points:
       Leibniz of plagiarism, pointing to letters and manuscripts he had seen in the 1670s.
       In 1712 a Royal Society committee found for Newton, in a report Newton himself
       secretly wrote. Historians now agree that the two invented calculus independently:
-      Newton first, Leibniz first to publish, and with the better notation. The quarrel
-      isolated British mathematics from the Continent for a century.
+      Newton first, Leibniz first to publish, and with the better notation. The quarrel is
+      often said to have isolated British mathematics from the Continent for a century.
     sources:
       - citation: "Leibniz, G. W. (1684). Nova methodus pro maximis et minimis, itemque tangentibus. Acta Eruditorum: 467–473."
         url: null
@@ -168,11 +168,11 @@ His methods grew out of [Euclidean geometry](/math/euclidean-geometry/), and the
 
 Descartes' coordinates turned curves into equations, and in the seventeenth century mathematicians such as Fermat, Wallis and Barrow found tricks for tangents and areas. Two people turned the tricks into a method. {{fig:newton|Isaac Newton}}, at home during the plague years of 1665–66, developed his "fluxions" and saw that finding tangents and finding areas are inverse problems. {{fig:leibniz|Gottfried Wilhelm Leibniz}}, a diplomat and philosopher, reached the same insight in the 1670s with a notation so good ($dx$, $\frac{dy}{dx}$, $\int$) that it has never been replaced.
 
-Leibniz published in 1684, and Newton had published almost nothing. What followed was one of the ugliest disputes in science. Newton's supporters accused Leibniz of stealing from Newton's unpublished papers, and a Royal Society inquiry, secretly drafted by Newton, agreed. Historians now credit both as independent inventors. The feud cut British mathematicians off from the far more productive Continental school for a century.
+Leibniz published in 1684, and Newton had published almost nothing. What followed was one of the ugliest disputes in science. Newton's supporters accused Leibniz of stealing from Newton's unpublished papers, and a Royal Society inquiry, secretly drafted by Newton, agreed. Historians now credit both as independent inventors. The feud is often blamed for cutting British mathematicians off from the far more productive Continental school for a century.
 
 ## Ghosts of Departed Quantities
 
-Calculus worked astonishingly well. {{fig:euler|Euler}} made the *function* its central object and poured out results: infinite series for $e^x$, $\sin x$ and $\cos x$, and the identity $e^{i\pi} + 1 = 0$. Newton's mechanics, the [physics](/physics/classical-mechanics/) of the entire eighteenth century, was calculus in action.
+Calculus worked astonishingly well. {{fig:euler|Euler}} made the *function* its central object and poured out results: infinite series for $e^x$, $\sin x$ and $\cos x$, and the formula $e^{ix} = \cos x + i \sin x$, which gives $e^{i\pi} + 1 = 0$. Newton's mechanics, the [physics](/physics/classical-mechanics/) of the entire eighteenth century, was calculus in action.
 
 But no one could say what it was about. In 1734 {{fig:berkeley|George Berkeley}}, Bishop of Cloyne, published *The Analyst*, addressed to "an infidel mathematician". To find a derivative, he noted, you divide by a small increment, treating it as nonzero, and then set it to zero to get a clean answer. Infinitesimals were "neither finite quantities, nor quantities infinitely small, nor yet nothing". They were "the ghosts of departed quantities". Mathematicians knew the objection was fair and had no good answer.
 

@@ -126,7 +126,7 @@ turning_points:
       converges to it at almost every point. Many experts, following Kolmogorov's 1923
       example of an integrable function whose Fourier series diverges almost everywhere, had
       expected the opposite. The central convergence question raised by Fourier's claim
-      had its answer after 150 years.
+      had its answer after more than 150 years.
     contested: false
     sources:
       - citation: "Carleson, L. (1966). On convergence and growth of partial sums of Fourier series. Acta Mathematica 116: 135–157."
@@ -154,8 +154,8 @@ open_problems:
     sources:
       - citation: "Tao, T. (2001). From rotating needles to stability of waves: emerging connections between combinatorics, analysis, and PDE. Notices of the AMS 48(3): 294–303."
         url: null
-      - citation: "Wang, H. & Zahl, J. (2025). Volume estimates for unions of convex sets, and the Kakeya set conjecture in three dimensions. Preprint."
-        url: null
+      - citation: "Wang, H. & Zahl, J. (2025). Volume estimates for unions of convex sets, and the Kakeya set conjecture in three dimensions. arXiv:2502.17655."
+        url: https://arxiv.org/abs/2502.17655
 
 applications:
   - area: Structural biology
@@ -243,7 +243,7 @@ $$
 1 = \frac{4}{\pi}\left(1 - \frac13 + \frac15 - \frac17 + \cdots\right), \quad \text{so} \quad \frac{\pi}{4} = 1 - \frac13 + \frac15 - \frac17 + \cdots ,
 $$
 
-the Leibniz series for $\pi$, falling out as a by-product. Second, near each jump the partial sums always overshoot, by about 9% of the jump, however many terms are added. The overshoot squeezes closer to the jump but never shrinks. This is the *Gibbs phenomenon*, observed in 1898 when a machine built to sum Fourier series drew stubborn spikes at the corners. It shows up today as "ringing" around sharp edges in compressed images.
+the Leibniz series for $\pi$, falling out as a by-product. Second, near each jump the partial sums always overshoot, by about 9% of the jump, however many terms are added. The overshoot squeezes closer to the jump but never shrinks. This is the *Gibbs phenomenon*. Henry Wilbraham noticed it in 1848, and it is named after Josiah Willard Gibbs, who described it in 1898–99. It shows up today as "ringing" around sharp edges in compressed images.
 
 That the series converges at every point except the jumps, and exactly what happens at the jumps (it converges to the midpoint, 0), was proved by Dirichlet in 1829. It was one of the first theorems of rigorous analysis.
 

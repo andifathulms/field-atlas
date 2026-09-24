@@ -36,7 +36,7 @@ key_ideas:
   - term: Analytic continuation
     definition: >-
       Extending a function beyond the region where its formula works, uniquely. It is how
-      Riemann made sense of the zeta function at every complex number.
+      Riemann made sense of the zeta function at every complex number except 1.
     turning_point_id: riemann-thesis
   - term: Conformal map
     definition: >-
@@ -76,7 +76,7 @@ turning_points:
     contested_note: >-
       Priority is disputed. Wessel, a Norwegian-Danish surveyor, presented the idea to
       the Royal Danish Academy in 1797 and published in 1799, in Danish, and was ignored
-      for a century. Argand, a Parisian bookkeeper, published independently and
+      for a century. Argand, a Geneva-born bookkeeper living in Paris, published independently and
       anonymously in 1806. Gauss claimed in 1831 to have held the view since 1799. The
       representation is still often called the "Argand diagram" or "Gaussian plane",
       rarely after Wessel.
@@ -176,7 +176,7 @@ applications:
     description: >-
       The state of a quantum system is a complex-valued wave function, and interference,
       the heart of quantum behaviour, comes from adding complex amplitudes. Unlike in
-      classical physics, the complex numbers here cannot be removed.
+      classical physics, the complex numbers here are more than a convenience.
     domain: physics
     field_id: quantum-mechanics
     sources:
@@ -239,6 +239,6 @@ The answer involves both $\pi$ and $e$, and it came from a single point off the 
 
 ## Riemann's Geometry and Weierstrass's Doubts
 
-{{fig:riemann|Bernhard Riemann}}'s 1851 thesis saw complex functions geometrically, as maps that preserve angles, and introduced the surfaces that bear his name. It became the root of [algebraic geometry](/math/algebraic-geometry/)'s Riemann surfaces. In 1859 he turned the same tools on the prime numbers, extending the zeta function to the whole complex plane, which is the founding move of [analytic number theory](/math/analytic-number-theory/).
+{{fig:riemann|Bernhard Riemann}}'s 1851 thesis saw complex functions geometrically, as maps that preserve angles, and introduced the surfaces that bear his name. It became the root of [algebraic geometry](/math/algebraic-geometry/)'s Riemann surfaces. In 1859 he turned the same tools on the prime numbers, extending the zeta function to the whole complex plane apart from a single point, which is the founding move of [analytic number theory](/math/analytic-number-theory/).
 
 His methods leaned on an assumption, the Dirichlet principle, that {{fig:weierstrass|Karl Weierstrass}} showed in 1870 could fail. The two schools were built differently: Riemann's geometric and intuitive, Weierstrass's built on power series and strict proof. Riemann's results survived, reproved by other means, and Hilbert repaired the principle in 1900. The episode was part of the push for rigour that runs through [real analysis](/math/real-analysis/).

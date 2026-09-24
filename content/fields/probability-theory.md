@@ -117,8 +117,8 @@ turning_points:
       Andrey Kolmogorov's *Foundations of the Theory of Probability* defines probability
       as a measure, in Lebesgue's sense, on a space of outcomes, with total measure 1.
       Conditional probability, expectation and independence all get precise definitions.
-      Probability becomes a branch of rigorous mathematics, answering one of Hilbert's
-      1900 problems.
+      Probability becomes a branch of rigorous mathematics, answering part of Hilbert's
+      sixth problem of 1900.
     contested: false
     sources:
       - citation: "Kolmogorov, A. N. (1933). Grundbegriffe der Wahrscheinlichkeitsrechnung. Springer (Ergebnisse der Mathematik)."
@@ -162,7 +162,7 @@ applications:
   - area: Statistical physics
     title: Brownian motion and atoms
     description: >-
-      In 1905 Einstein explained the jittering of pollen grains in water as the result of
+      In 1905 Einstein explained the jittering of tiny particles suspended in water as the result of
       random molecular collisions, and predicted how far they would wander. Perrin's
       measurements confirmed it, convincing sceptics that atoms exist. Random walks are
       now a basic tool of physics.
@@ -176,7 +176,7 @@ applications:
     description: >-
       Insurance premiums rest on the law of large numbers, and modern derivative pricing
       on random walks. The Black–Scholes model of 1973 priced options by treating stock
-      prices as Brownian motion.
+      prices as following a form of Brownian motion.
     sources:
       - citation: "Black, F. & Scholes, M. (1973). The pricing of options and corporate liabilities. Journal of Political Economy 81(3): 637–654."
         url: null
@@ -205,7 +205,7 @@ Reasoning backwards, from observed data to the chance behind it, came from {{fig
 
 ## Respectability
 
-Through the nineteenth century probability was useful but suspect. Its founding notions ("equally likely", "at random") were circular, and paradoxes showed that different, equally natural ways of choosing "at random" gave different answers. Hilbert listed its foundations among the major problems of 1900.
+Through the nineteenth century probability was useful but suspect. Its founding notions ("equally likely", "at random") were circular, and paradoxes showed that different, equally natural ways of choosing "at random" gave different answers. Hilbert listed its foundations, within his sixth problem, among the major problems of 1900.
 
 The solution came from [real analysis](/math/real-analysis/). In 1933 {{fig:kolmogorov|Andrey Kolmogorov}} observed that Lebesgue's measure theory already had exactly the right structure. Probability is a measure of total size 1 on a space of outcomes, events are measurable sets, and expectation is the Lebesgue integral. The paradoxes dissolved into precise statements, and probability became a full branch of mathematics.
 

@@ -157,7 +157,7 @@ In Prague, the priest-philosopher {{fig:bolzano|Bernard Bolzano}} had reached si
 
 What made rigour urgent was [Fourier analysis](/math/fourier-analysis/). Fourier series produced functions with jumps and corners as limits of smooth waves, contradicting a theorem in Cauchy's own book that limits of continuous functions are continuous. To say which functions *have* Fourier series, {{fig:riemann|Riemann}} had to define the integral itself, in 1854. To say where a Fourier series could fail, Cantor was led to study strange infinite sets of points.
 
-Then came the counterexamples. In 1872 {{fig:weierstrass|Karl Weierstrass}}, who taught analysis in Berlin with ε and δ exactly as students learn it today, presented a function that is continuous everywhere and has a slope nowhere: a curve that is all corners. Charles Hermite wrote of turning away "with fright and horror from this lamentable plague of functions which have no derivatives". The lesson was blunt. Geometric intuition had misled the best mathematicians for two centuries, and only precise definitions could be trusted.
+Then came the counterexamples. In 1872 {{fig:weierstrass|Karl Weierstrass}}, who taught analysis in Berlin with ε and δ exactly as students learn it today, presented a function that is continuous everywhere and has a slope nowhere: a curve that is all corners. Charles Hermite wrote of turning away "with fright and horror from this lamentable plague of continuous functions which do not have derivatives". The lesson was blunt. Geometric intuition had misled the best mathematicians for two centuries, and only precise definitions could be trusted.
 
 ## What Is a Real Number?
 
