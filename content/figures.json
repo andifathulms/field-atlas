@@ -211,8 +211,8 @@
   { "id": "leo-harrington", "name": "Leo Harrington", "turning_point_ids": ["paris-harrington"] },
   { "id": "gonthier", "name": "Georges Gonthier", "turning_point_ids": ["proof-assistants"] },
   { "id": "church", "name": "Alonzo Church", "turning_point_ids": ["entscheidungsproblem"] },
-  { "id": "turing", "name": "Alan Turing", "turning_point_ids": ["entscheidungsproblem", "universal-machine", "dev-turing-morphogenesis", "bs-banburismus"] },
-  { "id": "von-neumann", "name": "John von Neumann", "turning_point_ids": ["universal-machine", "ergodic-theorems"] },
+  { "id": "turing", "name": "Alan Turing", "turning_point_ids": ["entscheidungsproblem", "universal-machine", "dev-turing-morphogenesis", "bs-banburismus", "turing-condition-number"] },
+  { "id": "von-neumann", "name": "John von Neumann", "turning_point_ids": ["universal-machine", "ergodic-theorems", "von-neumann-goldstine-inversion"] },
   { "id": "henry-rice", "name": "Henry Gordon Rice", "turning_point_ids": ["rice-theorem"] },
   { "id": "martin-davis", "name": "Martin Davis", "turning_point_ids": ["hilberts-tenth"] },
   { "id": "julia-robinson", "name": "Julia Robinson", "turning_point_ids": ["hilberts-tenth"] },
@@ -772,5 +772,11 @@
   { "id": "ada-lovelace", "name": "Ada Lovelace", "turning_point_ids": ["babbage-difference-engine"] },
   { "id": "carl-runge", "name": "Carl Runge", "turning_point_ids": ["runge-phenomenon"] },
   { "id": "james-wilkinson", "name": "James Wilkinson", "turning_point_ids": ["wilkinson-backward-error"] },
-  { "id": "william-kahan", "name": "William Kahan", "turning_point_ids": ["ieee-754-standard"] }
+  { "id": "william-kahan", "name": "William Kahan", "turning_point_ids": ["ieee-754-standard"] },
+  { "id": "herman-goldstine", "name": "Herman Goldstine", "turning_point_ids": ["von-neumann-goldstine-inversion"] },
+  { "id": "magnus-hestenes", "name": "Magnus Hestenes", "turning_point_ids": ["conjugate-gradients"] },
+  { "id": "eduard-stiefel", "name": "Eduard Stiefel", "turning_point_ids": ["conjugate-gradients"] },
+  { "id": "john-francis", "name": "John Francis", "turning_point_ids": ["qr-algorithm"] },
+  { "id": "vera-kublanovskaya", "name": "Vera Kublanovskaya", "turning_point_ids": ["qr-algorithm"] },
+  { "id": "volker-strassen", "name": "Volker Strassen", "turning_point_ids": ["strassen-multiplication"] }
 ]
