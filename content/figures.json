@@ -658,5 +658,14 @@
   { "id": "william-henry-bragg", "name": "William Henry Bragg", "turning_point_ids": ["xtal-bragg-law"] },
   { "id": "kathleen-lonsdale", "name": "Kathleen Lonsdale", "turning_point_ids": ["xtal-lonsdale-benzene"] },
   { "id": "dorothy-hodgkin", "name": "Dorothy Hodgkin", "turning_point_ids": ["xtal-hodgkin-structures"] },
-  { "id": "dan-shechtman", "name": "Dan Shechtman", "turning_point_ids": ["xtal-quasicrystals"] }
+  { "id": "dan-shechtman", "name": "Dan Shechtman", "turning_point_ids": ["xtal-quasicrystals"] },
+  { "id": "paul-drude", "name": "Paul Drude", "turning_point_ids": ["solid-drude-model"] },
+  { "id": "arnold-sommerfeld", "name": "Arnold Sommerfeld", "turning_point_ids": ["solid-sommerfeld-electrons"] },
+  { "id": "felix-bloch", "name": "Felix Bloch", "turning_point_ids": ["solid-bloch-theorem"] },
+  { "id": "alan-herries-wilson", "name": "Alan Herries Wilson", "turning_point_ids": ["solid-wilson-bands"] },
+  { "id": "john-bardeen", "name": "John Bardeen", "turning_point_ids": ["solid-transistor"] },
+  { "id": "walter-brattain", "name": "Walter Brattain", "turning_point_ids": ["solid-transistor"] },
+  { "id": "william-shockley", "name": "William Shockley", "turning_point_ids": ["solid-transistor"] },
+  { "id": "jack-kilby", "name": "Jack Kilby", "turning_point_ids": ["solid-integrated-circuit"] },
+  { "id": "robert-noyce", "name": "Robert Noyce", "turning_point_ids": ["solid-integrated-circuit"] }
 ]
