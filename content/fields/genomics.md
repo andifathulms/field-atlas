@@ -245,6 +245,29 @@ The draft's great surprise was a small number: about 20,000 protein-coding genes
 
 Cheap sequencing made genomes comparable by the thousand, and [population genetics](/biology/population-genetics/) became a science of whole genomes. The most startling result came from ancient DNA. In 2010 {{fig:paabo|Svante Pääbo}}'s team read a Neanderthal genome from 40,000-year-old bones and found traces of it in everyone whose ancestors lived outside Africa. Our ancestors had interbred with Neanderthals, and, a finger bone soon showed, with Denisovans. Genomes also confirmed, in exquisite detail, the tree of life that [evolutionary biology](/biology/evolutionary-biology/) had drawn from anatomy.
 
+## A Closer Look: How Many Times Must a Genome Be Read?
+
+Sequencing machines cannot read a chromosome from end to end. They read short fragments, a few hundred letters long for most of the history of genomics, from random positions, and a computer assembles the fragments by their overlaps. How much sequencing is enough?
+
+Suppose the fragments add up to $c$ times the length of the genome, the *coverage*. Each base is then read on average $c$ times. Because the fragments land at random, the number of times a given base is covered follows a Poisson distribution, and the probability that it is never read at all is
+
+$$
+P(\text{missed}) = e^{-c} .
+$$
+
+Eric Lander and Michael Waterman worked out this and related formulas in 1988. They show why reading the genome once is useless:
+
+| Coverage $c$ | Fraction of bases never read | For a 3.1-billion-base genome |
+|---|---|---|
+| 1× | $e^{-1} \approx 37\%$ | 1.1 billion bases missed |
+| 3× | $e^{-3} \approx 5\%$ | 150 million missed |
+| 8× | $e^{-8} \approx 0.03\%$ | about 1 million missed |
+| 30× | $e^{-30} \approx 10^{-13}$ | none, on average |
+
+Sequencing the same total amount again gives diminishing returns, but each extra round of coverage cuts the gaps by a factor of $e$. The draft human genome of 2001 used several-fold coverage and had many gaps. Clinical genome sequencing today typically uses about 30× coverage, which also allows the two copies of each chromosome to be told apart and errors to be outvoted.
+
+Random coverage is not the only problem. About half the human genome consists of repeated sequences, and a short fragment from inside a repeat could belong to any copy of it, so the formula's gaps are the easy part. The last 8% of the genome, mostly long repeats, was finished in 2022 only with new machines that read single molecules tens of thousands of letters long. The cost of reading a human genome has meanwhile fallen from billions of dollars for the first to a few hundred dollars today.
+
 ## Writing Genomes
 
 In 2012 {{fig:doudna|Jennifer Doudna}} and {{fig:charpentier|Emmanuelle Charpentier}} showed that CRISPR–Cas9, part of a bacterial defence against viruses, can be programmed to cut DNA wherever its guide RNA matches. {{fig:feng-zhang|Feng Zhang}}'s lab and others used it in human cells within months. Genome editing became cheap and routine, and the first CRISPR-based therapy, for sickle cell disease, was approved in 2023. In 2018 He Jiankui's announcement that he had edited the genomes of twin babies was condemned almost universally, and it set off a new debate about where limits belong.
