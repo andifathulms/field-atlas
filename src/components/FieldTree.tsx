@@ -1,4 +1,6 @@
 import { linkVertical } from "d3-shape";
+import { getField } from "@/lib/content";
+import { getThread } from "@/lib/domains";
 import { fieldPath, withBase } from "@/lib/paths";
 import { eraLabel, tickLabel, TREE, type TreeLayout } from "@/lib/treeLayout";
 
@@ -33,6 +35,56 @@ function FadingDashes({ x, y, dx, dy }: { x: number; y: number; dx: number; dy: 
         );
       })}
     </g>
+  );
+}
+
+/**
+ * A branch to or from a field drawn on another thread's map: a short solid stub
+ * off the edge of this map, labelled and linked to the field it continues to.
+ */
+function ThreadStub({
+  fieldId,
+  from,
+  x,
+  y,
+  index,
+  delay,
+}: {
+  fieldId: string;
+  from: boolean;
+  x: number;
+  y: number;
+  index: number;
+  delay: number;
+}) {
+  const other = getField(fieldId);
+  if (!other) return null;
+  const threadTitle = getThread(other.domain, other.thread)?.title ?? "";
+  const { stub } = TREE;
+  const spread = index * 16;
+  // Parents enter from above-left into the node; children leave from the trail end down-right.
+  const [x0, y0, x1, y1] = from ? [x - 34 - spread, y - stub - 8, x, y - 8] : [x, y, x + 34 + spread, y + stub];
+  const ym = (y0 + y1) / 2;
+  const labelX = from ? x0 : x1;
+  const labelY = from ? y0 - 10 - index * 14 : y1 + 16 + index * 14;
+  return (
+    <a href={withBase(fieldPath(other.domain, other.id))} className="group">
+      <g className="tree-fade" style={{ animationDelay: `${delay}ms` }}>
+        <title>{`${from ? "Branches from" : "Continues into"} ${other.name}, on ${threadTitle}`}</title>
+        <path
+          d={`M${x0},${y0} C${x0},${ym} ${x1},${ym} ${x1},${y1}`}
+          fill="none"
+          stroke="var(--accent)"
+          strokeWidth={1.2}
+          strokeLinecap="round"
+        />
+        <circle cx={from ? x0 : x1} cy={from ? y0 : y1} r={2.5} fill="var(--accent)" />
+        <text x={labelX} y={labelY} className="font-mono text-[10px] tracking-[0.08em] group-hover:underline">
+          <tspan className="fill-accent">{`${from ? "↖ FROM" : "↘ INTO"} ${other.name.toUpperCase()}`}</tspan>
+          <tspan className="fill-ink-faint">{` · ${threadTitle.toUpperCase()}`}</tspan>
+        </text>
+      </g>
+    </a>
   );
 }
 
@@ -101,6 +153,13 @@ export function FieldTree({ layout, domain }: { layout: TreeLayout; domain: stri
                 <ellipse cx={n.x} cy={n.trailEnd + TREE.fogLength * 0.6} rx={46} ry={34} fill="url(#fog-cloud)" />
               </g>
             )}
+
+            {n.externalParents.map((id, i) => (
+              <ThreadStub key={`from-${id}`} fieldId={id} from x={n.x} y={n.y} index={i} delay={delay} />
+            ))}
+            {n.externalChildren.map((id, i) => (
+              <ThreadStub key={`into-${id}`} fieldId={id} from={false} x={n.x} y={n.trailEnd} index={i} delay={delay + 500} />
+            ))}
 
             <a href={href} className="tree-node group">
               <g className="tree-fade" style={{ animationDelay: `${delay}ms` }}>
