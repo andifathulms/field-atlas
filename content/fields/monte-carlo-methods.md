@@ -158,7 +158,7 @@ open_problems:
   - id: random-colourings-mixing
     name: How fast random colourings mix
     status: open
-    status_note: Open as of writing; proved when the number of colours exceeds about 11/6 times the maximum degree.
+    status_note: Open as of 2026. Proved when the number of colours exceeds about 1.81 times the maximum degree.
     description: >-
       Colour the vertices of a network with $q$ colours so that neighbours differ, and
       sample such colourings at random by repeatedly recolouring one vertex. The conjecture
@@ -168,7 +168,7 @@ open_problems:
     why_hard: >-
       The standard proofs couple two copies of the walk and show they meet. Mark Jerrum
       made that work in 1995 for twice the maximum degree, and Eric Vigoda in 1999 for 11/6
-      times it. Below that, local disagreements between the copies can spread, and no
+      times it. Later work has lowered this only to about 1.81 times. Below that, local disagreements between the copies can spread, and no
       technique yet controls them all the way down to the conjectured threshold.
     unlocks: >-
       It is the test case for knowing when a Markov chain Monte Carlo run has actually
@@ -179,6 +179,8 @@ open_problems:
         url: null
       - citation: "Vigoda, E. (2000). Improved bounds for sampling colorings. Journal of Mathematical Physics 41(3): 1555–1569."
         url: null
+      - citation: "Carlson, C. & Vigoda, E. (2024). Flip dynamics for sampling colorings: improving (11/6 − ε) using a simple metric. arXiv:2407.04870."
+        url: https://arxiv.org/abs/2407.04870
 
 applications:
   - area: Statistical physics
@@ -229,7 +231,7 @@ further_reading:
 
 In 1777 {{fig:buffon|Georges-Louis Leclerc, Comte de Buffon}} published the answer to a question he had posed decades earlier. Drop a needle on a floor of parallel boards. If the needle is as long as a board is wide, it crosses a crack with probability $2/\pi$. The problem belongs to [probability theory](/math/probability-theory/), but it can be run backwards: drop enough needles, count the crossings, and estimate $\pi$. A few people tried in the nineteenth century. It was a curiosity, because deterministic formulas gave $\pi$ far faster.
 
-The idea became a method in 1946. {{fig:stanislaw-ulam|Stanislaw Ulam}}, recovering from an illness at Los Alamos, tried to work out the chance that a game of solitaire comes out. The combinatorics was hopeless, but he saw that playing a hundred games and counting would give a good estimate. He told {{fig:von-neumann|John von Neumann}}, who at once saw how to apply it to the problem that mattered at Los Alamos: how neutrons scatter, split nuclei and multiply inside a bomb. Each neutron's life could be simulated as a sequence of random events and repeated thousands of times on the ENIAC. {{fig:nicholas-metropolis|Nicholas Metropolis}} suggested the name, after the casino where Ulam's uncle liked to gamble. Enrico Fermi, it later emerged, had used similar sampling by hand in Rome in the 1930s without publishing it.
+The idea became a method in 1946. {{fig:stanislaw-ulam|Stanislaw Ulam}}, recovering from an illness, tried to work out the chance that a game of solitaire comes out. The combinatorics was hopeless, but he saw that playing a hundred games and counting would give a good estimate. He told {{fig:von-neumann|John von Neumann}}, who at once saw how to apply it to the problem that mattered at Los Alamos: how neutrons scatter, split nuclei and multiply inside a bomb. Each neutron's life could be simulated as a sequence of random events and repeated thousands of times on the ENIAC. {{fig:nicholas-metropolis|Nicholas Metropolis}} suggested the name, after the casino where Ulam's uncle liked to gamble. Enrico Fermi, it later emerged, had used similar sampling by hand in Rome in the 1930s without publishing it.
 
 ## Walking Towards the Answer
 

@@ -147,8 +147,8 @@ turning_points:
       On 25 February 1991 a Patriot battery at Dhahran fails to intercept a Scud missile,
       which kills 28 American soldiers. Its clock counted tenths of a second, and 0.1 has no
       exact binary form. After 100 hours of running, the accumulated error was a third of a
-      second. In June 1996 the first Ariane 5 rocket destroys itself 37 seconds after
-      launch, when a floating-point number too large for a 16-bit integer causes an
+      second. In June 1996 the first Ariane 5 rocket breaks up about 40 seconds into
+      its flight, when a floating-point number too large for a 16-bit integer causes an
       unhandled error. Both became standard warnings in teaching.
     contested: false
     sources:

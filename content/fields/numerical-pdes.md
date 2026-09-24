@@ -55,7 +55,7 @@ turning_points:
       Lewis Fry Richardson, working between shifts as an ambulance driver in the First World
       War, computes a six-hour forecast for two points over central Europe from the
       equations of fluid motion. The calculation takes him about six weeks. It predicts a
-      rise in surface pressure of 145 hectopascals in six hours, when the observed
+      change in surface pressure of 145 hectopascals in six hours, when the observed
       pressure barely changed.
       He publishes the method anyway, together with a dream of a "forecast factory" of
       64,000 human computers.
@@ -159,11 +159,11 @@ open_problems:
   - id: multid-conservation-law-convergence
     name: Convergence for shock waves in several dimensions
     status: open
-    status_note: Open as of writing; settled in one space dimension, largely open in two and three.
+    status_note: Open as of 2026. Largely settled in one space dimension for data with small total variation, open in two and three.
     description: >-
       The equations of gas dynamics form shock waves, and their solutions must be
-      understood in a weak sense. In one space dimension, standard numerical schemes are
-      known to converge to the right solution. In two or three dimensions nobody knows
+      understood in a weak sense. In one space dimension, for data with small total
+      variation, some numerical schemes are known to converge to the right solution. In two or three dimensions nobody knows
       whether they do, or even whether the equations have a unique physically admissible
       solution for general data.
     why_hard: >-
@@ -231,7 +231,7 @@ further_reading:
 
 [Differential equations](/math/differential-equations/) describe how a state changes from moment to moment. For the atmosphere, the state is the wind, pressure, temperature and moisture at every point, and the equations are the partial differential equations of fluid motion. In principle, today's weather determines tomorrow's. In practice nobody could solve the equations.
 
-{{fig:lewis-fry-richardson|Lewis Fry Richardson}} decided to compute instead. He divided the atmosphere into boxes, replaced derivatives by differences between neighbouring boxes, and stepped the equations forward in time by arithmetic. During the First World War, between shifts with an ambulance unit in France, he computed a six-hour forecast for two points in central Europe. It took about six weeks. The result was a rise in pressure of 145 hectopascals in six hours, when the real pressure barely changed. He published the whole calculation in 1922, with the failure stated plainly, and imagined a hall of 64,000 people computing the world's weather in time. Much later, Peter Lynch recomputed the forecast and showed that the method was sound. The starting data were unbalanced, and a small smoothing would have given a sensible answer.
+{{fig:lewis-fry-richardson|Lewis Fry Richardson}} decided to compute instead. He divided the atmosphere into boxes, replaced derivatives by differences between neighbouring boxes, and stepped the equations forward in time by arithmetic. During the First World War, between shifts with an ambulance unit in France, he computed a six-hour forecast for two points in central Europe. It took about six weeks. The result was a change in pressure of 145 hectopascals in six hours, when the real pressure barely changed. He published the whole calculation in 1922, with the failure stated plainly, and imagined a hall of 64,000 people computing the world's weather in time. Much later, Peter Lynch recomputed the forecast and showed that the method was sound. The starting data were unbalanced, and a small smoothing would have given a sensible answer.
 
 ## Stability
 

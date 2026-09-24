@@ -148,7 +148,7 @@ open_problems:
   - id: matrix-multiplication-exponent
     name: The exponent of matrix multiplication
     status: open
-    status_note: Open as of writing; the best upper bounds published by 2024 were just below 2.372.
+    status_note: Open as of 2026. A preprint of August 2026 lowered the best upper bound to 2.371177, from 2.371339.
     description: >-
       Let $\omega$ be the smallest number such that two $n \times n$ matrices can be
       multiplied in about $n^{\omega}$ operations. Obviously $\omega \ge 2$, since the
@@ -169,6 +169,8 @@ open_problems:
         url: null
       - citation: "Alman, J. & Vassilevska Williams, V. (2021). A refined laser method and faster matrix multiplication. Proceedings of the 2021 ACM-SIAM Symposium on Discrete Algorithms: 522–539."
         url: null
+      - citation: "Dupont, E., Eisenberger, M., Kozlovskii, B., Mehrabian, A., Ruiz, F. J. R., See, A., Zhou, R., Alman, J., Vassilevska Williams, V. & Balog, M. (2026). Improving the matrix multiplication exponent with modern optimization and AlphaEvolve. arXiv:2608.16884."
+        url: https://arxiv.org/abs/2608.16884
 
 applications:
   - area: The web
