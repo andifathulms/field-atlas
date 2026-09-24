@@ -205,7 +205,7 @@ further_reading:
 
 ## A Lecture at the Seam
 
-On 10 June 1854, the young {{fig:riemann|Bernhard Riemann}} gave the qualifying lecture that would let him teach at Göttingen. Candidates proposed three topics and the faculty chose one. Gauss, then 76, skipped the two safe topics and picked the third: the foundations of geometry.
+On 10 June 1854, the young {{fig:riemann|Bernhard Riemann}} gave the qualifying lecture that would let him teach at Göttingen. Candidates proposed three topics and the faculty chose one. Gauss, then 77, skipped the two safe topics and picked the third: the foundations of geometry.
 
 Riemann's answer used almost no formulas. A space, he proposed, is a *manifold* of any number of dimensions, and its geometry is given by a rule for measuring small lengths at each point:
 
@@ -223,7 +223,7 @@ The lecture was published only in 1868, two years after his death. By then Beltr
 
 Riemann's sketch needed machinery. Elwin Christoffel supplied part of it in 1869. {{fig:ricci-curbastro|Gregorio Ricci-Curbastro}} and {{fig:levi-civita|Tullio Levi-Civita}} supplied the rest in 1900, with their *absolute differential calculus*, now called tensor calculus. It makes it possible to write geometric statements that remain true whatever coordinates are chosen. In 1917 {{fig:levi-civita|Levi-Civita}} added *parallel transport*: a way of carrying a direction along a curve in a curved space.
 
-The payoff arrived from outside mathematics. Einstein spent years learning this calculus, with help from his friend Marcel Grossmann, to write general relativity (1915). In it, gravity *is* the curvature of a four-dimensional Riemannian-type spacetime. That link between a mathematical turning point and a physical one is exactly the kind of connection this atlas will draw once physics is surveyed.
+The payoff arrived from outside mathematics. Einstein spent years learning this calculus, with help from his friend Marcel Grossmann, to write general relativity (1915). In it, gravity *is* the curvature of a four-dimensional Riemannian-type spacetime. That link between a mathematical turning point and a physical one is exactly the kind of connection this atlas draws between its maths and physics maps.
 
 ## A Closer Look: An Arrow That Comes Back Rotated
 

@@ -131,7 +131,7 @@ turning_points:
     contested: true
     contested_note: >-
       The proof's correctness is not disputed: several independent teams verified it in
-      detail (Kleiner–Lott; Morgan–Tian; Cao–Zhu). What was disputed in 2006 was credit.
+      detail (Kleiner and Lott, Morgan and Tian, Cao and Zhu). What was disputed in 2006 was credit.
       Cao and Zhu's paper was promoted as the first complete proof, which drew wide
       criticism, and the authors later published an erratum acknowledging an argument
       taken from Kleiner and Lott's notes. Perelman declined both the 2006 Fields Medal
@@ -188,7 +188,7 @@ open_problems:
   - id: smooth-4d-poincare
     name: The smooth four-dimensional Poincaré conjecture
     status: open
-    status_note: Open as of writing, and the only dimension in which the smooth version is unresolved.
+    status_note: Open as of writing. Dimension four is the one case the higher-dimensional methods cannot reach.
     description: >-
       Is every smooth four-manifold that is homotopy equivalent to the four-sphere $S^4$
       actually diffeomorphic to it? In other words, is there an "exotic" four-sphere: one
@@ -213,7 +213,7 @@ open_problems:
   - id: volume-conjecture
     name: The volume conjecture
     status: conjectured
-    status_note: Proved for the figure-eight knot and a few other families; open in general.
+    status_note: Proved for the figure-eight knot and a few other families. Open in general.
     description: |-
       Kashaev (1997) and H. and J. Murakami (2001) conjectured that the coloured Jones
       polynomials of a knot, which are invariants computed from diagrams and algebra,
@@ -298,7 +298,7 @@ It starts with {{fig:poincare|Henri Poincaré}}, whose *Analysis Situs* (1895) h
 
 ## Higher Dimensions Fall First
 
-For half a century the question resisted everyone, and attention moved to other dimensions. The territory turned out to be stranger than expected. In 1956 {{fig:milnor|John Milnor}} found spheres of dimension seven that are topologically ordinary but smooth in a genuinely different way. In 1961 {{fig:smale|Stephen Smale}} proved the analogous Poincaré statement in every dimension five and above, where there is enough room to untangle things. In 1982 {{fig:freedman|Michael Freedman}} proved the topological version in dimension four. Dimension three, the original, remained. Many false proofs were published along the way.
+For half a century the question resisted everyone, and attention moved to other dimensions. The territory turned out to be stranger than expected. In 1956 {{fig:milnor|John Milnor}} found spheres of dimension seven that are topologically ordinary but smooth in a genuinely different way. In 1961 {{fig:smale|Stephen Smale}} proved the analogous Poincaré statement in every dimension five and above, where there is enough room to untangle things. In 1982 {{fig:freedman|Michael Freedman}} proved the topological version in dimension four. Dimension three, the original, remained. Many false proofs were announced along the way.
 
 ## Thurston's Picture
 
@@ -310,11 +310,11 @@ In 1982 Thurston conjectured that every closed three-manifold can be cut into pi
 
 Hamilton's Ricci flow offered a method: start with any metric, let it flow, and watch it settle into its natural geometry. The obstacle was singularities, regions where curvature blows up and the flow pinches. Hamilton could not rule out every kind.
 
-In 2002–2003 {{fig:perelman|Grigori Perelman}} posted three preprints to arXiv. They introduced new monotone quantities that rule out the bad singularities, and a way to cut out the rest by surgery and continue the flow. Several independent teams spent three years checking the argument and wrote it out in hundreds of pages. It held. Geometrization, and with it the Poincaré conjecture, was proved. The dispute that followed was about credit, not correctness; the turning point below records it as contested.
+In 2002–2003 {{fig:perelman|Grigori Perelman}} posted three preprints to arXiv. They introduced new monotone quantities that rule out the bad singularities, and a way to cut out the rest by surgery and continue the flow. Several independent teams spent three years checking the argument and wrote it out in hundreds of pages. It held. Geometrization, and with it the Poincaré conjecture, was proved. The dispute that followed was about credit, not correctness. The turning point below records it as contested.
 
 ## A Closer Look: From Surfaces to Three-Manifolds
 
-The model for Thurston's geometrization is a nineteenth-century theorem about surfaces. Every closed orientable surface is a sphere, a torus, or a torus with extra handles, classified by its genus $g$, the number of holes. And every one carries a uniform geometry that matches its topology:
+The model for Thurston's geometrization is the classical theory of surfaces, completed around 1900. Every closed orientable surface is a sphere, a torus, or a torus with extra handles, classified by its genus $g$, the number of holes. And every one carries a uniform geometry that matches its topology:
 
 | Surface | Genus | Euler characteristic | Natural geometry |
 |---|---|---|---|
@@ -330,4 +330,4 @@ Thurston's conjecture was that three dimensions work the same way, with two comp
 
 With the classification settled, the field turned to finer structure. In 2012 {{fig:agol|Ian Agol}}, building on Daniel Wise's work, proved the virtual Haken and virtual fibering conjectures. Every hyperbolic three-manifold is, up to a finite cover, remarkably well organised.
 
-The map still runs out at its edges. The smooth version of Poincaré's question in dimension four remains open, and it is the only dimension where it is. And the conjectured link between knot invariants from quantum physics and hyperbolic volume is still unexplained.
+The map still runs out at its edges. The smooth version of Poincaré's question in dimension four remains open, and dimension four is the one case the higher-dimensional methods cannot reach. And the conjectured link between knot invariants from quantum physics and hyperbolic volume is still unexplained.

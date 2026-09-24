@@ -159,7 +159,7 @@ open_problems:
   - id: penrose-inequality
     name: The Penrose inequality
     status: conjectured
-    status_note: Proved in the time-symmetric (Riemannian) case in 1997–2001; the general case is open.
+    status_note: Proved in the time-symmetric (Riemannian) case in 1997–2001. The general case is open.
     description: >-
       Roger Penrose argued in 1973 that the total mass $m$ of a spacetime containing
       black holes must be at least what the black holes' horizons account for:
@@ -173,7 +173,7 @@ open_problems:
     unlocks: >-
       A proof would support the cosmic censorship picture of gravitational collapse, the
       idea that singularities stay hidden behind horizons, one of the main open questions
-      in general relativity. It is a natural future cross-domain link between this atlas's
+      in general relativity. It is a natural cross-domain link between this atlas's
       mathematics and physics surveys.
     sources:
       - citation: "Huisken, G. & Ilmanen, T. (2001). The inverse mean curvature flow and the Riemannian Penrose inequality. Journal of Differential Geometry 59(3): 353–437."
@@ -208,8 +208,8 @@ applications:
   - area: Image analysis
     title: Curvature flows that find outlines
     description: >-
-      Letting a curve move by its own curvature smooths it, the one-dimensional cousin of
-      Ricci flow. *Geodesic active contours* use such flows to snap an outline onto the
+      Letting a curve move by its own curvature smooths it, a one-dimensional cousin of
+      the curvature flows of this field. *Geodesic active contours* use such flows to snap an outline onto the
       boundary of an object in an image, a standard tool in medical image segmentation.
     sources:
       - citation: "Caselles, V., Kimmel, R. & Sapiro, G. (1997). Geodesic active contours. International Journal of Computer Vision 22(1): 61–79."
@@ -243,7 +243,7 @@ $$
 \det\!\left( g_{i\bar{j}} + \partial_i \partial_{\bar{j}} \varphi \right) = e^{F} \det\!\left( g_{i\bar{j}} \right),
 $$
 
-a fully nonlinear equation whose solution *is* the new metric. The manifolds this produced, now called Calabi–Yau manifolds, would two decades later become the extra dimensions of string theory.
+a fully nonlinear equation whose solution *is* the new metric. The manifolds this produced, now called Calabi–Yau manifolds, would within a decade become the extra dimensions of string theory.
 
 Solving such equations means controlling how solutions can fail. In 1981 {{fig:sacks|Jonathan Sacks}} and {{fig:uhlenbeck|Karen Uhlenbeck}} showed what happens when a sequence of approximate minimal spheres does not converge. The energy concentrates at a few points and splits off as small spheres, or "bubbles." Once the bubbles are accounted for, nothing else can go wrong. Tracking bubbles became the standard way to take limits of geometric equations, from harmonic maps to the gauge theories Simon Donaldson used to probe dimension four.
 
@@ -261,7 +261,7 @@ $$
 \Delta P = 2\gamma H ,
 $$
 
-where $H$ is the mean curvature, the average of the two principal curvatures. That is for a single surface; a soap film has two, which doubles the jump. A soap *bubble* holds higher pressure inside, so it curves with $H > 0$ and becomes a sphere. A film spanning a wire loop has the same air pressure on both sides, so $\Delta P = 0$, which forces $H = 0$ everywhere. The film bends one way in one direction and equally the other way in the perpendicular direction, like a saddle.
+where $H$ is the mean curvature, the average of the two principal curvatures. That is for a single surface. A soap film has two, which doubles the jump. A soap *bubble* holds higher pressure inside, so it curves with $H > 0$ and becomes a sphere. A film spanning a wire loop has the same air pressure on both sides, so $\Delta P = 0$, which forces $H = 0$ everywhere. The film bends one way in one direction and equally the other way in the perpendicular direction, like a saddle.
 
 The same equation comes from calculus. Push a surface slightly in the normal direction by an amount $\varphi$. The area changes, to first order, by
 
@@ -271,7 +271,7 @@ $$
 
 (up to a convention factor). A surface of least area cannot decrease under any small push, so $H$ must vanish. Minimal surfaces are exactly the critical points of area.
 
-Dip two parallel rings into soapy water and pull them apart, and the film between them forms a *catenoid*, the surface made by spinning the curve $y = a\cosh(x/a)$. Pull the rings too far apart and the catenoid snaps into two flat discs: beyond a critical distance, the equation has no stable solution. Deciding when solutions exist and when they break down is the central work of geometric analysis.
+Dip two parallel rings into soapy water and pull them apart, and the film between them forms a *catenoid*, the surface made by spinning the curve $y = a\cosh(x/a)$. Pull the rings too far apart and the catenoid snaps into two flat discs: beyond a critical distance, no catenoid spans the rings at all. Deciding when solutions exist and when they break down is the central work of geometric analysis.
 
 ## The Min-Max Revival
 

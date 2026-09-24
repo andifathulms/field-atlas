@@ -189,7 +189,7 @@ open_problems:
   - id: kervaire-invariant-problem
     name: The Kervaire invariant one problem
     status: recently_resolved
-    status_note: Hill, Hopkins and Ravenel ruled out every dimension above 126 (announced 2009, published 2016). The last case, dimension 126, was announced settled by Lin, Wang and Xu in 2024.
+    status_note: Hill, Hopkins and Ravenel ruled out every dimension above 126 (announced 2009, published 2016). In 2024 Lin, Wang and Xu showed that dimension 126 does have such manifolds (preprint). So they exist in exactly the dimensions 2, 6, 14, 30, 62 and 126.
     description: >-
       In which dimensions do manifolds exist that carry a certain invariant, the Kervaire
       invariant, equal to one? Such manifolds were known in dimensions 2, 6, 14, 30 and
@@ -206,8 +206,8 @@ open_problems:
     sources:
       - citation: "Hill, M. A., Hopkins, M. J. & Ravenel, D. C. (2016). On the nonexistence of elements of Kervaire invariant one. Annals of Mathematics 184(1): 1–262."
         url: https://arxiv.org/abs/0908.3724
-      - citation: "Lin, W., Wang, G. & Xu, Z. (2024). On the last Kervaire invariant problem. Preprint."
-        url: null
+      - citation: "Lin, W., Wang, G. & Xu, Z. (2024). On the last Kervaire invariant problem. arXiv:2412.10879."
+        url: https://arxiv.org/abs/2412.10879
 
 applications:
   - area: Data science
@@ -267,7 +267,7 @@ further_reading:
 
 ## A Formula That Ignored Measurement
 
-Euclid's geometry is about lengths, angles and areas. In 1750 {{fig:euler|Euler}} noticed something about solids that involved none of them. Count the vertices $V$, edges $E$ and faces $F$ of any convex polyhedron (a cube, a tetrahedron, a soccer ball), and
+Euclid's geometry is about lengths, angles and areas. In 1750 {{fig:euler|Euler}} noticed something about solids that involved none of them. Count the vertices $V$, edges $E$ and faces $F$ of any convex polyhedron (a cube, a tetrahedron, the panels of a football), and
 
 $$
 V - E + F = 2 .
@@ -311,4 +311,4 @@ Homology records more. The first homology group of the torus is $H_1 = \mathbb{Z
 
 ## Wrapping Spheres Around Spheres
 
-The simplest-looking questions in the field are still unanswered. How many ways can one sphere be wrapped around another? {{fig:hopf|Heinz Hopf}}'s discovery in 1931 that a 3-sphere wraps nontrivially around a 2-sphere, in infinitely many distinct ways, showed that these *homotopy groups of spheres* are wild. Computing them has driven the field's most powerful machinery for ninety years. Some of the answers now come from computer-assisted calculation, and the table still has no visible end.
+The simplest-looking questions in the field are still unanswered. How many ways can one sphere be wrapped around another? {{fig:hopf|Heinz Hopf}}'s discovery in 1931 that a 3-sphere wraps nontrivially around a 2-sphere, in infinitely many distinct ways, showed that these *homotopy groups of spheres* are wild. Computing them has driven the field's most powerful machinery for more than ninety years. Some of the answers now come from computer-assisted calculation, and the table still has no visible end.

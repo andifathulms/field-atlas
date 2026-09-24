@@ -230,7 +230,7 @@ In 1825–27 {{fig:gergonne|Joseph Gergonne}} noticed the field's deepest symmet
 
 ## All Geometry Is Projective
 
-By mid-century projective geometry had grown ambitious. In 1859 {{fig:cayley|Arthur Cayley}} showed that even distance and angle, the things projection destroys, can be recovered inside projective geometry by singling out one special conic, the "absolute". He concluded that metrical geometry is part of projective geometry and that projective geometry "is all geometry".
+By mid-century projective geometry had grown ambitious. In 1859 {{fig:cayley|Arthur Cayley}} showed that even distance and angle, the things projection destroys, can be recovered inside projective geometry by singling out one special conic, the "absolute". He concluded that metrical geometry is part of projective geometry, which he called descriptive geometry, and that "descriptive geometry is all geometry".
 
 {{fig:klein|Felix Klein}} took the next step in 1871. Choose the absolute one way and you get Euclidean geometry, another way hyperbolic, a third way elliptic. The [non-Euclidean geometries](/math/non-euclidean-geometry/), found through the long struggle over the parallel postulate, sat inside projective geometry all along. His Erlangen Program the following year made the hierarchy official, with projective geometry near the top.
 

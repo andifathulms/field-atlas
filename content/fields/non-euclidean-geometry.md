@@ -9,7 +9,7 @@ era_emerged: 1820s – 1830s
 core_question: What does geometry look like if the parallel postulate is simply false?
 
 summary: |-
-  Non-Euclidean geometry is what you get by keeping all of Euclid's assumptions except the parallel postulate. Allow many parallels through a point and you get *hyperbolic* geometry, where space spreads out faster than flat space and a triangle's angles add up to less than 180°. Allow none and you get *elliptic* (spherical) geometry, where the angles add up to more.
+  Non-Euclidean geometry is what you get by keeping all of Euclid's assumptions except the parallel postulate. Allow many parallels through a point and you get *hyperbolic* geometry, where space spreads out faster than flat space and a triangle's angles add up to less than 180°. Allow none and you get *elliptic* (spherical) geometry, where the angles add up to more. (Elliptic geometry also has to give up the assumption that a line can be extended forever without returning.)
 
   Its discovery changed what an axiom is. Geometry's starting assumptions turned out to be choices, not self-evident truths, and choosing differently gave perfectly consistent worlds.
 
@@ -185,7 +185,7 @@ So there are no similar triangles of different sizes, because changing the size 
 
 ## Three Discoverers and a Silence
 
-The breakthrough came from three places at once. {{fig:lobachevsky|Nikolai Lobachevsky}} lectured on it at Kazan in 1826 and published in 1829–30, in Russian, in a provincial journal few Western mathematicians read. {{fig:bolyai|János Bolyai}}, a Hungarian army officer, wrote it up as a 24-page appendix to his father's textbook in 1832.
+The breakthrough came from three places at once. {{fig:lobachevsky|Nikolai Lobachevsky}} lectured on it at Kazan in 1826 and published in 1829–30, in Russian, in a provincial journal few Western mathematicians read. {{fig:bolyai|János Bolyai}}, a Hungarian army officer, wrote it up as a 26-page appendix to his father's textbook in 1832.
 
 {{fig:gauss|Gauss}}, the most famous mathematician alive, answered Bolyai's father that to praise the work "would be to praise myself," because he had found the same results long before. He had written as much in private letters, but he had published none of it and never would. Some historians read this as caution about the controversy. Others doubt that his unpublished work ever amounted to a full geometry. Either way, the credit is contested, and this atlas marks it that way.
 
@@ -195,7 +195,7 @@ What none of them had was proof that the new geometry was *consistent*. Lobachev
 
 {{fig:beltrami|Eugenio Beltrami}} closed the question in 1868. He showed that hyperbolic geometry already lives inside ordinary Euclidean space: on surfaces of constant negative curvature, like the trumpet-shaped pseudosphere, and in a disc whose chords play the role of straight lines. A contradiction in hyperbolic geometry would therefore be a contradiction in Euclidean geometry too. The parallel postulate is *independent*: it can neither be proved nor disproved from the other four.
 
-Beltrami's surfaces came straight out of Gauss's theory of curvature, from the neighbouring [differential-geometry](/math/differential-geometry/) branch. The two branches were already converging. Felix Klein and, in 1882, {{fig:poincare|Henri Poincaré}} later added the models that are standard today: the projective disc, the Poincaré disc, and the upper half-plane.
+Beltrami's surfaces came straight out of Gauss's theory of curvature, from the neighbouring [differential-geometry](/math/differential-geometry/) branch. The two branches were already converging. The models standard today are the projective disc, the Poincaré disc and the upper half-plane. Beltrami had already described versions of all three. Felix Klein recast the first in projective terms in 1871, and from 1882 {{fig:poincare|Henri Poincaré}} made the other two famous.
 
 ## A Closer Look: Triangles in the Poincaré Disc
 

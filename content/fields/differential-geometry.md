@@ -125,7 +125,7 @@ open_problems:
   - id: willmore-conjecture
     name: The Willmore conjecture
     status: recently_resolved
-    status_note: Proved by Fernando Codá Marques and André Neves in 2012; published 2014.
+    status_note: Proved by Fernando Codá Marques and André Neves in 2012, published 2014.
     description: >-
       Thomas Willmore asked in 1965 how little a torus (a doughnut-shaped surface) can
       bend. He measured bending by the total squared mean curvature and conjectured that
@@ -140,7 +140,7 @@ open_problems:
     unlocks: >-
       Its main legacy is the min-max method it brought back. That method soon settled
       Yau's conjecture that every closed three-manifold contains infinitely many minimal
-      surfaces (Irie–Marques–Neves for generic metrics; Antoine Song in full).
+      surfaces (Irie, Marques and Neves for generic metrics, then Antoine Song in full).
     sources:
       - citation: "Willmore, T. J. (1965). Note on embedded surfaces. Analele Ştiinţifice ale Universităţii Al. I. Cuza din Iaşi 11B: 493–496."
         url: null
