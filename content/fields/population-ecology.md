@@ -142,6 +142,7 @@ turning_points:
     date: 1974 – 1976
     type: CONSENSUS-OVERTURNED
     title: Populations that fluctuate by themselves
+    description: >-
       Ecologists had assumed that a population left alone settles to a steady level, and
       that erratic fluctuations must come from outside. Robert May shows that a
       population with separate generations, following a simple rule in which crowding
