@@ -339,7 +339,7 @@
   { "id": "sadi-carnot", "name": "Sadi Carnot", "turning_point_ids": ["carnot-engine"] },
   { "id": "julius-robert-mayer", "name": "Julius Robert Mayer", "turning_point_ids": ["mechanical-equivalent-of-heat"] },
   { "id": "james-joule", "name": "James Prescott Joule", "turning_point_ids": ["mechanical-equivalent-of-heat"] },
-  { "id": "hermann-helmholtz", "name": "Hermann von Helmholtz", "turning_point_ids": ["mechanical-equivalent-of-heat"] },
+  { "id": "hermann-helmholtz", "name": "Hermann von Helmholtz", "turning_point_ids": ["mechanical-equivalent-of-heat", "helmholtz-nerve-speed"] },
   { "id": "william-thomson", "name": "William Thomson (Lord Kelvin)", "turning_point_ids": ["kelvin-absolute-temperature", "maxwell-demon"] },
   { "id": "rudolf-clausius", "name": "Rudolf Clausius", "turning_point_ids": ["clausius-entropy", "clausius-kinetic-heat"] },
   { "id": "walther-nernst", "name": "Walther Nernst", "turning_point_ids": ["nernst-third-law"] },
@@ -536,5 +536,13 @@
   { "id": "camillo-golgi", "name": "Camillo Golgi", "turning_point_ids": ["golgi-black-reaction", "cajal-neuron-doctrine"] },
   { "id": "santiago-ramon-y-cajal", "name": "Santiago Ramón y Cajal", "turning_point_ids": ["cajal-neuron-doctrine"] },
   { "id": "charles-sherrington", "name": "Charles Sherrington", "turning_point_ids": ["sherrington-synapse"] },
-  { "id": "korbinian-brodmann", "name": "Korbinian Brodmann", "turning_point_ids": ["brodmann-areas"] }
+  { "id": "korbinian-brodmann", "name": "Korbinian Brodmann", "turning_point_ids": ["brodmann-areas"] },
+  { "id": "luigi-galvani", "name": "Luigi Galvani", "turning_point_ids": ["galvani-animal-electricity"] },
+  { "id": "alessandro-volta", "name": "Alessandro Volta", "turning_point_ids": ["galvani-animal-electricity"] },
+  { "id": "emil-du-bois-reymond", "name": "Emil du Bois-Reymond", "turning_point_ids": ["du-bois-reymond-action-current"] },
+  { "id": "edgar-adrian", "name": "Edgar Adrian", "turning_point_ids": ["adrian-all-or-none"] },
+  { "id": "alan-hodgkin", "name": "Alan Hodgkin", "turning_point_ids": ["hodgkin-huxley-model"] },
+  { "id": "andrew-huxley", "name": "Andrew Huxley", "turning_point_ids": ["hodgkin-huxley-model"] },
+  { "id": "erwin-neher", "name": "Erwin Neher", "turning_point_ids": ["neher-sakmann-patch-clamp"] },
+  { "id": "bert-sakmann", "name": "Bert Sakmann", "turning_point_ids": ["neher-sakmann-patch-clamp"] }
 ]
