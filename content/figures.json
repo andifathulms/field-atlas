@@ -500,5 +500,22 @@
   { "id": "maud-menten", "name": "Maud Menten", "turning_point_ids": ["michaelis-menten"] },
   { "id": "james-sumner", "name": "James Sumner", "turning_point_ids": ["sumner-urease"] },
   { "id": "hans-krebs", "name": "Hans Krebs", "turning_point_ids": ["krebs-cycle"] },
-  { "id": "peter-mitchell", "name": "Peter Mitchell", "turning_point_ids": ["chemiosmosis"] }
+  { "id": "peter-mitchell", "name": "Peter Mitchell", "turning_point_ids": ["chemiosmosis"] },
+  { "id": "ernst-ruska", "name": "Ernst Ruska", "turning_point_ids": ["electron-microscopy-cells"] },
+  { "id": "keith-porter", "name": "Keith Porter", "turning_point_ids": ["electron-microscopy-cells"] },
+  { "id": "albert-claude", "name": "Albert Claude", "turning_point_ids": ["electron-microscopy-cells", "secretory-pathway"] },
+  { "id": "george-palade", "name": "George Palade", "turning_point_ids": ["secretory-pathway"] },
+  { "id": "christian-de-duve", "name": "Christian de Duve", "turning_point_ids": ["secretory-pathway"] },
+  { "id": "s-jonathan-singer", "name": "S. Jonathan Singer", "turning_point_ids": ["fluid-mosaic"] },
+  { "id": "garth-nicolson", "name": "Garth Nicolson", "turning_point_ids": ["fluid-mosaic"] },
+  { "id": "leland-hartwell", "name": "Leland Hartwell", "turning_point_ids": ["cell-cycle-control"] },
+  { "id": "paul-nurse", "name": "Paul Nurse", "turning_point_ids": ["cell-cycle-control"] },
+  { "id": "tim-hunt", "name": "Tim Hunt", "turning_point_ids": ["cell-cycle-control"] },
+  { "id": "osamu-shimomura", "name": "Osamu Shimomura", "turning_point_ids": ["green-fluorescent-protein"] },
+  { "id": "douglas-prasher", "name": "Douglas Prasher", "turning_point_ids": ["green-fluorescent-protein"] },
+  { "id": "martin-chalfie", "name": "Martin Chalfie", "turning_point_ids": ["green-fluorescent-protein"] },
+  { "id": "roger-tsien", "name": "Roger Tsien", "turning_point_ids": ["green-fluorescent-protein"] },
+  { "id": "stefan-hell", "name": "Stefan Hell", "turning_point_ids": ["super-resolution"] },
+  { "id": "eric-betzig", "name": "Eric Betzig", "turning_point_ids": ["super-resolution"] },
+  { "id": "w-e-moerner", "name": "W. E. Moerner", "turning_point_ids": ["super-resolution"] }
 ]
