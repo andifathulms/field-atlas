@@ -216,6 +216,26 @@ $$
 
 The last term was Maxwell's own addition. With it, a changing electric field makes a magnetic field and a changing magnetic field makes an electric one, so the fields can sustain each other as a wave travelling through empty space. Its speed is $1/\sqrt{\mu_0\varepsilon_0}$, calculated from laboratory measurements of coils and capacitors, and it came out equal to the measured speed of light. "We can scarcely avoid the inference," Maxwell wrote, "that light consists in the transverse undulations of the same medium which is the cause of electric and magnetic phenomena."
 
+## A Closer Look: The Speed of Light From Coils and Capacitors
+
+Maxwell's equations contain two constants that can be measured on a laboratory bench, with no light involved. The *permeability* $\mu_0$ sets how strongly a current produces a magnetic field, and so the force between two wires carrying current. The *permittivity* $\varepsilon_0$ sets how strongly charges push on each other, and so how much charge a capacitor holds. In modern units:
+
+$$
+\mu_0 = 4\pi \times 10^{-7} \text{ N/A}^2 , \qquad \varepsilon_0 = 8.854 \times 10^{-12} \text{ F/m} .
+$$
+
+The equations predict waves of electric and magnetic field travelling at
+
+$$
+v = \frac{1}{\sqrt{\mu_0 \varepsilon_0}} = \frac{1}{\sqrt{4\pi \times 10^{-7} \times 8.854 \times 10^{-12}}} \approx 2.998 \times 10^8 \text{ m/s} .
+$$
+
+That is the speed of light. In 1856 Wilhelm Weber and Rudolf Kohlrausch had measured the corresponding ratio of electrical units, by discharging a capacitor through a galvanometer, and found about $3.1 \times 10^8$ m/s. Hippolyte Fizeau had measured the speed of light in 1849 with a spinning toothed wheel and a mirror 8 km away, and got about $3.1 \times 10^8$ m/s as well. Maxwell saw that the agreement could not be a coincidence.
+
+Nothing in the experiments on currents and charges involved light, optics or astronomy. Yet the speed of light fell out of them. Light is an electromagnetic wave, and so, Maxwell predicted, there should be others at every wavelength. Hertz found radio waves twenty years later.
+
+The calculation also carries the puzzle that led to relativity. The formula gives one speed, with no mention of who is measuring it or how fast they are moving. Since 1983 the metre has been defined by fixing the speed of light at exactly 299,792,458 m/s.
+
 ## Waves and the Missing Ether
 
 In 1887–88 {{fig:hertz|Heinrich Hertz}} made Maxwell's waves with a spark gap and detected them across his lab. Radio was born, and the theory seemed complete.
