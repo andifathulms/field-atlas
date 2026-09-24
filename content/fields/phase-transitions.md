@@ -97,8 +97,8 @@ turning_points:
       The Ising model is a grid of tiny magnets that prefer to align with their
       neighbours. Ernst Ising had shown in 1925 that a one-dimensional chain has no phase
       transition. Lars Onsager solves the two-dimensional version exactly, in a
-      mathematical tour de force. It proved that statistical mechanics alone can produce
-      a sharp transition, and its exact critical behaviour contradicted Landau's theory.
+      mathematical tour de force. It showed in exact detail that statistical mechanics
+      alone can produce a sharp transition, and its exact critical behaviour contradicted Landau's theory.
     contested: false
     sources:
       - citation: "Onsager, L. (1944). Crystal statistics. I. A two-dimensional model with an order-disorder transition. Physical Review 65(3–4): 117–149."
@@ -156,8 +156,9 @@ open_problems:
       solution for eighty years.
     why_hard: >-
       Onsager's method relies on special structure available only in two dimensions.
-      Sorin Istrail showed in 2000 that computing the model's partition function in three
-      dimensions is NP-complete, so no method like Onsager's is likely to work. The
+      Sorin Istrail showed in 2000 that on three-dimensional lattices with arbitrary
+      couplings, computing the partition function is NP-complete, so no general method
+      like Onsager's is likely to work. The
       conformal bootstrap now computes its critical exponents to extraordinary precision,
       but that is not a solution.
     unlocks: >-
@@ -238,7 +239,7 @@ $$
 k_B T_c = 4J ,
 $$
 
-and near it, the magnetisation should grow as $(T_c - T)^{\beta}$ with $\beta = \tfrac12$. Onsager's exact solution gives
+and near it, the magnetisation should grow as $(T_c - T)^{\beta}$ with $\beta = \tfrac12$. Onsager's exact solution, completed for the magnetisation by C. N. Yang in 1952, gives
 
 $$
 k_B T_c = \frac{2J}{\ln(1 + \sqrt2)} \approx 2.269\,J, \qquad \beta = \tfrac18 .

@@ -81,18 +81,21 @@ turning_points:
         url: null
 
   - id: kelvin-absolute-temperature
-    date: "1848"
+    date: 1848 – 1854
     type: DISCOVERY
     title: An absolute scale of temperature
     description: >-
       William Thomson, later Lord Kelvin, uses Carnot's theory to define temperature in a
       way that depends on no particular substance, only on the efficiency of ideal
-      engines. The scale has a natural zero, absolute zero. Temperature became a
-      fundamental physical quantity.
+      engines. His first scale of 1848 put infinite cold at minus infinity. In 1854,
+      working with Joule, he revised it into the modern form, whose zero is absolute
+      zero. Temperature became a fundamental physical quantity.
     contested: false
     sources:
       - citation: "Thomson, W. (1848). On an absolute thermometric scale founded on Carnot's theory of the motive power of heat. Philosophical Magazine 33: 313–317."
         url: null
+      - citation: "Joule, J. P. & Thomson, W. (1854). On the thermal effects of fluids in motion. Part II. Philosophical Transactions of the Royal Society of London 144: 321–364."
+        url: https://www.jstor.org/stable/108506
 
   - id: clausius-entropy
     date: 1850 – 1865
@@ -199,25 +202,25 @@ By 1820 steam engines were driving Britain's mines and mills, built by trial and
 
 ## Heat Is Energy
 
-In the 1840s the caloric theory broke down. {{fig:julius-robert-mayer|Julius Robert Mayer}}, a ship's doctor, argued in 1842 that heat and motion were two forms of the same thing. {{fig:james-joule|James Joule}}, a brewer's son from Manchester, measured the exchange rate: the work of a falling weight, used to turn a paddle wheel in water, always produced the same amount of heat. {{fig:hermann-helmholtz|Hermann von Helmholtz}} generalised the result in 1847 into the conservation of energy. The priority dispute over who found it first was bitter, and Mayer was recognised only late in life.
+In the 1840s the caloric theory broke down. {{fig:julius-robert-mayer|Julius Robert Mayer}}, a ship's doctor, argued in 1842 that heat and motion were two forms of the same thing. {{fig:james-joule|James Joule}}, a brewer's son from Salford, near Manchester, measured the exchange rate: the work of a falling weight, used to turn a paddle wheel in water, always produced the same amount of heat. {{fig:hermann-helmholtz|Hermann von Helmholtz}} generalised the result in 1847 into the conservation of energy. The priority dispute over who found it first was bitter, and Mayer was recognised only late in life.
 
-But if heat was not conserved, Carnot's argument seemed to collapse. {{fig:william-thomson|William Thomson}}, who admired Carnot's work, used it in 1848 to define an absolute temperature scale that does not depend on any substance, with a zero at about $-273\,^\circ\text{C}$.
+But if heat was not conserved, Carnot's argument seemed to collapse. {{fig:william-thomson|William Thomson}}, who admired Carnot's work, used it in 1848 to define an absolute temperature scale that does not depend on any substance. In its revised form of 1854, the scale's zero sits at about $-273\,^\circ\text{C}$.
 
 ## Entropy
 
-{{fig:rudolf-clausius|Rudolf Clausius}} saw in 1850 that both ideas could be kept. Energy is conserved, but it has a direction: heat does not flow by itself from cold to hot. In 1865 he defined the quantity that captures this, entropy, from the Greek for "transformation", and put the two laws in one sentence: the energy of the universe is constant, and its entropy tends to a maximum. For the first time, a law of physics distinguished past from future. Thomson drew a bleak conclusion, the "heat death" of the universe, in which everything eventually reaches one uniform temperature.
+{{fig:rudolf-clausius|Rudolf Clausius}} saw in 1850 that both ideas could be kept. Energy is conserved, but it has a direction: heat does not flow by itself from cold to hot. In 1865 he defined the quantity that captures this, entropy, from the Greek for "transformation", and put the two laws in one sentence: the energy of the universe is constant, and its entropy tends to a maximum. For the first time, a law of physics distinguished past from future. Thomson, and then Helmholtz, had already drawn a bleak conclusion from the dissipation of energy, the "heat death" of the universe, in which everything eventually reaches one uniform temperature.
 
 In 1906 {{fig:walther-nernst|Walther Nernst}} added a third law, about behaviour near absolute zero. The laws made no assumptions about what matter is made of. Explaining *why* they hold required the atoms of [kinetic theory](/physics/kinetic-theory/), and the explanation turned out to be statistical.
 
 ## A Closer Look: Carnot's Limit in a Power Station
 
-A modern coal or nuclear steam plant heats steam to about 565 °C and condenses it at about 30 °C. Carnot's limit is written in absolute temperatures, so add 273: the hot side is 838 K and the cold side 303 K. The best possible efficiency is
+A modern coal-fired steam plant heats steam to about 565 °C and condenses it at about 30 °C. Carnot's limit is written in absolute temperatures, so add 273: the hot side is 838 K and the cold side 303 K. The best possible efficiency is
 
 $$
 1 - \frac{T_c}{T_h} = 1 - \frac{303}{838} \approx 0.64 .
 $$
 
-No engine working between those temperatures can turn more than 64% of its heat into work, however well it is engineered. Real steam plants reach around 40–45%, losing the rest to friction, imperfect heat transfer and other irreversible processes. The remaining heat must go into the cold side, which is why power stations have cooling towers.
+No engine working between those temperatures can turn more than 64% of its heat into work, however well it is engineered. The best real coal plants reach around 40–45%, losing the rest to friction, imperfect heat transfer and other irreversible processes. The remaining heat must go into the cold side, which is why power stations have cooling towers.
 
 The formula also shows how to do better: make $T_h$ higher. Combined-cycle gas plants burn fuel in a turbine at well over 1,000 °C, then use its hot exhaust to raise steam for a second turbine. That widens the temperature range, and the best such plants exceed 60% efficiency.
 

@@ -130,7 +130,7 @@ turning_points:
       Einstein predicts in 1905 that the random jiggling of small particles in water,
       Brownian motion, is caused by molecular impacts, and says how far the particles
       should wander. Jean Perrin measures it in 1908 and gets consistent values for the
-      number of molecules in a mole by several independent methods. The last leading
+      number of molecules in a mole by several independent methods. Most of the remaining
       sceptics, including Wilhelm Ostwald, accepted that atoms exist.
     contested: false
     sources:
@@ -142,8 +142,11 @@ turning_points:
 open_problems:
   - id: hilbert-sixth-problem
     name: Deriving fluid equations from molecules (Hilbert's sixth problem)
-    status: open
-    status_note: Long open; a 2025 preprint by Deng, Hani and Ma announces a derivation for hard-sphere gases, under scrutiny as of writing.
+    status: recently_resolved
+    status_note: >-
+      Resolved for an idealised dilute gas of hard spheres by Yu Deng, Zaher Hani and
+      Xiao Ma (2024–25), work cited in Deng's 2026 Fields Medal. Some argue that dense
+      gases and liquids, and realistic forces between molecules, still lie outside it.
     description: >-
       Hilbert asked in 1900 for a rigorous derivation of the equations of gases and
       fluids from the motion of individual molecules. The chain runs from Newton's laws
@@ -154,13 +157,17 @@ open_problems:
       Oscar Lanford proved in 1975 that Boltzmann's equation follows from Newton's laws,
       but only for a tiny fraction of the time between collisions. Extending that to long
       times means controlling how correlations between molecules build up through
-      repeated collisions, which is exactly where irreversibility comes from.
+      repeated collisions, which is exactly where irreversibility comes from. Deng, Hani
+      and Ma did this for hard spheres in 2024 by tracking whole collision histories, and
+      in 2025 carried the chain on to the fluid equations.
     unlocks: >-
       A mathematical account of how reversible molecular motion produces the
       irreversible behaviour of fluids, answering Loschmidt's objection with a theorem.
     sources:
       - citation: "Lanford, O. E. (1975). Time evolution of large classical systems. Lecture Notes in Physics 38: 1–111."
         url: null
+      - citation: "Deng, Y., Hani, Z. & Ma, X. (2024). Long time derivation of the Boltzmann equation from hard sphere dynamics. arXiv:2408.07818."
+        url: https://arxiv.org/abs/2408.07818
       - citation: "Deng, Y., Hani, Z. & Ma, X. (2025). Hilbert's sixth problem: derivation of fluid equations via Boltzmann's kinetic theory. arXiv:2503.01800."
         url: https://arxiv.org/abs/2503.01800
 
@@ -233,4 +240,4 @@ The same calculation, run backwards, measured the size of molecules. In 1865 Los
 
 ## Atoms Made Real
 
-Even so, many physicists and chemists around 1900, led by Ernst Mach and Wilhelm Ostwald, regarded atoms as a convenient fiction. Boltzmann, who felt he was fighting alone, took his own life in 1906. Proof came within two years. {{fig:einstein|Albert Einstein}} had predicted in 1905 how far a pollen-sized particle in water should wander under random molecular impacts. In 1908 {{fig:jean-perrin|Jean Perrin}} measured it and obtained the number of molecules in a mole. Several other independent methods gave the same value. Ostwald conceded, and atoms became as real as anything in physics. Deriving fluid equations rigorously from the motion of molecules, Hilbert's sixth problem, has taken much longer.
+Even so, many physicists and chemists around 1900, led by Ernst Mach and Wilhelm Ostwald, regarded atoms as a convenient fiction. Boltzmann, who felt he was fighting alone, took his own life in 1906. Proof came within two years. {{fig:einstein|Albert Einstein}} had predicted in 1905 how far a pollen-sized particle in water should wander under random molecular impacts. In 1908 {{fig:jean-perrin|Jean Perrin}} measured it and obtained the number of molecules in a mole. Several other independent methods gave the same value. Ostwald conceded, and atoms became as real as anything in physics. Deriving fluid equations rigorously from the motion of molecules, Hilbert's sixth problem, took much longer. A proof for an idealised gas of hard spheres came only in 2025.

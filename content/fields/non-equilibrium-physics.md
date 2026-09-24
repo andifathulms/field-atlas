@@ -92,7 +92,7 @@ turning_points:
     description: >-
       Lars Onsager shows that near equilibrium, the coefficients linking different flows
       and forces are symmetric, a consequence of the reversibility of molecular motion. It
-      was the first general law of non-equilibrium thermodynamics, and it earned him the
+      was one of the first general laws of non-equilibrium thermodynamics, and it earned him the
       1968 Nobel prize in chemistry.
     contested: false
     sources:
@@ -138,10 +138,10 @@ turning_points:
     type: EXPERIMENT
     title: Landauer's limit measured
     description: >-
-      Antoine Bérut, Eric Lutz and colleagues in Lyon trap a single glass bead in a
-      double-well laser trap to store one bit, and erase it slowly. The heat released
-      approaches Landauer's limit of $k_B T \ln 2$ and never goes below it, as predicted
-      half a century earlier.
+      Antoine Bérut and colleagues in Lyon, with the theorist Eric Lutz, trap a single
+      glass bead in a double-well laser trap to store one bit, and erase it slowly. The
+      average heat released approaches Landauer's limit of $k_B T \ln 2$ from above, as
+      predicted half a century earlier.
     contested: false
     sources:
       - citation: "Bérut, A., Arakelyan, A., Petrosyan, A., Ciliberto, S., Dillenschneider, R. & Lutz, E. (2012). Experimental verification of Landauer's principle linking information and thermodynamics. Nature 483: 187–189."
@@ -249,7 +249,7 @@ $$
 
 a trivially small amount. Real chips dissipate thousands of times more per operation, because their switches are far from ideal. Landauer's limit is not what makes phones warm today. But it is a floor that no technology can go below, unless computation is made reversible, never erasing anything.
 
-In 2012 {{fig:antoine-berut|Antoine Bérut}}, {{fig:eric-lutz|Eric Lutz}} and colleagues stored a bit as the position of a glass bead in a laser trap with two wells, then erased it, slowly. The heat released approached $k_B T \ln 2$ and never fell below it. The demon's century-old puzzle had become a bench-top measurement.
+In 2012 {{fig:antoine-berut|Antoine Bérut}}, {{fig:eric-lutz|Eric Lutz}} and colleagues stored a bit as the position of a glass bead in a laser trap with two wells, then erased it, slowly. The average heat released approached $k_B T \ln 2$ from above, as the erasure was made slower. The demon's century-old puzzle had become a bench-top measurement.
 
 ## Life and Other Driven Systems
 

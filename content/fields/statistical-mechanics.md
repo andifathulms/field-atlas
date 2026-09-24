@@ -75,7 +75,8 @@ turning_points:
     title: Bose–Einstein statistics
     description: >-
       Satyendra Nath Bose, in Dacca, derives Planck's law for light by counting photons as
-      indistinguishable. Rejected by a journal, he sends the paper to Einstein, who
+      indistinguishable. After a journal reportedly turned it down, he sends the paper to
+      Einstein, who
       translates it into German and extends it to atoms. Einstein predicts that at low
       enough temperature many atoms will crowd into the lowest energy state, a new state
       of matter.
@@ -109,7 +110,7 @@ turning_points:
     description: >-
       Seventy years after Einstein's prediction, Eric Cornell and Carl Wieman in Boulder
       cool a cloud of rubidium atoms to about 170 billionths of a degree above absolute
-      zero, and thousands of atoms fall into a single quantum state. Wolfgang Ketterle at
+      zero, and about two thousand atoms fall into a single quantum state. Wolfgang Ketterle at
       MIT achieves it with sodium months later. All three shared the 2001 Nobel prize.
     contested: false
     sources:
@@ -130,8 +131,8 @@ open_problems:
       Viscosity rises by more than ten orders of magnitude over a narrow temperature range,
       with no visible change in structure. The relevant timescales are too long to
       simulate or measure near the proposed transition, and competing theories make
-      predictions that are hard to tell apart. Philip Anderson called it the deepest
-      unsolved problem in solid state theory.
+      predictions that are hard to tell apart. Philip Anderson called it probably the deepest
+      and most interesting unsolved problem in solid state theory.
     unlocks: >-
       Understanding of glasses, plastics, metallic glasses and amorphous materials, and
       of other systems that get stuck far from equilibrium, from granular materials to the
@@ -197,7 +198,7 @@ In 1902 {{fig:josiah-willard-gibbs|Josiah Willard Gibbs}}, a reserved professor 
 
 ## Quantum Counting
 
-When quantum theory arrived, statistical mechanics needed only new rules for counting. In 1924 {{fig:satyendra-nath-bose|Satyendra Nath Bose}}, a young physicist in Dacca, derived Planck's law for light by treating photons as truly indistinguishable. His paper was rejected, and he sent it to {{fig:einstein|Einstein}}, who translated it himself and applied the idea to atoms. He predicted that very cold atoms would pile into a single state, a Bose–Einstein condensate. In 1926 {{fig:enrico-fermi|Enrico Fermi}} and {{fig:paul-dirac|Paul Dirac}} found the rules for particles that refuse to share, such as electrons. Those two kinds of counting explain lasers and superfluids on one side, and metals, chemistry and white dwarf stars on the other.
+When quantum theory arrived, statistical mechanics needed only new rules for counting. In 1924 {{fig:satyendra-nath-bose|Satyendra Nath Bose}}, a young physicist in Dacca, derived Planck's law for light by treating photons as truly indistinguishable. His paper had reportedly been rejected, and he sent it to {{fig:einstein|Einstein}}, who translated it himself and applied the idea to atoms. He predicted that very cold atoms would pile into a single state, a Bose–Einstein condensate. In 1926 {{fig:enrico-fermi|Enrico Fermi}} and {{fig:paul-dirac|Paul Dirac}} found the rules for particles that refuse to share, such as electrons. Those two kinds of counting explain lasers and superfluids on one side, and metals, chemistry and white dwarf stars on the other.
 
 The condensate took seventy years to make. In 1995 {{fig:eric-cornell|Eric Cornell}} and {{fig:carl-wieman|Carl Wieman}} cooled rubidium atoms to 170 billionths of a degree above absolute zero and saw them condense. {{fig:wolfgang-ketterle|Wolfgang Ketterle}} did the same with sodium months later.
 
