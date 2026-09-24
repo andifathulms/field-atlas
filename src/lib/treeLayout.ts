@@ -13,6 +13,7 @@
 // that run through another field's label block or trail.
 import type { Field, TurningPoint } from "./types";
 import { unresolvedCount } from "./stats";
+import { threadLink, type ThreadLink } from "./threadLinks";
 
 export const TREE = {
   /** Minimum canvas width. */
@@ -27,15 +28,12 @@ export const TREE = {
   trailPad: 12,
   layerGap: 76,
   fogLength: 70,
-  /** Length of the stub drawn for a parent or child that lives in another thread. */
-  stub: 54,
 } as const;
 
 // Approximate advance widths for the SVG label styles in FieldTree.
 const NAME_CHAR = 10.4; // 19px serif semibold
 const STAMP_CHAR = 7.4; // 10.5px mono, tracked
 const FOG_LABEL = 160; // "n unresolved problems" plus its fading dashes
-const STUB_LABEL = 330; // "↘ into Arithmetic Geometry · The Number Theory Thread"
 
 export interface TreeTick {
   tp: TurningPoint;
@@ -57,15 +55,23 @@ export interface TreeNode {
   trailEnd: number;
   /** A leaf with unresolved problems trails off into fog below its trail. */
   fadesOut: boolean;
-  /** Parents drawn on another thread's map: shown as stubs entering from above. */
-  externalParents: string[];
-  /** Children drawn on another thread's map: shown as stubs leaving below. */
-  externalChildren: string[];
+  /**
+   * Lineage drawn on another thread's map, shown as rows in the node's own label
+   * column: parents under the era line ("from"), children after the waypoints
+   * ("into"). The label column is kept clear of branches, so these never collide.
+   */
+  threadRows: Array<ThreadLink & { y: number }>;
 }
 
-/** Extra room below a node whose lineage continues on another thread's map. */
-function belowTrail(n: Pick<TreeNode, "fadesOut" | "externalChildren">): number {
-  return Math.max(n.fadesOut ? TREE.fogLength : 0, n.externalChildren.length ? TREE.stub + 22 : 0);
+function belowTrail(n: Pick<TreeNode, "fadesOut">): number {
+  return n.fadesOut ? TREE.fogLength : 0;
+}
+
+/** Thread links for a field, given which fields are drawn on this map. */
+function threadLinksFor(field: Field, inMap: Set<string>) {
+  const links = (ids: string[], dir: "from" | "into") =>
+    ids.filter((id) => !inMap.has(id)).map((id) => threadLink(id, dir)).filter(Boolean) as ThreadLink[];
+  return { from: links(field.parent_ids, "from"), into: links(field.successor_ids, "into") };
 }
 
 export interface TreeEdge {
@@ -97,8 +103,9 @@ export function eraLabel(field: Field): string {
   return `EMERGED ${field.era_emerged.toUpperCase()}`;
 }
 
-function labelWidth(field: Field): number {
+function labelWidth(field: Field, links: ThreadLink[] = []): number {
   const text = Math.max(
+    ...links.map((l) => l.label.length * STAMP_CHAR * 0.95),
     field.name.length * NAME_CHAR,
     eraLabel(field).length * STAMP_CHAR,
     ...field.turning_points.map((tp) => tickLabel(tp).length * STAMP_CHAR),
@@ -166,37 +173,37 @@ function permutations<T>(items: T[]): T[][] {
 
 /** Build nodes (with y geometry) for a given left-to-right order of each layer. */
 function buildNodes(orders: Field[][]): TreeNode[][] {
-  const { top, head, row, trailPad, layerGap, stub } = TREE;
+  const { top, head, row, trailPad, layerGap } = TREE;
   const inMap = new Set(orders.flat().map((f) => f.id));
-  const external = (ids: string[]) => ids.filter((id) => !inMap.has(id));
-  // Leave room above the first row if any of it is entered from another thread.
-  const firstRowStub = (orders[0] ?? []).some((f) => external(f.parent_ids).length > 0);
-  let y: number = top + (firstRowStub ? stub + 20 : 0);
+  let y: number = top;
   return orders.map((inLayer, l) => {
     let layerBottom = y;
     const nodes = inLayer.map((field) => {
-      const ticks = field.turning_points.map((tp, j) => ({ tp, y: y + head + j * row }));
+      const links = threadLinksFor(field, inMap);
+      // Rows in the label column, top to bottom: from-links, waypoints, into-links, fog.
+      let r = 0;
+      const rowY = () => y + head + r++ * row;
+      const fromRows = links.from.map((link) => ({ ...link, y: rowY() }));
+      const ticks = field.turning_points.map((tp) => ({ tp, y: rowY() }));
+      const intoRows = links.into.map((link) => ({ ...link, y: rowY() }));
       const unresolved = unresolvedCount(field);
-      const fogRowY = unresolved > 0 ? y + head + ticks.length * row + 4 : null;
-      const rows = ticks.length + (unresolved > 0 ? 1 : 0);
+      const fogRowY = unresolved > 0 ? y + head + r * row + 4 : null;
+      const rows = r + (unresolved > 0 ? 1 : 0);
       const trailEnd = y + head + Math.max(0, rows - 1) * row + trailPad;
       const fadesOut = unresolved > 0 && field.successor_ids.length === 0;
-      const externalParents = external(field.parent_ids);
-      const externalChildren = external(field.successor_ids);
-      layerBottom = Math.max(layerBottom, trailEnd + belowTrail({ fadesOut, externalChildren }));
+      layerBottom = Math.max(layerBottom, trailEnd + belowTrail({ fadesOut }));
       return {
         field,
         layer: l,
         x: 0,
         y,
-        labelWidth: labelWidth(field),
+        labelWidth: labelWidth(field, [...links.from, ...links.into]),
         ticks,
         fogRowY,
         unresolved,
         trailEnd,
         fadesOut,
-        externalParents,
-        externalChildren,
+        threadRows: [...fromRows, ...intoRows],
       };
     });
     y = layerBottom + layerGap;
@@ -433,8 +440,7 @@ export function layoutTree(fields: Field[]): TreeLayout {
   const minX = Math.min(...nodes.map((n) => n.x));
   nodes.forEach((n) => (n.x += marginX - minX));
   // Trim to what the layout uses (the minimum width is only search room), so narrow trees sit centred.
-  const stubReach = (n: TreeNode) => (n.externalParents.length || n.externalChildren.length ? STUB_LABEL : 0);
-  const usedWidth = Math.ceil(Math.max(...nodes.map((n) => n.x + Math.max(n.labelWidth, stubReach(n)))) + marginX);
+  const usedWidth = Math.ceil(Math.max(...nodes.map((n) => n.x + n.labelWidth)) + marginX);
   const height = Math.max(...nodes.map((n) => n.trailEnd + belowTrail(n))) + 36;
   return { width: usedWidth, height, nodes, edges: buildEdges(nodes) };
 }
