@@ -38,7 +38,7 @@ Ink on paper, plus one accent per domain. Everything is a CSS variable on `:root
 | `--paper-deep` | `#ece5d6` | map sheet, code, hover wash |
 | `--ink` | `#1c1a17` | primary text |
 | `--ink-soft` | `#4a453e` | secondary text |
-| `--ink-faint` | `#776f63` | stamps and meta (≥ 4.5:1 on paper) |
+| `--ink-faint` | `#70685c` | stamps and meta (≥ 4.5:1 on paper) |
 | `--rule` | `#d9d0bf` | hairlines |
 | `--fog` | `#a29a8c` | unmapped: intentionally below text contrast |
 | `--math` | `#2c3b80` | fountain-pen indigo, the color of proof |

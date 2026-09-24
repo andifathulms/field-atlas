@@ -5,26 +5,66 @@
 :root {
   color-scheme: light;
 
-  /* Ink on aged paper — never pure white or black. */
-  --paper: #f3eee3;
-  --paper-deep: #e9e2d2;
-  --ink: #1e1c19;
-  --ink-soft: #48443e;
-  --ink-faint: #8a8378;
-  --rule: #d2c9b6;
-  --fog: #a29b8e;
+  /* Day: ink on aged paper, never pure white or black. */
+  --paper: #f5f0e6;
+  --paper-deep: #ece5d6;
+  --ink: #1c1a17;
+  --ink-soft: #4a453e;
+  --ink-faint: #70685c;
+  --rule: #d9d0bf;
+  --fog: #a29a8c;
 
-  /* One accent per domain. Physics and biology are reserved for the width phase. */
-  --math: #28356c;
-  --physics: #a65b27;
-  --biology: #596c4a;
+  /* One accent per domain; `data-domain` picks which one is `--accent`. */
+  --math: #2c3b80;
+  --physics: #a4541d;
+  --biology: #4f6e3c;
   --accent: var(--ink);
 
-  --contested: #a53a2b;
+  --contested: #a8372a;
+
+  /* Paper grain, blended over both themes. */
+  --grain-opacity: 0.05;
+  --grain-blend: multiply;
 
   /* House motion rhythm, shared with the sibling apps. */
   --ease-house: cubic-bezier(0.22, 1, 0.36, 1);
   --dur-house: 700ms;
+}
+
+/* Night: the notebook by lamplight. Warm charcoal paper, bone ink, lifted accents. */
+:root[data-theme="dark"] {
+  color-scheme: dark;
+  --paper: #161512;
+  --paper-deep: #1f1d19;
+  --ink: #ebe4d4;
+  --ink-soft: #c4bcad;
+  --ink-faint: #948c7e;
+  --rule: #34302a;
+  --fog: #6e685e;
+  --math: #9fb0f0;
+  --physics: #e59c62;
+  --biology: #9fbf86;
+  --contested: #e57a64;
+  --grain-opacity: 0.07;
+  --grain-blend: screen;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    color-scheme: dark;
+    --paper: #161512;
+    --paper-deep: #1f1d19;
+    --ink: #ebe4d4;
+    --ink-soft: #c4bcad;
+    --ink-faint: #948c7e;
+    --rule: #34302a;
+    --fog: #6e685e;
+    --math: #9fb0f0;
+    --physics: #e59c62;
+    --biology: #9fbf86;
+    --contested: #e57a64;
+    --grain-opacity: 0.07;
+    --grain-blend: screen;
+  }
 }
 
 [data-domain="math"] { --accent: var(--math); }
@@ -34,6 +74,7 @@
 html {
   background: var(--paper);
   -webkit-text-size-adjust: 100%;
+  scroll-padding-top: 5.5rem;
 }
 
 body {
@@ -42,8 +83,30 @@ body {
   font-family: var(--font-serif), Georgia, serif;
   font-size: 1.0625rem;
   line-height: 1.65;
+  font-optical-sizing: auto;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  transition: background-color 300ms var(--ease-house), color 300ms var(--ease-house);
+}
+
+/* Paper grain: fractal noise over the whole page, too faint to read as texture up close. */
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: 60;
+  pointer-events: none;
+  opacity: var(--grain-opacity);
+  mix-blend-mode: var(--grain-blend);
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='220' height='220'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='3' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 0.5 0 0 0 0 0.45 0 0 0 0 0.4 0 0 0 1 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+}
+
+h1, h2, h3 {
+  text-wrap: balance;
+}
+p, li, dd {
+  text-wrap: pretty;
 }
 
 ::selection {
@@ -65,6 +128,7 @@ button:focus-visible {
     line-height: 1.4;
     letter-spacing: 0.14em;
     text-transform: uppercase;
+    font-variant-numeric: lining-nums tabular-nums;
   }
 
   /* Hatched underline marking a contested turning point. */
@@ -153,8 +217,13 @@ button:focus-visible {
 
 /* Long-form chapter prose. */
 .prose-atlas {
-  font-size: 1.1875rem;
+  font-size: 1.125rem;
   line-height: 1.72;
+  font-variant-numeric: oldstyle-nums proportional-nums;
+  hanging-punctuation: first;
+}
+@media (min-width: 640px) {
+  .prose-atlas { font-size: 1.1875rem; }
 }
 .prose-atlas p + p,
 .prose-atlas p + blockquote,
