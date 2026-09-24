@@ -212,6 +212,30 @@ $$
 
 Such functions are infinitely differentiable, equal to their power series, and so rigid that knowing them on a tiny segment determines them everywhere. Real integrals that resist every other method fall to a short detour through the complex plane.
 
+## A Closer Look: Solving a Real Integral by Going Complex
+
+Here is a real integral that complex analysis makes easy:
+
+$$
+\int_{-\infty}^{\infty} \frac{\cos x}{1 + x^2}\,dx .
+$$
+
+No elementary antiderivative exists. Instead, consider the complex function $f(z) = \frac{e^{iz}}{1 + z^2}$, whose real part on the real line is the integrand. Integrate it around a closed loop: along the real axis from $-R$ to $R$, then back along a big semicircle in the upper half-plane.
+
+Inside the loop, $f$ misbehaves at only one point, $z = i$, where $1 + z^2 = (z - i)(z + i)$ vanishes. Cauchy's theory says the whole loop integral is determined by that single point, its *residue*:
+
+$$
+\oint f(z)\,dz = 2\pi i \cdot \frac{e^{i \cdot i}}{i + i} = 2\pi i \cdot \frac{e^{-1}}{2i} = \frac{\pi}{e} .
+$$
+
+As $R$ grows, the semicircle's contribution vanishes, because $|e^{iz}| = e^{-\operatorname{Im} z} \le 1$ in the upper half-plane and the denominator grows like $R^2$. What remains is the integral along the real line. So
+
+$$
+\int_{-\infty}^{\infty} \frac{\cos x}{1 + x^2}\,dx = \frac{\pi}{e} \approx 1.1557 .
+$$
+
+The answer involves both $\pi$ and $e$, and it came from a single point off the real line where the integrand was never evaluated. This is the rigidity of holomorphic functions at work: their values on a closed curve are fixed by what happens at a few special points inside. Physicists and engineers compute integrals this way every day, and Riemann used the same idea to turn the zeros of the zeta function into information about primes.
+
 ## Riemann's Geometry and Weierstrass's Doubts
 
 {{fig:riemann|Bernhard Riemann}}'s 1851 thesis saw complex functions geometrically, as maps that preserve angles, and introduced the surfaces that bear his name. It became the root of [algebraic geometry](/math/algebraic-geometry/)'s Riemann surfaces. In 1859 he turned the same tools on the prime numbers, extending the zeta function to the whole complex plane, which is the founding move of [analytic number theory](/math/analytic-number-theory/).
