@@ -3,6 +3,7 @@ import { Legend } from "@/components/Legend";
 import { getCrossings, getFields } from "@/lib/content";
 import { DOMAINS } from "@/lib/domains";
 import { SurveyPlate } from "@/components/SurveyPlate";
+import { ThreadAtlas } from "@/components/ThreadAtlas";
 import { surveySummary } from "@/lib/stats";
 
 export default function Home() {
@@ -51,6 +52,20 @@ export default function Home() {
           </div>
         </div>
         <SurveyPlate className="settle mx-auto w-full max-w-xs sm:max-w-sm lg:max-w-none [animation-delay:150ms]" />
+      </section>
+
+      <section aria-labelledby="atlas-heading" className="border-t border-ink pb-16">
+        <h2 id="atlas-heading" className="stamp py-4 text-ink-faint">
+          The atlas at a glance
+        </h2>
+        <p className="max-w-prose text-ink-soft">
+          Every thread on one circle. Fields rarely stay inside their own thread: a solid line means a field
+          grew from a parent in another thread, and a dashed line means a result from one domain was put to
+          use in another. Select a thread to open its map.
+        </p>
+        <div className="survey-grid mt-8 border border-rule px-2 py-6 sm:px-6">
+          <ThreadAtlas />
+        </div>
       </section>
 
       <section aria-labelledby="domains-heading" className="border-t border-ink">
