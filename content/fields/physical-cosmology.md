@@ -254,6 +254,26 @@ For decades expansion did not settle how the universe began. The steady-state th
 
 In 1965 {{fig:penzias|Arno Penzias}} and {{fig:robert-wilson|Robert Wilson}} found that radiation by accident, as a hiss in a Bell Labs antenna that would not go away. It filled the sky evenly at 2.7 K. The steady state theory could not explain it, and the Big Bang became the standard picture. Satellites since then (COBE, WMAP, Planck) have mapped its tiny ripples, the seeds of all later galaxies, and measured the universe's age as 13.8 billion years.
 
+## A Closer Look: The Age and Temperature of the Universe
+
+Hubble's law says that a galaxy at distance $d$ recedes at speed $v = H_0 d$. Today's measurements give $H_0 \approx 70$ km/s per megaparsec, where a megaparsec is $3.09 \times 10^{19}$ km, about 3.3 million light-years.
+
+If every galaxy had always moved at its present speed, they would all have been together a time $d/v = 1/H_0$ ago:
+
+$$
+\frac{1}{H_0} = \frac{3.09 \times 10^{19} \text{ km}}{70 \text{ km/s}} \approx 4.4 \times 10^{17} \text{ s} \approx 14 \text{ billion years} .
+$$
+
+The expansion has not been steady, since gravity slowed it early on and dark energy speeds it up now, but the effects nearly cancel. The full calculation gives 13.8 billion years. The oldest stars are about 13 billion years old, consistent with this. Hubble's own value of $H_0$ was about 500, which implied an age of 2 billion years, younger than the Earth. That contradiction made many astronomers wary of the Big Bang for decades.
+
+The cosmic microwave background tells a second story. About 380,000 years after the Big Bang, the universe cooled to around 3,000 K, cool enough for electrons and protons to form neutral hydrogen. Light then travelled freely for the first time. Since then the universe has expanded about 1,100-fold, and the light's wavelengths have stretched by the same factor, cooling it to
+
+$$
+\frac{3000 \text{ K}}{1100} \approx 2.7 \text{ K} .
+$$
+
+That is the temperature Penzias and Wilson found, and which satellites have since measured as 2.7255 K. By Wien's law it peaks at a wavelength of about 1 millimetre, in the microwave band, which is why an antenna built for satellite communications picked it up. Two measurements, a rate of expansion and a temperature, describe the same history.
+
 ## The Dark Universe
 
 The precision revealed how much is missing. Already in the 1930s Fritz Zwicky noticed that galaxy clusters hold together only if they contain far more mass than can be seen. In the 1970s Vera Rubin's measurements showed the same for individual galaxies, whose outer stars orbit too fast. This *dark matter* outweighs ordinary matter about five to one.
