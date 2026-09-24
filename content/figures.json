@@ -9,7 +9,7 @@
   { "id": "klein", "name": "Felix Klein", "turning_point_ids": ["erlangen-program", "cayley-klein"] },
   { "id": "euler", "name": "Leonhard Euler", "turning_point_ids": ["euler-polyhedron-formula", "euler-curvature", "euler-fermat-numbers", "euler-product", "euler-introductio", "vibrating-string"] },
   { "id": "bonnet", "name": "Pierre Ossian Bonnet", "turning_point_ids": ["gauss-bonnet"] },
-  { "id": "riemann", "name": "Bernhard Riemann", "turning_point_ids": ["riemann-habilitation", "riemann-surfaces", "riemann-zeta-1859", "riemann-thesis"] },
+  { "id": "riemann", "name": "Bernhard Riemann", "turning_point_ids": ["riemann-habilitation", "riemann-surfaces", "riemann-zeta-1859", "riemann-thesis", "riemann-integral"] },
   { "id": "ricci-curbastro", "name": "Gregorio Ricci-Curbastro", "turning_point_ids": ["ricci-levi-civita"] },
   { "id": "levi-civita", "name": "Tullio Levi-Civita", "turning_point_ids": ["ricci-levi-civita", "levi-civita-parallel"] },
   { "id": "nash", "name": "John Nash", "turning_point_ids": ["nash-embedding"] },
@@ -147,7 +147,7 @@
   { "id": "lame", "name": "Gabriel Lamé", "turning_point_ids": ["lame-kummer"] },
   { "id": "liouville", "name": "Joseph Liouville", "turning_point_ids": ["lame-kummer"] },
   { "id": "kummer", "name": "Ernst Kummer", "turning_point_ids": ["lame-kummer", "kummer-ideal-numbers"] },
-  { "id": "dedekind", "name": "Richard Dedekind", "turning_point_ids": ["dedekind-ideals"] },
+  { "id": "dedekind", "name": "Richard Dedekind", "turning_point_ids": ["dedekind-ideals", "dedekind-cantor-reals"] },
   { "id": "takagi", "name": "Teiji Takagi", "turning_point_ids": ["class-field-theory"] },
   { "id": "artin", "name": "Emil Artin", "turning_point_ids": ["class-field-theory"] },
   { "id": "heegner", "name": "Kurt Heegner", "turning_point_ids": ["class-number-one"] },
@@ -186,6 +186,9 @@
   { "id": "bombelli", "name": "Rafael Bombelli", "turning_point_ids": ["cardano-bombelli"] },
   { "id": "wessel", "name": "Caspar Wessel", "turning_point_ids": ["complex-plane"] },
   { "id": "argand", "name": "Jean-Robert Argand", "turning_point_ids": ["complex-plane"] },
-  { "id": "cauchy", "name": "Augustin-Louis Cauchy", "turning_point_ids": ["cauchy-integral"] },
-  { "id": "weierstrass", "name": "Karl Weierstrass", "turning_point_ids": ["dirichlet-principle-crisis"] }
+  { "id": "cauchy", "name": "Augustin-Louis Cauchy", "turning_point_ids": ["cauchy-integral", "cauchy-cours"] },
+  { "id": "weierstrass", "name": "Karl Weierstrass", "turning_point_ids": ["dirichlet-principle-crisis", "weierstrass-monster"] },
+  { "id": "bolzano", "name": "Bernard Bolzano", "turning_point_ids": ["cauchy-cours"] },
+  { "id": "cantor", "name": "Georg Cantor", "turning_point_ids": ["dedekind-cantor-reals"] },
+  { "id": "lebesgue", "name": "Henri Lebesgue", "turning_point_ids": ["lebesgue-integral"] }
 ]
