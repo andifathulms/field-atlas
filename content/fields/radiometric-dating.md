@@ -48,10 +48,12 @@ turning_points:
     title: Radioactivity as a clock
     description: >-
       Ernest Rutherford proposes that the helium trapped in a uranium mineral, produced by
-      its alpha decays, measures the mineral's age. His first estimates give some rocks
-      hundreds of millions of years. Radioactivity also supplies heat inside the Earth,
-      undermining Kelvin's calculation that the Earth cooled from a molten ball in a few
-      tens of millions of years.
+      its alpha decays, measures the mineral's age. His first estimate, in 1904, gives one
+      mineral about 40 million years, a lower limit since helium leaks away. Later helium
+      ages run to hundreds of millions of years. Radioactivity also supplies heat inside
+      the Earth, undermining Kelvin's calculation that the Earth cooled from a molten ball
+      in a few tens of millions of years, though Kelvin's larger error was to treat the
+      interior as a rigid solid.
     contested: false
     sources:
       - citation: "Rutherford, E. (1906). Radioactive Transformations. Charles Scribner's Sons."
@@ -71,7 +73,7 @@ turning_points:
       does not easily escape.
     contested: false
     sources:
-      - citation: "Boltwood, B. B. (1907). On the ultimate disintegration products of the radio-active elements. Part II. The disintegration products of uranium. American Journal of Science 23: 77–88."
+      - citation: "Boltwood, B. B. (1907). On the ultimate disintegration products of the radio-active elements. Part II. The disintegration products of uranium. American Journal of Science 23: 78–88."
         url: null
 
   - id: holmes-geological-timescale
@@ -131,8 +133,8 @@ turning_points:
       carbon-14 than older wood, because burning fossil fuels, which have lost all their
       carbon-14, dilutes it. Tree rings then reveal that the amount of carbon-14 in the
       air has also wandered naturally. Nuclear tests nearly double it by 1963. Using
-      bristlecone pines thousands of years old, Suess builds the first calibration curve
-      from radiocarbon ages to calendar years.
+      bristlecone pines thousands of years old, Suess builds one of the first detailed
+      calibration curves from radiocarbon ages to calendar years.
     contested: false
     sources:
       - citation: "Suess, H. E. (1955). Radiocarbon concentration in modern wood. Science 122: 415–417."
@@ -144,7 +146,7 @@ open_problems:
   - id: age-of-the-moon
     name: How old is the Moon?
     status: open
-    status_note: Open as of writing; estimates range from about 4.35 to 4.51 billion years.
+    status_note: Open as of 2026. Estimates range from about 4.35 to 4.51 billion years. A 2024 proposal, that tidal heating remelted the Moon's surface 4.35 billion years ago and reset many clocks, favours an old Moon.
     description: >-
       The Moon probably formed when a Mars-sized body struck the young Earth. Some
       radiometric ages of lunar rocks and zircons point to about 4.51 billion years ago,
@@ -163,13 +165,15 @@ open_problems:
         url: null
       - citation: "Barboni, M. et al. (2017). Early formation of the Moon 4.51 billion years ago. Science Advances 3: e1602365."
         url: null
+      - citation: "Nimmo, F., Kleine, T. & Morbidelli, A. (2024). Tidally driven remelting around 4.35 billion years ago indicates the Moon is old. Nature 636: 598–602."
+        url: null
 
 applications:
   - area: Human evolution
     title: Dating early humans
     description: >-
       In 1961 potassium–argon dating of volcanic layers at Olduvai Gorge in Tanzania
-      gave the fossil hominin found there by Mary and Louis Leakey an age of about 1.75
+      gave the fossil hominin found there by Mary Leakey in 1959 an age of about 1.75
       million years, far older than expected. Volcanic ash layers dated this way now
       anchor the timeline of human evolution in East Africa, and radiometric dates of
       rocks set the pace of the whole fossil record.
@@ -217,11 +221,11 @@ further_reading:
 
 ## Kelvin's Clock
 
-In 1862 {{fig:william-thomson|William Thomson}}, later Lord Kelvin, calculated how long the Earth would take to cool from molten rock to its present temperature. His answer, revised downwards over the years to a few tens of millions of years, was far too short for the geologists and for Darwin, whose [natural selection](/biology/evolutionary-biology/) needed hundreds of millions. Kelvin's physics seemed unanswerable. He had assumed, though, that the Earth has no internal source of heat.
+In 1862 {{fig:william-thomson|William Thomson}}, later Lord Kelvin, calculated how long the Earth would take to cool from molten rock to its present temperature. His answer, revised downwards over the years to a few tens of millions of years, was far too short for the geologists and for Darwin, whose [natural selection](/biology/evolutionary-biology/) needed hundreds of millions. Kelvin's physics seemed unanswerable. He had assumed, though, that the Earth has no internal source of heat, and that heat leaves its interior only by conduction through solid rock.
 
 ## The Rocks Keep Time
 
-[Radioactivity](/physics/radioactivity/) supplied both the missing heat and a way to measure time. In 1904, lecturing at the Royal Institution with Kelvin in the audience, {{fig:ernest-rutherford|Ernest Rutherford}} pointed out that Kelvin's limit held only if no new source of heat were discovered. By his own account, the old man beamed at him. Rutherford then suggested that the helium building up in uranium minerals from alpha decay could date them, and his first estimates gave hundreds of millions of years.
+[Radioactivity](/physics/radioactivity/) supplied both the missing heat and a way to measure time. In 1904, lecturing at the Royal Institution with Kelvin in the audience, {{fig:ernest-rutherford|Ernest Rutherford}} pointed out that Kelvin's limit held only if no new source of heat were discovered. By his own account, the old man beamed at him. Rutherford also suggested that the helium building up in uranium minerals from alpha decay could date them. His first estimate was about 40 million years for one mineral, and helium ages soon ran to hundreds of millions of years.
 
 Helium leaks out of rocks, so these ages were too low. In 1907 {{fig:bertram-boltwood|Bertram Boltwood}} at Yale found that lead is the stable end of uranium's decay chain, and dated minerals from the lead they contained, at up to 2.2 billion years. {{fig:arthur-holmes|Arthur Holmes}}, a student in London, used the method in 1911 to put the first numbers on the geological periods, and argued in 1913 for an Earth of at least 1.6 billion years. Geologists who had fought Kelvin for more time now found they had more than they wanted.
 
@@ -247,7 +251,7 @@ $$
 | 1% | 38,000 years |
 | 0.1% | 57,000 years |
 
-Living carbon holds only about one carbon-14 atom per trillion carbon atoms, so after ten half-lives there is too little left to measure reliably, and radiocarbon dating stops at about 50,000 years. Laboratories still report "conventional" radiocarbon ages using Libby's original half-life of 5,568 years, about 3% short of the modern value, and let calibration absorb the difference.
+Living carbon holds only about one carbon-14 atom per trillion carbon atoms, so after about nine half-lives there is too little left to measure reliably, and radiocarbon dating stops at about 50,000 years. Laboratories still report "conventional" radiocarbon ages using Libby's original half-life of 5,568 years, about 3% short of the modern value, and let calibration absorb the difference.
 
 **Uranium and lead.** Uranium-238 decays to lead-206 with a half-life of 4.47 billion years, and uranium-235 decays to lead-207 with a half-life of 0.70 billion years. Today there is one atom of uranium-235 for every 137.88 of uranium-238. The ratio of the lead each has made in time $t$ depends only on $t$:
 

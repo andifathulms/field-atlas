@@ -104,7 +104,7 @@ turning_points:
       At a conference in Novosibirsk in 1968, Lev Artsimovich reports that the Soviet
       tokamak T-3 holds plasma at around 10 million degrees, far better than any Western
       machine. Western physicists doubt the measurement. In 1969 a team from Culham in
-      Britain takes laser equipment to Moscow, at the height of the Cold War, and confirms
+      Britain takes laser equipment to Moscow, during the Cold War, and confirms
       the temperature. The design went back to a proposal by Andrei Sakharov and Igor
       Tamm in 1950. Laboratories around the world switch to tokamaks.
     contested: false
@@ -129,25 +129,30 @@ turning_points:
       published in 2019, found no evidence for the effect but called for further
       careful work on the materials involved.
     sources:
-      - citation: "Fleischmann, M. & Pons, S. (1989). Electrochemically induced nuclear fusion of deuterium. Journal of Electroanalytical Chemistry 261(2A): 301–308."
+      - citation: "Fleischmann, M., Pons, S. & Hawkins, M. (1989). Electrochemically induced nuclear fusion of deuterium. Journal of Electroanalytical Chemistry 261(2A): 301–308."
         url: null
       - citation: "Berlinguette, C. P. et al. (2019). Revisiting the cold case of cold fusion. Nature 570: 45–51."
         url: null
 
   - id: jet-dt-record
-    date: 1997 – 2021
+    date: 1997 – 2023
     type: EXPERIMENT
     title: Deuterium–tritium in the Joint European Torus
     description: >-
-      JET, the largest tokamak of its day, at Culham, is one of only two machines to burn
-      real deuterium–tritium fuel. In 1997 it produces 16 megawatts of fusion power, about
-      two-thirds of the heating power put in. In 2021 it sustains fusion for five seconds
-      and releases 59 megajoules, a test of the conditions planned for ITER. JET closed at
-      the end of 2023.
+      JET, the largest tokamak of its day, at Culham, is one of only two magnetic
+      machines, with the American TFTR, to burn real deuterium–tritium fuel. In 1997 it
+      produces 16 megawatts of fusion power, about two-thirds of the heating power put in.
+      In 2021 it sustains fusion for five seconds and releases 59 megajoules, a test of
+      the conditions planned for ITER. In its final experiments, in October 2023, it
+      raises the record to 69 megajoules. JET closed at the end of 2023.
     contested: false
     sources:
       - citation: "Keilhacker, M. et al. (1999). High fusion performance from deuterium-tritium plasmas in JET. Nuclear Fusion 39: 209–234."
         url: null
+      - citation: "Mailloux, J. et al. (2022). Overview of JET results for optimising ITER operation. Nuclear Fusion 62: 042026."
+        url: null
+      - citation: "EUROfusion (2024). Breaking new ground: JET tokamak's latest fusion energy record shows mastery of fusion processes. Press release, 8 February 2024."
+        url: https://euro-fusion.org/eurofusion-news/dte3record/
 
   - id: nif-ignition-2022
     date: "2022"
@@ -157,19 +162,22 @@ turning_points:
       At the National Ignition Facility in California, 192 laser beams deliver 2.05
       megajoules to a peppercorn-sized capsule of deuterium–tritium, crushing it in
       billionths of a second. On 5 December 2022 the capsule releases 3.15 megajoules,
-      the first time a fusion experiment has produced more energy than was delivered to
-      the fuel. The lasers themselves drew more than a hundred times more energy from
-      the grid.
+      the first time a fusion experiment has produced more energy than the laser light
+      delivered to its target. The lasers themselves drew more than a hundred times more
+      energy from the grid. Later shots did better: in April 2025 one released 8.6
+      megajoules from 2.08, a gain of about four.
     contested: false
     sources:
       - citation: "Abu-Shawareb, H. et al. (2024). Achievement of target gain larger than unity in an inertial fusion experiment. Physical Review Letters 132(6): 065102."
         url: null
+      - citation: "Lawrence Livermore National Laboratory. Achieving fusion ignition. National Ignition Facility & Photon Science."
+        url: https://lasers.llnl.gov/science/achieving-fusion-ignition
 
 open_problems:
   - id: commercial-fusion-power
     name: Can fusion become a practical power source?
     status: open
-    status_note: Open as of writing; no fusion device has yet produced more electricity than it consumes.
+    status_note: Open as of 2026. No fusion device has yet produced more electricity than it consumes.
     description: >-
       Fusion burns an abundant fuel, emits no carbon dioxide and cannot run away like a
       fission reactor. A power plant would have to reach high gain continuously or many
@@ -226,21 +234,21 @@ In 1934 at Cambridge, {{fig:mark-oliphant|Mark Oliphant}}, {{fig:paul-harteck|Pa
 
 ## The Bomb First
 
-A fission bomb produces temperatures of tens of millions of degrees for a moment. {{fig:edward-teller|Edward Teller}} pressed for a fusion bomb from 1942 onwards, but his early designs would not work. In 1951 {{fig:stanislaw-ulam|Stanislaw Ulam}} and Teller found the arrangement that did: radiation from a fission explosion compresses and heats a separate charge of fusion fuel. On 1 November 1952 "Ivy Mike" released about 10 megatons, some 700 times the Hiroshima bomb. The Soviet Union followed within three years, with a design largely due to {{fig:andrei-sakharov|Andrei Sakharov}}.
+A fission bomb produces temperatures of tens of millions of degrees for a moment. {{fig:edward-teller|Edward Teller}} pressed for a fusion bomb from 1942 onwards, but his early designs would not work. In 1951 {{fig:stanislaw-ulam|Stanislaw Ulam}} and Teller found the arrangement that did: radiation from a fission explosion compresses and heats a separate charge of fusion fuel. On 1 November 1952 "Ivy Mike" released about 10 megatons, some 700 times the Hiroshima bomb. The Soviet Union followed within three years, with a design to which {{fig:andrei-sakharov|Andrei Sakharov}} was a leading contributor.
 
 ## Bottling the Sun
 
 A controlled reactor needs a plasma, a gas of bare nuclei and electrons, held at a hundred million degrees without touching any wall. Because a plasma is made of charged particles, magnetic fields can confine it. Programmes began in secret in Britain, the United States and the Soviet Union around 1951. In 1955 {{fig:john-lawson|John Lawson}} at Harwell set out what a reactor must achieve. Burning fuel must be hot enough, and dense enough for long enough, to release more energy than it takes to heat. Every magnetic bottle leaked. In 1958 Britain's ZETA machine announced fusion neutrons, and had to withdraw the claim within months.
 
-The breakthrough came from Moscow. In 1950 Sakharov and Igor Tamm had proposed a ring-shaped trap in which a current flows through the plasma itself. In 1968 {{fig:lev-artsimovich|Lev Artsimovich}} reported that the tokamak T-3 reached temperatures ten times better than any Western machine. Sceptical Western physicists sent a team from Culham with a laser to measure it. They confirmed the result in 1969, and tokamaks spread worldwide.
+The breakthrough came from Moscow. In 1950 Sakharov and Igor Tamm had proposed a ring-shaped trap in which a current flows through the plasma itself. In 1968 {{fig:lev-artsimovich|Lev Artsimovich}} reported that the tokamak T-3 reached temperatures about ten times higher than any Western machine. Sceptical Western physicists sent a team from Culham with a laser to measure it. They confirmed the result in 1969, and tokamaks spread worldwide.
 
-Twenty years later came an embarrassment. In 1989 {{fig:martin-fleischmann|Martin Fleischmann}} and {{fig:stanley-pons|Stanley Pons}} claimed fusion at room temperature in a jar of heavy water. Hundreds of laboratories tried to repeat it, and most found nothing. Real progress was slower. The Joint European Torus produced 16 megawatts of fusion power in 1997. In December 2022 the National Ignition Facility in California, taking a different route, crushed a fuel capsule with 192 lasers and got more fusion energy out than the laser energy that went in.
+Twenty years later came an embarrassment. In 1989 {{fig:martin-fleischmann|Martin Fleischmann}} and {{fig:stanley-pons|Stanley Pons}} claimed fusion at room temperature in a jar of heavy water. Hundreds of laboratories tried to repeat it, and most found nothing. Real progress was slower. The Joint European Torus produced 16 megawatts of fusion power in 1997, and a record 69 megajoules of fusion energy in a single pulse in 2023. In December 2022 the National Ignition Facility in California, taking a different route, crushed a fuel capsule with 192 lasers and got more fusion energy out than the laser energy that went in.
 
 ## A Closer Look: The Triple Product
 
 **The fuel.** A deuterium nucleus and a tritium nucleus fuse into helium-4 and a neutron. The masses are 2.014102 u and 3.016049 u in, and 4.002602 u and 1.008665 u out. The mass lost is 0.018884 u, and multiplying by 931.5 MeV per u gives 17.6 MeV per reaction. Per kilogram of fuel that is $3.4 \times 10^{14}$ J, four times the energy of fissioning a kilogram of uranium-235, and about ten million times the energy of burning a kilogram of carbon.
 
-**The barrier.** Before they can fuse, the two nuclei must approach within about 3.2 femtometres against their electrical repulsion, an energy of about 0.44 MeV. A plasma at 15 keV, which is about 170 million degrees, has particles with average energy a thirtieth of that. Fusion happens only because a few fast particles [tunnel](/physics/quantum-mechanics/) through the barrier, as in the Sun.
+**The barrier.** Before they can fuse, the two nuclei must approach within about 3.2 femtometres against their electrical repulsion, an energy of about 0.44 MeV. A plasma at 15 keV, which is about 170 million degrees, has particles with a typical energy of a thirtieth of that. Fusion happens only because a few fast particles [tunnel](/physics/quantum-mechanics/) through the barrier, as in the Sun.
 
 **Lawson's condition.** For deuterium–tritium fuel to ignite, the density of particles $n$, the temperature $T$ and the energy confinement time $\tau$, the time the plasma would take to lose its heat if not reheated, must satisfy roughly
 
@@ -256,8 +264,8 @@ $$
 
 That is the design target of tokamaks such as ITER. Laser fusion takes the opposite route: it squeezes the fuel to many times the density of lead, and then a confinement time of well under a billionth of a second suffices.
 
-**The gain.** At the National Ignition Facility on 5 December 2022, 2.05 MJ of laser light produced 3.15 MJ of fusion energy, a gain of $3.15 / 2.05 \approx 1.5$. It was a real threshold, but a power plant would need a gain many times larger, since making the laser light takes more than a hundred times more electricity than the light carries.
+**The gain.** At the National Ignition Facility on 5 December 2022, 2.05 MJ of laser light produced 3.15 MJ of fusion energy, a gain of $3.15 / 2.05 \approx 1.5$. It was a real threshold. The best shot since, in April 2025, reached a gain of about 4.1. But a power plant would need a gain many times larger, since making the laser light takes more than a hundred times more electricity than the light carries.
 
 ## Still Coming
 
-Fusion has been said to be thirty years away for seventy years. The physics is now largely understood, and the problems left are engineering: materials that survive the neutrons, a way to breed tritium, and a machine cheap enough to run. ITER, a tokamak being built in France by a collaboration of seven members including China, the European Union, India, Japan, Korea, Russia and the United States, is meant to produce ten times more fusion power than it absorbs. Private companies are racing it with smaller designs. Whether any of them will put fusion power on a grid is one of the open questions of the century.
+Fusion has been said to be thirty years away for seventy years. The physics is now largely understood, and the problems left are engineering: materials that survive the neutrons, a way to breed tritium, and a machine cheap enough to run. ITER, a tokamak being built in France by a collaboration of seven members including China, the European Union, India, Japan, Korea, Russia and the United States, is meant to produce ten times more fusion power than the heating power put into its plasma. Private companies are racing it with smaller designs. Whether any of them will put fusion power on a grid is one of the open questions of the century.

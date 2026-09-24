@@ -109,8 +109,9 @@ turning_points:
       At McGill University in Montreal, Rutherford and the chemist Frederick Soddy find
       that thorium continually produces new substances, each chemically distinct and
       each decaying at its own fixed rate. Radioactive atoms are changing into atoms of
-      other elements. Harriet Brooks, Rutherford's first graduate student, had shown
-      that thorium's radioactive "emanation" is a heavy gas, a key clue. The idea that
+      other elements. Harriet Brooks, Rutherford's first graduate student at McGill, had
+      shown by its diffusion that thorium's radioactive "emanation" is a gas much lighter
+      than thorium, so a different substance, a key clue. The idea that
       elements can change was at first derided as alchemy.
     contested: false
     sources:
@@ -125,8 +126,8 @@ turning_points:
     title: Radium is always warm
     description: >-
       Pierre Curie and Albert Laborde find that radium salts keep themselves warmer than
-      their surroundings. A gram of radium releases about 100 calories an hour, roughly
-      enough to bring its own weight of water from freezing to boiling, without
+      their surroundings. A gram of radium releases about 100 calories an hour, enough
+      each hour to bring its own weight of water from freezing to boiling, without
       apparent end. The energy stored inside atoms
       was enormous. It meant the Earth and the Sun could have hidden sources of heat that
       Kelvin's calculations of their ages had left out.
@@ -144,8 +145,9 @@ turning_points:
       the alpha particles from different substances travel with how fast those substances
       decay. The more energetic the particles, the shorter the half-life, following a
       simple straight-line law on a logarithmic plot. Nobody could explain why a small
-      change in energy made such an enormous difference in lifetime until George Gamow
-      applied quantum tunnelling to it in 1928.
+      change in energy made such an enormous difference in lifetime until George Gamow,
+      and independently Ronald Gurney and Edward Condon, applied quantum tunnelling to it
+      in 1928.
     contested: false
     sources:
       - citation: "Geiger, H. & Nuttall, J. M. (1911). The ranges of the α particles from various radioactive substances and a relation between range and period of transformation. Philosophical Magazine 22: 613–621."
@@ -155,13 +157,14 @@ open_problems:
   - id: neutron-lifetime-puzzle
     name: How long does a free neutron live?
     status: open
-    status_note: Open as of writing; the two methods still disagree by about nine seconds.
+    status_note: Open as of 2026. The averages of the two methods still disagree by about ten seconds, some five times their combined uncertainty.
     description: >-
       A neutron outside a nucleus is radioactive. It beta-decays into a proton, an
       electron and an antineutrino, with a mean lifetime of about a quarter of an hour.
       Counting the protons emerging from a beam of neutrons gives about 888 seconds.
       Trapping very slow neutrons in a "bottle" and counting the survivors gives about
-      878 seconds. Both methods claim uncertainties of a second or two.
+      878 seconds. The beam results claim uncertainties of about two seconds, the best
+      bottle results a fraction of a second.
     why_hard: >-
       Each method has its own hard-to-measure corrections: the absolute counting of
       protons and neutrons in beams, and neutrons lost from bottles through their walls.
@@ -176,6 +179,8 @@ open_problems:
         url: null
       - citation: "Gonzalez, F. M. et al. (UCNτ Collaboration) (2021). Improved neutron lifetime measurement with UCNτ. Physical Review Letters 127: 162501."
         url: null
+      - citation: "Lauss, B. & Ries, D. (2026). The beam–bottle debate at PSI. CERN Courier, 14 January 2026."
+        url: https://cerncourier.com/a/the-beam-bottle-debate-at-psi/
 
 applications:
   - area: Statistics
@@ -228,19 +233,19 @@ further_reading:
 
 In January 1896 the world learned of Röntgen's X-rays, invisible rays from the glowing glass of a cathode-ray tube that passed through flesh and fogged photographic plates. {{fig:henri-becquerel|Henri Becquerel}}, an expert on minerals that glow after exposure to light, wondered whether they emit X-rays too. He wrapped photographic plates in black paper, laid uranium salts on top, and set them in the sun. The plates were fogged. Then a spell of cloudy weather stopped the experiment. He developed the plates anyway, expecting faint images, and found them strongly fogged. The uranium needed no sunlight. It emitted rays of its own, day after day, from no visible source of energy.
 
-The rays made air conduct electricity, a legacy of [electromagnetism](/physics/electromagnetism/) that gave the best way to measure them. {{fig:marie-curie|Marie Curie}}, a doctoral student in Paris, used an electrometer designed by {{fig:pierre-curie|Pierre Curie}} and his brother Jacques. She found that the strength of the rays depended only on how much uranium a sample held, whatever its chemical form, so the emission came from inside the atoms. Thorium did the same. The uranium ore pitchblende was more active than its uranium could explain, so it had to contain something else. Working through tonnes of ore in a leaking shed, the Curies found polonium, named after Marie's native Poland, and radium, a million times more active than uranium. She called the property radioactivity.
+The rays made air conduct electricity, a legacy of [electromagnetism](/physics/electromagnetism/) that gave the best way to measure them. {{fig:marie-curie|Marie Curie}}, a doctoral student in Paris, used an electrometer designed by {{fig:pierre-curie|Pierre Curie}} and his brother Jacques. She found that the strength of the rays depended only on how much uranium a sample held, whatever its chemical form, so the emission came from inside the atoms. Thorium did the same. The uranium ore pitchblende was more active than its uranium could explain, so it had to contain something else. Working through tonnes of ore in a leaking shed, the Curies found polonium, named after Marie's native Poland, and radium, about a million times more active than uranium. She called the property radioactivity.
 
 ## Atoms That Change
 
-At McGill University in Montreal, {{fig:ernest-rutherford|Ernest Rutherford}} sorted the radiation into kinds. Alpha rays were stopped by a sheet of paper, beta rays passed through thin metal, and gamma rays, found by Paul Villard in 1900, went through almost anything. The strangest finding was that thorium kept producing new radioactive substances. {{fig:harriet-brooks|Harriet Brooks}}, Rutherford's first research student, showed that one of them, the "emanation", was a heavy gas. With the chemist {{fig:frederick-soddy|Frederick Soddy}}, Rutherford concluded in 1902 that radioactive atoms were changing into atoms of other elements. "Don't call it transmutation," Rutherford is said to have told Soddy, "they'll have our heads off as alchemists."
+At McGill University in Montreal, {{fig:ernest-rutherford|Ernest Rutherford}} sorted the radiation into kinds. Alpha rays were stopped by a sheet of paper, beta rays passed through thin metal, and gamma rays, found by Paul Villard in 1900, went through almost anything. The strangest finding was that thorium kept producing new radioactive substances. {{fig:harriet-brooks|Harriet Brooks}}, Rutherford's first research student at McGill, showed that one of them, the "emanation", was a gas much lighter than thorium, so not thorium at all. With the chemist {{fig:frederick-soddy|Frederick Soddy}}, Rutherford concluded in 1902 that radioactive atoms were changing into atoms of other elements. "Don't call it transmutation," Rutherford is said to have told Soddy, "they'll have our heads off as alchemists."
 
-Each substance decayed at its own fixed rate. Half of any sample was gone in a characteristic time, its half-life, and heat, pressure and chemistry had no effect on it. In 1903 Pierre Curie and Albert Laborde found that radium stays warmer than its surroundings, indefinitely. The energy locked inside atoms was a million times larger than any chemical energy. Kelvin had calculated that the Earth cooled from a molten ball in a few tens of millions of years, and that the Sun could shine only as long. Neither calculation had allowed for radioactivity, and both were wrong.
+Each substance decayed at its own fixed rate. Half of any sample was gone in a characteristic time, its half-life, and heat, pressure and chemistry had no effect on it. In 1903 Pierre Curie and Albert Laborde found that radium stays warmer than its surroundings, indefinitely. The energy locked inside atoms was a million times larger than any chemical energy. Kelvin had calculated that the Earth cooled from a molten ball in a few tens of millions of years, and that the Sun could shine only as long. Neither calculation had allowed for energy inside atoms, and both were wrong. The Sun, it turned out, runs on nuclear fusion. For the Earth, Kelvin's larger error was to treat its interior as a rigid solid, but radioactive heat mattered too.
 
 ## Probing the Atom
 
-Alpha particles, which Rutherford showed in 1908 with Thomas Royds to be helium nuclei, became his favourite tool. Fired at gold foil by {{fig:hans-geiger|Hans Geiger}} and Ernest Marsden in Manchester, they revealed in 1911 that each atom has a tiny, heavy nucleus, a turning point of [old quantum theory](/physics/old-quantum-theory/). Radioactivity, it followed, happened inside the nucleus.
+Alpha particles, which Rutherford showed in 1908 with Thomas Royds to be helium nuclei, became his favourite tool. Fired at gold foil by {{fig:hans-geiger|Hans Geiger}} and Ernest Marsden in Manchester from 1909, they revealed, in Rutherford's analysis of 1911, that each atom has a tiny, heavy nucleus, a turning point of [old quantum theory](/physics/old-quantum-theory/). Radioactivity, it followed, happened inside the nucleus.
 
-The same year Geiger and {{fig:john-nuttall|John Nuttall}} found a curious rule. Alpha emitters with more energetic particles decay much faster. The dependence was absurdly steep, and classical physics could not explain how alpha particles escaped the nucleus at all, since they lacked the energy to climb over its electrical barrier. In 1928 {{fig:george-gamow|George Gamow}} explained both. Quantum mechanics lets a particle tunnel through a barrier it cannot climb, with a probability that depends extremely sharply on its energy. The same tunnelling, run in reverse, lets the Sun shine, as [stellar astrophysics](/physics/stellar-astrophysics/) describes.
+The same year Geiger and {{fig:john-nuttall|John Nuttall}} found a curious rule. Alpha emitters with more energetic particles decay much faster. The dependence was absurdly steep, and classical physics could not explain how alpha particles escaped the nucleus at all, since they lacked the energy to climb over its electrical barrier. In 1928 {{fig:george-gamow|George Gamow}}, and independently Ronald Gurney and Edward Condon, explained both. Quantum mechanics lets a particle tunnel through a barrier it cannot climb, with a probability that depends extremely sharply on its energy. The same tunnelling, run in reverse, lets the Sun shine, as [stellar astrophysics](/physics/stellar-astrophysics/) describes.
 
 ## A Closer Look: Counting Decays
 

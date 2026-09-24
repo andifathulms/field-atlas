@@ -70,8 +70,9 @@ turning_points:
     title: The first artificial transmutation
     description: >-
       Firing alpha particles through nitrogen gas, Ernest Rutherford detects fast
-      hydrogen nuclei knocked out of the nitrogen. An alpha particle has entered a
-      nitrogen nucleus and turned it into oxygen, releasing a hydrogen nucleus. It was the
+      hydrogen nuclei knocked out of the nitrogen. Patrick Blackett's cloud-chamber
+      photographs showed in 1925 what had happened: an alpha particle enters a nitrogen
+      nucleus and turns it into oxygen, releasing a hydrogen nucleus. It was the
       first nuclear reaction caused on purpose, and the hydrogen nucleus was soon named
       the proton, a building block of every nucleus.
     contested: false
@@ -122,7 +123,7 @@ turning_points:
       Hideki Yukawa proposes that protons and neutrons attract each other by exchanging a
       new particle, much as charges interact by exchanging light. The short range of the
       force means the particle must be heavy, about 200 times the mass of the electron.
-      A particle of roughly that mass found in 1937 turned out to be the wrong one, the
+      A particle of roughly that mass found in 1936 turned out to be the wrong one, the
       muon. The right one, the pion, was found in cosmic rays in 1947, and Yukawa became
       Japan's first Nobel laureate in 1949.
     contested: false
@@ -158,7 +159,8 @@ turning_points:
       Jensen and Hans Suess in Germany, explain these magic numbers: protons and neutrons
       move in orbits that fill in shells, provided each particle's spin is strongly
       coupled to its orbital motion. Against the prevailing liquid-drop picture, the
-      nucleus has an inner order. Mayer and Jensen shared the 1963 Nobel prize.
+      nucleus has an inner order. Mayer and Jensen shared half of the 1963 Nobel prize
+      in physics. The other half went to Eugene Wigner.
     contested: false
     sources:
       - citation: "Mayer, M. G. (1949). On closed shells in nuclei. II. Physical Review 75: 1969–1970."
@@ -170,9 +172,9 @@ open_problems:
   - id: limits-of-nuclear-chart
     name: Where does the chart of nuclei end?
     status: open
-    status_note: Open as of writing; element 118, oganesson, is the heaviest made, and no nucleus in the predicted island of stability has been reached.
+    status_note: Open as of 2026. Element 118, oganesson, is the heaviest made, and no nucleus in the predicted island of stability has been reached.
     description: >-
-      About 3,300 nuclei are known. Theory suggests about 7,000 could exist before protons
+      More than 3,300 nuclei are known. Theory suggests about 7,000 could exist before protons
       or neutrons simply drip off. At the heavy end, the shell model predicts an "island
       of stability" near 114 to 126 protons and 184 neutrons, where superheavy nuclei
       might live for minutes or longer instead of milliseconds.
@@ -235,7 +237,7 @@ By 1910 chemists had separated about forty radioactive substances, each with its
 
 ## Protons and Neutrons
 
-What was the nucleus made of? In 1919 {{fig:ernest-rutherford|Ernest Rutherford}}, firing alpha particles through nitrogen, knocked out hydrogen nuclei. He had changed nitrogen into oxygen, the first nuclear reaction made by hand, and the hydrogen nucleus, the proton, was clearly a building block. But protons alone gave the wrong masses. Helium has twice the charge of hydrogen and four times the mass.
+What was the nucleus made of? In 1919 {{fig:ernest-rutherford|Ernest Rutherford}}, firing alpha particles through nitrogen, knocked out hydrogen nuclei. He had, as Patrick Blackett showed in 1925, changed nitrogen into oxygen, the first nuclear reaction made by hand, and the hydrogen nucleus, the proton, was clearly a building block. But protons alone gave the wrong masses. Helium has twice the charge of hydrogen and four times the mass.
 
 In 1932 {{fig:james-chadwick|James Chadwick}} found the missing piece. The Joliot-Curies in Paris had seen beryllium emit a radiation that knocked protons out of wax, and took it for gamma rays. Chadwick showed it was a neutral particle about as heavy as the proton: the neutron. A nucleus is built of protons and neutrons, and isotopes differ in their neutrons. Something must hold the protons together against their electrical repulsion. In 1935 {{fig:hideki-yukawa|Hideki Yukawa}} proposed a force carried by a new, heavy particle, the first theory of the strong force and the start of a long road to [particle physics](/physics/particle-physics/).
 
@@ -243,7 +245,7 @@ In 1932 {{fig:james-chadwick|James Chadwick}} found the missing piece. The Jolio
 
 [Quantum mechanics](/physics/quantum-mechanics/) could not yet calculate a nucleus from its parts. Physicists used models instead. In 1935 {{fig:carl-von-weizsacker|Carl Friedrich von Weizsäcker}} treated the nucleus as a drop of liquid, whose binding energy grows with its volume, is reduced at its surface, and is weakened by the protons' repulsion. The formula fitted the measured masses remarkably well. {{fig:niels-bohr|Niels Bohr}} used the same picture to explain how a nucleus swallows a neutron. Four years later it would explain fission.
 
-Yet some nuclei did not fit. Those with 2, 8, 20, 28, 50, 82 or 126 protons or neutrons were unusually stable and common, like the noble gases among atoms. In 1949 {{fig:maria-goeppert-mayer|Maria Goeppert Mayer}}, working unpaid as a "volunteer professor" in Chicago, found the explanation after Enrico Fermi asked her whether there was any evidence of spin–orbit coupling. There was. If each particle's spin is strongly tied to its orbit, the energy levels group into shells that close at exactly those numbers. {{fig:hans-jensen|Hans Jensen}}, with Otto Haxel and {{fig:hans-suess|Hans Suess}}, found the same answer in Germany. A drop and a set of orbits were both right, for different questions.
+Yet some nuclei did not fit. Those with 2, 8, 20, 28, 50, 82 or 126 protons or neutrons were unusually stable and common, like the noble gases among atoms. In 1949 {{fig:maria-goeppert-mayer|Maria Goeppert Mayer}}, an unpaid "voluntary associate professor" at the University of Chicago, found the explanation after Enrico Fermi asked her whether there was any evidence of spin–orbit coupling. There was. If each particle's spin is strongly tied to its orbit, the energy levels group into shells that close at exactly those numbers. {{fig:hans-jensen|Hans Jensen}}, with Otto Haxel and {{fig:hans-suess|Hans Suess}}, found the same answer in Germany. A drop and a set of orbits were both right, for different questions.
 
 ## A Closer Look: Weighing the Glue
 

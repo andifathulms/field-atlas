@@ -64,7 +64,7 @@ turning_points:
     sources:
       - citation: "Fermi, E. (1934). Possible production of elements of atomic number higher than 92. Nature 133: 898–899."
         url: null
-      - citation: "Noddack, I. (1934). Über das Element 93. Zeitschrift für Angewandte Chemie 47: 653."
+      - citation: "Noddack, I. (1934). Über das Element 93. Zeitschrift für Angewandte Chemie 47: 653–655."
         url: null
 
   - id: hahn-strassmann-barium
@@ -75,8 +75,8 @@ turning_points:
       In Berlin, the chemists Otto Hahn and Fritz Strassmann search for the radium they
       think neutron-bombarded uranium produces. Their careful chemistry shows it is
       barium, an element about half as heavy as uranium. Hahn writes to his long-time
-      colleague Lise Meitner, who had fled to Sweden that summer: "Perhaps you can suggest
-      some fantastic explanation."
+      colleague Lise Meitner, who had fled to Sweden that summer. In one English
+      translation: "Perhaps you can come up with some sort of fantastic explanation."
     contested: false
     sources:
       - citation: "Hahn, O. & Strassmann, F. (1939). Über den Nachweis und das Verhalten der bei der Bestrahlung des Urans mittels Neutronen entstehenden Erdalkalimetalle. Die Naturwissenschaften 27: 11–15."
@@ -129,7 +129,7 @@ turning_points:
       Enrico Fermi, with Leo Szilard among its designers, stacks graphite blocks and
       uranium into a pile. On 2 December 1942 the control rods are slowly withdrawn and
       the neutron count climbs without levelling off. The first human-made chain
-      reaction runs for about four minutes at half a watt.
+      reaction runs for about four and a half minutes at half a watt.
     contested: false
     sources:
       - citation: "Fermi, E. (1952). Experimental production of a divergent chain reaction. American Journal of Physics 20: 536–558."
@@ -175,7 +175,7 @@ open_problems:
   - id: microscopic-fission-theory
     name: Can fission be calculated from first principles?
     status: open
-    status_note: Open as of writing; large computer calculations now follow a splitting nucleus, but still rely on fitted forces.
+    status_note: Open as of 2026. Large computer calculations now follow a splitting nucleus, but still rely on fitted forces.
     description: >-
       More than eighty years after its discovery, fission is still described largely by
       models tuned to data. Why uranium usually splits into unequal fragments, one near
@@ -228,7 +228,7 @@ applications:
 further_reading:
   - citation: "Rhodes, R. (1986). The Making of the Atomic Bomb. Simon & Schuster."
     url: null
-    note: The definitive history, from the physics of the 1930s to Hiroshima. Pulitzer prize winner.
+    note: The classic history, from the physics of the 1930s to Hiroshima. Pulitzer prize winner.
   - citation: "Sime, R. L. (1996). Lise Meitner: A Life in Physics. University of California Press."
     url: null
     note: The biography that restored Meitner's place in the discovery of fission.
