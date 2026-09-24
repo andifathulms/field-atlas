@@ -377,7 +377,7 @@
   { "id": "eric-lutz", "name": "Eric Lutz", "turning_point_ids": ["landauer-experiment"] },
   { "id": "hans-geiger", "name": "Hans Geiger", "turning_point_ids": ["rutherford-nucleus", "geiger-nuttall-law"] },
   { "id": "ernest-marsden", "name": "Ernest Marsden", "turning_point_ids": ["rutherford-nucleus"] },
-  { "id": "ernest-rutherford", "name": "Ernest Rutherford", "turning_point_ids": ["rutherford-nucleus", "rutherford-alpha-beta", "rutherford-soddy-transmutation", "rutherford-nitrogen-transmutation", "oliphant-dd-fusion"] },
+  { "id": "ernest-rutherford", "name": "Ernest Rutherford", "turning_point_ids": ["rutherford-nucleus", "rutherford-alpha-beta", "rutherford-soddy-transmutation", "rutherford-nitrogen-transmutation", "oliphant-dd-fusion", "rutherford-rock-ages"] },
   { "id": "niels-bohr", "name": "Niels Bohr", "turning_point_ids": ["bohr-atom", "magnet-bohr-van-leeuwen", "liquid-drop-model", "bohr-wheeler-fission"] },
   { "id": "robert-millikan", "name": "Robert Millikan", "turning_point_ids": ["millikan-photoelectric"] },
   { "id": "arthur-compton", "name": "Arthur Compton", "turning_point_ids": ["compton-scattering"] },
@@ -711,7 +711,7 @@
   { "id": "hideki-yukawa", "name": "Hideki Yukawa", "turning_point_ids": ["yukawa-meson"] },
   { "id": "maria-goeppert-mayer", "name": "Maria Goeppert Mayer", "turning_point_ids": ["nuclear-shell-model"] },
   { "id": "hans-jensen", "name": "J. Hans D. Jensen", "turning_point_ids": ["nuclear-shell-model"] },
-  { "id": "hans-suess", "name": "Hans Suess", "turning_point_ids": ["nuclear-shell-model"] },
+  { "id": "hans-suess", "name": "Hans Suess", "turning_point_ids": ["nuclear-shell-model", "radiocarbon-calibration"] },
   { "id": "ida-noddack", "name": "Ida Noddack", "turning_point_ids": ["fermi-neutron-bombardment"] },
   { "id": "otto-hahn", "name": "Otto Hahn", "turning_point_ids": ["hahn-strassmann-barium"] },
   { "id": "fritz-strassmann", "name": "Fritz Strassmann", "turning_point_ids": ["hahn-strassmann-barium"] },
@@ -727,5 +727,9 @@
   { "id": "john-lawson", "name": "John D. Lawson", "turning_point_ids": ["lawson-criterion"] },
   { "id": "lev-artsimovich", "name": "Lev Artsimovich", "turning_point_ids": ["tokamak-t3"] },
   { "id": "martin-fleischmann", "name": "Martin Fleischmann", "turning_point_ids": ["cold-fusion-1989"] },
-  { "id": "stanley-pons", "name": "Stanley Pons", "turning_point_ids": ["cold-fusion-1989"] }
+  { "id": "stanley-pons", "name": "Stanley Pons", "turning_point_ids": ["cold-fusion-1989"] },
+  { "id": "bertram-boltwood", "name": "Bertram Boltwood", "turning_point_ids": ["boltwood-uranium-lead"] },
+  { "id": "arthur-holmes", "name": "Arthur Holmes", "turning_point_ids": ["holmes-geological-timescale"] },
+  { "id": "clair-patterson", "name": "Clair Patterson", "turning_point_ids": ["patterson-earth-age"] },
+  { "id": "willard-libby", "name": "Willard Libby", "turning_point_ids": ["libby-radiocarbon"] }
 ]
