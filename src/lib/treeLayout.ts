@@ -332,7 +332,8 @@ function cost(nodes: TreeNode[]): number {
     for (let j = i + 1; j < edges.length; j++) {
       const a = edges[i];
       const b = edges[j];
-      if (a.from === b.from || a.to === b.to) continue;
+      // Branches that share an endpoint can still weave around each other; the gap is
+      // exactly zero at the shared point, which the sign test ignores.
       const top = Math.max(a.source[1], b.source[1]);
       const bottom = Math.min(a.target[1], b.target[1]);
       if (bottom <= top) continue;
