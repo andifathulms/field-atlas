@@ -2,7 +2,7 @@
   { "id": "euclid", "name": "Euclid of Alexandria", "turning_point_ids": ["elements-compiled", "euclid-primes"] },
   { "id": "saccheri", "name": "Girolamo Saccheri", "turning_point_ids": ["parallel-postulate-crisis"] },
   { "id": "hilbert", "name": "David Hilbert", "turning_point_ids": ["hilbert-grundlagen", "hilbert-no-hyperbolic-surface", "einstein-field-equations"] },
-  { "id": "gauss", "name": "Carl Friedrich Gauss", "turning_point_ids": ["lobachevsky-bolyai", "theorema-egregium", "gauss-disquisitiones", "pnt-conjectured"] },
+  { "id": "gauss", "name": "Carl Friedrich Gauss", "turning_point_ids": ["lobachevsky-bolyai", "theorema-egregium", "gauss-disquisitiones", "pnt-conjectured", "gaussian-integers"] },
   { "id": "lobachevsky", "name": "Nikolai Lobachevsky", "turning_point_ids": ["lobachevsky-bolyai"] },
   { "id": "bolyai", "name": "János Bolyai", "turning_point_ids": ["lobachevsky-bolyai"] },
   { "id": "beltrami", "name": "Eugenio Beltrami", "turning_point_ids": ["beltrami-model"] },
@@ -143,5 +143,14 @@
   { "id": "selberg", "name": "Atle Selberg", "turning_point_ids": ["erdos-selberg"] },
   { "id": "erdos", "name": "Paul Erdős", "turning_point_ids": ["erdos-selberg"] },
   { "id": "yitang-zhang", "name": "Yitang Zhang", "turning_point_ids": ["bounded-gaps"] },
-  { "id": "maynard", "name": "James Maynard", "turning_point_ids": ["bounded-gaps"] }
+  { "id": "maynard", "name": "James Maynard", "turning_point_ids": ["bounded-gaps"] },
+  { "id": "lame", "name": "Gabriel Lamé", "turning_point_ids": ["lame-kummer"] },
+  { "id": "liouville", "name": "Joseph Liouville", "turning_point_ids": ["lame-kummer"] },
+  { "id": "kummer", "name": "Ernst Kummer", "turning_point_ids": ["lame-kummer", "kummer-ideal-numbers"] },
+  { "id": "dedekind", "name": "Richard Dedekind", "turning_point_ids": ["dedekind-ideals"] },
+  { "id": "takagi", "name": "Teiji Takagi", "turning_point_ids": ["class-field-theory"] },
+  { "id": "artin", "name": "Emil Artin", "turning_point_ids": ["class-field-theory"] },
+  { "id": "heegner", "name": "Kurt Heegner", "turning_point_ids": ["class-number-one"] },
+  { "id": "alan-baker", "name": "Alan Baker", "turning_point_ids": ["class-number-one"] },
+  { "id": "stark", "name": "Harold Stark", "turning_point_ids": ["class-number-one"] }
 ]
