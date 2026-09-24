@@ -23,7 +23,7 @@ key_ideas:
     turning_point_id: equivalence-principle
   - term: Curved spacetime
     definition: >-
-      Spacetime is a four-dimensional Riemannian-type manifold whose metric $g_{\mu\nu}$
+      Spacetime is a four-dimensional curved (pseudo-Riemannian) manifold whose metric $g_{\mu\nu}$
       is shaped by matter and energy. Its curvature *is* gravity.
     turning_point_id: einstein-field-equations
   - term: Einstein field equations

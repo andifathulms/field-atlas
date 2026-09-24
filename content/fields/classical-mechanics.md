@@ -70,7 +70,7 @@ turning_points:
       two thousand years of astronomy were gone.
     contested: false
     sources:
-      - citation: "Kepler, J. (1609). Astronomia nova. Prague."
+      - citation: "Kepler, J. (1609). Astronomia nova. Heidelberg."
         url: null
       - citation: "Kepler, J. (1619). Harmonices mundi. Linz."
         url: null
@@ -89,7 +89,7 @@ turning_points:
       Robert Hooke claimed that he had given Newton the inverse-square law. In letters of
       1679–80 he had suggested that orbits combine straight-line motion with an
       attraction toward the Sun falling off as the inverse square of distance. Newton
-      conceded nothing and removed references to Hooke. Historians generally credit
+      conceded nothing and struck nearly all references to Hooke from the manuscript. Historians generally credit
       Hooke with the suggestion and Newton with the mathematical demonstration that made
       it a theory, but how much the correspondence shaped Newton's thinking is debated.
     sources:
@@ -184,7 +184,8 @@ applications:
     title: Forecasting as fluid mechanics
     description: >-
       Numerical weather prediction solves the equations of fluid motion on a grid
-      covering the planet. Lewis Fry Richardson attempted it by hand in 1922. Modern
+      covering the planet. Lewis Fry Richardson attempted it by hand during the First World War and published
+      the method in 1922. Modern
       forecasts and climate models are the same idea at vastly larger scale.
     sources:
       - citation: "Richardson, L. F. (1922). Weather Prediction by Numerical Process. Cambridge University Press."
@@ -221,7 +222,7 @@ Meanwhile {{fig:kepler|Johannes Kepler}}, fitting Tycho Brahe's observations, fo
 
 {{fig:newton|Isaac Newton}}'s *Principia* (1687) supplied it. Three laws of motion (inertia, $F = ma$, action and reaction) and one law of gravity, an attraction between every pair of masses falling off as the square of the distance, reproduce Kepler's ellipses exactly. The Moon is falling toward the Earth just as an apple does. It simply moves sideways fast enough to keep missing.
 
-The achievement was contested from the start. {{fig:hooke|Robert Hooke}} insisted he had suggested the inverse-square law to Newton in their correspondence, and Newton answered by deleting Hooke's name from his book. Others objected to gravity itself: a force acting instantly across empty space, with no mechanism. Newton famously declined to explain it: *hypotheses non fingo*, "I frame no hypotheses". That unease about how gravity acts at a distance would be answered only by [general relativity](/physics/general-relativity/).
+The achievement was contested from the start. {{fig:hooke|Robert Hooke}} insisted he had suggested the inverse-square law to Newton in their correspondence, and Newton answered by striking nearly every mention of Hooke from his book. Others objected to gravity itself: a force acting instantly across empty space, with no mechanism. Newton famously declined to explain it: *hypotheses non fingo*, "I frame no hypotheses". That unease about how gravity acts at a distance would be answered only by [general relativity](/physics/general-relativity/).
 
 ## The Clockwork Universe
 
@@ -247,7 +248,7 @@ $$
 
 The two agree. The fall of an apple in an orchard and the orbit of the Moon are the same phenomenon, given one rule about how gravity weakens with distance.
 
-Put differently, in one second the Moon falls about $\tfrac12 \times 0.00272 \approx 1.4$ millimetres towards the Earth, while moving about a kilometre sideways. The curve of its path is exactly that fall. Newton's first attempt did not match as well, partly because the Earth's radius was poorly known. The close agreement, published in the *Principia*, was the first time a law found on Earth was shown to govern the heavens.
+Put differently, in one second the Moon falls about $\tfrac12 \times 0.00272 \approx 1.4$ millimetres towards the Earth, while moving about a kilometre sideways. The curve of its path is exactly that fall. Newton's first attempt did not match as well, partly because the Earth's radius was poorly known. The close agreement, published in the *Principia*, showed that a law found on Earth governs the heavens.
 
 ## Cracks at the Edges
 

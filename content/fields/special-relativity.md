@@ -115,7 +115,8 @@ turning_points:
     title: Fast muons live longer
     description: >-
       Muons created by cosmic rays high in the atmosphere decay in about two
-      microseconds, too quickly for most to reach the ground at any speed. Bruno Rossi
+      microseconds, too quickly for most to reach the ground if their clocks ran at the
+      normal rate. Bruno Rossi
       and David Hall measure how their survival depends on energy and find that fast
       muons live longer, as time dilation predicts. Moving clocks really do run slow.
     contested: false
@@ -206,7 +207,7 @@ $$
 
 just as rotated observers in ordinary space disagree about $x$ and $y$ but agree on distance. Special relativity is the geometry of a four-dimensional *spacetime*, and a change of velocity is a kind of rotation in it. The minus sign makes the geometry strange: the space of possible velocities turns out to be a [hyperbolic space](/math/non-euclidean-geometry/), the non-Euclidean geometry of Lobachevsky and Bolyai.
 
-Einstein at first called this "superfluous learnedness". Within a few years he found he could not build a theory of gravity without it.
+Einstein at first is said to have called this "superfluous learnedness". Within a few years he found he could not build a theory of gravity without it.
 
 ## A Closer Look: Muons That Should Not Reach the Ground
 

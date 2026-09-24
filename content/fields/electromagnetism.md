@@ -152,7 +152,7 @@ applications:
   - area: Communications
     title: Radio, Wi-Fi and every wireless signal
     description: >-
-      Within a decade of Hertz's experiments, Guglielmo Marconi was sending radio
+      Little more than a decade after Hertz's experiments, Guglielmo Marconi was sending radio
       signals across the Atlantic (1901). Every wireless technology since, from
       broadcasting to mobile phones, GPS and Wi-Fi, uses Maxwell's waves.
     sources: []
@@ -230,7 +230,7 @@ $$
 v = \frac{1}{\sqrt{\mu_0 \varepsilon_0}} = \frac{1}{\sqrt{4\pi \times 10^{-7} \times 8.854 \times 10^{-12}}} \approx 2.998 \times 10^8 \text{ m/s} .
 $$
 
-That is the speed of light. In 1856 Wilhelm Weber and Rudolf Kohlrausch had measured the corresponding ratio of electrical units, by discharging a capacitor through a galvanometer, and found about $3.1 \times 10^8$ m/s. Hippolyte Fizeau had measured the speed of light in 1849 with a spinning toothed wheel and a mirror 8 km away, and got about $3.1 \times 10^8$ m/s as well. Maxwell saw that the agreement could not be a coincidence.
+That is the speed of light. In 1856 Wilhelm Weber and Rudolf Kohlrausch had measured the corresponding ratio of electrical units, by discharging a capacitor through a galvanometer, and found about $3.1 \times 10^8$ m/s. Hippolyte Fizeau had measured the speed of light in 1849 with a spinning toothed wheel and a mirror about 8.6 km away, and got about $3.1 \times 10^8$ m/s as well. Maxwell saw that the agreement could not be a coincidence.
 
 Nothing in the experiments on currents and charges involved light, optics or astronomy. Yet the speed of light fell out of them. Light is an electromagnetic wave, and so, Maxwell predicted, there should be others at every wavelength. Hertz found radio waves twenty years later.
 

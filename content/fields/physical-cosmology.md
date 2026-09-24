@@ -184,7 +184,7 @@ open_problems:
   - id: hubble-tension
     name: The Hubble tension
     status: open
-    status_note: Unresolved as of writing; the discrepancy has persisted as measurements have improved.
+    status_note: Unresolved as of writing. The microwave-background and Cepheid–supernova values have stayed apart as measurements improved, though some other local methods land in between.
     description: >-
       The universe's current expansion rate, $H_0$, comes out at about 67 km/s per
       megaparsec when inferred from the early universe (the microwave background) but
@@ -250,7 +250,7 @@ The observational case was made by {{fig:hubble|Edwin Hubble}} in 1929. Using th
 
 ## Echo of the Big Bang
 
-For decades expansion did not settle how the universe began. The steady-state theory of Hoyle, Bondi and Gold (1948) proposed that new matter appears continuously as space expands, so the universe has no beginning. Hoyle would coin the name "Big Bang" for the rival idea on BBC radio in 1949, half in mockery. Meanwhile {{fig:alpher|Ralph Alpher}}, {{fig:herman|Robert Herman}} and George Gamow worked out what a hot beginning implies: the right mix of hydrogen and helium, and a faint radiation left over from the hot early universe, now cooled to a few degrees above absolute zero.
+For decades expansion did not settle how the universe began. The steady-state theory of Hoyle, Bondi and Gold (1948) proposed that new matter appears continuously as space expands, so the universe has no beginning. Hoyle would coin the name "Big Bang" for the rival idea on BBC radio in 1949. It was widely heard as mockery, though he denied meaning it that way. Meanwhile {{fig:alpher|Ralph Alpher}}, {{fig:herman|Robert Herman}} and George Gamow worked out what a hot beginning implies: the right mix of hydrogen and helium, and a faint radiation left over from the hot early universe, now cooled to a few degrees above absolute zero.
 
 In 1965 {{fig:penzias|Arno Penzias}} and {{fig:robert-wilson|Robert Wilson}} found that radiation by accident, as a hiss in a Bell Labs antenna that would not go away. It filled the sky evenly at 2.7 K. The steady state theory could not explain it, and the Big Bang became the standard picture. Satellites since then (COBE, WMAP, Planck) have mapped its tiny ripples, the seeds of all later galaxies, and measured the universe's age as 13.8 billion years.
 
