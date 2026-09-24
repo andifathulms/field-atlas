@@ -23,7 +23,12 @@ export const DOMAINS: DomainInfo[] = [
   {
     id: "physics",
     name: "Physics",
-    blurb: "Not yet surveyed. Instrument amber is reserved for it.",
+    blurb: "How motion, light and gravity were rebuilt around the speed of light, and what is still dark.",
+    thread: {
+      title: "The Relativity Thread",
+      intro:
+        "From Galileo's falling bodies and Maxwell's light to curved spacetime and the expanding universe. Newton's mechanics and Maxwell's electromagnetism both looked finished, yet they disagreed about one number, the speed of light. Settling that disagreement rebuilt space, time and gravity. The map still runs into fog where gravity meets the quantum, and where most of the universe turns out to be dark.",
+    },
   },
   {
     id: "biology",

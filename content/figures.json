@@ -59,5 +59,12 @@
   { "id": "grothendieck", "name": "Alexander Grothendieck", "turning_point_ids": ["grothendieck-schemes"] },
   { "id": "deligne", "name": "Pierre Deligne", "turning_point_ids": ["deligne-weil"] },
   { "id": "wiles", "name": "Andrew Wiles", "turning_point_ids": ["wiles-fermat"] },
-  { "id": "taylor", "name": "Richard Taylor", "turning_point_ids": ["wiles-fermat"] }
+  { "id": "taylor", "name": "Richard Taylor", "turning_point_ids": ["wiles-fermat"] },
+  { "id": "galileo", "name": "Galileo Galilei", "turning_point_ids": ["galileo-falling-bodies"] },
+  { "id": "kepler", "name": "Johannes Kepler", "turning_point_ids": ["kepler-laws"] },
+  { "id": "newton", "name": "Isaac Newton", "turning_point_ids": ["newton-principia"] },
+  { "id": "hooke", "name": "Robert Hooke", "turning_point_ids": ["newton-principia"] },
+  { "id": "le-verrier", "name": "Urbain Le Verrier", "turning_point_ids": ["neptune-discovery", "mercury-perihelion-anomaly"] },
+  { "id": "galle", "name": "Johann Galle", "turning_point_ids": ["neptune-discovery"] },
+  { "id": "adams", "name": "John Couch Adams", "turning_point_ids": ["neptune-discovery"] }
 ]
