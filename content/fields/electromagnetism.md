@@ -165,6 +165,18 @@ applications:
     sources:
       - citation: "Lauterbur, P. C. (1973). Image formation by induced local interactions: examples employing nuclear magnetic resonance. Nature 242: 190–191."
         url: null
+  - area: Structural biology
+    title: X-ray crystallography reveals the molecules of life
+    description: >-
+      X-rays are electromagnetic waves short enough to diffract off the rows of atoms in a
+      crystal. In 1913 William Lawrence Bragg showed how to read the atomic arrangement
+      from the diffraction pattern. The same method revealed the double helix of DNA and
+      the shapes of thousands of proteins.
+    domain: biology
+    field_id: molecular-biology
+    sources:
+      - citation: "Bragg, W. L. (1913). The diffraction of short electromagnetic waves by a crystal. Proceedings of the Cambridge Philosophical Society 17: 43–57."
+        url: null
 
 further_reading:
   - citation: "Forbes, N. & Mahon, B. (2014). Faraday, Maxwell, and the Electromagnetic Field. Prometheus Books."

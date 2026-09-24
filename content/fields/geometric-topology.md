@@ -260,6 +260,7 @@ applications:
       mechanism from the knots it produces. Ernst and Sumners' tangle model turned this
       into a calculation.
     domain: biology
+    field_id: molecular-biology
     sources:
       - citation: "Ernst, C. & Sumners, D. W. (1990). A calculus for rational tangles: applications to DNA recombination. Mathematical Proceedings of the Cambridge Philosophical Society 108(3): 489–515."
         url: null

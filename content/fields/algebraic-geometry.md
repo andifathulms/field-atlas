@@ -294,6 +294,7 @@ applications:
       models as algebraic varieties helps decide which evolutionary tree best fits the
       data.
     domain: biology
+    field_id: evolutionary-biology
     sources:
       - citation: "Pachter, L. & Sturmfels, B. (eds.) (2005). Algebraic Statistics for Computational Biology. Cambridge University Press."
         url: null
