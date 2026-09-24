@@ -363,7 +363,7 @@
   { "id": "kenneth-wilson", "name": "Kenneth Wilson", "turning_point_ids": ["wilson-renormalization"] },
   { "id": "michael-fisher", "name": "Michael Fisher", "turning_point_ids": ["wilson-renormalization"] },
   { "id": "michael-kosterlitz", "name": "Michael Kosterlitz", "turning_point_ids": ["kosterlitz-thouless"] },
-  { "id": "david-thouless", "name": "David Thouless", "turning_point_ids": ["kosterlitz-thouless"] },
+  { "id": "david-thouless", "name": "David Thouless", "turning_point_ids": ["kosterlitz-thouless", "topomat-tknn"] },
   { "id": "vadim-berezinskii", "name": "Vadim Berezinskii", "turning_point_ids": ["kosterlitz-thouless"] },
   { "id": "leo-szilard", "name": "Leo Szilard", "turning_point_ids": ["landauer-principle"] },
   { "id": "rolf-landauer", "name": "Rolf Landauer", "turning_point_ids": ["landauer-principle"] },
@@ -689,5 +689,16 @@
   { "id": "philip-anderson", "name": "Philip Anderson", "turning_point_ids": ["magnet-spin-glass"] },
   { "id": "giorgio-parisi", "name": "Giorgio Parisi", "turning_point_ids": ["magnet-spin-glass"] },
   { "id": "albert-fert", "name": "Albert Fert", "turning_point_ids": ["magnet-gmr"] },
-  { "id": "peter-grunberg", "name": "Peter Grünberg", "turning_point_ids": ["magnet-gmr"] }
+  { "id": "peter-grunberg", "name": "Peter Grünberg", "turning_point_ids": ["magnet-gmr"] },
+  { "id": "klaus-von-klitzing", "name": "Klaus von Klitzing", "turning_point_ids": ["topomat-quantum-hall"] },
+  { "id": "robert-laughlin", "name": "Robert Laughlin", "turning_point_ids": ["topomat-tknn", "topomat-fractional-hall"] },
+  { "id": "daniel-tsui", "name": "Daniel Tsui", "turning_point_ids": ["topomat-fractional-hall"] },
+  { "id": "horst-stormer", "name": "Horst Störmer", "turning_point_ids": ["topomat-fractional-hall"] },
+  { "id": "duncan-haldane", "name": "Duncan Haldane", "turning_point_ids": ["topomat-haldane-model"] },
+  { "id": "andre-geim", "name": "Andre Geim", "turning_point_ids": ["topomat-graphene"] },
+  { "id": "konstantin-novoselov", "name": "Konstantin Novoselov", "turning_point_ids": ["topomat-graphene"] },
+  { "id": "charles-kane", "name": "Charles Kane", "turning_point_ids": ["topomat-insulators"] },
+  { "id": "eugene-mele", "name": "Eugene Mele", "turning_point_ids": ["topomat-insulators"] },
+  { "id": "shoucheng-zhang", "name": "Shou-Cheng Zhang", "turning_point_ids": ["topomat-insulators"] },
+  { "id": "laurens-molenkamp", "name": "Laurens Molenkamp", "turning_point_ids": ["topomat-insulators"] }
 ]
