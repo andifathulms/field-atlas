@@ -228,3 +228,33 @@ button:focus-visible {
 }
 .prose-atlas td .katex,
 .prose-atlas td .katex .base { white-space: nowrap; }
+
+/* Code and lists inside prose, and consistent spacing between any two blocks. */
+.prose-atlas :is(p, pre, ul, ol, blockquote, table) + :is(p, pre, ul, ol, blockquote, table) {
+  margin-top: 1.1em;
+}
+.prose-atlas code {
+  font-family: var(--font-mono), ui-monospace, monospace;
+  font-size: 0.84em;
+  background: color-mix(in srgb, var(--paper-deep) 70%, transparent);
+  padding: 0.1em 0.3em;
+  border-radius: 2px;
+}
+.prose-atlas pre {
+  font-family: var(--font-mono), ui-monospace, monospace;
+  font-size: 0.8rem;
+  line-height: 1.6;
+  background: color-mix(in srgb, var(--paper-deep) 55%, transparent);
+  border-left: 2px solid var(--accent);
+  padding: 0.9em 1.1em;
+  overflow-x: auto;
+}
+.prose-atlas pre code {
+  background: none;
+  padding: 0;
+  font-size: inherit;
+}
+.prose-atlas ul { list-style: disc; padding-left: 1.3em; }
+.prose-atlas ol { list-style: decimal; padding-left: 1.5em; }
+.prose-atlas li + li { margin-top: 0.35em; }
+.prose-atlas li::marker { color: var(--ink-faint); }
