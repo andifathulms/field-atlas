@@ -86,8 +86,8 @@ turning_points:
       Kurt Gödel, 25, proves that any consistent formal system rich enough for arithmetic
       contains true statements it cannot prove, and that it cannot prove its own
       consistency. The central aim of Hilbert's programme is shown to be impossible. John
-      von Neumann, hearing the first theorem announced in Königsberg in 1930, saw the
-      second consequence almost immediately.
+      von Neumann, hearing the first theorem announced in Königsberg in 1930, found the
+      second consequence independently within weeks.
     contested: false
     sources:
       - citation: "Gödel, K. (1931). Über formal unentscheidbare Sätze der Principia Mathematica und verwandter Systeme I. Monatshefte für Mathematik und Physik 38: 173–198."
@@ -200,4 +200,4 @@ The second theorem follows by formalising this very argument inside the system: 
 
 ## Proofs by Machine
 
-Gödel's encoding of proofs as numbers had a second consequence: checking a proof is a mechanical operation. Within five years that insight became the theory of [computation](/math/computability-theory/). Eighty years later it became practical. Proof assistants now check proofs down to the axioms. {{fig:gonthier|Georges Gonthier}} formalised the four colour theorem in 2005, and in 2022 a Lean collaboration verified a new theorem that Peter Scholze himself had doubts about. Hilbert's hope of certainty from inside failed, but his idea of mechanically checkable proof has become everyday practice.
+Gödel's encoding of proofs as numbers had a second consequence: checking a proof is a mechanical operation. Within five years that insight became the theory of [computation](/math/computability-theory/). About seventy years later it became practical. Proof assistants now check proofs down to the axioms. {{fig:gonthier|Georges Gonthier}} formalised the four colour theorem in 2005, and in 2022 a Lean collaboration verified a new theorem that Peter Scholze himself had doubts about. Hilbert's hope of certainty from inside failed, but his idea of mechanically checkable proof has become everyday practice.

@@ -55,9 +55,9 @@ turning_points:
       as the right definition.
     contested: true
     contested_note: >-
-      Church's paper appeared first, by a few weeks. Turing learned of it just before
-      submitting and added an appendix proving the two approaches equivalent. Priority for
-      the negative answer belongs to Church. Turing's analysis of what computation *is*
+      Church's work was finished and published first. Turing learned of it in the spring
+      of 1936, before submitting his own paper, and later added an appendix proving the two
+      approaches equivalent. Priority for the negative answer belongs to Church. Turing's analysis of what computation *is*
       is generally regarded as the more fundamental and convincing, and Turing then went to
       Princeton to study under Church.
     sources:
@@ -132,8 +132,8 @@ turning_points:
       uncomputable function.
     contested: false
     sources:
-      - citation: "The bbchallenge Collaboration (2024). Announcement and Coq proof that BB(5) = 47,176,870."
-        url: https://bbchallenge.org
+      - citation: "The bbchallenge Collaboration (2025). Determination of the fifth Busy Beaver value. arXiv:2509.12337."
+        url: https://arxiv.org/abs/2509.12337
 
 open_problems:
   - id: busy-beaver-6
@@ -231,7 +231,7 @@ This is Cantor's diagonal argument again. Picture a table with a row for every p
 
 The consequences are practical. A compiler cannot warn about every infinite loop. A verifier cannot check every property of every program (Rice's theorem). An antivirus cannot recognise every virus. Tools in all three areas work around the limit with approximations: they answer "yes", "no" or "don't know", and the undecidable part lives in the "don't know".
 
-It also explains the Busy Beaver function. If $BB(n)$ could be computed, then to decide whether an $n$-state machine halts you could run it for $BB(n)$ steps and see. That would solve the halting problem, so $BB$ cannot be computable, and it must eventually grow faster than any function a program can compute.
+It also explains the Busy Beaver function. If $BB(n)$ could be computed, then to decide whether an $n$-state machine halts you could run it for $BB(n)$ steps and see. That would solve the halting problem, so $BB$ cannot be computable. The same argument shows no computable function can stay above it, and a sharper version shows it eventually outgrows every one.
 
 ## The Edge of the Computable
 

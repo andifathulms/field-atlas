@@ -78,8 +78,8 @@ turning_points:
     description: >-
       Gottlob Frege's *Begriffsschrift* ("concept-script") introduces a formal language
       with variables and quantifiers, in which the whole of mathematical reasoning can in
-      principle be written out and checked step by step. It is the ancestor of every
-      logical system and programming language since.
+      principle be written out and checked step by step. It is an ancestor of modern
+      logical systems and programming languages.
     contested: true
     contested_note: >-
       Charles Sanders Peirce and his student O. H. Mitchell developed quantifiers

@@ -73,11 +73,12 @@ turning_points:
       Soviet Union was delayed until 1973 and his work was little known in the West for
       years, so the theorem is now named for both. In 1989 a 1956 letter from Kurt Gödel
       to John von Neumann surfaced. It asks, in effect, whether proofs can be found in
-      time proportional to their length, an early statement of the P versus NP question.
+      time proportional to their length or its square, an early statement of the P versus NP
+      question.
     sources:
       - citation: "Cook, S. A. (1971). The complexity of theorem-proving procedures. In Proceedings of the Third Annual ACM Symposium on Theory of Computing: 151–158."
         url: null
-      - citation: "Levin, L. A. (1973). Universal sequential search problems. Problems of Information Transmission 9(3): 115–116."
+      - citation: "Levin, L. A. (1973). Universal sequential search problems. Problemy Peredachi Informatsii 9(3): 115–116. (In Russian.)"
         url: null
 
   - id: karp-21
@@ -85,7 +86,7 @@ turning_points:
     type: PROOF
     title: Karp's 21 NP-complete problems
     description: >-
-      Richard Karp shows that 21 well-known problems, including travelling salesman,
+      Richard Karp shows that 21 well-known problems, including Hamiltonian circuit,
       graph colouring, clique and knapsack, are all NP-complete by reducing satisfiability
       to them. Hardness is revealed as the rule, not the exception, across operations
       research, graph theory and scheduling.
@@ -119,8 +120,8 @@ turning_points:
     description: >-
       A group of researchers, among them Sanjeev Arora and Shmuel Safra, and Arora, Lund,
       Motwani, Sudan and Szegedy, prove that every NP proof can be rewritten so that a
-      verifier reading only a constant number of random bits of it can check it with high
-      confidence. The theorem shows that for many problems even *approximate* solutions
+      verifier reading only a constant number of its bits, chosen at random, can check it
+      with high confidence. The theorem shows that for many problems even *approximate* solutions
       are NP-hard, and it transformed the theory of approximation.
     contested: false
     sources:
@@ -162,8 +163,8 @@ applications:
     description: >-
       Reassembling a genome from millions of short DNA reads looks like finding a path
       through every read, a Hamiltonian path, which is NP-complete. Pevzner, Tang and
-      Waterman recast it as an *Eulerian* path through overlaps, which can be found in
-      linear time. Complexity theory pointed to the reformulation that made modern
+      Waterman recast it as an *Eulerian* path through a de Bruijn graph built from the
+      reads, which can be found in linear time. Complexity theory pointed to the reformulation that made modern
       genome assembly feasible.
     domain: biology
     field_id: genomics
@@ -207,7 +208,7 @@ further_reading:
 
 ## NP-Completeness
 
-In 1971 {{fig:stephen-cook|Stephen Cook}} identified the class NP, problems whose solutions can be *checked* in polynomial time, and proved that one of them, deciding whether a logical formula can be made true, is as hard as every other. In Moscow, {{fig:levin|Leonid Levin}} had reached the same insight, but it reached print only in 1973. A year after Cook, {{fig:karp|Richard Karp}} showed that 21 central problems (travelling salesman, graph colouring, knapsack) are all NP-complete. Efficiently solve one and you solve them all.
+In 1971 {{fig:stephen-cook|Stephen Cook}} identified the class NP, problems whose solutions can be *checked* in polynomial time, and proved that one of them, deciding whether a logical formula can be made true, is as hard as every other. In Moscow, {{fig:levin|Leonid Levin}} had reached the same insight, but it reached print only in 1973. A year after Cook, {{fig:karp|Richard Karp}} showed that 21 central problems (Hamiltonian circuit, graph colouring, knapsack) are all NP-complete. Efficiently solve one and you solve them all.
 
 That turned an engineering frustration into a single mathematical question: does P equal NP? It later emerged that {{fig:goedel|Gödel}} had asked something like it in a 1956 letter to a dying von Neumann: could a machine find proofs as quickly as they can be checked?
 

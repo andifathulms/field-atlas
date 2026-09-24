@@ -187,7 +187,7 @@ Worse was coming. Frege and others had assumed that any property defines a set, 
 
 ## Axioms and a Feud
 
-Zermelo's response was to replace "any property defines a set" with careful axioms saying which sets exist. In 1904 he made explicit a principle mathematicians had used without noticing: the *axiom of choice*, that one can always pick an element from each of any collection of non-empty sets. The French analysts Borel, Baire and Lebesgue attacked it for asserting the existence of objects nobody could construct, and when Banach and Tarski later used it to cut a ball into five pieces and reassemble them into two balls of the same size, the objection seemed vindicated. The axiom stayed because too much of mathematics needs it. With Abraham Fraenkel's refinements, Zermelo's system became ZFC, the standard foundation of mathematics today.
+Zermelo's response was to replace "any property defines a set" with careful axioms saying which sets exist. In 1904 he made explicit a principle mathematicians had used without noticing: the *axiom of choice*, that one can always pick an element from each of any collection of non-empty sets. The French analysts Borel, Baire and Lebesgue attacked it for asserting the existence of objects nobody could construct, and when Banach and Tarski later used it to cut a ball into finitely many pieces and reassemble them into two balls of the same size, the objection seemed vindicated. The axiom stayed because too much of mathematics needs it. With Abraham Fraenkel's refinements, Zermelo's system became ZFC, the standard foundation of mathematics today.
 
 ## A Closer Look: Listing the Fractions, and Failing to List the Reals
 
