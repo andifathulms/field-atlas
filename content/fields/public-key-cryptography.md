@@ -248,6 +248,28 @@ In 1985 {{fig:koblitz|Neal Koblitz}} and {{fig:victor-miller|Victor Miller}} ind
 
 Cryptography also needs a plentiful supply of large primes, and a fast way to recognise them. In 2002 {{fig:agrawal|Manindra Agrawal}} and his students Neeraj Kayal and Nitin Saxena proved that primality can be decided in guaranteed polynomial time, using a generalisation of Fermat's little theorem. It answered a question Gauss had posed in the *Disquisitiones*.
 
+## A Closer Look: RSA and Diffie–Hellman with Small Numbers
+
+Real keys use numbers hundreds of digits long, but the mechanics fit on a napkin.
+
+**RSA.** Choose two primes, $p = 5$ and $q = 11$, and publish $n = 55$. Compute $(p - 1)(q - 1) = 40$ and choose a public exponent sharing no factor with 40, say $e = 3$. The private exponent is the $d$ with $3d \equiv 1 \pmod{40}$: $d = 27$, since $3 \times 27 = 81 = 2 \times 40 + 1$. The public key is $(55, 3)$, and the private key is $27$.
+
+To send the message $m = 7$, anyone computes
+
+$$
+c = 7^3 \bmod 55 = 343 \bmod 55 = 13 .
+$$
+
+The key holder recovers it: $13^{27} \bmod 55 = 7$. It works because of Euler's version of Fermat's little theorem, and finding $d$ requires knowing $(p-1)(q-1)$, which requires factoring $n$. Factoring 55 is trivial. Factoring a product of two 300-digit primes is, as far as anyone knows, infeasible.
+
+**Diffie–Hellman.** Alice and Bob agree in public on a prime $p = 23$ and a base $g = 5$. Alice secretly picks $a = 6$ and sends $5^6 \bmod 23 = 8$. Bob secretly picks $b = 15$ and sends $5^{15} \bmod 23 = 19$. Each raises what they received to their own secret:
+
+$$
+19^6 \bmod 23 = 2, \qquad 8^{15} \bmod 23 = 2 .
+$$
+
+Both now hold the shared secret 2, which never crossed the wire. An eavesdropper who saw 23, 5, 8 and 19 must recover 6 from $5^a \equiv 8$, a discrete logarithm. With a 2048-bit prime, or on an elliptic curve, no efficient classical method is known. Shor's quantum algorithm would find it quickly, which is why both systems are being replaced.
+
 ## The Quantum Threat
 
 In 1994 {{fig:shor|Peter Shor}} showed that a quantum computer could factor numbers and compute discrete logarithms efficiently. RSA, Diffie–Hellman and elliptic curves would all fall. No machine is yet large enough, but data intercepted now could be read later, so the replacement has already begun. In 2024 the US standards body published its first post-quantum standards, built on hard problems in lattices over rings of [algebraic integers](/math/algebraic-number-theory/).
