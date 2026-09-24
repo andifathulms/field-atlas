@@ -134,7 +134,7 @@ turning_points:
     description: >-
       Claude Berrou and colleagues present turbo codes, which pass guesses back and forth
       between two simple decoders and come within a fraction of a decibel of Shannon's
-      limit. Many experts at first suspected a mistake. In 1996 David MacKay and Radford
+      limit. Many experts were at first sceptical. In 1996 David MacKay and Radford
       Neal show that Robert Gallager's low-density parity-check codes of 1962, forgotten
       for thirty years, do as well. After forty-five years, capacity was a practical
       target.
@@ -157,9 +157,10 @@ open_problems:
       two of each, no formula is known.
     why_hard: >-
       Each receiver can treat the unwanted signal as noise, decode it and subtract it,
-      or do something in between, and senders can split their messages to help. The best
-      known scheme, from 1981, is not known to be optimal, and the upper bounds that
-      match it do so only in special cases.
+      or do something in between, and senders can split their messages to help. The
+      classic scheme, Han and Kobayashi's of 1981, was shown in 2015 to fall short for
+      some channels, and the upper bounds meet the achievable rates only in special
+      cases.
     unlocks: >-
       The limits of every shared wireless network. Mobile phones, Wi-Fi and satellite
       links all interfere with one another, and network information theory has almost
@@ -253,4 +254,4 @@ The same measure applies to language. Twenty-six letters and a space would need 
 
 In 1965 {{fig:kolmogorov|Andrey Kolmogorov}}, independently of {{fig:ray-solomonoff|Ray Solomonoff}} and {{fig:gregory-chaitin|Gregory Chaitin}}, defined the information in a single string as the length of the shortest program that prints it. The idea tied information to [computability theory](/math/computability-theory/): the complexity of a string is itself uncomputable. Kolmogorov also carried Shannon's entropy into [ergodic theory](/math/ergodic-theory/) as a measure of chaos.
 
-Shannon's limit was finally reached in practice in 1993, when {{fig:claude-berrou|Claude Berrou}} and his colleagues announced turbo codes. {{fig:david-mackay|David MacKay}} then showed that Robert Gallager's low-density parity-check codes of 1962, built from the sparse random graphs of [probabilistic combinatorics](/math/probabilistic-combinatorics/), were just as good. Entropy has also returned to physics, where erasing a bit is known to cost energy, as [non-equilibrium physics](/physics/non-equilibrium-physics/) describes. And the question of how much information a finite sample carries about a whole distribution lies at the root of [statistical learning theory](/math/statistical-learning-theory/).
+Shannon's limit was finally approached in practice in 1993, when {{fig:claude-berrou|Claude Berrou}} and his colleagues announced turbo codes. {{fig:david-mackay|David MacKay}} and Radford Neal then showed that Robert Gallager's low-density parity-check codes of 1962, built from the sparse random graphs of [probabilistic combinatorics](/math/probabilistic-combinatorics/), were just as good. Entropy has also returned to physics, where erasing a bit is known to cost energy, as [non-equilibrium physics](/physics/non-equilibrium-physics/) describes. And the question of how much information a finite sample carries about a whole distribution lies at the root of [statistical learning theory](/math/statistical-learning-theory/).

@@ -34,7 +34,8 @@ key_ideas:
   - term: Maximum likelihood
     definition: >-
       Estimate an unknown quantity by the value that makes the observed data most
-      probable. Fisher showed that in large samples no other method does better.
+      probable. Fisher argued that in large samples no other method does better, a claim
+      later work made precise.
     turning_point_id: si-fisher-likelihood
   - term: Randomisation
     definition: >-
@@ -74,7 +75,7 @@ turning_points:
       Comparing the heights of 928 adult children with those of their parents, Francis
       Galton finds that children of very tall or very short parents are, on average,
       closer to the mean than their parents. He calls it regression towards mediocrity,
-      draws the first regression line, and with it opens the statistical study of how
+      fits a regression line to the data, and with it opens the statistical study of how
       two quantities vary together, later made exact as correlation.
     contested: false
     sources:
@@ -255,13 +256,13 @@ Astronomers were the first to face the problem. They had more measurements than 
 
 ## Measuring Variation
 
-For most of the nineteenth century statistics measured the heavens and averaged away variation. {{fig:francis-galton|Francis Galton}}, Darwin's cousin, made variation the object of study. In 1886 he found that tall parents have children who are tall, but on average less tall than their parents. He called it regression towards mediocrity and drew the first regression line. {{fig:karl-pearson|Karl Pearson}} turned Galton's ideas into mathematics, founded the journal *Biometrika*, and in 1900 gave the chi-squared test: one number measuring the misfit between observed counts and a theory, with a known distribution when the theory is true.
+For most of the nineteenth century statistics measured the heavens and averaged away variation. {{fig:francis-galton|Francis Galton}}, Darwin's cousin, made variation the object of study. In 1886 he found that tall parents have children who are tall, but on average less tall than their parents. He called it regression towards mediocrity and drew a line through the data to measure it. {{fig:karl-pearson|Karl Pearson}} turned Galton's ideas into mathematics, founded the journal *Biometrika*, and in 1900 gave the chi-squared test: one number measuring the misfit between observed counts and a theory, with a known distribution when the theory is true.
 
-Pearson's methods assumed large samples. {{fig:william-gosset|William Sealy Gosset}}, a brewer at Guinness, had samples of four or five. In 1908, writing as "Student", he found how the average of a small sample really behaves when its spread is estimated from the same data. The t-test is still the most used significance test in science.
+Pearson's methods assumed large samples. {{fig:william-gosset|William Sealy Gosset}}, a brewer at Guinness, had samples of four or five. In 1908, writing as "Student", he found how the average of a small sample really behaves when its spread is estimated from the same data. The t-test is still one of the most used significance tests in science.
 
 ## Fisher and His Rivals
 
-{{fig:fisher|Ronald Fisher}} spent fourteen years at the Rothamsted agricultural station, where decades of harvest records had never been analysed properly. From 1922 he rebuilt statistics around the likelihood, the probability of the data as a function of the unknown quantities, and proved that estimating by its maximum is, in large samples, as accurate as any method can be. He invented the analysis of variance and insisted that treatments be assigned to plots at random. Randomisation means that the only differences between groups, apart from the treatment, are due to chance, and chance can be calculated.
+{{fig:fisher|Ronald Fisher}} spent fourteen years at the Rothamsted agricultural station, where decades of harvest records had never been analysed properly. From 1922 he rebuilt statistics around the likelihood, the probability of the data as a function of the unknown quantities, and argued that estimating by its maximum is, in large samples, as accurate as any method can be. Later work made this precise. He invented the analysis of variance and insisted that treatments be assigned to plots at random. Randomisation means that the only differences between groups, apart from the treatment, are due to chance, and chance can be calculated.
 
 {{fig:jerzy-neyman|Jerzy Neyman}} and {{fig:egon-pearson|Egon Pearson}} wanted a test to be a rule with guaranteed error rates. In 1933 they framed it as a choice between two hypotheses and found the best tests. Fisher thought this confused science with quality control, and the two sides fought for thirty years. Textbooks later merged their approaches into a single ritual: compute a p-value, compare it with 0.05, declare a result.
 

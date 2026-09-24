@@ -174,8 +174,8 @@ applications:
     title: Finding what is lost
     description: >-
       Bayesian search theory divides the sea into cells, gives each a prior probability,
-      and updates after every unsuccessful search. It helped locate a lost hydrogen bomb
-      off Palomares in 1966 and, in 2011, the wreck of Air France flight 447, found within
+      and updates after every unsuccessful search. It guided the hunt for a lost hydrogen
+      bomb off Palomares in 1966 and, in 2011, the search for Air France flight 447, found within
       a week of resuming the search in the area the analysis ranked highest.
     sources:
       - citation: "Stone, L. D., Keller, C. M., Kratzke, T. M. & Strumpfer, J. P. (2014). Search for the wreckage of Air France Flight AF 447. Statistical Science 29(1): 69–80."

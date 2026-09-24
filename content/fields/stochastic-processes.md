@@ -72,7 +72,8 @@ turning_points:
       Markov proves it for sequences in which each outcome depends on the one before. In
       1913 he tests the idea on the first 20,000 letters of Pushkin's *Eugene Onegin*,
       counting how often a vowel follows a vowel and a consonant follows a consonant. It
-      was the first statistical analysis of a text, and the chains now bear his name.
+      was an early statistical analysis of a literary text, and the chains now bear his
+      name.
     contested: false
     sources:
       - citation: "Markov, A. A. (1913). An example of statistical investigation of the text Eugene Onegin concerning the connection of samples in chains. Bulletin of the Imperial Academy of Sciences of St. Petersburg 7(3): 153–162. English translation in Science in Context 19(4): 591–600 (2006)."
@@ -169,7 +170,7 @@ open_problems:
   - id: sp-self-avoiding-walk
     name: The self-avoiding walk
     status: open
-    status_note: Open as of writing in two and three dimensions; solved above four dimensions (1992).
+    status_note: Open as of writing in two, three and four dimensions; solved above four dimensions (1992).
     description: >-
       A self-avoiding walk on a grid never visits the same point twice, a simple model of
       a long polymer molecule. How far from its start does a typical walk of $n$ steps
@@ -246,7 +247,7 @@ further_reading:
 
 ## Brownian Paths
 
-In 1900, in Paris, {{fig:louis-bachelier|Louis Bachelier}} modelled the price of a government bond as a random walk that, in the limit of many small steps, moves continuously. He derived the equation that governs the spread of its probability, the same diffusion equation that Einstein would derive for pollen grains in 1905. His examiner, Henri Poincaré, praised the work, but its subject was thought unworthy of mathematics and it was forgotten.
+In 1900, in Paris, {{fig:louis-bachelier|Louis Bachelier}} modelled the price of a government bond as a random walk that, in the limit of many small steps, moves continuously. He derived the equation that governs the spread of its probability, the same diffusion equation that Einstein would derive for pollen grains in 1905. His examiner, Henri Poincaré, praised the work, but for half a century it was little read.
 
 The mathematical object came from [real analysis](/math/real-analysis/). In 1923 {{fig:norbert-wiener|Norbert Wiener}} constructed a probability measure on the space of all continuous paths, proving that Brownian motion exists. Its paths are continuous but so jagged that they have no slope at any point. In 1931 {{fig:kolmogorov|Andrey Kolmogorov}} showed that the probabilities of any Markov process in continuous time obey two differential equations, joining random paths to the heat equation. Two years later he gave all of probability its axioms.
 
@@ -275,4 +276,4 @@ The same calculation ranks the web. Take three pages: A links to B and C, B link
 
 After 1950 the theory spread in every direction. Economists rediscovered Bachelier, and in 1973 {{fig:fischer-black|Fischer Black}} and {{fig:myron-scholes|Myron Scholes}}, with {{fig:robert-merton|Robert Merton}}, used Itô's calculus to price options, founding modern financial mathematics. In 1998 {{fig:sergey-brin|Sergey Brin}} and {{fig:larry-page|Larry Page}} ranked the web by the stationary distribution of a random surfer. Markov chains also power the samplers of [Bayesian statistics](/math/bayesian-statistics/), and physicists use random walks to model molecules, as in [kinetic theory](/physics/kinetic-theory/).
 
-The theory is least complete where a process remembers its whole past. A walk that is forbidden to revisit its own path, the simplest model of a polymer, has resisted proof for seventy years in the dimensions where polymers live.
+The theory is least complete where a process remembers its whole past. A walk that is forbidden to revisit its own path, the simplest model of a polymer, has resisted proof for more than seventy years in the dimensions where polymers live.
