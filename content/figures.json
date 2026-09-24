@@ -530,5 +530,11 @@
   { "id": "cesar-milstein", "name": "César Milstein", "turning_point_ids": ["monoclonal-antibodies"] },
   { "id": "susumu-tonegawa", "name": "Susumu Tonegawa", "turning_point_ids": ["antibody-gene-rearrangement"] },
   { "id": "katalin-kariko", "name": "Katalin Karikó", "turning_point_ids": ["mrna-vaccines"] },
-  { "id": "drew-weissman", "name": "Drew Weissman", "turning_point_ids": ["mrna-vaccines"] }
+  { "id": "drew-weissman", "name": "Drew Weissman", "turning_point_ids": ["mrna-vaccines"] },
+  { "id": "thomas-willis", "name": "Thomas Willis", "turning_point_ids": ["willis-cerebri-anatome"] },
+  { "id": "paul-broca", "name": "Paul Broca", "turning_point_ids": ["broca-language-area"] },
+  { "id": "camillo-golgi", "name": "Camillo Golgi", "turning_point_ids": ["golgi-black-reaction", "cajal-neuron-doctrine"] },
+  { "id": "santiago-ramon-y-cajal", "name": "Santiago Ramón y Cajal", "turning_point_ids": ["cajal-neuron-doctrine"] },
+  { "id": "charles-sherrington", "name": "Charles Sherrington", "turning_point_ids": ["sherrington-synapse"] },
+  { "id": "korbinian-brodmann", "name": "Korbinian Brodmann", "turning_point_ids": ["brodmann-areas"] }
 ]

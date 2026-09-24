@@ -100,7 +100,7 @@ export const DOMAINS: DomainInfo[] = [
   {
     id: "biology",
     name: "Biology",
-    blurb: "How evolution and heredity, long at odds, merged, how reading DNA rewrote both, and how the cell became the unit of life, health and disease.",
+    blurb: "How evolution and heredity, long at odds, merged, how reading DNA rewrote both, how the brain was found to be built of cells that signal with electricity and chemistry, and how the cell became the unit of life, health and disease.",
     threads: [
       {
         id: "heredity",
@@ -113,6 +113,12 @@ export const DOMAINS: DomainInfo[] = [
         title: "The Cell Thread",
         intro:
           "From cork under a microscope to the machinery inside every living thing. The first microscopes revealed that plants and animals are built of tiny compartments, and that invisible organisms swarm in every drop of water. It took two centuries to see what that meant: every living thing is made of cells, every cell comes from another, and many diseases are caused by microbes. Chemistry then showed that cells run on enzymes and a universal currency of energy, microscopes of electrons and light mapped their inner machinery, and immunology found how the body tells its own cells from invaders. The fog here is how little a cell can be and still live, how cells know their own size, and why some pathogens still defeat every vaccine.",
+      },
+      {
+        id: "brain",
+        title: "The Brain Thread",
+        intro:
+          "From Galvani's twitching frog legs to the wiring diagram of a fly. For centuries the brain was a soft grey mass with no visible parts fine enough to explain a thought. Doctors found that damage to one patch could destroy speech and nothing else, a silver stain showed that the brain is built of separate cells, and physiologists learned that those cells signal with pulses of electricity and pass them on with chemicals released in packets. Recordings from single neurons then found cells that respond to edges and cells that mark a place, and theorists asked whether all of this is computation, a question that gave rise to today's artificial neural networks. The fog here is how a memory is stored, what causes Alzheimer's disease, and why any of this activity is accompanied by experience at all.",
       },
     ],
   },
