@@ -22,6 +22,8 @@ One narrow vertical, picked before build starts (deliberately not number theory 
 
 **Third thread in mathematics (done):** the Analysis Thread, five fields. Calculus branches from Euclidean Geometry. Fourier Analysis and Complex Analysis branch from Calculus. Real Analysis has Calculus and Fourier Analysis as parents, since questions about Fourier series forced the rigour. Probability Theory rests on Calculus and Real Analysis (Kolmogorov's measure-theoretic axioms). Cross-thread parents: Calculus feeds Differential Geometry, and Complex Analysis feeds Analytic Number Theory.
 
+**Fourth thread in mathematics (done):** the Foundations Thread, five fields. Mathematical Logic is the root. Set Theory joins it with Real Analysis (via Cantor). Metamathematics has Logic and Set Theory as parents, with Hilbert's programme and Gödel's incompleteness. Computability Theory and then Computational Complexity follow. Complexity feeds Public-Key Cryptography across threads.
+
 **Cross-domain view (done):** the Crossings page (`/crossings/`) joins all three domains. A diagram shows each direction of crossing, solid where it lands in a surveyed field and dashed where it reaches unmapped ground. A ledger lists every linked crossing, and a "Reaching past the survey" list shows the seeds. It is a join over the shared applications collection, as the shared-schema decision intended. Remaining from "v2 / later": the "toolkit" view, and widening each domain beyond its pilot thread.
 
 ## Non-goals (v1)
