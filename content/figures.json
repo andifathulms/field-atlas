@@ -483,5 +483,15 @@
   { "id": "theodor-schwann", "name": "Theodor Schwann", "turning_point_ids": ["schleiden-schwann"] },
   { "id": "robert-remak", "name": "Robert Remak", "turning_point_ids": ["virchow-omnis-cellula"] },
   { "id": "rudolf-virchow", "name": "Rudolf Virchow", "turning_point_ids": ["virchow-omnis-cellula"] },
-  { "id": "walther-flemming", "name": "Walther Flemming", "turning_point_ids": ["flemming-mitosis"] }
+  { "id": "walther-flemming", "name": "Walther Flemming", "turning_point_ids": ["flemming-mitosis"] },
+  { "id": "ignaz-semmelweis", "name": "Ignaz Semmelweis", "turning_point_ids": ["semmelweis-handwashing"] },
+  { "id": "john-snow", "name": "John Snow", "turning_point_ids": ["snow-cholera"] },
+  { "id": "louis-pasteur", "name": "Louis Pasteur", "turning_point_ids": ["pasteur-spontaneous-generation"] },
+  { "id": "joseph-lister", "name": "Joseph Lister", "turning_point_ids": ["lister-antisepsis"] },
+  { "id": "robert-koch", "name": "Robert Koch", "turning_point_ids": ["koch-tuberculosis"] },
+  { "id": "fanny-hesse", "name": "Fanny Hesse", "turning_point_ids": ["koch-tuberculosis"] },
+  { "id": "alexander-fleming", "name": "Alexander Fleming", "turning_point_ids": ["penicillin"] },
+  { "id": "howard-florey", "name": "Howard Florey", "turning_point_ids": ["penicillin"] },
+  { "id": "ernst-chain", "name": "Ernst Chain", "turning_point_ids": ["penicillin"] },
+  { "id": "norman-heatley", "name": "Norman Heatley", "turning_point_ids": ["penicillin"] }
 ]
