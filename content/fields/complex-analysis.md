@@ -5,6 +5,7 @@ thread: analysis
 name: Complex Analysis
 parent_ids:
   - calculus
+  - theory-of-equations
 era_emerged: 1799 – 1851
 core_question: What happens to calculus when numbers are allowed to be complex?
 
@@ -195,7 +196,7 @@ further_reading:
 
 ## Impossible Numbers
 
-Complex numbers did not arrive because anyone wanted them. In 1545 {{fig:cardano|Gerolamo Cardano}} published a formula for solving cubic equations, and it had a disturbing feature. For some equations with three perfectly ordinary real solutions, the formula passes through the square root of a negative number. {{fig:bombelli|Rafael Bombelli}} showed in 1572 that if you simply calculate with these "impossible" quantities, following the usual rules, the real answers come out at the end. For two centuries they were used and distrusted, and the name "imaginary" stuck.
+Complex numbers did not arrive because anyone wanted them. They were forced on mathematicians by the [theory of equations](/math/theory-of-equations/). In 1545 {{fig:cardano|Gerolamo Cardano}} published a formula for solving cubic equations, and it had a disturbing feature. For some equations with three perfectly ordinary real solutions, the formula passes through the square root of a negative number. {{fig:bombelli|Rafael Bombelli}} showed in 1572 that if you simply calculate with these "impossible" quantities, following the usual rules, the real answers come out at the end. For two centuries they were used and distrusted, and the name "imaginary" stuck.
 
 ## Numbers as Points
 
