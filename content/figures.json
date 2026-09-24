@@ -544,5 +544,15 @@
   { "id": "alan-hodgkin", "name": "Alan Hodgkin", "turning_point_ids": ["hodgkin-huxley-model"] },
   { "id": "andrew-huxley", "name": "Andrew Huxley", "turning_point_ids": ["hodgkin-huxley-model"] },
   { "id": "erwin-neher", "name": "Erwin Neher", "turning_point_ids": ["neher-sakmann-patch-clamp"] },
-  { "id": "bert-sakmann", "name": "Bert Sakmann", "turning_point_ids": ["neher-sakmann-patch-clamp"] }
+  { "id": "bert-sakmann", "name": "Bert Sakmann", "turning_point_ids": ["neher-sakmann-patch-clamp"] },
+  { "id": "otto-loewi", "name": "Otto Loewi", "turning_point_ids": ["loewi-vagusstoff"] },
+  { "id": "henry-dale", "name": "Henry Dale", "turning_point_ids": ["loewi-vagusstoff"] },
+  { "id": "john-eccles", "name": "John Eccles", "turning_point_ids": ["soups-and-sparks"] },
+  { "id": "bernard-katz", "name": "Bernard Katz", "turning_point_ids": ["katz-quantal-release"] },
+  { "id": "arvid-carlsson", "name": "Arvid Carlsson", "turning_point_ids": ["carlsson-dopamine"] },
+  { "id": "oleh-hornykiewicz", "name": "Oleh Hornykiewicz", "turning_point_ids": ["carlsson-dopamine"] },
+  { "id": "jean-pierre-changeux", "name": "Jean-Pierre Changeux", "turning_point_ids": ["nicotinic-receptor-isolated"] },
+  { "id": "eric-kandel", "name": "Eric Kandel", "turning_point_ids": ["synaptic-plasticity-memory"] },
+  { "id": "tim-bliss", "name": "Tim Bliss", "turning_point_ids": ["synaptic-plasticity-memory"] },
+  { "id": "terje-lomo", "name": "Terje Lømo", "turning_point_ids": ["synaptic-plasticity-memory"] }
 ]
