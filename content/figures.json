@@ -116,5 +116,15 @@
   { "id": "haldane", "name": "J. B. S. Haldane", "turning_point_ids": ["classical-population-genetics"] },
   { "id": "sewall-wright", "name": "Sewall Wright", "turning_point_ids": ["classical-population-genetics"] },
   { "id": "dobzhansky", "name": "Theodosius Dobzhansky", "turning_point_ids": ["dobzhansky-synthesis"] },
-  { "id": "kimura", "name": "Motoo Kimura", "turning_point_ids": ["neutral-theory"] }
+  { "id": "kimura", "name": "Motoo Kimura", "turning_point_ids": ["neutral-theory"] },
+  { "id": "avery", "name": "Oswald Avery", "turning_point_ids": ["avery-dna"] },
+  { "id": "rosalind-franklin", "name": "Rosalind Franklin", "turning_point_ids": ["double-helix"] },
+  { "id": "wilkins", "name": "Maurice Wilkins", "turning_point_ids": ["double-helix"] },
+  { "id": "watson", "name": "James Watson", "turning_point_ids": ["double-helix"] },
+  { "id": "crick", "name": "Francis Crick", "turning_point_ids": ["double-helix", "central-dogma"] },
+  { "id": "nirenberg", "name": "Marshall Nirenberg", "turning_point_ids": ["genetic-code"] },
+  { "id": "temin", "name": "Howard Temin", "turning_point_ids": ["reverse-transcriptase"] },
+  { "id": "baltimore", "name": "David Baltimore", "turning_point_ids": ["reverse-transcriptase"] },
+  { "id": "stanley-cohen", "name": "Stanley Cohen", "turning_point_ids": ["recombinant-dna"] },
+  { "id": "boyer", "name": "Herbert Boyer", "turning_point_ids": ["recombinant-dna"] }
 ]
