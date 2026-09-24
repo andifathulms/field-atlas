@@ -239,7 +239,7 @@ further_reading:
 
 Greek geometry did not begin with Euclid. Thales was credited with proving that a diameter bisects a circle. The Pythagoreans had their theorem about right triangles. Eudoxus built a theory of proportion careful enough to handle lengths that no fraction describes. Hippocrates of Chios even wrote an earlier *Elements*, now lost.
 
-What {{fig:euclid|Euclid}} did, around 300 BCE in Alexandria, was put all of it in order. The *Elements* opens with definitions ("a point is that which has no part"), five postulates, and five common notions. Then, over thirteen books, it derives more than four hundred propositions, each one resting only on what came before it. For two thousand years this was what a proof looked like.
+What {{fig:euclid|Euclid}} did, around 300 BCE in Alexandria, was put all of it in order. The *Elements* opens with definitions ("a point is that which has no part"), five postulates, and five common notions. Then, over thirteen books, it derives more than four hundred propositions, each one resting only on what came before it. For two thousand years this was what a proof looked like. Not all of it is geometry: Books VII to IX, on whole numbers and primes, are where [number theory](/math/elementary-number-theory/) begins.
 
 ## The Fifth Postulate
 
