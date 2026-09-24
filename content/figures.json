@@ -75,7 +75,7 @@
   { "id": "michelson", "name": "Albert Michelson", "turning_point_ids": ["michelson-morley"] },
   { "id": "morley", "name": "Edward Morley", "turning_point_ids": ["michelson-morley"] },
   { "id": "lorentz", "name": "Hendrik Lorentz", "turning_point_ids": ["michelson-morley", "lorentz-transformation"] },
-  { "id": "einstein", "name": "Albert Einstein", "turning_point_ids": ["einstein-special-1905", "equivalence-principle", "einstein-field-equations", "einstein-static-universe", "perrin-atoms"] },
+  { "id": "einstein", "name": "Albert Einstein", "turning_point_ids": ["einstein-special-1905", "equivalence-principle", "einstein-field-equations", "einstein-static-universe", "perrin-atoms", "bose-einstein-statistics"] },
   { "id": "minkowski", "name": "Hermann Minkowski", "turning_point_ids": ["minkowski-spacetime"] },
   { "id": "rossi", "name": "Bruno Rossi", "turning_point_ids": ["rossi-hall-muons"] },
   { "id": "grossmann", "name": "Marcel Grossmann", "turning_point_ids": ["einstein-field-equations"] },
@@ -323,7 +323,7 @@
   { "id": "mitchell-feigenbaum", "name": "Mitchell Feigenbaum", "turning_point_ids": ["feigenbaum-universality"] },
   { "id": "oscar-lanford", "name": "Oscar Lanford", "turning_point_ids": ["feigenbaum-universality"] },
   { "id": "warwick-tucker", "name": "Warwick Tucker", "turning_point_ids": ["tucker-lorenz-attractor"] },
-  { "id": "boltzmann", "name": "Ludwig Boltzmann", "turning_point_ids": ["boltzmann-ergodic-hypothesis", "boltzmann-h-theorem"] },
+  { "id": "boltzmann", "name": "Ludwig Boltzmann", "turning_point_ids": ["boltzmann-ergodic-hypothesis", "boltzmann-h-theorem", "boltzmann-entropy-formula"] },
   { "id": "yakov-sinai", "name": "Yakov Sinai", "turning_point_ids": ["kolmogorov-sinai-entropy"] },
   { "id": "donald-ornstein", "name": "Donald Ornstein", "turning_point_ids": ["ornstein-isomorphism"] },
   { "id": "hillel-furstenberg", "name": "Hillel Furstenberg", "turning_point_ids": ["furstenberg-szemeredi"] },
@@ -345,5 +345,13 @@
   { "id": "walther-nernst", "name": "Walther Nernst", "turning_point_ids": ["nernst-third-law"] },
   { "id": "katherine-maxwell", "name": "Katherine Clerk Maxwell", "turning_point_ids": ["maxwell-viscosity"] },
   { "id": "josef-loschmidt", "name": "Josef Loschmidt", "turning_point_ids": ["boltzmann-h-theorem"] },
-  { "id": "jean-perrin", "name": "Jean Perrin", "turning_point_ids": ["perrin-atoms"] }
+  { "id": "jean-perrin", "name": "Jean Perrin", "turning_point_ids": ["perrin-atoms"] },
+  { "id": "max-planck", "name": "Max Planck", "turning_point_ids": ["boltzmann-entropy-formula"] },
+  { "id": "josiah-willard-gibbs", "name": "Josiah Willard Gibbs", "turning_point_ids": ["gibbs-ensembles"] },
+  { "id": "satyendra-nath-bose", "name": "Satyendra Nath Bose", "turning_point_ids": ["bose-einstein-statistics"] },
+  { "id": "enrico-fermi", "name": "Enrico Fermi", "turning_point_ids": ["fermi-dirac-statistics"] },
+  { "id": "paul-dirac", "name": "Paul Dirac", "turning_point_ids": ["fermi-dirac-statistics"] },
+  { "id": "eric-cornell", "name": "Eric Cornell", "turning_point_ids": ["bose-einstein-condensate"] },
+  { "id": "carl-wieman", "name": "Carl Wieman", "turning_point_ids": ["bose-einstein-condensate"] },
+  { "id": "wolfgang-ketterle", "name": "Wolfgang Ketterle", "turning_point_ids": ["bose-einstein-condensate"] }
 ]
