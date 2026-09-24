@@ -517,5 +517,18 @@
   { "id": "roger-tsien", "name": "Roger Tsien", "turning_point_ids": ["green-fluorescent-protein"] },
   { "id": "stefan-hell", "name": "Stefan Hell", "turning_point_ids": ["super-resolution"] },
   { "id": "eric-betzig", "name": "Eric Betzig", "turning_point_ids": ["super-resolution"] },
-  { "id": "w-e-moerner", "name": "W. E. Moerner", "turning_point_ids": ["super-resolution"] }
+  { "id": "w-e-moerner", "name": "W. E. Moerner", "turning_point_ids": ["super-resolution"] },
+  { "id": "edward-jenner", "name": "Edward Jenner", "turning_point_ids": ["jenner-vaccination"] },
+  { "id": "benjamin-jesty", "name": "Benjamin Jesty", "turning_point_ids": ["jenner-vaccination"] },
+  { "id": "elie-metchnikoff", "name": "Élie Metchnikoff", "turning_point_ids": ["cellular-vs-humoral"] },
+  { "id": "paul-ehrlich", "name": "Paul Ehrlich", "turning_point_ids": ["cellular-vs-humoral"] },
+  { "id": "emil-von-behring", "name": "Emil von Behring", "turning_point_ids": ["antitoxins"] },
+  { "id": "kitasato-shibasaburo", "name": "Kitasato Shibasaburō", "turning_point_ids": ["antitoxins"] },
+  { "id": "frank-macfarlane-burnet", "name": "Frank Macfarlane Burnet", "turning_point_ids": ["clonal-selection"] },
+  { "id": "niels-jerne", "name": "Niels Jerne", "turning_point_ids": ["clonal-selection"] },
+  { "id": "georges-kohler", "name": "Georges Köhler", "turning_point_ids": ["monoclonal-antibodies"] },
+  { "id": "cesar-milstein", "name": "César Milstein", "turning_point_ids": ["monoclonal-antibodies"] },
+  { "id": "susumu-tonegawa", "name": "Susumu Tonegawa", "turning_point_ids": ["antibody-gene-rearrangement"] },
+  { "id": "katalin-kariko", "name": "Katalin Karikó", "turning_point_ids": ["mrna-vaccines"] },
+  { "id": "drew-weissman", "name": "Drew Weissman", "turning_point_ids": ["mrna-vaccines"] }
 ]
