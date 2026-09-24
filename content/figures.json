@@ -245,5 +245,14 @@
   { "id": "rowan-hamilton", "name": "William Rowan Hamilton", "turning_point_ids": ["quaternions"] },
   { "id": "paul-gordan", "name": "Paul Gordan", "turning_point_ids": ["hilbert-basis"] },
   { "id": "steinitz", "name": "Ernst Steinitz", "turning_point_ids": ["steinitz-fields"] },
-  { "id": "van-der-waerden", "name": "Bartel van der Waerden", "turning_point_ids": ["van-der-waerden"] }
+  { "id": "van-der-waerden", "name": "Bartel van der Waerden", "turning_point_ids": ["van-der-waerden"] },
+  { "id": "sophus-lie", "name": "Sophus Lie", "turning_point_ids": ["lie-groups"] },
+  { "id": "killing", "name": "Wilhelm Killing", "turning_point_ids": ["killing-cartan"] },
+  { "id": "elie-cartan", "name": "Élie Cartan", "turning_point_ids": ["killing-cartan"] },
+  { "id": "frobenius", "name": "Ferdinand Georg Frobenius", "turning_point_ids": ["frobenius-characters"] },
+  { "id": "weyl", "name": "Hermann Weyl", "turning_point_ids": ["weyl-wigner"] },
+  { "id": "wigner", "name": "Eugene Wigner", "turning_point_ids": ["weyl-wigner"] },
+  { "id": "john-mckay", "name": "John McKay", "turning_point_ids": ["moonshine"] },
+  { "id": "conway", "name": "John Conway", "turning_point_ids": ["moonshine"] },
+  { "id": "borcherds", "name": "Richard Borcherds", "turning_point_ids": ["moonshine"] }
 ]
