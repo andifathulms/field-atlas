@@ -67,8 +67,8 @@ turning_points:
     description: >-
       Gustav Kirchhoff, solving for the currents in an electrical network, shows that the
       independent equations correspond to the spanning trees of the circuit's graph, and
-      that their number is a determinant. It was the first use of graphs in physics, and
-      the matrix-tree theorem is still how spanning trees are counted.
+      that their number is a determinant. It was one of the first uses of graphs in physics,
+      and the matrix-tree theorem is still how spanning trees are counted.
     contested: false
     sources:
       - citation: "Kirchhoff, G. (1847). Über die Auflösung der Gleichungen, auf welche man bei der Untersuchung der linearen Vertheilung galvanischer Ströme geführt wird. Annalen der Physik und Chemie 72: 497–508."
@@ -148,7 +148,7 @@ turning_points:
     type: PROOF
     title: The graph minor theorem
     description: >-
-      In a series of twenty-three papers, Neil Robertson and Paul Seymour prove Wagner's
+      In a series of twenty papers, Neil Robertson and Paul Seymour prove Wagner's
       conjecture: in any infinite list of graphs, one is a minor of another. So every
       property that is preserved under taking minors, like being drawable on a given
       surface, is characterised by a finite list of forbidden graphs. It is one of the
@@ -169,7 +169,7 @@ open_problems:
       the complete graph on $t$ vertices as a minor. For $t = 5$ this is equivalent to the
       four colour theorem, so the conjecture is a vast generalisation of it.
     why_hard: >-
-      The cases up to $t = 6$ all reduce to the four colour theorem, itself proved only
+      The cases $t = 5$ and $t = 6$ reduce to the four colour theorem, itself proved only
       with a computer. Beyond that, no one has found a way to extract a large complete
       minor from the need for many colours, and even weaker versions of the statement are
       difficult.
@@ -263,4 +263,4 @@ Euler also saw the converse, proved in full by Carl Hierholzer in 1873: if a con
 
 ## Structure
 
-After the four colour theorem the field turned to structure. Between 1983 and 2004 {{fig:neil-robertson|Neil Robertson}} and {{fig:paul-seymour|Paul Seymour}} proved, in twenty-three papers, that graphs are well ordered by the minor relation. Their methods explain how graphs that avoid a given pattern are built, and they have led to fast algorithms. Graphs now underlie [combinatorial optimisation](/math/combinatorial-optimization/), the study of large networks and [extremal combinatorics](/math/extremal-combinatorics/). Hadwiger's conjecture, a vast generalisation of the four colour theorem, is still open.
+After the four colour theorem the field turned to structure. Between 1983 and 2004 {{fig:neil-robertson|Neil Robertson}} and {{fig:paul-seymour|Paul Seymour}} proved, in twenty papers, that graphs are well ordered by the minor relation. Their methods explain how graphs that avoid a given pattern are built, and they have led to fast algorithms. Graphs now underlie [combinatorial optimisation](/math/combinatorial-optimization/), the study of large networks and [extremal combinatorics](/math/extremal-combinatorics/). Hadwiger's conjecture, a vast generalisation of the four colour theorem, is still open.

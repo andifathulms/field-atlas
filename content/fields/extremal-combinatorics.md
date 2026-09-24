@@ -163,7 +163,7 @@ open_problems:
       humanity should put all its computers and mathematicians to work. If they asked for
       $R(6,6)$, we should try to destroy the aliens.
     sources:
-      - citation: "Radziszowski, S. P. (2024). Small Ramsey numbers. Electronic Journal of Combinatorics, Dynamic Survey DS1 (revision 17)."
+      - citation: "Radziszowski, S. P. (2026). Small Ramsey numbers. Electronic Journal of Combinatorics, Dynamic Survey DS1 (revision 18)."
         url: https://www.combinatorics.org/ojs/index.php/eljc/article/view/DS1
       - citation: "Angeltveit, V. & McKay, B. D. (2024). R(5,5) ≤ 46. arXiv:2409.15709."
         url: https://arxiv.org/abs/2409.15709
@@ -242,4 +242,4 @@ The next case is much harder. $R(4,4) = 18$, proved in 1955 with a clever colour
 
 In 1936 Erdős and Turán conjectured that density alone forces arithmetic progressions: any set containing a fixed positive fraction of the whole numbers contains progressions of every length. {{fig:endre-szemeredi|Endre Szemerédi}} proved it in 1975, in a proof so intricate that his own diagram of its logical structure became famous. Its key tool, the regularity lemma, says that every large graph can be split into pieces between which it behaves almost randomly. Two years later Hillel Furstenberg found a completely different proof using [ergodic theory](/math/ergodic-theory/), and a third proof came from Fourier analysis.
 
-These methods then reached the primes. In 2004 {{fig:ben-green|Ben Green}} and {{fig:terence-tao|Terence Tao}} proved that the primes contain arithmetic progressions of every length. And in 2023 {{fig:marcelo-campos|Marcelo Campos}}, {{fig:simon-griffiths|Simon Griffiths}}, {{fig:rob-morris|Robert Morris}} and {{fig:julian-sahasrabudhe|Julian Sahasrabudhe}} made the first exponential improvement in almost ninety years to the upper bound for Ramsey numbers. Lower bounds had stalled for even longer, because the best ones come from randomness, the subject of [probabilistic combinatorics](/math/probabilistic-combinatorics/).
+These methods then reached the primes. In 2004 {{fig:ben-green|Ben Green}} and {{fig:terence-tao|Terence Tao}} proved that the primes contain arithmetic progressions of every length. And in 2023 {{fig:marcelo-campos|Marcelo Campos}}, {{fig:simon-griffiths|Simon Griffiths}}, {{fig:rob-morris|Robert Morris}} and {{fig:julian-sahasrabudhe|Julian Sahasrabudhe}} made the first exponential improvement in almost ninety years to the upper bound for Ramsey numbers. Lower bounds have barely moved since 1947, because the best ones come from randomness, the subject of [probabilistic combinatorics](/math/probabilistic-combinatorics/).

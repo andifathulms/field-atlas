@@ -140,7 +140,7 @@ open_problems:
   - id: hadamard-conjecture
     name: The Hadamard conjecture
     status: open
-    status_note: Open as of writing; the smallest order for which no Hadamard matrix is known is 668.
+    status_note: Open as of 2026. In 2026 a team including Levent Alpöge, working with an AI model, announced matrices for 668 and the other missing orders below 2000, so the smallest unknown order is now above 2000.
     description: >-
       A Hadamard matrix is a square grid of $+1$s and $-1$s whose rows are pairwise
       orthogonal: any two rows agree in exactly half their positions. Such a matrix can
@@ -150,7 +150,8 @@ open_problems:
       There are several clever constructions, from finite fields and from smaller
       matrices, but each covers only some sizes. The rest have been found by computer
       searches, and the search space grows far too fast to be covered by brute force.
-      Order 428 was found only in 2005, and 668 is still missing.
+      Order 428 was found only in 2005, and 668, the smallest gap for two decades, only in
+      2026.
     unlocks: >-
       Hadamard matrices give the best error-correcting codes of certain kinds, efficient
       experimental designs and signal-processing transforms. A proof would also show that
@@ -267,4 +268,4 @@ Combinatorialists later found a proof that pairs the partitions off directly. If
 
 Many counting problems care about shape, not labels. How many different necklaces can be made from four black and four white beads, when turning a necklace round does not make it different? How many molecules have the formula $\text{C}_{6}\text{H}_{14}$? In 1937 {{fig:george-polya|George Pólya}} showed how to average over the group of symmetries to get the answer, as {{fig:j-howard-redfield|J. Howard Redfield}} had in a 1927 paper that almost nobody read. [Group theory](/math/group-theory/) became a counting tool.
 
-By the 1960s the subject was a large collection of techniques with little theory connecting them. {{fig:gian-carlo-rota|Gian-Carlo Rota}} began to supply one in 1964, and counting became a branch of mathematics with its own journals, conjectures and open problems. Some of those problems are about existence rather than number. Whether a Hadamard matrix exists for every multiple of four, a question from 1933, is still open, and order 668 has not been found.
+By the 1960s the subject was a large collection of techniques with little theory connecting them. {{fig:gian-carlo-rota|Gian-Carlo Rota}} began to supply one in 1964, and counting became a branch of mathematics with its own journals, conjectures and open problems. Some of those problems are about existence rather than number. Whether a Hadamard matrix exists for every multiple of four, a question from 1933, is still open. Order 668 was the smallest missing case until 2026.
