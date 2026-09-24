@@ -265,6 +265,21 @@ Riemann's programme took nearly forty years to carry out. In 1896 {{fig:hadamard
 
 Many believed the theorem was inseparable from complex analysis. In 1948–49 {{fig:selberg|Atle Selberg}} and {{fig:erdos|Paul Erdős}} found a proof using only elementary estimates, and then fell out bitterly over who deserved the credit.
 
+## A Closer Look: How Good Is the Prediction?
+
+The prime number theorem predicts that there are about $x / \ln x$ primes up to $x$. Gauss's refinement, the logarithmic integral $\operatorname{li}(x) = \int_0^x \frac{dt}{\ln t}$, adds up the "probability" $1/\ln t$ that each number near $t$ is prime. Compare both with the true counts:
+
+| $x$ | primes up to $x$, $\pi(x)$ | $x / \ln x$ | $\operatorname{li}(x)$ |
+|---|---|---|---|
+| $10^6$ | 78,498 | 72,382 | 78,628 |
+| $10^9$ | 50,847,534 | 48,254,942 | 50,849,235 |
+
+Both estimates have the right growth, but $\operatorname{li}(x)$ is far better. Up to a billion it is off by about 1,700, where $x/\ln x$ is off by more than two and a half million.
+
+How large can the error $\pi(x) - \operatorname{li}(x)$ get? That is exactly what the Riemann hypothesis controls. If it is true, the error never grows much faster than $\sqrt{x}\,\ln x$, about the size of the fluctuations in a random walk of $x$ steps. At $x = 10^9$ that scale is about 660,000. Lowell Schoenfeld's explicit form of the bound, $\frac{1}{8\pi}\sqrt{x}\,\ln x$, is about 26,000. The actual error is 1,701, well inside it. Riemann's explicit formula shows where the error comes from: each zero of the zeta function contributes a wave to the count of primes. Zeros on the critical line produce waves of the smallest possible size. A zero off the line would produce a larger wave, and the primes would be measurably less regular than they appear.
+
+The table also hides a surprise. In every computed case $\operatorname{li}(x)$ *over*estimates $\pi(x)$, and for a century it was assumed to always do so. In 1914 Littlewood proved that the two swap places infinitely often, but the first crossing lies beyond the range of any computer: somewhere below about $10^{316}$, by current bounds.
+
 ## Gaps and the Fog
 
 The biggest questions remain. The Riemann hypothesis has resisted 160 years of attempts, even as trillions of zeros have been checked. The twin prime conjecture, that primes 2 apart never run out, looked hopeless until 2013. Then {{fig:yitang-zhang|Yitang Zhang}}, a little-known lecturer who had once worked in a sandwich shop, proved that some fixed gap below 70 million occurs infinitely often. {{fig:maynard|James Maynard}} and a worldwide online collaboration soon brought the bound down to 246. The last step, from 246 to 2, needs an idea no one yet has.
