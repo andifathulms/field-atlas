@@ -380,5 +380,13 @@
   { "id": "ernest-rutherford", "name": "Ernest Rutherford", "turning_point_ids": ["rutherford-nucleus"] },
   { "id": "niels-bohr", "name": "Niels Bohr", "turning_point_ids": ["bohr-atom"] },
   { "id": "robert-millikan", "name": "Robert Millikan", "turning_point_ids": ["millikan-photoelectric"] },
-  { "id": "arthur-compton", "name": "Arthur Compton", "turning_point_ids": ["compton-scattering"] }
+  { "id": "arthur-compton", "name": "Arthur Compton", "turning_point_ids": ["compton-scattering"] },
+  { "id": "louis-de-broglie", "name": "Louis de Broglie", "turning_point_ids": ["de-broglie-waves"] },
+  { "id": "werner-heisenberg", "name": "Werner Heisenberg", "turning_point_ids": ["matrix-mechanics", "uncertainty-principle"] },
+  { "id": "max-born", "name": "Max Born", "turning_point_ids": ["matrix-mechanics", "born-rule"] },
+  { "id": "pascual-jordan", "name": "Pascual Jordan", "turning_point_ids": ["matrix-mechanics"] },
+  { "id": "erwin-schrodinger", "name": "Erwin Schrödinger", "turning_point_ids": ["schrodinger-equation"] },
+  { "id": "clinton-davisson", "name": "Clinton Davisson", "turning_point_ids": ["electron-diffraction"] },
+  { "id": "lester-germer", "name": "Lester Germer", "turning_point_ids": ["electron-diffraction"] },
+  { "id": "george-paget-thomson", "name": "George Paget Thomson", "turning_point_ids": ["electron-diffraction"] }
 ]
