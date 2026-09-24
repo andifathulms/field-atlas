@@ -88,8 +88,8 @@
   { "id": "friedmann", "name": "Alexander Friedmann", "turning_point_ids": ["friedmann-lemaitre"] },
   { "id": "lemaitre", "name": "Georges Lemaître", "turning_point_ids": ["friedmann-lemaitre", "hubble-lemaitre-law"] },
   { "id": "slipher", "name": "Vesto Slipher", "turning_point_ids": ["hubble-lemaitre-law"] },
-  { "id": "hubble", "name": "Edwin Hubble", "turning_point_ids": ["hubble-lemaitre-law"] },
-  { "id": "leavitt", "name": "Henrietta Leavitt", "turning_point_ids": ["hubble-lemaitre-law"] },
+  { "id": "hubble", "name": "Edwin Hubble", "turning_point_ids": ["hubble-lemaitre-law", "great-debate"] },
+  { "id": "leavitt", "name": "Henrietta Leavitt", "turning_point_ids": ["hubble-lemaitre-law", "leavitt-period-luminosity"] },
   { "id": "penzias", "name": "Arno Penzias", "turning_point_ids": ["cmb-discovery"] },
   { "id": "robert-wilson", "name": "Robert Wilson", "turning_point_ids": ["cmb-discovery"] },
   { "id": "alpher", "name": "Ralph Alpher", "turning_point_ids": ["cmb-discovery"] },
@@ -458,5 +458,15 @@
   { "id": "paul-murdin", "name": "Paul Murdin", "turning_point_ids": ["cygnus-x1"] },
   { "id": "tom-bolton", "name": "Tom Bolton", "turning_point_ids": ["cygnus-x1"] },
   { "id": "russell-hulse", "name": "Russell Hulse", "turning_point_ids": ["binary-pulsar"] },
-  { "id": "joseph-taylor", "name": "Joseph Taylor", "turning_point_ids": ["binary-pulsar"] }
+  { "id": "joseph-taylor", "name": "Joseph Taylor", "turning_point_ids": ["binary-pulsar"] },
+  { "id": "william-herschel", "name": "William Herschel", "turning_point_ids": ["herschel-star-counts"] },
+  { "id": "caroline-herschel", "name": "Caroline Herschel", "turning_point_ids": ["herschel-star-counts"] },
+  { "id": "harlow-shapley", "name": "Harlow Shapley", "turning_point_ids": ["shapley-galaxy", "great-debate"] },
+  { "id": "heber-curtis", "name": "Heber Curtis", "turning_point_ids": ["great-debate"] },
+  { "id": "bertil-lindblad", "name": "Bertil Lindblad", "turning_point_ids": ["oort-rotation"] },
+  { "id": "jan-oort", "name": "Jan Oort", "turning_point_ids": ["oort-rotation"] },
+  { "id": "vera-rubin", "name": "Vera Rubin", "turning_point_ids": ["rubin-rotation-curves"] },
+  { "id": "kent-ford", "name": "Kent Ford", "turning_point_ids": ["rubin-rotation-curves"] },
+  { "id": "reinhard-genzel", "name": "Reinhard Genzel", "turning_point_ids": ["sagittarius-a-star"] },
+  { "id": "andrea-ghez", "name": "Andrea Ghez", "turning_point_ids": ["sagittarius-a-star"] }
 ]
