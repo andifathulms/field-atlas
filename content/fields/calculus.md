@@ -176,6 +176,28 @@ Calculus worked astonishingly well. {{fig:euler|Euler}} made the *function* its 
 
 But no one could say what it was about. In 1734 {{fig:berkeley|George Berkeley}}, Bishop of Cloyne, published *The Analyst*, addressed to "an infidel mathematician". To find a derivative, he noted, you divide by a small increment, treating it as nonzero, and then set it to zero to get a clean answer. Infinitesimals were "neither finite quantities, nor quantities infinitely small, nor yet nothing". They were "the ghosts of departed quantities". Mathematicians knew the objection was fair and had no good answer.
 
+## A Closer Look: The Slope of a Parabola, Two Ways
+
+Find the slope of $y = x^2$ at a point $x$. Early calculus did it like this. Move a tiny distance $h$ along the curve. The height changes by
+
+$$
+(x + h)^2 - x^2 = 2xh + h^2 ,
+$$
+
+so the average slope over that step is $\frac{2xh + h^2}{h} = 2x + h$. Now let $h$ be "infinitely small" and throw it away: the slope is $2x$.
+
+This is exactly what Berkeley objected to. To divide by $h$ it must be nonzero, and to throw it away it must be zero. Newton spoke of "ultimate ratios" and Leibniz of infinitesimals, but neither could say what $h$ was at the moment of discarding it.
+
+The nineteenth-century answer, the *limit*, changes the question. Do not set $h$ to anything. Instead observe that $2x + h$ can be made as close to $2x$ as you like by taking $h$ small enough, and *define* the derivative as the number the averages approach:
+
+$$
+\frac{d}{dx}x^2 = \lim_{h \to 0} \frac{(x+h)^2 - x^2}{h} = \lim_{h \to 0} (2x + h) = 2x .
+$$
+
+The calculation is the same; only its justification changed.
+
+The fundamental theorem of calculus then turns the problem around. The area under $y = x^2$ from 0 to 1 is found by asking which function has derivative $x^2$. The answer is $\frac{x^3}{3}$, so the area is $\frac{1}{3}$. Archimedes had found the same fact about the parabola, after pages of exhaustion arguments. Calculus gets it in one line, which is why it swept the world before anyone could justify it.
+
 ## The Split
 
 The answer took a century and changed mathematics. Questions about which functions could be written as sums of waves ([Fourier analysis](/math/fourier-analysis/)) and about calculus with complex numbers ([complex analysis](/math/complex-analysis/)) pushed calculus into territory where intuition failed. The effort to put it on solid ground, with precise limits and precisely defined real numbers, became [real analysis](/math/real-analysis/). Calculus itself became the tool every other science used, and [differential geometry](/math/differential-geometry/) was one of the first fields built on it.
