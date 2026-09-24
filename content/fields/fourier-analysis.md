@@ -227,6 +227,26 @@ Making sense of Fourier's claim occupied the rest of the century and forced anal
 
 The final answer came late. {{fig:carleson|Lennart Carleson}} proved in 1966 that the Fourier series of every square-integrable function converges almost everywhere, a result so hard that many experts had expected the opposite.
 
+## A Closer Look: Building a Square Wave from Smooth Waves
+
+Fourier's boldest claim was that even a function with jumps is a sum of smooth sine waves. Take the square wave that switches between $+1$ and $-1$ every half-period. Its Fourier series is
+
+$$
+f(x) = \frac{4}{\pi}\left(\sin x + \frac{\sin 3x}{3} + \frac{\sin 5x}{5} + \frac{\sin 7x}{7} + \cdots\right).
+$$
+
+One term gives a rounded hump. Adding the third harmonic flattens the top, and with each odd harmonic the sum squares off further, closer and closer to the corners. Every term is smooth, yet the infinite sum jumps. This is exactly what Euler and Lagrange had thought impossible.
+
+Two surprises lie in the details. Put $x = \frac{\pi}{2}$, where the square wave equals 1. The series becomes
+
+$$
+1 = \frac{4}{\pi}\left(1 - \frac13 + \frac15 - \frac17 + \cdots\right), \quad \text{so} \quad \frac{\pi}{4} = 1 - \frac13 + \frac15 - \frac17 + \cdots ,
+$$
+
+the Leibniz series for $\pi$, falling out as a by-product. Second, near each jump the partial sums always overshoot, by about 9% of the jump, however many terms are added. The overshoot squeezes closer to the jump but never shrinks. This is the *Gibbs phenomenon*, observed in 1898 when a machine built to sum Fourier series drew stubborn spikes at the corners. It shows up today as "ringing" around sharp edges in compressed images.
+
+That the series converges at every point except the jumps, and exactly what happens at the jumps (it converges to the midpoint, 0), was proved by Dirichlet in 1829. It was one of the first theorems of rigorous analysis.
+
 ## Everywhere at Once
 
 Meanwhile the idea escaped into science. Light splits into a spectrum, sound into frequencies, and the X-ray pattern of a crystal is the Fourier transform of its atoms, which is how [molecular biology](/biology/molecular-biology/) read the structure of DNA. In 1965 {{fig:cooley|James Cooley}} and {{fig:tukey|John Tukey}} published the fast Fourier transform, and made the transform cheap enough to run on every phone, camera and modem. Gauss, it later emerged, had found the same algorithm around 1805.
