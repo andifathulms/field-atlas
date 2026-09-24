@@ -67,7 +67,7 @@ turning_points:
       - citation: "Carson, R. (1962). Silent Spring. Houghton Mifflin, Boston."
         url: null
       - citation: "Ratcliffe, D. A. (1967). Decrease in eggshell weight in certain birds of prey. Nature 215(5097): 208–210."
-        url: null
+        url: https://doi.org/10.1038/215208a0
 
   - id: sloss-debate
     date: 1975 – 1986
@@ -88,9 +88,9 @@ turning_points:
       faces. Most ecologists now regard the question as posed too simply.
     sources:
       - citation: "Diamond, J. M. (1975). The island dilemma: lessons of modern biogeographic studies for the design of natural reserves. Biological Conservation 7(2): 129–146."
-        url: null
+        url: https://doi.org/10.1016/0006-3207(75)90052-X
       - citation: "Simberloff, D. S. & Abele, L. G. (1976). Island biogeography theory and conservation practice. Science 191(4224): 285–286."
-        url: null
+        url: https://doi.org/10.1126/science.191.4224.285
 
   - id: minimum-viable-population
     date: 1980 – 1981
@@ -113,7 +113,7 @@ turning_points:
       - citation: "Franklin, I. R. (1980). Evolutionary change in small populations. In Soulé, M. E. & Wilcox, B. A. (eds.), Conservation Biology: An Evolutionary-Ecological Perspective. Sinauer Associates."
         url: null
       - citation: "Shaffer, M. L. (1981). Minimum population sizes for species conservation. BioScience 31(2): 131–134."
-        url: null
+        url: https://doi.org/10.2307/1308256
 
   - id: soule-crisis-discipline
     date: "1985"
@@ -128,7 +128,7 @@ turning_points:
     contested: false
     sources:
       - citation: "Soulé, M. E. (1985). What is conservation biology? BioScience 35(11): 727–734."
-        url: null
+        url: https://doi.org/10.2307/1310054
 
   - id: red-list-criteria
     date: 1964 – 1994
@@ -143,7 +143,7 @@ turning_points:
     contested: false
     sources:
       - citation: "Mace, G. M. & Lande, R. (1991). Assessing extinction threats: toward a reevaluation of IUCN threatened species categories. Conservation Biology 5(2): 148–157."
-        url: null
+        url: https://doi.org/10.1111/j.1523-1739.1991.tb00119.x
 
   - id: extinction-rate-debate
     date: 1979 – 2014
@@ -166,9 +166,9 @@ turning_points:
       - citation: "Myers, N. (1979). The Sinking Ark: A New Look at the Problem of Disappearing Species. Pergamon Press, Oxford."
         url: null
       - citation: "He, F. & Hubbell, S. P. (2011). Species–area relationships always overestimate extinction rates from habitat loss. Nature 473(7347): 368–371."
-        url: null
+        url: https://doi.org/10.1038/nature09985
       - citation: "Pimm, S. L. et al. (2014). The biodiversity of species and their rates of extinction, distribution, and protection. Science 344(6187): 1246752."
-        url: null
+        url: https://doi.org/10.1126/science.1246752
 
 open_problems:
   - id: how-many-species
@@ -177,8 +177,8 @@ open_problems:
     status_note: Open as of writing; about two million species have been named, and estimates of the total vary more than tenfold.
     description: >-
       Nobody knows how many species live on Earth, even to the nearest million. One
-      widely cited estimate, from 2011, puts the number of plants, animals and fungi at
-      about 8.7 million, most of them undescribed. Counting bacteria and archaea could
+      widely cited estimate, from 2011, puts the number of species with complex cells,
+      such as plants, animals and fungi, at about 8.7 million, most of them undescribed. Counting bacteria and archaea could
       raise the total enormously.
     why_hard: >-
       Most undescribed species are small, rare, or live in poorly explored places such
@@ -190,9 +190,9 @@ open_problems:
       and a map of where undiscovered diversity is concentrated.
     sources:
       - citation: "May, R. M. (1988). How many species are there on Earth? Science 241(4872): 1441–1449."
-        url: null
+        url: https://doi.org/10.1126/science.241.4872.1441
       - citation: "Mora, C., Tittensor, D. P., Adl, S., Simpson, A. G. B. & Worm, B. (2011). How many species are there on Earth and in the ocean? PLoS Biology 9(8): e1001127."
-        url: null
+        url: https://doi.org/10.1371/journal.pbio.1001127
 
 applications:
   - area: Statistics
@@ -207,7 +207,7 @@ applications:
     field_id: probability-theory
     sources:
       - citation: "Karanth, K. U. & Nichols, J. D. (1998). Estimation of tiger densities in India using photographic captures and recaptures. Ecology 79(8): 2852–2862."
-        url: null
+        url: https://doi.org/10.1890/0012-9658(1998)079[2852:EOTDII]2.0.CO;2
   - area: Policy
     title: Protecting 30% of the planet
     description: >-
@@ -217,7 +217,7 @@ applications:
       rich in species and connected to each other.
     sources:
       - citation: "Convention on Biological Diversity (2022). Kunming–Montreal Global Biodiversity Framework. Decision 15/4."
-        url: null
+        url: https://www.cbd.int/doc/decisions/cop-15/cop-15-dec-04-en.pdf
 
 further_reading:
   - citation: "Carson, R. (1962). Silent Spring. Houghton Mifflin."

@@ -57,9 +57,9 @@ turning_points:
     contested: false
     sources:
       - citation: "Tansley, A. G. (1935). The use and abuse of vegetational concepts and terms. Ecology 16(3): 284–307."
-        url: null
+        url: https://doi.org/10.2307/1930070
       - citation: "Willis, A. J. (1997). The ecosystem: an evolving concept viewed historically. Functional Ecology 11(2): 268–271."
-        url: null
+        url: https://doi.org/10.1111/j.1365-2435.1997.00081.x
 
   - id: lindeman-trophic-dynamics
     date: "1942"
@@ -75,9 +75,9 @@ turning_points:
     contested: false
     sources:
       - citation: "Lindeman, R. L. (1942). The trophic-dynamic aspect of ecology. Ecology 23(4): 399–417."
-        url: null
+        url: https://doi.org/10.2307/1930126
       - citation: "Cook, R. E. (1977). Raymond Lindeman and the trophic-dynamic concept in ecology. Science 198(4312): 22–26."
-        url: null
+        url: https://doi.org/10.1126/science.198.4312.22
 
   - id: odum-energy-flow
     date: 1953 – 1957
@@ -94,7 +94,7 @@ turning_points:
       - citation: "Odum, E. P. (1953). Fundamentals of Ecology. W. B. Saunders, Philadelphia."
         url: null
       - citation: "Odum, H. T. (1957). Trophic structure and productivity of Silver Springs, Florida. Ecological Monographs 27(1): 55–112."
-        url: null
+        url: https://doi.org/10.2307/1948571
 
   - id: keeling-curve
     date: "1958"
@@ -110,7 +110,7 @@ turning_points:
     contested: false
     sources:
       - citation: "Keeling, C. D. (1960). The concentration and isotopic abundances of carbon dioxide in the atmosphere. Tellus 12(2): 200–203."
-        url: null
+        url: https://doi.org/10.3402/tellusa.v12i2.9366
 
   - id: hubbard-brook
     date: 1963 – 1972
@@ -121,14 +121,14 @@ turning_points:
       small forested valleys in New Hampshire, whose bedrock is watertight, so that the
       stream is the only way out. Rain and streamwater are sampled every week. When one
       valley is clear-felled and kept bare with herbicide, its losses of nitrogen and
-      other nutrients soar. The rain itself turns out to be strongly acidic, the first
-      documented case of acid rain in North America.
+      other nutrients soar. The rain itself turns out to be strongly acidic, one of the
+      first documented cases of acid rain in North America.
     contested: false
     sources:
       - citation: "Likens, G. E., Bormann, F. H., Johnson, N. M., Fisher, D. W. & Pierce, R. S. (1970). Effects of forest cutting and herbicide treatment on nutrient budgets in the Hubbard Brook watershed-ecosystem. Ecological Monographs 40(1): 23–47."
-        url: null
+        url: https://doi.org/10.2307/1942440
       - citation: "Likens, G. E. & Bormann, F. H. (1974). Acid rain: a serious regional environmental problem. Science 184(4142): 1176–1179."
-        url: null
+        url: https://doi.org/10.1126/science.184.4142.1176
 
   - id: trophic-cascades
     date: 1974 – 2012
@@ -149,11 +149,11 @@ turning_points:
       drought, bears, hunting by people and changes in streams as other causes.
     sources:
       - citation: "Estes, J. A. & Palmisano, J. F. (1974). Sea otters: their role in structuring nearshore communities. Science 185(4156): 1058–1060."
-        url: null
+        url: https://doi.org/10.1126/science.185.4156.1058
       - citation: "Ripple, W. J. & Beschta, R. L. (2012). Trophic cascades in Yellowstone: the first 15 years after wolf reintroduction. Biological Conservation 145(1): 205–213."
-        url: null
+        url: https://doi.org/10.1016/j.biocon.2011.11.005
       - citation: "Kauffman, M. J., Brodie, J. F. & Jules, E. S. (2010). Are wolves saving Yellowstone's aspen? A landscape-level test of a behaviorally mediated trophic cascade. Ecology 91(9): 2742–2755."
-        url: null
+        url: https://doi.org/10.1890/09-1949.1
 
 open_problems:
   - id: ecosystem-tipping-points
@@ -176,9 +176,9 @@ open_problems:
       better understanding of how resilient ecosystems are to climate change.
     sources:
       - citation: "Scheffer, M., Carpenter, S., Foley, J. A., Folke, C. & Walker, B. (2001). Catastrophic shifts in ecosystems. Nature 413(6856): 591–596."
-        url: null
+        url: https://doi.org/10.1038/35098000
       - citation: "Scheffer, M. et al. (2009). Early-warning signals for critical transitions. Nature 461(7260): 53–59."
-        url: null
+        url: https://doi.org/10.1038/nature08227
 
 applications:
   - area: Thermodynamics
@@ -202,7 +202,7 @@ applications:
       sulphur dioxide emissions. The same record then showed rain becoming less acidic.
     sources:
       - citation: "Likens, G. E., Driscoll, C. T. & Buso, D. C. (1996). Long-term effects of acid rain: response and recovery of a forest ecosystem. Science 272(5259): 244–246."
-        url: null
+        url: https://doi.org/10.1126/science.272.5259.244
 
 further_reading:
   - citation: "Golley, F. B. (1993). A History of the Ecosystem Concept in Ecology: More Than the Sum of the Parts. Yale University Press."
@@ -230,7 +230,7 @@ The first to do so was {{fig:raymond-lindeman|Raymond Lindeman}}, a young ecolog
 
 ## Watersheds and a Breathing Planet
 
-Energy flows through an ecosystem once and is lost as heat. Chemical elements cycle. In 1963 {{fig:gene-likens|Gene Likens}} and {{fig:herbert-bormann|Herbert Bormann}} began measuring those cycles at the Hubbard Brook Experimental Forest in New Hampshire. Its small valleys sit on watertight bedrock, so everything that leaves them must flow out in the stream, where it can be sampled. Comparing rain with streamwater gave a complete nutrient budget for a forest. When one valley was cut and kept bare, its streams carried away nitrogen and calcium far faster than before. The living forest had been holding its nutrients. The weekly rain samples also revealed that the rain was strongly acidic, the first clear evidence of acid rain in North America.
+Energy flows through an ecosystem once and is lost as heat. Chemical elements cycle. In 1963 {{fig:gene-likens|Gene Likens}} and {{fig:herbert-bormann|Herbert Bormann}} began measuring those cycles at the Hubbard Brook Experimental Forest in New Hampshire. Its small valleys sit on watertight bedrock, so everything that leaves them must flow out in the stream, where it can be sampled. Comparing rain with streamwater gave a complete nutrient budget for a forest. When one valley was cut and kept bare, its streams carried away nitrogen and calcium far faster than before. The living forest had been holding its nutrients. The weekly rain samples also revealed that the rain was strongly acidic, some of the first clear evidence of acid rain in North America.
 
 The largest ecosystem is the planet. In 1958 {{fig:charles-david-keeling|Charles David Keeling}} began measuring carbon dioxide on Mauna Loa in Hawaii. His record climbed year after year, but it also rose and fell with the seasons, lowest at the end of the northern summer, when the forests of the northern hemisphere have drawn carbon out of the air, and highest in spring, after a winter of decay. The Keeling curve shows the whole planet's vegetation breathing, on top of the steady rise from burning fossil fuels.
 

@@ -77,9 +77,9 @@ turning_points:
       integrated units.
     sources:
       - citation: "Gleason, H. A. (1926). The individualistic concept of the plant association. Bulletin of the Torrey Botanical Club 53(1): 7–26."
-        url: null
+        url: https://doi.org/10.2307/2479933
       - citation: "Whittaker, R. H. (1956). Vegetation of the Great Smoky Mountains. Ecological Monographs 26(1): 1–80."
-        url: null
+        url: https://doi.org/10.2307/1943577
 
   - id: hutchinson-niche
     date: 1957 – 1959
@@ -95,9 +95,9 @@ turning_points:
     contested: false
     sources:
       - citation: "Hutchinson, G. E. (1957). Concluding remarks. Cold Spring Harbor Symposia on Quantitative Biology 22: 415–427."
-        url: null
+        url: https://doi.org/10.1101/SQB.1957.022.01.039
       - citation: "Hutchinson, G. E. (1959). Homage to Santa Rosalia, or Why are there so many kinds of animals? American Naturalist 93(870): 145–159."
-        url: null
+        url: https://doi.org/10.1086/282070
 
   - id: connell-barnacles
     date: "1961"
@@ -113,7 +113,7 @@ turning_points:
     contested: false
     sources:
       - citation: "Connell, J. H. (1961). The influence of interspecific competition and other factors on the distribution of the barnacle Chthamalus stellatus. Ecology 42(4): 710–723."
-        url: null
+        url: https://doi.org/10.2307/1933500
 
   - id: paine-keystone
     date: 1966 – 1969
@@ -129,9 +129,9 @@ turning_points:
     contested: false
     sources:
       - citation: "Paine, R. T. (1966). Food web complexity and species diversity. American Naturalist 100(910): 65–75."
-        url: null
+        url: https://doi.org/10.1086/282400
       - citation: "Paine, R. T. (1969). A note on trophic complexity and community stability. American Naturalist 103(929): 91–93."
-        url: null
+        url: https://doi.org/10.1086/282586
 
   - id: hubbell-neutral
     date: "2001"
@@ -155,7 +155,7 @@ turning_points:
       - citation: "Hubbell, S. P. (2001). The Unified Neutral Theory of Biodiversity and Biogeography. Princeton University Press."
         url: null
       - citation: "Rosindell, J., Hubbell, S. P. & Etienne, R. S. (2011). The unified neutral theory of biodiversity and biogeography at age ten. Trends in Ecology & Evolution 26(7): 340–348."
-        url: null
+        url: https://doi.org/10.1016/j.tree.2011.03.024
 
 open_problems:
   - id: paradox-of-the-plankton
@@ -178,9 +178,9 @@ open_problems:
       nutrient pollution.
     sources:
       - citation: "Hutchinson, G. E. (1961). The paradox of the plankton. American Naturalist 95(882): 137–145."
-        url: null
+        url: https://doi.org/10.1086/282171
       - citation: "Huisman, J. & Weissing, F. J. (1999). Biodiversity of plankton by species oscillations and chaos. Nature 402(6760): 407–410."
-        url: null
+        url: https://doi.org/10.1038/46540
 
 applications:
   - area: Statistics
@@ -195,7 +195,7 @@ applications:
     field_id: probability-theory
     sources:
       - citation: "Fisher, R. A., Corbet, A. S. & Williams, C. B. (1943). The relation between the number of species and the number of individuals in a random sample of an animal population. Journal of Animal Ecology 12(1): 42–58."
-        url: null
+        url: https://doi.org/10.2307/1411
       - citation: "Chao, A. (1984). Nonparametric estimation of the number of classes in a population. Scandinavian Journal of Statistics 11(4): 265–270."
         url: null
   - area: Agriculture
@@ -226,13 +226,13 @@ further_reading:
 
 Ecology as a science of communities began with plants. In 1916 the American botanist {{fig:frederic-clements|Frederic Clements}} set out a grand theory. When a glacier retreats or a field is abandoned, plants colonise it in a fixed order: lichens and weeds, then grasses, then shrubs, then trees. Each stage changes the soil and shade in ways that favour the next. The sequence ends in a climax community, set by the regional climate, that persists until disturbed. Clements described the community as a superorganism that is born, grows and matures.
 
-In 1926 {{fig:henry-gleason|Henry Gleason}} disagreed. Each species, he argued, is spread according to its own needs and its own luck in dispersal. What we call a community is simply the set of species that happen to overlap in one place. Gleason was ignored for a generation and left ecology for plant taxonomy. In the 1950s ecologists tested the two views by sampling vegetation along gradients, up mountainsides and from wet to dry ground. Each species rose and fell on its own, and the borders between communities blurred. Gleason had been right.
+In 1926 {{fig:henry-gleason|Henry Gleason}} disagreed. Each species, he argued, is spread according to its own needs and its own luck in dispersal. What we call a community is simply the set of species that happen to overlap in one place. Gleason was ignored for a generation and turned to plant taxonomy. In the 1950s ecologists tested the two views by sampling vegetation along gradients, up mountainsides and from wet to dry ground. Each species rose and fell on its own, and the borders between communities blurred. Gleason had been right.
 
 ## The Niche
 
 If communities are not organisms, what decides which species share a place? The answer came through the idea of the niche. In 1957 {{fig:g-evelyn-hutchinson|G. Evelyn Hutchinson}}, a Yale limnologist with an enormous range of interests, defined it precisely. Take every condition and resource that matters to a species, such as temperature, humidity and the size of its food, and make each an axis. The niche is the region of that many-dimensional space where the species can persist. Two species cannot occupy the same niche indefinitely, as Gause's test tubes had shown in [population ecology](/biology/population-ecology/).
 
-Hutchinson's students turned the idea into research. {{fig:robert-macarthur|Robert MacArthur}} showed in 1958 that five species of warbler share the same spruce trees in New England by feeding in different parts of them. And in 1961 {{fig:joseph-connell|Joseph Connell}} moved the question outdoors with an experiment. On the Scottish island of Great Cumbrae, the small barnacle *Chthamalus* lives high on the shore and the larger *Balanus* below it. When Connell cleared *Balanus* from rocks lower down, *Chthamalus* survived there. Its realised niche was narrower than its fundamental niche because a competitor crushed and smothered it.
+Field studies turned the idea into research. Hutchinson's student {{fig:robert-macarthur|Robert MacArthur}} showed in 1958 that five species of warbler share the same spruce trees in New England by feeding in different parts of them. And in 1961 {{fig:joseph-connell|Joseph Connell}} moved the question outdoors with an experiment. On the Scottish island of Great Cumbrae, the small barnacle *Chthamalus* lives high on the shore and the larger *Balanus* below it. When Connell cleared *Balanus* from rocks lower down, *Chthamalus* survived there. Its realised niche was narrower than its fundamental niche because a competitor crushed and smothered it.
 
 ## Who Holds a Community Together
 

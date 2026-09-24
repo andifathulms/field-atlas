@@ -58,7 +58,7 @@ turning_points:
       - citation: "Verhulst, P.-F. (1838). Notice sur la loi que la population suit dans son accroissement. Correspondance mathématique et physique 10: 113–121."
         url: null
       - citation: "Pearl, R. & Reed, L. J. (1920). On the rate of growth of the population of the United States since 1790 and its mathematical representation. Proceedings of the National Academy of Sciences 6(6): 275–288."
-        url: null
+        url: https://doi.org/10.1073/pnas.6.6.275
 
   - id: lynx-hare-cycle
     date: 1924 – 1942
@@ -78,7 +78,7 @@ turning_points:
       discussed.
     sources:
       - citation: "Elton, C. & Nicholson, M. (1942). The ten-year cycle in numbers of the lynx in Canada. Journal of Animal Ecology 11(2): 215–244."
-        url: null
+        url: https://doi.org/10.2307/1358
 
   - id: lotka-volterra
     date: 1925 – 1926
@@ -98,8 +98,8 @@ turning_points:
     sources:
       - citation: "Lotka, A. J. (1925). Elements of Physical Biology. Williams & Wilkins, Baltimore."
         url: null
-      - citation: "Volterra, V. (1926). Fluctuations in the abundance of a species considered mathematically. Nature 118: 558–560."
-        url: null
+      - citation: "Volterra, V. (1926). Fluctuations in the abundance of a species considered mathematically. Nature 118(2972): 558–560."
+        url: https://doi.org/10.1038/118558a0
 
   - id: gause-competitive-exclusion
     date: "1934"
@@ -134,7 +134,7 @@ turning_points:
       how it can be detected in noisy data.
     sources:
       - citation: "Nicholson, A. J. (1933). The balance of animal populations. Journal of Animal Ecology 2(1): 132–178."
-        url: null
+        url: https://doi.org/10.2307/954
       - citation: "Andrewartha, H. G. & Birch, L. C. (1954). The Distribution and Abundance of Animals. University of Chicago Press."
         url: null
 
@@ -156,9 +156,9 @@ turning_points:
       records, it is hard to tell chaos from random disturbance.
     sources:
       - citation: "May, R. M. (1974). Biological populations with nonoverlapping generations: stable points, stable cycles, and chaos. Science 186(4164): 645–647."
-        url: null
+        url: https://doi.org/10.1126/science.186.4164.645
       - citation: "Hassell, M. P., Lawton, J. H. & May, R. M. (1976). Patterns of dynamical behaviour in single-species populations. Journal of Animal Ecology 45(2): 471–486."
-        url: null
+        url: https://doi.org/10.2307/3886
 
 open_problems:
   - id: rodent-population-cycles
@@ -214,8 +214,8 @@ applications:
     domain: math
     field_id: chaos-theory
     sources:
-      - citation: "May, R. M. (1976). Simple mathematical models with very complicated dynamics. Nature 261: 459–467."
-        url: null
+      - citation: "May, R. M. (1976). Simple mathematical models with very complicated dynamics. Nature 261(5560): 459–467."
+        url: https://doi.org/10.1038/261459a0
 
 further_reading:
   - citation: "Kingsland, S. E. (1995). Modeling Nature: Episodes in the History of Population Ecology (2nd ed.). University of Chicago Press."
@@ -247,7 +247,7 @@ Volterra had been set the problem by his son-in-law, the marine biologist Umbert
 
 The equations were easy to write and hard to test in the wild. In Moscow in the early 1930s, {{fig:georgii-gause|Georgii Gause}}, still in his early twenties, tested them with microbes. He grew two species of *Paramecium* on the same bacterial food. Each alone grew along a logistic curve. Together, one always drove the other extinct. When he paired species that fed in different parts of the tube, they coexisted. The rule that complete competitors cannot coexist became known as the competitive exclusion principle.
 
-In the field, ecologists argued about what really controls numbers. {{fig:alexander-nicholson|Alexander Nicholson}} in Australia held that crowding does: as a population grows, competition for food and space raises deaths and cuts births. His blowflies, kept in cages on a fixed ration of meat, cycled in number for years. His compatriots {{fig:herbert-andrewartha|Herbert Andrewartha}} and {{fig:charles-birch|Charles Birch}} replied in 1954 that most insects never get crowded, because the weather kills them first. The argument ran for two decades and ended with both sides partly right.
+In the field, ecologists argued about what really controls numbers. {{fig:alexander-nicholson|Alexander Nicholson}} in Australia held that crowding does: as a population grows, competition for food and space raises deaths and cuts births. His blowflies, kept in cages on a fixed ration of meat, cycled in number for years. {{fig:herbert-andrewartha|Herbert Andrewartha}} and {{fig:charles-birch|Charles Birch}}, also working in Australia, replied in 1954 that most insects never get crowded, because the weather kills them first. The argument ran for two decades and ended with both sides partly right.
 
 Then, in 1974, {{fig:robert-may|Robert May}}, a physicist who had turned to ecology, showed that crowding alone can produce wild fluctuations. In a population with separate generations, if numbers overshoot strongly when crowded, the simplest density-dependent rule gives steady numbers, then two-year cycles, then four-year cycles, and then chaos, fluctuations that never repeat and cannot be predicted far ahead. With Michael Hassell and John Lawton he fitted the model to real insect populations, and found most of them in the stable range. Whether many wild populations are chaotic is still debated. What changed for good was the assumption that erratic numbers need an outside cause.
 

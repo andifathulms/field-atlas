@@ -11,7 +11,7 @@ core_question: Why do species live where they do, and why do some places hold so
 summary: |-
   Biogeography is the study of where living things are found, and why. It asks why kangaroos live only in Australia, why a tropical mountain carries the same belts of vegetation that a traveller meets going from the equator to the Arctic, and why a large island holds more kinds of animal than a small one. Its answers draw on climate, on the history of the continents, and on evolution.
 
-  The field began with Alexander von Humboldt's maps of vegetation on the mountains of South America. Darwin and Wallace then made distribution a central piece of evidence for evolution, and Wallace drew the first maps of the world's great zoological regions. In the twentieth century continental drift explained how related species ended up on opposite sides of oceans, and MacArthur and Wilson turned the number of species on an island into a quantitative theory that later shaped the design of nature reserves.
+  The field began with Alexander von Humboldt's maps of vegetation on the mountains of South America. Darwin and Wallace then made distribution a central piece of evidence for evolution, and Wallace mapped the world's great zoological regions. In the twentieth century continental drift explained how related species ended up on opposite sides of oceans, and MacArthur and Wilson turned the number of species on an island into a quantitative theory that later shaped the design of nature reserves.
 
 key_ideas:
   - term: Life zones
@@ -76,7 +76,7 @@ turning_points:
     contested: false
     sources:
       - citation: "Wallace, A. R. (1863). On the physical geography of the Malay Archipelago. Journal of the Royal Geographical Society of London 33: 217–234."
-        url: null
+        url: https://doi.org/10.2307/1798448
       - citation: "Wallace, A. R. (1876). The Geographical Distribution of Animals (2 vols.). Macmillan, London."
         url: null
 
@@ -119,11 +119,11 @@ turning_points:
       been debated since the 1970s.
     sources:
       - citation: "MacArthur, R. H. & Wilson, E. O. (1963). An equilibrium theory of insular zoogeography. Evolution 17(4): 373–387."
-        url: null
+        url: https://doi.org/10.1111/j.1558-5646.1963.tb03295.x
       - citation: "MacArthur, R. H. & Wilson, E. O. (1967). The Theory of Island Biogeography. Princeton University Press."
         url: null
       - citation: "Brown, J. H. & Lomolino, M. V. (1989). Independent discovery of the equilibrium theory of island biogeography. Ecology 70(6): 1954–1957."
-        url: null
+        url: https://doi.org/10.2307/1938125
 
   - id: simberloff-wilson-mangroves
     date: 1966 – 1969
@@ -139,7 +139,7 @@ turning_points:
     contested: false
     sources:
       - citation: "Simberloff, D. S. & Wilson, E. O. (1969). Experimental zoogeography of islands: the colonization of empty islands. Ecology 50(2): 278–296."
-        url: null
+        url: https://doi.org/10.2307/1934856
 
 open_problems:
   - id: latitudinal-diversity-gradient
@@ -163,9 +163,9 @@ open_problems:
       the distribution of species will shift as the climate warms.
     sources:
       - citation: "Pianka, E. R. (1966). Latitudinal gradients in species diversity: a review of concepts. American Naturalist 100(910): 33–46."
-        url: null
+        url: https://doi.org/10.1086/282398
       - citation: "Willig, M. R., Kaufman, D. M. & Stevens, R. D. (2003). Latitudinal gradients of biodiversity: pattern, process, scale, and synthesis. Annual Review of Ecology, Evolution, and Systematics 34: 273–309."
-        url: null
+        url: https://doi.org/10.1146/annurev.ecolsys.34.012103.144032
 
 applications:
   - area: Conservation
@@ -177,7 +177,7 @@ applications:
       funding to the places where it protects the most species per dollar.
     sources:
       - citation: "Myers, N., Mittermeier, R. A., Mittermeier, C. G., da Fonseca, G. A. B. & Kent, J. (2000). Biodiversity hotspots for conservation priorities. Nature 403(6772): 853–858."
-        url: null
+        url: https://doi.org/10.1038/35002501
   - area: Climate change
     title: Tracking species as the climate warms
     description: >-
@@ -187,7 +187,7 @@ applications:
       higher up the mountain than they did in 1802.
     sources:
       - citation: "Morueta-Holme, N. et al. (2015). Strong upslope shifts in Chimborazo's vegetation over two centuries since Humboldt. Proceedings of the National Academy of Sciences 112(41): 12741–12745."
-        url: null
+        url: https://doi.org/10.1073/pnas.1509938112
 
 further_reading:
   - citation: "Wulf, A. (2015). The Invention of Nature: Alexander von Humboldt's New World. Alfred A. Knopf."
