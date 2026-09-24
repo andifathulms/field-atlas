@@ -226,6 +226,30 @@ Over the next fourteen years Fisher, {{fig:haldane|J. B. S. Haldane}} and {{fig:
 
 The mathematics convinced mathematicians. {{fig:dobzhansky|Theodosius Dobzhansky}} convinced naturalists. His *Genetics and the Origin of Species* (1937) showed the theory at work in wild fruit-fly populations. Ernst Mayr explained how new species arise when populations are isolated, George Gaylord Simpson reconciled the fossil record, and Julian Huxley named the result the *Modern Synthesis*. By the late 1940s natural selection acting on Mendelian genes was the framework of all of biology. Dobzhansky later summed it up: "Nothing in biology makes sense except in the light of evolution."
 
+## A Closer Look: Carriers and the Speed of Selection
+
+**Hidden alleles.** Cystic fibrosis affects about 1 in 2,500 babies of northern European descent. It is recessive: a child is affected only with two copies of the faulty allele. If the allele has frequency $q$ and mating is random, Hardy and Weinberg's rule says a fraction $q^2$ of people carry two copies. So
+
+$$
+q^2 = \frac{1}{2500}, \qquad q = \frac{1}{50} = 0.02 .
+$$
+
+The fraction who carry exactly one copy is $2pq$, with $p = 1 - q = 0.98$:
+
+$$
+2pq = 2 \times 0.98 \times 0.02 \approx 0.039 ,
+$$
+
+about 1 person in 25. For every affected child there are about a hundred healthy carriers. This is why selection against rare recessive diseases is so slow: almost all copies of the allele are hidden in carriers, where selection cannot see them.
+
+**Selection at work.** Now take an allele that gives its carriers a 1% advantage in survival or reproduction, a difference far too small to notice in any one family. Fisher and Haldane showed how its frequency changes. When the allele's effect adds up in each copy, the time to rise from a frequency of 1% to 99% is roughly
+
+$$
+t \approx \frac{1}{s} \ln\!\left(\frac{0.99/0.01}{0.01/0.99}\right) = \frac{\ln 9801}{0.01} \approx 920 \text{ generations} .
+$$
+
+For humans, with generations of about 25 years, that is some 23,000 years. For bacteria dividing every half hour, it is under three weeks. On the timescale of evolution this is almost instantaneous. Haldane's calculations of this kind convinced biologists that small, invisible advantages were enough to drive evolution, and they are why antibiotic resistance spreads through bacterial populations within years of a new drug's introduction.
+
 ## Molecules and Neutrality
 
 When protein and DNA sequences arrived in the 1960s, they held a surprise. Species carried far more molecular variation, and changed at a steadier rate, than selection-driven theory expected. {{fig:kimura|Motoo Kimura}} proposed in 1968 that most molecular changes are neutral and drift at random, and the neutralist–selectionist debate is still running. That debate is now fought with whole genomes, which is where population genetics meets [genomics](/biology/genomics/).
