@@ -12,7 +12,7 @@ core_question: How do gene frequencies change in populations, and is that enough
 summary: |-
   Population genetics describes evolution as change in how common different gene versions are in a population, and works out mathematically what makes those frequencies change: natural selection, random chance, mutation, and migration. It was built between 1918 and the 1940s to reconcile Darwin's natural selection with Mendel's genetics, which for twenty years had seemed to contradict each other.
 
-  The result, called the Modern Synthesis, made natural selection working on Mendelian genes the central theory of biology. It is also where modern statistics was invented.
+  The result, called the Modern Synthesis, made natural selection working on Mendelian genes the central theory of biology. It is also where much of modern statistics was invented.
 
 key_ideas:
   - term: Allele frequency
@@ -151,8 +151,8 @@ open_problems:
     description: >-
       Simple theory says a species' genetic diversity should scale with its population
       size. Yet diversity varies only about a hundredfold across species whose
-      populations differ by many orders of magnitude, from whales to insects to
-      bacteria. Richard Lewontin highlighted the puzzle in 1974.
+      populations differ by many orders of magnitude, from whales to
+      insects. Richard Lewontin highlighted the puzzle in 1974.
     why_hard: >-
       Candidate explanations include selection at linked sites sweeping away diversity,
       fluctuating population sizes that keep diversity low, and differences in mutation

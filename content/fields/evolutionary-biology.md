@@ -217,9 +217,9 @@ The idea that species change was not new in the nineteenth century. Lamarck had 
 
 ## Wallace's Letter
 
-In June 1858 a letter arrived from {{fig:wallace|Alfred Russel Wallace}}, collecting beetles and birds in the Malay Archipelago. It contained the same theory. Darwin's friends arranged for both men's papers to be read at the Linnean Society, and Darwin rushed out an "abstract" of his planned big book. That was *On the Origin of Species* (1859), which sold out on its first day.
+In June 1858 a letter arrived from {{fig:wallace|Alfred Russel Wallace}}, collecting beetles and birds in the Malay Archipelago. It contained the same theory. Darwin's friends arranged for both men's papers to be read at the Linnean Society, and Darwin rushed out an "abstract" of his planned big book. That was *On the Origin of Species* (1859). Booksellers ordered more than its whole first printing of 1,250 copies before it was even published.
 
-The argument had two parts. The first, that species share common ancestors and change over time, persuaded most naturalists within about fifteen years, helped by fossils like *Archaeopteryx*, described by {{fig:owen|Richard Owen}} in 1863. The second, that natural selection is the main cause, did not. Darwin could not explain inheritance. The theory of his day, that offspring blend their parents' traits, would dilute any favourable variation to nothing within a few generations. By 1900 many biologists spoke of the "eclipse of Darwinism".
+The argument had two parts. The first, that species share common ancestors and change over time, persuaded most naturalists within about fifteen years, helped by fossils like *Archaeopteryx*, described by {{fig:owen|Richard Owen}} in 1863. The second, that natural selection is the main cause, did not. Darwin could not explain inheritance. The theory of his day, that offspring blend their parents' traits, would dilute any favourable variation to nothing within a few generations. Around 1900 many biologists doubted selection altogether, a period later called the "eclipse of Darwinism".
 
 ## A Closer Look: Time Enough for an Eye
 

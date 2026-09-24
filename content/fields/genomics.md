@@ -49,8 +49,9 @@ turning_points:
     title: Sanger sequencing
     description: >-
       Frederick Sanger's chain-termination method reads DNA by copying it with a small
-      fraction of "stopper" letters, then sorting the stopped fragments by length. With
-      it his lab reads the first complete DNA genome, a small virus of 5,386 letters.
+      fraction of "stopper" letters, then sorting the stopped fragments by length.
+      Earlier that year, with a forerunner of the method, his lab had read the first
+      complete DNA genome, a small virus of 5,386 letters.
       Allan Maxam and Walter Gilbert published a chemical method the same year. It was
       Sanger's second Nobel Prize.
     contested: false
@@ -66,7 +67,7 @@ turning_points:
       Kary Mullis, a chemist at the biotech company Cetus, conceives of copying a chosen
       stretch of DNA exponentially with repeated heating and cooling cycles. Developed
       into a working method at Cetus and later automated with a heat-stable enzyme, PCR
-      became the single most used technique in molecular biology.
+      became one of the most widely used techniques in molecular biology.
     contested: true
     contested_note: >-
       Mullis received the 1993 Nobel Prize, but Cetus colleagues, notably Randall Saiki,
@@ -87,8 +88,8 @@ turning_points:
     description: >-
       The international Human Genome Project and the company Celera Genomics publish
       draft sequences of the human genome in February 2001. The big surprise is how few
-      genes it contains, about 20,000, far fewer than the up to 100,000 many had
-      expected. The project was declared complete in 2003, though the last 8% of hard,
+      genes it contains, an estimated 30,000 to 40,000, later revised to about 20,000,
+      far fewer than the up to 100,000 many had expected. The project was declared complete in 2003, though the last 8% of hard,
       repetitive regions were only filled in 2022.
     contested: true
     contested_note: >-
@@ -231,15 +232,15 @@ further_reading:
 
 ## Reading DNA
 
-[Molecular biology](/biology/molecular-biology/) had shown that genes are sequences of four letters, but for twenty years the letters could hardly be read. In 1977 {{fig:sanger|Frederick Sanger}} changed that. His method copies DNA with a small fraction of letters that stop the copying, then sorts the stopped fragments by length, and the sequence can be read off in order. His lab used it to read the first complete DNA genome, a small virus of 5,386 letters.
+[Molecular biology](/biology/molecular-biology/) had shown that genes are sequences of four letters, but for twenty years the letters could hardly be read. In 1977 {{fig:sanger|Frederick Sanger}} changed that. His method copies DNA with a small fraction of letters that stop the copying, then sorts the stopped fragments by length, and the sequence can be read off in order. Earlier that year, with a forerunner of the method, his lab had read the first complete DNA genome, a small virus of 5,386 letters.
 
-The second tool was copying. In 1983 {{fig:mullis|Kary Mullis}}, driving through the California hills at night, imagined using repeated heating and cooling to double a chosen stretch of DNA again and again. His colleagues at Cetus turned the idea into a reliable method, the polymerase chain reaction, which can turn a single molecule into billions. It now underpins everything from forensic DNA to COVID tests.
+The second tool was copying. In 1983 {{fig:mullis|Kary Mullis}}, by his own account while driving through the California hills at night, imagined using repeated heating and cooling to double a chosen stretch of DNA again and again. His colleagues at Cetus turned the idea into a reliable method, the polymerase chain reaction, which can turn a single molecule into billions. It now underpins everything from forensic DNA to COVID tests.
 
 ## The Human Genome
 
 In 1990 the international Human Genome Project set out to read all three billion letters of human DNA within fifteen years. In 1998 {{fig:venter|Craig Venter}}'s company Celera announced it would do the job faster, and privately. The race that followed, between Celera and the public consortium led by {{fig:francis-collins|Francis Collins}}, ended in a truce announced at the White House in June 2000, and in rival draft papers in 2001.
 
-The draft's great surprise was a small number: about 20,000 protein-coding genes, not much more than a roundworm has. Complexity came from how genes are regulated and combined, not from how many there are. The project was declared complete in 2003. The hardest 8%, highly repetitive regions, was finished only in 2022.
+The draft's great surprise was a small number: perhaps 30,000 protein-coding genes, since revised to about 20,000, not much more than a roundworm has. Complexity came from how genes are regulated and combined, not from how many there are. The project was declared complete in 2003. The hardest 8%, highly repetitive regions, was finished only in 2022.
 
 ## Genomes and Evolution
 

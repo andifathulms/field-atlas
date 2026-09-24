@@ -24,7 +24,8 @@ key_ideas:
   - term: The central dogma
     definition: >-
       Crick's summary: information flows from DNA to RNA to protein, and not back from
-      protein. Retroviruses later showed that it can flow from RNA back to DNA.
+      protein. Retroviruses later showed that it can flow from RNA back to DNA, which
+      Crick's own statement had allowed but most biologists had not expected.
     turning_point_id: central-dogma
   - term: The genetic code
     definition: >-
@@ -75,8 +76,10 @@ turning_points:
       Watson and Crick relied on Franklin's unpublished data, including the X-ray
       photograph now called Photo 51, taken by her student Raymond Gosling, and a
       research report containing her measurements, obtained without her knowledge.
-      Franklin died in 1958. The 1962 Nobel Prize went to Watson, Crick and Wilkins,
-      and it is never awarded posthumously. How much her work contributed, and how she
+      Some historians, drawing on letters and drafts found later, argue that she was
+      more of an equal contributor, and the data sharing less furtive, than the
+      familiar story says. Franklin died in 1958. The 1962 Nobel Prize went to Watson,
+      Crick and Wilkins, and it is not normally awarded posthumously. How much her work contributed, and how she
       was treated, has been argued ever since, not least because of Watson's dismissive
       portrayal of her in *The Double Helix* (1968).
     sources:
@@ -86,6 +89,8 @@ turning_points:
         url: null
       - citation: "Maddox, B. (2002). Rosalind Franklin: The Dark Lady of DNA. HarperCollins."
         url: null
+      - citation: "Cobb, M. & Comfort, N. (2023). What Rosalind Franklin truly contributed to the discovery of DNA's structure. Nature 616(7958): 657–660."
+        url: https://doi.org/10.1038/d41586-023-01313-5
 
   - id: central-dogma
     date: "1958"
@@ -122,8 +127,9 @@ turning_points:
     title: Information flows from RNA back to DNA
     description: >-
       Howard Temin and David Baltimore independently discover reverse transcriptase, an
-      enzyme some viruses use to copy their RNA genome into DNA. The one-way flow from
-      DNA to RNA assumed in the central dogma is overturned. The enzyme becomes a
+      enzyme some viruses use to copy their RNA genome into DNA. The common assumption
+      that information flows only from DNA to RNA is overturned, though Crick's own
+      statement of the central dogma had not ruled it out. The enzyme becomes a
       laboratory tool, and, a decade later, the key to understanding HIV.
     contested: false
     sources:
@@ -236,7 +242,7 @@ further_reading:
 
 By 1941 [genetics](/biology/genetics/) had shown that genes make proteins, but not what genes themselves were. Chromosomes contain both protein and DNA, and nearly everyone assumed genes were protein. DNA, with only four kinds of building block, seemed too monotonous to carry information.
 
-{{fig:avery|Oswald Avery}} and his colleagues at the Rockefeller Institute showed otherwise in 1944. Extract DNA from a deadly strain of bacteria, add it to a harmless strain, and the harmless strain is permanently transformed. Destroying the proteins in the extract changes nothing; destroying the DNA stops it. Many remained sceptical until Alfred Hershey and Martha Chase showed in 1952 that viruses inject their DNA, not their protein, into the cells they infect.
+{{fig:avery|Oswald Avery}} and his colleagues at the Rockefeller Institute showed otherwise in 1944. Extract DNA from a deadly strain of bacteria, add it to a harmless strain, and the harmless strain is permanently transformed. Destroying the proteins in the extract changes nothing. Destroying the DNA stops it. Many remained sceptical until Alfred Hershey and Martha Chase showed in 1952 that viruses inject their DNA, not their protein, into the cells they infect.
 
 The field that took up the question was unusually cross-disciplinary. Physicists moved in, drawn by Erwin Schrödinger's 1944 book *What Is Life?*. Crucially, so did X-ray crystallography, the technique for reading molecular structure from how X-rays scatter, founded in [physics](/physics/electromagnetism/) by the Braggs in 1913.
 
@@ -278,6 +284,6 @@ Copying is astonishingly accurate. The enzymes that copy DNA make roughly one er
 
 ## Reading and Writing DNA
 
-The dogma soon needed revising. In 1970 {{fig:temin|Howard Temin}} and {{fig:baltimore|David Baltimore}} found that some viruses copy RNA back into DNA using reverse transcriptase, an enzyme that later made HIV understandable, and treatable.
+The popular version of the dogma soon needed revising. In 1970 {{fig:temin|Howard Temin}} and {{fig:baltimore|David Baltimore}} found that some viruses copy RNA back into DNA using reverse transcriptase, an enzyme that later made HIV understandable, and treatable.
 
 Then biologists learned to write. In 1973 {{fig:stanley-cohen|Stanley Cohen}} and {{fig:boyer|Herbert Boyer}} cut DNA with enzymes that snip at specific sequences, stitched a gene into a small bacterial chromosome, and watched bacteria express it. Worried about what they had unleashed, scientists paused their own research and drew up safety rules at Asilomar in 1975. Within a decade bacteria were making human insulin. The ability to read DNA at scale, not just gene by gene, is the story of [genomics](/biology/genomics/).

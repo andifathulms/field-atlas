@@ -16,7 +16,7 @@ key_ideas:
   - term: Gene and allele
     definition: >-
       A gene is a unit of heredity. Alleles are its alternative versions, such as the
-      versions for purple or white flowers. Most organisms carry two alleles of each
+      versions for purple or white flowers. Most plants and animals carry two alleles of each
       gene, one from each parent.
     turning_point_id: mendel-peas
   - term: Dominant and recessive
@@ -169,7 +169,7 @@ applications:
     description: >-
       Phenylketonuria, a recessive disorder that causes severe intellectual disability
       if untreated, can be managed by diet if caught early. Robert Guthrie's 1963 blood
-      test made it possible to screen every newborn. Most countries now screen for
+      test made it possible to screen every newborn. Many countries now screen for
       dozens of inherited conditions at birth.
     sources:
       - citation: "Guthrie, R. & Susi, A. (1963). A simple phenylalanine method for detecting phenylketonuria in large populations of newborn infants. Pediatrics 32(3): 338–343."
