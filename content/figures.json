@@ -196,7 +196,7 @@
   { "id": "laplace", "name": "Pierre-Simon Laplace", "turning_point_ids": ["central-limit", "bayes-theorem", "bs-rule-of-succession"] },
   { "id": "bayes", "name": "Thomas Bayes", "turning_point_ids": ["bayes-theorem"] },
   { "id": "richard-price", "name": "Richard Price", "turning_point_ids": ["bayes-theorem"] },
-  { "id": "kolmogorov", "name": "Andrey Kolmogorov", "turning_point_ids": ["kolmogorov-axioms", "kam-theorem", "kolmogorov-sinai-entropy"] },
+  { "id": "kolmogorov", "name": "Andrey Kolmogorov", "turning_point_ids": ["kolmogorov-axioms", "kam-theorem", "kolmogorov-sinai-entropy", "it-kolmogorov-complexity"] },
   { "id": "aristotle", "name": "Aristotle", "turning_point_ids": ["aristotle-syllogistic", "aristotle-chick-embryo"] },
   { "id": "boole", "name": "George Boole", "turning_point_ids": ["boole-laws"] },
   { "id": "frege", "name": "Gottlob Frege", "turning_point_ids": ["frege-begriffsschrift"] },
@@ -743,5 +743,14 @@
   { "id": "harold-jeffreys", "name": "Harold Jeffreys", "turning_point_ids": ["bs-jeffreys"] },
   { "id": "i-j-good", "name": "I. J. Good", "turning_point_ids": ["bs-banburismus"] },
   { "id": "alan-gelfand", "name": "Alan Gelfand", "turning_point_ids": ["bs-gelfand-smith"] },
-  { "id": "adrian-smith", "name": "Adrian Smith", "turning_point_ids": ["bs-gelfand-smith"] }
+  { "id": "adrian-smith", "name": "Adrian Smith", "turning_point_ids": ["bs-gelfand-smith"] },
+  { "id": "harry-nyquist", "name": "Harry Nyquist", "turning_point_ids": ["it-nyquist-hartley"] },
+  { "id": "ralph-hartley", "name": "Ralph Hartley", "turning_point_ids": ["it-nyquist-hartley"] },
+  { "id": "claude-shannon", "name": "Claude Shannon", "turning_point_ids": ["it-shannon-1948"] },
+  { "id": "richard-hamming", "name": "Richard Hamming", "turning_point_ids": ["it-hamming-codes"] },
+  { "id": "david-huffman", "name": "David Huffman", "turning_point_ids": ["it-huffman"] },
+  { "id": "ray-solomonoff", "name": "Ray Solomonoff", "turning_point_ids": ["it-kolmogorov-complexity"] },
+  { "id": "gregory-chaitin", "name": "Gregory Chaitin", "turning_point_ids": ["it-kolmogorov-complexity"] },
+  { "id": "claude-berrou", "name": "Claude Berrou", "turning_point_ids": ["it-turbo-codes"] },
+  { "id": "david-mackay", "name": "David MacKay", "turning_point_ids": ["it-turbo-codes"] }
 ]
