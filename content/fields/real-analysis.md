@@ -163,6 +163,26 @@ Then came the counterexamples. In 1872 {{fig:weierstrass|Karl Weierstrass}}, who
 
 Limits need something to converge to. If the number line had gaps, a sequence could close in on a hole. Nobody had defined the real numbers; everyone had assumed them. In 1872 {{fig:dedekind|Richard Dedekind}} and {{fig:cantor|Georg Cantor}} independently constructed them from the rationals, Dedekind by cutting the rational line into two pieces, Cantor by sequences that bunch together. Two years later Cantor proved that the real numbers cannot be listed one by one: there are strictly more of them than whole numbers. Infinity came in different sizes, and set theory was born.
 
+## A Closer Look: When Intuition About Limits Fails
+
+Cauchy's *Cours d'analyse* stated that a convergent series of continuous functions is continuous. Here is why that is false. Take the functions $f_n(x) = x^n$ on the interval $[0, 1]$. Each is continuous, a smooth curve. As $n$ grows, for any $x < 1$ the values $x^n$ shrink to 0, while at $x = 1$ they stay at 1. The limit is
+
+$$
+f(x) = \begin{cases} 0 & 0 \le x < 1, \\ 1 & x = 1, \end{cases}
+$$
+
+which jumps. Continuous functions converged, *point by point*, to a discontinuous one.
+
+The repair is *uniform* convergence: require that a single $n$ make $f_n$ close to $f$ at every $x$ at once. Here that fails. However large $n$ is, points just below 1 still have $x^n$ near 1, far from the limit 0. Weierstrass showed that uniform limits of continuous functions *are* continuous, and the distinction between the two kinds of convergence became basic analysis.
+
+Precise definitions are what make such distinctions possible. The statement $\lim_{x \to 2} x^2 = 4$ means: for every tolerance $\varepsilon > 0$ there is a $\delta > 0$ such that $|x^2 - 4| < \varepsilon$ whenever $|x - 2| < \delta$. To prove it, factor $|x^2 - 4| = |x - 2|\,|x + 2|$. If $|x - 2| < 1$ then $|x + 2| < 5$, so $|x^2 - 4| < 5|x - 2|$. Choosing
+
+$$
+\delta = \min\!\left(1, \frac{\varepsilon}{5}\right)
+$$
+
+guarantees $|x^2 - 4| < \varepsilon$. No infinitesimals are involved, only finite numbers and a promise that holds for every tolerance. That is the whole of Weierstrass's answer to Berkeley.
+
 ## Measure
 
 The last repair was to the integral. Riemann's integral cannot handle Dirichlet's function (1 on rationals, 0 on irrationals), and it behaves badly under limits. In 1902 {{fig:lebesgue|Henri Lebesgue}} built a new one on a theory of *measure*, a consistent way of assigning size to very general sets. He compared it to counting money. Riemann adds up coins in the order he picks them up, while Lebesgue first sorts them by value. Measure theory became the foundation of modern analysis, and thirty years later the foundation of [probability](/math/probability-theory/) too.
