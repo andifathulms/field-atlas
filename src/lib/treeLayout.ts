@@ -401,7 +401,8 @@ export function layoutTree(fields: Field[]): TreeLayout {
   const nodes = best.layers.flat();
   const minX = Math.min(...nodes.map((n) => n.x));
   nodes.forEach((n) => (n.x += marginX - minX));
-  const usedWidth = Math.max(TREE.width, Math.ceil(Math.max(...nodes.map((n) => n.x + n.labelWidth)) + marginX));
+  // Trim to what the layout uses (the minimum width is only search room), so narrow trees sit centred.
+  const usedWidth = Math.ceil(Math.max(...nodes.map((n) => n.x + n.labelWidth)) + marginX);
   const height = Math.max(...nodes.map((n) => n.trailEnd + (n.fadesOut ? fogLength : 0))) + 36;
   return { width: usedWidth, height, nodes, edges: buildEdges(nodes) };
 }

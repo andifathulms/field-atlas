@@ -49,6 +49,8 @@ export default function DomainPage({ params }: { params: { domain: string } }) {
     );
   }
 
+  const rootLabel =
+    fields.filter((f) => f.parent_ids.length === 0).length > 1 ? "One of the thread's roots" : "Root of the thread";
   const layout = layoutTree(fields);
   const ordered = readingOrder(layout);
 
@@ -94,7 +96,7 @@ export default function DomainPage({ params }: { params: { domain: string } }) {
                   <span className="mt-1 block max-w-prose italic text-ink-soft">{f.core_question}</span>
                   <span className="stamp mt-3 block text-ink-faint">
                     {f.parent_ids.length === 0
-                      ? "Root of the thread"
+                      ? rootLabel
                       : `Branched from ${f.parent_ids.map((p) => byId.get(p)?.name ?? p).join(" + ")}`}
                   </span>
                 </span>

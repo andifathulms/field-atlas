@@ -157,7 +157,11 @@ export default function FieldPage({ params }: Params) {
               {field.parent_ids.length ? (
                 <FieldLinks ids={field.parent_ids} fields={allFields} />
               ) : (
-                <span className="italic text-ink-faint">Root of the thread</span>
+                <span className="italic text-ink-faint">
+                  {[...allFields.values()].filter((f) => f.parent_ids.length === 0).length > 1
+                    ? "One of the thread's roots"
+                    : "Root of the thread"}
+                </span>
               )}
             </dd>
           </div>
