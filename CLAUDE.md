@@ -94,6 +94,7 @@ One file per Field so a correction is a single-file diff, consistent with the "c
 - `/` — domain landing (v1: single domain, but route structure should already branch to `/math`, `/physics`, `/biology` even if only one has content)
 - `/[domain]` — field tree / spine view for that domain
 - `/[domain]/[field-slug]` — field page
+- `/crossings` — cross-domain view, derived by `getCrossings()` from every application whose `domain` differs from its field's (linked when it names a `field_id`, a "seed" otherwise)
 
 ## Field tree rendering
 This is a DAG, not a strict linear chain — a field can have more than one parent. Don't reuse a pure linear-timeline component from [[empire-rankings]] unmodified; the layout needs to handle branch/merge points (e.g. a field born at the seam of two parents). D3's DAG/tree layout utilities (or a simple manual layered layout, given v1 is only 3–5 nodes) are enough for v1 — no need for a general graph-layout library at this scale.

@@ -2,7 +2,7 @@
 
 A read-only narrative atlas of scientific fields. It shows how subfields branched from one another, the dated turning points that forced each branch, and the open problems each field still hasn't answered.
 
-Two domains are surveyed so far: mathematics (the **Geometry Thread**, nine fields from Euclid to algebraic geometry) and physics (the **Relativity Thread**, five fields from Galileo to cosmology), with the first links between them. Biology is still unsurveyed.
+Three domains are surveyed: mathematics (the **Geometry Thread**, nine fields from Euclid to algebraic geometry), physics (the **Relativity Thread**, five fields from Galileo to cosmology) and biology (the **Heredity Thread**, five fields from Darwin and Mendel to genomics). The **Crossings** page maps where results in one domain land in another.
 
 - Product intent: [PRD.md](PRD.md)
 - Visual identity: [DESIGN.md](DESIGN.md)
