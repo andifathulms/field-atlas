@@ -100,7 +100,7 @@ export const DOMAINS: DomainInfo[] = [
   {
     id: "biology",
     name: "Biology",
-    blurb: "How evolution and heredity, long at odds, merged, how reading DNA rewrote both, how the brain was found to be built of cells that signal with electricity and chemistry, how the question of where species live became the science of ecosystems and of saving them, and how the cell became the unit of life, health and disease.",
+    blurb: "How evolution and heredity, long at odds, merged, how reading DNA rewrote both, how the brain was found to be built of cells that signal with electricity and chemistry, how the question of where species live became the science of ecosystems and of saving them, how a single egg builds a body, and how the cell became the unit of life, health and disease.",
     threads: [
       {
         id: "heredity",
@@ -125,6 +125,12 @@ export const DOMAINS: DomainInfo[] = [
         title: "The Ecology Thread",
         intro:
           "From Humboldt's mountain to the Red List. Humboldt saw that the plants on a tropical mountain are layered like the climates from the equator to the poles, and Wallace traced a line through the islands of Southeast Asia that divides the animals of Asia from those of Australia. Explaining where species live led to counting them: how populations grow, crash and cycle, how competing species share one place, and how energy and nutrients flow through a whole lake or forest. By the 1960s the same science was measuring what people were doing to the living world, and conservation biology was founded as a discipline built for a crisis. The fog here is why the tropics hold so many species, how so many competitors manage to live together, and whether an ecosystem's collapse can be seen coming.",
+      },
+      {
+        id: "development",
+        title: "The Development Thread",
+        intro:
+          "From Aristotle's opened eggs to skin cells turned back into stem cells. For two thousand years the question was whether a body is already present in miniature in the egg or builds itself step by step. Microscopes settled it for gradual building, and experiments on living embryos showed that cells are told what to become by their neighbours, without losing any of their genes. Mutant flies and worms then revealed the genes that do the telling, and the surprise that nearly all animals share them. The same understanding showed how to reset a specialised cell, and grow tissues in a dish. The fog here is how an organ knows when to stop growing, why a salamander can regrow a leg when we cannot, and how evolution makes something genuinely new.",
       },
     ],
   },

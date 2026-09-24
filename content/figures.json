@@ -197,7 +197,7 @@
   { "id": "bayes", "name": "Thomas Bayes", "turning_point_ids": ["bayes-theorem"] },
   { "id": "richard-price", "name": "Richard Price", "turning_point_ids": ["bayes-theorem"] },
   { "id": "kolmogorov", "name": "Andrey Kolmogorov", "turning_point_ids": ["kolmogorov-axioms", "kam-theorem", "kolmogorov-sinai-entropy"] },
-  { "id": "aristotle", "name": "Aristotle", "turning_point_ids": ["aristotle-syllogistic"] },
+  { "id": "aristotle", "name": "Aristotle", "turning_point_ids": ["aristotle-syllogistic", "aristotle-chick-embryo"] },
   { "id": "boole", "name": "George Boole", "turning_point_ids": ["boole-laws"] },
   { "id": "frege", "name": "Gottlob Frege", "turning_point_ids": ["frege-begriffsschrift"] },
   { "id": "peirce", "name": "Charles Sanders Peirce", "turning_point_ids": ["frege-begriffsschrift"] },
@@ -610,5 +610,9 @@
   { "id": "ian-franklin", "name": "Ian Franklin", "turning_point_ids": ["minimum-viable-population"] },
   { "id": "michael-soule", "name": "Michael Soulé", "turning_point_ids": ["soule-crisis-discipline", "minimum-viable-population"] },
   { "id": "georgina-mace", "name": "Georgina Mace", "turning_point_ids": ["red-list-criteria"] },
-  { "id": "stuart-pimm", "name": "Stuart Pimm", "turning_point_ids": ["extinction-rate-debate"] }
+  { "id": "stuart-pimm", "name": "Stuart Pimm", "turning_point_ids": ["extinction-rate-debate"] },
+  { "id": "william-harvey", "name": "William Harvey", "turning_point_ids": ["harvey-ex-ovo"] },
+  { "id": "caspar-friedrich-wolff", "name": "Caspar Friedrich Wolff", "turning_point_ids": ["wolff-epigenesis"] },
+  { "id": "karl-ernst-von-baer", "name": "Karl Ernst von Baer", "turning_point_ids": ["von-baer-germ-layers"] },
+  { "id": "ernst-haeckel", "name": "Ernst Haeckel", "turning_point_ids": ["haeckel-recapitulation"] }
 ]
