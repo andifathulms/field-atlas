@@ -567,5 +567,16 @@
   { "id": "georg-nagel", "name": "Georg Nagel", "turning_point_ids": ["brain-optogenetics"] },
   { "id": "peter-hegemann", "name": "Peter Hegemann", "turning_point_ids": ["brain-optogenetics"] },
   { "id": "karl-deisseroth", "name": "Karl Deisseroth", "turning_point_ids": ["brain-optogenetics"] },
-  { "id": "edward-boyden", "name": "Edward Boyden", "turning_point_ids": ["brain-optogenetics"] }
+  { "id": "edward-boyden", "name": "Edward Boyden", "turning_point_ids": ["brain-optogenetics"] },
+  { "id": "warren-mcculloch", "name": "Warren McCulloch", "turning_point_ids": ["brain-mcculloch-pitts"] },
+  { "id": "walter-pitts", "name": "Walter Pitts", "turning_point_ids": ["brain-mcculloch-pitts"] },
+  { "id": "donald-hebb", "name": "Donald Hebb", "turning_point_ids": ["brain-hebb-rule"] },
+  { "id": "frank-rosenblatt", "name": "Frank Rosenblatt", "turning_point_ids": ["brain-perceptron"] },
+  { "id": "marvin-minsky", "name": "Marvin Minsky", "turning_point_ids": ["brain-perceptron"] },
+  { "id": "seymour-papert", "name": "Seymour Papert", "turning_point_ids": ["brain-perceptron"] },
+  { "id": "david-marr", "name": "David Marr", "turning_point_ids": ["brain-marr-levels"] },
+  { "id": "john-hopfield", "name": "John Hopfield", "turning_point_ids": ["brain-hopfield-backprop"] },
+  { "id": "david-rumelhart", "name": "David Rumelhart", "turning_point_ids": ["brain-hopfield-backprop"] },
+  { "id": "geoffrey-hinton", "name": "Geoffrey Hinton", "turning_point_ids": ["brain-hopfield-backprop"] },
+  { "id": "sydney-brenner", "name": "Sydney Brenner", "turning_point_ids": ["brain-connectomes"] }
 ]
