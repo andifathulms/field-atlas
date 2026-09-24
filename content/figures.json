@@ -126,5 +126,13 @@
   { "id": "temin", "name": "Howard Temin", "turning_point_ids": ["reverse-transcriptase"] },
   { "id": "baltimore", "name": "David Baltimore", "turning_point_ids": ["reverse-transcriptase"] },
   { "id": "stanley-cohen", "name": "Stanley Cohen", "turning_point_ids": ["recombinant-dna"] },
-  { "id": "boyer", "name": "Herbert Boyer", "turning_point_ids": ["recombinant-dna"] }
+  { "id": "boyer", "name": "Herbert Boyer", "turning_point_ids": ["recombinant-dna"] },
+  { "id": "sanger", "name": "Frederick Sanger", "turning_point_ids": ["sanger-sequencing"] },
+  { "id": "mullis", "name": "Kary Mullis", "turning_point_ids": ["pcr"] },
+  { "id": "venter", "name": "Craig Venter", "turning_point_ids": ["human-genome"] },
+  { "id": "francis-collins", "name": "Francis Collins", "turning_point_ids": ["human-genome"] },
+  { "id": "paabo", "name": "Svante Pääbo", "turning_point_ids": ["neanderthal-genome"] },
+  { "id": "doudna", "name": "Jennifer Doudna", "turning_point_ids": ["crispr-editing"] },
+  { "id": "charpentier", "name": "Emmanuelle Charpentier", "turning_point_ids": ["crispr-editing"] },
+  { "id": "feng-zhang", "name": "Feng Zhang", "turning_point_ids": ["crispr-editing"] }
 ]
