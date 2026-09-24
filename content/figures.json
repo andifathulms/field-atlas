@@ -319,7 +319,7 @@
   { "id": "tien-yien-li", "name": "Tien-Yien Li", "turning_point_ids": ["period-three-chaos"] },
   { "id": "james-yorke", "name": "James Yorke", "turning_point_ids": ["period-three-chaos"] },
   { "id": "oleksandr-sharkovsky", "name": "Oleksandr Sharkovsky", "turning_point_ids": ["period-three-chaos"] },
-  { "id": "robert-may", "name": "Robert May", "turning_point_ids": ["may-logistic-map"] },
+  { "id": "robert-may", "name": "Robert May", "turning_point_ids": ["may-logistic-map", "may-population-chaos"] },
   { "id": "mitchell-feigenbaum", "name": "Mitchell Feigenbaum", "turning_point_ids": ["feigenbaum-universality"] },
   { "id": "oscar-lanford", "name": "Oscar Lanford", "turning_point_ids": ["feigenbaum-universality"] },
   { "id": "warwick-tucker", "name": "Warwick Tucker", "turning_point_ids": ["tucker-lorenz-attractor"] },
@@ -583,5 +583,13 @@
   { "id": "alfred-wegener", "name": "Alfred Wegener", "turning_point_ids": ["wegener-continental-drift"] },
   { "id": "robert-macarthur", "name": "Robert MacArthur", "turning_point_ids": ["island-biogeography"] },
   { "id": "eo-wilson", "name": "Edward O. Wilson", "turning_point_ids": ["island-biogeography", "simberloff-wilson-mangroves"] },
-  { "id": "daniel-simberloff", "name": "Daniel Simberloff", "turning_point_ids": ["simberloff-wilson-mangroves"] }
+  { "id": "daniel-simberloff", "name": "Daniel Simberloff", "turning_point_ids": ["simberloff-wilson-mangroves"] },
+  { "id": "pierre-francois-verhulst", "name": "Pierre-François Verhulst", "turning_point_ids": ["verhulst-logistic"] },
+  { "id": "charles-elton", "name": "Charles Elton", "turning_point_ids": ["lynx-hare-cycle"] },
+  { "id": "alfred-lotka", "name": "Alfred Lotka", "turning_point_ids": ["lotka-volterra"] },
+  { "id": "vito-volterra", "name": "Vito Volterra", "turning_point_ids": ["lotka-volterra"] },
+  { "id": "georgii-gause", "name": "Georgii Gause", "turning_point_ids": ["gause-competitive-exclusion"] },
+  { "id": "alexander-nicholson", "name": "Alexander Nicholson", "turning_point_ids": ["density-dependence-debate"] },
+  { "id": "herbert-andrewartha", "name": "Herbert Andrewartha", "turning_point_ids": ["density-dependence-debate"] },
+  { "id": "charles-birch", "name": "Charles Birch", "turning_point_ids": ["density-dependence-debate"] }
 ]
