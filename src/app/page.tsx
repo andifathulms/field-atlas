@@ -2,23 +2,55 @@ import Link from "next/link";
 import { Legend } from "@/components/Legend";
 import { getCrossings, getFields } from "@/lib/content";
 import { DOMAINS } from "@/lib/domains";
+import { SurveyPlate } from "@/components/SurveyPlate";
 import { surveySummary } from "@/lib/stats";
 
 export default function Home() {
   const crossings = getCrossings();
+  const total = surveySummary(getFields());
   return (
     <main className="mx-auto max-w-6xl px-4 sm:px-8">
-      <section className="settle pb-16 pt-16 sm:pt-24">
-        <p className="stamp text-ink-faint">A narrative atlas · v1 survey</p>
-        <h1 className="mt-5 max-w-3xl text-5xl font-semibold leading-[1.05] tracking-tight sm:text-6xl">
-          How fields of knowledge branched, and where the map runs out.
-        </h1>
-        <p className="mt-8 max-w-prose text-lg text-ink-soft">
-          Each field here earns a page by answering one question: what forced it to split off
-          from what came before? The atlas follows the dated turning points (proofs, crises,
-          reformulations) that drew each boundary. It also marks, as honestly as it can, the
-          problems no one has solved yet.
-        </p>
+      <section className="grid items-center gap-x-16 gap-y-12 pb-20 pt-14 sm:pt-20 lg:grid-cols-[minmax(0,1fr)_25rem]">
+        <div className="settle">
+          <p className="stamp text-ink-faint">A narrative atlas · {DOMAINS.length} domains surveyed</p>
+          <h1 className="mt-5 max-w-3xl text-[2.75rem] font-semibold leading-[1.04] tracking-[-0.02em] sm:text-6xl lg:text-[4.25rem]">
+            How fields of knowledge branched, and where the map{" "}
+            <span className="italic text-ink-soft">runs out.</span>
+          </h1>
+          <p className="mt-8 max-w-prose text-lg leading-relaxed text-ink-soft sm:text-xl">
+            Each field here earns a page by answering one question: what forced it to split off
+            from what came before? The atlas follows the dated turning points (proofs, crises,
+            reformulations) that drew each boundary. It also marks, as honestly as it can, the
+            problems no one has solved yet.
+          </p>
+          <dl className="mt-10 grid grid-cols-3 gap-x-6 border-t border-rule pt-6 sm:flex sm:gap-x-12">
+            {[
+              [total.fields, "fields charted"],
+              [total.turningPoints, "turning points"],
+              [total.unresolved, "unresolved problems"],
+            ].map(([n, label], i) => (
+              <div key={label} className={`flex flex-col-reverse ${i === 2 ? "text-ink-faint" : ""}`}>
+                <dt className="stamp mt-1 text-ink-faint">{label}</dt>
+                <dd className="text-3xl font-semibold tracking-tight [font-variant-numeric:lining-nums]">{n}</dd>
+              </div>
+            ))}
+          </dl>
+          <div className="mt-10 flex flex-wrap items-center gap-x-8 gap-y-4">
+            <Link
+              href="/math/"
+              className="stamp group inline-flex items-center gap-3 bg-ink px-5 py-3.5 text-paper transition-colors duration-200 hover:bg-math"
+            >
+              Open the first survey
+              <span aria-hidden className="transition-transform duration-300 ease-house group-hover:translate-x-1">
+                →
+              </span>
+            </Link>
+            <Link href="/crossings/" className="stamp ink-link text-ink-soft">
+              Or see where domains cross
+            </Link>
+          </div>
+        </div>
+        <SurveyPlate className="settle mx-auto w-full max-w-xs sm:max-w-sm lg:max-w-none [animation-delay:150ms]" />
       </section>
 
       <section aria-labelledby="domains-heading" className="border-t border-ink">
@@ -39,14 +71,18 @@ export default function Home() {
               >
                 <Link
                   href={`/${d.id}/`}
-                  className="group grid gap-x-8 gap-y-2 py-8 sm:grid-cols-[6rem_minmax(0,1fr)_14rem] sm:items-baseline"
+                  className="group relative -mx-4 grid gap-x-8 gap-y-2 px-4 py-9 transition-colors duration-300 hover:bg-paper-deep/60 sm:-mx-6 sm:grid-cols-[8rem_minmax(0,1fr)_14rem] sm:items-baseline sm:px-6"
                 >
-                  <span className="stamp text-ink-faint">
+                  <span
+                    aria-hidden
+                    className="absolute inset-y-0 left-0 w-[3px] origin-top scale-y-0 bg-accent transition-transform duration-500 ease-house group-hover:scale-y-100"
+                  />
+                  <span className="stamp text-ink-faint sm:pt-3">
                     {String(i + 1).padStart(2, "0")} · {charted ? "Charted" : "Unsurveyed"}
                   </span>
                   <span>
                     <span
-                      className={`block text-3xl font-semibold tracking-tight transition-colors duration-300 sm:text-4xl ${
+                      className={`block text-4xl font-semibold tracking-tight transition-colors duration-300 sm:text-5xl ${
                         charted ? "text-accent" : "text-fog"
                       }`}
                     >
@@ -81,11 +117,11 @@ export default function Home() {
       <section aria-labelledby="crossings-heading" className="border-t border-ink">
         <Link
           href="/crossings/"
-          className="group grid gap-x-8 gap-y-2 py-8 sm:grid-cols-[6rem_minmax(0,1fr)_14rem] sm:items-baseline"
+          className="group -mx-4 grid gap-x-8 gap-y-2 px-4 py-9 transition-colors duration-300 hover:bg-paper-deep/60 sm:-mx-6 sm:grid-cols-[8rem_minmax(0,1fr)_14rem] sm:items-baseline sm:px-6"
         >
-          <span className="stamp text-ink-faint">Across</span>
+          <span className="stamp text-ink-faint sm:pt-3">Across</span>
           <span>
-            <span id="crossings-heading" className="block text-3xl font-semibold tracking-tight sm:text-4xl">
+            <span id="crossings-heading" className="block text-4xl font-semibold tracking-tight sm:text-5xl">
               Crossings
               <span
                 aria-hidden
