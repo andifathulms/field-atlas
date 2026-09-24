@@ -339,6 +339,32 @@ In 1949 Weil made a conjecture that shaped the next quarter-century. Take a poly
 
 Proving it required a topology for varieties over finite fields, where there is no ordinary notion of nearness. {{fig:grothendieck|Alexander Grothendieck}} built one. Through the 1960s he rewrote the entire field in the language of *schemes*, which let geometry happen over any commutative ring, including the integers. With collaborators in his Paris seminar he constructed étale cohomology. In 1974 his student {{fig:deligne|Pierre Deligne}} used it to prove the deepest of Weil's conjectures.
 
+## A Closer Look: Counting Points on a Curve Modulo 5
+
+Weil's conjectures begin with a simple act: count the solutions of an equation in a finite number system. Take the elliptic curve
+
+$$
+y^2 = x^3 - x
+$$
+
+and work *modulo 5*, where the only numbers are $0, 1, 2, 3, 4$ and arithmetic wraps around. The squares modulo 5 are $0, 1, 4$ ($2^2 = 4$, $3^2 = 9 \equiv 4$, $4^2 = 16 \equiv 1$). Try each $x$:
+
+| $x$ | $x^3 - x \pmod 5$ | solutions $y$ |
+|---|---|---|
+| 0 | 0 | $y = 0$ |
+| 1 | 0 | $y = 0$ |
+| 2 | $6 \equiv 1$ | $y = 1, 4$ |
+| 3 | $24 \equiv 4$ | $y = 2, 3$ |
+| 4 | $60 \equiv 0$ | $y = 0$ |
+
+That is 7 solutions, plus one "point at infinity" in the projective plane, 8 in all. A naive guess, one point per value of $x$ plus the point at infinity, would give $p + 1 = 6$. In 1933 Helmut Hasse proved that for any elliptic curve and prime $p$ the count $N$ satisfies
+
+$$
+|N - (p + 1)| \le 2\sqrt{p} .
+$$
+
+Here $|8 - 6| = 2 \le 2\sqrt 5 \approx 4.47$. Hasse's bound is the Riemann hypothesis for elliptic curves: it says the zeros of the curve's zeta function lie on a critical line. Weil proved the analogue for all curves in the 1940s and conjectured it for all varieties. The error term $2\sqrt p$ is controlled by the curve's genus, its topology over the complex numbers. That link between counting and topology is what Grothendieck's cohomology and Deligne's 1974 proof finally explained.
+
 ## From Geometry to Fermat
 
 By then algebraic geometry had become the working language of number theory. Its most famous result is Fermat's Last Theorem: $x^n + y^n = z^n$ has no solutions in positive whole numbers for $n > 2$. It was proved by showing that a hypothetical solution would produce an elliptic curve, a cubic of genus 1, too strange to exist. {{fig:wiles|Andrew Wiles}} announced the proof in 1993. After a gap was found, he repaired it with {{fig:taylor|Richard Taylor}} in 1994. The number-theoretic side of that story, from Mordell and Taniyama to Frey and Ribet, is told in [arithmetic geometry](/math/arithmetic-geometry/), where this field and the Number Theory Thread meet.
