@@ -468,5 +468,13 @@
   { "id": "vera-rubin", "name": "Vera Rubin", "turning_point_ids": ["rubin-rotation-curves"] },
   { "id": "kent-ford", "name": "Kent Ford", "turning_point_ids": ["rubin-rotation-curves"] },
   { "id": "reinhard-genzel", "name": "Reinhard Genzel", "turning_point_ids": ["sagittarius-a-star"] },
-  { "id": "andrea-ghez", "name": "Andrea Ghez", "turning_point_ids": ["sagittarius-a-star"] }
+  { "id": "andrea-ghez", "name": "Andrea Ghez", "turning_point_ids": ["sagittarius-a-star"] },
+  { "id": "aleksander-wolszczan", "name": "Aleksander Wolszczan", "turning_point_ids": ["pulsar-planets"] },
+  { "id": "dale-frail", "name": "Dale Frail", "turning_point_ids": ["pulsar-planets"] },
+  { "id": "michel-mayor", "name": "Michel Mayor", "turning_point_ids": ["fifty-one-pegasi-b"] },
+  { "id": "didier-queloz", "name": "Didier Queloz", "turning_point_ids": ["fifty-one-pegasi-b"] },
+  { "id": "david-charbonneau", "name": "David Charbonneau", "turning_point_ids": ["first-transit"] },
+  { "id": "gregory-henry", "name": "Gregory Henry", "turning_point_ids": ["first-transit"] },
+  { "id": "william-borucki", "name": "William Borucki", "turning_point_ids": ["kepler-mission"] },
+  { "id": "michael-gillon", "name": "Michaël Gillon", "turning_point_ids": ["trappist-1"] }
 ]
