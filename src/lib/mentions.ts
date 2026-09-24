@@ -1,4 +1,4 @@
-import { FIGURE_MENTION, getFigure, getTurningPoint } from "./content";
+import { FIGURE_MENTION, getField, getFigure, getTurningPoint } from "./content";
 import { fieldPath } from "./paths";
 import type { Field } from "./types";
 
@@ -12,7 +12,7 @@ export function figureAnchor(figureId: string, field: Field): string {
   const local = figure.turning_point_ids.find((id) => field.turning_points.some((tp) => tp.id === id));
   if (local) return `#tp-${local}`;
   const tp = getTurningPoint(figure.turning_point_ids[0])!;
-  return `${fieldPath(field.domain, tp.field_id)}#tp-${tp.id}`;
+  return `${fieldPath(getField(tp.field_id)!.domain, tp.field_id)}#tp-${tp.id}`;
 }
 
 /** Turn `{{fig:id}}` / `{{fig:id|Name}}` into Markdown links to turning points. */
