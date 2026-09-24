@@ -3,6 +3,7 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { FieldTree } from "@/components/FieldTree";
 import { Legend } from "@/components/Legend";
+import { ThreadNav } from "@/components/ThreadNav";
 import { getFields } from "@/lib/content";
 import { DOMAINS, getDomain, getThread, type ThreadInfo } from "@/lib/domains";
 import { fieldPath } from "@/lib/paths";
@@ -26,7 +27,9 @@ function ThreadSection({
   fields,
   domainFields,
   headingLevel,
+  index,
 }: {
+  index: number;
   thread: ThreadInfo;
   fields: Field[];
   domainFields: Map<string, Field>;
@@ -50,12 +53,15 @@ function ThreadSection({
   };
 
   return (
-    <section id={`thread-${thread.id}`} aria-labelledby={`thread-${thread.id}-heading`} className="scroll-mt-6">
+    <section id={`thread-${thread.id}`} aria-labelledby={`thread-${thread.id}-heading`} className="scroll-mt-14">
       <header className="settle pb-10">
-        <Heading id={`thread-${thread.id}-heading`} className="text-5xl font-semibold tracking-tight">
+        <p className="stamp mb-3 text-accent">
+          Thread {String(index + 1).padStart(2, "0")} · {fields.length} fields
+        </p>
+        <Heading id={`thread-${thread.id}-heading`} className="text-4xl font-semibold tracking-[-0.015em] sm:text-5xl">
           {thread.title}
         </Heading>
-        <p className="mt-5 max-w-prose text-lg text-ink-soft">{thread.intro}</p>
+        <p className="mt-5 max-w-prose text-lg leading-relaxed text-ink-soft sm:text-[1.2rem]">{thread.intro}</p>
       </header>
 
       <div aria-label={`${thread.title} field tree`}>
@@ -75,7 +81,7 @@ function ThreadSection({
             <li key={f.id} className="border-b border-rule">
               <Link
                 href={fieldPath(f.domain, f.id)}
-                className="group grid gap-x-8 gap-y-1 py-6 sm:grid-cols-[11rem_minmax(0,1fr)]"
+                className="group relative -mx-4 grid gap-x-8 gap-y-1 px-4 py-6 transition-colors duration-300 hover:bg-paper-deep/60 sm:-mx-6 sm:grid-cols-[11rem_minmax(0,1fr)_auto] sm:px-6"
               >
                 <span className="stamp pt-2 text-ink-faint">{f.era_emerged}</span>
                 <span>
@@ -85,6 +91,12 @@ function ThreadSection({
                   <span className="mt-1 block max-w-prose italic text-ink-soft">{f.core_question}</span>
                   <span className="stamp mt-3 block text-ink-faint">{lineage(f)}</span>
                 </span>
+                <span
+                  aria-hidden
+                  className="hidden self-center text-2xl text-accent opacity-0 transition-all duration-300 ease-house group-hover:translate-x-1 group-hover:opacity-100 sm:block"
+                >
+                  →
+                </span>
               </Link>
             </li>
           ))}
@@ -92,6 +104,16 @@ function ThreadSection({
       </div>
     </section>
   );
+}
+
+/** "From Euclid's axioms to the shape of three-dimensional space." */
+function firstSentence(text: string): string {
+  return text.split(/(?<=[.!?])\s+/)[0];
+}
+
+/** "The Number Theory Thread" → "Number Theory". */
+function shortTitle(title: string): string {
+  return title.replace(/^The\s+/, "").replace(/\s+Thread$/, "");
 }
 
 export default function DomainPage({ params }: { params: { domain: string } }) {
@@ -121,42 +143,63 @@ export default function DomainPage({ params }: { params: { domain: string } }) {
 
   return (
     <main data-domain={domain.id} className="mx-auto max-w-6xl px-4 sm:px-8">
-      <p className="stamp pt-16 text-ink-faint">
+      <p className="stamp pt-12 text-ink-faint">
         <Link href="/" className="ink-link">
           Atlas
         </Link>{" "}
         / {domain.name}
       </p>
 
-      {!single && (
-        <header className="settle pb-6 pt-4">
-          <h1 className="text-6xl font-semibold tracking-tight">{domain.name}</h1>
-          <nav aria-label="Threads" className="mt-8">
-            <p className="stamp mb-3 text-ink-faint">{threads.length} threads surveyed</p>
-            <ol className="border-t border-ink">
-              {threads.map(({ thread, fields: tf }, i) => (
-                <li key={thread.id} className="border-b border-rule">
-                  <a
-                    href={`#thread-${thread.id}`}
-                    className="group flex flex-wrap items-baseline justify-between gap-x-8 gap-y-1 py-4"
-                  >
-                    <span className="text-2xl font-semibold tracking-tight transition-colors group-hover:text-accent">
-                      <span className="stamp mr-4 align-middle text-ink-faint">{String(i + 1).padStart(2, "0")}</span>
-                      {thread.title}
-                    </span>
-                    <span className="stamp text-ink-faint">{tf.length} fields ↓</span>
-                  </a>
-                </li>
-              ))}
-            </ol>
-          </nav>
-        </header>
+      {single ? (
+        <p className="stamp mt-8 text-accent">
+          {domain.name} · {fields.length} fields surveyed
+        </p>
+      ) : (
+        <>
+          <header className="settle pb-12 pt-6">
+            <p className="stamp text-accent">
+              Domain · {threads.length} threads · {fields.length} fields
+            </p>
+            <h1 className="mt-3 text-5xl font-semibold tracking-[-0.02em] sm:text-7xl">{domain.name}</h1>
+            <p className="mt-6 max-w-prose text-lg leading-relaxed text-ink-soft sm:text-xl">{domain.blurb}</p>
+            <nav aria-label="Thread index" className="mt-12">
+              <ol className="border-t border-ink">
+                {threads.map(({ thread, fields: tf }, i) => (
+                  <li key={thread.id} className="border-b border-rule">
+                    <a
+                      href={`#thread-${thread.id}`}
+                      className="group -mx-4 grid gap-x-6 gap-y-1 px-4 py-5 transition-colors duration-300 hover:bg-paper-deep/60 sm:-mx-6 sm:grid-cols-[3rem_minmax(0,1fr)_7rem] sm:items-baseline sm:px-6"
+                    >
+                      <span className="stamp text-ink-faint">{String(i + 1).padStart(2, "0")}</span>
+                      <span>
+                        <span className="block text-2xl font-semibold tracking-tight transition-colors duration-200 group-hover:text-accent">
+                          {thread.title}
+                        </span>
+                        <span className="mt-1 block max-w-prose text-[0.98rem] leading-relaxed text-ink-soft">
+                          {firstSentence(thread.intro)}
+                        </span>
+                      </span>
+                      <span className="stamp text-ink-faint sm:text-right">
+                        {tf.length} fields{" "}
+                        <span aria-hidden className="inline-block transition-transform duration-300 ease-house group-hover:translate-y-0.5">
+                          ↓
+                        </span>
+                      </span>
+                    </a>
+                  </li>
+                ))}
+              </ol>
+            </nav>
+          </header>
+          <ThreadNav threads={threads.map(({ thread }) => ({ id: thread.id, label: shortTitle(thread.title) }))} />
+        </>
       )}
 
       <div className={single ? "mt-4" : "mt-16"}>
         {threads.map(({ thread, fields: tf }, i) => (
-          <div key={thread.id} className={i > 0 ? "mt-28 border-t border-rule pt-16" : ""}>
+          <div key={thread.id} className={i > 0 ? "mt-20 border-t border-rule pt-14 sm:mt-28 sm:pt-16" : ""}>
             <ThreadSection
+              index={i}
               thread={thread}
               fields={tf}
               domainFields={domainFields}

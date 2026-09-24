@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import { useEffect, useRef } from "react";
 
 interface NavItem {
   href: string;
@@ -12,8 +13,21 @@ interface NavItem {
 /** Domain links, with the section being read underlined in its own accent. */
 export function SiteNav({ items }: { items: NavItem[] }) {
   const pathname = usePathname() ?? "/";
+  const ref = useRef<HTMLElement>(null);
+
+  // Publish the sticky header's height, so strips and anchors can sit below it.
+  useEffect(() => {
+    const header = ref.current?.closest("header");
+    if (!header) return;
+    const publish = () => document.documentElement.style.setProperty("--header-h", `${header.offsetHeight}px`);
+    publish();
+    const observer = new ResizeObserver(publish);
+    observer.observe(header);
+    return () => observer.disconnect();
+  }, []);
+
   return (
-    <nav aria-label="Sections" className="-mx-4 overflow-x-auto px-4 sm:mx-0 sm:px-0 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
+    <nav ref={ref} aria-label="Sections" className="-mx-4 overflow-x-auto px-4 sm:mx-0 sm:px-0 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
       <ul className="flex items-center gap-1">
         {items.map((item) => {
           const active = pathname.startsWith(item.href);

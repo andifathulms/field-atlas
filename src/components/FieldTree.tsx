@@ -47,7 +47,9 @@ export function FieldTree({ layout, domain }: { layout: TreeLayout; domain: stri
   return (
     <svg
       viewBox={`0 0 ${width} ${height}`}
-      className="block h-auto w-full min-w-[40rem]"
+      className="block h-auto w-full"
+      // Below this the labels shrink past legibility; the sheet scrolls sideways instead.
+      style={{ minWidth: Math.min(width, 860) * 0.85 }}
       role="img"
       aria-labelledby="field-tree-title"
     >
