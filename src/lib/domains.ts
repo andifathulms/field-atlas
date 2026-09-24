@@ -20,7 +20,7 @@ export const DOMAINS: DomainInfo[] = [
   {
     id: "math",
     name: "Mathematics",
-    blurb: "How the study of space split into many geometries, how the study of whole numbers split into theories of its own, how calculus was made rigorous, where mathematics meets its own limits, how solving equations became the study of symmetry, and what forced each split.",
+    blurb: "How the study of space split into many geometries, how the study of whole numbers split into theories of its own, how calculus was made rigorous, where mathematics meets its own limits, how solving equations became the study of symmetry, how counting puzzles became the mathematics of networks, and what forced each split.",
     threads: [
       {
         id: "geometry",
@@ -51,6 +51,12 @@ export const DOMAINS: DomainInfo[] = [
         title: "The Algebra Thread",
         intro:
           "From Babylonian recipes for finding an unknown to the mathematics of symmetry. For three thousand years algebra meant solving equations, and each advance, from the cubic formula to the proof that the quintic has none, came from a harder question about the roots. Galois answered the last of those questions with symmetry, and symmetry became the subject: groups, rings and fields, studied for their own sake after Emmy Noether, and represented as matrices that turned out to describe atoms and particles. The fog here includes the inverse Galois problem and the Jacobian conjecture.",
+      },
+      {
+        id: "combinatorics",
+        title: "The Combinatorics Thread",
+        intro:
+          "From counting arrangements to the structure of networks. For most of its history combinatorics was a collection of puzzles: how many ways to choose, whether a walk can cross every bridge once, how many colours a map needs. In the twentieth century the puzzles became a subject. Ramsey showed that complete disorder is impossible, Erdős showed that randomness proves what explicit construction cannot, and the need to route, schedule and match at scale turned graphs into the mathematics of computing. The fog here is close to the surface: nobody knows the smallest party of guests guaranteed to contain five mutual friends or five mutual strangers.",
       },
     ],
   },
