@@ -211,7 +211,7 @@
   { "id": "leo-harrington", "name": "Leo Harrington", "turning_point_ids": ["paris-harrington"] },
   { "id": "gonthier", "name": "Georges Gonthier", "turning_point_ids": ["proof-assistants"] },
   { "id": "church", "name": "Alonzo Church", "turning_point_ids": ["entscheidungsproblem"] },
-  { "id": "turing", "name": "Alan Turing", "turning_point_ids": ["entscheidungsproblem", "universal-machine"] },
+  { "id": "turing", "name": "Alan Turing", "turning_point_ids": ["entscheidungsproblem", "universal-machine", "dev-turing-morphogenesis"] },
   { "id": "von-neumann", "name": "John von Neumann", "turning_point_ids": ["universal-machine", "ergodic-theorems"] },
   { "id": "henry-rice", "name": "Henry Gordon Rice", "turning_point_ids": ["rice-theorem"] },
   { "id": "martin-davis", "name": "Martin Davis", "turning_point_ids": ["hilberts-tenth"] },
@@ -614,5 +614,15 @@
   { "id": "william-harvey", "name": "William Harvey", "turning_point_ids": ["harvey-ex-ovo"] },
   { "id": "caspar-friedrich-wolff", "name": "Caspar Friedrich Wolff", "turning_point_ids": ["wolff-epigenesis"] },
   { "id": "karl-ernst-von-baer", "name": "Karl Ernst von Baer", "turning_point_ids": ["von-baer-germ-layers"] },
-  { "id": "ernst-haeckel", "name": "Ernst Haeckel", "turning_point_ids": ["haeckel-recapitulation"] }
+  { "id": "ernst-haeckel", "name": "Ernst Haeckel", "turning_point_ids": ["haeckel-recapitulation"] },
+  { "id": "wilhelm-roux", "name": "Wilhelm Roux", "turning_point_ids": ["roux-driesch"] },
+  { "id": "hans-driesch", "name": "Hans Driesch", "turning_point_ids": ["roux-driesch"] },
+  { "id": "hans-spemann", "name": "Hans Spemann", "turning_point_ids": ["spemann-mangold-organiser"] },
+  { "id": "hilde-mangold", "name": "Hilde Mangold", "turning_point_ids": ["spemann-mangold-organiser"] },
+  { "id": "robert-briggs", "name": "Robert Briggs", "turning_point_ids": ["nuclear-transfer-frogs"] },
+  { "id": "thomas-king", "name": "Thomas King", "turning_point_ids": ["nuclear-transfer-frogs"] },
+  { "id": "john-gurdon", "name": "John Gurdon", "turning_point_ids": ["nuclear-transfer-frogs"] },
+  { "id": "lewis-wolpert", "name": "Lewis Wolpert", "turning_point_ids": ["wolpert-positional-information"] },
+  { "id": "ian-wilmut", "name": "Ian Wilmut", "turning_point_ids": ["dolly-the-sheep"] },
+  { "id": "keith-campbell", "name": "Keith Campbell", "turning_point_ids": ["dolly-the-sheep"] }
 ]
