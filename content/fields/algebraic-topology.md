@@ -294,6 +294,20 @@ The decisive shift came from algebra. Around 1925 {{fig:noether|Emmy Noether}}, 
 
 The rest of the century built on that insight: cohomology, homotopy groups, fibrations and spectral sequences. By 1950 the field had its own axioms, from {{fig:eilenberg|Samuel Eilenberg}} and {{fig:steenrod|Norman Steenrod}}, and had spread across mathematics. And it fed directly into [geometric topology](/math/geometric-topology/). Poincaré's conjecture was stated in terms of his own fundamental group.
 
+## A Closer Look: Counting the Holes in a Doughnut
+
+Algebraic topology turns "how many holes?" into a computation. Start with the Euler characteristic. Cut a surface into vertices, edges and faces in any way you like and compute $\chi = V - E + F$. The answer never depends on the cutting.
+
+For a torus, take a single square and glue its opposite edges together: left to right makes a tube, then top to bottom closes the tube into a doughnut. After gluing, all four corners of the square are the same point, the two horizontal edges are one edge, and the two vertical edges are one edge. So
+
+$$
+\chi(\text{torus}) = V - E + F = 1 - 2 + 1 = 0 .
+$$
+
+A sphere, cut like a cube, gives $8 - 12 + 6 = 2$. In general a surface with $g$ holes has $\chi = 2 - 2g$, so the Euler characteristic detects the holes.
+
+Homology records more. The first homology group of the torus is $H_1 = \mathbb{Z}^2$: two independent loops, one around the tube and one through the hole, that cannot be deformed into each other or shrunk away. For the sphere, $H_1 = 0$: every loop shrinks. Because deformation never changes these groups, they prove at once that no stretching turns a doughnut into a ball, the kind of impossibility statement the field exists to make. And Euler's number reappears: $\chi$ is the alternating sum of the ranks of the homology groups, here $1 - 2 + 1$.
+
 ## Wrapping Spheres Around Spheres
 
 The simplest-looking questions in the field are still unanswered. How many ways can one sphere be wrapped around another? {{fig:hopf|Heinz Hopf}}'s discovery in 1931 that a 3-sphere wraps nontrivially around a 2-sphere, in infinitely many distinct ways, showed that these *homotopy groups of spheres* are wild. Computing them has driven the field's most powerful machinery for ninety years. Some of the answers now come from computer-assisted calculation, and the table still has no visible end.
