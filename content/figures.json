@@ -212,7 +212,7 @@
   { "id": "gonthier", "name": "Georges Gonthier", "turning_point_ids": ["proof-assistants"] },
   { "id": "church", "name": "Alonzo Church", "turning_point_ids": ["entscheidungsproblem"] },
   { "id": "turing", "name": "Alan Turing", "turning_point_ids": ["entscheidungsproblem", "universal-machine", "dev-turing-morphogenesis", "bs-banburismus", "turing-condition-number"] },
-  { "id": "von-neumann", "name": "John von Neumann", "turning_point_ids": ["universal-machine", "ergodic-theorems", "von-neumann-goldstine-inversion", "eniac-forecast"] },
+  { "id": "von-neumann", "name": "John von Neumann", "turning_point_ids": ["universal-machine", "ergodic-theorems", "von-neumann-goldstine-inversion", "eniac-forecast", "ulam-von-neumann-monte-carlo"] },
   { "id": "henry-rice", "name": "Henry Gordon Rice", "turning_point_ids": ["rice-theorem"] },
   { "id": "martin-davis", "name": "Martin Davis", "turning_point_ids": ["hilberts-tenth"] },
   { "id": "julia-robinson", "name": "Julia Robinson", "turning_point_ids": ["hilberts-tenth"] },
@@ -721,8 +721,8 @@
   { "id": "paul-kuroda", "name": "Paul Kazuo Kuroda", "turning_point_ids": ["oklo-natural-reactor"] },
   { "id": "mark-oliphant", "name": "Mark Oliphant", "turning_point_ids": ["oliphant-dd-fusion"] },
   { "id": "paul-harteck", "name": "Paul Harteck", "turning_point_ids": ["oliphant-dd-fusion"] },
-  { "id": "edward-teller", "name": "Edward Teller", "turning_point_ids": ["ivy-mike"] },
-  { "id": "stanislaw-ulam", "name": "Stanislaw Ulam", "turning_point_ids": ["ivy-mike"] },
+  { "id": "edward-teller", "name": "Edward Teller", "turning_point_ids": ["ivy-mike", "metropolis-algorithm"] },
+  { "id": "stanislaw-ulam", "name": "Stanislaw Ulam", "turning_point_ids": ["ivy-mike", "ulam-von-neumann-monte-carlo"] },
   { "id": "andrei-sakharov", "name": "Andrei Sakharov", "turning_point_ids": ["tokamak-t3"] },
   { "id": "john-lawson", "name": "John D. Lawson", "turning_point_ids": ["lawson-criterion"] },
   { "id": "lev-artsimovich", "name": "Lev Artsimovich", "turning_point_ids": ["tokamak-t3"] },
@@ -787,5 +787,11 @@
   { "id": "ray-clough", "name": "Ray Clough", "turning_point_ids": ["finite-element-method"] },
   { "id": "radii-fedorenko", "name": "Radii Fedorenko", "turning_point_ids": ["multigrid-method"] },
   { "id": "achi-brandt", "name": "Achi Brandt", "turning_point_ids": ["multigrid-method"] },
-  { "id": "frans-pretorius", "name": "Frans Pretorius", "turning_point_ids": ["binary-black-hole-simulation"] }
+  { "id": "frans-pretorius", "name": "Frans Pretorius", "turning_point_ids": ["binary-black-hole-simulation"] },
+  { "id": "buffon", "name": "Georges-Louis Leclerc, Comte de Buffon", "turning_point_ids": ["buffon-needle"] },
+  { "id": "nicholas-metropolis", "name": "Nicholas Metropolis", "turning_point_ids": ["ulam-von-neumann-monte-carlo", "metropolis-algorithm"] },
+  { "id": "arianna-rosenbluth", "name": "Arianna Rosenbluth", "turning_point_ids": ["metropolis-algorithm"] },
+  { "id": "marshall-rosenbluth", "name": "Marshall Rosenbluth", "turning_point_ids": ["metropolis-algorithm"] },
+  { "id": "ilya-sobol", "name": "Ilya Sobol", "turning_point_ids": ["quasi-monte-carlo"] },
+  { "id": "george-marsaglia", "name": "George Marsaglia", "turning_point_ids": ["randu-planes"] }
 ]
