@@ -204,6 +204,28 @@ For finite groups the key move came from {{fig:frobenius|Ferdinand Georg Frobeni
 
 Quantum mechanics made the subject physics. {{fig:weyl|Hermann Weyl}} and {{fig:wigner|Eugene Wigner}} showed that the energy levels of atoms, the rules for which transitions emit light, and the property of spin are all dictated by how symmetry groups are represented on quantum states. Many physicists at first resented the "group pest". By 1961 Murray Gell-Mann and Yuval Ne'eman were sorting the newly found particles into representations of $SU(3)$ and predicting new ones. The Standard Model is built on Lie groups.
 
+## A Closer Look: The Character Table of a Triangle
+
+The six symmetries of an equilateral triangle form the group $S_3$: the identity, two rotations (by $120°$ and $240°$), and three flips. Symmetries that are "the same kind", such as the three flips, are grouped into *classes*. Here there are three classes, of sizes 1, 3 and 2.
+
+A representation assigns each symmetry a matrix. $S_3$ has exactly three irreducible representations:
+
+- **trivial**: every symmetry becomes the $1 \times 1$ matrix $(1)$;
+- **sign**: rotations become $(1)$ and flips become $(-1)$, recording whether the triangle has been turned over;
+- **standard**: each symmetry becomes the $2 \times 2$ matrix that actually rotates or reflects the plane.
+
+The *character* of a representation records the trace of each matrix, one number per class:
+
+| | identity (1) | flips (3) | rotations (2) |
+|---|---|---|---|
+| trivial | 1 | 1 | 1 |
+| sign | 1 | $-1$ | 1 |
+| standard | 2 | 0 | $-1$ |
+
+This small table obeys striking laws. The squares of the dimensions (first column) add up to the size of the group: $1^2 + 1^2 + 2^2 = 6$. Any two different rows are orthogonal once each column is weighted by its class size. For example, trivial and standard give $1 \cdot 2 \cdot 1 + 3 \cdot 1 \cdot 0 + 2 \cdot 1 \cdot (-1) = 0$. These laws hold for every finite group, and they let mathematicians pin down groups, including the Monster, through character tables alone.
+
+In quantum mechanics the same table is physics. A molecule with threefold symmetry, such as ammonia, a pyramid on a triangular base, has this symmetry group, and its vibrations and electron orbitals sort themselves into these three types. The table predicts which vibrations can absorb infrared light, before anyone looks at a spectrum.
+
 ## Moonshine
 
 The strangest chapter came from a coincidence. In 1978 John McKay noticed that $196884$, a coefficient in the $j$-function of number theory, is one more than $196883$, the smallest dimension in which the newly predicted Monster group can act. {{fig:conway|John Conway}} and Simon Norton called the web of such coincidences "monstrous moonshine". In 1992 {{fig:borcherds|Richard Borcherds}} proved it, using the vertex algebras of string theory. The largest sporadic symmetry group, a modular function and a physical theory turned out to be one structure. Why that should be so is still not fully understood.
