@@ -203,7 +203,7 @@
   { "id": "peirce", "name": "Charles Sanders Peirce", "turning_point_ids": ["frege-begriffsschrift"] },
   { "id": "russell", "name": "Bertrand Russell", "turning_point_ids": ["principia-mathematica", "russell-paradox"] },
   { "id": "whitehead", "name": "Alfred North Whitehead", "turning_point_ids": ["principia-mathematica"] },
-  { "id": "goedel", "name": "Kurt Gödel", "turning_point_ids": ["goedel-completeness", "ch-independence", "goedel-incompleteness"] },
+  { "id": "goedel", "name": "Kurt Gödel", "turning_point_ids": ["goedel-completeness", "ch-independence", "goedel-incompleteness", "cook-levin"] },
   { "id": "zermelo", "name": "Ernst Zermelo", "turning_point_ids": ["russell-paradox", "zermelo-axioms"] },
   { "id": "paul-cohen", "name": "Paul Cohen", "turning_point_ids": ["ch-independence"] },
   { "id": "gentzen", "name": "Gerhard Gentzen", "turning_point_ids": ["gentzen-consistency"] },
@@ -216,5 +216,12 @@
   { "id": "henry-rice", "name": "Henry Gordon Rice", "turning_point_ids": ["rice-theorem"] },
   { "id": "martin-davis", "name": "Martin Davis", "turning_point_ids": ["hilberts-tenth"] },
   { "id": "julia-robinson", "name": "Julia Robinson", "turning_point_ids": ["hilberts-tenth"] },
-  { "id": "matiyasevich", "name": "Yuri Matiyasevich", "turning_point_ids": ["hilberts-tenth"] }
+  { "id": "matiyasevich", "name": "Yuri Matiyasevich", "turning_point_ids": ["hilberts-tenth"] },
+  { "id": "hartmanis", "name": "Juris Hartmanis", "turning_point_ids": ["cobham-edmonds"] },
+  { "id": "edmonds", "name": "Jack Edmonds", "turning_point_ids": ["cobham-edmonds"] },
+  { "id": "stephen-cook", "name": "Stephen Cook", "turning_point_ids": ["cook-levin"] },
+  { "id": "levin", "name": "Leonid Levin", "turning_point_ids": ["cook-levin"] },
+  { "id": "karp", "name": "Richard Karp", "turning_point_ids": ["karp-21"] },
+  { "id": "razborov", "name": "Alexander Razborov", "turning_point_ids": ["complexity-barriers"] },
+  { "id": "arora", "name": "Sanjeev Arora", "turning_point_ids": ["pcp-theorem"] }
 ]
