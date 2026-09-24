@@ -629,9 +629,15 @@
   { "id": "christiane-nusslein-volhard", "name": "Christiane Nüsslein-Volhard", "turning_point_ids": ["heidelberg-screen", "bicoid-gradient"] },
   { "id": "eric-wieschaus", "name": "Eric Wieschaus", "turning_point_ids": ["heidelberg-screen"] },
   { "id": "wolfgang-driever", "name": "Wolfgang Driever", "turning_point_ids": ["bicoid-gradient"] },
-  { "id": "william-mcginnis", "name": "William McGinnis", "turning_point_ids": ["homeobox-discovery"] },
-  { "id": "walter-gehring", "name": "Walter Gehring", "turning_point_ids": ["homeobox-discovery"] },
+  { "id": "william-mcginnis", "name": "William McGinnis", "turning_point_ids": ["homeobox-discovery", "evodevo-hox-conservation"] },
+  { "id": "walter-gehring", "name": "Walter Gehring", "turning_point_ids": ["homeobox-discovery", "pax6-eyeless"] },
   { "id": "matthew-scott", "name": "Matthew Scott", "turning_point_ids": ["homeobox-discovery"] },
   { "id": "john-sulston", "name": "John Sulston", "turning_point_ids": ["worm-cell-lineage"] },
-  { "id": "robert-horvitz", "name": "H. Robert Horvitz", "turning_point_ids": ["worm-programmed-cell-death"] }
+  { "id": "robert-horvitz", "name": "H. Robert Horvitz", "turning_point_ids": ["worm-programmed-cell-death"] },
+  { "id": "georg-halder", "name": "Georg Halder", "turning_point_ids": ["pax6-eyeless"] },
+  { "id": "patrick-callaerts", "name": "Patrick Callaerts", "turning_point_ids": ["pax6-eyeless"] },
+  { "id": "neil-shubin", "name": "Neil Shubin", "turning_point_ids": ["evodevo-deep-homology", "evodevo-tiktaalik"] },
+  { "id": "sean-carroll", "name": "Sean B. Carroll", "turning_point_ids": ["evodevo-deep-homology", "evodevo-cis-regulation"] },
+  { "id": "edward-daeschler", "name": "Edward Daeschler", "turning_point_ids": ["evodevo-tiktaalik"] },
+  { "id": "david-kingsley", "name": "David Kingsley", "turning_point_ids": ["stickleback-pitx1"] }
 ]
