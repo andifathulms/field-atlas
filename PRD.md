@@ -26,6 +26,8 @@ One narrow vertical, picked before build starts (deliberately not number theory 
 
 **Fifth thread in mathematics (done):** the Algebra Thread, five fields. Theory of Equations is the root. Galois Theory follows. Group Theory has Galois Theory and Non-Euclidean Geometry (Klein's Erlangen programme) as parents. Abstract Algebra has Group Theory and Algebraic Number Theory (Dedekind's ideals) as parents, and Representation Theory has Group Theory and Abstract Algebra. Theory of Equations also feeds Complex Analysis across threads.
 
+**Sixth and seventh threads in mathematics (done):** the Combinatorics Thread, five fields. Enumerative Combinatorics and Graph Theory are two roots, and Extremal Combinatorics (Ramsey theory) is born at their seam. Probabilistic Combinatorics rests on Extremal Combinatorics and Probability Theory, and Combinatorial Optimisation on Graph Theory and Computational Complexity. The Dynamics Thread, five fields: Differential Equations branches from Calculus, Dynamical Systems follows, and Ergodic Theory (with Real Analysis), Chaos Theory, and Complex Dynamics (with Complex Analysis) branch from it. Every field in both threads has a closer-look chapter from the start.
+
 **Cross-domain view (done):** the Crossings page (`/crossings/`) joins all three domains. A diagram shows each direction of crossing, solid where it lands in a surveyed field and dashed where it reaches unmapped ground. A ledger lists every linked crossing, and a "Reaching past the survey" list shows the seeds. It is a join over the shared applications collection, as the shared-schema decision intended. Remaining from "v2 / later": the "toolkit" view, and widening each domain beyond its pilot thread.
 
 ## Non-goals (v1)
