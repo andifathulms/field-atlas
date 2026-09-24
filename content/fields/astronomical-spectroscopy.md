@@ -140,7 +140,7 @@ open_problems:
   - id: solar-abundance-problem
     name: The solar abundance problem
     status: open
-    status_note: Open as of writing; revised abundance analyses have narrowed but not closed the gap.
+    status_note: Open as of 2026. Revised abundance analyses have narrowed but not closed the gap.
     description: >-
       In the 2000s, improved models of the Sun's atmosphere lowered the measured abundance
       of carbon, nitrogen, oxygen and other heavy elements. But helioseismology, which
@@ -196,7 +196,7 @@ further_reading:
 
 In 1835 the philosopher Auguste Comte gave, as an example of knowledge forever beyond reach, the chemical composition of the stars. The key to it had already been found. In 1814 {{fig:joseph-fraunhofer|Joseph von Fraunhofer}}, a Bavarian optician who had survived the collapse of the workshop where he was apprenticed as a boy, spread sunlight through a fine prism and found it crossed by hundreds of dark lines. He mapped more than 500 and saw different patterns in the light of bright stars.
 
-In 1859 {{fig:gustav-kirchhoff|Gustav Kirchhoff}} and {{fig:robert-bunsen|Robert Bunsen}}, using Bunsen's clean, nearly colourless gas burner, explained them. Every element heated in a flame glows at its own set of wavelengths, and cooler gas of the same element absorbs those wavelengths from light passing through it. The dark lines in sunlight were the Sun's elements absorbing light from the hotter layers below: sodium, iron, calcium and many more. Chemistry could be done at a distance of 150 million kilometres. [Electromagnetism](/physics/electromagnetism/) soon explained that light is a wave, and the lines were its wavelengths.
+In 1859 {{fig:gustav-kirchhoff|Gustav Kirchhoff}} and {{fig:robert-bunsen|Robert Bunsen}}, using Bunsen's clean, nearly colourless gas burner, explained them. Every element heated in a flame glows at its own set of wavelengths, and cooler gas of the same element absorbs those wavelengths from light passing through it. The dark lines in sunlight were the Sun's elements absorbing light from the hotter layers below: sodium, iron, calcium and many more. Chemistry could be done at a distance of 150 million kilometres. [Electromagnetism](/physics/electromagnetism/) soon explained that light is an electromagnetic wave, and the lines were its wavelengths.
 
 ## A Sequence of Stars
 
@@ -206,7 +206,7 @@ Photography made spectra of faint stars possible, and at Harvard {{fig:edward-pi
 
 ## Made of Hydrogen
 
-What did the sequence mean? The Sun's spectrum is dominated by lines of iron, calcium and other metals, and it was assumed that stars resemble the Earth in composition. In 1920 {{fig:meghnad-saha|Meghnad Saha}}, in Calcutta, used the new [quantum theory](/physics/old-quantum-theory/) of the atom to show how temperature controls which atoms can absorb which lines. In 1925 {{fig:cecilia-payne|Cecilia Payne}}, a young British astronomer at Harvard, applied Saha's theory to Cannon's spectra. The spectral sequence was a temperature sequence, and once temperature was accounted for, stars had almost the same composition. And that composition was mostly hydrogen and helium, with hydrogen about a million times more abundant than the metals whose lines are so prominent.
+What did the sequence mean? The Sun's spectrum is dominated by lines of iron, calcium and other metals, and it was assumed that stars resemble the Earth in composition. In 1920 {{fig:meghnad-saha|Meghnad Saha}} used the new [quantum theory](/physics/old-quantum-theory/) of the atom to show how temperature controls which atoms can absorb which lines. In 1925 {{fig:cecilia-payne|Cecilia Payne}}, a young British astronomer at Harvard, applied Saha's theory to Cannon's spectra. The spectral sequence was a temperature sequence, and once temperature was accounted for, stars had almost the same composition. And that composition was mostly hydrogen and helium, with hydrogen about a million times more abundant than the metals whose lines are so prominent.
 
 Russell told her it was impossible, and she called it "almost certainly not real" in print. Four years later Russell confirmed it himself.
 
@@ -227,7 +227,7 @@ $$
 
 The Sun's output peaks in the green-blue, in the middle of the range our eyes evolved to see. The mixture of all its colours looks white from space.
 
-The lines tell a subtler story. Hydrogen's visible lines, the Balmer series, are absorbed only by hydrogen atoms whose electron is already in the second energy level. In a cool star like Betelgeuse, almost all hydrogen atoms sit in the lowest level, so the lines are weak. In very hot stars, most hydrogen is ionised and cannot absorb at all. The lines are strongest in between, around 10,000 K, in A stars like Sirius. In the Sun, only a few hydrogen atoms in every billion are in the right state. That is why hydrogen's lines looked unimpressive, and why astronomers concluded that the Sun contains little hydrogen. Saha's equation lets the tiny fraction be corrected for, and when Payne did so, hydrogen turned out to be about three-quarters of the Sun's mass.
+The lines tell a subtler story. Hydrogen's visible lines, the Balmer series, are absorbed only by hydrogen atoms whose electron is already in the second energy level. In a cool star like Betelgeuse, almost all hydrogen atoms sit in the lowest level, so the lines are weak. In very hot stars, most hydrogen is ionised and cannot absorb at all. The lines are strongest in between, around 10,000 K, in A stars like Sirius. In the Sun, only a few hydrogen atoms in every billion are in the right state. That is why hydrogen's lines looked unimpressive, and why astronomers concluded that the Sun contains little hydrogen. Saha's equation lets the tiny fraction be corrected for, and when Payne did so, hydrogen turned out to be by far the most common element. It is now known to make up about three-quarters of the Sun's mass.
 
 ## Astrophysics
 

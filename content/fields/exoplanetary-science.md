@@ -12,7 +12,7 @@ core_question: Are there planets around other stars, what are they like, and cou
 summary: |-
   Exoplanetary science finds and studies planets orbiting stars other than the Sun. They are too faint and too close to their stars to photograph easily, so almost all are detected indirectly: by the tiny wobble a planet's gravity causes in its star, or by the slight dimming as a planet crosses the star's face.
 
-  Whether other planetary systems exist was debated for centuries. The first confirmed planets, found in 1992 and 1995, were bizarre: worlds orbiting a dead star, and a giant planet circling its star in four days. Space telescopes then showed that planets are the rule rather than the exception. More than five thousand are now known, and telescopes have begun to read the chemistry of their atmospheres.
+  Whether other planetary systems exist was debated for centuries. The first confirmed planets, found in 1992 and 1995, were bizarre: worlds orbiting a dead star, and a giant planet circling its star in four days. Space telescopes then showed that planets are the rule rather than the exception. More than six thousand are now known, and telescopes have begun to read the chemistry of their atmospheres.
 
 key_ideas:
   - term: Radial velocity method
@@ -71,10 +71,11 @@ turning_points:
     contested: true
     contested_note: >-
       Earlier claims complicate the priority. Bruce Campbell, Gordon Walker and Stephenson
-      Yang reported evidence in 1988 of a planet around Gamma Cephei, but withdrew it; it
+      Yang reported evidence in 1988 of a planet around Gamma Cephei, but withdrew it. It
       was confirmed in 2003. David Latham's 1989 companion to HD 114762 was long counted as
       a possible planet but later shown to be far more massive. Mayor and Queloz's
-      detection was the first that was clear, confirmed and accepted.
+      detection was the first around a Sun-like star that was clear, confirmed and
+      accepted.
     sources:
       - citation: "Mayor, M. & Queloz, D. (1995). A Jupiter-mass companion to a solar-type star. Nature 378: 355–359."
         url: null
@@ -144,7 +145,7 @@ open_problems:
   - id: exoplanet-biosignatures
     name: Is there life on other planets?
     status: open
-    status_note: Open as of writing; no biosignature has been confirmed.
+    status_note: Open as of 2026. No biosignature has been confirmed.
     description: >-
       Life on Earth has changed its atmosphere, filling it with oxygen and methane that
       would not otherwise coexist. Could a telescope detect such a signature on a planet
@@ -197,7 +198,7 @@ further_reading:
 
 ## Other Worlds
 
-Whether other suns have planets has been argued since the ancient Greeks, and Giordano Bruno was burned in 1600 partly for insisting that they do. For most of the twentieth century it was assumed they must, but no one could see them. A planet is a billion times fainter than its star and, seen from light-years away, almost touching it. Several claimed detections turned out to be wrong.
+Whether other suns have planets has been argued since the ancient Greeks, and Giordano Bruno, who held that they do, was burned for heresy in 1600. For most of the twentieth century it was assumed they must, but no one could see them. A planet is a billion times fainter than its star and, seen from light-years away, almost touching it. Several claimed detections turned out to be wrong.
 
 The first confirmed planets were a surprise. In 1992 {{fig:aleksander-wolszczan|Aleksander Wolszczan}} and {{fig:dale-frail|Dale Frail}} found small planets orbiting a pulsar, a neutron star left from a supernova, betrayed by tiny regularities in the arrival times of its pulses. They could not be home to life, and their existence was hard to explain.
 
@@ -235,7 +236,7 @@ $$
 29.8 \text{ km/s} \times \frac{1}{333{,}000} \approx 9 \text{ cm/s} ,
 $$
 
-slower than a walking tortoise. 51 Pegasi b made its star wobble at about 60 m/s because it is massive and very close, which is exactly why it was the first to be found. Detecting a true Earth twin by its wobble needs spectrographs stable to a few centimetres per second over years, and that is only now being attempted.
+about the pace of a walking tortoise. 51 Pegasi b made its star wobble at about 60 m/s because it is massive and very close, which is exactly why it was the first to be found. Detecting a true Earth twin by its wobble needs spectrographs stable to a few centimetres per second over years, and that is only now being attempted.
 
 ## Reading Atmospheres
 

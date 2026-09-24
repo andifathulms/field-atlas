@@ -51,7 +51,8 @@ turning_points:
     description: >-
       Walter Adams measures the spectrum of Sirius B, the faint companion of Sirius. It is
       hot and white, yet dim, so it must be tiny: about the Sun's mass in a body the size of
-      the Earth. Eddington called the implied density absurd. In 1926 Ralph Fowler showed
+      the Earth. Astronomers at first dismissed the implied density as nonsense, as
+      Eddington later recalled. In 1926 Ralph Fowler showed
       that electron degeneracy pressure, from the new quantum statistics, could support it.
     contested: false
     sources:
@@ -171,7 +172,7 @@ open_problems:
   - id: neutron-star-interior
     name: What is inside a neutron star?
     status: open
-    status_note: Open as of writing; X-ray and gravitational-wave measurements are narrowing the range.
+    status_note: Open as of 2026. X-ray and gravitational-wave measurements are narrowing the range.
     description: >-
       The core of a neutron star is denser than an atomic nucleus. Is it made of neutrons,
       of more exotic particles, or of free quarks? The answer determines how large a neutron
@@ -204,10 +205,11 @@ applications:
     description: >-
       Because each pulsar has a known, stable rhythm, a spacecraft timing X-ray pulses from
       several of them can work out its own position. NASA demonstrated it in 2017 on the
-      International Space Station, locating the station to within about 10 km.
+      International Space Station, locating the station to within about 16 km, and often
+      within 5 km.
     sources:
       - citation: "Mitchell, J. W. et al. (2018). SEXTANT X-ray pulsar navigation demonstration: initial on-orbit results. Proceedings of the AAS Guidance and Control Conference, AAS 18-155."
-        url: null
+        url: https://ntrs.nasa.gov/citations/20180001252
 
 further_reading:
   - citation: "Thorne, K. S. (1994). Black Holes and Time Warps: Einstein's Outrageous Legacy. W. W. Norton."
@@ -223,7 +225,7 @@ further_reading:
 
 ## Absurdly Dense
 
-Sirius, the brightest star in the night sky, wobbles as it moves, and in 1862 a faint companion, Sirius B, was seen. In 1915 {{fig:walter-adams|Walter Adams}} measured its spectrum. It was white-hot, yet so faint that it had to be about the size of the Earth, while its orbit showed it had about the Sun's mass. A cubic centimetre would weigh a tonne. Eddington thought the density absurd, but in 1926 Ralph Fowler showed that the new quantum statistics of [statistical mechanics](/physics/statistical-mechanics/) allowed it. Electrons packed that tightly resist further squeezing, whatever the temperature, and that pressure holds up white dwarfs.
+Sirius, the brightest star in the night sky, wobbles as it moves, and in 1862 a faint companion, Sirius B, was seen. In 1915 {{fig:walter-adams|Walter Adams}} measured its spectrum. It was white-hot, yet so faint that it had to be tiny, and modern measurements put it at about the size of the Earth, while its orbit showed it had about the Sun's mass. A cubic centimetre of it weighs about two tonnes. Astronomers at first dismissed such a density as nonsense, as Eddington later recalled, but in 1926 Ralph Fowler showed that the new quantum statistics of [statistical mechanics](/physics/statistical-mechanics/) allowed it. Electrons packed that tightly resist further squeezing, whatever the temperature, and that pressure holds up white dwarfs.
 
 ## The Limit
 
@@ -233,7 +235,7 @@ What happened above the limit? In 1934 {{fig:walter-baade|Walter Baade}} and {{f
 
 ## Pulsars and Black Holes
 
-In 1967 {{fig:jocelyn-bell-burnell|Jocelyn Bell}}, a PhD student in {{fig:antony-hewish|Antony Hewish}}'s group at Cambridge, spotted a regular pulse in a radio survey, one pulse every 1.337 seconds. Nothing but a spinning neutron star could flash so quickly and so regularly. Neutron stars were real, and one was soon found at the centre of the Crab Nebula, the remains of a supernova recorded by Chinese astronomers in 1054.
+In 1967 {{fig:jocelyn-bell-burnell|Jocelyn Bell}}, a PhD student in {{fig:antony-hewish|Antony Hewish}}'s group at Cambridge, spotted a regular pulse in a radio survey, one pulse every 1.337 seconds. Within a year, faster pulsars were found in the Vela and Crab supernova remnants, and only a spinning neutron star could flash so quickly and so regularly. Neutron stars were real. The Crab pulsar sits at the centre of the Crab Nebula, the remains of a supernova recorded by Chinese astronomers in 1054.
 
 Black holes followed. In 1971–72 {{fig:louise-webster|Louise Webster}}, {{fig:paul-murdin|Paul Murdin}} and {{fig:tom-bolton|Tom Bolton}} showed that the X-ray source Cygnus X-1 is an invisible object too heavy to be a neutron star. And in 1974 {{fig:russell-hulse|Russell Hulse}} and {{fig:joseph-taylor|Joseph Taylor}} found two neutron stars orbiting each other, whose orbit shrank exactly as [general relativity](/physics/general-relativity/) predicts from the emission of gravitational waves.
 
@@ -252,7 +254,7 @@ A teaspoon, 5 millilitres, would weigh about 6.6 tonnes, as much as an elephant.
 **A neutron star** of 1.4 solar masses and radius 12 km gives
 
 $$
-\rho = \frac{1.4 \times 2 \times 10^{30}}{\tfrac43 \pi (1.2 \times 10^4)^3} \approx 3.8 \times 10^{17} \text{ kg/m}^3 .
+\rho = \frac{1.4 \times 2 \times 10^{30}}{\tfrac43 \pi (1.2 \times 10^4)^3} \approx 3.9 \times 10^{17} \text{ kg/m}^3 .
 $$
 
 A teaspoon weighs about $2 \times 10^{12}$ kg, two billion tonnes, roughly the mass of a small mountain. That is the density of an atomic nucleus: a neutron star is in effect a single nucleus the size of a city.
@@ -263,7 +265,7 @@ $$
 r_s = \frac{2 \times 6.67 \times 10^{-11} \times 2 \times 10^{30}}{(3.0 \times 10^8)^2} \approx 3 \text{ km} .
 $$
 
-A neutron star's radius is only about four times its Schwarzschild radius, which is why general relativity is essential for describing it.
+A neutron star of 1.4 solar masses has a Schwarzschild radius of about 4 km, so its 12 km radius is only about three times that. This is why general relativity is essential for describing it.
 
 Neutron stars also spin astonishingly fast, because a collapsing star keeps its angular momentum as it shrinks, as a skater spins faster pulling in their arms. The fastest known pulsar spins 716 times a second. At its equator, 12 km from the axis, the surface moves at
 

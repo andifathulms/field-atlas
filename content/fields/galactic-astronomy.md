@@ -119,7 +119,7 @@ turning_points:
       Bertil Lindblad proposes that the Milky Way rotates, and Jan Oort confirms it from the
       motions of nearby stars, which show the pattern expected when inner stars orbit faster
       than outer ones. The Sun orbits the galactic centre at over 200 km/s. Oort's analysis
-      also gave the first estimate of the galaxy's mass from its rotation.
+      also gave an early estimate of the galaxy's mass from its rotation.
     contested: false
     sources:
       - citation: "Oort, J. H. (1927). Observational evidence confirming Lindblad's hypothesis of a rotation of the galactic system. Bulletin of the Astronomical Institutes of the Netherlands 3: 275–282."
@@ -161,7 +161,7 @@ open_problems:
   - id: early-supermassive-black-holes
     name: How did supermassive black holes grow so big so early?
     status: open
-    status_note: Open as of writing; JWST has found even more early massive black holes than expected.
+    status_note: Open as of 2026. JWST has found even more early massive black holes than expected.
     description: >-
       Quasars powered by black holes of a billion solar masses are seen less than a billion
       years after the Big Bang. Growing that large from the remnant of a single star, by

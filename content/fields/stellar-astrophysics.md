@@ -122,9 +122,11 @@ turning_points:
       Apart from hydrogen and most helium, the atoms of the Earth were forged in stars.
     contested: true
     contested_note: >-
-      Fowler alone received the 1983 Nobel prize for the work. The omission of Hoyle, the
-      intellectual driving force, surprised many, and has been attributed to his public
-      clashes with the scientific establishment. Cameron's parallel work is less often
+      Of the four authors, only Fowler received a Nobel prize, in 1983, shared with
+      Subrahmanyan Chandrasekhar for other work. The omission of Hoyle, whom many regarded
+      as the intellectual driving force, surprised many. Some have attributed it to his
+      public clashes with the scientific establishment, though the committee's reasons
+      are not known. Cameron's parallel work is less often
       remembered.
     sources:
       - citation: "Burbidge, E. M., Burbidge, G. R., Fowler, W. A. & Hoyle, F. (1957). Synthesis of the elements in stars. Reviews of Modern Physics 29(4): 547–650."
@@ -149,7 +151,7 @@ open_problems:
   - id: r-process-origin
     name: Where are the heaviest elements made?
     status: open
-    status_note: Open as of writing; neutron-star mergers are known to contribute, but whether they are the main source is debated.
+    status_note: Open as of 2026. Neutron-star mergers are known to contribute, but whether they are the main source is debated.
     description: >-
       About half the elements heavier than iron, including gold, platinum and uranium, are
       made by rapid neutron capture, which needs extreme densities of free neutrons. The
@@ -236,7 +238,7 @@ $$
 
 and dividing by the power output gives about $3.3 \times 10^{17}$ seconds, roughly 10 billion years. The Sun is about 4.6 billion years old, so it is around halfway through its life on the main sequence. Detailed models agree.
 
-Compare Kelvin's source, gravitational contraction. The energy a shrinking Sun can release is about $GM^2/R$, which divided by the Sun's power gives about 30 million years. That was the figure Kelvin set against Darwin. Nuclear energy gives more than 300 times as much. The physicists had not made a mistake in their calculation, only in assuming they knew all the sources of energy. When radioactivity was discovered, the rocks themselves showed the Earth to be billions of years old.
+Compare Kelvin's source, gravitational contraction. The energy a shrinking Sun can release is about $GM^2/R$, which divided by the Sun's power gives about 30 million years. Kelvin's own estimates, from 1862 onwards, fell from about 100 million years to a few tens of millions. Nuclear energy gives more than 300 times as much. The physicists had not made a mistake in their calculation, only in assuming they knew all the sources of energy. When radioactivity was discovered, the rocks themselves showed the Earth to be billions of years old.
 
 ## Stellar Lives
 
