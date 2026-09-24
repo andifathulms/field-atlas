@@ -157,6 +157,54 @@ export default function Home() {
         </Link>
       </section>
 
+      <section className="border-t border-rule">
+        <Link
+          href="/toolkit/"
+          className="group -mx-4 grid gap-x-8 gap-y-2 px-4 py-9 transition-colors duration-300 hover:bg-paper-deep/60 sm:-mx-6 sm:grid-cols-[8rem_minmax(0,1fr)_14rem] sm:items-baseline sm:px-6"
+        >
+          <span className="stamp text-ink-faint sm:pt-3">Influence</span>
+          <span>
+            <span className="block text-4xl font-semibold tracking-tight sm:text-5xl">
+              Toolkit
+              <span
+                aria-hidden
+                className="ml-3 inline-block text-2xl transition-transform duration-300 ease-house group-hover:translate-x-1"
+              >
+                →
+              </span>
+            </span>
+            <span className="mt-2 block max-w-prose text-ink-soft">
+              Which fields became tools for everyone else, ranked by how far their ideas travelled across threads and domains.
+            </span>
+          </span>
+          <span className="stamp flex flex-col gap-1 text-ink-soft sm:text-right"><span>Lineage and crossings</span></span>
+        </Link>
+      </section>
+
+      <section className="border-t border-rule">
+        <Link
+          href="/open-problems/"
+          className="group -mx-4 grid gap-x-8 gap-y-2 px-4 py-9 transition-colors duration-300 hover:bg-paper-deep/60 sm:-mx-6 sm:grid-cols-[8rem_minmax(0,1fr)_14rem] sm:items-baseline sm:px-6"
+        >
+          <span className="stamp text-ink-faint sm:pt-3">The fog</span>
+          <span>
+            <span className="block text-4xl font-semibold tracking-tight sm:text-5xl">
+              Open problems
+              <span
+                aria-hidden
+                className="ml-3 inline-block text-2xl transition-transform duration-300 ease-house group-hover:translate-x-1"
+              >
+                →
+              </span>
+            </span>
+            <span className="mt-2 block max-w-prose text-ink-soft">
+              Every unsolved problem at the edge of the atlas in one place, by domain and thread, with its status as of 2026.
+            </span>
+          </span>
+          <span className="stamp flex flex-col gap-1 text-ink-soft sm:text-right"><span>{total.unresolved} unresolved</span></span>
+        </Link>
+      </section>
+
       <section className="mt-16 border-t border-rule pt-6">
         <h2 className="stamp mb-4 text-ink-faint">Reading the map</h2>
         <div data-domain="math">

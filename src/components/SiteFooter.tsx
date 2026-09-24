@@ -22,6 +22,17 @@ export function SiteFooter() {
           <Link href="/crossings/" className="stamp ink-link mt-5 inline-block text-ink-soft">
             Crossings between domains →
           </Link>
+          <div className="mt-2 flex flex-col gap-2">
+            <Link href="/toolkit/" className="stamp ink-link text-ink-soft">
+              Toolkit: how far ideas travelled →
+            </Link>
+            <Link href="/open-problems/" className="stamp ink-link text-ink-soft">
+              All open problems →
+            </Link>
+            <Link href="/people/" className="stamp ink-link text-ink-soft">
+              People →
+            </Link>
+          </div>
         </div>
 
         <nav aria-label="Atlas index" className="grid gap-x-10 gap-y-10 sm:grid-cols-3">
