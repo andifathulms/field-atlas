@@ -189,6 +189,29 @@ Worse was coming. Frege and others had assumed that any property defines a set, 
 
 Zermelo's response was to replace "any property defines a set" with careful axioms saying which sets exist. In 1904 he made explicit a principle mathematicians had used without noticing: the *axiom of choice*, that one can always pick an element from each of any collection of non-empty sets. The French analysts Borel, Baire and Lebesgue attacked it for asserting the existence of objects nobody could construct, and when Banach and Tarski later used it to cut a ball into five pieces and reassemble them into two balls of the same size, the objection seemed vindicated. The axiom stayed because too much of mathematics needs it. With Abraham Fraenkel's refinements, Zermelo's system became ZFC, the standard foundation of mathematics today.
 
+## A Closer Look: Listing the Fractions, and Failing to List the Reals
+
+It seems obvious that there are more fractions than whole numbers: between any two whole numbers lie infinitely many fractions. Cantor showed it is false. Arrange all positive fractions $\frac{p}{q}$ in a grid, numerator along the rows and denominator along the columns, and walk it diagonal by diagonal:
+
+$$
+\tfrac11,\ \tfrac12,\ \tfrac21,\ \tfrac31,\ \tfrac22,\ \tfrac13,\ \tfrac14,\ \tfrac23,\ \tfrac32,\ \tfrac41,\ \ldots
+$$
+
+Skip any fraction already seen in lower terms (like $\frac22 = \frac11$), and every positive fraction receives a position in one list. So the fractions are *countable*: exactly as numerous as the whole numbers.
+
+The real numbers are different. Suppose someone claims to list every infinite sequence of 0s and 1s (each real number between 0 and 1 has a binary expansion):
+
+| position | sequence |
+|---|---|
+| 1 | **0** 1 1 0 1 … |
+| 2 | 1 **1** 0 0 1 … |
+| 3 | 0 0 **0** 1 1 … |
+| 4 | 1 0 1 **1** 0 … |
+
+Read down the diagonal (0, 1, 0, 1, …) and flip every digit to get $1, 0, 1, 0, \ldots$. This new sequence differs from the first entry in position 1, from the second in position 2, from the $n$th in position $n$. It is on no line of the list. Every attempted list misses something, so the reals are *uncountable*, a strictly larger infinity.
+
+The same diagonal trick, turned on sets and their subsets, proves there is no largest infinity. Turned on formulas and proofs, it gives Gödel's incompleteness theorem. Turned on programs, it gives the unsolvability of the halting problem. Few arguments in mathematics have travelled further.
+
 ## A Question Without an Answer
 
 Hilbert put the continuum hypothesis first on his 1900 list of problems. The answer came in two halves. In 1938 {{fig:goedel|Kurt Gödel}} showed it cannot be disproved from ZFC. In 1963 {{fig:paul-cohen|Paul Cohen}}, an analyst new to logic, invented *forcing*, a method for building new models of set theory, and showed it cannot be proved either. The most natural question about infinity is independent of the axioms, just as the parallel postulate was independent of Euclid's others. Whether it nonetheless has a true answer is argued to this day. Meanwhile the effort to secure mathematics from paradox led to [metamathematics](/math/metamathematics/), and to Gödel's discovery of limits no foundation can escape.
