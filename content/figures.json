@@ -189,7 +189,7 @@
   { "id": "cauchy", "name": "Augustin-Louis Cauchy", "turning_point_ids": ["cauchy-integral", "cauchy-cours"] },
   { "id": "weierstrass", "name": "Karl Weierstrass", "turning_point_ids": ["dirichlet-principle-crisis", "weierstrass-monster"] },
   { "id": "bolzano", "name": "Bernard Bolzano", "turning_point_ids": ["cauchy-cours"] },
-  { "id": "cantor", "name": "Georg Cantor", "turning_point_ids": ["dedekind-cantor-reals"] },
+  { "id": "cantor", "name": "Georg Cantor", "turning_point_ids": ["dedekind-cantor-reals", "continuum-hypothesis-stated", "cantor-diagonal"] },
   { "id": "lebesgue", "name": "Henri Lebesgue", "turning_point_ids": ["lebesgue-integral"] },
   { "id": "jacob-bernoulli", "name": "Jacob Bernoulli", "turning_point_ids": ["bernoulli-lln"] },
   { "id": "de-moivre", "name": "Abraham de Moivre", "turning_point_ids": ["central-limit"] },
@@ -201,7 +201,9 @@
   { "id": "boole", "name": "George Boole", "turning_point_ids": ["boole-laws"] },
   { "id": "frege", "name": "Gottlob Frege", "turning_point_ids": ["frege-begriffsschrift"] },
   { "id": "peirce", "name": "Charles Sanders Peirce", "turning_point_ids": ["frege-begriffsschrift"] },
-  { "id": "russell", "name": "Bertrand Russell", "turning_point_ids": ["principia-mathematica"] },
+  { "id": "russell", "name": "Bertrand Russell", "turning_point_ids": ["principia-mathematica", "russell-paradox"] },
   { "id": "whitehead", "name": "Alfred North Whitehead", "turning_point_ids": ["principia-mathematica"] },
-  { "id": "goedel", "name": "Kurt Gödel", "turning_point_ids": ["goedel-completeness"] }
+  { "id": "goedel", "name": "Kurt Gödel", "turning_point_ids": ["goedel-completeness", "ch-independence"] },
+  { "id": "zermelo", "name": "Ernst Zermelo", "turning_point_ids": ["russell-paradox", "zermelo-axioms"] },
+  { "id": "paul-cohen", "name": "Paul Cohen", "turning_point_ids": ["ch-independence"] }
 ]
