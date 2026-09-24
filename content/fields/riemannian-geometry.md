@@ -1,6 +1,7 @@
 ---
 id: riemannian-geometry
 domain: math
+thread: geometry
 name: Riemannian Geometry
 parent_ids:
   - differential-geometry

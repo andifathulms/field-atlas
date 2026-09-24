@@ -1,6 +1,7 @@
 ---
 id: classical-mechanics
 domain: physics
+thread: relativity
 name: Classical Mechanics
 parent_ids: []
 era_emerged: 1600s – 1687

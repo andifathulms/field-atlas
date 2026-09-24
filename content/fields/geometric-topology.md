@@ -1,6 +1,7 @@
 ---
 id: geometric-topology
 domain: math
+thread: geometry
 name: Geometric Topology
 parent_ids:
   - algebraic-topology

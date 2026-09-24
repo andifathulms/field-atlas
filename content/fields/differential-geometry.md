@@ -1,6 +1,7 @@
 ---
 id: differential-geometry
 domain: math
+thread: geometry
 name: Differential Geometry of Surfaces
 parent_ids:
   - euclidean-geometry

@@ -5,7 +5,7 @@ import { Applications, DrawsOn, FurtherReading, InBrief, KeyIdeas } from "@/comp
 import { Markdown } from "@/components/Markdown";
 import { Sources } from "@/components/Sources";
 import { getField, getFields, getFigure, getFiguresForTurningPoint, getIncomingLinks } from "@/lib/content";
-import { getDomain } from "@/lib/domains";
+import { getDomain, getThread, threadPath } from "@/lib/domains";
 import { figureAnchor, resolveFigureMentions } from "@/lib/mentions";
 import { fieldPath } from "@/lib/paths";
 import {
@@ -124,6 +124,9 @@ export default function FieldPage({ params }: Params) {
 
   const allFields = new Map(getFields(field.domain).map((f) => [f.id, f]));
   const incoming = getIncomingLinks(field.id);
+  const thread = getThread(field.domain, field.thread);
+  const threadFields = [...allFields.values()].filter((f) => f.thread === field.thread);
+  const threadRoots = threadFields.filter((f) => !f.parent_ids.some((p) => threadFields.some((t) => t.id === p))).length;
   // In order of each person's first turning point in this field's history.
   const tpOrder = (figId: string) =>
     Math.min(...getFigure(figId)!.turning_point_ids.map((t) => field.turning_points.findIndex((tp) => tp.id === t)).filter((i) => i >= 0));
@@ -141,7 +144,11 @@ export default function FieldPage({ params }: Params) {
           </Link>{" "}
           /{" "}
           <Link href={`/${domain.id}/`} className="ink-link">
-            {domain.thread?.title ?? domain.name}
+            {domain.name}
+          </Link>{" "}
+          /{" "}
+          <Link href={threadPath(domain.id, field.thread)} className="ink-link">
+            {thread?.title}
           </Link>
         </p>
         <p className="stamp mt-8 text-accent">Field · Emerged {field.era_emerged}</p>
@@ -158,9 +165,7 @@ export default function FieldPage({ params }: Params) {
                 <FieldLinks ids={field.parent_ids} fields={allFields} />
               ) : (
                 <span className="italic text-ink-faint">
-                  {[...allFields.values()].filter((f) => f.parent_ids.length === 0).length > 1
-                    ? "One of the thread's roots"
-                    : "Root of the thread"}
+                  {threadRoots > 1 ? "One of the thread's roots" : "Root of the thread"}
                 </span>
               )}
             </dd>
@@ -251,8 +256,8 @@ export default function FieldPage({ params }: Params) {
       {field.further_reading.length > 0 && <FurtherReading readings={field.further_reading} />}
 
       <nav aria-label="Continue the survey" className="mt-16 flex flex-wrap justify-between gap-6 border-t border-rule pt-6">
-        <Link href={`/${domain.id}/`} className="stamp ink-link text-ink-soft">
-          ← Back to the field tree
+        <Link href={threadPath(domain.id, field.thread)} className="stamp ink-link text-ink-soft">
+          ← Back to the {thread?.title ?? "field tree"}
         </Link>
         {field.successor_ids.length > 0 && (
           <p className="stamp text-ink-soft">

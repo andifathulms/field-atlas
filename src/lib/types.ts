@@ -86,6 +86,8 @@ export interface Figure {
 export interface Field {
   id: string;
   domain: Domain;
+  /** The thread (within its domain) whose map this field is drawn on. Parents may be in other threads. */
+  thread: string;
   name: string;
   /** DAG: a field can have more than one parent. Empty for a root. */
   parent_ids: string[];

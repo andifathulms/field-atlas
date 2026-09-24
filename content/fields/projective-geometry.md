@@ -1,6 +1,7 @@
 ---
 id: projective-geometry
 domain: math
+thread: geometry
 name: Projective Geometry
 parent_ids:
   - euclidean-geometry

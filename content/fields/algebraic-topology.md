@@ -1,6 +1,7 @@
 ---
 id: algebraic-topology
 domain: math
+thread: geometry
 name: Algebraic Topology
 parent_ids:
   - euclidean-geometry

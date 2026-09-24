@@ -4,6 +4,7 @@
 import fs from "node:fs";
 import path from "node:path";
 import matter from "gray-matter";
+import { getThread } from "./domains";
 import {
   TURNING_POINT_TYPES,
   type Application,
@@ -68,6 +69,7 @@ function readField(file: string): Field {
   }
 
   const domain = data.domain as Domain;
+  if (!getThread(domain, data.thread)) fail(file, `unknown thread "${data.thread}" in domain "${domain}"`);
   const turning_points: TurningPoint[] = (data.turning_points ?? []).map(
     (tp: Omit<TurningPoint, "field_id">) => {
       if (!TURNING_POINT_TYPES[domain].includes(tp.type)) {
@@ -103,6 +105,7 @@ function readField(file: string): Field {
   return {
     id,
     domain,
+    thread: data.thread,
     name: data.name,
     parent_ids: data.parent_ids ?? [],
     successor_ids: [],

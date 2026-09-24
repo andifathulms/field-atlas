@@ -1,6 +1,7 @@
 ---
 id: evolutionary-biology
 domain: biology
+thread: heredity
 name: Evolutionary Biology
 parent_ids: []
 era_emerged: 1838 – 1859

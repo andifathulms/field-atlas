@@ -1,6 +1,7 @@
 ---
 id: genetics
 domain: biology
+thread: heredity
 name: Genetics
 parent_ids: []
 era_emerged: 1866 – 1915

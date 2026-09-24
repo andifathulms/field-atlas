@@ -1,6 +1,7 @@
 ---
 id: population-genetics
 domain: biology
+thread: heredity
 name: Population Genetics
 parent_ids:
   - evolutionary-biology

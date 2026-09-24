@@ -1,6 +1,7 @@
 ---
 id: non-euclidean-geometry
 domain: math
+thread: geometry
 name: Non-Euclidean Geometry
 parent_ids:
   - euclidean-geometry

@@ -1,6 +1,7 @@
 ---
 id: algebraic-geometry
 domain: math
+thread: geometry
 name: Algebraic Geometry
 parent_ids:
   - projective-geometry

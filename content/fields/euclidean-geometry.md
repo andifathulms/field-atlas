@@ -1,6 +1,7 @@
 ---
 id: euclidean-geometry
 domain: math
+thread: geometry
 name: Euclidean Geometry
 parent_ids: []
 era_emerged: c. 300 BCE

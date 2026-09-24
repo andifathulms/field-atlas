@@ -1,6 +1,7 @@
 ---
 id: physical-cosmology
 domain: physics
+thread: relativity
 name: Physical Cosmology
 parent_ids:
   - general-relativity

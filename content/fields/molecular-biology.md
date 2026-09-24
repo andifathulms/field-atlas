@@ -1,6 +1,7 @@
 ---
 id: molecular-biology
 domain: biology
+thread: heredity
 name: Molecular Biology
 parent_ids:
   - genetics

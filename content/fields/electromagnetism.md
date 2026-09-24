@@ -1,6 +1,7 @@
 ---
 id: electromagnetism
 domain: physics
+thread: relativity
 name: Electromagnetism
 parent_ids: []
 era_emerged: 1820 – 1865

@@ -1,6 +1,7 @@
 ---
 id: general-relativity
 domain: physics
+thread: relativity
 name: General Relativity
 parent_ids:
   - special-relativity

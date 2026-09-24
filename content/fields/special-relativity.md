@@ -1,6 +1,7 @@
 ---
 id: special-relativity
 domain: physics
+thread: relativity
 name: Special Relativity
 parent_ids:
   - classical-mechanics

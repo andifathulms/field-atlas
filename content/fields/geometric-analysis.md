@@ -1,6 +1,7 @@
 ---
 id: geometric-analysis
 domain: math
+thread: geometry
 name: Geometric Analysis
 parent_ids:
   - riemannian-geometry
