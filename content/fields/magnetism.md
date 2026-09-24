@@ -240,7 +240,7 @@ In 1907 {{fig:pierre-weiss|Pierre Weiss}} explained the Curie point. Suppose eac
 
 ## A Quantum Effect
 
-Worse was to come. In his doctoral thesis of 1911, {{fig:niels-bohr|Niels Bohr}} proved that classical [statistical mechanics](/physics/statistical-mechanics/) allows no magnetism at all. In a field, electrons curve, but in thermal equilibrium their effects cancel exactly. {{fig:hendrika-van-leeuwen|Hendrika van Leeuwen}} proved the same in 1919. Magnetism, the oldest known force after gravity, cannot be explained without quantum mechanics.
+Worse was to come. In his doctoral thesis of 1911, {{fig:niels-bohr|Niels Bohr}} proved that classical [statistical mechanics](/physics/statistical-mechanics/) allows no magnetism at all. In a field, electrons curve, but in thermal equilibrium their effects cancel exactly. {{fig:hendrika-van-leeuwen|Hendrika van Leeuwen}} proved the same in 1919. Magnetism, one of the oldest known forces, cannot be explained without quantum mechanics.
 
 The electron's spin, discovered in 1925, made each electron a tiny magnet. In 1928 {{fig:werner-heisenberg|Werner Heisenberg}} found the force that aligns them. It is not magnetic at all. The exclusion principle forces two electrons with parallel spins to stay apart, and that changes their electric repulsion. So the energy of two neighbouring atoms depends on whether their spins are parallel. This *exchange* interaction is electric in strength, which is why it can hold spins in line at hundreds of degrees.
 

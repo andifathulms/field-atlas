@@ -72,7 +72,7 @@ turning_points:
     contested: false
     sources:
       - citation: "Sommerfeld, A. (1928). Zur Elektronentheorie der Metalle auf Grund der Fermischen Statistik. Zeitschrift für Physik 47: 1–32."
-        url: null
+        url: https://doi.org/10.1007/BF01391052
 
   - id: solid-bloch-theorem
     date: "1928"

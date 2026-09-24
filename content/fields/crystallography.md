@@ -111,7 +111,7 @@ turning_points:
     type: EXPERIMENT
     title: The benzene ring is flat
     description: >-
-      Kathleen Lonsdale, working in W. H. Bragg's laboratory, solves the structure of
+      Kathleen Lonsdale, trained in W. H. Bragg's laboratory and now at the University of Leeds, solves the structure of
       hexamethylbenzene and shows that its ring of six carbon atoms is flat and regular. It
       settled a long argument among chemists about the shape of benzene. In 1945 she and
       the microbiologist Marjory Stephenson became the first women elected Fellows of the
@@ -119,7 +119,7 @@ turning_points:
     contested: false
     sources:
       - citation: "Lonsdale, K. (1929). The structure of the benzene ring in C6(CH3)6. Proceedings of the Royal Society A 123: 494–515."
-        url: null
+        url: https://doi.org/10.1098/rspa.1929.0081
 
   - id: xtal-hodgkin-structures
     date: 1945 – 1969
@@ -127,13 +127,13 @@ turning_points:
     title: The molecules of medicine
     description: >-
       Dorothy Hodgkin solves the structure of penicillin in 1945, of vitamin B12 in 1956
-      and, after 34 years of work, of insulin in 1969. Each was the largest or most complex
-      molecule of its time to be solved. She used early computers to handle the
+      and, after 34 years of work, of insulin in 1969. Each was among the most complex
+      molecules solved up to then. She used early computers to handle the
       calculations, and received the 1964 Nobel prize in chemistry.
     contested: false
     sources:
       - citation: "Hodgkin, D. C. et al. (1956). Structure of vitamin B12. Nature 178: 64–66."
-        url: null
+        url: https://doi.org/10.1038/178064a0
       - citation: "Ferry, G. (1998). Dorothy Hodgkin: A Life. Granta Books."
         url: null
 
@@ -180,7 +180,7 @@ open_problems:
       start, and no more surprise polymorphs appearing after a medicine is on the market.
     sources:
       - citation: "Maddox, J. (1988). Crystals from first principles. Nature 335: 201."
-        url: null
+        url: https://doi.org/10.1038/335201a0
       - citation: "Oganov, A. R. (ed.) (2010). Modern Methods of Crystal Structure Prediction. Wiley-VCH."
         url: null
 
@@ -253,7 +253,7 @@ The method spread from minerals to chemistry. In 1929 {{fig:kathleen-lonsdale|Ka
 
 {{fig:dorothy-hodgkin|Dorothy Hodgkin}} pushed the method furthest. She solved penicillin in 1945, which showed chemists the unusual ring at the heart of the drug, then vitamin B12 in 1956, with the help of some of the first electronic computers. Insulin took her 34 years and was finished in 1969. Meanwhile X-ray photographs of DNA fibres helped reveal the double helix, and Max Perutz and John Kendrew solved the first protein structures, the start of [molecular biology](/biology/molecular-biology/) as a science of shapes.
 
-In 1982 the rules themselves were broken. {{fig:dan-shechtman|Dan Shechtman}} saw a sharp diffraction pattern with tenfold symmetry in a rapidly cooled alloy of aluminium and manganese. The symmetry was forbidden for any repeating lattice. His group leader asked him to leave, and Linus Pauling declared that there were no quasicrystals, only quasi-scientists. But others reproduced the result, and theorists explained it as order without repetition, like a Penrose tiling. In 1992 the definition of a crystal was changed to fit.
+In 1982 the rules themselves were broken. {{fig:dan-shechtman|Dan Shechtman}} saw a sharp diffraction pattern with tenfold symmetry in a rapidly cooled alloy of aluminium and manganese. The symmetry was forbidden for any repeating lattice. By his own account, his group leader asked him to leave, and Linus Pauling is reported to have said that there were no quasicrystals, only quasi-scientists. But others reproduced the result, and theorists explained it as order without repetition, like a Penrose tiling. In 1992 the definition of a crystal was changed to fit.
 
 ## A Closer Look: Reading Rock Salt
 

@@ -10,7 +10,7 @@ era_emerged: 1980 – 2007
 core_question: Can the shape of electrons' quantum states, rather than the arrangement of their atoms, define a phase of matter?
 
 summary: |-
-  In 1980 Klaus von Klitzing found that the resistance of a thin layer of electrons in a strong magnetic field comes in steps, and that each step has a value fixed by two constants of nature to better than a part in a million, whatever the material, its impurities or its shape. So exact a number from so messy a sample demanded an explanation. It came in 1982 from topology, the branch of mathematics concerned with properties that do not change under smooth deformation, such as the number of holes in a doughnut.
+  In 1980 Klaus von Klitzing found that the resistance of a thin layer of electrons in a strong magnetic field comes in steps, and that each step has a value fixed by two constants of nature to high precision, whatever the material, its impurities or its shape. So exact a number from so messy a sample demanded an explanation. It came in 1982 from topology, the branch of mathematics concerned with properties that do not change under smooth deformation, such as the number of holes in a doughnut.
 
   The steps count a topological invariant of the electrons' quantum states, an integer that cannot change without closing the energy gap. From that idea grew a new classification of matter. It predicted, and experiments found, topological insulators, which are insulating inside but conduct on their surfaces. Graphene, a single sheet of carbon atoms, joined the story in 2004. The hunt for exotic particles in such materials has produced some of the field's biggest hopes, and some of its retractions.
 
@@ -101,8 +101,8 @@ turning_points:
     description: >-
       Duncan Haldane invents a model of electrons hopping on a honeycomb lattice that shows
       a quantized Hall effect with no overall magnetic field. It showed that the topology
-      belongs to the band structure itself, not to the magnet. The model was regarded as a
-      curiosity for fifteen years, then became the template for topological insulators.
+      belongs to the band structure itself, not to the magnet. The model was long regarded as a
+      curiosity, then became the template for topological insulators.
       Haldane shared the 2016 Nobel prize.
     contested: false
     sources:
@@ -165,7 +165,9 @@ turning_points:
       Whether any experiment has yet shown Majorana modes, as opposed to ordinary states
       that mimic their signatures, is disputed. Critics argue that selective reporting of
       data played a part in the retracted claims. Supporters point to steady improvements in
-      materials and measurement.
+      materials and measurement. In 2025 Microsoft announced a chip it described as
+      topological, but the accompanying Nature paper did not claim proof of Majorana modes,
+      and many physicists remain sceptical.
     sources:
       - citation: "Mourik, V. et al. (2012). Signatures of Majorana fermions in hybrid superconductor-semiconductor nanowire devices. Science 336(6084): 1003–1007."
         url: null
@@ -176,7 +178,7 @@ open_problems:
   - id: topomat-non-abelian-anyons
     name: Non-Abelian anyons and topological quantum computing
     status: open
-    status_note: Open as of writing; simpler, Abelian anyons have been observed, but the non-Abelian kind needed for computing has not been shown beyond doubt.
+    status_note: Open as of 2026. Simpler, Abelian anyons were observed in 2020, and non-Abelian anyons have been simulated on quantum processors since 2023, but interference experiments in real materials have not yet shown the non-Abelian kind beyond doubt.
     description: >-
       In two dimensions, particles need not be ordinary bosons or fermions. Some predicted
       excitations, called non-Abelian anyons, remember the order in which they have been
@@ -237,7 +239,7 @@ further_reading:
 
 The Hall effect has been known since 1879. Pass a current along a strip in a magnetic field, and the field pushes the charges sideways, building up a voltage across the strip. The ratio of that voltage to the current, the Hall resistance, normally rises smoothly with the field. On the night of 4–5 February 1980, at the high magnetic field laboratory in Grenoble, {{fig:klaus-von-klitzing|Klaus von Klitzing}} measured it for electrons confined to a thin layer at the surface of a silicon transistor, cooled to near absolute zero. The Hall resistance rose in flat steps, and the steps sat at $h/e^2$ divided by a whole number, where $h$ is Planck's constant and $e$ the electron's charge.
 
-That was astonishing. The sample was a commercial device full of impurities and irregular edges, and yet it produced a combination of fundamental constants to better than a part in a million. Something had to make the answer immune to all the details.
+That was astonishing. The sample was a commercial device full of impurities and irregular edges, and yet it produced a combination of fundamental constants to high precision. Later measurements pushed the agreement to parts in a billion. Something had to make the answer immune to all the details.
 
 ## Topology Enters
 

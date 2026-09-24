@@ -12,7 +12,7 @@ core_question: Why do some materials lose all electrical resistance when cooled,
 summary: |-
   In 1911 mercury cooled with liquid helium lost its electrical resistance completely, not gradually but suddenly, at 4.2 degrees above absolute zero. A current set flowing in a superconducting ring flows for years without a battery. In 1933 superconductors were also found to expel magnetic fields, which showed that superconductivity is a new phase of matter, not just perfect conduction.
 
-  It took 46 years and most of the great theorists of the century to explain it. The answer, given by Bardeen, Cooper and Schrieffer in 1957, is that electrons bind into pairs that move together as a single quantum state. Then in 1986 a family of copper oxides was found to superconduct at far higher temperatures, and the mechanism behind them is still debated. Claims of superconductivity at room temperature have appeared many times. The recent ones have been retracted.
+  It took 46 years and most of the great theorists of the century to explain it. The answer, given by Bardeen, Cooper and Schrieffer in 1957, is that electrons bind into pairs that move together as a single quantum state. Then in 1986 a family of copper oxides was found to superconduct at far higher temperatures, and the mechanism behind them is still debated. Claims of superconductivity at room temperature have appeared many times. The best-known recent ones have been retracted, and a 2025 claim at enormous pressure still awaits independent confirmation.
 
 key_ideas:
   - term: Zero resistance
@@ -55,8 +55,9 @@ turning_points:
       temperatures.
     contested: true
     contested_note: >-
-      The measurements were made with Gilles Holst, a young assistant, and the helium
-      apparatus was run by Gerrit Flim and the technicians. Onnes published under his own
+      The measurements were made with Gilles Holst, a young assistant, Cornelis Dorsman
+      controlled the temperatures, and the helium apparatus was run by the chief technician
+      Gerrit Flim. Onnes published under his own
       name, and historians have debated how much of the discovery should be credited to
       Holst, who is mentioned only in passing.
     sources:
@@ -175,9 +176,10 @@ open_problems:
   - id: supercond-high-tc-mechanism
     name: How do the copper oxides superconduct?
     status: open
-    status_note: Open as of writing, nearly forty years after the discovery.
+    status_note: Open as of 2026, forty years after the discovery.
     description: >-
-      The cuprates superconduct at up to 133 K at normal pressure. Their electrons form
+      The cuprates superconduct at up to 133 K at normal pressure, and in 2026 a sample
+      treated under pressure kept 151 K after release. Their electrons form
       pairs, as in BCS theory, but the glue binding them does not seem to be lattice
       vibrations. Magnetic fluctuations are the leading candidate, but there is no agreed
       theory.
@@ -195,7 +197,7 @@ open_problems:
   - id: supercond-room-temperature
     name: Superconductivity at room temperature and pressure
     status: open
-    status_note: No confirmed example as of writing; the highest reproduced results need pressures above a million atmospheres.
+    status_note: No confirmed example as of 2026. The highest reproduced results need pressures above a million atmospheres, and a 2025 preprint reporting about 298 K in a lanthanum–scandium hydride at about 2.5 million atmospheres has not yet been independently reproduced.
     description: >-
       Is there a material that superconducts at ordinary temperature without enormous
       pressure? Hydrogen-rich compounds reach close to room temperature, but only when
@@ -247,7 +249,7 @@ further_reading:
     url: null
     note: A history of the Leiden laboratory where superconductivity was found.
   - citation: "Schmalian, J. (2010). Failed theories of superconductivity. Modern Physics Letters B 24(27): 2679–2691."
-    url: null
+    url: https://arxiv.org/abs/1008.0447
     note: A short account of the many attempts by famous physicists before BCS.
   - citation: "Tinkham, M. (1996). Introduction to Superconductivity (2nd ed.). McGraw-Hill."
     url: null
@@ -270,7 +272,7 @@ In 1962 {{fig:brian-josephson|Brian Josephson}}, a graduate student in Cambridge
 
 ## Warmer and Stranger
 
-For decades the record transition temperature crept up slowly, reaching 23 K in 1973. Many believed that BCS theory capped it near 30 K. In 1986 {{fig:georg-bednorz|Georg Bednorz}} and {{fig:alex-muller|Alex Müller}} at IBM Zurich found superconductivity at about 35 K in a copper oxide ceramic, a class of material no one had thought promising. By early 1987 related compounds superconducted at 93 K, cooled by liquid nitrogen, which is cheaper than milk. At a session of the American Physical Society in March 1987, later called the Woodstock of physics, thousands of physicists crowded in to hear the results late into the night. The mechanism is still debated.
+For decades the record transition temperature crept up slowly, reaching 23 K in 1973. Some theorists argued that the lattice mechanism of BCS theory could not go much higher. In 1986 {{fig:georg-bednorz|Georg Bednorz}} and {{fig:alex-muller|Alex Müller}} at IBM Zurich found superconductivity at about 35 K in a copper oxide ceramic, a class of material no one had thought promising. By early 1987 related compounds superconducted at 93 K, cooled by cheap liquid nitrogen. At a session of the American Physical Society in March 1987, later called the Woodstock of physics, thousands of physicists crowded in to hear the results late into the night. The mechanism is still debated.
 
 In 2015 {{fig:mikhail-eremets|Mikhail Eremets}} and his group found superconductivity at 203 K in hydrogen sulphide crushed between diamonds, confirming a theoretical prediction. Hydrogen-rich compounds under pressure pushed higher still. Then came claims of superconductivity at room temperature. Two papers from Ranga Dias's group in Rochester were retracted, in 2022 and 2023, and a university investigation found misconduct. The field is left with a genuine achievement and a warning about extraordinary claims.
 
