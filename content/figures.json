@@ -196,5 +196,12 @@
   { "id": "laplace", "name": "Pierre-Simon Laplace", "turning_point_ids": ["central-limit", "bayes-theorem"] },
   { "id": "bayes", "name": "Thomas Bayes", "turning_point_ids": ["bayes-theorem"] },
   { "id": "richard-price", "name": "Richard Price", "turning_point_ids": ["bayes-theorem"] },
-  { "id": "kolmogorov", "name": "Andrey Kolmogorov", "turning_point_ids": ["kolmogorov-axioms"] }
+  { "id": "kolmogorov", "name": "Andrey Kolmogorov", "turning_point_ids": ["kolmogorov-axioms"] },
+  { "id": "aristotle", "name": "Aristotle", "turning_point_ids": ["aristotle-syllogistic"] },
+  { "id": "boole", "name": "George Boole", "turning_point_ids": ["boole-laws"] },
+  { "id": "frege", "name": "Gottlob Frege", "turning_point_ids": ["frege-begriffsschrift"] },
+  { "id": "peirce", "name": "Charles Sanders Peirce", "turning_point_ids": ["frege-begriffsschrift"] },
+  { "id": "russell", "name": "Bertrand Russell", "turning_point_ids": ["principia-mathematica"] },
+  { "id": "whitehead", "name": "Alfred North Whitehead", "turning_point_ids": ["principia-mathematica"] },
+  { "id": "goedel", "name": "Kurt Gödel", "turning_point_ids": ["goedel-completeness"] }
 ]
