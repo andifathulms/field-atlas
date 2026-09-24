@@ -176,6 +176,7 @@ applications:
       maximum likelihood, now used in every field that runs experiments, from medicine
       to economics.
     domain: math
+    field_id: probability-theory
     sources:
       - citation: "Fisher, R. A. (1935). The Design of Experiments. Oliver & Boyd."
         url: null

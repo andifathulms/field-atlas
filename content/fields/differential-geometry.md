@@ -5,6 +5,7 @@ thread: geometry
 name: Differential Geometry of Surfaces
 parent_ids:
   - euclidean-geometry
+  - calculus
 era_emerged: 18th century – 1820s
 core_question: How do you measure the bending of a curve or surface with calculus, and how much of that bending can be detected from inside the surface?
 
@@ -230,7 +231,7 @@ further_reading:
 
 ## Calculus Meets Shape
 
-When Newton and Leibniz made calculus in the late seventeenth century, curvature was one of the first things it could measure. The curvature of a plane curve at a point is the reciprocal of the radius of the circle that best hugs it there: $\kappa = 1/r$. Huygens had already used such circles to study pendulum clocks, and Clairaut soon extended the idea to curves twisting through space.
+When Newton and Leibniz made [calculus](/math/calculus/) in the late seventeenth century, curvature was one of the first things it could measure. The curvature of a plane curve at a point is the reciprocal of the radius of the circle that best hugs it there: $\kappa = 1/r$. Huygens had already used such circles to study pendulum clocks, and Clairaut soon extended the idea to curves twisting through space.
 
 Surfaces were harder, because a surface curves differently in different directions. A cylinder is curved around its circumference and flat along its length. A saddle curves up one way and down the other. {{fig:euler|Leonhard Euler}} showed in 1760 that all of this is controlled by two numbers, the *principal curvatures* $\kappa_1$ and $\kappa_2$, which occur in perpendicular directions. Gaspard Monge's school in France then built a whole descriptive theory of surfaces on that idea. For curves the story was essentially finished by the 1850s. {{fig:frenet|Frenet}} and {{fig:serret|Serret}} showed that two functions, curvature $\kappa$ and torsion $\tau$, determine any curve in space.
 

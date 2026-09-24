@@ -5,6 +5,7 @@ thread: number-theory
 name: Analytic Number Theory
 parent_ids:
   - elementary-number-theory
+  - complex-analysis
 era_emerged: 1737 – 1896
 core_question: How are the primes distributed, and why can calculus answer questions about whole numbers?
 
@@ -254,7 +255,7 @@ Half a century later, poring over tables, the teenage {{fig:gauss|Gauss}} and {{
 
 ## Riemann's Eight Pages
 
-In 1859 {{fig:riemann|Bernhard Riemann}}, better known for his work in [geometry](/math/riemannian-geometry/), wrote his only paper on number theory. He extended Euler's function to complex numbers, where it becomes the zeta function $\zeta(s)$, and showed that the exact count of primes is determined by the locations of its zeros. The primes are, in a precise sense, a sum of waves whose frequencies are those zeros.
+In 1859 {{fig:riemann|Bernhard Riemann}}, better known for his work in [geometry](/math/riemannian-geometry/), wrote his only paper on number theory. Using the [complex analysis](/math/complex-analysis/) he had developed in his thesis, he extended Euler's function to complex numbers, where it becomes the zeta function $\zeta(s)$, and showed that the exact count of primes is determined by the locations of its zeros. The primes are, in a precise sense, a sum of waves whose frequencies are those zeros.
 
 He also computed a few zeros and found them all on one vertical line. It was "very probable", he wrote, that all of them lie there, but he had put aside the search for a proof "after some fleeting vain attempts". That remark is the Riemann hypothesis.
 
