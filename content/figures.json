@@ -583,7 +583,7 @@
   { "id": "alfred-wegener", "name": "Alfred Wegener", "turning_point_ids": ["wegener-continental-drift"] },
   { "id": "robert-macarthur", "name": "Robert MacArthur", "turning_point_ids": ["island-biogeography"] },
   { "id": "eo-wilson", "name": "Edward O. Wilson", "turning_point_ids": ["island-biogeography", "simberloff-wilson-mangroves"] },
-  { "id": "daniel-simberloff", "name": "Daniel Simberloff", "turning_point_ids": ["simberloff-wilson-mangroves"] },
+  { "id": "daniel-simberloff", "name": "Daniel Simberloff", "turning_point_ids": ["simberloff-wilson-mangroves", "sloss-debate"] },
   { "id": "pierre-francois-verhulst", "name": "Pierre-François Verhulst", "turning_point_ids": ["verhulst-logistic"] },
   { "id": "charles-elton", "name": "Charles Elton", "turning_point_ids": ["lynx-hare-cycle"] },
   { "id": "alfred-lotka", "name": "Alfred Lotka", "turning_point_ids": ["lotka-volterra"] },
@@ -604,5 +604,11 @@
   { "id": "howard-odum", "name": "Howard T. Odum", "turning_point_ids": ["odum-energy-flow"] },
   { "id": "charles-david-keeling", "name": "Charles David Keeling", "turning_point_ids": ["keeling-curve"] },
   { "id": "gene-likens", "name": "Gene Likens", "turning_point_ids": ["hubbard-brook"] },
-  { "id": "herbert-bormann", "name": "F. Herbert Bormann", "turning_point_ids": ["hubbard-brook"] }
+  { "id": "herbert-bormann", "name": "F. Herbert Bormann", "turning_point_ids": ["hubbard-brook"] },
+  { "id": "rachel-carson", "name": "Rachel Carson", "turning_point_ids": ["silent-spring"] },
+  { "id": "jared-diamond", "name": "Jared Diamond", "turning_point_ids": ["sloss-debate"] },
+  { "id": "ian-franklin", "name": "Ian Franklin", "turning_point_ids": ["minimum-viable-population"] },
+  { "id": "michael-soule", "name": "Michael Soulé", "turning_point_ids": ["soule-crisis-discipline", "minimum-viable-population"] },
+  { "id": "georgina-mace", "name": "Georgina Mace", "turning_point_ids": ["red-list-criteria"] },
+  { "id": "stuart-pimm", "name": "Stuart Pimm", "turning_point_ids": ["extinction-rate-debate"] }
 ]
