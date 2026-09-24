@@ -41,8 +41,8 @@ key_ideas:
   - term: Conformal map
     definition: >-
       A map that preserves angles. Holomorphic functions are conformal, and Riemann's
-      mapping theorem says that any simply connected region of the plane can be mapped
-      conformally onto a disc.
+      mapping theorem says that any simply connected region of the plane, other than the
+      whole plane, can be mapped conformally onto a disc.
     turning_point_id: riemann-thesis
 
 turning_points:

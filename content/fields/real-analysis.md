@@ -173,7 +173,7 @@ $$
 
 which jumps. Continuous functions converged, *point by point*, to a discontinuous one.
 
-The repair is *uniform* convergence: require that a single $n$ make $f_n$ close to $f$ at every $x$ at once. Here that fails. However large $n$ is, points just below 1 still have $x^n$ near 1, far from the limit 0. Weierstrass showed that uniform limits of continuous functions *are* continuous, and the distinction between the two kinds of convergence became basic analysis.
+The repair is *uniform* convergence: require that a single $n$ make $f_n$ close to $f$ at every $x$ at once. Here that fails. However large $n$ is, points just below 1 still have $x^n$ near 1, far from the limit 0. Seidel, Stokes and Weierstrass showed that uniform limits of continuous functions *are* continuous, and the distinction between the two kinds of convergence became basic analysis.
 
 Precise definitions are what make such distinctions possible. The statement $\lim_{x \to 2} x^2 = 4$ means: for every tolerance $\varepsilon > 0$ there is a $\delta > 0$ such that $|x^2 - 4| < \varepsilon$ whenever $|x - 2| < \delta$. To prove it, factor $|x^2 - 4| = |x - 2|\,|x + 2|$. If $|x - 2| < 1$ then $|x + 2| < 5$, so $|x^2 - 4| < 5|x - 2|$. Choosing
 

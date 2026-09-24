@@ -174,7 +174,7 @@ Leibniz published in 1684, and Newton had published almost nothing. What followe
 
 Calculus worked astonishingly well. {{fig:euler|Euler}} made the *function* its central object and poured out results: infinite series for $e^x$, $\sin x$ and $\cos x$, and the formula $e^{ix} = \cos x + i \sin x$, which gives $e^{i\pi} + 1 = 0$. Newton's mechanics, the [physics](/physics/classical-mechanics/) of the entire eighteenth century, was calculus in action.
 
-But no one could say what it was about. In 1734 {{fig:berkeley|George Berkeley}}, Bishop of Cloyne, published *The Analyst*, addressed to "an infidel mathematician". To find a derivative, he noted, you divide by a small increment, treating it as nonzero, and then set it to zero to get a clean answer. Infinitesimals were "neither finite quantities, nor quantities infinitely small, nor yet nothing". They were "the ghosts of departed quantities". Mathematicians knew the objection was fair and had no good answer.
+But no one could say what it was about. In 1734 {{fig:berkeley|George Berkeley}}, Bishop of Cloyne, published *The Analyst*, addressed to "an infidel mathematician". To find a derivative, he noted, you divide by a small increment, treating it as nonzero, and then set it to zero to get a clean answer. The vanishing increments of the calculus were "neither finite quantities, nor quantities infinitely small, nor yet nothing". They were "the ghosts of departed quantities". Mathematicians knew the objection was fair and had no good answer.
 
 ## A Closer Look: The Slope of a Parabola, Two Ways
 
