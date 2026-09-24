@@ -51,7 +51,7 @@ turning_points:
     contested: false
     sources:
       - citation: "Porter, K. R., Claude, A. & Fullam, E. F. (1945). A study of tissue culture cells by electron microscopy. Journal of Experimental Medicine 81(3): 233–246."
-        url: null
+        url: https://doi.org/10.1084/jem.81.3.233
 
   - id: secretory-pathway
     date: 1955 – 1975
@@ -66,7 +66,7 @@ turning_points:
     contested: false
     sources:
       - citation: "Palade, G. (1975). Intracellular aspects of the process of protein synthesis. Science 189(4200): 347–358."
-        url: null
+        url: https://doi.org/10.1126/science.1096303
 
   - id: fluid-mosaic
     date: "1972"
@@ -80,7 +80,7 @@ turning_points:
     contested: false
     sources:
       - citation: "Singer, S. J. & Nicolson, G. L. (1972). The fluid mosaic model of the structure of cell membranes. Science 175(4023): 720–731."
-        url: null
+        url: https://doi.org/10.1126/science.175.4023.720
 
   - id: cell-cycle-control
     date: 1970 – 1987
@@ -96,9 +96,9 @@ turning_points:
     contested: false
     sources:
       - citation: "Evans, T., Rosenthal, E. T., Youngblom, J., Distel, D. & Hunt, T. (1983). Cyclin: a protein specified by maternal mRNA in sea urchin eggs that is destroyed at each cleavage division. Cell 33(2): 389–396."
-        url: null
-      - citation: "Lee, M. G. & Nurse, P. (1987). Complementation used to clone a human homologue of the fission yeast cell cycle control gene cdc2. Nature 327: 31–35."
-        url: null
+        url: https://doi.org/10.1016/0092-8674(83)90420-8
+      - citation: "Lee, M. G. & Nurse, P. (1987). Complementation used to clone a human homologue of the fission yeast cell cycle control gene cdc2. Nature 327(6117): 31–35."
+        url: https://doi.org/10.1038/327031a0
 
   - id: green-fluorescent-protein
     date: 1962 – 1994
@@ -118,9 +118,9 @@ turning_points:
       him. His case is often cited to show how prizes simplify credit.
     sources:
       - citation: "Chalfie, M., Tu, Y., Euskirchen, G., Ward, W. W. & Prasher, D. C. (1994). Green fluorescent protein as a marker for gene expression. Science 263(5148): 802–805."
-        url: null
+        url: https://doi.org/10.1126/science.8303295
       - citation: "Prasher, D. C. et al. (1992). Primary structure of the Aequorea victoria green-fluorescent protein. Gene 111(2): 229–233."
-        url: null
+        url: https://doi.org/10.1016/0378-1119(92)90691-H
 
   - id: super-resolution
     date: 1994 – 2006
@@ -136,9 +136,9 @@ turning_points:
     contested: false
     sources:
       - citation: "Betzig, E. et al. (2006). Imaging intracellular fluorescent proteins at nanometer resolution. Science 313(5793): 1642–1645."
-        url: null
+        url: https://doi.org/10.1126/science.1127344
       - citation: "Hell, S. W. & Wichmann, J. (1994). Breaking the diffraction resolution limit by stimulated emission: stimulated-emission-depletion fluorescence microscopy. Optics Letters 19(11): 780–782."
-        url: null
+        url: https://doi.org/10.1364/OL.19.000780
 
 open_problems:
   - id: cell-size-control
@@ -159,7 +159,7 @@ open_problems:
       down in cancer.
     sources:
       - citation: "Amodeo, A. A. & Skotheim, J. M. (2016). Cell-size control. Cold Spring Harbor Perspectives in Biology 8(4): a019083."
-        url: null
+        url: https://doi.org/10.1101/cshperspect.a019083
 
 applications:
   - area: Cancer medicine
@@ -170,15 +170,15 @@ applications:
       basic research on yeast and sea urchins.
     sources:
       - citation: "Finn, R. S. et al. (2016). Palbociclib and letrozole in advanced breast cancer. New England Journal of Medicine 375(20): 1925–1936."
-        url: null
+        url: https://doi.org/10.1056/NEJMoa1607303
   - area: Neuroscience
     title: Watching neurons fire
     description: >-
       Engineered fluorescent proteins that glow when calcium enters a neuron let
       neuroscientists watch thousands of brain cells firing at once in living animals.
     sources:
-      - citation: "Chen, T.-W. et al. (2013). Ultrasensitive fluorescent proteins for imaging neuronal activity. Nature 499: 295–300."
-        url: null
+      - citation: "Chen, T.-W. et al. (2013). Ultrasensitive fluorescent proteins for imaging neuronal activity. Nature 499(7458): 295–300."
+        url: https://doi.org/10.1038/nature12354
 
 further_reading:
   - citation: "Alberts, B. et al. (2022). Molecular Biology of the Cell (7th ed.). W. W. Norton."
@@ -196,7 +196,7 @@ further_reading:
 
 By 1900 [cell theory](/biology/cell-theory/) was established, but light microscopes had reached their limit. Details smaller than about a fifth of a micrometre blur together, and most of a cell's machinery is smaller. Meanwhile [biochemistry](/biology/biochemistry/) ground cells up to study their enzymes, which told what cells do but not where.
 
-The electron microscope broke the limit. {{fig:ernst-ruska|Ernst Ruska}} built the first in 1931, focusing electrons with magnetic coils. Electrons have wavelengths thousands of times shorter than light, and in 1945 {{fig:keith-porter|Keith Porter}}, {{fig:albert-claude|Albert Claude}} and Ernest Fullam published the first electron micrograph of a whole cell. It showed a lace of internal membranes that no one had seen, the endoplasmic reticulum.
+The electron microscope broke the limit. {{fig:ernst-ruska|Ernst Ruska}} built the first in 1931, focusing electrons with magnetic coils. Electrons have wavelengths many thousands of times shorter than light, and in 1945 {{fig:keith-porter|Keith Porter}}, {{fig:albert-claude|Albert Claude}} and Ernest Fullam published the first electron micrograph of a whole cell. It showed a lace of internal membranes that no one had seen, the endoplasmic reticulum.
 
 ## The Cell's Factories
 

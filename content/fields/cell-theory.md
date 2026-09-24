@@ -20,7 +20,7 @@ key_ideas:
     turning_point_id: schleiden-schwann
   - term: Omnis cellula e cellula
     definition: >-
-      "Every cell from a cell." Cells do not form from non-living fluid; they arise only
+      "Every cell from a cell." Cells do not form from non-living fluid. They arise only
       by the division of existing cells.
     turning_point_id: virchow-omnis-cellula
   - term: Nucleus and chromosomes
@@ -42,7 +42,7 @@ turning_points:
     description: >-
       In *Micrographia*, a best-selling book of drawings made through his microscope,
       Robert Hooke describes a thin slice of cork as made of tiny empty boxes, which he
-      calls cells, after the small rooms of monks. He saw only the walls of dead plant
+      calls cells, a word often said to recall the small rooms of monks. He saw only the walls of dead plant
       cells, and did not think of them as the units of life.
     contested: false
     sources:
@@ -57,14 +57,15 @@ turning_points:
       Antonie van Leeuwenhoek, a Delft cloth merchant, grinds tiny single lenses that
       magnify over two hundred times, better than any compound microscope of his day. In
       rainwater, pond water and scrapings from his teeth he sees swarms of "animalcules":
-      protists and bacteria. The Royal Society, sceptical, sent observers to confirm it.
+      protists and bacteria. The Royal Society was sceptical. He sent testimonials from
+      Delft witnesses, and in 1677 Robert Hooke confirmed the observations.
       He also saw sperm and red blood cells.
     contested: false
     sources:
-      - citation: "van Leeuwenhoek, A. (1677). Observations, communicated to the publisher by Mr. Antony van Leewenhoeck, in a Dutch letter of the 9th of Octob. 1676. Philosophical Transactions of the Royal Society 12: 821–831."
-        url: null
-      - citation: "Lane, N. (2015). The unseen world: reflections on Leeuwenhoek (1677) 'Concerning little animals'. Philosophical Transactions of the Royal Society B 370: 20140344."
-        url: null
+      - citation: "van Leeuwenhoek, A. (1677). Observations, communicated to the publisher by Mr. Antony van Leewenhoeck, in a Dutch letter of the 9th of Octob. 1676. Philosophical Transactions of the Royal Society 12(133): 821–831."
+        url: https://doi.org/10.1098/rstl.1677.0003
+      - citation: "Lane, N. (2015). The unseen world: reflections on Leeuwenhoek (1677) 'Concerning little animals'. Philosophical Transactions of the Royal Society B 370(1666): 20140344."
+        url: https://doi.org/10.1098/rstb.2014.0344
 
   - id: achromatic-microscope
     date: "1830"
@@ -79,7 +80,7 @@ turning_points:
     contested: false
     sources:
       - citation: "Lister, J. J. (1830). On some properties in achromatic object-glasses applicable to the improvement of the microscope. Philosophical Transactions of the Royal Society 120: 187–200."
-        url: null
+        url: https://doi.org/10.1098/rstl.1830.0015
 
   - id: schleiden-schwann
     date: 1838 – 1839
@@ -112,13 +113,13 @@ turning_points:
     contested_note: >-
       Remak published the evidence and the conclusion first, in 1852, and Virchow, who
       had at first rejected it, adopted it in 1855 without credit. Remak, a Jewish scientist
-      barred from a full professorship in Prussia, was largely forgotten, and historians now
-      credit him with the principle that Virchow made famous.
+      barred from a full professorship in Prussia, was largely forgotten, and many historians
+      now credit him with the principle that Virchow made famous.
     sources:
       - citation: "Virchow, R. (1858). Die Cellularpathologie in ihrer Begründung auf physiologische und pathologische Gewebelehre. Hirschwald, Berlin."
         url: null
       - citation: "Lagunoff, D. (2002). A Polish, Jewish scientist in 19th-century Prussia. Science 298(5602): 2331."
-        url: null
+        url: https://doi.org/10.1126/science.1080726
 
   - id: flemming-mitosis
     date: "1882"
@@ -155,7 +156,7 @@ open_problems:
       and a base for engineering cells to order.
     sources:
       - citation: "Hutchison, C. A. et al. (2016). Design and synthesis of a minimal bacterial genome. Science 351(6280): aad6253."
-        url: null
+        url: https://doi.org/10.1126/science.aad6253
 
 applications:
   - area: Medicine
@@ -176,14 +177,14 @@ applications:
       raised lasting questions about consent.
     sources:
       - citation: "Scherer, W. F., Syverton, J. T. & Gey, G. O. (1953). Studies on the propagation in vitro of poliomyelitis viruses. Journal of Experimental Medicine 97(5): 695–710."
-        url: null
+        url: https://doi.org/10.1084/jem.97.5.695
 
 further_reading:
   - citation: "Harris, H. (1999). The Birth of the Cell. Yale University Press."
     url: null
     note: A history of how cell theory emerged, with its false starts.
-  - citation: "Lane, N. (2015). The unseen world: reflections on Leeuwenhoek (1677) 'Concerning little animals'. Philosophical Transactions of the Royal Society B 370: 20140344."
-    url: null
+  - citation: "Lane, N. (2015). The unseen world: reflections on Leeuwenhoek (1677) 'Concerning little animals'. Philosophical Transactions of the Royal Society B 370(1666): 20140344."
+    url: https://doi.org/10.1098/rstb.2014.0344
     note: A short, readable essay on Leeuwenhoek's discovery of microbes.
   - citation: "Skloot, R. (2010). The Immortal Life of Henrietta Lacks. Crown."
     url: null
@@ -192,7 +193,7 @@ further_reading:
 
 ## Little Rooms and Little Animals
 
-In 1665 {{fig:hooke|Robert Hooke}} published *Micrographia*, a book of astonishing drawings made through his microscope: a flea, the eye of a fly, the point of a needle. Looking at a thin slice of cork, he saw a honeycomb of tiny empty boxes and called them cells, after monks' rooms. He was looking at the walls of dead plant cells, and saw no reason to think they were important.
+In 1665 {{fig:hooke|Robert Hooke}} published *Micrographia*, a book of astonishing drawings made through his microscope: a flea, the eye of a fly, the point of a needle. Looking at a thin slice of cork, he saw a honeycomb of tiny empty boxes and called them cells, a word often said to recall monks' rooms. He was looking at the walls of dead plant cells, and saw no reason to think they were important.
 
 A decade later {{fig:antonie-van-leeuwenhoek|Antonie van Leeuwenhoek}}, a draper in Delft with no scientific training, saw far more. His tiny single lenses, a few millimetres across and held close to the eye, magnified more than two hundred times. In pond water, rainwater and the plaque from his teeth, he found creatures by the thousand, too small to see: protists and bacteria. The Royal Society in London doubted him until its own members confirmed the observations. He kept his lens-making methods secret, and for 150 years microscopes improved little.
 

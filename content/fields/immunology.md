@@ -63,7 +63,7 @@ turning_points:
       - citation: "Jenner, E. (1798). An Inquiry into the Causes and Effects of the Variolae Vaccinae. Sampson Low, London."
         url: null
       - citation: "Riedel, S. (2005). Edward Jenner and the history of smallpox and vaccination. Baylor University Medical Center Proceedings 18(1): 21–25."
-        url: null
+        url: https://doi.org/10.1080/08998280.2005.11928028
 
   - id: cellular-vs-humoral
     date: 1882 – 1908
@@ -82,8 +82,8 @@ turning_points:
       dominated, and cellular immunity was neglected until the 1960s. How much the early
       rivalry delayed an integrated picture is debated by historians.
     sources:
-      - citation: "Tauber, A. I. (2003). Metchnikoff and the phagocytosis theory. Nature Reviews Molecular Cell Biology 4: 897–901."
-        url: null
+      - citation: "Tauber, A. I. (2003). Metchnikoff and the phagocytosis theory. Nature Reviews Molecular Cell Biology 4(11): 897–901."
+        url: https://doi.org/10.1038/nrm1244
 
   - id: antitoxins
     date: "1890"
@@ -98,12 +98,13 @@ turning_points:
     contested: true
     contested_note: >-
       Kitasato, who led the tetanus work and co-authored the founding paper, was not
-      included in the Nobel prize, an omission often attributed to prejudice against
-      Asian scientists. He returned to Japan and founded its leading institute for
+      included in the Nobel prize, an omission some historians attribute to prejudice
+      against Asian scientists. Others note that the prize cited serum therapy against
+      diphtheria, which was mainly Behring's work. He returned to Japan and founded its leading institute for
       infectious disease.
     sources:
-      - citation: "Behring, E. & Kitasato, S. (1890). Ueber das Zustandekommen der Diphtherie-Immunität und der Tetanus-Immunität bei Thieren. Deutsche Medizinische Wochenschrift 16: 1113–1114."
-        url: null
+      - citation: "Behring, E. & Kitasato, S. (1890). Ueber das Zustandekommen der Diphtherie-Immunität und der Tetanus-Immunität bei Thieren. Deutsche Medizinische Wochenschrift 16(49): 1113–1114."
+        url: https://doi.org/10.1055/s-0029-1207589
 
   - id: clonal-selection
     date: "1957"
@@ -120,7 +121,7 @@ turning_points:
       - citation: "Burnet, F. M. (1957). A modification of Jerne's theory of antibody production using the concept of clonal selection. Australian Journal of Science 20: 67–69."
         url: null
       - citation: "Jerne, N. K. (1955). The natural-selection theory of antibody formation. Proceedings of the National Academy of Sciences 41(11): 849–857."
-        url: null
+        url: https://doi.org/10.1073/pnas.41.11.849
 
   - id: monoclonal-antibodies
     date: "1975"
@@ -133,8 +134,8 @@ turning_points:
       tools of research and diagnosis, and a large class of drugs.
     contested: false
     sources:
-      - citation: "Köhler, G. & Milstein, C. (1975). Continuous cultures of fused cells secreting antibody of predefined specificity. Nature 256: 495–497."
-        url: null
+      - citation: "Köhler, G. & Milstein, C. (1975). Continuous cultures of fused cells secreting antibody of predefined specificity. Nature 256(5517): 495–497."
+        url: https://doi.org/10.1038/256495a0
 
   - id: antibody-gene-rearrangement
     date: "1976"
@@ -148,7 +149,7 @@ turning_points:
     contested: false
     sources:
       - citation: "Hozumi, N. & Tonegawa, S. (1976). Evidence for somatic rearrangement of immunoglobulin genes coding for variable and constant regions. Proceedings of the National Academy of Sciences 73(10): 3628–3632."
-        url: null
+        url: https://doi.org/10.1073/pnas.73.10.3628
 
   - id: mrna-vaccines
     date: 2005 – 2020
@@ -163,7 +164,7 @@ turning_points:
     contested: false
     sources:
       - citation: "Karikó, K., Buckstein, M., Ni, H. & Weissman, D. (2005). Suppression of RNA recognition by Toll-like receptors: the impact of nucleoside modification and the evolutionary origin of RNA. Immunity 23(2): 165–175."
-        url: null
+        url: https://doi.org/10.1016/j.immuni.2005.06.008
 
 open_problems:
   - id: hiv-vaccine
@@ -183,8 +184,8 @@ open_problems:
       The end of an epidemic that has killed more than 40 million people, and methods for
       vaccinating against other rapidly changing pathogens.
     sources:
-      - citation: "Haynes, B. F. et al. (2023). Strategies for HIV-1 vaccines that induce broadly neutralizing antibodies. Nature Reviews Immunology 23: 142–158."
-        url: null
+      - citation: "Haynes, B. F. et al. (2023). Strategies for HIV-1 vaccines that induce broadly neutralizing antibodies. Nature Reviews Immunology 23(3): 142–158."
+        url: https://doi.org/10.1038/s41577-022-00753-w
 
 applications:
   - area: Cancer medicine
@@ -196,7 +197,7 @@ applications:
       cancers.
     sources:
       - citation: "Leach, D. R., Krummel, M. F. & Allison, J. P. (1996). Enhancement of antitumor immunity by CTLA-4 blockade. Science 271(5256): 1734–1736."
-        url: null
+        url: https://doi.org/10.1126/science.271.5256.1734
   - area: Diagnostics
     title: Rapid tests
     description: >-
@@ -204,11 +205,11 @@ applications:
       to one molecule and change colour when they do, turning immunology into a result in
       minutes at home.
     sources:
-      - citation: "Köhler, G. & Milstein, C. (1975). Continuous cultures of fused cells secreting antibody of predefined specificity. Nature 256: 495–497."
-        url: null
+      - citation: "Köhler, G. & Milstein, C. (1975). Continuous cultures of fused cells secreting antibody of predefined specificity. Nature 256(5517): 495–497."
+        url: https://doi.org/10.1038/256495a0
 
 further_reading:
-  - citation: "Davis, D. M. (2018). The Beautiful Cure: Harnessing Your Body's Own Defences. Bodley Head."
+  - citation: "Davis, D. M. (2018). The Beautiful Cure: Harnessing Your Body's Natural Defences. Bodley Head."
     url: null
     note: A popular account of how the immune system works and how it was discovered.
   - citation: "Silverstein, A. M. (2009). A History of Immunology (2nd ed.). Academic Press."

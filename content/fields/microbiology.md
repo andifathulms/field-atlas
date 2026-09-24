@@ -56,7 +56,7 @@ turning_points:
       - citation: "Semmelweis, I. P. (1861). Die Ätiologie, der Begriff und die Prophylaxis des Kindbettfiebers. Hartleben, Pest."
         url: null
       - citation: "Loudon, I. (2013). Ignaz Phillip Semmelweis' studies of death in childbirth. Journal of the Royal Society of Medicine 106(11): 461–463."
-        url: null
+        url: https://doi.org/10.1177/0141076813507844
 
   - id: snow-cholera
     date: 1854 – 1855
@@ -87,11 +87,12 @@ turning_points:
       Academy's prize on the question.
     contested: true
     contested_note: >-
-      Félix Pouchet repeated similar experiments with hay infusions and got growth, and the
-      dispute was judged in Pasteur's favour partly for political reasons. Pouchet was not
+      Félix Pouchet repeated similar experiments with hay infusions and got growth, and
+      some historians argue the dispute was judged in Pasteur's favour partly for political
+      and religious reasons. Pouchet was not
       simply careless: hay carries bacterial spores that survive boiling, which Ferdinand
       Cohn and John Tyndall identified in 1876. Historians have also shown that Pasteur did
-      not publish results that did not fit.
+      not publish some results that did not fit.
     sources:
       - citation: "Pasteur, L. (1862). Mémoire sur les corpuscules organisés qui existent dans l'atmosphère. Annales de Chimie et de Physique (3) 64: 5–110."
         url: null
@@ -110,7 +111,7 @@ turning_points:
     contested: false
     sources:
       - citation: "Lister, J. (1867). On the antiseptic principle in the practice of surgery. The Lancet 90(2299): 353–356."
-        url: null
+        url: https://doi.org/10.1016/S0140-6736(02)51827-4
 
   - id: koch-tuberculosis
     date: 1876 – 1882
@@ -149,7 +150,7 @@ turning_points:
       - citation: "Fleming, A. (1929). On the antibacterial action of cultures of a penicillium. British Journal of Experimental Pathology 10(3): 226–236."
         url: null
       - citation: "Chain, E., Florey, H. W. et al. (1940). Penicillin as a chemotherapeutic agent. The Lancet 236(6104): 226–228."
-        url: null
+        url: https://doi.org/10.1016/S0140-6736(01)08728-1
 
 open_problems:
   - id: uncultured-majority
@@ -170,9 +171,9 @@ open_problems:
       microbial communities that run soil fertility, ocean chemistry and human health.
     sources:
       - citation: "Staley, J. T. & Konopka, A. (1985). Measurement of in situ activities of nonphotosynthetic microorganisms in aquatic and terrestrial habitats. Annual Review of Microbiology 39: 321–346."
-        url: null
+        url: https://doi.org/10.1146/annurev.mi.39.100185.001541
       - citation: "Hug, L. A. et al. (2016). A new view of the tree of life. Nature Microbiology 1: 16048."
-        url: null
+        url: https://doi.org/10.1038/nmicrobiol.2016.48
 
 applications:
   - area: Public health
@@ -183,7 +184,7 @@ applications:
       large part of the fall in urban death rates in the early twentieth century.
     sources:
       - citation: "Cutler, D. & Miller, G. (2005). The role of public health improvements in health advances: the twentieth-century United States. Demography 42(1): 1–22."
-        url: null
+        url: https://doi.org/10.1353/dem.2005.0002
   - area: Food
     title: Pasteurisation
     description: >-
@@ -200,7 +201,7 @@ applications:
       infections are estimated to cause over a million deaths a year.
     sources:
       - citation: "Antimicrobial Resistance Collaborators (2022). Global burden of bacterial antimicrobial resistance in 2019: a systematic analysis. The Lancet 399(10325): 629–655."
-        url: null
+        url: https://doi.org/10.1016/S0140-6736(21)02724-0
 
 further_reading:
   - citation: "de Kruif, P. (1926). Microbe Hunters. Harcourt, Brace."

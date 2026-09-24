@@ -46,29 +46,29 @@ turning_points:
     type: CONSENSUS-OVERTURNED
     title: Urea from inorganic chemicals
     description: >-
-      Friedrich Wöhler makes urea, a compound of urine, by heating ammonium cyanate, a salt
-      prepared without any living thing. "I can make urea without needing kidneys," he
-      wrote to Berzelius. The boundary between the chemistry of life and ordinary chemistry
+      Friedrich Wöhler makes urea, a compound of urine, by heating ammonium cyanate, an
+      inorganic salt. He could make urea, he wrote to Berzelius, "without needing
+      kidneys, or even an animal, whether man or dog". The boundary between the chemistry of life and ordinary chemistry
       began to dissolve.
     contested: true
     contested_note: >-
-      The textbook story that Wöhler's synthesis refuted vitalism in one blow is a myth
-      that took shape decades later. Vitalist ideas persisted for most of the century,
+      Historians now widely regard the textbook story that Wöhler's synthesis refuted
+      vitalism in one blow as a myth that took shape decades later. Vitalist ideas persisted for most of the century,
       Wöhler's starting materials had themselves been derived from animal products, and he
       did not present his result as a refutation. Historians see the decline of vitalism as
       gradual.
     sources:
-      - citation: "Wöhler, F. (1828). Ueber künstliche Bildung des Harnstoffs. Annalen der Physik und Chemie 88(2): 253–256."
-        url: null
+      - citation: "Wöhler, F. (1828). Ueber künstliche Bildung des Harnstoffs. Annalen der Physik 87(2): 253–256."
+        url: https://doi.org/10.1002/andp.18280870206
       - citation: "Ramberg, P. J. (2000). The death of vitalism and the birth of organic chemistry: Wöhler's urea synthesis and the disciplinary identity of organic chemistry. Ambix 47(3): 170–195."
-        url: null
+        url: https://doi.org/10.1179/amb.2000.47.3.170
 
   - id: buchner-cell-free
     date: "1897"
     type: DISCOVERY
     title: Fermentation without cells
     description: >-
-      Pasteur held that fermentation requires living yeast; Liebig that it is chemistry.
+      Pasteur held that fermentation requires living yeast, Liebig that it is chemistry.
       Eduard Buchner grinds yeast with sand, presses out the juice and filters away every
       cell. The cell-free juice still ferments sugar into alcohol. Life's chemistry could be
       studied in a test tube, and the substances responsible, enzymes, became the centre
@@ -76,7 +76,7 @@ turning_points:
     contested: false
     sources:
       - citation: "Buchner, E. (1897). Alkoholische Gährung ohne Hefezellen. Berichte der Deutschen Chemischen Gesellschaft 30(1): 117–124."
-        url: null
+        url: https://doi.org/10.1002/cber.18970300121
 
   - id: michaelis-menten
     date: "1913"
@@ -110,7 +110,7 @@ turning_points:
       digestive enzymes as proteins around 1930.
     sources:
       - citation: "Sumner, J. B. (1926). The isolation and crystallization of the enzyme urease. Journal of Biological Chemistry 69(2): 435–441."
-        url: null
+        url: https://doi.org/10.1016/S0021-9258(18)84560-4
 
   - id: krebs-cycle
     date: "1937"
@@ -146,8 +146,8 @@ turning_points:
       experiments by others, such as André Jagendorf's acid-bath demonstration in
       chloroplasts, is still discussed.
     sources:
-      - citation: "Mitchell, P. (1961). Coupling of phosphorylation to electron and hydrogen transfer by a chemi-osmotic type of mechanism. Nature 191: 144–148."
-        url: null
+      - citation: "Mitchell, P. (1961). Coupling of phosphorylation to electron and hydrogen transfer by a chemi-osmotic type of mechanism. Nature 191(4784): 144–148."
+        url: https://doi.org/10.1038/191144a0
       - citation: "Lane, N. (2005). Power, Sex, Suicide: Mitochondria and the Meaning of Life. Oxford University Press."
         url: null
 
@@ -155,12 +155,14 @@ open_problems:
   - id: de-novo-enzymes
     name: Can enzymes be designed as well as evolution makes them?
     status: open
-    status_note: Open as of writing; designed enzymes work but are usually far slower than natural ones.
+    status_note: Open as of 2026; one fully computational design now rivals natural enzymes on a model reaction, but most are still far slower.
     description: >-
       Natural enzymes speed reactions by enormous factors, sometimes by $10^{17}$ or more.
       Since the 2000s, computer-designed proteins have been made that catalyse reactions no
       natural enzyme performs. But they are usually thousands of times less efficient
-      until improved by rounds of laboratory evolution.
+      until improved by rounds of laboratory evolution. In 2025 a fully computational
+      design matched natural enzymes on one model reaction, the Kemp elimination, but
+      that is not yet routine.
     why_hard: >-
       An enzyme's power depends on precise positioning of atoms to fractions of an
       ångström, and on motions of the whole protein that computer models capture poorly.
@@ -170,18 +172,20 @@ open_problems:
       plastics, and a test of whether we understand catalysis at all.
     sources:
       - citation: "Kries, H., Blomberg, R. & Hilvert, D. (2013). De novo enzymes by computational design. Current Opinion in Chemical Biology 17(2): 221–228."
-        url: null
+        url: https://doi.org/10.1016/j.cbpa.2013.02.012
+      - citation: "Listov, D. et al. (2025). Complete computational design of high-efficiency Kemp elimination enzymes. Nature 643(8074): 1421–1427."
+        url: https://doi.org/10.1038/s41586-025-09136-2
 
 applications:
   - area: Medicine
     title: Drugs that block enzymes
     description: >-
-      Most drugs work by inhibiting an enzyme. Statins, discovered by Akira Endo in fungi in
-      1976, block the enzyme that makes cholesterol in the liver and are among the most
+      Many drugs work by inhibiting an enzyme. Statins, first reported by Akira Endo from
+      a fungus in 1976, block the enzyme that makes cholesterol in the liver and are among the most
       prescribed medicines in the world.
     sources:
       - citation: "Endo, A., Kuroda, M. & Tsujita, Y. (1976). ML-236A, ML-236B, and ML-236C, new inhibitors of cholesterogenesis produced by Penicillium citrinium. Journal of Antibiotics 29(12): 1346–1348."
-        url: null
+        url: https://doi.org/10.7164/antibiotics.29.1346
   - area: Physiology
     title: Why muscles tire and poisons kill
     description: >-
@@ -228,7 +232,7 @@ $$
 
 A mole of ATP weighs about 507 grams, so that is roughly 40 kilograms of ATP made and broken down every day, and more during exercise. Estimates of this kind put daily ATP turnover at around a person's own body weight.
 
-Yet the body contains only about 250 grams of ATP at any moment. So each ATP molecule must be rebuilt from its breakdown products, about $40{,}000 / 250 = 160$ times a day, every few minutes. The machine that rebuilds it is ATP synthase, a rotary motor in the mitochondrial membrane. Protons flowing through it turn a rotor about a hundred times a second, and each full turn makes three ATP molecules. That is the mechanism {{fig:peter-mitchell|Peter Mitchell}} proposed in 1961.
+Yet the body contains only about 250 grams of ATP at any moment. So each ATP molecule must be rebuilt from its breakdown products, about $40{,}000 / 250 = 160$ times a day, roughly every nine minutes. The machine that rebuilds it is ATP synthase, a rotary motor in the mitochondrial membrane. Protons flowing through it turn a rotor about a hundred times a second, and each full turn makes three ATP molecules. That protons drive it is what {{fig:peter-mitchell|Peter Mitchell}} proposed in 1961. The rotary motor itself was worked out later, by Paul Boyer and John Walker.
 
 ## Energy From a Membrane
 
