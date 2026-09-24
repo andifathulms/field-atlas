@@ -375,9 +375,9 @@
   { "id": "gavin-crooks", "name": "Gavin Crooks", "turning_point_ids": ["fluctuation-theorems"] },
   { "id": "antoine-berut", "name": "Antoine Bérut", "turning_point_ids": ["landauer-experiment"] },
   { "id": "eric-lutz", "name": "Eric Lutz", "turning_point_ids": ["landauer-experiment"] },
-  { "id": "hans-geiger", "name": "Hans Geiger", "turning_point_ids": ["rutherford-nucleus"] },
+  { "id": "hans-geiger", "name": "Hans Geiger", "turning_point_ids": ["rutherford-nucleus", "geiger-nuttall-law"] },
   { "id": "ernest-marsden", "name": "Ernest Marsden", "turning_point_ids": ["rutherford-nucleus"] },
-  { "id": "ernest-rutherford", "name": "Ernest Rutherford", "turning_point_ids": ["rutherford-nucleus"] },
+  { "id": "ernest-rutherford", "name": "Ernest Rutherford", "turning_point_ids": ["rutherford-nucleus", "rutherford-alpha-beta", "rutherford-soddy-transmutation"] },
   { "id": "niels-bohr", "name": "Niels Bohr", "turning_point_ids": ["bohr-atom", "magnet-bohr-van-leeuwen"] },
   { "id": "robert-millikan", "name": "Robert Millikan", "turning_point_ids": ["millikan-photoelectric"] },
   { "id": "arthur-compton", "name": "Arthur Compton", "turning_point_ids": ["compton-scattering"] },
@@ -680,7 +680,7 @@
   { "id": "georg-bednorz", "name": "Georg Bednorz", "turning_point_ids": ["supercond-cuprates"] },
   { "id": "alex-muller", "name": "Alex Müller", "turning_point_ids": ["supercond-cuprates"] },
   { "id": "mikhail-eremets", "name": "Mikhail Eremets", "turning_point_ids": ["supercond-hydride-claims"] },
-  { "id": "pierre-curie", "name": "Pierre Curie", "turning_point_ids": ["magnet-curie-law"] },
+  { "id": "pierre-curie", "name": "Pierre Curie", "turning_point_ids": ["magnet-curie-law", "curie-polonium-radium", "curie-laborde-radium-heat"] },
   { "id": "pierre-weiss", "name": "Pierre Weiss", "turning_point_ids": ["magnet-weiss-field"] },
   { "id": "hendrika-van-leeuwen", "name": "Hendrika van Leeuwen", "turning_point_ids": ["magnet-bohr-van-leeuwen"] },
   { "id": "louis-neel", "name": "Louis Néel", "turning_point_ids": ["magnet-neel-antiferromagnetism"] },
@@ -700,5 +700,10 @@
   { "id": "charles-kane", "name": "Charles Kane", "turning_point_ids": ["topomat-insulators"] },
   { "id": "eugene-mele", "name": "Eugene Mele", "turning_point_ids": ["topomat-insulators"] },
   { "id": "shoucheng-zhang", "name": "Shou-Cheng Zhang", "turning_point_ids": ["topomat-insulators"] },
-  { "id": "laurens-molenkamp", "name": "Laurens Molenkamp", "turning_point_ids": ["topomat-insulators"] }
+  { "id": "laurens-molenkamp", "name": "Laurens Molenkamp", "turning_point_ids": ["topomat-insulators"] },
+  { "id": "henri-becquerel", "name": "Henri Becquerel", "turning_point_ids": ["becquerel-uranium-rays"] },
+  { "id": "marie-curie", "name": "Marie Curie", "turning_point_ids": ["curie-polonium-radium"] },
+  { "id": "frederick-soddy", "name": "Frederick Soddy", "turning_point_ids": ["rutherford-soddy-transmutation"] },
+  { "id": "harriet-brooks", "name": "Harriet Brooks", "turning_point_ids": ["rutherford-soddy-transmutation"] },
+  { "id": "john-nuttall", "name": "John Mitchell Nuttall", "turning_point_ids": ["geiger-nuttall-law"] }
 ]

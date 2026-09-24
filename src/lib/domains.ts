@@ -69,7 +69,7 @@ export const DOMAINS: DomainInfo[] = [
   {
     id: "physics",
     name: "Physics",
-    blurb: "How motion, light and gravity were rebuilt around the speed of light, how the laws of heat became the statistics of atoms, how energy turned out to come in lumps, how starlight revealed what stars are made of, how the order inside crystals explained metals, magnets and superconductors, and what is still dark.",
+    blurb: "How motion, light and gravity were rebuilt around the speed of light, how the laws of heat became the statistics of atoms, how energy turned out to come in lumps, how starlight revealed what stars are made of, how the order inside crystals explained metals, magnets and superconductors, how a fogged photographic plate led to the nucleus, the bomb and the age of the Earth, and what is still dark.",
     threads: [
       {
         id: "relativity",
@@ -100,6 +100,12 @@ export const DOMAINS: DomainInfo[] = [
         title: "The Matter Thread",
         intro:
           "From the shapes of crystals to phases defined by topology. For a century the regular faces of crystals hinted at an inner order no one could see, until in 1912 X-rays revealed the rows of atoms directly. Quantum mechanics then explained why electrons race through some of those lattices and are trapped in others, and control of the difference produced the transistor. Cooled far enough, some metals lose all resistance, iron's magnetism turned out to be an electric effect of the exclusion principle, and a strip of electrons in a magnetic field gave a resistance fixed by constants of nature, because its quantum states have a shape that cannot be smoothly undone. The fog here is how the copper oxides superconduct, whether anything can superconduct at room temperature, and whether the exotic particles of topological matter can be tamed for computing.",
+      },
+      {
+        id: "nucleus",
+        title: "The Nuclear Thread",
+        intro:
+          "From a fogged photographic plate to the fuel of the stars. In 1896 Becquerel found that uranium gives off rays with no visible source of energy, and within a decade radioactivity had shown that atoms can change into other elements. Alpha particles revealed a tiny, dense nucleus, and precise weighing showed that it weighs less than its parts. The missing mass is energy on a scale no chemistry can match. Splitting heavy nuclei, discovered in 1938, released it, and within seven years it had run a reactor and destroyed two cities. Joining light nuclei, as the Sun does, has proved far harder to tame. The same steady decay became a clock that gave the Earth its age of 4.55 billion years. The fog here is how long a free neutron lives, where the chart of nuclei ends, and whether fusion will ever light a city.",
       },
     ],
   },
