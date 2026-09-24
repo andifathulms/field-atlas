@@ -639,5 +639,14 @@
   { "id": "neil-shubin", "name": "Neil Shubin", "turning_point_ids": ["evodevo-deep-homology", "evodevo-tiktaalik"] },
   { "id": "sean-carroll", "name": "Sean B. Carroll", "turning_point_ids": ["evodevo-deep-homology", "evodevo-cis-regulation"] },
   { "id": "edward-daeschler", "name": "Edward Daeschler", "turning_point_ids": ["evodevo-tiktaalik"] },
-  { "id": "david-kingsley", "name": "David Kingsley", "turning_point_ids": ["stickleback-pitx1"] }
+  { "id": "david-kingsley", "name": "David Kingsley", "turning_point_ids": ["stickleback-pitx1"] },
+  { "id": "james-till", "name": "James Till", "turning_point_ids": ["till-mcculloch"] },
+  { "id": "ernest-mcculloch", "name": "Ernest McCulloch", "turning_point_ids": ["till-mcculloch"] },
+  { "id": "martin-evans", "name": "Martin Evans", "turning_point_ids": ["mouse-es-cells"] },
+  { "id": "gail-martin", "name": "Gail Martin", "turning_point_ids": ["mouse-es-cells"] },
+  { "id": "james-thomson", "name": "James Thomson", "turning_point_ids": ["human-es-cells", "ips-cells"] },
+  { "id": "shinya-yamanaka", "name": "Shinya Yamanaka", "turning_point_ids": ["ips-cells"] },
+  { "id": "kazutoshi-takahashi", "name": "Kazutoshi Takahashi", "turning_point_ids": ["ips-cells"] },
+  { "id": "toshiro-sato", "name": "Toshiro Sato", "turning_point_ids": ["intestinal-organoids"] },
+  { "id": "hans-clevers", "name": "Hans Clevers", "turning_point_ids": ["intestinal-organoids"] }
 ]
