@@ -7,7 +7,7 @@
   { "id": "bolyai", "name": "János Bolyai", "turning_point_ids": ["lobachevsky-bolyai"] },
   { "id": "beltrami", "name": "Eugenio Beltrami", "turning_point_ids": ["beltrami-model"] },
   { "id": "klein", "name": "Felix Klein", "turning_point_ids": ["erlangen-program", "cayley-klein"] },
-  { "id": "euler", "name": "Leonhard Euler", "turning_point_ids": ["euler-polyhedron-formula", "euler-curvature", "euler-fermat-numbers", "euler-product", "euler-introductio", "vibrating-string", "euler-partitions"] },
+  { "id": "euler", "name": "Leonhard Euler", "turning_point_ids": ["euler-polyhedron-formula", "euler-curvature", "euler-fermat-numbers", "euler-product", "euler-introductio", "vibrating-string", "euler-partitions", "konigsberg-bridges"] },
   { "id": "bonnet", "name": "Pierre Ossian Bonnet", "turning_point_ids": ["gauss-bonnet"] },
   { "id": "riemann", "name": "Bernhard Riemann", "turning_point_ids": ["riemann-habilitation", "riemann-surfaces", "riemann-zeta-1859", "riemann-thesis", "riemann-integral"] },
   { "id": "ricci-curbastro", "name": "Gregorio Ricci-Curbastro", "turning_point_ids": ["ricci-levi-civita"] },
@@ -260,5 +260,15 @@
   { "id": "hans-rademacher", "name": "Hans Rademacher", "turning_point_ids": ["hardy-ramanujan-partitions"] },
   { "id": "george-polya", "name": "George Pólya", "turning_point_ids": ["polya-enumeration"] },
   { "id": "j-howard-redfield", "name": "J. Howard Redfield", "turning_point_ids": ["polya-enumeration"] },
-  { "id": "gian-carlo-rota", "name": "Gian-Carlo Rota", "turning_point_ids": ["rota-foundations"] }
+  { "id": "gian-carlo-rota", "name": "Gian-Carlo Rota", "turning_point_ids": ["rota-foundations"] },
+  { "id": "gustav-kirchhoff", "name": "Gustav Kirchhoff", "turning_point_ids": ["kirchhoff-trees"] },
+  { "id": "francis-guthrie", "name": "Francis Guthrie", "turning_point_ids": ["four-colour-conjecture"] },
+  { "id": "augustus-de-morgan", "name": "Augustus De Morgan", "turning_point_ids": ["four-colour-conjecture"] },
+  { "id": "alfred-kempe", "name": "Alfred Kempe", "turning_point_ids": ["kempe-heawood"] },
+  { "id": "percy-heawood", "name": "Percy Heawood", "turning_point_ids": ["kempe-heawood"] },
+  { "id": "denes-konig", "name": "Dénes Kőnig", "turning_point_ids": ["konig-textbook"] },
+  { "id": "kenneth-appel", "name": "Kenneth Appel", "turning_point_ids": ["four-colour-theorem"] },
+  { "id": "wolfgang-haken", "name": "Wolfgang Haken", "turning_point_ids": ["four-colour-theorem"] },
+  { "id": "neil-robertson", "name": "Neil Robertson", "turning_point_ids": ["graph-minor-theorem"] },
+  { "id": "paul-seymour", "name": "Paul Seymour", "turning_point_ids": ["graph-minor-theorem"] }
 ]
