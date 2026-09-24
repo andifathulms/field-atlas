@@ -259,6 +259,26 @@ Look at what this says. On a surface of constant negative curvature, the angles 
 
 Riemann was the one who joined them. His 1854 lecture took Gauss's intrinsic view, extended it to any number of dimensions, and made the non-Euclidean geometries special cases. That is where [Riemannian geometry](/math/riemannian-geometry/) begins.
 
+## A Closer Look: Measuring Curvature Without Leaving the Surface
+
+The Theorema Egregium says curvature can be measured from inside a surface. Here is how a flat creature living on a sphere of radius $R$ could do it with nothing but a rope.
+
+Fix one end of a rope of length $r$ at a point and walk around with the other end taut, tracing a circle. On a flat plane the circle's circumference would be $2\pi r$. On the sphere, the "circle" is a line of latitude around the pole where the rope is fixed, and its circumference is
+
+$$
+C(r) = 2\pi R \sin\!\left(\frac{r}{R}\right) = 2\pi r - \frac{\pi r^3}{3R^2} + \cdots ,
+$$
+
+a little shorter than $2\pi r$. The shortfall reveals the curvature. In general, Gauss's curvature is
+
+$$
+K = \lim_{r \to 0} \frac{3}{\pi}\, \frac{2\pi r - C(r)}{r^3} ,
+$$
+
+and for the sphere this gives $K = 1/R^2$. On a saddle the circle comes out *longer* than $2\pi r$, and $K$ is negative. On a cylinder it is exactly $2\pi r$, and $K = 0$, which is why a cylinder can be unrolled flat while a sphere cannot.
+
+This is why every flat map of the Earth distorts. A map that kept all distances would carry the creature's rope-and-circle experiment over unchanged, but on paper the circle comes out $2\pi r$ and on the globe it comes out shorter. No choice of projection can reconcile the two.
+
 ## Surfaces Today
 
 Surfaces in ordinary space remain an active subject. The questions have moved on from "how curved is it?" to "what is the best possible shape?" Examples are *minimal surfaces*, the shapes of soap films, which locally have the least possible area, and surfaces that bend as little as possible overall. These problems sit where geometry meets nonlinear partial differential equations. Some of them were settled only in the last decade and a half.
