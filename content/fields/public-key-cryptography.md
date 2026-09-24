@@ -130,8 +130,8 @@ turning_points:
       Institute of Technology Kanpur, give the first algorithm that decides whether a
       number is prime in guaranteed polynomial time, without randomness or unproved
       hypotheses. It is based on a generalisation of Fermat's little theorem. In
-      practice faster randomised tests are used, but a question open since Gauss was
-      settled.
+      practice faster randomised tests are used, but a long-standing theoretical
+      question was settled.
     contested: false
     sources:
       - citation: "Agrawal, M., Kayal, N. & Saxena, N. (2004). PRIMES is in P. Annals of Mathematics 160(2): 781–793."
@@ -163,7 +163,7 @@ open_problems:
     why_hard: >-
       Proving a problem is hard means ruling out every possible algorithm, including ones
       no one has imagined. That is at least as hard as proving P ≠ NP, the central open
-      problem of computer science. Known proof techniques are provably too weak.
+      problem of computer science. Several known proof techniques are provably too weak.
     unlocks: >-
       A proof would put cryptography on a guaranteed foundation. Its failure, meaning a
       fast factoring algorithm, would break much of today's security overnight.
@@ -246,7 +246,7 @@ The story had a secret prologue. At Britain's signals intelligence agency GCHQ, 
 
 In 1985 {{fig:koblitz|Neal Koblitz}} and {{fig:victor-miller|Victor Miller}} independently proposed moving the discrete logarithm into the group of points on an elliptic curve, the central object of [arithmetic geometry](/math/arithmetic-geometry/). No known shortcut works there, so a 256-bit elliptic-curve key matches a roughly 3,000-bit RSA key. Elliptic curves, studied for their own beauty since Mordell, now carry most secure web traffic.
 
-Cryptography also needs a plentiful supply of large primes, and a fast way to recognise them. In 2002 {{fig:agrawal|Manindra Agrawal}} and his students Neeraj Kayal and Nitin Saxena proved that primality can be decided in guaranteed polynomial time, using a generalisation of Fermat's little theorem. It answered a question Gauss had posed in the *Disquisitiones*.
+Cryptography also needs a plentiful supply of large primes, and a fast way to recognise them. In 2002 {{fig:agrawal|Manindra Agrawal}} and his students Neeraj Kayal and Nitin Saxena proved that primality can be decided in guaranteed polynomial time, using a generalisation of Fermat's little theorem. Gauss had called telling primes from composites one of the most important problems in arithmetic, in the *Disquisitiones*.
 
 ## A Closer Look: RSA and Diffie–Hellman with Small Numbers
 

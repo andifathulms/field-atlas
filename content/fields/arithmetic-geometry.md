@@ -74,8 +74,8 @@ turning_points:
     contested_note: >-
       The conjecture's name and credit were disputed for decades. It was widely called
       the "Weil conjecture" or "Taniyama–Weil conjecture" in the West. Serge Lang
-      campaigned in the 1980s and 90s to establish Shimura's central role, and Shimura
-      himself said Weil had initially doubted it. Taniyama died by suicide in 1958. Both
+      campaigned in the 1980s and 90s to establish Shimura's central role, and argued
+      that Weil had at first been sceptical of it. Taniyama died by suicide in 1958. Both
       "Taniyama–Shimura" and "Shimura–Taniyama–Weil" remain in use.
     sources:
       - citation: "Lang, S. (1995). Some history of the Shimura–Taniyama conjecture. Notices of the AMS 42(11): 1301–1307."
@@ -194,7 +194,7 @@ In 1955 a young Japanese mathematician, {{fig:taniyama|Yutaka Taniyama}}, sugges
 
 ## The Road to Fermat
 
-In 1985 {{fig:frey|Gerhard Frey}} noticed something remarkable. A solution to Fermat's equation $a^n + b^n = c^n$ would produce an elliptic curve, $y^2 = x(x - a^n)(x + b^n)$, so strange that it could not be modular. {{fig:ribet|Ken Ribet}} proved this in 1986. Fermat's Last Theorem would follow from the modularity conjecture.
+In the mid-1980s {{fig:frey|Gerhard Frey}} noticed something remarkable. A solution to Fermat's equation $a^n + b^n = c^n$ would produce an elliptic curve, $y^2 = x(x - a^n)(x + b^n)$, so strange that it could not be modular. {{fig:ribet|Ken Ribet}} proved this in 1986. Fermat's Last Theorem would follow from the modularity conjecture.
 
 {{fig:wiles|Andrew Wiles}} had wanted to prove Fermat's theorem since childhood. On hearing of Ribet's result he worked in secret for seven years and announced a proof in 1993. A gap was found, and he repaired it with Richard Taylor in 1994. The proof is recorded on the [algebraic geometry](/math/algebraic-geometry/) page, the field whose tools it used. By 2001 {{fig:breuil|Christophe Breuil}}, Brian Conrad, Fred Diamond and Taylor had proved modularity for every elliptic curve over the rationals.
 

@@ -49,7 +49,7 @@ turning_points:
     title: Euclid proves the primes never end
     description: >-
       Books VII–IX of the *Elements* turn from geometry to whole numbers. They give the
-      Euclidean algorithm for greatest common divisors, a characterisation of even
+      Euclidean algorithm for greatest common divisors, a recipe for building even
       perfect numbers, and Book IX, Proposition 20: there are more primes than any given
       list. Multiply the listed primes, add one, and the result has a prime factor not on
       the list.
@@ -131,8 +131,8 @@ open_problems:
     status: open
     status_note: Open as of writing. Verified by computer up to 4 × 10¹⁸; the "weak" version for odd numbers was proved by Harald Helfgott (2013 preprint).
     description: >-
-      In a 1742 letter to Euler, Christian Goldbach suggested that every even number
-      greater than 2 is the sum of two primes: $4 = 2 + 2$, $28 = 5 + 23$,
+      In a 1742 exchange of letters, Christian Goldbach and Leonhard Euler arrived at
+      the claim that every even number greater than 2 is the sum of two primes: $4 = 2 + 2$, $28 = 5 + 23$,
       $100 = 3 + 97$. Every even number ever checked obeys it.
     why_hard: >-
       Primes are defined by multiplication, but the question is about addition, and the
@@ -158,8 +158,8 @@ open_problems:
       found an odd perfect number, or proved that none exists.
     why_hard: >-
       Known constraints pile up (an odd perfect number would be enormous, with many prime
-      factors of special forms) but no contradiction has emerged. The problem is the
-      oldest open question in mathematics, going back to the Greeks.
+      factors of special forms) but no contradiction has emerged. The problem is often
+      called the oldest open question in mathematics, going back to the Greeks.
     unlocks: >-
       Little depends on it directly. It is a pure test of whether number theory's
       methods can settle a question about all numbers from finitely many conditions.
@@ -235,6 +235,6 @@ That half-page argument, essentially Euler's, has three lives in this atlas. It 
 
 ## Gauss Makes a Discipline
 
-{{fig:gauss|Carl Friedrich Gauss}} called mathematics the queen of the sciences and number theory the queen of mathematics. His *Disquisitiones Arithmeticae* (1801), written in his early twenties, organised the whole subject. It introduced the congruence notation $a \equiv b \pmod n$ and proved the law of quadratic reciprocity that Euler and {{fig:legendre|Adrien-Marie Legendre}} had conjectured. He later gave several more proofs of that law.
+{{fig:gauss|Carl Friedrich Gauss}} is said to have called mathematics the queen of the sciences and number theory the queen of mathematics. His *Disquisitiones Arithmeticae* (1801), written in his early twenties, organised the whole subject. It introduced the congruence notation $a \equiv b \pmod n$ and proved the law of quadratic reciprocity that Euler and {{fig:legendre|Adrien-Marie Legendre}} had conjectured. He later gave several more proofs of that law.
 
 After Gauss the subject split under the pressure of its hardest questions. How are the primes distributed? Calculus turned out to hold the answer, and that became [analytic number theory](/math/analytic-number-theory/). Why did every attempt on Fermat's theorem fail? Unique factorisation breaks down in larger number systems, and repairing it became [algebraic number theory](/math/algebraic-number-theory/). And in the 1970s, Fermat's little theorem turned out to be exactly what was needed to build [public-key cryptography](/math/public-key-cryptography/).

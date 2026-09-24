@@ -120,7 +120,7 @@ turning_points:
     sources:
       - citation: "Hadamard, J. (1896). Sur la distribution des zéros de la fonction ζ(s) et ses conséquences arithmétiques. Bulletin de la Société Mathématique de France 24: 199–220."
         url: null
-      - citation: "de la Vallée Poussin, C.-J. (1896). Recherches analytiques sur la théorie des nombres premiers. Annales de la Société Scientifique de Bruxelles 20: 183–256."
+      - citation: "de la Vallée Poussin, C.-J. (1896). Recherches analytiques sur la théorie des nombres premiers. Annales de la Société Scientifique de Bruxelles 20."
         url: null
 
   - id: erdos-selberg
@@ -282,4 +282,4 @@ The table also hides a surprise. In every computed case $\operatorname{li}(x)$ *
 
 ## Gaps and the Fog
 
-The biggest questions remain. The Riemann hypothesis has resisted 160 years of attempts, even as trillions of zeros have been checked. The twin prime conjecture, that primes 2 apart never run out, looked hopeless until 2013. Then {{fig:yitang-zhang|Yitang Zhang}}, a little-known lecturer who had once worked in a sandwich shop, proved that some fixed gap below 70 million occurs infinitely often. {{fig:maynard|James Maynard}} and a worldwide online collaboration soon brought the bound down to 246. The last step, from 246 to 2, needs an idea no one yet has.
+The biggest questions remain. The Riemann hypothesis has resisted more than 160 years of attempts, even as trillions of zeros have been checked. The twin prime conjecture, that primes 2 apart never run out, looked hopeless until 2013. Then {{fig:yitang-zhang|Yitang Zhang}}, a little-known lecturer who had once worked in a sandwich shop, proved that some fixed gap below 70 million occurs infinitely often. {{fig:maynard|James Maynard}} and a worldwide online collaboration soon brought the bound down to 246. The last step, from 246 to 2, needs an idea no one yet has.

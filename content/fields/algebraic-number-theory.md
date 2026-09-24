@@ -83,7 +83,8 @@ turning_points:
       Ernst Kummer restores unique factorisation by inventing "ideal numbers", phantom
       factors that behave like primes even though they are not numbers in the system.
       With them he proves Fermat's Last Theorem for all "regular" prime exponents, which
-      includes every prime below 37, the first proof covering infinitely many cases.
+      includes every odd prime below 37. It was the first proof to cover a whole class
+      of exponents at once.
     contested: false
     sources:
       - citation: "Kummer, E. E. (1847). Zur Theorie der complexen Zahlen. Journal für die reine und angewandte Mathematik 35: 319–326."
@@ -130,7 +131,7 @@ turning_points:
       1801.
     contested: true
     contested_note: >-
-      Kurt Heegner, a German schoolteacher, had published a proof in 1952 using modular
+      Kurt Heegner, a German private scholar outside the universities, had published a proof in 1952 using modular
       functions. It was generally believed to contain gaps and was ignored. After Baker
       and Stark's work, Stark and others re-examined it and concluded that Heegner's
       proof was essentially correct, with a minor gap that was easily filled. Heegner had
@@ -174,8 +175,8 @@ open_problems:
     description: >-
       For number systems like $a + b\sqrt{d}$ with $d$ positive, factorisation seems to
       be unique surprisingly often. Gauss conjectured that it happens for infinitely many
-      $d$. Numerical evidence (the Cohen–Lenstra heuristics) suggests about three-quarters
-      of prime $d$ qualify, but it has not been proved that even infinitely many do.
+      $d$. The Cohen–Lenstra heuristics, backed by numerical evidence, predict that about
+      three-quarters of prime $d$ qualify, but it has not been proved that even infinitely many do.
     why_hard: >-
       In real quadratic fields the class number is entangled with the size of the
       "fundamental unit", a quantity that fluctuates wildly and is hard to control.
@@ -193,7 +194,7 @@ applications:
     description: >-
       The new encryption standards meant to survive quantum computers do their
       arithmetic in rings of algebraic integers, typically cyclotomic rings. Their
-      security rests on hard problems about lattices of ideals in those rings.
+      security rests on hard problems about lattices built from those rings.
     sources:
       - citation: "Lyubashevsky, V., Peikert, C. & Regev, O. (2010). On ideal lattices and learning with errors over rings. In Advances in Cryptology — EUROCRYPT 2010, Lecture Notes in Computer Science 6110: 1–23."
         url: null
@@ -230,7 +231,7 @@ and none of the four factors can be broken down further. Arithmetic had lost its
 
 ## Ideal Numbers, Then Ideals
 
-Kummer's remedy was audacious. He invented *ideal numbers*: phantom factors, not in the system at all, that behaved like primes and restored unique factorisation. With them he proved Fermat's Last Theorem for all "regular" primes, the first proof covering infinitely many exponents.
+Kummer's remedy was audacious. He invented *ideal numbers*: phantom factors, not in the system at all, that behaved like primes and restored unique factorisation. With them he proved Fermat's Last Theorem for all "regular" primes, the first proof to cover a whole class of exponents at once.
 
 In 1871 {{fig:dedekind|Richard Dedekind}} made the phantoms concrete. An *ideal* is a set of actual numbers, closed under addition and under multiplication by anything in the system. Ideals, unlike numbers, always factor uniquely into prime ideals, in every number field. The shift of attention from individual numbers to sets with structure became the template for modern abstract algebra, as Emmy Noether, working on Dedekind's foundations, later made explicit.
 
