@@ -100,13 +100,19 @@ export const DOMAINS: DomainInfo[] = [
   {
     id: "biology",
     name: "Biology",
-    blurb: "How evolution and heredity, long at odds, merged, and how reading DNA rewrote both.",
+    blurb: "How evolution and heredity, long at odds, merged, how reading DNA rewrote both, and how the cell became the unit of life, health and disease.",
     threads: [
       {
         id: "heredity",
         title: "The Heredity Thread",
         intro:
           "From Darwin's natural selection and Mendel's peas to the genome. For decades the two founding ideas of modern biology seemed incompatible: Darwin needed variation to accumulate, and the heredity of his day blended it away. Mendel's discrete genes rescued natural selection, molecular biology found what genes are made of, and genomics now reads them by the billion. The map runs into fog at life's origin, and in the long stretches of DNA whose purpose no one knows.",
+      },
+      {
+        id: "cell",
+        title: "The Cell Thread",
+        intro:
+          "From cork under a microscope to the machinery inside every living thing. The first microscopes revealed that plants and animals are built of tiny compartments, and that invisible organisms swarm in every drop of water. It took two centuries to see what that meant: every living thing is made of cells, every cell comes from another, and many diseases are caused by microbes. Chemistry then showed that cells run on enzymes and a universal currency of energy, microscopes of electrons and light mapped their inner machinery, and immunology found how the body tells its own cells from invaders. The fog here is how little a cell can be and still live, how cells know their own size, and why some pathogens still defeat every vaccine.",
       },
     ],
   },

@@ -63,7 +63,7 @@
   { "id": "galileo", "name": "Galileo Galilei", "turning_point_ids": ["galileo-falling-bodies"] },
   { "id": "kepler", "name": "Johannes Kepler", "turning_point_ids": ["kepler-laws"] },
   { "id": "newton", "name": "Isaac Newton", "turning_point_ids": ["newton-principia", "newton-leibniz", "brachistochrone"] },
-  { "id": "hooke", "name": "Robert Hooke", "turning_point_ids": ["newton-principia"] },
+  { "id": "hooke", "name": "Robert Hooke", "turning_point_ids": ["newton-principia", "hooke-micrographia"] },
   { "id": "le-verrier", "name": "Urbain Le Verrier", "turning_point_ids": ["neptune-discovery", "mercury-perihelion-anomaly"] },
   { "id": "galle", "name": "Johann Galle", "turning_point_ids": ["neptune-discovery"] },
   { "id": "adams", "name": "John Couch Adams", "turning_point_ids": ["neptune-discovery"] },
@@ -476,5 +476,12 @@
   { "id": "david-charbonneau", "name": "David Charbonneau", "turning_point_ids": ["first-transit"] },
   { "id": "gregory-henry", "name": "Gregory Henry", "turning_point_ids": ["first-transit"] },
   { "id": "william-borucki", "name": "William Borucki", "turning_point_ids": ["kepler-mission"] },
-  { "id": "michael-gillon", "name": "Michaël Gillon", "turning_point_ids": ["trappist-1"] }
+  { "id": "michael-gillon", "name": "Michaël Gillon", "turning_point_ids": ["trappist-1"] },
+  { "id": "antonie-van-leeuwenhoek", "name": "Antonie van Leeuwenhoek", "turning_point_ids": ["leeuwenhoek-animalcules"] },
+  { "id": "joseph-jackson-lister", "name": "Joseph Jackson Lister", "turning_point_ids": ["achromatic-microscope"] },
+  { "id": "matthias-schleiden", "name": "Matthias Schleiden", "turning_point_ids": ["schleiden-schwann"] },
+  { "id": "theodor-schwann", "name": "Theodor Schwann", "turning_point_ids": ["schleiden-schwann"] },
+  { "id": "robert-remak", "name": "Robert Remak", "turning_point_ids": ["virchow-omnis-cellula"] },
+  { "id": "rudolf-virchow", "name": "Rudolf Virchow", "turning_point_ids": ["virchow-omnis-cellula"] },
+  { "id": "walther-flemming", "name": "Walther Flemming", "turning_point_ids": ["flemming-mitosis"] }
 ]
