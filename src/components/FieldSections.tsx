@@ -1,6 +1,7 @@
 import { Markdown } from "@/components/Markdown";
 import { Sources } from "@/components/Sources";
-import { getTurningPoint } from "@/lib/content";
+import Link from "next/link";
+import { getField, getTurningPoint } from "@/lib/content";
 import { getDomain } from "@/lib/domains";
 import { fieldPath } from "@/lib/paths";
 import type { Application, Domain, Field, KeyIdea, Reading } from "@/lib/types";
@@ -86,11 +87,7 @@ export function Applications({ applications }: { applications: Application[] }) 
             >
               <p className="stamp flex flex-col gap-1 pt-1.5">
                 <span className="text-ink-soft">{a.area}</span>
-                {domain && a.domain && (
-                  <span className={DOMAIN_TEXT[a.domain]} title={`Links into the ${domain.name.toLowerCase()} survey`}>
-                    ↗ {domain.name}
-                  </span>
-                )}
+                {domain && a.domain && <CrossDomainTag application={a} domainName={domain.name} />}
               </p>
               <div className="max-w-prose">
                 <h3 className="text-xl font-semibold leading-snug">{a.title}</h3>
@@ -98,6 +95,59 @@ export function Applications({ applications }: { applications: Application[] }) 
                   <Markdown>{a.description}</Markdown>
                 </div>
                 <Sources sources={a.sources} />
+              </div>
+            </li>
+          );
+        })}
+      </ul>
+    </section>
+  );
+}
+
+/** The ↗ tag on an application that lands in another domain, linked when it names a field there. */
+function CrossDomainTag({ application: a, domainName }: { application: Application; domainName: string }) {
+  const className = DOMAIN_TEXT[a.domain!];
+  const target = a.field_id ? getField(a.field_id) : undefined;
+  if (!target) {
+    return (
+      <span className={className} title={`Links into the ${domainName.toLowerCase()} survey`}>
+        ↗ {domainName}
+      </span>
+    );
+  }
+  return (
+    <Link href={fieldPath(target.domain, target.id)} className={`${className} ink-link`}>
+      ↗ {domainName} · {target.name}
+    </Link>
+  );
+}
+
+/**
+ * The other side of a cross-domain application: fields in other domains whose
+ * results this field draws on. A first, local slice of the cross-domain view.
+ */
+export function DrawsOn({ links }: { links: Array<{ from: Field; application: Application }> }) {
+  return (
+    <section aria-labelledby="draws-heading" className="mb-16">
+      <h2 id="draws-heading" className="stamp border-b border-rule pb-3 text-ink-faint">
+        Draws on other domains
+      </h2>
+      <ul>
+        {links.map(({ from, application }) => {
+          const domain = getDomain(from.domain);
+          return (
+            <li
+              key={`${from.id}-${application.title}`}
+              className="grid gap-x-6 gap-y-1 border-b border-rule py-4 sm:grid-cols-[10rem_minmax(0,1fr)]"
+            >
+              <p className="stamp pt-1">
+                <span className={DOMAIN_TEXT[from.domain]}>↙ {domain?.name}</span>
+              </p>
+              <div>
+                <Link href={`${fieldPath(from.domain, from.id)}#applications`} className="font-semibold ink-link">
+                  {from.name}
+                </Link>
+                <p className="mt-1 text-[0.98rem] leading-relaxed text-ink-soft">{application.title}</p>
               </div>
             </li>
           );

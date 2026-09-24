@@ -157,6 +157,14 @@ function load(): Collections {
   assertAcyclic(fields);
 
   for (const f of fields) {
+    for (const a of f.applications) {
+      if (!a.field_id) continue;
+      const target = byId.get(a.field_id);
+      if (!target) fail(`${f.id}.md`, `application "${a.title}" links to unknown field "${a.field_id}"`);
+      if (a.domain !== target.domain) {
+        fail(`${f.id}.md`, `application "${a.title}" links to ${a.field_id}, which is not in domain "${a.domain}"`);
+      }
+    }
     for (const idea of f.key_ideas) {
       if (!idea.term || !idea.definition) fail(`${f.id}.md`, `key ideas need a term and a definition`);
       if (idea.turning_point_id && !tpIds.has(idea.turning_point_id)) {
@@ -220,6 +228,13 @@ export function getTurningPoint(id: string): TurningPoint | undefined {
     if (tp) return tp;
   }
   return undefined;
+}
+
+/** Applications in other domains' fields that land in this field: what it draws on from elsewhere. */
+export function getIncomingLinks(fieldId: string): Array<{ from: Field; application: Application }> {
+  return collections().fields.flatMap((from) =>
+    from.applications.filter((a) => a.field_id === fieldId).map((application) => ({ from, application })),
+  );
 }
 
 /** Figures who contributed to a given turning point. */

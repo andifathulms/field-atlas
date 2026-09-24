@@ -64,6 +64,8 @@ export interface Application {
   description: string;
   /** Set when the use lands in another surveyed domain: a seed for the cross-domain view. */
   domain?: Domain;
+  /** The specific field in that domain it lands in; the target page lists it as a source it draws on. */
+  field_id?: string;
   sources: Source[];
 }
 

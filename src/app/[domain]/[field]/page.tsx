@@ -1,10 +1,10 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { Applications, FurtherReading, InBrief, KeyIdeas } from "@/components/FieldSections";
+import { Applications, DrawsOn, FurtherReading, InBrief, KeyIdeas } from "@/components/FieldSections";
 import { Markdown } from "@/components/Markdown";
 import { Sources } from "@/components/Sources";
-import { getField, getFields, getFigure, getFiguresForTurningPoint } from "@/lib/content";
+import { getField, getFields, getFigure, getFiguresForTurningPoint, getIncomingLinks } from "@/lib/content";
 import { getDomain } from "@/lib/domains";
 import { figureAnchor, resolveFigureMentions } from "@/lib/mentions";
 import { fieldPath } from "@/lib/paths";
@@ -123,6 +123,7 @@ export default function FieldPage({ params }: Params) {
   if (!field || !domain || field.domain !== domain.id) notFound();
 
   const allFields = new Map(getFields(field.domain).map((f) => [f.id, f]));
+  const incoming = getIncomingLinks(field.id);
   // In order of each person's first turning point in this field's history.
   const tpOrder = (figId: string) =>
     Math.min(...getFigure(figId)!.turning_point_ids.map((t) => field.turning_points.findIndex((tp) => tp.id === t)).filter((i) => i >= 0));
@@ -190,6 +191,7 @@ export default function FieldPage({ params }: Params) {
         <div>
           {field.summary && <InBrief summary={field.summary} />}
           {field.key_ideas.length > 0 && <KeyIdeas ideas={field.key_ideas} field={field} />}
+          {incoming.length > 0 && <DrawsOn links={incoming} />}
           <article className="prose-atlas">
             {field.chapters.map((c, i) => (
               <section key={c.title} className="mb-14">
