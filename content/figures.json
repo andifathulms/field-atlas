@@ -209,5 +209,12 @@
   { "id": "gentzen", "name": "Gerhard Gentzen", "turning_point_ids": ["gentzen-consistency"] },
   { "id": "paris", "name": "Jeff Paris", "turning_point_ids": ["paris-harrington"] },
   { "id": "leo-harrington", "name": "Leo Harrington", "turning_point_ids": ["paris-harrington"] },
-  { "id": "gonthier", "name": "Georges Gonthier", "turning_point_ids": ["proof-assistants"] }
+  { "id": "gonthier", "name": "Georges Gonthier", "turning_point_ids": ["proof-assistants"] },
+  { "id": "church", "name": "Alonzo Church", "turning_point_ids": ["entscheidungsproblem"] },
+  { "id": "turing", "name": "Alan Turing", "turning_point_ids": ["entscheidungsproblem", "universal-machine"] },
+  { "id": "von-neumann", "name": "John von Neumann", "turning_point_ids": ["universal-machine"] },
+  { "id": "henry-rice", "name": "Henry Gordon Rice", "turning_point_ids": ["rice-theorem"] },
+  { "id": "martin-davis", "name": "Martin Davis", "turning_point_ids": ["hilberts-tenth"] },
+  { "id": "julia-robinson", "name": "Julia Robinson", "turning_point_ids": ["hilberts-tenth"] },
+  { "id": "matiyasevich", "name": "Yuri Matiyasevich", "turning_point_ids": ["hilberts-tenth"] }
 ]
