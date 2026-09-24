@@ -377,7 +377,7 @@
   { "id": "eric-lutz", "name": "Eric Lutz", "turning_point_ids": ["landauer-experiment"] },
   { "id": "hans-geiger", "name": "Hans Geiger", "turning_point_ids": ["rutherford-nucleus", "geiger-nuttall-law"] },
   { "id": "ernest-marsden", "name": "Ernest Marsden", "turning_point_ids": ["rutherford-nucleus"] },
-  { "id": "ernest-rutherford", "name": "Ernest Rutherford", "turning_point_ids": ["rutherford-nucleus", "rutherford-alpha-beta", "rutherford-soddy-transmutation", "rutherford-nitrogen-transmutation"] },
+  { "id": "ernest-rutherford", "name": "Ernest Rutherford", "turning_point_ids": ["rutherford-nucleus", "rutherford-alpha-beta", "rutherford-soddy-transmutation", "rutherford-nitrogen-transmutation", "oliphant-dd-fusion"] },
   { "id": "niels-bohr", "name": "Niels Bohr", "turning_point_ids": ["bohr-atom", "magnet-bohr-van-leeuwen", "liquid-drop-model", "bohr-wheeler-fission"] },
   { "id": "robert-millikan", "name": "Robert Millikan", "turning_point_ids": ["millikan-photoelectric"] },
   { "id": "arthur-compton", "name": "Arthur Compton", "turning_point_ids": ["compton-scattering"] },
@@ -718,5 +718,14 @@
   { "id": "lise-meitner", "name": "Lise Meitner", "turning_point_ids": ["meitner-frisch-fission"] },
   { "id": "otto-frisch", "name": "Otto Frisch", "turning_point_ids": ["meitner-frisch-fission"] },
   { "id": "john-wheeler", "name": "John Archibald Wheeler", "turning_point_ids": ["bohr-wheeler-fission"] },
-  { "id": "paul-kuroda", "name": "Paul Kazuo Kuroda", "turning_point_ids": ["oklo-natural-reactor"] }
+  { "id": "paul-kuroda", "name": "Paul Kazuo Kuroda", "turning_point_ids": ["oklo-natural-reactor"] },
+  { "id": "mark-oliphant", "name": "Mark Oliphant", "turning_point_ids": ["oliphant-dd-fusion"] },
+  { "id": "paul-harteck", "name": "Paul Harteck", "turning_point_ids": ["oliphant-dd-fusion"] },
+  { "id": "edward-teller", "name": "Edward Teller", "turning_point_ids": ["ivy-mike"] },
+  { "id": "stanislaw-ulam", "name": "Stanislaw Ulam", "turning_point_ids": ["ivy-mike"] },
+  { "id": "andrei-sakharov", "name": "Andrei Sakharov", "turning_point_ids": ["tokamak-t3"] },
+  { "id": "john-lawson", "name": "John D. Lawson", "turning_point_ids": ["lawson-criterion"] },
+  { "id": "lev-artsimovich", "name": "Lev Artsimovich", "turning_point_ids": ["tokamak-t3"] },
+  { "id": "martin-fleischmann", "name": "Martin Fleischmann", "turning_point_ids": ["cold-fusion-1989"] },
+  { "id": "stanley-pons", "name": "Stanley Pons", "turning_point_ids": ["cold-fusion-1989"] }
 ]
