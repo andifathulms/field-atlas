@@ -173,6 +173,16 @@ The answer came from {{fig:galois|Évariste Galois}}, a French teenager whose li
 
 His idea was to study an equation through the *group* of symmetries of its roots. An equation is solvable by radicals exactly when that group can be taken apart into simple abelian steps, and the symmetric group on five letters, the group of the general quintic, cannot. The same insight explains the ruler-and-compass impossibilities of [Euclidean geometry](/math/euclidean-geometry/). Liouville published Galois's work in 1846, and {{fig:camille-jordan|Camille Jordan}}'s 1870 treatise made it widely understood.
 
+## A Closer Look: The Symmetries of an Equation
+
+Take $x^2 - 2 = 0$, with roots $\sqrt2$ and $-\sqrt2$. Any true statement about the roots that uses only rational numbers stays true if the two roots are swapped: $\sqrt2 + (-\sqrt2) = 0$ and $\sqrt2 \cdot (-\sqrt2) = -2$, either way round. The Galois group has two elements: "leave alone" and "swap". Two-element groups are as simple as groups get, and the matching formula is the simplest possible: take one square root.
+
+Now take $x^4 - 2 = 0$. Its four roots are $\sqrt[4]{2}$, $-\sqrt[4]{2}$, $i\sqrt[4]{2}$ and $-i\sqrt[4]{2}$, the corners of a square in the complex plane. The symmetries that respect every rational relation turn out to be exactly the eight symmetries of that square: four rotations and four reflections. This group is *solvable*: it breaks down in steps (rotations by a half-turn, then all rotations, then everything) whose pieces are simple two-element groups. Each step corresponds to extracting a square root, and indeed the roots are $\sqrt{\sqrt 2}$ multiplied by $\sqrt{-1}$ as needed.
+
+Finally take $x^5 - x - 1 = 0$. Its Galois group is the full symmetric group $S_5$: all 120 ways of shuffling five roots are symmetries. $S_5$ contains the group $A_5$ of 60 "even" shuffles, and $A_5$ is *simple*: it has no smaller pieces to break into, and it is not built from two-element or other abelian steps. Since a formula in radicals would correspond exactly to such a chain of steps, none exists. No combination of $+$, $-$, $\times$, $\div$ and $n$th roots of rational numbers expresses the roots of this equation.
+
+Galois's method turns "find a formula" into "study a group", and the answer for any equation can be read off the structure of its group of symmetries.
+
 ## A Method, Not Just a Theorem
 
 Galois's lasting gift was a method: to understand a problem, find its symmetry group. That became [group theory](/math/group-theory/). In 1942 {{fig:artin|Emil Artin}} recast Galois theory in the language of field extensions, and the theory now reaches deep into number theory. Whether every finite group occurs as the symmetries of some equation over the rationals, the inverse Galois problem, is still open.
