@@ -98,7 +98,7 @@
   { "id": "brian-schmidt", "name": "Brian Schmidt", "turning_point_ids": ["accelerating-expansion"] },
   { "id": "riess", "name": "Adam Riess", "turning_point_ids": ["accelerating-expansion"] },
   { "id": "darwin", "name": "Charles Darwin", "turning_point_ids": ["darwin-wallace-1858", "origin-of-species"] },
-  { "id": "wallace", "name": "Alfred Russel Wallace", "turning_point_ids": ["darwin-wallace-1858"] },
+  { "id": "wallace", "name": "Alfred Russel Wallace", "turning_point_ids": ["darwin-wallace-1858", "wallace-line"] },
   { "id": "owen", "name": "Richard Owen", "turning_point_ids": ["archaeopteryx"] },
   { "id": "margulis", "name": "Lynn Margulis", "turning_point_ids": ["endosymbiosis"] },
   { "id": "woese", "name": "Carl Woese", "turning_point_ids": ["three-domains"] },
@@ -578,5 +578,10 @@
   { "id": "john-hopfield", "name": "John Hopfield", "turning_point_ids": ["brain-hopfield-backprop"] },
   { "id": "david-rumelhart", "name": "David Rumelhart", "turning_point_ids": ["brain-hopfield-backprop"] },
   { "id": "geoffrey-hinton", "name": "Geoffrey Hinton", "turning_point_ids": ["brain-hopfield-backprop"] },
-  { "id": "sydney-brenner", "name": "Sydney Brenner", "turning_point_ids": ["brain-connectomes"] }
+  { "id": "sydney-brenner", "name": "Sydney Brenner", "turning_point_ids": ["brain-connectomes"] },
+  { "id": "alexander-von-humboldt", "name": "Alexander von Humboldt", "turning_point_ids": ["humboldt-plant-geography"] },
+  { "id": "alfred-wegener", "name": "Alfred Wegener", "turning_point_ids": ["wegener-continental-drift"] },
+  { "id": "robert-macarthur", "name": "Robert MacArthur", "turning_point_ids": ["island-biogeography"] },
+  { "id": "eo-wilson", "name": "Edward O. Wilson", "turning_point_ids": ["island-biogeography", "simberloff-wilson-mangroves"] },
+  { "id": "daniel-simberloff", "name": "Daniel Simberloff", "turning_point_ids": ["simberloff-wilson-mangroves"] }
 ]

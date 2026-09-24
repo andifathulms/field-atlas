@@ -100,7 +100,7 @@ export const DOMAINS: DomainInfo[] = [
   {
     id: "biology",
     name: "Biology",
-    blurb: "How evolution and heredity, long at odds, merged, how reading DNA rewrote both, how the brain was found to be built of cells that signal with electricity and chemistry, and how the cell became the unit of life, health and disease.",
+    blurb: "How evolution and heredity, long at odds, merged, how reading DNA rewrote both, how the brain was found to be built of cells that signal with electricity and chemistry, how the question of where species live became the science of ecosystems and of saving them, and how the cell became the unit of life, health and disease.",
     threads: [
       {
         id: "heredity",
@@ -119,6 +119,12 @@ export const DOMAINS: DomainInfo[] = [
         title: "The Brain Thread",
         intro:
           "From Galvani's twitching frog legs to the wiring diagram of a fly. For centuries the brain was a soft grey mass with no visible parts fine enough to explain a thought. Doctors found that damage to one patch could destroy speech and nothing else, a silver stain showed that the brain is built of separate cells, and physiologists learned that those cells signal with pulses of electricity and pass them on with chemicals released in packets. Recordings from single neurons then found cells that respond to edges and cells that mark a place, and theorists asked whether all of this is computation, a question that gave rise to today's artificial neural networks. The fog here is how a memory is stored, what causes Alzheimer's disease, and why any of this activity is accompanied by experience at all.",
+      },
+      {
+        id: "ecology",
+        title: "The Ecology Thread",
+        intro:
+          "From Humboldt's mountain to the Red List. Humboldt saw that the plants on a tropical mountain are layered like the climates from the equator to the poles, and Wallace traced a line through the islands of Southeast Asia that divides the animals of Asia from those of Australia. Explaining where species live led to counting them: how populations grow, crash and cycle, how competing species share one place, and how energy and nutrients flow through a whole lake or forest. By the 1960s the same science was measuring what people were doing to the living world, and conservation biology was founded as a discipline built for a crisis. The fog here is why the tropics hold so many species, how so many competitors manage to live together, and whether an ecosystem's collapse can be seen coming.",
       },
     ],
   },
