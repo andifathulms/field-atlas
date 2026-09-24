@@ -5,7 +5,7 @@ import { FieldTree } from "@/components/FieldTree";
 import { Legend } from "@/components/Legend";
 import { ThreadNav } from "@/components/ThreadNav";
 import { getFields } from "@/lib/content";
-import { DOMAINS, getDomain, getThread, type ThreadInfo } from "@/lib/domains";
+import { DOMAINS, getDomain, getThread, shortThreadTitle, type ThreadInfo } from "@/lib/domains";
 import { fieldPath } from "@/lib/paths";
 import { layoutTree, readingOrder } from "@/lib/treeLayout";
 import type { Field } from "@/lib/types";
@@ -111,11 +111,6 @@ function firstSentence(text: string): string {
   return text.split(/(?<=[.!?])\s+/)[0];
 }
 
-/** "The Number Theory Thread" → "Number Theory". */
-function shortTitle(title: string): string {
-  return title.replace(/^The\s+/, "").replace(/\s+Thread$/, "");
-}
-
 export default function DomainPage({ params }: { params: { domain: string } }) {
   const domain = getDomain(params.domain);
   if (!domain) notFound();
@@ -191,7 +186,7 @@ export default function DomainPage({ params }: { params: { domain: string } }) {
               </ol>
             </nav>
           </header>
-          <ThreadNav threads={threads.map(({ thread }) => ({ id: thread.id, label: shortTitle(thread.title) }))} />
+          <ThreadNav threads={threads.map(({ thread }) => ({ id: thread.id, label: shortThreadTitle(thread.title) }))} />
         </>
       )}
 

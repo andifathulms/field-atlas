@@ -118,3 +118,8 @@ export function getThread(domainId: string, threadId: string): ThreadInfo | unde
 export function threadPath(domainId: string, threadId: string): string {
   return `/${domainId}/#thread-${threadId}`;
 }
+
+/** "The Number Theory Thread" → "Number Theory", for compact lists. */
+export function shortThreadTitle(title: string): string {
+  return title.replace(/^The\s+/, "").replace(/\s+Thread$/, "");
+}
