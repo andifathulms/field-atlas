@@ -215,6 +215,26 @@ That turned an engineering frustration into a single mathematical question: does
 
 Most researchers believe P ≠ NP, and nobody can prove it. Worse, the field has proved that its own tools are inadequate. Diagonalisation, the trick behind Cantor, Gödel and Turing, cannot work: Baker, Gill and Solovay showed in 1975 that it gives the same answers in worlds where P = NP and where it does not. {{fig:razborov|Alexander Razborov}} and Steven Rudich showed in 1994 that most known methods for proving circuits must be large would, if they worked, also break cryptography. Algebraic methods were ruled out in 2008–09. Knowing exactly why the problem is hard is itself a major result.
 
+## A Closer Look: Easy to Check, Hard to Find
+
+Here is a small instance of the satisfiability problem (SAT). Can true/false values be chosen for $a$, $b$ and $c$ to make all of these clauses true at once?
+
+$$
+(a \vee b) \;\wedge\; (\neg a \vee c) \;\wedge\; (\neg b \vee \neg c) \;\wedge\; (b \vee c)
+$$
+
+Try $a = \text{true}$, $b = \text{false}$, $c = \text{true}$. The clauses become (true or false), (false or true), (true or false) and (false or true), all true. Checking a proposed answer took a few seconds. That is what it means for SAT to be in NP: a solution, once found, can be verified quickly.
+
+*Finding* one is another matter. With $n$ variables there are $2^n$ possible assignments. For 3 variables that is 8, easily checked by hand. For 100 variables it is
+
+$$
+2^{100} \approx 1.27 \times 10^{30} .
+$$
+
+A computer testing a billion assignments per second would need about $4 \times 10^{13}$ years, thousands of times the age of the universe. Clever algorithms do far better than brute force on typical instances, which is why industrial SAT solvers work. But no known algorithm avoids exponential time on the hardest instances.
+
+The Cook–Levin theorem says SAT is NP-*complete*: any problem whose solutions can be checked quickly can be translated into a SAT instance of manageable size. A fast algorithm for SAT would therefore give fast algorithms for scheduling, routing, protein-folding models, theorem-proving and thousands of other problems. P versus NP asks whether that fast algorithm exists. Almost everyone believes it does not, and no one can prove it.
+
 ## Hard Problems, Useful Hardness
 
 Hardness has uses. The security of [public-key cryptography](/math/public-key-cryptography/) rests on problems believed to lie outside P. The PCP theorem of the 1990s showed that for many problems even approximate answers are hard, which tells engineers when to stop looking for perfect algorithms. Knowing which problems are hard also points to better formulations. [Genomics](/biology/genomics/) avoided an NP-complete version of genome assembly by recasting it as an easy one. The deepest question of the Foundations Thread, whether finding is harder than checking, is still unmapped.
