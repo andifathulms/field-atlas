@@ -591,5 +591,11 @@
   { "id": "georgii-gause", "name": "Georgii Gause", "turning_point_ids": ["gause-competitive-exclusion"] },
   { "id": "alexander-nicholson", "name": "Alexander Nicholson", "turning_point_ids": ["density-dependence-debate"] },
   { "id": "herbert-andrewartha", "name": "Herbert Andrewartha", "turning_point_ids": ["density-dependence-debate"] },
-  { "id": "charles-birch", "name": "Charles Birch", "turning_point_ids": ["density-dependence-debate"] }
+  { "id": "charles-birch", "name": "Charles Birch", "turning_point_ids": ["density-dependence-debate"] },
+  { "id": "frederic-clements", "name": "Frederic Clements", "turning_point_ids": ["clements-succession"] },
+  { "id": "henry-gleason", "name": "Henry Gleason", "turning_point_ids": ["gleason-individualistic"] },
+  { "id": "g-evelyn-hutchinson", "name": "G. Evelyn Hutchinson", "turning_point_ids": ["hutchinson-niche"] },
+  { "id": "joseph-connell", "name": "Joseph Connell", "turning_point_ids": ["connell-barnacles"] },
+  { "id": "robert-paine", "name": "Robert Paine", "turning_point_ids": ["paine-keystone"] },
+  { "id": "stephen-hubbell", "name": "Stephen Hubbell", "turning_point_ids": ["hubbell-neutral"] }
 ]
