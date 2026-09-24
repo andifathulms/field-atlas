@@ -22,7 +22,7 @@ key_ideas:
     turning_point_id: planck-blackbody
   - term: Photon
     definition: >-
-      A particle of light, carrying energy $hf$. Einstein proposed it in 1905; it was
+      A particle of light, carrying energy $hf$. Einstein proposed it in 1905. It was
       widely accepted only after Compton's experiment in 1923.
     turning_point_id: einstein-light-quanta
   - term: Wave–particle duality
@@ -67,7 +67,8 @@ turning_points:
       Albert Einstein proposes that light itself consists of quanta, and uses the idea to
       predict the photoelectric effect: the energy of electrons knocked out of a metal
       should depend on the light's colour, not its brightness. Almost no one believed it
-      for years. It was the work cited when he received the Nobel prize.
+      for years. His law of the photoelectric effect was the work named when he received
+      the 1921 Nobel prize.
     contested: false
     sources:
       - citation: "Einstein, A. (1905). Über einen die Erzeugung und Verwandlung des Lichtes betreffenden heuristischen Gesichtspunkt. Annalen der Physik 17: 132–148."
@@ -135,7 +136,7 @@ open_problems:
   - id: fine-structure-constant
     name: Why is the fine-structure constant about 1/137?
     status: open
-    status_note: Open as of writing; its value is measured to about one part in ten billion but not explained.
+    status_note: Open as of 2026. Its value is measured to better than one part in a billion but not explained.
     description: >-
       Arnold Sommerfeld introduced the fine-structure constant $\alpha$ in 1916 to explain
       small splittings in hydrogen's spectral lines. It measures the strength of the
@@ -192,7 +193,7 @@ further_reading:
 
 Around 1900, [statistical mechanics](/physics/statistical-mechanics/) and [electromagnetism](/physics/electromagnetism/) combined to give a prediction that was obviously wrong. A hot oven's light is a set of electromagnetic waves, and statistical mechanics shares energy equally among all of them. But there are infinitely many possible short waves, so the oven should radiate infinite energy in the ultraviolet. Real ovens glow red, then white, and radiate a finite amount.
 
-In December 1900 {{fig:max-planck|Max Planck}}, a conservative physicist in Berlin, found a formula that matched the measurements exactly. To derive it, he had to assume that the oven's walls exchange energy with light only in lumps of size $hf$, proportional to the frequency $f$. High-frequency lumps are too expensive to be produced often, so the ultraviolet catastrophe disappears. Planck later called it an act of desperation. He expected the lumps to be a device that would go away.
+In October 1900 {{fig:max-planck|Max Planck}}, a conservative physicist in Berlin, found a formula that matched the measurements exactly. To derive it, which he did in December, he had to assume that the oven's walls exchange energy with light only in lumps of size $hf$, proportional to the frequency $f$. High-frequency lumps are too expensive to be produced often, so the ultraviolet catastrophe disappears. Planck was not in fact aiming at that problem, which Rayleigh and Jeans spelled out only in 1900–1905, but his formula removes it. In 1931 Planck called it an act of desperation. He expected the lumps to be a device that would go away.
 
 ## Light Quanta
 

@@ -48,7 +48,7 @@ turning_points:
     description: >-
       Beta decay seemed to lose energy. In 1930 Wolfgang Pauli proposed, in a letter to
       the "dear radioactive ladies and gentlemen", an invisible neutral particle that
-      carries it away, and worried that it could never be detected. In 1956 Clyde Cowan
+      carries it away. He is said to have worried that it could never be detected. In 1956 Clyde Cowan
       and Frederick Reines detected neutrinos from a nuclear reactor at Savannah River and
       telegraphed Pauli the news.
     contested: false
@@ -155,7 +155,7 @@ open_problems:
   - id: matter-antimatter-asymmetry
     name: Why is there more matter than antimatter?
     status: open
-    status_note: Open as of writing.
+    status_note: Open as of 2026.
     description: >-
       The Big Bang should have made matter and antimatter in equal amounts, which would
       have annihilated each other almost completely. Instead, about one extra particle of
@@ -204,10 +204,10 @@ applications:
         url: null
 
 further_reading:
-  - citation: "Close, F. (2011). The Infinity Puzzle: The Personalities, Politics, and Extraordinary Science Behind the Higgs Boson. Oxford University Press."
+  - citation: "Close, F. (2011). The Infinity Puzzle. Oxford University Press."
     url: null
     note: A history of the Standard Model and the credit disputes around the Higgs.
-  - citation: "Weinberg, S. (1993). Dreams of a Final Theory. Pantheon."
+  - citation: "Weinberg, S. (1992). Dreams of a Final Theory. Pantheon."
     url: null
     note: One of its architects on the search for fundamental laws.
   - citation: "Griffiths, D. (2008). Introduction to Elementary Particles (2nd ed.). Wiley-VCH."
@@ -217,7 +217,7 @@ further_reading:
 
 ## The Invisible Particle
 
-In 1930 radioactive beta decay seemed to break the conservation of energy: electrons came out with a spread of energies, and some energy went missing. {{fig:wolfgang-pauli|Wolfgang Pauli}} proposed, in a letter he addressed to the "dear radioactive ladies and gentlemen" at a meeting he skipped for a dance, that an unseen neutral particle carried it off. He apologised for proposing something that could probably never be detected. Fermi named it the neutrino and built a theory of the weak force around it. In 1956 {{fig:clyde-cowan|Clyde Cowan}} and {{fig:frederick-reines|Frederick Reines}} detected neutrinos streaming from a nuclear reactor and sent Pauli a telegram.
+In 1930 radioactive beta decay seemed to break the conservation of energy: electrons came out with a spread of energies, and some energy went missing. {{fig:wolfgang-pauli|Wolfgang Pauli}} proposed, in a letter he addressed to the "dear radioactive ladies and gentlemen" at a meeting he skipped for a dance, that an unseen neutral particle carried it off. He is said to have worried that such a particle could never be detected. Fermi named it the neutrino and built a theory of the weak force around it. In 1956 {{fig:clyde-cowan|Clyde Cowan}} and {{fig:frederick-reines|Frederick Reines}} detected neutrinos streaming from a nuclear reactor and sent Pauli a telegram.
 
 The same year, {{fig:tsung-dao-lee|Tsung-Dao Lee}} and {{fig:chen-ning-yang|Chen-Ning Yang}} asked whether the weak force treats left and right alike. {{fig:chien-shiung-wu|Chien-Shiung Wu}} tested it with cobalt nuclei cooled close to absolute zero and found that it does not. Pauli had been ready to bet heavily that it would, and wrote afterwards that he was glad nobody had taken him up.
 
@@ -225,11 +225,11 @@ The same year, {{fig:tsung-dao-lee|Tsung-Dao Lee}} and {{fig:chen-ning-yang|Chen
 
 By the early 1960s accelerators had found dozens of short-lived particles, a "zoo" with no apparent order. {{fig:murray-gell-mann|Murray Gell-Mann}} organised them with [representation theory](/math/representation-theory/): they fell into patterns of eight and ten predicted by the symmetry group SU(3), and the missing member of one pattern, the omega-minus, was found in 1964 with the predicted mass. The same year, Gell-Mann and {{fig:george-zweig|George Zweig}} proposed that the patterns arise because the particles are made of three smaller constituents, quarks, with fractional charges. No free quark has ever been seen. But in 1968 electron-scattering experiments at SLAC found hard, point-like objects inside protons, as a beam of bullets might reveal stones inside a cloud.
 
-Why quarks are never seen alone was explained in 1973 by asymptotic freedom: the strong force, carried by gluons, weakens at short distances and grows without limit as quarks are pulled apart.
+Why quarks are never seen alone was made plausible in 1973 by asymptotic freedom: the strong force, carried by gluons, weakens at short distances and strengthens as quarks are pulled apart, so separating them takes ever more energy. A proof of this confinement is still lacking.
 
 ## Unification
 
-In 1967 {{fig:steven-weinberg|Steven Weinberg}}, and independently {{fig:abdus-salam|Abdus Salam}}, building on the work of {{fig:sheldon-glashow|Sheldon Glashow}}, combined electromagnetism and the weak force into one [quantum field theory](/physics/quantum-field-theory/) of Yang–Mills type. The weak force's carriers are heavy because of a field that fills space, the mechanism found in 1964 by {{fig:francois-englert|François Englert}} and {{fig:robert-brout|Robert Brout}}, by {{fig:peter-higgs|Peter Higgs}}, and by others. The W and Z particles were found at CERN in 1983 by teams led by {{fig:carlo-rubbia|Carlo Rubbia}}, at the predicted masses. On 4 July 2012 the Large Hadron Collider found the Higgs boson itself, completing the Standard Model.
+In 1967 {{fig:steven-weinberg|Steven Weinberg}}, and independently {{fig:abdus-salam|Abdus Salam}}, building on the work of {{fig:sheldon-glashow|Sheldon Glashow}}, combined electromagnetism and the weak force into one [quantum field theory](/physics/quantum-field-theory/) of Yang–Mills type. The weak force's carriers are heavy because of a field that fills space, the mechanism found in 1964 by {{fig:francois-englert|François Englert}} and {{fig:robert-brout|Robert Brout}}, by {{fig:peter-higgs|Peter Higgs}}, and by others. The W and Z particles were found at CERN in 1983 by the UA1 team led by {{fig:carlo-rubbia|Carlo Rubbia}} and the rival UA2 team, at the predicted masses. On 4 July 2012 the Large Hadron Collider found the Higgs boson itself, completing the Standard Model.
 
 ## A Closer Look: Sixty-Five Billion Neutrinos a Second
 
@@ -243,7 +243,7 @@ $$
 
 and each produces two neutrinos, so about $6.4 \times 10^{14}$ neutrinos cross each square metre every second. That is $6.4 \times 10^{10}$ per square centimetre, roughly 65 billion through your thumbnail every second, day and night, since they pass straight through the Earth. (The neutrinos carry off about 2% of the energy themselves, which barely changes the estimate.)
 
-Almost none of them interact. That is why {{fig:raymond-davis|Raymond Davis}} needed a tank of 600 tonnes of cleaning fluid nearly a mile underground to catch a few. From 1968 his experiment found only about a third of the rate predicted by {{fig:john-bahcall|John Bahcall}}'s detailed model of the Sun. For thirty years physicists argued over whether the model or the experiment was wrong. Neither was. The Sun makes only electron neutrinos, and Davis could detect only those. In 1998 Super-Kamiokande in Japan, led by {{fig:takaaki-kajita|Takaaki Kajita}}, found that neutrinos change type in flight, and in 2001 the Sudbury Neutrino Observatory in Canada, led by {{fig:arthur-mcdonald|Arthur McDonald}}, counted all types and found the full predicted total. Neutrinos oscillate, so they have mass, and the Standard Model had to be extended.
+Almost none of them interact. That is why {{fig:raymond-davis|Raymond Davis}} needed a tank of 600 tonnes of cleaning fluid nearly a mile underground to catch a few. From 1968 his experiment found only about a third of the rate predicted by {{fig:john-bahcall|John Bahcall}}'s detailed model of the Sun. For thirty years physicists argued over whether the model or the experiment was wrong. Neither was. The Sun makes only electron neutrinos, and Davis could detect only those. In 1998 Super-Kamiokande in Japan, in an analysis led by {{fig:takaaki-kajita|Takaaki Kajita}}, found that neutrinos made in the atmosphere change type in flight, and in 2001 the Sudbury Neutrino Observatory in Canada, led by {{fig:arthur-mcdonald|Arthur McDonald}}, counted all types and found the full predicted total. Neutrinos oscillate, so they have mass, and the Standard Model had to be extended.
 
 ## Beyond the Standard Model
 

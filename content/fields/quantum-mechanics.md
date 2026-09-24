@@ -99,7 +99,7 @@ turning_points:
       Analysing collisions with Schrödinger's equation, Max Born proposes, in a footnote,
       that the wave function gives the *probability* of finding the particle. Physics
       became fundamentally statistical: the theory predicts only the odds of each outcome.
-      Einstein objected that God "does not play dice".
+      Einstein objected, in a letter to Born, that God does not play dice.
     contested: true
     contested_note: >-
       The rule itself is universally used and confirmed. What it means is not agreed. In the
@@ -147,7 +147,7 @@ open_problems:
   - id: measurement-problem
     name: The measurement problem
     status: open
-    status_note: Open as of writing; several interpretations are consistent with all experiments.
+    status_note: Open as of 2026. Several interpretations are consistent with all experiments.
     description: >-
       Schrödinger's equation is deterministic and lets superpositions evolve smoothly.
       Yet every measurement gives one definite outcome. What counts as a measurement, and

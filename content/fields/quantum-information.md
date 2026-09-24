@@ -9,7 +9,7 @@ era_emerged: 1935 – 1996
 core_question: What can be computed and communicated using superposition and entanglement that cannot be done classically?
 
 summary: |-
-  Quantum information science treats the strangest features of quantum mechanics as resources. A qubit can be in a superposition of 0 and 1. Two qubits can be entangled, so that measurements on them are correlated more strongly than any classical mechanism allows, however far apart they are. These effects make possible unbreakable key distribution, and computers that could solve certain problems exponentially faster than any classical machine.
+  Quantum information science treats the strangest features of quantum mechanics as resources. A qubit can be in a superposition of 0 and 1. Two qubits can be entangled, so that measurements on them are correlated more strongly than any classical mechanism allows, however far apart they are. These effects make possible key distribution whose security rests on physics, and computers that could solve certain problems exponentially faster than any known classical method.
 
   The field grew out of a philosophical argument. In 1935 Einstein used entanglement to argue that quantum mechanics was incomplete. In 1964 John Bell turned the argument into an experimental test, and experiments since 1972 have shown that nature violates Bell's inequality, as quantum mechanics predicts. From the 1980s, physicists and computer scientists realised that the same effects could be used for computation and cryptography.
 
@@ -90,6 +90,8 @@ turning_points:
     sources:
       - citation: "Aspect, A., Grangier, P. & Roger, G. (1982). Experimental realization of Einstein–Podolsky–Rosen–Bohm Gedankenexperiment: a new violation of Bell's inequalities. Physical Review Letters 49(2): 91–94."
         url: null
+      - citation: "Aspect, A., Dalibard, J. & Roger, G. (1982). Experimental test of Bell's inequalities using time-varying analyzers. Physical Review Letters 49(25): 1804–1807."
+        url: null
       - citation: "Hensen, B. et al. (2015). Loophole-free Bell inequality violation using electron spins separated by 1.3 kilometres. Nature 526: 682–686."
         url: null
 
@@ -159,11 +161,11 @@ open_problems:
   - id: fault-tolerant-quantum-computer
     name: Can a large fault-tolerant quantum computer be built?
     status: open
-    status_note: Open as of writing; small error-corrected logical qubits have been demonstrated.
+    status_note: Open as of 2026. Small error-corrected logical qubits have been demonstrated.
     description: >-
       Running Shor's algorithm on numbers used in real cryptography is estimated to need
-      thousands of error-corrected logical qubits, and so around a million physical
-      qubits. The largest machines have far fewer, and they are too noisy for long
+      about a thousand or more error-corrected logical qubits, and so up to a million
+      physical qubits. The largest machines have far fewer, and they are too noisy for long
       computations.
     why_hard: >-
       Qubits must be isolated from their environment yet controlled precisely, and errors
@@ -177,6 +179,8 @@ open_problems:
     sources:
       - citation: "Preskill, J. (2018). Quantum computing in the NISQ era and beyond. Quantum 2: 79."
         url: null
+      - citation: "Gidney, C. (2025). How to factor 2048 bit RSA integers with less than a million noisy qubits. arXiv:2505.15917."
+        url: https://arxiv.org/abs/2505.15917
 
 applications:
   - area: Cryptography
@@ -252,7 +256,7 @@ For photons entangled in polarisation, quantum mechanics predicts that the avera
 | $a', b$ | $22.5^\circ$ | $\cos 45^\circ = 0.707$ |
 | $a', b'$ | $-22.5^\circ$ | $\cos(-45^\circ) = 0.707$ |
 
-So quantum mechanics predicts $S = 0.707 - (-0.707) + 0.707 + 0.707 = 2\sqrt2 \approx 2.83$, well above 2. Aspect's 1982 experiment measured $S = 2.697 \pm 0.015$, close to the quantum prediction once imperfect equipment is accounted for, and more than forty standard deviations above the classical limit. No assignment of pre-set answers can produce these correlations.
+So quantum mechanics predicts $S = 0.707 - (-0.707) + 0.707 + 0.707 = 2\sqrt2 \approx 2.83$, well above 2. One of Aspect's 1982 experiments, with fixed settings, measured $S = 2.697 \pm 0.015$, close to the quantum prediction once imperfect equipment is accounted for, and more than forty standard deviations above the classical limit. No assignment of pre-set answers can produce these correlations.
 
 This cannot be used to send messages faster than light: each lab alone sees a random sequence of $\pm 1$. The correlation shows up only when the two records are compared.
 

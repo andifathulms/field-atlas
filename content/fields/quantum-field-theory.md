@@ -12,7 +12,7 @@ core_question: How can quantum mechanics be made consistent with relativity, whe
 summary: |-
   Quantum field theory joins quantum mechanics and special relativity. Its basic objects are not particles but fields filling all of space, one for each kind of particle. Particles are the fields' quantised ripples: an electron is a ripple in the electron field, a photon a ripple in the electromagnetic field. Because $E = mc^2$ lets energy turn into mass, particles can be created and destroyed, and a fixed number of particles is not a good description.
 
-  The first version, quantum electrodynamics (QED), predicted antimatter and then ran into infinite answers. Renormalisation, worked out between 1947 and 1949, tamed the infinities and made QED the most precisely tested theory in science. Yang and Mills's generalisation of 1954 became the framework of the Standard Model of particle physics. A mathematically rigorous version of the theory is still lacking.
+  The first version, quantum electrodynamics (QED), predicted antimatter and then ran into infinite answers. Renormalisation, worked out between 1947 and 1949, tamed the infinities and made QED one of the most precisely tested theories in science. Yang and Mills's generalisation of 1954 became the framework of the Standard Model of particle physics. A mathematically rigorous version of the theory is still lacking.
 
 key_ideas:
   - term: Quantum field
@@ -39,7 +39,7 @@ key_ideas:
   - term: Gauge theory
     definition: >-
       A field theory built on a symmetry that can be applied differently at each point in
-      space. Electromagnetism is the simplest example; Yang and Mills found the general
+      space. Electromagnetism is the simplest example. Yang and Mills found the general
       form, which describes all the forces except gravity.
     turning_point_id: yang-mills
 
@@ -125,7 +125,7 @@ open_problems:
   - id: yang-mills-mass-gap
     name: Yang–Mills existence and mass gap
     status: open
-    status_note: Open as of writing; one of the Clay Mathematics Institute's Millennium Prize Problems.
+    status_note: Open as of 2026. One of the Clay Mathematics Institute's Millennium Prize Problems.
     description: >-
       Prove that quantum Yang–Mills theory exists as a mathematically well-defined theory
       in four spacetime dimensions, and that its lightest particle has positive mass, the
@@ -212,10 +212,10 @@ $$
 a_e = 0.00115965218059 \pm 0.00000000000013 .
 $$
 
-Schwinger's single term is already right to about 0.15%. Physicists have since computed further terms, with more and more virtual particles, up to diagrams with five loops, more than 12,000 of them. With those included, theory and experiment agree to about one part in a trillion in $g$. The comparison is limited mainly by how precisely $\alpha$ itself is known. In fact, the most precise determinations of $\alpha$ use this very calculation.
+Schwinger's single term is already right to about 0.15%. Physicists have since computed further terms, with more and more virtual particles, up to diagrams with five loops, more than 12,000 of them. With those included, theory and experiment agree to about one part in a trillion in $g$. The comparison is limited mainly by how precisely $\alpha$ itself is known. In fact, one of the two most precise determinations of $\alpha$ uses this very calculation. The other comes from measuring how atoms recoil when they absorb light.
 
 It is often called the most accurate prediction in science. Schwinger had the formula $\alpha/2\pi$ engraved on his tombstone.
 
 ## A Framework for Everything but Gravity
 
-After Yang–Mills theory was shown in 1971 to be renormalisable, quantum field theory became the language of all particle physics, and much of condensed-matter physics too. It has one glaring gap: nobody has constructed a realistic interacting quantum field theory in four dimensions with full mathematical rigour, and the Clay Institute offers a million dollars for the first step. Gravity has resisted it entirely. [General relativity](/physics/general-relativity/) cannot be renormalised in the same way, and a quantum theory of gravity is the deepest open problem in physics.
+After Yang–Mills theory was shown in 1971 to be renormalisable, quantum field theory became the language of all particle physics, and much of condensed-matter physics too. It has one glaring gap: nobody has constructed a realistic interacting quantum field theory in four dimensions with full mathematical rigour, and the Clay Institute offers a million dollars for the first step. Gravity has resisted it entirely. [General relativity](/physics/general-relativity/) cannot be renormalised in the same way, and a quantum theory of gravity is often called the deepest open problem in physics.
