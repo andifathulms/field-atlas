@@ -160,5 +160,17 @@
   { "id": "frey", "name": "Gerhard Frey", "turning_point_ids": ["frey-ribet"] },
   { "id": "serre", "name": "Jean-Pierre Serre", "turning_point_ids": ["frey-ribet"] },
   { "id": "ribet", "name": "Ken Ribet", "turning_point_ids": ["frey-ribet"] },
-  { "id": "breuil", "name": "Christophe Breuil", "turning_point_ids": ["modularity-theorem"] }
+  { "id": "breuil", "name": "Christophe Breuil", "turning_point_ids": ["modularity-theorem"] },
+  { "id": "diffie", "name": "Whitfield Diffie", "turning_point_ids": ["diffie-hellman"] },
+  { "id": "hellman", "name": "Martin Hellman", "turning_point_ids": ["diffie-hellman"] },
+  { "id": "merkle", "name": "Ralph Merkle", "turning_point_ids": ["diffie-hellman"] },
+  { "id": "james-ellis", "name": "James Ellis", "turning_point_ids": ["diffie-hellman"] },
+  { "id": "rivest", "name": "Ron Rivest", "turning_point_ids": ["rsa"] },
+  { "id": "shamir", "name": "Adi Shamir", "turning_point_ids": ["rsa"] },
+  { "id": "adleman", "name": "Leonard Adleman", "turning_point_ids": ["rsa"] },
+  { "id": "cocks", "name": "Clifford Cocks", "turning_point_ids": ["rsa"] },
+  { "id": "koblitz", "name": "Neal Koblitz", "turning_point_ids": ["elliptic-curve-cryptography"] },
+  { "id": "victor-miller", "name": "Victor Miller", "turning_point_ids": ["elliptic-curve-cryptography"] },
+  { "id": "shor", "name": "Peter Shor", "turning_point_ids": ["shor-algorithm"] },
+  { "id": "agrawal", "name": "Manindra Agrawal", "turning_point_ids": ["aks-primality"] }
 ]
