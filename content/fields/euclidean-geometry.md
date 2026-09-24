@@ -265,6 +265,22 @@ The tool that settled them came from outside geometry. In 1637 {{fig:descartes|R
 
 That translation let {{fig:wantzel|Pierre Wantzel}} prove in 1837 that a straightedge and compass can only produce lengths built from repeated square roots. Doubling the cube needs $\sqrt[3]{2}$, so it is impossible, and so is trisecting a general angle. {{fig:lindemann|Ferdinand von Lindemann}} completed the list in 1882 by proving that $\pi$ is transcendental. It is not the root of any polynomial with whole-number coefficients, so no construction can reach it. Like the parallel postulate, the problems ended not with a construction but with a proof that none exists.
 
+## A Closer Look: Euclid's Proof of Pythagoras
+
+Book I, Proposition 47 of the *Elements* proves that in a right triangle the square on the hypotenuse equals the squares on the other two sides. Euclid's proof uses no algebra and no numbers, only areas, and it shows the axiomatic method at work.
+
+Draw a right triangle $ABC$ with the right angle at $A$, and build a square outward on each side. From $A$, drop a line perpendicular to the hypotenuse $BC$ and extend it across the big square on $BC$, cutting that square into two rectangles. The claim is that each rectangle equals one of the smaller squares.
+
+Take the square on $AB$. Join $C$ to the far corner of that square, and join $A$ to the far corner of the big square beyond $B$. The two triangles this makes are *congruent*: they have two sides equal (sides of the same squares) and the angle between those sides equal, a right angle plus the angle at $B$ in each case. Now use a fact proved earlier (I.41): a triangle has half the area of a parallelogram on the same base between the same parallels. One triangle is half the square on $AB$. The other is half the rectangle next to $B$. So the square on $AB$ equals that rectangle.
+
+The same argument on the other side shows the square on $AC$ equals the other rectangle. Together the two rectangles make the whole square on $BC$, so
+
+$$
+AB^2 + AC^2 = BC^2 .
+$$
+
+Every step cites an earlier proposition, and those rest on the postulates. In particular I.41 depends, through the theory of parallels, on the fifth postulate. On a sphere or a saddle, where that postulate fails, the theorem is false. The most famous theorem in geometry is secretly a theorem about flat space.
+
 ## Rebuilding the Foundations
 
 When non-Euclidean geometry was finally accepted in the nineteenth century, the old question turned around. If the fifth postulate is optional, what exactly are the others doing? Looking closely, mathematicians found that Euclid's proofs also relied on facts he never stated. One example is that a line entering a triangle through one side must leave through another.
