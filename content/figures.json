@@ -7,7 +7,7 @@
   { "id": "bolyai", "name": "János Bolyai", "turning_point_ids": ["lobachevsky-bolyai"] },
   { "id": "beltrami", "name": "Eugenio Beltrami", "turning_point_ids": ["beltrami-model"] },
   { "id": "klein", "name": "Felix Klein", "turning_point_ids": ["erlangen-program", "cayley-klein"] },
-  { "id": "euler", "name": "Leonhard Euler", "turning_point_ids": ["euler-polyhedron-formula", "euler-curvature", "euler-fermat-numbers", "euler-product", "euler-introductio"] },
+  { "id": "euler", "name": "Leonhard Euler", "turning_point_ids": ["euler-polyhedron-formula", "euler-curvature", "euler-fermat-numbers", "euler-product", "euler-introductio", "vibrating-string"] },
   { "id": "bonnet", "name": "Pierre Ossian Bonnet", "turning_point_ids": ["gauss-bonnet"] },
   { "id": "riemann", "name": "Bernhard Riemann", "turning_point_ids": ["riemann-habilitation", "riemann-surfaces", "riemann-zeta-1859"] },
   { "id": "ricci-curbastro", "name": "Gregorio Ricci-Curbastro", "turning_point_ids": ["ricci-levi-civita"] },
@@ -137,7 +137,7 @@
   { "id": "feng-zhang", "name": "Feng Zhang", "turning_point_ids": ["crispr-editing"] },
   { "id": "diophantus", "name": "Diophantus of Alexandria", "turning_point_ids": ["diophantus-arithmetica"] },
   { "id": "legendre", "name": "Adrien-Marie Legendre", "turning_point_ids": ["gauss-disquisitiones", "pnt-conjectured"] },
-  { "id": "dirichlet", "name": "Peter Gustav Lejeune Dirichlet", "turning_point_ids": ["dirichlet-progressions"] },
+  { "id": "dirichlet", "name": "Peter Gustav Lejeune Dirichlet", "turning_point_ids": ["dirichlet-progressions", "dirichlet-convergence"] },
   { "id": "hadamard", "name": "Jacques Hadamard", "turning_point_ids": ["pnt-proved"] },
   { "id": "de-la-vallee-poussin", "name": "Charles-Jean de la Vallée Poussin", "turning_point_ids": ["pnt-proved"] },
   { "id": "selberg", "name": "Atle Selberg", "turning_point_ids": ["erdos-selberg"] },
@@ -175,5 +175,11 @@
   { "id": "agrawal", "name": "Manindra Agrawal", "turning_point_ids": ["aks-primality"] },
   { "id": "archimedes", "name": "Archimedes", "turning_point_ids": ["archimedes-exhaustion"] },
   { "id": "leibniz", "name": "Gottfried Wilhelm Leibniz", "turning_point_ids": ["newton-leibniz"] },
-  { "id": "berkeley", "name": "George Berkeley", "turning_point_ids": ["berkeley-analyst"] }
+  { "id": "berkeley", "name": "George Berkeley", "turning_point_ids": ["berkeley-analyst"] },
+  { "id": "dalembert", "name": "Jean le Rond d'Alembert", "turning_point_ids": ["vibrating-string"] },
+  { "id": "daniel-bernoulli", "name": "Daniel Bernoulli", "turning_point_ids": ["vibrating-string"] },
+  { "id": "fourier", "name": "Joseph Fourier", "turning_point_ids": ["fourier-heat"] },
+  { "id": "cooley", "name": "James Cooley", "turning_point_ids": ["fft"] },
+  { "id": "tukey", "name": "John Tukey", "turning_point_ids": ["fft"] },
+  { "id": "carleson", "name": "Lennart Carleson", "turning_point_ids": ["carleson-theorem"] }
 ]
