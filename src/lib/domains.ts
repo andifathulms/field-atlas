@@ -20,7 +20,7 @@ export const DOMAINS: DomainInfo[] = [
   {
     id: "math",
     name: "Mathematics",
-    blurb: "How the study of space split into many geometries, how the study of whole numbers split into theories of its own, how calculus was made rigorous, where mathematics meets its own limits, how solving equations became the study of symmetry, how counting puzzles became the mathematics of networks, how equations of motion led to chaos, and what forced each split.",
+    blurb: "How the study of space split into many geometries, how the study of whole numbers split into theories of its own, how calculus was made rigorous, where mathematics meets its own limits, how solving equations became the study of symmetry, how counting puzzles became the mathematics of networks, how equations of motion led to chaos, how reasoning from data became the mathematics of information and learning, and what forced each split.",
     threads: [
       {
         id: "geometry",
@@ -63,6 +63,12 @@ export const DOMAINS: DomainInfo[] = [
         title: "The Dynamics Thread",
         intro:
           "From Newton's laws of motion to the limits of prediction. Differential equations promised that the future follows from the present, and for two centuries mathematicians tried to solve them. Most cannot be solved by formula, so Poincaré learned to describe their solutions without solving them, and in doing so found the first hint of chaos. Computers later showed chaos everywhere: deterministic systems whose long-term behaviour is unpredictable in practice, yet obeys laws of its own, from the statistics of ergodic theory to the infinite detail of the Mandelbrot set. The fog here includes Hilbert's sixteenth problem and whether the Mandelbrot set is locally connected.",
+      },
+      {
+        id: "statistics",
+        title: "The Statistics Thread",
+        intro:
+          "From combining the observations of astronomers to machines that learn from examples. Probability predicts data from a known chance mechanism. Statistics runs the argument backwards, from data to the mechanism, and for two centuries it was argued over as much as it was used. Least squares began in a priority dispute, Fisher and Neyman feuded over what a test means, and Bayesian reasoning was nearly banished before computers brought it back. Along the way Shannon measured information itself, Markov and Wiener gave laws to quantities that wander at random, and Vapnik and Valiant asked when a rule learned from examples can be trusted. The fog here is close to daily life: how to make published findings reliable, and why giant neural networks generalise when the theory says they should not.",
       },
     ],
   },
