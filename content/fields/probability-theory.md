@@ -208,6 +208,20 @@ Through the nineteenth century probability was useful but suspect. Its founding 
 
 The solution came from [real analysis](/math/real-analysis/). In 1933 {{fig:kolmogorov|Andrey Kolmogorov}} observed that Lebesgue's measure theory already had exactly the right structure. Probability is a measure of total size 1 on a space of outcomes, events are measurable sets, and expectation is the Lebesgue integral. The paradoxes dissolved into precise statements, and probability became a full branch of mathematics.
 
+## A Closer Look: The Test That Is 99% Accurate
+
+A disease affects 1 in 100 people. A test detects it 99% of the time when it is present, and gives a false positive 5% of the time when it is not. You test positive. What is the chance you have the disease?
+
+Most people guess about 95%. Bayes' theorem gives the answer. Picture 10,000 people. About 100 have the disease, and 99 of them test positive. Of the 9,900 healthy people, 5% also test positive: 495 of them. So there are $99 + 495 = 594$ positive results, of which only 99 are true:
+
+$$
+P(\text{disease} \mid \text{positive}) = \frac{0.99 \times 0.01}{0.99 \times 0.01 + 0.05 \times 0.99} = \frac{99}{594} = \frac{1}{6} \approx 17\% .
+$$
+
+A positive result raises the probability from 1% to about 17%, a big jump, but most positives are still false alarms, because healthy people vastly outnumber sick ones. This is why screening programmes follow a positive result with a second, independent test. If the second test is also positive, Bayes' theorem applied again, starting from 17%, gives about 80%.
+
+The same reasoning, updating a probability as evidence arrives, runs spam filters, medical diagnosis, forensic statistics and much of machine learning. Its misuse has consequences as well. Confusing $P(\text{evidence} \mid \text{innocent})$ with $P(\text{innocent} \mid \text{evidence})$, the "prosecutor's fallacy", has contributed to wrongful convictions.
+
 ## Everywhere
 
 Probability now runs through science. It is the mathematics of genetic drift in [population genetics](/biology/population-genetics/), of Brownian motion and statistical physics, of statistics, finance and machine learning. Its frontier includes random structures whose behaviour at a critical point, where a sudden global change happens, is still out of reach, most famously percolation in three dimensions.
