@@ -109,5 +109,12 @@
   { "id": "sturtevant", "name": "Alfred Sturtevant", "turning_point_ids": ["chromosome-theory"] },
   { "id": "muller", "name": "Hermann Muller", "turning_point_ids": ["muller-xrays"] },
   { "id": "beadle", "name": "George Beadle", "turning_point_ids": ["one-gene-one-enzyme"] },
-  { "id": "tatum", "name": "Edward Tatum", "turning_point_ids": ["one-gene-one-enzyme"] }
+  { "id": "tatum", "name": "Edward Tatum", "turning_point_ids": ["one-gene-one-enzyme"] },
+  { "id": "gh-hardy", "name": "G. H. Hardy", "turning_point_ids": ["hardy-weinberg"] },
+  { "id": "wilhelm-weinberg", "name": "Wilhelm Weinberg", "turning_point_ids": ["hardy-weinberg"] },
+  { "id": "fisher", "name": "Ronald Fisher", "turning_point_ids": ["fisher-1918", "classical-population-genetics"] },
+  { "id": "haldane", "name": "J. B. S. Haldane", "turning_point_ids": ["classical-population-genetics"] },
+  { "id": "sewall-wright", "name": "Sewall Wright", "turning_point_ids": ["classical-population-genetics"] },
+  { "id": "dobzhansky", "name": "Theodosius Dobzhansky", "turning_point_ids": ["dobzhansky-synthesis"] },
+  { "id": "kimura", "name": "Motoo Kimura", "turning_point_ids": ["neutral-theory"] }
 ]
