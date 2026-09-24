@@ -129,7 +129,7 @@ turning_points:
         url: null
 
   - id: higgs-boson
-    date: 1964 – 2012
+    date: "2012"
     type: EXPERIMENT
     title: The Higgs boson
     description: >-
