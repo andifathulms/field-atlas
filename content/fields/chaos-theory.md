@@ -96,21 +96,6 @@ turning_points:
       - citation: "Sharkovsky, A. N. (1964). Coexistence of cycles of a continuous map of the line into itself. Ukrainian Mathematical Journal 16: 61–71."
         url: null
 
-  - id: may-logistic-map
-    date: "1976"
-    type: REFORMULATION
-    title: May's simple models with complicated dynamics
-    description: >-
-      Robert May, a physicist turned ecologist, shows in *Nature* that the logistic map,
-      a textbook model of population growth, passes through period doubling into chaos.
-      He urges that every student be shown it, because simple rules need not have simple
-      consequences. Ecologists began to ask whether wild fluctuations in real populations
-      might be chaotic rather than random.
-    contested: false
-    sources:
-      - citation: "May, R. M. (1976). Simple mathematical models with very complicated dynamics. Nature 261: 459–467."
-        url: null
-
   - id: feigenbaum-universality
     date: 1975 – 1982
     type: CONJECTURE
@@ -126,6 +111,21 @@ turning_points:
       - citation: "Feigenbaum, M. J. (1978). Quantitative universality for a class of nonlinear transformations. Journal of Statistical Physics 19(1): 25–52."
         url: null
       - citation: "Lanford, O. E. (1982). A computer-assisted proof of the Feigenbaum conjectures. Bulletin of the American Mathematical Society 6(3): 427–434."
+        url: null
+
+  - id: may-logistic-map
+    date: "1976"
+    type: REFORMULATION
+    title: May's simple models with complicated dynamics
+    description: >-
+      Robert May, a physicist turned ecologist, shows in *Nature* that the logistic map,
+      a textbook model of population growth, passes through period doubling into chaos.
+      He urges that every student be shown it, because simple rules need not have simple
+      consequences. Ecologists began to ask whether wild fluctuations in real populations
+      might be chaotic rather than random.
+    contested: false
+    sources:
+      - citation: "May, R. M. (1976). Simple mathematical models with very complicated dynamics. Nature 261: 459–467."
         url: null
 
   - id: tucker-lorenz-attractor
