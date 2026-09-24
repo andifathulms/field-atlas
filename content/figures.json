@@ -2,7 +2,7 @@
   { "id": "euclid", "name": "Euclid of Alexandria", "turning_point_ids": ["elements-compiled", "euclid-primes"] },
   { "id": "saccheri", "name": "Girolamo Saccheri", "turning_point_ids": ["parallel-postulate-crisis"] },
   { "id": "hilbert", "name": "David Hilbert", "turning_point_ids": ["hilbert-grundlagen", "hilbert-no-hyperbolic-surface", "einstein-field-equations", "hilbert-program", "grundlagenstreit"] },
-  { "id": "gauss", "name": "Carl Friedrich Gauss", "turning_point_ids": ["lobachevsky-bolyai", "theorema-egregium", "gauss-disquisitiones", "pnt-conjectured", "gaussian-integers", "complex-plane"] },
+  { "id": "gauss", "name": "Carl Friedrich Gauss", "turning_point_ids": ["lobachevsky-bolyai", "theorema-egregium", "gauss-disquisitiones", "pnt-conjectured", "gaussian-integers", "complex-plane", "fundamental-theorem-algebra"] },
   { "id": "lobachevsky", "name": "Nikolai Lobachevsky", "turning_point_ids": ["lobachevsky-bolyai"] },
   { "id": "bolyai", "name": "János Bolyai", "turning_point_ids": ["lobachevsky-bolyai"] },
   { "id": "beltrami", "name": "Eugenio Beltrami", "turning_point_ids": ["beltrami-model"] },
@@ -182,7 +182,7 @@
   { "id": "cooley", "name": "James Cooley", "turning_point_ids": ["fft"] },
   { "id": "tukey", "name": "John Tukey", "turning_point_ids": ["fft"] },
   { "id": "carleson", "name": "Lennart Carleson", "turning_point_ids": ["carleson-theorem"] },
-  { "id": "cardano", "name": "Gerolamo Cardano", "turning_point_ids": ["cardano-bombelli"] },
+  { "id": "cardano", "name": "Gerolamo Cardano", "turning_point_ids": ["cardano-bombelli", "cubic-formula"] },
   { "id": "bombelli", "name": "Rafael Bombelli", "turning_point_ids": ["cardano-bombelli"] },
   { "id": "wessel", "name": "Caspar Wessel", "turning_point_ids": ["complex-plane"] },
   { "id": "argand", "name": "Jean-Robert Argand", "turning_point_ids": ["complex-plane"] },
@@ -223,5 +223,10 @@
   { "id": "levin", "name": "Leonid Levin", "turning_point_ids": ["cook-levin"] },
   { "id": "karp", "name": "Richard Karp", "turning_point_ids": ["karp-21"] },
   { "id": "razborov", "name": "Alexander Razborov", "turning_point_ids": ["complexity-barriers"] },
-  { "id": "arora", "name": "Sanjeev Arora", "turning_point_ids": ["pcp-theorem"] }
+  { "id": "arora", "name": "Sanjeev Arora", "turning_point_ids": ["pcp-theorem"] },
+  { "id": "al-khwarizmi", "name": "Muḥammad ibn Mūsā al-Khwārizmī", "turning_point_ids": ["al-khwarizmi"] },
+  { "id": "del-ferro", "name": "Scipione del Ferro", "turning_point_ids": ["cubic-formula"] },
+  { "id": "tartaglia", "name": "Niccolò Tartaglia", "turning_point_ids": ["cubic-formula"] },
+  { "id": "lodovico-ferrari", "name": "Lodovico Ferrari", "turning_point_ids": ["cubic-formula"] },
+  { "id": "viete", "name": "François Viète", "turning_point_ids": ["viete-notation"] }
 ]
