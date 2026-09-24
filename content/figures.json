@@ -1,7 +1,7 @@
 [
   { "id": "euclid", "name": "Euclid of Alexandria", "turning_point_ids": ["elements-compiled", "euclid-primes"] },
   { "id": "saccheri", "name": "Girolamo Saccheri", "turning_point_ids": ["parallel-postulate-crisis"] },
-  { "id": "hilbert", "name": "David Hilbert", "turning_point_ids": ["hilbert-grundlagen", "hilbert-no-hyperbolic-surface", "einstein-field-equations", "hilbert-program", "grundlagenstreit"] },
+  { "id": "hilbert", "name": "David Hilbert", "turning_point_ids": ["hilbert-grundlagen", "hilbert-no-hyperbolic-surface", "einstein-field-equations", "hilbert-program", "grundlagenstreit", "hilbert-basis"] },
   { "id": "gauss", "name": "Carl Friedrich Gauss", "turning_point_ids": ["lobachevsky-bolyai", "theorema-egregium", "gauss-disquisitiones", "pnt-conjectured", "gaussian-integers", "complex-plane", "fundamental-theorem-algebra"] },
   { "id": "lobachevsky", "name": "Nikolai Lobachevsky", "turning_point_ids": ["lobachevsky-bolyai"] },
   { "id": "bolyai", "name": "János Bolyai", "turning_point_ids": ["lobachevsky-bolyai"] },
@@ -20,7 +20,7 @@
   { "id": "agol", "name": "Ian Agol", "turning_point_ids": ["agol-virtual-haken"] },
   { "id": "lhuilier", "name": "Simon Lhuilier", "turning_point_ids": ["lhuilier-counterexamples"] },
   { "id": "brouwer", "name": "L. E. J. Brouwer", "turning_point_ids": ["brouwer-fixed-point", "grundlagenstreit"] },
-  { "id": "noether", "name": "Emmy Noether", "turning_point_ids": ["noether-homology-groups"] },
+  { "id": "noether", "name": "Emmy Noether", "turning_point_ids": ["noether-homology-groups", "noether-ideals", "van-der-waerden"] },
   { "id": "rado", "name": "Tibor Radó", "turning_point_ids": ["plateau-problem-solved"] },
   { "id": "douglas", "name": "Jesse Douglas", "turning_point_ids": ["plateau-problem-solved"] },
   { "id": "yau", "name": "Shing-Tung Yau", "turning_point_ids": ["calabi-yau", "positive-mass-theorem"] },
@@ -149,7 +149,7 @@
   { "id": "kummer", "name": "Ernst Kummer", "turning_point_ids": ["lame-kummer", "kummer-ideal-numbers"] },
   { "id": "dedekind", "name": "Richard Dedekind", "turning_point_ids": ["dedekind-ideals", "dedekind-cantor-reals"] },
   { "id": "takagi", "name": "Teiji Takagi", "turning_point_ids": ["class-field-theory"] },
-  { "id": "artin", "name": "Emil Artin", "turning_point_ids": ["class-field-theory", "artin-galois"] },
+  { "id": "artin", "name": "Emil Artin", "turning_point_ids": ["class-field-theory", "artin-galois", "van-der-waerden"] },
   { "id": "heegner", "name": "Kurt Heegner", "turning_point_ids": ["class-number-one"] },
   { "id": "alan-baker", "name": "Alan Baker", "turning_point_ids": ["class-number-one"] },
   { "id": "stark", "name": "Harold Stark", "turning_point_ids": ["class-number-one"] },
@@ -241,5 +241,9 @@
   { "id": "adian", "name": "Sergei Adian", "turning_point_ids": ["burnside-disproof"] },
   { "id": "gorenstein", "name": "Daniel Gorenstein", "turning_point_ids": ["classification-finite-simple"] },
   { "id": "griess", "name": "Robert Griess", "turning_point_ids": ["classification-finite-simple"] },
-  { "id": "aschbacher", "name": "Michael Aschbacher", "turning_point_ids": ["classification-finite-simple"] }
+  { "id": "aschbacher", "name": "Michael Aschbacher", "turning_point_ids": ["classification-finite-simple"] },
+  { "id": "rowan-hamilton", "name": "William Rowan Hamilton", "turning_point_ids": ["quaternions"] },
+  { "id": "paul-gordan", "name": "Paul Gordan", "turning_point_ids": ["hilbert-basis"] },
+  { "id": "steinitz", "name": "Ernst Steinitz", "turning_point_ids": ["steinitz-fields"] },
+  { "id": "van-der-waerden", "name": "Bartel van der Waerden", "turning_point_ids": ["van-der-waerden"] }
 ]
