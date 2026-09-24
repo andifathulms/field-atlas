@@ -96,6 +96,11 @@ One file per Field so a correction is a single-file diff, consistent with the "c
 - `/[domain]` — one section per thread (`/[domain]/#thread-<id>`), each with its own field tree and index; a thread index at the top when the domain has more than one. Threads are declared in `src/lib/domains.ts` and each field names its `thread` (validated at build). Parents may sit in another thread of the same domain.
 - `/[domain]/[field-slug]` — field page
 - `/crossings` — cross-domain view, derived by `getCrossings()` from every application whose `domain` differs from its field's (linked when it names a `field_id`, a "seed" otherwise)
+- `/people` — every figure, sorted by surname (`src/lib/people.ts`), with their turning points across fields.
+- `/search` — client-side search over fields, turning points, open problems, key ideas and people; the index is built at export time and the query lives in `?q=`.
+- `/toolkit` — influence proxy from `src/lib/reach.ts`: threads reached directly (a successor in another thread, or an application landing in another domain), then direct links, then everything downstream.
+- `/open-problems` — every open problem grouped by domain and thread. Status notes are dated ("as of 2026"), so re-check them when the year changes.
+- The landing page carries an all-threads chord map (`ThreadAtlas`): solid chords are cross-thread lineage, dashed chords are crossings.
 
 ## Field tree rendering
 This is a DAG, not a strict linear chain — a field can have more than one parent. Don't reuse a pure linear-timeline component from [[empire-rankings]] unmodified; the layout needs to handle branch/merge points (e.g. a field born at the seam of two parents). D3's DAG/tree layout utilities (or a simple manual layered layout, given v1 is only 3–5 nodes) are enough for v1 — no need for a general graph-layout library at this scale.
