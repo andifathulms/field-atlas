@@ -7,7 +7,7 @@
   { "id": "bolyai", "name": "János Bolyai", "turning_point_ids": ["lobachevsky-bolyai"] },
   { "id": "beltrami", "name": "Eugenio Beltrami", "turning_point_ids": ["beltrami-model"] },
   { "id": "klein", "name": "Felix Klein", "turning_point_ids": ["erlangen-program", "cayley-klein"] },
-  { "id": "euler", "name": "Leonhard Euler", "turning_point_ids": ["euler-polyhedron-formula", "euler-curvature", "euler-fermat-numbers", "euler-product"] },
+  { "id": "euler", "name": "Leonhard Euler", "turning_point_ids": ["euler-polyhedron-formula", "euler-curvature", "euler-fermat-numbers", "euler-product", "euler-introductio"] },
   { "id": "bonnet", "name": "Pierre Ossian Bonnet", "turning_point_ids": ["gauss-bonnet"] },
   { "id": "riemann", "name": "Bernhard Riemann", "turning_point_ids": ["riemann-habilitation", "riemann-surfaces", "riemann-zeta-1859"] },
   { "id": "ricci-curbastro", "name": "Gregorio Ricci-Curbastro", "turning_point_ids": ["ricci-levi-civita"] },
@@ -62,7 +62,7 @@
   { "id": "taylor", "name": "Richard Taylor", "turning_point_ids": ["wiles-fermat", "modularity-theorem"] },
   { "id": "galileo", "name": "Galileo Galilei", "turning_point_ids": ["galileo-falling-bodies"] },
   { "id": "kepler", "name": "Johannes Kepler", "turning_point_ids": ["kepler-laws"] },
-  { "id": "newton", "name": "Isaac Newton", "turning_point_ids": ["newton-principia"] },
+  { "id": "newton", "name": "Isaac Newton", "turning_point_ids": ["newton-principia", "newton-leibniz"] },
   { "id": "hooke", "name": "Robert Hooke", "turning_point_ids": ["newton-principia"] },
   { "id": "le-verrier", "name": "Urbain Le Verrier", "turning_point_ids": ["neptune-discovery", "mercury-perihelion-anomaly"] },
   { "id": "galle", "name": "Johann Galle", "turning_point_ids": ["neptune-discovery"] },
@@ -172,5 +172,8 @@
   { "id": "koblitz", "name": "Neal Koblitz", "turning_point_ids": ["elliptic-curve-cryptography"] },
   { "id": "victor-miller", "name": "Victor Miller", "turning_point_ids": ["elliptic-curve-cryptography"] },
   { "id": "shor", "name": "Peter Shor", "turning_point_ids": ["shor-algorithm"] },
-  { "id": "agrawal", "name": "Manindra Agrawal", "turning_point_ids": ["aks-primality"] }
+  { "id": "agrawal", "name": "Manindra Agrawal", "turning_point_ids": ["aks-primality"] },
+  { "id": "archimedes", "name": "Archimedes", "turning_point_ids": ["archimedes-exhaustion"] },
+  { "id": "leibniz", "name": "Gottfried Wilhelm Leibniz", "turning_point_ids": ["newton-leibniz"] },
+  { "id": "berkeley", "name": "George Berkeley", "turning_point_ids": ["berkeley-analyst"] }
 ]
