@@ -11,6 +11,12 @@ const POS: Record<Domain, [number, number]> = {
   physics: [570, 150],
   biology: [360, 360],
 };
+/** Extra push off the arc for labels that would otherwise meet in the middle of the triangle. */
+const LABEL_NUDGE: Partial<Record<string, number>> = { "physics>math": 24 };
+
+/** Stroke width grows with the number of crossings, but slowly, so one heavy arc doesn't swamp the rest. */
+const arcWidth = (linked: number) => 1.4 + Math.sqrt(linked) * 1.5;
+
 /** Top-row domains carry their labels above the circle, the bottom one below, so arcs never cross them. */
 const LABEL_ABOVE: Record<Domain, boolean> = { math: true, physics: true, biology: false };
 
@@ -23,6 +29,7 @@ interface Arc {
 
 /** Quadratic arc between two domain nodes, bowed to the left of travel so opposite directions separate. */
 function arcGeometry(from: Domain, to: Domain, bow: number) {
+  const nudge = LABEL_NUDGE[`${from}>${to}`] ?? 0;
   const [x0, y0] = POS[from];
   const [x1, y1] = POS[to];
   const dx = x1 - x0;
@@ -35,8 +42,8 @@ function arcGeometry(from: Domain, to: Domain, bow: number) {
   const c: [number, number] = [(x0 + x1) / 2 + px * bow, (y0 + y1) / 2 + py * bow];
   // The label sits just off the arc's midpoint, on its outer (bowed) side.
   const mid: [number, number] = [
-    0.25 * s[0] + 0.5 * c[0] + 0.25 * e[0] + px * 44,
-    0.25 * s[1] + 0.5 * c[1] + 0.25 * e[1] + py * 34,
+    0.25 * s[0] + 0.5 * c[0] + 0.25 * e[0] + px * (44 + nudge),
+    0.25 * s[1] + 0.5 * c[1] + 0.25 * e[1] + py * (34 + nudge),
   ];
   return { d: `M${s[0]},${s[1]} Q${c[0]},${c[1]} ${e[0]},${e[1]}`, mid };
 }
@@ -82,8 +89,9 @@ export function CrossingsDiagram({
             viewBox="0 0 10 10"
             refX="6"
             refY="5"
-            markerWidth="7"
-            markerHeight="7"
+            markerUnits="userSpaceOnUse"
+            markerWidth="15"
+            markerHeight="15"
             orient="auto-start-reverse"
           >
             <path d="M0,1 L9,5 L0,9 z" fill={`var(--${d.id})`} />
@@ -101,7 +109,7 @@ export function CrossingsDiagram({
                 d={d}
                 fill="none"
                 stroke={colour}
-                strokeWidth={1.4 + a.linked * 0.9}
+                strokeWidth={arcWidth(a.linked)}
                 strokeLinecap="round"
                 markerEnd={`url(#arrow-${a.from})`}
                 pathLength={1}

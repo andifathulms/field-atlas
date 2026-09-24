@@ -37,15 +37,15 @@ export default function CrossingsPage() {
 
   return (
     <main className="mx-auto max-w-6xl px-4 sm:px-8">
-      <header className="settle pb-10 pt-16">
+      <header className="settle pb-12 pt-12">
         <p className="stamp text-ink-faint">
           <Link href="/" className="ink-link">
             Atlas
           </Link>{" "}
           / Across domains
         </p>
-        <h1 className="mt-4 text-5xl font-semibold tracking-tight">Crossings</h1>
-        <p className="mt-5 max-w-prose text-lg text-ink-soft">
+        <h1 className="mt-4 text-5xl font-semibold tracking-[-0.02em] sm:text-7xl">Crossings</h1>
+        <p className="mt-6 max-w-prose text-lg leading-relaxed text-ink-soft sm:text-xl">
           Each domain in the atlas is surveyed on its own, but ideas do not stay put. A crossing is a use
           written on one field&apos;s page that lands in another domain: geometry becoming gravity, physics
           revealing the double helix. Solid lines land in a field this atlas has surveyed. Dashed lines reach
@@ -114,7 +114,7 @@ export default function CrossingsPage() {
                   <Link href={`${fieldPath(from.domain, from.id)}#applications`} className="ink-link text-ink-soft">
                     {from.name}
                   </Link>
-                  <span className="stamp ml-2 text-fog">↗ {getDomain(application.domain!)?.name}</span>
+                  <span className="stamp mt-1 block text-fog">↗ {getDomain(application.domain!)?.name}</span>
                 </p>
                 <p className="leading-snug">{application.title}</p>
               </li>
