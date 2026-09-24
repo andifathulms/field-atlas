@@ -49,7 +49,7 @@
   { "id": "pascal", "name": "Blaise Pascal", "turning_point_ids": ["desargues-pascal", "pascal-fermat"] },
   { "id": "poncelet", "name": "Jean-Victor Poncelet", "turning_point_ids": ["poncelet-traite", "projective-duality"] },
   { "id": "gergonne", "name": "Joseph Gergonne", "turning_point_ids": ["projective-duality"] },
-  { "id": "cayley", "name": "Arthur Cayley", "turning_point_ids": ["cayley-klein"] },
+  { "id": "cayley", "name": "Arthur Cayley", "turning_point_ids": ["cayley-klein", "cayley-abstract-group"] },
   { "id": "bezout", "name": "Étienne Bézout", "turning_point_ids": ["bezout-theorem"] },
   { "id": "castelnuovo", "name": "Guido Castelnuovo", "turning_point_ids": ["italian-school-crisis"] },
   { "id": "enriques", "name": "Federigo Enriques", "turning_point_ids": ["italian-school-crisis"] },
@@ -233,5 +233,13 @@
   { "id": "ruffini", "name": "Paolo Ruffini", "turning_point_ids": ["abel-ruffini"] },
   { "id": "abel", "name": "Niels Henrik Abel", "turning_point_ids": ["abel-ruffini"] },
   { "id": "galois", "name": "Évariste Galois", "turning_point_ids": ["galois-memoir"] },
-  { "id": "camille-jordan", "name": "Camille Jordan", "turning_point_ids": ["jordan-traite"] }
+  { "id": "camille-jordan", "name": "Camille Jordan", "turning_point_ids": ["jordan-traite"] },
+  { "id": "sylow", "name": "Ludwig Sylow", "turning_point_ids": ["sylow-theorems"] },
+  { "id": "feit", "name": "Walter Feit", "turning_point_ids": ["feit-thompson"] },
+  { "id": "john-thompson", "name": "John Thompson", "turning_point_ids": ["feit-thompson"] },
+  { "id": "novikov", "name": "Pyotr Novikov", "turning_point_ids": ["burnside-disproof"] },
+  { "id": "adian", "name": "Sergei Adian", "turning_point_ids": ["burnside-disproof"] },
+  { "id": "gorenstein", "name": "Daniel Gorenstein", "turning_point_ids": ["classification-finite-simple"] },
+  { "id": "griess", "name": "Robert Griess", "turning_point_ids": ["classification-finite-simple"] },
+  { "id": "aschbacher", "name": "Michael Aschbacher", "turning_point_ids": ["classification-finite-simple"] }
 ]
