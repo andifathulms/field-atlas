@@ -100,7 +100,7 @@ export const DOMAINS: DomainInfo[] = [
   {
     id: "biology",
     name: "Biology",
-    blurb: "How evolution and heredity, long at odds, merged, how reading DNA rewrote both, how the brain was found to be built of cells that signal with electricity and chemistry, how the question of where species live became the science of ecosystems and of saving them, how a single egg builds a body, and how the cell became the unit of life, health and disease.",
+    blurb: "How evolution and heredity, long at odds, merged, and how reading DNA rewrote both. How the cell became the unit of life and disease, how the brain was found to signal with electricity and chemistry, how the study of where species live became the science of ecosystems, and how a single egg builds a body.",
     threads: [
       {
         id: "heredity",
