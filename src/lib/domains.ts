@@ -69,7 +69,7 @@ export const DOMAINS: DomainInfo[] = [
   {
     id: "physics",
     name: "Physics",
-    blurb: "How motion, light and gravity were rebuilt around the speed of light, how the laws of heat became the statistics of atoms, how energy turned out to come in lumps, and what is still dark.",
+    blurb: "How motion, light and gravity were rebuilt around the speed of light, how the laws of heat became the statistics of atoms, how energy turned out to come in lumps, how starlight revealed what stars are made of, and what is still dark.",
     threads: [
       {
         id: "relativity",
@@ -88,6 +88,12 @@ export const DOMAINS: DomainInfo[] = [
         title: "The Quantum Thread",
         intro:
           "From a stubborn problem about glowing ovens to the particles of the Standard Model. In 1900 the statistics of heat and the theory of light gave an answer that was plainly wrong, and the only fix was to suppose that energy comes in lumps. Twenty-five years of patched-together rules followed, until a new mechanics replaced certainty with probability. Joined to relativity, it became quantum field theory, the most precisely tested theory in science, and it catalogued the particles from which everything is built. Its strangest feature, entanglement, is now an engineering resource. The fog here is what a measurement really is, why the constants of nature have the values they do, and why the universe is made of matter at all.",
+      },
+      {
+        id: "stars",
+        title: "The Stars Thread",
+        intro:
+          "From dark lines in sunlight to planets around other suns. In 1835 a philosopher declared that the chemistry of the stars could never be known. Within thirty years spectroscopy was reading it from starlight, and the colours of stars became a code for their temperature, composition and motion. Physics then explained what makes stars shine and how they forge the elements, what is left when they die, and how they gather into galaxies around black holes. The fog here is the interior of neutron stars, the Sun's own composition, and whether any of the thousands of known planets carries life.",
       },
     ],
   },

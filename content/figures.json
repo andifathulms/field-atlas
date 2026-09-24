@@ -261,7 +261,7 @@
   { "id": "george-polya", "name": "George Pólya", "turning_point_ids": ["polya-enumeration"] },
   { "id": "j-howard-redfield", "name": "J. Howard Redfield", "turning_point_ids": ["polya-enumeration"] },
   { "id": "gian-carlo-rota", "name": "Gian-Carlo Rota", "turning_point_ids": ["rota-foundations"] },
-  { "id": "gustav-kirchhoff", "name": "Gustav Kirchhoff", "turning_point_ids": ["kirchhoff-trees"] },
+  { "id": "gustav-kirchhoff", "name": "Gustav Kirchhoff", "turning_point_ids": ["kirchhoff-trees", "kirchhoff-bunsen"] },
   { "id": "francis-guthrie", "name": "Francis Guthrie", "turning_point_ids": ["four-colour-conjecture"] },
   { "id": "augustus-de-morgan", "name": "Augustus De Morgan", "turning_point_ids": ["four-colour-conjecture"] },
   { "id": "alfred-kempe", "name": "Alfred Kempe", "turning_point_ids": ["kempe-heawood"] },
@@ -426,5 +426,16 @@
   { "id": "ronald-hanson", "name": "Ronald Hanson", "turning_point_ids": ["bell-tests"] },
   { "id": "david-deutsch", "name": "David Deutsch", "turning_point_ids": ["quantum-computing-proposed"] },
   { "id": "gilles-brassard", "name": "Gilles Brassard", "turning_point_ids": ["bb84"] },
-  { "id": "andrew-steane", "name": "Andrew Steane", "turning_point_ids": ["quantum-error-correction"] }
+  { "id": "andrew-steane", "name": "Andrew Steane", "turning_point_ids": ["quantum-error-correction"] },
+  { "id": "joseph-fraunhofer", "name": "Joseph von Fraunhofer", "turning_point_ids": ["fraunhofer-lines"] },
+  { "id": "robert-bunsen", "name": "Robert Bunsen", "turning_point_ids": ["kirchhoff-bunsen"] },
+  { "id": "pierre-janssen", "name": "Pierre Janssen", "turning_point_ids": ["helium-in-the-sun"] },
+  { "id": "norman-lockyer", "name": "Norman Lockyer", "turning_point_ids": ["helium-in-the-sun"] },
+  { "id": "edward-pickering", "name": "Edward Pickering", "turning_point_ids": ["harvard-classification"] },
+  { "id": "williamina-fleming", "name": "Williamina Fleming", "turning_point_ids": ["harvard-classification"] },
+  { "id": "annie-jump-cannon", "name": "Annie Jump Cannon", "turning_point_ids": ["harvard-classification"] },
+  { "id": "ejnar-hertzsprung", "name": "Ejnar Hertzsprung", "turning_point_ids": ["hr-diagram"] },
+  { "id": "henry-norris-russell", "name": "Henry Norris Russell", "turning_point_ids": ["hr-diagram", "payne-hydrogen"] },
+  { "id": "meghnad-saha", "name": "Meghnad Saha", "turning_point_ids": ["payne-hydrogen"] },
+  { "id": "cecilia-payne", "name": "Cecilia Payne-Gaposchkin", "turning_point_ids": ["payne-hydrogen"] }
 ]
