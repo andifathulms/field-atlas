@@ -212,7 +212,7 @@
   { "id": "gonthier", "name": "Georges Gonthier", "turning_point_ids": ["proof-assistants"] },
   { "id": "church", "name": "Alonzo Church", "turning_point_ids": ["entscheidungsproblem"] },
   { "id": "turing", "name": "Alan Turing", "turning_point_ids": ["entscheidungsproblem", "universal-machine", "dev-turing-morphogenesis", "bs-banburismus", "turing-condition-number"] },
-  { "id": "von-neumann", "name": "John von Neumann", "turning_point_ids": ["universal-machine", "ergodic-theorems", "von-neumann-goldstine-inversion"] },
+  { "id": "von-neumann", "name": "John von Neumann", "turning_point_ids": ["universal-machine", "ergodic-theorems", "von-neumann-goldstine-inversion", "eniac-forecast"] },
   { "id": "henry-rice", "name": "Henry Gordon Rice", "turning_point_ids": ["rice-theorem"] },
   { "id": "martin-davis", "name": "Martin Davis", "turning_point_ids": ["hilberts-tenth"] },
   { "id": "julia-robinson", "name": "Julia Robinson", "turning_point_ids": ["hilberts-tenth"] },
@@ -778,5 +778,14 @@
   { "id": "eduard-stiefel", "name": "Eduard Stiefel", "turning_point_ids": ["conjugate-gradients"] },
   { "id": "john-francis", "name": "John Francis", "turning_point_ids": ["qr-algorithm"] },
   { "id": "vera-kublanovskaya", "name": "Vera Kublanovskaya", "turning_point_ids": ["qr-algorithm"] },
-  { "id": "volker-strassen", "name": "Volker Strassen", "turning_point_ids": ["strassen-multiplication"] }
+  { "id": "volker-strassen", "name": "Volker Strassen", "turning_point_ids": ["strassen-multiplication"] },
+  { "id": "lewis-fry-richardson", "name": "Lewis Fry Richardson", "turning_point_ids": ["richardson-forecast"] },
+  { "id": "richard-courant", "name": "Richard Courant", "turning_point_ids": ["cfl-condition", "finite-element-method"] },
+  { "id": "kurt-friedrichs", "name": "Kurt Friedrichs", "turning_point_ids": ["cfl-condition"] },
+  { "id": "hans-lewy", "name": "Hans Lewy", "turning_point_ids": ["cfl-condition"] },
+  { "id": "jule-charney", "name": "Jule Charney", "turning_point_ids": ["eniac-forecast"] },
+  { "id": "ray-clough", "name": "Ray Clough", "turning_point_ids": ["finite-element-method"] },
+  { "id": "radii-fedorenko", "name": "Radii Fedorenko", "turning_point_ids": ["multigrid-method"] },
+  { "id": "achi-brandt", "name": "Achi Brandt", "turning_point_ids": ["multigrid-method"] },
+  { "id": "frans-pretorius", "name": "Frans Pretorius", "turning_point_ids": ["binary-black-hole-simulation"] }
 ]
