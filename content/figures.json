@@ -75,7 +75,7 @@
   { "id": "michelson", "name": "Albert Michelson", "turning_point_ids": ["michelson-morley"] },
   { "id": "morley", "name": "Edward Morley", "turning_point_ids": ["michelson-morley"] },
   { "id": "lorentz", "name": "Hendrik Lorentz", "turning_point_ids": ["michelson-morley", "lorentz-transformation"] },
-  { "id": "einstein", "name": "Albert Einstein", "turning_point_ids": ["einstein-special-1905", "equivalence-principle", "einstein-field-equations", "einstein-static-universe", "perrin-atoms", "bose-einstein-statistics"] },
+  { "id": "einstein", "name": "Albert Einstein", "turning_point_ids": ["einstein-special-1905", "equivalence-principle", "einstein-field-equations", "einstein-static-universe", "perrin-atoms", "bose-einstein-statistics", "einstein-light-quanta"] },
   { "id": "minkowski", "name": "Hermann Minkowski", "turning_point_ids": ["minkowski-spacetime"] },
   { "id": "rossi", "name": "Bruno Rossi", "turning_point_ids": ["rossi-hall-muons"] },
   { "id": "grossmann", "name": "Marcel Grossmann", "turning_point_ids": ["einstein-field-equations"] },
@@ -346,7 +346,7 @@
   { "id": "katherine-maxwell", "name": "Katherine Clerk Maxwell", "turning_point_ids": ["maxwell-viscosity"] },
   { "id": "josef-loschmidt", "name": "Josef Loschmidt", "turning_point_ids": ["boltzmann-h-theorem"] },
   { "id": "jean-perrin", "name": "Jean Perrin", "turning_point_ids": ["perrin-atoms"] },
-  { "id": "max-planck", "name": "Max Planck", "turning_point_ids": ["boltzmann-entropy-formula"] },
+  { "id": "max-planck", "name": "Max Planck", "turning_point_ids": ["boltzmann-entropy-formula", "planck-blackbody"] },
   { "id": "josiah-willard-gibbs", "name": "Josiah Willard Gibbs", "turning_point_ids": ["gibbs-ensembles"] },
   { "id": "satyendra-nath-bose", "name": "Satyendra Nath Bose", "turning_point_ids": ["bose-einstein-statistics"] },
   { "id": "enrico-fermi", "name": "Enrico Fermi", "turning_point_ids": ["fermi-dirac-statistics"] },
@@ -374,5 +374,11 @@
   { "id": "christopher-jarzynski", "name": "Christopher Jarzynski", "turning_point_ids": ["fluctuation-theorems"] },
   { "id": "gavin-crooks", "name": "Gavin Crooks", "turning_point_ids": ["fluctuation-theorems"] },
   { "id": "antoine-berut", "name": "Antoine Bérut", "turning_point_ids": ["landauer-experiment"] },
-  { "id": "eric-lutz", "name": "Eric Lutz", "turning_point_ids": ["landauer-experiment"] }
+  { "id": "eric-lutz", "name": "Eric Lutz", "turning_point_ids": ["landauer-experiment"] },
+  { "id": "hans-geiger", "name": "Hans Geiger", "turning_point_ids": ["rutherford-nucleus"] },
+  { "id": "ernest-marsden", "name": "Ernest Marsden", "turning_point_ids": ["rutherford-nucleus"] },
+  { "id": "ernest-rutherford", "name": "Ernest Rutherford", "turning_point_ids": ["rutherford-nucleus"] },
+  { "id": "niels-bohr", "name": "Niels Bohr", "turning_point_ids": ["bohr-atom"] },
+  { "id": "robert-millikan", "name": "Robert Millikan", "turning_point_ids": ["millikan-photoelectric"] },
+  { "id": "arthur-compton", "name": "Arthur Compton", "turning_point_ids": ["compton-scattering"] }
 ]

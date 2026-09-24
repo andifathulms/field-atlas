@@ -69,7 +69,7 @@ export const DOMAINS: DomainInfo[] = [
   {
     id: "physics",
     name: "Physics",
-    blurb: "How motion, light and gravity were rebuilt around the speed of light, how the laws of heat became the statistics of atoms, and what is still dark.",
+    blurb: "How motion, light and gravity were rebuilt around the speed of light, how the laws of heat became the statistics of atoms, how energy turned out to come in lumps, and what is still dark.",
     threads: [
       {
         id: "relativity",
@@ -82,6 +82,12 @@ export const DOMAINS: DomainInfo[] = [
         title: "The Entropy Thread",
         intro:
           "From the steam engine to the statistics of atoms. Engineers trying to get more work out of coal found a law that no machine can break: heat flows downhill, and something they called entropy always grows. Explaining that law from the motion of invisible molecules forced physicists to accept that atoms are real, and to reason with probability instead of certainty. The same statistics then explained why water boils at a sharp temperature and why erasing information costs energy. The fog here is the arrow of time itself, and the physics of systems far from equilibrium, which includes every living thing.",
+      },
+      {
+        id: "quantum",
+        title: "The Quantum Thread",
+        intro:
+          "From a stubborn problem about glowing ovens to the particles of the Standard Model. In 1900 the statistics of heat and the theory of light gave an answer that was plainly wrong, and the only fix was to suppose that energy comes in lumps. Twenty-five years of patched-together rules followed, until a new mechanics replaced certainty with probability. Joined to relativity, it became quantum field theory, the most precisely tested theory in science, and it catalogued the particles from which everything is built. Its strangest feature, entanglement, is now an engineering resource. The fog here is what a measurement really is, why the constants of nature have the values they do, and why the universe is made of matter at all.",
       },
     ],
   },
