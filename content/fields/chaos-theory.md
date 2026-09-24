@@ -185,6 +185,7 @@ applications:
       Laboratory beetle populations were later shown to follow the chaotic
       dynamics their equations predict.
     domain: biology
+    field_id: population-ecology
     sources:
       - citation: "Costantino, R. F., Desharnais, R. A., Cushing, J. M. & Dennis, B. (1997). Chaotic dynamics in an insect population. Science 275(5298): 389–391."
         url: null
