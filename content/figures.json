@@ -196,7 +196,7 @@
   { "id": "laplace", "name": "Pierre-Simon Laplace", "turning_point_ids": ["central-limit", "bayes-theorem", "bs-rule-of-succession"] },
   { "id": "bayes", "name": "Thomas Bayes", "turning_point_ids": ["bayes-theorem"] },
   { "id": "richard-price", "name": "Richard Price", "turning_point_ids": ["bayes-theorem"] },
-  { "id": "kolmogorov", "name": "Andrey Kolmogorov", "turning_point_ids": ["kolmogorov-axioms", "kam-theorem", "kolmogorov-sinai-entropy", "it-kolmogorov-complexity"] },
+  { "id": "kolmogorov", "name": "Andrey Kolmogorov", "turning_point_ids": ["kolmogorov-axioms", "kam-theorem", "kolmogorov-sinai-entropy", "it-kolmogorov-complexity", "sp-kolmogorov-equations"] },
   { "id": "aristotle", "name": "Aristotle", "turning_point_ids": ["aristotle-syllogistic", "aristotle-chick-embryo"] },
   { "id": "boole", "name": "George Boole", "turning_point_ids": ["boole-laws"] },
   { "id": "frege", "name": "Gottlob Frege", "turning_point_ids": ["frege-begriffsschrift"] },
@@ -752,5 +752,15 @@
   { "id": "ray-solomonoff", "name": "Ray Solomonoff", "turning_point_ids": ["it-kolmogorov-complexity"] },
   { "id": "gregory-chaitin", "name": "Gregory Chaitin", "turning_point_ids": ["it-kolmogorov-complexity"] },
   { "id": "claude-berrou", "name": "Claude Berrou", "turning_point_ids": ["it-turbo-codes"] },
-  { "id": "david-mackay", "name": "David MacKay", "turning_point_ids": ["it-turbo-codes"] }
+  { "id": "david-mackay", "name": "David MacKay", "turning_point_ids": ["it-turbo-codes"] },
+  { "id": "andrey-markov", "name": "Andrey Markov", "turning_point_ids": ["sp-markov-chains"] },
+  { "id": "louis-bachelier", "name": "Louis Bachelier", "turning_point_ids": ["sp-bachelier"] },
+  { "id": "norbert-wiener", "name": "Norbert Wiener", "turning_point_ids": ["sp-wiener-process"] },
+  { "id": "kiyosi-ito", "name": "Kiyosi Itô", "turning_point_ids": ["sp-ito-calculus"] },
+  { "id": "wolfgang-doeblin", "name": "Wolfgang Doeblin", "turning_point_ids": ["sp-ito-calculus"] },
+  { "id": "fischer-black", "name": "Fischer Black", "turning_point_ids": ["sp-black-scholes"] },
+  { "id": "myron-scholes", "name": "Myron Scholes", "turning_point_ids": ["sp-black-scholes"] },
+  { "id": "robert-merton", "name": "Robert C. Merton", "turning_point_ids": ["sp-black-scholes"] },
+  { "id": "sergey-brin", "name": "Sergey Brin", "turning_point_ids": ["sp-pagerank"] },
+  { "id": "larry-page", "name": "Larry Page", "turning_point_ids": ["sp-pagerank"] }
 ]
