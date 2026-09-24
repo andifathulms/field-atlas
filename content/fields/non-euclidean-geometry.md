@@ -197,6 +197,20 @@ What none of them had was proof that the new geometry was *consistent*. Lobachev
 
 Beltrami's surfaces came straight out of Gauss's theory of curvature, from the neighbouring [differential-geometry](/math/differential-geometry/) branch. The two branches were already converging. Felix Klein and, in 1882, {{fig:poincare|Henri Poincaré}} later added the models that are standard today: the projective disc, the Poincaré disc, and the upper half-plane.
 
+## A Closer Look: Triangles in the Poincaré Disc
+
+Poincaré's disc model makes hyperbolic geometry visible. The whole infinite plane is drawn inside a circle. "Straight lines" are arcs of circles that meet the boundary at right angles, together with diameters. Angles are measured as they appear, but distances are distorted: the same step covers less and less of the drawing as you approach the edge, which is infinitely far away.
+
+Draw three such arcs to make a triangle. Because the arcs bow inward, the corners look pinched, and the angles visibly add up to less than $180°$. The shortfall is not arbitrary. For a plane of curvature $-1$,
+
+$$
+\text{Area} = \pi - (\alpha + \beta + \gamma) .
+$$
+
+Push the three corners out to the boundary circle and each angle shrinks to zero. The result, an *ideal triangle*, has angles summing to $0$ and area exactly $\pi$, the largest any hyperbolic triangle can have, however long its sides. In Euclid's plane triangles can be arbitrarily large. In Lobachevsky's they cannot.
+
+Parallels behave just as Lobachevsky said. Take a line and a point off it. Infinitely many arcs through the point never meet the line, and two of them, the *limiting parallels*, meet it only at the boundary, at infinity. Nothing in the picture contradicts Euclid's first four postulates. That is exactly Beltrami's point: the model sits inside ordinary geometry, so if hyperbolic geometry were inconsistent, so would Euclid's be.
+
 ## Geometry as a Choice
 
 Once several geometries were known to be consistent, "which one is true?" stopped being a mathematical question. {{fig:klein|Felix Klein}}'s Erlangen Program (1872) organised the new situation. A geometry is defined by a group of transformations and studies whatever those transformations leave unchanged. Euclidean geometry keeps distances fixed under rigid motions. Projective geometry keeps only incidence and cross-ratio. Hyperbolic geometry has its own group of motions.
