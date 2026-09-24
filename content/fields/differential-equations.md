@@ -124,7 +124,7 @@ open_problems:
   - id: hilbert-sixteenth
     name: Hilbert's sixteenth problem (second part)
     status: open
-    status_note: Open as of writing, even for equations of degree two.
+    status_note: Open as of 2026, even for equations of degree two.
     description: >-
       A limit cycle is an isolated closed orbit that nearby solutions spiral towards or
       away from. For a system $x' = P(x, y)$, $y' = Q(x, y)$ with $P$ and $Q$ polynomials

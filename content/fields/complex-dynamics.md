@@ -12,7 +12,7 @@ core_question: What happens when a simple formula on the complex numbers is appl
 summary: |-
   Complex dynamics studies what happens when a function of a complex number, as simple as $z \mapsto z^2 + c$, is applied repeatedly. Some starting points stay bounded forever and others escape to infinity. The boundary between them, the Julia set, is usually a fractal of infinite intricacy. The Mandelbrot set catalogues, for every $c$ at once, which kind of Julia set appears.
 
-  Pierre Fatou and Gaston Julia founded the subject around 1918 using the tools of complex analysis, without being able to see what they described. It was largely dormant until computers drew the pictures in the late 1970s. Douady, Hubbard, Sullivan and others then turned the pictures into theorems, and the Mandelbrot set became the best-known image in mathematics. Whether it is locally connected is still unknown.
+  Pierre Fatou and Gaston Julia founded the subject around 1918 using the tools of complex analysis, without being able to see what they described. It was largely dormant until computers drew the pictures in the late 1970s. Douady, Hubbard, Sullivan and others then turned the pictures into theorems, and the Mandelbrot set became one of the best-known images in mathematics. Whether it is locally connected is still unknown.
 
 key_ideas:
   - term: Iteration
@@ -51,8 +51,8 @@ turning_points:
     contested: true
     contested_note: >-
       Fatou and Julia reached many of the same results independently at the same time,
-      and there was a bitter priority dispute between them, with both lodging sealed
-      notes with the Academy. Historians generally treat them as co-founders, and the two
+      and there was a bitter priority dispute between them, argued through notes to the
+      Academy. Historians generally treat them as co-founders, and the two
       halves of the plane are named after one each.
     sources:
       - citation: "Julia, G. (1918). Mémoire sur l'itération des fonctions rationnelles. Journal de Mathématiques Pures et Appliquées (8) 1: 47–245."
@@ -128,7 +128,7 @@ open_problems:
   - id: mlc-conjecture
     name: Is the Mandelbrot set locally connected? (MLC)
     status: open
-    status_note: Open as of writing; proved at many parameter values, beginning with Yoccoz's work around 1990.
+    status_note: Open as of 2026; proved at many parameter values, beginning with Yoccoz's work around 1990 and most recently at the Feigenbaum points (Dudko and Lyubich).
     description: >-
       Douady and Hubbard conjectured that the Mandelbrot set is locally connected: near
       each of its points, the nearby parts are connected to each other, with no infinitely
@@ -140,8 +140,8 @@ open_problems:
       except those lying in infinitely many nested smaller copies of the set, where
       renormalisation methods are needed and are only partly understood.
     unlocks: >-
-      MLC implies the density of hyperbolicity for quadratic polynomials: almost every
-      small change of $c$ can be made to reach a parameter with stable, predictable
+      MLC implies the density of hyperbolicity for quadratic polynomials: every $c$ can
+      be moved, by an arbitrarily small change, to a parameter with stable, predictable
       dynamics. It would complete the description of the simplest non-trivial family of
       dynamical systems.
     sources:
@@ -198,7 +198,7 @@ further_reading:
 
 In 1918 the Paris Academy of Sciences offered its Grand Prix for work on iterating functions. The winner was {{fig:gaston-julia|Gaston Julia}}, aged twenty-five, who had lost his nose to a wound in the First World War and wore a leather patch for the rest of his life. {{fig:pierre-fatou|Pierre Fatou}} had reached many of the same results independently, and the two quarrelled bitterly over priority. Between them they used the new theory of normal families from [complex analysis](/math/complex-analysis/) to split the plane into a region where iteration is tame and a region where it is chaotic.
 
-They could only imagine what these regions looked like. Calculating even one picture by hand would have taken a lifetime. After a burst of activity, the subject lay mostly dormant for sixty years.
+They could only imagine what these regions looked like. Calculating even one detailed picture by hand was out of the question. After a burst of activity, the subject lay mostly dormant for sixty years.
 
 ## The Pictures Arrive
 

@@ -80,7 +80,7 @@ turning_points:
     type: PROOF
     title: Lyapunov's theory of stability
     description: >-
-      Aleksandr Lyapunov's doctoral thesis in Kharkov gives general methods for proving
+      Aleksandr Lyapunov's doctoral thesis, written in Kharkov, gives general methods for proving
       that a motion is stable. The most famous finds a function, like energy, that never
       increases along solutions. Stability could now be proved without solving anything,
       and his methods are the basis of modern control engineering.
@@ -144,7 +144,7 @@ open_problems:
   - id: arnold-diffusion
     name: Arnold diffusion
     status: open
-    status_note: Open in general as of writing; proved in some special settings.
+    status_note: Open in general as of 2026; proved in some special settings.
     description: >-
       In 1964 Arnold constructed an example showing that, in systems with three or more
       degrees of freedom, orbits can drift slowly but arbitrarily far through the gaps
@@ -216,7 +216,7 @@ Most [differential equations](/math/differential-equations/) have no formula for
 
 In 1885 King Oscar II of Sweden offered a prize for progress on the stability of the solar system: will the planets continue in their orbits forever, or could one be flung out? Poincaré won in 1889 with a memoir on the three-body problem. While it was being printed in *Acta Mathematica*, {{fig:edvard-phragmen|Edvard Phragmén}}, who was editing it, asked about an unclear passage. Poincaré found that it hid a serious mistake.
 
-Correcting it, he found the opposite of what he had claimed. Near certain unstable orbits, the paths of nearby motions cross each other infinitely often in a mesh so complicated, he wrote, that he would not even attempt to draw it. {{fig:gosta-mittag-leffler|Gösta Mittag-Leffler}} recalled the printed copies, and Poincaré paid for the reprinting, which cost more than the prize. The corrected memoir of 1890 contained the first description of chaos, though the word would not be used for eighty years.
+Correcting it, he found the opposite of what he had claimed. Near certain unstable orbits, the paths of nearby motions cross each other infinitely often in a mesh so complicated, he later wrote, that he would not even attempt to draw it. {{fig:gosta-mittag-leffler|Gösta Mittag-Leffler}} recalled the printed copies, and Poincaré paid for the reprinting, which cost more than the prize. The corrected memoir of 1890 contained the first description of chaos, though the word would not be used for more than eighty years.
 
 ## Stability
 

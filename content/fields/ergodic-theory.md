@@ -89,7 +89,8 @@ turning_points:
     contested_note: >-
       Von Neumann proved his theorem first and told Birkhoff of it. Birkhoff then proved
       the stronger result, and his paper appeared in print before von Neumann's, which led
-      to friction. The two published a note in 1932 clarifying the order of events. Both
+      to friction. In 1932 Birkhoff and Bernard Koopman published a note acknowledging
+      von Neumann's priority. Both
       theorems are now credited, with von Neumann's as the first and Birkhoff's as the
       stronger.
     sources:
@@ -97,6 +98,8 @@ turning_points:
         url: null
       - citation: "von Neumann, J. (1932). Proof of the quasi-ergodic hypothesis. Proceedings of the National Academy of Sciences 18(1): 70–82."
         url: null
+      - citation: "Birkhoff, G. D. & Koopman, B. O. (1932). Recent contributions to the ergodic theory. Proceedings of the National Academy of Sciences 18(3): 279–282."
+        url: https://doi.org/10.1073/pnas.18.3.279
 
   - id: kolmogorov-sinai-entropy
     date: 1958 – 1959
@@ -149,7 +152,7 @@ open_problems:
   - id: furstenberg-times-two-three
     name: Furstenberg's ×2 ×3 conjecture
     status: open
-    status_note: Open as of writing; proved in 1990 under an extra assumption of positive entropy.
+    status_note: Open as of 2026; proved in 1990 under an extra assumption of positive entropy.
     description: >-
       Consider the numbers between 0 and 1, and the two maps that multiply by 2 and by 3,
       keeping only the fractional part. Furstenberg conjectured in 1967 that the only
@@ -159,7 +162,7 @@ open_problems:
       Each map on its own preserves a huge variety of measures. The conjecture says that
       the two together, because 2 and 3 are multiplicatively independent, are extremely
       rigid. Daniel Rudolph proved it for measures with positive entropy, but the case of
-      zero entropy, where no randomness can be exploited, is untouched.
+      zero entropy, where no randomness can be exploited, remains out of reach.
     unlocks: >-
       It is the simplest case of a family of rigidity conjectures whose higher-dimensional
       versions, by Margulis and others, imply results in number theory such as parts of
@@ -233,7 +236,7 @@ List the powers of two: 2, 4, 8, 16, 32, 64, 128, 256, 512, 1024, … and look a
 
 A number starts with the digit 1 exactly when the fractional part of its base-10 logarithm lies between $0$ and $\log_{10} 2 \approx 0.301$. For $2^n$, the logarithm is $n \log_{10} 2$. So the question is how often the fractional part of $n \times 0.30103\ldots$ lands in the interval $[0, 0.301)$. For $2^{10} = 1024$: $10 \times 0.30103 = 3.0103$, with fractional part $0.0103$, inside the interval.
 
-Adding $\log_{10} 2$ each time and keeping the fractional part is a rotation of a circle of circumference 1 by the angle $0.30103\ldots$ Because $\log_{10} 2$ is irrational, the rotation never repeats, and it is ergodic. {{fig:weyl|Hermann Weyl}} proved in 1916 that the orbit of such a rotation spends time in each arc in proportion to its length, and ergodic theory later explained why: an irrational rotation is ergodic in the strongest possible way, with only one invariant measure. So the first digit is 1 with long-run frequency $\log_{10} 2 \approx 30.1\%$.
+Adding $\log_{10} 2$ each time and keeping the fractional part is a rotation of a circle of circumference 1 by the angle $0.30103\ldots$ Because $\log_{10} 2$ is irrational, the rotation never repeats, and it is ergodic. {{fig:weyl|Hermann Weyl}} and others proved between 1909 and 1916 that the orbit of such a rotation spends time in each arc in proportion to its length, and ergodic theory later explained why: an irrational rotation is ergodic in the strongest possible way, with only one invariant measure. So the first digit is 1 with long-run frequency $\log_{10} 2 \approx 30.1\%$.
 
 Counting confirms it: of $2^1$ to $2^{1000}$, exactly 301 begin with 1. The same argument gives frequency $\log_{10}(1 + 1/d)$ for first digit $d$. Digit 7 should appear about 5.8% of the time, and it does, 56 times in the first thousand, although it first appears only at $2^{46} = 70{,}368{,}744{,}177{,}664$. This is Benford's law, and ergodic theory explains why it holds exactly for the powers of two. Auditors use Benford's law to detect fabricated accounts, whose first digits tend to be too evenly spread.
 

@@ -147,7 +147,7 @@ open_problems:
   - id: standard-map-entropy
     name: How much of the standard map is chaotic?
     status: open
-    status_note: Open as of writing, for every value of the parameter.
+    status_note: Open as of 2026, for every value of the parameter.
     description: >-
       The standard map is a simple model of a periodically kicked rotor, and of many
       systems in physics. Computer pictures show a "chaotic sea" filling most of its
