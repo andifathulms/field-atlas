@@ -187,6 +187,23 @@ The change began in 1847. {{fig:boole|George Boole}}, a self-taught schoolmaster
 
 Frege then tried to derive arithmetic from logic alone. In 1902, as the second volume went to press, he received a letter from Bertrand Russell showing that his system contained a contradiction. That paradox and its consequences belong to [set theory](/math/set-theory/).
 
+## A Closer Look: Checking an Argument by Calculation
+
+Boole's idea was that logic can be computed. Treat "true" as 1 and "false" as 0, and define each connective by a table. The trickiest is "if $p$ then $q$", written $p \to q$, which is false only when $p$ is true and $q$ is false:
+
+| $p$ | $q$ | $p \to q$ | $(p \to q) \wedge p$ | $\big((p \to q) \wedge p\big) \to q$ |
+|---|---|---|---|---|
+| 1 | 1 | 1 | 1 | 1 |
+| 1 | 0 | 0 | 0 | 1 |
+| 0 | 1 | 1 | 0 | 1 |
+| 0 | 0 | 1 | 0 | 1 |
+
+The last column is 1 in every row, so the formula is a *tautology*: true whatever $p$ and $q$ say. That formula is the rule *modus ponens* (if $p$ implies $q$, and $p$ holds, then $q$ holds), and the table has just *proved* it valid by pure calculation, without knowing what $p$ and $q$ mean. A tempting fallacy fails the same test. "If $p$ then $q$; $q$; therefore $p$" gets a 0 in the row $p = 0$, $q = 1$. It rains, the street is wet. The street is wet, so it rained? Not if someone washed it.
+
+The same tables built the digital world. Adding two one-bit numbers $p$ and $q$ needs a sum bit, which is 1 when exactly one of them is 1 ("exclusive or"), and a carry bit, which is 1 when both are ("and"). Wire a gate for each and you have a *half adder*. Chain adders together and you can add numbers of any length. Every processor is built from such circuits, which is Shannon's discovery that Boole's algebra and switching circuits are the same thing.
+
+Truth tables cannot handle "for all" and "there exists" over infinite domains, where there are too many rows to check. That is where Frege's quantifiers, Gödel's completeness theorem and, eventually, undecidability come in.
+
 ## Principia and Completeness
 
 {{fig:russell|Bertrand Russell}} and {{fig:whitehead|Alfred North Whitehead}} took up the project anyway. *Principia Mathematica* (1910–13) rebuilt mathematics from logic with a theory of "types" to block the paradoxes. Its sheer bulk made a point: all of mathematics *could* be formalised, at least in principle.
