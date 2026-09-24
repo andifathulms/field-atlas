@@ -24,6 +24,8 @@ One narrow vertical, picked before build starts (deliberately not number theory 
 
 **Fourth thread in mathematics (done):** the Foundations Thread, five fields. Mathematical Logic is the root. Set Theory joins it with Real Analysis (via Cantor). Metamathematics has Logic and Set Theory as parents, with Hilbert's programme and Gödel's incompleteness. Computability Theory and then Computational Complexity follow. Complexity feeds Public-Key Cryptography across threads.
 
+**Fifth thread in mathematics (done):** the Algebra Thread, five fields. Theory of Equations is the root. Galois Theory follows. Group Theory has Galois Theory and Non-Euclidean Geometry (Klein's Erlangen programme) as parents. Abstract Algebra has Group Theory and Algebraic Number Theory (Dedekind's ideals) as parents, and Representation Theory has Group Theory and Abstract Algebra. Theory of Equations also feeds Complex Analysis across threads.
+
 **Cross-domain view (done):** the Crossings page (`/crossings/`) joins all three domains. A diagram shows each direction of crossing, solid where it lands in a surveyed field and dashed where it reaches unmapped ground. A ledger lists every linked crossing, and a "Reaching past the survey" list shows the seeds. It is a join over the shared applications collection, as the shared-schema decision intended. Remaining from "v2 / later": the "toolkit" view, and widening each domain beyond its pilot thread.
 
 ## Non-goals (v1)
