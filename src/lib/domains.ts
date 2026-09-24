@@ -20,7 +20,7 @@ export const DOMAINS: DomainInfo[] = [
   {
     id: "math",
     name: "Mathematics",
-    blurb: "How the study of space split into many geometries, how the study of whole numbers split into theories of its own, how calculus was made rigorous, where mathematics meets its own limits, how solving equations became the study of symmetry, how counting puzzles became the mathematics of networks, how equations of motion led to chaos, how reasoning from data became the mathematics of information and learning, and what forced each split.",
+    blurb: "How the study of space split into many geometries, how the study of whole numbers split into theories of its own, how calculus was made rigorous, where mathematics meets its own limits, how solving equations became the study of symmetry, how counting puzzles became the mathematics of networks, how equations of motion led to chaos, how reasoning from data became the mathematics of information and learning, how calculation by hand became the mathematics of trustworthy computing, and what forced each split.",
     threads: [
       {
         id: "geometry",
@@ -69,6 +69,12 @@ export const DOMAINS: DomainInfo[] = [
         title: "The Statistics Thread",
         intro:
           "From combining the observations of astronomers to machines that learn from examples. Probability predicts data from a known chance mechanism. Statistics runs the argument backwards, from data to the mechanism, and for two centuries it was argued over as much as it was used. Least squares began in a priority dispute, Fisher and Neyman feuded over what a test means, and Bayesian reasoning was nearly banished before computers brought it back. Along the way Shannon measured information itself, Markov and Wiener gave laws to quantities that wander at random, and Vapnik and Valiant asked when a rule learned from examples can be trusted. The fog here is close to daily life: how to make published findings reliable, and why giant neural networks generalise when the theory says they should not.",
+      },
+      {
+        id: "computation",
+        title: "The Computation Thread",
+        intro:
+          "From Newton's method to the training of neural networks. For centuries, numbers were computed by hand, by people who followed rules and made mistakes, and the question was only how to get an answer at all. Electronic computers answered that and raised a harder question: can an answer produced by billions of rounded operations be trusted? Turing and Wilkinson showed how to tell a bad method from a bad problem. Richardson's failed weather forecast became a daily routine once the grid was made to keep up with the physics, games of chance on the ENIAC became Monte Carlo methods, and Cauchy's idea of walking downhill now trains artificial intelligence. The fog here is how fast two matrices can be multiplied, and why gradient descent trains deep networks as well as it does.",
       },
     ],
   },

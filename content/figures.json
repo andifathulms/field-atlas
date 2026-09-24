@@ -62,7 +62,7 @@
   { "id": "taylor", "name": "Richard Taylor", "turning_point_ids": ["wiles-fermat", "modularity-theorem"] },
   { "id": "galileo", "name": "Galileo Galilei", "turning_point_ids": ["galileo-falling-bodies"] },
   { "id": "kepler", "name": "Johannes Kepler", "turning_point_ids": ["kepler-laws"] },
-  { "id": "newton", "name": "Isaac Newton", "turning_point_ids": ["newton-principia", "newton-leibniz", "brachistochrone"] },
+  { "id": "newton", "name": "Isaac Newton", "turning_point_ids": ["newton-principia", "newton-leibniz", "brachistochrone", "newton-raphson-method"] },
   { "id": "hooke", "name": "Robert Hooke", "turning_point_ids": ["newton-principia", "hooke-micrographia"] },
   { "id": "le-verrier", "name": "Urbain Le Verrier", "turning_point_ids": ["neptune-discovery", "mercury-perihelion-anomaly"] },
   { "id": "galle", "name": "Johann Galle", "turning_point_ids": ["neptune-discovery"] },
@@ -766,5 +766,11 @@
   { "id": "vladimir-vapnik", "name": "Vladimir Vapnik", "turning_point_ids": ["slt-vc-theory", "slt-svm"] },
   { "id": "alexey-chervonenkis", "name": "Alexey Chervonenkis", "turning_point_ids": ["slt-vc-theory"] },
   { "id": "leslie-valiant", "name": "Leslie Valiant", "turning_point_ids": ["slt-pac-learning"] },
-  { "id": "corinna-cortes", "name": "Corinna Cortes", "turning_point_ids": ["slt-svm"] }
+  { "id": "corinna-cortes", "name": "Corinna Cortes", "turning_point_ids": ["slt-svm"] },
+  { "id": "joseph-raphson", "name": "Joseph Raphson", "turning_point_ids": ["newton-raphson-method"] },
+  { "id": "charles-babbage", "name": "Charles Babbage", "turning_point_ids": ["babbage-difference-engine"] },
+  { "id": "ada-lovelace", "name": "Ada Lovelace", "turning_point_ids": ["babbage-difference-engine"] },
+  { "id": "carl-runge", "name": "Carl Runge", "turning_point_ids": ["runge-phenomenon"] },
+  { "id": "james-wilkinson", "name": "James Wilkinson", "turning_point_ids": ["wilkinson-backward-error"] },
+  { "id": "william-kahan", "name": "William Kahan", "turning_point_ids": ["ieee-754-standard"] }
 ]
