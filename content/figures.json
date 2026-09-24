@@ -29,7 +29,7 @@
   { "id": "neves", "name": "André Neves", "turning_point_ids": ["yau-conjecture-minimal-surfaces"] },
   { "id": "song", "name": "Antoine Song", "turning_point_ids": ["yau-conjecture-minimal-surfaces"] },
   { "id": "descartes", "name": "René Descartes", "turning_point_ids": ["descartes-coordinates"] },
-  { "id": "fermat", "name": "Pierre de Fermat", "turning_point_ids": ["descartes-coordinates", "fermat-last-theorem-stated"] },
+  { "id": "fermat", "name": "Pierre de Fermat", "turning_point_ids": ["descartes-coordinates", "fermat-last-theorem-stated", "pascal-fermat"] },
   { "id": "wantzel", "name": "Pierre Wantzel", "turning_point_ids": ["wantzel-constructions"] },
   { "id": "lindemann", "name": "Ferdinand von Lindemann", "turning_point_ids": ["wantzel-constructions"] },
   { "id": "frenet", "name": "Jean Frédéric Frenet", "turning_point_ids": ["frenet-serret"] },
@@ -46,7 +46,7 @@
   { "id": "brunelleschi", "name": "Filippo Brunelleschi", "turning_point_ids": ["renaissance-perspective"] },
   { "id": "alberti", "name": "Leon Battista Alberti", "turning_point_ids": ["renaissance-perspective"] },
   { "id": "desargues", "name": "Girard Desargues", "turning_point_ids": ["desargues-pascal"] },
-  { "id": "pascal", "name": "Blaise Pascal", "turning_point_ids": ["desargues-pascal"] },
+  { "id": "pascal", "name": "Blaise Pascal", "turning_point_ids": ["desargues-pascal", "pascal-fermat"] },
   { "id": "poncelet", "name": "Jean-Victor Poncelet", "turning_point_ids": ["poncelet-traite", "projective-duality"] },
   { "id": "gergonne", "name": "Joseph Gergonne", "turning_point_ids": ["projective-duality"] },
   { "id": "cayley", "name": "Arthur Cayley", "turning_point_ids": ["cayley-klein"] },
@@ -190,5 +190,11 @@
   { "id": "weierstrass", "name": "Karl Weierstrass", "turning_point_ids": ["dirichlet-principle-crisis", "weierstrass-monster"] },
   { "id": "bolzano", "name": "Bernard Bolzano", "turning_point_ids": ["cauchy-cours"] },
   { "id": "cantor", "name": "Georg Cantor", "turning_point_ids": ["dedekind-cantor-reals"] },
-  { "id": "lebesgue", "name": "Henri Lebesgue", "turning_point_ids": ["lebesgue-integral"] }
+  { "id": "lebesgue", "name": "Henri Lebesgue", "turning_point_ids": ["lebesgue-integral"] },
+  { "id": "jacob-bernoulli", "name": "Jacob Bernoulli", "turning_point_ids": ["bernoulli-lln"] },
+  { "id": "de-moivre", "name": "Abraham de Moivre", "turning_point_ids": ["central-limit"] },
+  { "id": "laplace", "name": "Pierre-Simon Laplace", "turning_point_ids": ["central-limit", "bayes-theorem"] },
+  { "id": "bayes", "name": "Thomas Bayes", "turning_point_ids": ["bayes-theorem"] },
+  { "id": "richard-price", "name": "Richard Price", "turning_point_ids": ["bayes-theorem"] },
+  { "id": "kolmogorov", "name": "Andrey Kolmogorov", "turning_point_ids": ["kolmogorov-axioms"] }
 ]
