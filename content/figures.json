@@ -80,7 +80,7 @@
   { "id": "rossi", "name": "Bruno Rossi", "turning_point_ids": ["rossi-hall-muons"] },
   { "id": "grossmann", "name": "Marcel Grossmann", "turning_point_ids": ["einstein-field-equations"] },
   { "id": "schwarzschild", "name": "Karl Schwarzschild", "turning_point_ids": ["schwarzschild-solution"] },
-  { "id": "eddington", "name": "Arthur Eddington", "turning_point_ids": ["eclipse-1919", "eddington-subatomic-energy"] },
+  { "id": "eddington", "name": "Arthur Eddington", "turning_point_ids": ["eclipse-1919", "eddington-subatomic-energy", "chandrasekhar-limit"] },
   { "id": "frank-dyson", "name": "Frank Dyson", "turning_point_ids": ["eclipse-1919"] },
   { "id": "weiss", "name": "Rainer Weiss", "turning_point_ids": ["ligo-gravitational-waves"] },
   { "id": "barish", "name": "Barry Barish", "turning_point_ids": ["ligo-gravitational-waves"] },
@@ -446,5 +446,17 @@
   { "id": "william-fowler", "name": "William Fowler", "turning_point_ids": ["hoyle-state", "b2fh"] },
   { "id": "margaret-burbidge", "name": "Margaret Burbidge", "turning_point_ids": ["b2fh"] },
   { "id": "geoffrey-burbidge", "name": "Geoffrey Burbidge", "turning_point_ids": ["b2fh"] },
-  { "id": "alastair-cameron", "name": "Alastair Cameron", "turning_point_ids": ["b2fh"] }
+  { "id": "alastair-cameron", "name": "Alastair Cameron", "turning_point_ids": ["b2fh"] },
+  { "id": "walter-adams", "name": "Walter Adams", "turning_point_ids": ["sirius-b"] },
+  { "id": "subrahmanyan-chandrasekhar", "name": "Subrahmanyan Chandrasekhar", "turning_point_ids": ["chandrasekhar-limit"] },
+  { "id": "walter-baade", "name": "Walter Baade", "turning_point_ids": ["baade-zwicky"] },
+  { "id": "fritz-zwicky", "name": "Fritz Zwicky", "turning_point_ids": ["baade-zwicky"] },
+  { "id": "robert-oppenheimer", "name": "J. Robert Oppenheimer", "turning_point_ids": ["collapse-1939"] },
+  { "id": "jocelyn-bell-burnell", "name": "Jocelyn Bell Burnell", "turning_point_ids": ["pulsar-discovery"] },
+  { "id": "antony-hewish", "name": "Antony Hewish", "turning_point_ids": ["pulsar-discovery"] },
+  { "id": "louise-webster", "name": "Louise Webster", "turning_point_ids": ["cygnus-x1"] },
+  { "id": "paul-murdin", "name": "Paul Murdin", "turning_point_ids": ["cygnus-x1"] },
+  { "id": "tom-bolton", "name": "Tom Bolton", "turning_point_ids": ["cygnus-x1"] },
+  { "id": "russell-hulse", "name": "Russell Hulse", "turning_point_ids": ["binary-pulsar"] },
+  { "id": "joseph-taylor", "name": "Joseph Taylor", "turning_point_ids": ["binary-pulsar"] }
 ]
