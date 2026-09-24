@@ -197,7 +197,7 @@ applications:
         url: null
 
 further_reading:
-  - citation: "Nüsslein-Volhard, C. (2006). Coming to Life: How Genes Drive Development. Yale University Press."
+  - citation: "Nüsslein-Volhard, C. (2006). Coming to Life: How Genes Drive Development. Kales Press."
     url: null
     note: A short, clear account by one of the discoverers.
   - citation: "Lawrence, P. A. (1992). The Making of a Fly: The Genetics of Animal Design. Blackwell Scientific."

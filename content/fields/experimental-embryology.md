@@ -65,15 +65,15 @@ turning_points:
     title: The organiser
     description: >-
       For her doctoral work in Hans Spemann's laboratory, Hilde Mangold grafts a small
-      piece of the dorsal lip of one newt embryo into the belly of another of a
-      differently coloured species. The host grows a second body axis, with a nerve cord
+      piece of the dorsal lip of a pale newt embryo into the belly of an embryo of a
+      darker species. The host grows a second body axis, with a nerve cord
       and muscle, made mostly of its own cells. The graft had induced them. Spemann won
       the 1935 Nobel prize in medicine for the discovery of the organiser.
     contested: true
     contested_note: >-
       Hilde Mangold performed the experiments, and Spemann, who designed them, is first
-      author of the paper. She died in a domestic gas-heater accident in 1924, aged 26,
-      before it appeared, and the Nobel prize is not awarded posthumously. Accounts differ
+      author of the paper. She died in a domestic gas-heater accident in 1924, aged 25,
+      before it appeared, and so could not share the 1935 prize. Accounts differ
       on how much of the discovery was hers, and the case is often cited in discussions of
       credit for students' work.
     sources:
@@ -152,8 +152,8 @@ turning_points:
     contested: true
     contested_note: >-
       Wilmut was the public face of Dolly, but Campbell developed the key step of pausing
-      the donor cells' division cycle before transfer. In 2006 Wilmut stated that Campbell
-      deserved most of the credit. How to divide it between them, and the rest of the team,
+      the donor cells' division cycle before transfer. In employment-tribunal testimony
+      reported in 2006, Wilmut said that Campbell deserved 66 per cent of the credit. How to divide it between them, and the rest of the team,
       has been discussed since.
     sources:
       - citation: "Wilmut, I., Schnieke, A. E., McWhir, J., Kind, A. J. & Campbell, K. H. S. (1997). Viable offspring derived from fetal and adult mammalian cells. Nature 385: 810–813."
@@ -205,6 +205,8 @@ applications:
     sources:
       - citation: "Wilmut, I., Campbell, K. & Tudge, C. (2000). The Second Creation: Dolly and the Age of Biological Control. Farrar, Straus and Giroux."
         url: null
+      - citation: "Smithsonian Magazine (2021). Elizabeth Ann is the first cloned black-footed ferret."
+        url: https://www.smithsonianmag.com/smart-news/elizabeth-ann-first-cloned-black-footed-ferret-180977065/
 
 further_reading:
   - citation: "Hamburger, V. (1988). The Heritage of Experimental Embryology: Hans Spemann and the Organizer. Oxford University Press."

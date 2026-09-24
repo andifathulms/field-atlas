@@ -83,13 +83,15 @@ turning_points:
     description: >-
       Marcello Malpighi's drawings of chick embryos in 1672 seemed to show structures
       already present in eggs that had barely been incubated, and by 1700 most naturalists
-      believed in preformation. In 1759 Caspar Friedrich Wolff argued from the chick that
-      organs such as the gut form from flat sheets that fold, and that nothing is
-      preformed. Albrecht von Haller rejected him, and the view that bodies form anew was
+      believed in preformation. In 1759 Caspar Friedrich Wolff argued that nothing is
+      preformed, and in 1768–69 he showed from the chick that the gut forms from a flat
+      sheet that folds. Albrecht von Haller rejected him, and the view that bodies form anew was
       not generally accepted until the 1820s.
     contested: false
     sources:
       - citation: "Wolff, C. F. (1759). Theoria generationis. Hendel, Halle."
+        url: null
+      - citation: "Wolff, C. F. (1768–1769). De formatione intestinorum. Novi Commentarii Academiae Scientiarum Imperialis Petropolitanae 12 and 13."
         url: null
       - citation: "Roe, S. A. (1981). Matter, Life, and Generation: Eighteenth-Century Embryology and the Haller–Wolff Debate. Cambridge University Press."
         url: null
@@ -197,7 +199,7 @@ further_reading:
 
 ## Eggs
 
-The oldest surviving study of an embryo is {{fig:aristotle|Aristotle}}'s. He opened hens' eggs on successive days and saw the heart appear as a beating spot of blood before any other organ. He concluded that the parts of an embryo form one after another, in order. He called the process generation. It is now called epigenesis.
+The oldest detailed study of an embryo to survive is {{fig:aristotle|Aristotle}}'s. He opened hens' eggs on successive days and saw the heart appear as a beating spot of blood before any other organ. He concluded that the parts of an embryo form one after another, in order. He called the process generation. It is now called epigenesis.
 
 Two thousand years later {{fig:william-harvey|William Harvey}}, physician to Charles I, took up the question. He dissected the king's deer at intervals after the rut, expecting to find an egg in the womb, and did not. He found only a formless fluid in which an embryo later appeared. He still concluded, from the chick and from reasoning, that every animal begins as an egg. His book of 1651 carried the motto "ex ovo omnia", everything from an egg.
 
@@ -205,7 +207,7 @@ Two thousand years later {{fig:william-harvey|William Harvey}}, physician to Cha
 
 The microscope made the question harder, not easier. In 1672 Marcello Malpighi drew chick embryos in eggs that had hardly been warmed and saw structures already in place. Others looking at sperm imagined tiny people curled inside. Preformation, the idea that the body exists complete in miniature and only grows, became the orthodox view. It had a philosophical appeal: if God had made every body at the Creation, nested one inside the next, then matter did not need the power to organise itself.
 
-{{fig:caspar-friedrich-wolff|Caspar Friedrich Wolff}} disagreed. In 1759 he showed that the chick's gut begins as a flat sheet that folds into a tube, and that blood vessels form where there were none. The body is built, not unpacked. The great physiologist Albrecht von Haller rejected Wolff's argument, and it took another two generations of better microscopes before epigenesis won.
+{{fig:caspar-friedrich-wolff|Caspar Friedrich Wolff}} disagreed. In 1759 he argued that blood vessels form where there were none, and in 1768–69 he showed that the chick's gut begins as a flat sheet that folds into a tube. The body is built, not unpacked. The great physiologist Albrecht von Haller rejected Wolff's argument, and it took another two generations of better microscopes before epigenesis won.
 
 ## Layers and Laws
 

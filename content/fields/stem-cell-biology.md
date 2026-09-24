@@ -110,9 +110,9 @@ turning_points:
     title: Induced pluripotent stem cells
     description: >-
       Shinya Yamanaka and Kazutoshi Takahashi in Kyoto take 24 genes that are active in
-      embryonic stem cells and insert them into mouse skin cells. By removing them one at
-      a time, they find that four, Oct4, Sox2, Klf4 and c-Myc, are enough to turn a skin
-      cell into a pluripotent one. In 2007 they and James Thomson's group do the same with
+      embryonic stem cells and insert them into mouse fibroblasts, the connective-tissue
+      cells of skin. By removing them one at a time, they find that four, Oct4, Sox2, Klf4
+      and c-Myc, are enough to turn a fibroblast into a pluripotent one. In 2007 they and James Thomson's group do the same with
       human cells. Yamanaka shared the 2012 Nobel prize with John Gurdon.
     contested: false
     sources:
@@ -231,7 +231,7 @@ In 1998 {{fig:james-thomson|James Thomson}} grew human embryonic stem cells. Hop
 
 ## Four Genes
 
-{{fig:john-gurdon|John Gurdon}}'s frogs, in [experimental embryology](/biology/experimental-embryology/), had shown that an egg can reset a specialised nucleus. In 1987 Harold Weintraub's group had shown that a single gene, MyoD, can turn a skin cell into a muscle cell. {{fig:shinya-yamanaka|Shinya Yamanaka}} wondered whether the genes that keep embryonic stem cells pluripotent could reset a skin cell without an egg. With {{fig:kazutoshi-takahashi|Kazutoshi Takahashi}} he picked 24 candidates, put them all into mouse skin cells together, and got colonies that looked like embryonic stem cells. They then worked out which genes mattered, and in 2006 reported that four were enough. Their induced pluripotent stem cells, or iPS cells, avoided both the embryo and the egg.
+{{fig:john-gurdon|John Gurdon}}'s frogs, in [experimental embryology](/biology/experimental-embryology/), had shown that an egg can reset a specialised nucleus. In 1987 Harold Weintraub's group had shown that a single gene, MyoD, can turn a fibroblast, a connective-tissue cell, into a muscle cell. {{fig:shinya-yamanaka|Shinya Yamanaka}} wondered whether the genes that keep embryonic stem cells pluripotent could reset a skin cell without an egg. With {{fig:kazutoshi-takahashi|Kazutoshi Takahashi}} he picked 24 candidates, put them all into mouse skin cells together, and got colonies that looked like embryonic stem cells. They then worked out which genes mattered, and in 2006 reported that four were enough. Their induced pluripotent stem cells, or iPS cells, avoided both the embryo and the egg.
 
 ## A Closer Look: Finding Four Genes Among Twenty-Four
 
@@ -257,10 +257,10 @@ Each test took weeks, so testing combinations one by one was hopeless. Instead t
 | Leave out each of 10 in turn | 10 |
 | Total | 36 |
 
-Thirty-six experiments instead of ten thousand. The method works because the effect needs every essential gene at once: leaving out any one of them breaks it.
+In outline, about thirty-six experiments instead of ten thousand. The published work ran more controls than this, but the logic was the same. The method works because the effect needs every essential gene at once: leaving out any one of them breaks it.
 
 Reprogramming was rare. In the early experiments only a small fraction of cells, commonly quoted as between 0.01 and 0.1 per cent, became iPS colonies. From a dish of one million cells that means 100 to 1,000 colonies. It was enough to find, pick and grow them, and later studies showed that the rest were not incapable, only slower: given time, nearly every cell can make the switch.
 
 ## Cells to Organs
 
-iPS cells spread quickly because anyone could make them from a skin sample, with no embryo involved. Patients' own cells could be turned into neurons or heart cells to study their disease in a dish. In 2009 {{fig:toshiro-sato|Toshiro Sato}} and {{fig:hans-clevers|Hans Clevers}} showed that single stem cells from the gut, given the right signals, build miniature gut linings, the first organoids. The field also suffered a second scandal in 2014, when claims that an acid bath could make stem cells collapsed within months. The first treatments with cells made from iPS cells are in trials. Replacing a whole organ remains out of reach. It will need what [developmental genetics](/biology/developmental-genetics/) has learned about how organs are laid out, and what [cell biology](/biology/cell-biology/) knows about how cells hold their shape and identity.
+iPS cells spread quickly because anyone could make them from a skin sample, with no embryo involved. Patients' own cells could be turned into neurons or heart cells to study their disease in a dish. In 2009 {{fig:toshiro-sato|Toshiro Sato}} and {{fig:hans-clevers|Hans Clevers}} showed that single stem cells from the gut, given the right signals, build miniature gut linings, a founding result for the modern study of organoids. The field also suffered a second scandal in 2014, when claims that an acid bath could make stem cells collapsed within months. The first treatments with cells made from iPS cells are in trials. Replacing a whole organ remains out of reach. It will need what [developmental genetics](/biology/developmental-genetics/) has learned about how organs are laid out, and what [cell biology](/biology/cell-biology/) knows about how cells hold their shape and identity.

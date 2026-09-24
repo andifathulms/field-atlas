@@ -90,8 +90,8 @@ turning_points:
     title: Deep homology
     description: >-
       Neil Shubin, Cliff Tabin and Sean Carroll review how limbs evolved and find that the
-      appendages of insects, fish and tetrapods, which share no common ancestor with limbs,
-      are all patterned by the same genes. They call this deep homology. The genes were
+      appendages of insects and vertebrates, which did not evolve from a common appendage,
+      are patterned by many of the same genes. They call this deep homology. The genes were
       older than the organs, and were borrowed again and again to build new ones.
     contested: false
     sources:
