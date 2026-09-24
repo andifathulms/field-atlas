@@ -29,10 +29,11 @@ export function SiteNav({ items }: { items: NavItem[] }) {
   return (
     <nav ref={ref} aria-label="Sections" className="-mx-4 overflow-x-auto px-4 sm:mx-0 sm:px-0 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
       <ul className="flex items-center gap-1">
-        {items.map((item) => {
+        {items.map((item, i) => {
+          const firstOther = !item.domain && (i === 0 || !!items[i - 1].domain);
           const active = pathname.startsWith(item.href);
           return (
-            <li key={item.href} data-domain={item.domain} className={item.domain ? "" : "ml-1 border-l border-rule pl-1 sm:ml-2 sm:pl-2"}>
+            <li key={item.href} data-domain={item.domain} className={firstOther ? "ml-1 border-l border-rule pl-1 sm:ml-2 sm:pl-2" : ""}>
               <Link
                 href={item.href}
                 aria-current={active ? "page" : undefined}

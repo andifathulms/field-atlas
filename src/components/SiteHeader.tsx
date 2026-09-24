@@ -8,6 +8,8 @@ export function SiteHeader() {
   const items = [
     ...DOMAINS.map((d) => ({ href: `/${d.id}/`, label: d.name, domain: d.id })),
     { href: "/crossings/", label: "Crossings" },
+    { href: "/people/", label: "People" },
+    { href: "/search/", label: "Search" },
   ];
   return (
     <header className="sticky top-0 z-40 border-b border-rule bg-paper/85 backdrop-blur-md backdrop-saturate-150">
