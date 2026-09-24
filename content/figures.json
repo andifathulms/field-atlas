@@ -578,7 +578,7 @@
   { "id": "john-hopfield", "name": "John Hopfield", "turning_point_ids": ["brain-hopfield-backprop"] },
   { "id": "david-rumelhart", "name": "David Rumelhart", "turning_point_ids": ["brain-hopfield-backprop"] },
   { "id": "geoffrey-hinton", "name": "Geoffrey Hinton", "turning_point_ids": ["brain-hopfield-backprop"] },
-  { "id": "sydney-brenner", "name": "Sydney Brenner", "turning_point_ids": ["brain-connectomes"] },
+  { "id": "sydney-brenner", "name": "Sydney Brenner", "turning_point_ids": ["brain-connectomes", "worm-cell-lineage"] },
   { "id": "alexander-von-humboldt", "name": "Alexander von Humboldt", "turning_point_ids": ["humboldt-plant-geography"] },
   { "id": "alfred-wegener", "name": "Alfred Wegener", "turning_point_ids": ["wegener-continental-drift"] },
   { "id": "robert-macarthur", "name": "Robert MacArthur", "turning_point_ids": ["island-biogeography"] },
@@ -624,5 +624,14 @@
   { "id": "john-gurdon", "name": "John Gurdon", "turning_point_ids": ["nuclear-transfer-frogs"] },
   { "id": "lewis-wolpert", "name": "Lewis Wolpert", "turning_point_ids": ["wolpert-positional-information"] },
   { "id": "ian-wilmut", "name": "Ian Wilmut", "turning_point_ids": ["dolly-the-sheep"] },
-  { "id": "keith-campbell", "name": "Keith Campbell", "turning_point_ids": ["dolly-the-sheep"] }
+  { "id": "keith-campbell", "name": "Keith Campbell", "turning_point_ids": ["dolly-the-sheep"] },
+  { "id": "edward-lewis", "name": "Edward Lewis", "turning_point_ids": ["bithorax-complex"] },
+  { "id": "christiane-nusslein-volhard", "name": "Christiane Nüsslein-Volhard", "turning_point_ids": ["heidelberg-screen", "bicoid-gradient"] },
+  { "id": "eric-wieschaus", "name": "Eric Wieschaus", "turning_point_ids": ["heidelberg-screen"] },
+  { "id": "wolfgang-driever", "name": "Wolfgang Driever", "turning_point_ids": ["bicoid-gradient"] },
+  { "id": "william-mcginnis", "name": "William McGinnis", "turning_point_ids": ["homeobox-discovery"] },
+  { "id": "walter-gehring", "name": "Walter Gehring", "turning_point_ids": ["homeobox-discovery"] },
+  { "id": "matthew-scott", "name": "Matthew Scott", "turning_point_ids": ["homeobox-discovery"] },
+  { "id": "john-sulston", "name": "John Sulston", "turning_point_ids": ["worm-cell-lineage"] },
+  { "id": "robert-horvitz", "name": "H. Robert Horvitz", "turning_point_ids": ["worm-programmed-cell-death"] }
 ]
