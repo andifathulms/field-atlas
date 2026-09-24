@@ -183,6 +183,28 @@ The second shock came from invariant theory, then a field of heroic calculation.
 
 Meanwhile {{fig:dedekind|Dedekind}} had introduced ideals to repair factorisation in [algebraic number theory](/math/algebraic-number-theory/), and in 1910 {{fig:steinitz|Ernst Steinitz}} worked out the theory of fields from axioms alone.
 
+## A Closer Look: When Division Works, and When It Doesn't
+
+Clock arithmetic modulo 5 uses the numbers $0, 1, 2, 3, 4$, wrapping around at 5. Every nonzero number has a multiplicative inverse, a partner it multiplies with to give 1:
+
+$$
+1 \times 1 = 1, \quad 2 \times 3 = 6 \equiv 1, \quad 4 \times 4 = 16 \equiv 1 .
+$$
+
+So you can divide by anything nonzero. That makes the numbers modulo 5 a *field*, a number system as well-behaved for algebra as the rationals, though it has only five elements.
+
+Modulo 6 is different. Here $2 \times 3 = 6 \equiv 0$: two nonzero numbers multiply to zero. That breaks division. If 2 had an inverse, multiplying $2 \times 3 = 0$ by it would give $3 = 0$. So the numbers modulo 6 form a *ring* but not a field. The difference is exactly that 5 is prime and 6 is not. A single abstract property ("no two nonzero elements multiply to zero, and every nonzero element is invertible") separates the systems where algebra works fully from those where it does not.
+
+Hamilton's quaternions break a different rule. Their units satisfy $i^2 = j^2 = k^2 = ijk = -1$, from which
+
+$$
+ij = k, \qquad ji = -k .
+$$
+
+Multiplication is not commutative, yet every nonzero quaternion has an inverse, so division still works (on the correct side). Quaternions form a *division ring*, not a field. That is precisely why they describe three-dimensional rotations, which also depend on order.
+
+Abstract algebra's method is to list the rules a system obeys, find the theorems that follow from those rules alone, and then recognise the same structure wherever it recurs: in remainders, polynomials, matrices, rotations or cryptographic codes.
+
 ## Noether's Revolution
 
 The decisive figure was {{fig:noether|Emmy Noether}}. Barred as a woman from a regular position at Göttingen, she lectured for years under Hilbert's name without pay. In 1921 she showed that the factorisation theorems of number theory and of polynomial algebra all follow from one abstract condition: every increasing chain of ideals stops. Rings satisfying it are now called *Noetherian*. Calculations gave way to structure: study objects through the maps that preserve their operations. Her students, the "Noether boys", carried the style everywhere.
