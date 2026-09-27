@@ -6,3 +6,6 @@ next-env.d.ts
 .DS_Store
 .env*.local
 npm-debug.log*
+
+# Brand export workspace — masters live outside the repo; public/ holds the used sizes.
+exports/
