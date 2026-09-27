@@ -31,6 +31,8 @@ jobs:
         env:
           # "/field-atlas" for a project page, "" for a user page or custom domain.
           NEXT_PUBLIC_BASE_PATH: ${{ steps.pages.outputs.base_path }}
+          # The full origin, so social cards and canonical links are absolute.
+          NEXT_PUBLIC_SITE_URL: ${{ steps.pages.outputs.base_url }}
       - uses: actions/upload-pages-artifact@v5
         with:
           path: out
