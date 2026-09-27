@@ -114,6 +114,14 @@ This is a DAG, not a strict linear chain — a field can have more than one pare
 - Field pages derive chapter anchors (`#ch-<slug>`) from chapter titles, so renaming a chapter changes its anchor. Reading time counts summary and chapter words at 220 per minute.
 - The root `katex` dependency exists only for its stylesheet and is pinned to the version `rehype-katex` renders with. Bump them together, or inline math loses its sizing.
 
+## Brand assets and social cards — as built
+- `exports/` is the brand master set and is git-ignored. Only the sizes the site serves are committed, under `public/`, with the C2PA metadata chunks stripped (the 16px icon was 6 KB of manifest around 450 bytes of image). Re-export there, re-copy, re-strip.
+- The header keeps the drawn `AtlasMark` rather than a PNG: it takes `currentColor`, so it follows the theme. The exported trifork is used where a file is required — favicon, apple-touch, manifest icons, social cards, README banner.
+- `src/app/site.webmanifest/route.ts` serves the manifest, and `layout.tsx` writes its `<link>` by hand. Next's `manifest.ts` convention and `metadata.manifest` both emit a link without the project page's base path; the same applies to icons, which is why they go through `withBase()`.
+- Social cards: `src/lib/og.tsx` draws the card, `src/lib/ogCards.ts` defines one per page, and `src/app/og/[...slug]/route.tsx` renders them at build time. The slug carries the `.png` so the static export writes a real image file — an extensionless route file is served as a download by Pages. Card fonts are committed TTFs in `src/fonts/` (satori cannot read woff2, and `next/font` files have no stable path).
+- `src/lib/meta.ts` builds every page's metadata from `src/lib/site.ts`; `NEXT_PUBLIC_SITE_URL` comes from `actions/configure-pages` in the workflow. Without it, URLs stay relative, which is right for `npm run dev` and wrong for an unfurler — so check a card against the deployed URL, not localhost.
+- Threads are sections on a domain page (`#thread-<id>`), so they share that page's card; a fragment cannot carry its own.
+
 ## Deployment
 Static export → GitHub Pages, same as the other portfolio-vertical apps (Ruleset, empire-rankings, etc.). `.github/workflows/deploy.yml` builds on push to `main` and sets `NEXT_PUBLIC_BASE_PATH` from `actions/configure-pages`. Anything not rendered through `next/link` (e.g. `<a>` inside SVG) must use `withBase()` from `src/lib/paths.ts`.
 
