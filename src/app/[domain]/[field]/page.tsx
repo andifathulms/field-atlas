@@ -8,6 +8,7 @@ import { Sources } from "@/components/Sources";
 import { getField, getFields, getFigure, getFiguresForTurningPoint, getIncomingLinks } from "@/lib/content";
 import { getDomain, getThread, threadPath } from "@/lib/domains";
 import { figureAnchor, resolveFigureMentions } from "@/lib/mentions";
+import { pageMetadata } from "@/lib/meta";
 import { fieldPath } from "@/lib/paths";
 import {
   OPEN_PROBLEM_STATUS_LABEL,
@@ -26,7 +27,13 @@ type Params = { params: { domain: string; field: string } };
 
 export function generateMetadata({ params }: Params): Metadata {
   const field = getField(params.field);
-  return { title: field?.name, description: field?.core_question };
+  if (!field) return {};
+  return pageMetadata({
+    title: field.name,
+    description: field.core_question,
+    path: fieldPath(field.domain, field.id),
+    card: `${field.domain}/${field.id}`,
+  });
 }
 
 const ROMAN = ["I", "II", "III", "IV", "V", "VI", "VII", "VIII", "IX", "X"];

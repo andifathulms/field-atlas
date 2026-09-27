@@ -2,14 +2,17 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { getField, getFigures, getTurningPoint } from "@/lib/content";
 import { getDomain } from "@/lib/domains";
+import { pageMetadata } from "@/lib/meta";
 import { fieldPath } from "@/lib/paths";
 import { personSortKey, yearOf } from "@/lib/people";
 import type { Domain } from "@/lib/types";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = pageMetadata({
   title: "People",
   description: "Everyone who appears in the atlas, with the turning points they took part in.",
-};
+  path: "/people/",
+  card: "people",
+});
 
 /** Literal class names so Tailwind keeps them; one per domain accent. */
 const DOMAIN_TEXT: Record<Domain, string> = {

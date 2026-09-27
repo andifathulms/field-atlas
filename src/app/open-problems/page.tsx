@@ -3,13 +3,16 @@ import Link from "next/link";
 import { Markdown } from "@/components/Markdown";
 import { getFields } from "@/lib/content";
 import { DOMAINS, shortThreadTitle } from "@/lib/domains";
+import { pageMetadata } from "@/lib/meta";
 import { fieldPath } from "@/lib/paths";
 import { OPEN_PROBLEM_STATUS_LABEL, type OpenProblemStatus } from "@/lib/types";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = pageMetadata({
   title: "Open problems",
   description: "Every unresolved or recently resolved problem at the edge of the atlas, in one place.",
-};
+  path: "/open-problems/",
+  card: "open-problems",
+});
 
 const STATUS_ORDER: OpenProblemStatus[] = ["open", "conjectured", "recently_resolved"];
 

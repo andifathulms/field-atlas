@@ -6,6 +6,7 @@ import { Legend } from "@/components/Legend";
 import { ThreadNav } from "@/components/ThreadNav";
 import { getFields } from "@/lib/content";
 import { DOMAINS, getDomain, getThread, shortThreadTitle, type ThreadInfo } from "@/lib/domains";
+import { pageMetadata } from "@/lib/meta";
 import { fieldPath } from "@/lib/paths";
 import { layoutTree, readingOrder } from "@/lib/treeLayout";
 import type { Field } from "@/lib/types";
@@ -18,7 +19,14 @@ export function generateStaticParams() {
 
 export function generateMetadata({ params }: { params: { domain: string } }): Metadata {
   const domain = getDomain(params.domain);
-  return { title: domain?.name };
+  if (!domain) return {};
+  const threads = domain.threads.map((t) => shortThreadTitle(t.title)).join(", ");
+  return pageMetadata({
+    title: domain.name,
+    description: `${getFields(domain.id).length} fields of ${domain.name.toLowerCase()} in ${domain.threads.length} threads: ${threads}. How each one branched, and what forced the split.`,
+    path: `/${domain.id}/`,
+    card: domain.id,
+  });
 }
 
 /** One thread: its map and the index of its fields. */

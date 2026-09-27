@@ -3,12 +3,15 @@ import Link from "next/link";
 import { SearchBox, type SearchItem } from "@/components/SearchBox";
 import { getField, getFields, getFigures } from "@/lib/content";
 import { getDomain, getThread, shortThreadTitle } from "@/lib/domains";
+import { pageMetadata } from "@/lib/meta";
 import { fieldPath } from "@/lib/paths";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = pageMetadata({
   title: "Search",
   description: "Search every field, turning point, open problem and person in the atlas.",
-};
+  path: "/search/",
+  card: "search",
+});
 
 /** Plain text for matching: drop Markdown and maths markup, collapse whitespace. */
 function plain(s: string): string {

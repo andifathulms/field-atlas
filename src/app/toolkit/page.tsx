@@ -1,14 +1,17 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { getDomain, getThread, shortThreadTitle } from "@/lib/domains";
+import { pageMetadata } from "@/lib/meta";
 import { fieldPath } from "@/lib/paths";
 import { rankedReach } from "@/lib/reach";
 import type { Domain } from "@/lib/types";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = pageMetadata({
   title: "Toolkit",
   description: "Which fields' ideas travelled furthest: across threads by lineage, and across domains by use.",
-};
+  path: "/toolkit/",
+  card: "toolkit",
+});
 
 /** Literal class names so Tailwind keeps them; one per domain accent. */
 const DOMAIN_TEXT: Record<Domain, string> = {

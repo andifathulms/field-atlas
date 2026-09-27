@@ -3,13 +3,16 @@ import Link from "next/link";
 import { CrossingsDiagram } from "@/components/CrossingsDiagram";
 import { getCrossings, getFields, type Crossing } from "@/lib/content";
 import { DOMAINS, getDomain } from "@/lib/domains";
+import { pageMetadata } from "@/lib/meta";
 import { fieldPath } from "@/lib/paths";
 import type { Domain } from "@/lib/types";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = pageMetadata({
   title: "Crossings",
   description: "Where results from one domain of knowledge land in another: mathematics, physics and biology.",
-};
+  path: "/crossings/",
+  card: "crossings",
+});
 
 /** Literal class names so Tailwind keeps them; one per domain accent. */
 const DOMAIN_TEXT: Record<Domain, string> = {

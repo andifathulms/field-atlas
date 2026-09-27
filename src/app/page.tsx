@@ -1,10 +1,20 @@
+import type { Metadata } from "next";
 import Link from "next/link";
 import { Legend } from "@/components/Legend";
 import { getCrossings, getFields } from "@/lib/content";
 import { DOMAINS } from "@/lib/domains";
 import { SurveyPlate } from "@/components/SurveyPlate";
 import { ThreadAtlas } from "@/components/ThreadAtlas";
+import { pageMetadata } from "@/lib/meta";
+import { SITE_DESCRIPTION, SITE_NAME } from "@/lib/site";
 import { surveySummary } from "@/lib/stats";
+
+export const metadata: Metadata = pageMetadata({
+  title: SITE_NAME,
+  description: SITE_DESCRIPTION,
+  path: "/",
+  card: "home",
+});
 
 export default function Home() {
   const crossings = getCrossings();
