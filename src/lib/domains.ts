@@ -163,6 +163,12 @@ export const DOMAINS: DomainInfo[] = [
           "From a haberdasher reading London's bills of mortality to a drug designed against one abnormal enzyme. Most of what is known about why people fall ill was inferred from counting, because the experiment that would settle it cannot be run on people — which is why this thread is as much about defences against confounding as about causes. Filtration revealed agents smaller than any cell and with no metabolism of their own; treating infection as an ecological system showed that an epidemic stops while most of the population is still susceptible; and the age at which cancers appear turned out to count the mutations they require. The fog here is which observational findings to believe, how far an epidemic can be forecast, what makes a tumour spread, and how to stay ahead of resistance.",
       },
       {
+        id: "structure",
+        title: "The Molecular Structure Thread",
+        intro:
+          "From a diffraction pattern missing half its information to a structure for every sequence ever read. X-rays can locate every atom in a protein, except that a detector records amplitudes and a reconstruction needs phases, and defeating that took twenty years and a mercury atom. The first structure solved, myoglobin in 1958, was irregular and asymmetric, which was the opposite of what everyone expected; the first enzyme solved, seven years later, showed a mechanism readable off the map. The same thinking extended to machines that convert one ATP into an eight-nanometre step, and to a sheet two molecules thick that holds six times the field which breaks down air. Prediction was then solved from the wrong direction entirely -- not from physics but from statistics over the structures and sequences already collected. The fog here is what to do about the third of the proteome with no fixed shape, how motors coordinate their two heads, how lipids are organised in a living membrane, and how to predict the states a protein moves between rather than one of them.",
+      },
+      {
         id: "brain",
         title: "The Brain Thread",
         intro:

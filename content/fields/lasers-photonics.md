@@ -235,6 +235,7 @@ applications:
       along a microtubule, RNA polymerase pausing as it transcribes, and the force needed to unzip a
       DNA hairpin were all measured by holding a bead in a laser beam.
     domain: biology
+    field_id: molecular-machines
     sources:
       - citation: "Svoboda, K., Schmidt, C. F., Schnapp, B. J. & Block, S. M. (1993). Direct observation of kinesin stepping by optical trapping interferometry. Nature 365: 721–727."
         url: null
