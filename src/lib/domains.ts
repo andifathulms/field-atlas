@@ -151,6 +151,12 @@ export const DOMAINS: DomainInfo[] = [
           "From Humboldt's mountain to the Red List. Humboldt saw that the plants on a tropical mountain are layered like the climates from the equator to the poles, and Wallace traced a line through the islands of Southeast Asia that divides the animals of Asia from those of Australia. Explaining where species live led to counting them: how populations grow, crash and cycle, how competing species share one place, and how energy and nutrients flow through a whole lake or forest. By the 1960s the same science was measuring what people were doing to the living world, and conservation biology was founded as a discipline built for a crisis. The fog here is why the tropics hold so many species, how so many competitors manage to live together, and whether an ecosystem's collapse can be seen coming.",
       },
       {
+        id: "phylogeny",
+        title: "The Tree of Life Thread",
+        intro:
+          "From Linnaeus's two-word names to the archaeal branch we turn out to sit on. Classification began as a filing system and became a claim about history: groups within groups is what descent produces, so a classification can be wrong. Fossils gave that history dates and showed that species die out; sequences gave it a clock that runs in organisms with no anatomy in common. The methods that infer a tree from data now carry their own error bars, and the deepest branches are still moving — the fog here is where the universal tree is rooted, which animals branched off first, and why lineages that evolve fast over decades go nowhere over millions of years.",
+      },
+      {
         id: "development",
         title: "The Development Thread",
         intro:
