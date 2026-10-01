@@ -108,6 +108,12 @@ export const DOMAINS: DomainInfo[] = [
           "From dark lines in sunlight to planets around other suns. In 1835 a philosopher declared that the chemistry of the stars could never be known. Within thirty years spectroscopy was reading it from starlight, and the colours of stars became a code for their temperature, composition and motion. Physics then explained what makes stars shine and how they forge the elements, what is left when they die, and how they gather into galaxies around black holes. The fog here is the interior of neutron stars, the Sun's own composition, and whether any of the thousands of known planets carries life.",
       },
       {
+        id: "light",
+        title: "The Light Thread",
+        intro:
+          "From the law of refraction, written in Baghdad around 984, to flashes short enough to resolve an electron's orbit. Light was the first thing in nature to be described by an exact rule and the last to be explained: Newton's prisms and Huygens's wavefronts both fitted the evidence, and the standoff lasted a century until two slits produced darkness out of light. Being a wave then imposed a hard limit on what any microscope can see, which bounded biology for 120 years. Counting photons one at a time revealed light that no classical field can imitate, and the laser turned the subject into the instrument with which most of the rest of physics is now measured. The fog here is a single-photon source good enough to build a computer from, a laser made of silicon, and how long an electron takes to tunnel.",
+      },
+      {
         id: "matter",
         title: "The Matter Thread",
         intro:
