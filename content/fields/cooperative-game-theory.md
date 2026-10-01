@@ -256,6 +256,14 @@ The second is about fairness, and it cannot be read off the characteristic funct
 
 Both questions are reasonable. Their answers frequently disagree.
 
+## Measuring Power Instead of Votes
+
+The Shapley value's first application outside economics was to politics, and it produced a result that electoral arithmetic conceals. {{fig:shapley|Shapley}} and {{fig:shubik|Martin Shubik}} asked in 1954 what a member of a voting body is actually worth, and answered it with the value: imagine the members declaring their support one at a time in a random order, and credit each member for the orderings in which it is the one that turns a losing coalition into a winning one.
+
+The results are frequently nothing like the vote counts. A member holding a tenth of the votes in a body requiring a simple majority may be pivotal in a fifth of the orderings, or — if the other blocks are arranged so that it is never needed — in none at all. In the United Nations Security Council, where nine of fifteen votes are needed and any of the five permanent members can veto, the index gives each permanent member about 19.6% of the power and each of the ten elected members about 0.2%: a ratio near a hundred to one, from a voting rule that looks like 1 vote each plus a veto. Applied to shareholder blocks, to the European Union's Council of Ministers after each enlargement, and to the United States Electoral College, the same calculation has repeatedly shown that reweighting votes does not reweight power in proportion.
+
+Which index to use is contested, and the disagreement is instructive rather than technical. The Shapley–Shubik index counts orderings, which treats a member as powerful if it often arrives at the moment a coalition becomes decisive; the Banzhaf index counts coalitions instead, which treats a member as powerful if many coalitions depend on it. The two rank the members of real voting bodies differently, and no argument internal to the mathematics settles it, because they formalise two different senses of "being decisive". That is the same problem as choosing between fairness and stability, one level down.
+
 ## A Closer Look: A Seller, Two Buyers, and a Division That Is Not Stable
 
 Take a market with three players. A seller, $A$, owns an object worth nothing to her. Buyer $B$ values it at 100, buyer $C$ at 80. The characteristic function is

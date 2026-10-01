@@ -246,6 +246,14 @@ The cell membrane was, for most of the nineteenth century, an inference: somethi
 
 The answer was about two. Not one, not twenty — two layers of molecules, which is the thinnest self-sealing barrier chemistry allows, and the structure has been confirmed by every later technique.
 
+## Choosing Between Two Ions
+
+A barrier that good is only useful if it can be opened selectively, and the hardest thing a channel does is discriminate. Potassium channels pass K⁺ at near the diffusion limit and exclude Na⁺ by a factor of about ten thousand, and sodium is the *smaller* ion, so a simple size filter would do the opposite.
+
+{{fig:mackinnon|Roderick MacKinnon}}'s 1998 structure shows the trick. An ion in water is surrounded by a shell of water molecules whose oxygens coordinate it, and pulling it out of that shell costs energy — more for sodium, because it is smaller and holds its water more tightly. The channel's selectivity filter is lined with backbone carbonyl oxygens held rigidly at spacings that reproduce almost exactly the coordination geometry that water provided for potassium. A potassium ion therefore pays nothing on balance to enter. A sodium ion, being 0.3 Å smaller in radius, cannot reach those oxygens at the right distances; the filter cannot repay its larger dehydration cost, and it stays out. Selectivity comes from a structure rigid enough to be wrong for the smaller ion.
+
+{{fig:agre|Peter Agre}}'s aquaporin solves a related problem in the opposite direction: pass water at enormous rates while blocking protons, which travel through hydrogen-bonded water chains faster than any ion diffuses. The pore's answer is a positively charged arginine and a geometry that forces one water molecule in the middle to break the chain by reorienting — so there is no continuous hydrogen-bonded path for a proton to hop along.
+
 ## A Closer Look: Three Independent Ways to Measure a Membrane
 
 **By counting molecules.** A human red blood cell has a surface area of about 140 µm². A phospholipid headgroup occupies about 0.65 nm² in a packed bilayer, so one leaflet needs
@@ -285,14 +293,6 @@ $$
 $$
 
 which is a picoampere — measurable, one molecule at a time, which is what the patch clamp does.
-
-## Choosing Between Two Ions
-
-The hardest thing a channel does is discriminate. Potassium channels pass K⁺ at near the diffusion limit and exclude Na⁺ by a factor of about ten thousand, and sodium is the *smaller* ion, so a simple size filter would do the opposite.
-
-{{fig:mackinnon|Roderick MacKinnon}}'s 1998 structure shows the trick. An ion in water is surrounded by a shell of water molecules whose oxygens coordinate it, and pulling it out of that shell costs energy — more for sodium, because it is smaller and holds its water more tightly. The channel's selectivity filter is lined with backbone carbonyl oxygens held rigidly at spacings that reproduce almost exactly the coordination geometry that water provided for potassium. A potassium ion therefore pays nothing on balance to enter. A sodium ion, being 0.3 Å smaller in radius, cannot reach those oxygens at the right distances; the filter cannot repay its larger dehydration cost, and it stays out. Selectivity comes from a structure rigid enough to be wrong for the smaller ion.
-
-{{fig:agre|Peter Agre}}'s aquaporin solves a related problem in the opposite direction: pass water at enormous rates while blocking protons, which travel through hydrogen-bonded water chains faster than any ion diffuses. The pore's answer is a positively charged arginine and a geometry that forces one water molecule in the middle to break the chain by reorienting — so there is no continuous hydrogen-bonded path for a proton to hop along.
 
 ## A Sheet With Mechanics
 

@@ -252,9 +252,17 @@ The second fact is rotation. {{fig:coriolis|Gaspard-Gustave de Coriolis}} derive
 
 The deep consequence is not the deflection itself but what it balances against. On a small scale a pressure difference accelerates fluid from high pressure to low. On a large scale the deflection grows until it cancels the pressure gradient entirely, and the flow settles into motion *along* the isobars rather than across them. This geostrophic balance is why a weather map, which shows pressure, can be read directly as a map of wind.
 
+## Forecasting, and Its Limit
+
+{{fig:vilhelm-bjerknes|Vilhelm Bjerknes}} stated the programme in 1904. The atmosphere obeys known equations; measure its present state and integrate. He also knew what stood in the way: enough observations, and an impossible quantity of arithmetic. {{fig:lewis-fry-richardson|Lewis Fry Richardson}} attempted the arithmetic by hand during the First World War, for a single six-hour forecast, and got a pressure change of 145 millibars where the real change was almost nothing — an account of which belongs to [numerical methods for partial differential equations](/math/numerical-pdes/).
+
+{{fig:jule-charney|Jule Charney}} found the reason in 1948, and it was not arithmetic error. The full equations support sound waves and other fast oscillations that carry almost no energy but dominate the rate of change at any instant. Richardson's initial pressures and winds, taken from independent measurements, were not in geostrophic balance with each other, and the imbalance rang the atmosphere like a bell. Charney derived a filtered system — the quasi-geostrophic equations — that keeps the slow weather-bearing motions and removes the fast ones. Those were the equations integrated on the ENIAC in 1950, for the first successful numerical forecast.
+
+Then the programme met a limit of a different kind. {{fig:edward-lorenz|Edward Lorenz}}, studying a drastically simplified convection model, found that trajectories starting from almost identical states diverge exponentially — described under [chaos theory](/math/chaos-theory/). For the atmosphere the doubling time of an error is a day or two, so an initial uncertainty of a per cent becomes total within a fortnight regardless of model quality. This is why forecasts are now issued as ensembles: fifty runs from slightly different initial states, reported as probabilities. The practical skill horizon has moved from about three days in 1980 to nearly ten today, and it cannot be pushed past roughly two weeks.
+
 ## A Closer Look: Why Weather Systems Are a Thousand Kilometres Across
 
-Three calculations, each a line or two, fix the characteristic scales of the atmosphere.
+Three calculations, each a line or two, fix the characteristic scales that a forecast model has to resolve.
 
 **The geostrophic wind.** The Coriolis parameter is $f = 2\Omega\sin\varphi$. With the Earth's rotation rate $\Omega = 7.292\times10^{-5}\ \mathrm{s^{-1}}$, at latitude 45°:
 
@@ -291,14 +299,6 @@ L_R = \frac{(10^{-2})(10^{4})}{10^{-4}} = 10^{6}\ \mathrm{m} = 1000\ \mathrm{km}
 $$
 
 That is the size of a weather system, and it is not a coincidence: the instability that creates mid-latitude cyclones grows fastest at this scale, so the atmosphere makes storms a thousand kilometres across because of its depth, its stratification and the rotation rate of the Earth. For the ocean, $N$ is larger but $H$ is smaller and the result is around 50 km, which is why ocean eddies are twenty times smaller than atmospheric ones — and why resolving them in a global model is twenty times harder.
-
-## Forecasting, and Its Limit
-
-{{fig:vilhelm-bjerknes|Vilhelm Bjerknes}} stated the programme in 1904. The atmosphere obeys known equations; measure its present state and integrate. He also knew what stood in the way: enough observations, and an impossible quantity of arithmetic. {{fig:lewis-fry-richardson|Lewis Fry Richardson}} attempted the arithmetic by hand during the First World War, for a single six-hour forecast, and got a pressure change of 145 millibars where the real change was almost nothing — an account of which belongs to [numerical methods for partial differential equations](/math/numerical-pdes/).
-
-{{fig:jule-charney|Jule Charney}} found the reason in 1948, and it was not arithmetic error. The full equations support sound waves and other fast oscillations that carry almost no energy but dominate the rate of change at any instant. Richardson's initial pressures and winds, taken from independent measurements, were not in geostrophic balance with each other, and the imbalance rang the atmosphere like a bell. Charney derived a filtered system — the quasi-geostrophic equations — that keeps the slow weather-bearing motions and removes the fast ones. Those were the equations integrated on the ENIAC in 1950, for the first successful numerical forecast.
-
-Then the programme met a limit of a different kind. {{fig:edward-lorenz|Edward Lorenz}}, studying a drastically simplified convection model, found that trajectories starting from almost identical states diverge exponentially — described under [chaos theory](/math/chaos-theory/). For the atmosphere the doubling time of an error is a day or two, so an initial uncertainty of a per cent becomes total within a fortnight regardless of model quality. This is why forecasts are now issued as ensembles: fifty runs from slightly different initial states, reported as probabilities. The practical skill horizon has moved from about three days in 1980 to nearly ten today, and it cannot be pushed past roughly two weeks.
 
 ## From Weather to Climate
 

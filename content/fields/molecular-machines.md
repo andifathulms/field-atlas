@@ -248,6 +248,18 @@ Two papers in one issue of *Nature* in 1954 showed otherwise. {{fig:hugh-huxley|
 
 That changes the problem completely. If filaments slide, something must be stepping along something — attaching, pulling, letting go, reattaching further on. The projections visible between the filaments became the obvious candidate, and the question became what a single one of them does.
 
+## Two Designs, and the Difference Between Them
+
+Once filaments were known to slide, the motors divided into kinds, and the division is not cosmetic.
+
+A **team motor** detaches after every working stroke. Muscle myosin spends most of its cycle unattached, so a single head accomplishes nothing: force is produced because a thick filament carries hundreds of heads whose cycles are uncorrelated, and at any instant a few per cent of them are pulling. The design suits a situation where the load is large and the distance short, and it is why muscle can be enormously strong and cannot move a single cargo.
+
+A **processive motor** must never let go. Kinesin, dragging a vesicle along a microtubule for tens of micrometres, has two heads that alternate: the rear head detaches only after the front one has bound, so the molecule is always attached by at least one point and walks hand over hand for a hundred steps or more. That requires the two heads to communicate, which is the field's main unsolved mechanical problem.
+
+A third design abandons the stroke entirely. {{fig:howard-berg|Howard Berg}} established in 1973 that a bacterium's flagellum is not a whip but a propeller, turned by a rotary motor embedded in the membrane, driven by protons flowing down their gradient rather than by ATP, spinning at a few hundred revolutions per second and reversing in about a millisecond. The reason rotation rather than reciprocation is the right answer is hydrodynamic: at the Reynolds number of a swimming bacterium, around $10^{-5}$, the equations are time-reversible, so any stroke that merely runs backwards on the return brings the organism back where it started. A corkscrew does not have a return stroke. The constraint belongs to [fluid dynamics](/physics/fluid-dynamics/) and the solution to this chapter.
+
+ATP synthase is rotary too, and runs the same machinery in reverse: instead of consuming ATP to turn, it is turned by a proton gradient and makes ATP, which is how almost all of the ATP in the biosphere is produced.
+
 ## A Closer Look: What One ATP Buys
 
 The arithmetic of this field is conducted in piconewtons and nanometres, and it is worth establishing the three numbers that bound everything.
@@ -302,4 +314,4 @@ The measurements behind those numbers were made possible by an instrument from a
 
 The most startling observation came in 1997, and needed no interpretation at all. {{fig:kinosita|Kazuhiko Kinosita}}'s group fixed single F1-ATPase molecules to a slide, attached a fluorescent actin filament to the central shaft of each, and added ATP. Under the microscope the filaments turned — anticlockwise, in discrete 120° steps, three per revolution, exactly as {{fig:paul-boyer|Paul Boyer}}'s kinetic model had predicted and {{fig:walker|John Walker}}'s structure had implied. A single protein molecule, visibly rotating.
 
-{{fig:howard-berg|Howard Berg}} had established the other rotary motor twenty years earlier by an argument about mechanics: a bacterial flagellum could not produce the observed swimming if it beat like a tail, so it must turn like a propeller. Tethering a cell by its flagellum and watching the body spin proved it. That motor runs on protons rather than ATP, reverses in a millisecond, and operates at a Reynolds number around $10^{-5}$ — the regime discussed under [fluid dynamics](/physics/fluid-dynamics/), where coasting is impossible and a reciprocating stroke gets you nowhere, which is precisely why rotation is the solution.
+What remains unresolved is the coordination itself. The gating between kinesin's two heads, and the far more elaborate cycle of dynein, involve states lasting microseconds in a molecule that must be under load for the mechanism to work at all — so structures catch the wrong moments and single-molecule traces report position rather than chemistry. The physics of these machines, meanwhile, has become a test bed for [non-equilibrium statistical mechanics](/physics/non-equilibrium-physics/), since a single motor is a system in which work and heat fluctuate by as much as their averages, and the fluctuation relations that describe that regime were verified on exactly this kind of apparatus.

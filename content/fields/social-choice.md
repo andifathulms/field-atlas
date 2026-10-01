@@ -254,6 +254,14 @@ In 1770 {{fig:borda|Jean-Charles de Borda}} pointed out to the Académie des Sci
 
 This is not a paradox in the sense of a puzzle to be dissolved. It is a fact about majority aggregation, and it means that "what the electorate wants" may not name anything.
 
+## Impossibility, Twice
+
+{{fig:arrow|Kenneth Arrow}} turned the eighteenth-century objections into a theorem by asking what any acceptable aggregation rule must satisfy, and then showing the requirements are jointly unsatisfiable. His conditions are modest individually. The rule must handle every possible profile of individual rankings, since a procedure that fails on some electorates is no procedure. If everyone prefers A to B, so must the social ranking. The social ranking of A against B must depend only on how individuals rank A against B, and not on where some third option sits. And no individual's preference may prevail regardless of everyone else's.
+
+No rule satisfies all four. The proof is a page of combinatorics, and it has generated seventy years of argument about which condition to give up rather than about whether the theorem is right. Independence is the usual casualty, because insisting on it discards all information about *how strongly* options are preferred — which is why the Borda count, which uses the whole ranking, violates it, and why rules that satisfy it end up relying on pairwise comparisons that can cycle. The theorem's lasting effect was to turn the question from "which voting rule is correct?" into "which failure is acceptable here?".
+
+{{fig:sen|Amartya Sen}} added a second impossibility in 1970 with a different moral. Grant each person decisiveness over at least one matter that is plainly their own business — which book they read, which way up they sleep — and also require the Pareto criterion, that a unanimously preferred outcome be chosen. Sen constructs preferences, involving two people who each care what the other reads, for which no social ranking satisfies both. Minimal individual rights and unanimity are logically incompatible once people have preferences about each other's private affairs, which is not a defect of any procedure but a property of the two principles.
+
 ## A Closer Look: Three Rules, One Set of Ballots, Three Winners
 
 Take an electorate of 100 voters with these preferences:
@@ -286,15 +294,11 @@ $$
 
 The totals sum to 300, as they must with 100 voters and 3 points each. **C wins**, agreeing with Condorcet here but not in general.
 
-The three rules are all defensible and they do not agree, and nothing in the ballots adjudicates between them. Note also what happens to the Borda count if a fourth candidate D, whom everyone ranks last, is added: nothing. But if D is inserted in the middle of some voters' rankings, the gaps between A, B and C change, and the Borda winner can flip without a single voter altering their opinion about A, B or C. That is the violation of independence of irrelevant alternatives, and it is what {{fig:arrow|Kenneth Arrow}}'s theorem says cannot be avoided except by giving up something else.
-
-Arrow's conditions are: the rule must handle every possible profile of preferences; if everyone prefers A to B the social ranking must too; the social ranking of A against B must depend only on individual rankings of A against B; and no individual's preference may dictate the outcome regardless of everyone else's. No rule satisfies all four. The theorem is a page of combinatorics and has generated seventy years of argument over which condition to relinquish — most commonly independence, since insisting on it throws away all information about how strongly options are preferred.
-
-{{fig:sen|Amartya Sen}} added a second impossibility in 1970 with a different moral. Grant each person decisiveness over at least one matter that is their own business, and also require the Pareto criterion. With preferences about what *other* people read, these two collide: there are profiles for which no social ranking respects both minimal liberty and unanimity.
+The three rules are all defensible and they do not agree, and nothing in the ballots adjudicates between them. Note also what happens to the Borda count if a fourth candidate D, whom everyone ranks last, is added: nothing. But if D is inserted in the middle of some voters' rankings, the gaps between A, B and C change, and the Borda winner can flip without a single voter altering their opinion about A, B or C. That is a violation of independence of irrelevant alternatives, the condition Arrow's theorem says cannot be kept alongside the other three — and here it is, in a worked ballot count, rather than as an abstraction.
 
 ## Honesty as a Design Problem
 
-{{fig:gibbard|Allan Gibbard}} and {{fig:satterthwaite|Mark Satterthwaite}} then showed the strategic counterpart. Any deterministic rule that can select among three or more outcomes, and is not a dictatorship, can be manipulated: there is some situation in which a voter does better by submitting a ranking that misstates their preferences. Tactical voting is therefore structural. The familiar advice not to "waste" a vote on a third candidate is not a failure of civic virtue but a correct response to a feature of the rule.
+{{fig:gibbard|Allan Gibbard}} and {{fig:satterthwaite|Mark Satterthwaite}} showed the strategic counterpart to Arrow's result. Any deterministic rule that can select among three or more outcomes, and is not a dictatorship, can be manipulated: there is some situation in which a voter does better by submitting a ranking that misstates their preferences. Tactical voting is therefore structural. The familiar advice not to "waste" a vote on a third candidate is not a failure of civic virtue but a correct response to a feature of the rule.
 
 Faced with two impossibilities, the field turned the question around. Instead of asking which rule is best, ask what *is* achievable, and design the procedure to make the behaviour you want into each participant's self-interest. {{fig:vickrey|William Vickrey}} gave the founding example in 1961, and it is worth stating exactly because the argument is three lines.
 

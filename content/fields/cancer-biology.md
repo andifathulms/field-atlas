@@ -266,6 +266,14 @@ What unified the list was not a mechanism but a curve. {{fig:peter-armitage|Pete
 
 That inference deserves emphasis, because it was made in 1954 with no molecular knowledge at all. From the shape of an epidemiological curve they concluded that cancer is somatic, clonal, and multistage, and they estimated the number of stages at about six.
 
+## The Genes Turn Out to Be Ours
+
+The molecular identification began with Rous's chicken virus, which had been kept alive in laboratories as a curiosity. By the 1970s the gene responsible for its transforming power had been localised: *src*. In 1976 {{fig:varmus|Harold Varmus}} and {{fig:bishop|J. Michael Bishop}}, with Dominique Stehelin and Peter Vogt, used a radioactive probe for viral *src* to look for related sequences in the DNA of *uninfected* chickens — and found one. So did every other vertebrate they tested. The virus had not invented a cancer gene; it had picked up a normal gene for growth control, some time in the past, and carried a damaged copy.
+
+This reframed everything. Cancer genes are not foreign; they are the cell's own machinery stuck in the on position, and a virus is only one of the ways to break them. In 1982 three groups pulled an active oncogene straight out of a human bladder carcinoma and found it differed from the normal *RAS* gene by a single base.
+
+The other class of gene was harder to see, because losing something is harder to detect than gaining it, and the story of p53 shows how hard. A 53-kilodalton protein found in 1979 bound to a viral antigen was abundant in transformed cells and, when introduced into cells, helped transform them. It was classified as an oncogene and studied as one for ten years. Then {{fig:vogelstein|Bert Vogelstein}}'s group found that colorectal tumours have lost the gene from both copies of chromosome 17, and {{fig:levine|Arnold Levine}}'s group discovered that the clones everyone had been working with were mutants. The normal protein is a brake — it arrests or kills damaged cells — and the mutants jam the brake for the remaining normal copy as well. *TP53* is now known to be mutated in roughly half of all human cancers.
+
 ## A Closer Look: Three Ways to Count the Hits
 
 **From the age curve.** Suppose a cell must accumulate $k$ specific rare changes, each occurring at a small rate per unit time, in order to become malignant. The probability that all $k$ have happened by time $t$ goes as $t^{k}$, so the *incidence* — the rate at which new cases appear — goes as the derivative,
@@ -291,14 +299,6 @@ The prediction hidden in this is the striking part. For the inherited form to ac
 **From the genomes.** The third count came from sequencing. A typical adult solid tumour carries thousands of somatic mutations, the great majority of them irrelevant passengers. Distinguishing drivers requires statistics — a gene mutated more often than the local background rate predicts, or mutated at a specific site repeatedly. The 2013 synthesis of thousands of tumours gave the answer: **two to eight driver mutations** per tumour, falling into about a dozen pathways.
 
 Three methods, three eras, three kinds of data: an age curve from 1954, 48 childhood cases from 1971, and whole-genome sequencing from 2013. All land on a handful of required events. That convergence is the strongest evidence the field has that the multistage clonal picture is right, and it is the reason the number of steps is now treated as a fact rather than a model parameter.
-
-## The Genes Turn Out to Be Ours
-
-The molecular identification began with Rous's chicken virus, which had been kept alive in laboratories as a curiosity. By the 1970s the gene responsible for its transforming power had been localised: *src*. In 1976 {{fig:varmus|Harold Varmus}} and {{fig:bishop|J. Michael Bishop}}, with Dominique Stehelin and Peter Vogt, used a radioactive probe for viral *src* to look for related sequences in the DNA of *uninfected* chickens — and found one. So did every other vertebrate they tested. The virus had not invented a cancer gene; it had picked up a normal gene for growth control, some time in the past, and carried a damaged copy.
-
-This reframed everything. Cancer genes are not foreign; they are the cell's own machinery stuck in the on position, and a virus is only one of the ways to break them. In 1982 three groups pulled an active oncogene straight out of a human bladder carcinoma and found it differed from the normal *RAS* gene by a single base.
-
-The other class of gene was harder to see, because losing something is harder to detect than gaining it, and the story of p53 shows how hard. A 53-kilodalton protein found in 1979 bound to a viral antigen was abundant in transformed cells and, when introduced into cells, helped transform them. It was classified as an oncogene and studied as one for ten years. Then {{fig:vogelstein|Bert Vogelstein}}'s group found that colorectal tumours have lost the gene from both copies of chromosome 17, and {{fig:levine|Arnold Levine}}'s group discovered that the clones everyone had been working with were mutants. The normal protein is a brake — it arrests or kills damaged cells — and the mutants jam the brake for the remaining normal copy as well. *TP53* is now known to be mutated in roughly half of all human cancers.
 
 ## A Clone Under Selection
 

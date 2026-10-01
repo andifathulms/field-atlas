@@ -266,7 +266,17 @@ The internet made both assumptions visible. Here was a system of global importan
 
 {{fig:koutsoupias|Elias Koutsoupias}} and {{fig:papadimitriou|Christos Papadimitriou}} named the first quantity in 1999. The price of anarchy is the ratio of the worst equilibrium's cost to the optimum's, and the hope that it might be a small constant across whole classes of games turned out to be justified.
 
+## Equilibria That Cannot Be Found
+
+{{fig:nash|Nash}}'s existence proof applies Kakutani's fixed-point theorem, and fixed-point theorems are notoriously non-constructive. Whether that mattered was an open question for fifty years, and in 2006 it was answered. {{fig:daskalakis|Constantinos Daskalakis}}, {{fig:goldberg|Paul Goldberg}} and Papadimitriou showed that computing a Nash equilibrium is complete for PPAD — the class of problems whose solutions are guaranteed by a parity argument on a directed graph, with finding a fixed point as the archetype — and Chen and Deng extended the result to two-player games.
+
+PPAD-completeness is a weaker statement than NP-hardness, and in this context it is bad enough: these problems are not believed to admit polynomial-time algorithms, and the same barriers that obstruct [P versus NP](/math/computational-complexity/) obstruct progress here. The consequence for economics is sharp. An equilibrium can exist, be unique, and be beyond the reach of any efficient procedure. Predicting that agents will be at it then requires believing they can do something no algorithm can.
+
+The field's response is instructive, because it did not consist of trying harder. It consisted of weakening the assumption. Real participants do not compute equilibria; they adjust, repeatedly, using simple learning rules that guarantee only that in hindsight no single fixed strategy would have done much better — the no-regret property. Roughgarden's smoothness framework shows that price-of-anarchy bounds proved in a particular short form automatically apply to the time-averaged behaviour of any such learners. The 4/3 bound for selfish routing therefore holds without anyone ever being at equilibrium, which is a considerably more defensible claim about traffic.
+
 ## A Closer Look: Pigou's Two Roads and Braess's Extra One
+
+Return to the first of the two questions — what decentralisation costs — where the answers are more cheerful.
 
 **One unit of traffic, two routes.** This example is due to {{fig:pigou|Arthur Pigou}} in 1920 and is the worst case of the general theorem. A unit of traffic travels from $s$ to $t$. The upper road is wide: its travel time is 1 regardless of load. The lower road is short but congests: carrying a fraction $x$ of the traffic, its travel time is $x$.
 
@@ -311,14 +321,6 @@ $$
 Everyone's journey is a third longer than before the road was built, and no one can improve by deviating: the old routes now cost $1 + 1 = 2$ as well. This is {{fig:braess|Dietrich Braess}}'s paradox, it is a consequence of equilibrium rather than of anything irrational, and it has been seen in practice — traffic in New York improved when 42nd Street was closed in 1990.
 
 Both examples point to the same remedy, which is why this is a mathematical result with a policy attached. The inefficiency arises because a driver pays their own delay and not the delay they add to everyone else. Charge the difference — a congestion toll equal to the externality — and the equilibrium moves to the optimum exactly.
-
-## Equilibria That Cannot Be Found
-
-{{fig:nash|Nash}}'s existence proof applies Kakutani's fixed-point theorem, and fixed-point theorems are notoriously non-constructive. Whether that mattered was an open question for fifty years, and in 2006 it was answered. {{fig:daskalakis|Constantinos Daskalakis}}, {{fig:goldberg|Paul Goldberg}} and Papadimitriou showed that computing a Nash equilibrium is complete for PPAD — the class of problems whose solutions are guaranteed by a parity argument on a directed graph, with finding a fixed point as the archetype — and Chen and Deng extended the result to two-player games.
-
-PPAD-completeness is a weaker statement than NP-hardness, and in this context it is bad enough: these problems are not believed to admit polynomial-time algorithms, and the same barriers that obstruct [P versus NP](/math/computational-complexity/) obstruct progress here. The consequence for economics is sharp. An equilibrium can exist, be unique, and be beyond the reach of any efficient procedure. Predicting that agents will be at it then requires believing they can do something no algorithm can.
-
-The field's response is instructive, because it did not consist of trying harder. It consisted of weakening the assumption. Real participants do not compute equilibria; they adjust, repeatedly, using simple learning rules that guarantee only that in hindsight no single fixed strategy would have done much better — the no-regret property. Roughgarden's smoothness framework shows that price-of-anarchy bounds proved in a particular short form automatically apply to the time-averaged behaviour of any such learners. The 4/3 bound for selfish routing therefore holds without anyone ever being at equilibrium, which is a considerably more defensible claim about traffic.
 
 ## Mechanisms That Have to Run
 

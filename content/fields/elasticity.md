@@ -204,10 +204,10 @@ applications:
     title: Designing against instability as well as strength
     description: >-
       A structure must be checked for buckling as well as for stress, because Euler's critical load
-      can be reached while every material is well within its limits. The collapse of the Quebec
-      Bridge in 1907, which killed 75 men, followed from compression members whose buckling capacity
-      had been underestimated. Modern codes treat slenderness, out-of-straightness and residual
-      stresses as explicit design variables.
+      can be reached while every material is well within its limits. Design codes therefore treat
+      slenderness, initial out-of-straightness and the residual stresses left by welding and rolling
+      as explicit variables, and reduce the theoretical critical load by a factor that depends on
+      all three — an admission that the exact formula describes a column nobody can build.
     sources:
       - citation: "Petroski, H. (1994). Design Paradigms: Case Histories of Error and Judgment in Engineering. Cambridge University Press."
         url: null
@@ -260,13 +260,19 @@ The general theory arrived with the same people and the same decade as the fluid
 
 This produced a fifty-year argument over a number. Navier's and Poisson's molecular theories predicted one independent elastic constant for an isotropic solid, which forces Poisson's ratio to be exactly 1/4. The continuum theory allowed two. Measurements supported two, the "multi-constant" party won, and the molecular approach was not revived until quantum mechanics could compute interatomic forces properly, which is the business of [solid-state physics](/physics/solid-state-physics/).
 
-{{fig:euler|Euler}} had meanwhile established the field's other foundational idea, and it is not about materials at all. A slender column under compression does not fail by being crushed; it bows sideways, at a load
+## Failing Without Breaking
+
+The field's other foundational idea is not about materials at all, and {{fig:euler|Euler}} had it before anyone could measure a stress. A slender column under compression does not fail by being crushed; it bows sideways, at a load
 
 $$
 P_{\text{cr}} = \frac{\pi^{2}EI}{L^{2}},
 $$
 
 where $EI$ is the bending stiffness. Nothing in the column has exceeded any limit of the material. The straight configuration has simply stopped being stable. Structures fail this way more often than they fail by fracture, and the inverse-square dependence on length is unforgiving: double the column and it carries a quarter.
+
+Buckling is a loss of *stability*, and stability problems behave differently from strength problems in a way that has killed people. A strength calculation is forgiving: exceed the limit by 10% and a ductile material yields locally and redistributes the load. A buckling calculation is not, because beyond the critical load there is no neighbouring equilibrium to fall back into — the column leaves its straight configuration and keeps going. The collapse of the Quebec Bridge in 1907, which killed 75 workers, followed from compression chords whose capacity had been estimated from tests on short specimens and applied to members several times longer, where the inverse-square law governs.
+
+Worse, real structures are imperfect, and buckling is unusually sensitive to imperfection. A perfect cylinder under axial compression has a critical load that can be calculated exactly; a real one, out of round by a fraction of its wall thickness, may carry only a third of it. This imperfection sensitivity is why thin-shell structures — rocket bodies, submarine hulls, silo walls — are designed with large margins against a theoretical figure nobody expects to reach, and why the relevant codes are built on test data rather than on the elegant formula.
 
 ## A Closer Look: Why Glass Is a Hundred Times Weaker Than It Should Be
 

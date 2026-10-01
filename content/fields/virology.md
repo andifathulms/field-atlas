@@ -264,9 +264,17 @@ By 1890 bacteriology had a reliable way to tell an organism from a poison. Pass 
 
 In the same year Loeffler and Frosch showed that foot-and-mouth disease has a filterable cause, so the phenomenon was not a quirk of plants. {{fig:twort|Frederick Twort}} and {{fig:dherelle|Félix d'Hérelle}} then found, independently, that bacteria have their own viruses. These bacteriophages clear a culture overnight and leave countable holes — plaques — in a lawn of bacteria on agar, each one the progeny of a single particle. A virus you can count, grow in a day and mutate at will became the organism of choice for early molecular biology, which is why so much of what is known about genes was learned from phage.
 
+## Crystals, Cultures and the Question of Life
+
+{{fig:wendell-stanley|Wendell Stanley}} processed tonnes of infected tobacco leaves and in 1935 obtained needle-like crystals which, redissolved, still caused disease. Crystallisation is what a pure chemical substance does. Stanley called the material a protein; {{fig:bawden|Frederick Bawden}} and {{fig:pirie|Norman Pirie}} found two years later that it also contained RNA, which is in fact its genome. By 1939 electron micrographs showed rods of a single size.
+
+This is where the question "is a virus alive?" stops being interesting and starts being badly posed. A virion has no metabolism, makes no ATP, synthesises no protein, and can sit dry on a surface for months. Inside a cell it is an actively evolving population with ancestry, variation and selection. The honest answer is that the categories were built for cells.
+
+{{fig:enders|John Enders}}, {{fig:weller|Thomas Weller}} and {{fig:robbins|Frederick Robbins}} made virology a quantitative laboratory science in 1949 by growing poliovirus in cultures of ordinary human embryonic tissue, overturning the belief that it needed nerve cells and animals. Virus could then be produced in bulk, measured by plaque count, and weakened by repeated passage through unnatural hosts — the three requirements for a vaccine. Salk's inactivated vaccine came in 1955 and Sabin's attenuated one soon after.
+
 ## A Closer Look: How a Dilution Proves Something Is Alive
 
-Beijerinck's serial passage is the whole argument, and it is worth doing with numbers, because the conclusion is not obvious.
+Return to 1898, because Beijerinck's serial passage is the whole argument, and it is worth doing with numbers: the conclusion is not obvious, and it was reached without a microscope.
 
 Suppose the diseased sap contains a toxin at a generous 1 milligram per millilitre. At each passage, a drop is transferred into a fresh plant and the agent is recovered in new sap — call it a thousandfold dilution of anything that is not replicating. After five passages the dilution factor is
 
@@ -285,14 +293,6 @@ and multiplying by Avogadro's number gives about **12 molecules per millilitre**
 The sizes involved explain why nobody saw one for another forty years. A Chamberland filter stops particles above roughly 200 nm. Tobacco mosaic virus is a rod 18 nm across and 300 nm long — it passes because it is thin, not because it is short. Poliovirus is a 30-nm sphere, influenza about 100 nm, and the largest, the mimiviruses found in 2003, reach 750 nm and are retained by the same filters that defined viruses in the first place. The operational definition ran out, as operational definitions do.
 
 Visible light cannot resolve any of this. The [diffraction limit](/physics/wave-optics/) puts the floor at about 200 nm, so every virus but the giants is below the resolution of any optical microscope ever built. Virology had to wait for the electron microscope, which is why the field spent its first half-century reasoning about an entity none of its practitioners had seen.
-
-## Crystals, Cultures and the Question of Life
-
-{{fig:wendell-stanley|Wendell Stanley}} processed tonnes of infected tobacco leaves and in 1935 obtained needle-like crystals which, redissolved, still caused disease. Crystallisation is what a pure chemical substance does. Stanley called the material a protein; {{fig:bawden|Frederick Bawden}} and {{fig:pirie|Norman Pirie}} found two years later that it also contained RNA, which is in fact its genome. By 1939 electron micrographs showed rods of a single size.
-
-This is where the question "is a virus alive?" stops being interesting and starts being badly posed. A virion has no metabolism, makes no ATP, synthesises no protein, and can sit dry on a surface for months. Inside a cell it is an actively evolving population with ancestry, variation and selection. The honest answer is that the categories were built for cells.
-
-{{fig:enders|John Enders}}, {{fig:weller|Thomas Weller}} and {{fig:robbins|Frederick Robbins}} made virology a quantitative laboratory science in 1949 by growing poliovirus in cultures of ordinary human embryonic tissue, overturning the belief that it needed nerve cells and animals. Virus could then be produced in bulk, measured by plaque count, and weakened by repeated passage through unnatural hosts — the three requirements for a vaccine. Salk's inactivated vaccine came in 1955 and Sabin's attenuated one soon after.
 
 ## Error Rates and Their Consequences
 

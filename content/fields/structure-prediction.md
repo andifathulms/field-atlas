@@ -260,6 +260,16 @@ Nothing assisted it. No template, no energy input, no other molecule. Anfinsen d
 
 The exceptions have turned out to be informative rather than fatal. Some large proteins need chaperones to avoid aggregating on the way; prions adopt an alternative stable form and propagate it; and a third of the human proteome has regions with no fixed structure at all. But for the ordinary globular case, Anfinsen's principle holds.
 
+## Sixty Years of Not Solving It
+
+The field's history between Anfinsen and 2020 is unusual in that its lack of progress was documented rigorously, by its own practitioners, every two years.
+
+The documentation was {{fig:moult|John Moult}} and {{fig:fidelis|Krzysztof Fidelis}}'s idea. Before 1994, a method's accuracy was reported by its author, after seeing the answer, which is not a measurement. The Critical Assessment of Structure Prediction fixed it by making the comparison blind: crystallographers release sequences whose structures they have solved but not published, groups submit predictions within weeks, and independent assessors score them once the coordinates appear. The scoring is public and so is every prediction, including the bad ones. For two decades the record showed real but slow improvement, confined largely to cases where a related structure was already known, and almost no ability to predict a fold from scratch.
+
+Two approaches competed in that period, and the contrast between them is the point. Molecular dynamics attacks the physics directly: give every atom a position and a velocity, compute the forces from an empirical force field, integrate Newton's equations with a time step short enough to resolve a bond vibration. {{fig:karplus|Martin Karplus}} and colleagues did it first in 1977, for 9 picoseconds of a small protein in vacuum, which was enough to establish that a protein's interior is fluid rather than rigid. Thirty years and several hardware generations later, purpose-built machines reached the millisecond and could fold small proteins from an extended chain — a genuine achievement that does not scale, for the reason the next chapter's arithmetic makes plain.
+
+{{fig:david-baker|David Baker}}'s Rosetta took the statistical route instead: assemble a candidate structure from short fragments taken from known proteins, score it with an energy function that mixes physical terms with statistics drawn from the structural database, and search. It produced the best predictions of the 2000s for proteins with no known relatives, reaching a few ångströms for small chains. It also ran backwards, which is the more surprising capability: given a target shape, search for a sequence that will adopt it. In 2003 the group designed Top7, a 93-residue protein with a fold not found in nature, and its crystal structure matched the design to 1.2 Å. Designing a protein that folds turned out to be easier than predicting how a natural one does.
+
 ## A Closer Look: Levinthal's Numbers, and Why the Search Is Not a Search
 
 {{fig:levinthal|Cyrus Levinthal}} made the difficulty quantitative in 1969, in two pages of a conference volume.
@@ -290,7 +300,7 @@ What eventually worked used almost none of this physics. Two datasets had been a
 
 The second dataset carries structural information in an indirect form. If two residues are in contact, a destabilising mutation at one can be compensated by a mutation at the other, so across a large family the two positions vary in a correlated way. Disentangling direct couplings from chains of indirect ones made contact prediction usable by around 2012, and contacts constrain a fold.
 
-{{fig:david-baker|David Baker}}'s Rosetta had meanwhile shown what could be done with the structural database alone: assemble candidate structures from short fragments of known proteins, score with a hybrid of physical and statistical terms, and search. It gave the best predictions of the 2000s and worked to a few ångströms for small proteins. It also ran in reverse, and in 2003 produced Top7, a protein with a fold that does not occur in nature, whose crystal structure matched the design to 1.2 Å.
+Rosetta had already shown what the structural database alone could support. The sequence database added the coevolution signal. What remained was a way to use both at once.
 
 The step change came at CASP14 in 2020. AlphaFold2 reasons jointly over the sequence alignment and over a representation of every pair of residues, iterating between them, and outputs coordinates directly with a per-residue confidence estimate that turns out to be well calibrated. Its median backbone accuracy was around 1 Å, within the range that two experimental determinations of the same protein differ by. {{fig:moult|John Moult}}, who had run the blind assessment since 1994 and watched two decades of modest progress, said the problem was in some sense solved.
 

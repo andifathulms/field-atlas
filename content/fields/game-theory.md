@@ -251,9 +251,26 @@ Suppose you and an opponent each choose heads or tails, and you win if the choic
 
 {{fig:emile-borel|Émile Borel}} reintroduced mixed strategies in the 1920s and conjectured that no general theorem existed. {{fig:von-neumann|John von Neumann}} proved one in 1928. For any finite two-player game of pure opposition, there is a number $v$ — the value — such that the first player can guarantee at least $v$ whatever the opponent does, and the opponent can guarantee that the first player gets no more. The two bounds coincide, which is the content of the theorem and the reason the regress stops: at the optimum, there is nothing left to anticipate, because each player is indifferent among their own options and nothing can be exploited.
 
+## When the Interests Are Not Opposed
+
+Everything above requires that one player's gain be the other's loss. Most situations are not like that, and the general case defeated von Neumann's methods; the 1944 book handles non-zero-sum games through an awkward theory of coalitions.
+
+{{fig:nash|John Nash}}, a 21-year-old graduate student, dissolved the problem in a page. Define an equilibrium as a profile of strategies in which no single player can gain by changing theirs alone. Consider the map that takes each profile to the set of best responses to it. Kakutani's fixed-point theorem guarantees that this map has a fixed point, and a fixed point is exactly an equilibrium. So *every* finite game has one, with any number of players and any payoffs.
+
+The generality came at a cost that the field has been living with since. A Nash equilibrium is stable, not good. It need not be unique, it need not be efficient, and it need not be reachable by any plausible process of reasoning or learning.
+
+{{fig:merrill-flood|Merrill Flood}} and {{fig:melvin-dresher|Melvin Dresher}} produced the clearest demonstration in the same year, 1950. Two players each choose to cooperate or defect, with payoffs:
+
+| | Cooperate | Defect |
+|---|---|---|
+| **Cooperate** | 3, 3 | 0, 5 |
+| **Defect** | 5, 0 | 1, 1 |
+
+Defecting is better whatever the other does — 5 beats 3, and 1 beats 0 — so defection dominates, and the unique equilibrium is (Defect, Defect), paying 1 each. Both would prefer (Cooperate, Cooperate) at 3 each. Nothing here involves miscalculation, mistrust or limited information. Two perfectly rational players, each doing the demonstrably right thing, arrive somewhere both regret. {{fig:albert-tucker|Albert Tucker}} supplied the story of the two interrogated prisoners when he needed to explain the game to an audience of psychologists, and the name stuck.
+
 ## A Closer Look: Solving a Penalty Kick
 
-Take a game that is genuinely zero-sum and genuinely played. A penalty taker can shoot to the natural side or the other side; the goalkeeper can dive one way or the other, committing before the ball is struck. Scoring probabilities, roughly as measured in professional football, make the kicker's payoff matrix:
+Before leaving the zero-sum case, it is worth seeing one solved. Take a game that is genuinely zero-sum and genuinely played. A penalty taker can shoot to the natural side or the other side; the goalkeeper can dive one way or the other, committing before the ball is struck. Scoring probabilities, roughly as measured in professional football, make the kicker's payoff matrix:
 
 | | Keeper dives L | Keeper dives R |
 |---|---|---|
@@ -292,23 +309,6 @@ $$
 and substituting back gives the kicker 0.791 either way — the same number, which is the minimax theorem doing its work. Neither player can do better than 79.1% and 20.9%, and any deviation can be punished: a kicker who always shoots right faces a keeper who always dives right and scores 70%.
 
 Three things in this are worth keeping. First, each player's optimal mixture is computed from the *opponent's* payoffs, not their own, which is counterintuitive and correct. Second, a mixed equilibrium makes both players indifferent, so neither has any positive reason to play their equilibrium mixture rather than anything else — the mixture is sustained by the fact that departing from it would be noticed. Third, the prediction is testable, and it survives: records of thousands of professional penalties show frequencies close to the computed mixtures, no serial correlation that an opponent could exploit, and equal scoring rates across sides, which is exactly the indifference condition. Professionals, without computing anything, play the minimax solution.
-
-## When the Interests Are Not Opposed
-
-Everything above requires that one player's gain be the other's loss. Most situations are not like that, and the general case defeated von Neumann's methods; the 1944 book handles non-zero-sum games through an awkward theory of coalitions.
-
-{{fig:nash|John Nash}}, a 21-year-old graduate student, dissolved the problem in a page. Define an equilibrium as a profile of strategies in which no single player can gain by changing theirs alone. Consider the map that takes each profile to the set of best responses to it. Kakutani's fixed-point theorem guarantees that this map has a fixed point, and a fixed point is exactly an equilibrium. So *every* finite game has one, with any number of players and any payoffs.
-
-The generality came at a cost that the field has been living with since. A Nash equilibrium is stable, not good. It need not be unique, it need not be efficient, and it need not be reachable by any plausible process of reasoning or learning.
-
-{{fig:merrill-flood|Merrill Flood}} and {{fig:melvin-dresher|Melvin Dresher}} produced the clearest demonstration in the same year, 1950. Two players each choose to cooperate or defect, with payoffs:
-
-| | Cooperate | Defect |
-|---|---|---|
-| **Cooperate** | 3, 3 | 0, 5 |
-| **Defect** | 5, 0 | 1, 1 |
-
-Defecting is better whatever the other does — 5 beats 3, and 1 beats 0 — so defection dominates, and the unique equilibrium is (Defect, Defect), paying 1 each. Both would prefer (Cooperate, Cooperate) at 3 each. Nothing here involves miscalculation, mistrust or limited information. Two perfectly rational players, each doing the demonstrably right thing, arrive somewhere both regret. {{fig:albert-tucker|Albert Tucker}} supplied the story of the two interrogated prisoners when he needed to explain the game to an audience of psychologists, and the name stuck.
 
 ## What the Equilibrium Does Not Tell You
 
