@@ -114,6 +114,12 @@ export const DOMAINS: DomainInfo[] = [
           "From the law of refraction, written in Baghdad around 984, to flashes short enough to resolve an electron's orbit. Light was the first thing in nature to be described by an exact rule and the last to be explained: Newton's prisms and Huygens's wavefronts both fitted the evidence, and the standoff lasted a century until two slits produced darkness out of light. Being a wave then imposed a hard limit on what any microscope can see, which bounded biology for 120 years. Counting photons one at a time revealed light that no classical field can imitate, and the laser turned the subject into the instrument with which most of the rest of physics is now measured. The fog here is a single-photon source good enough to build a computer from, a laser made of silicon, and how long an electron takes to tunnel.",
       },
       {
+        id: "flow",
+        title: "The Flow Thread",
+        intro:
+          "From a paradox that took 152 years to explain to the fourteen orders of magnitude a liquid's viscosity climbs on its way to being glass. The equations of fluid motion have been believed since 1845 and solved almost never, because the term describing fluid carrying its own momentum couples every scale to every other. D'Alembert proved that a body moving through an ideal fluid feels no drag, which is correct and absurd, and the resolution turned out to live in a layer millimetres thick. Above a critical speed smooth flow stops being available at all, and what replaces it obeys a power law derived from two paragraphs of dimensional reasoning. Rotation and stratification then make a planet's thin fluid envelopes into a subject of their own, and the same continuum thinking applied to solids shows that materials are governed by their defects. The fog here is whether the equations have solutions at all, how to close them for the averages, what clouds do as the planet warms, where the laws of friction come from, and whether a glass is really a phase.",
+      },
+      {
         id: "matter",
         title: "The Matter Thread",
         intro:
