@@ -145,6 +145,12 @@ export const DOMAINS: DomainInfo[] = [
           "From cork under a microscope to the machinery inside every living thing. The first microscopes revealed that plants and animals are built of tiny compartments, and that invisible organisms swarm in every drop of water. It took two centuries to see what that meant: every living thing is made of cells, every cell comes from another, and many diseases are caused by microbes. Chemistry then showed that cells run on enzymes and a universal currency of energy, microscopes of electrons and light mapped their inner machinery, and immunology found how the body tells its own cells from invaders. The fog here is how little a cell can be and still live, how cells know their own size, and why some pathogens still defeat every vaccine.",
       },
       {
+        id: "disease",
+        title: "The Disease Thread",
+        intro:
+          "From a haberdasher reading London's bills of mortality to a drug designed against one abnormal enzyme. Most of what is known about why people fall ill was inferred from counting, because the experiment that would settle it cannot be run on people — which is why this thread is as much about defences against confounding as about causes. Filtration revealed agents smaller than any cell and with no metabolism of their own; treating infection as an ecological system showed that an epidemic stops while most of the population is still susceptible; and the age at which cancers appear turned out to count the mutations they require. The fog here is which observational findings to believe, how far an epidemic can be forecast, what makes a tumour spread, and how to stay ahead of resistance.",
+      },
+      {
         id: "brain",
         title: "The Brain Thread",
         intro:
