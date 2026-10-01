@@ -76,6 +76,12 @@ export const DOMAINS: DomainInfo[] = [
         intro:
           "From Newton's method to the training of neural networks. For centuries, numbers were computed by hand, by people who followed rules and made mistakes, and the question was only how to get an answer at all. Electronic computers answered that and raised a harder question: can an answer produced by billions of rounded operations be trusted? Turing and Wilkinson showed how to tell a bad method from a bad problem. Richardson's failed weather forecast became a daily routine once the grid was made to keep up with the physics, games of chance on the ENIAC became Monte Carlo methods, and Cauchy's idea of walking downhill now trains artificial intelligence. The fog here is how fast two matrices can be multiplied, and why gradient descent trains deep networks as well as it does.",
       },
+      {
+        id: "decision",
+        title: "The Decision Thread",
+        intro:
+          "From a card game solved in a letter of 1713 to an auction with a satisfiability solver inside it. When the best thing to do depends on what someone else does, the reasoning threatens to regress forever, and the escape — choose at random, with calculated probabilities — turns strategy into mathematics. Von Neumann proved that games of pure opposition always have a value; Nash extended existence to every finite game and guaranteed nothing about whether the outcome is good for anyone. Impossibility results then showed that no voting rule is both coherent and honest, and that no division can always be both fair and stable. The same equilibria govern populations that inherit their strategies rather than choosing them, and computers made two old assumptions urgent: what decentralisation costs, and whether an equilibrium can be found at all. The fog here is which equilibrium gets played, how to sell several items at once, why humans cooperate with strangers, and how closely a Nash equilibrium can be approximated in polynomial time.",
+      },
     ],
   },
   {
