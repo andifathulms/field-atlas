@@ -207,6 +207,20 @@ applications:
       - citation: "Patterson, C. C. (1965). Contaminated and natural lead environments of man. Archives of Environmental Health 11: 344–360."
         url: null
 
+  - area: Palaeontology
+    title: Putting dates on the fossil record
+    description: >-
+      Fossils give the order of events and not their spacing. Dating minerals in volcanic ash beds
+      above and below a fossil-bearing layer brackets it absolutely, which is how the
+      Cretaceous–Palaeogene boundary is placed at 66.0 million years with an uncertainty of a few
+      tens of thousands of years — precise enough to argue about whether the asteroid or the Deccan
+      eruptions came first. The whole timescale of life's history is a radiometric result imposed on
+      a stratigraphic order.
+    domain: biology
+    field_id: paleontology
+    sources:
+      - citation: "Renne, P. R. et al. (2013). Time scales of critical events around the Cretaceous–Paleogene boundary. Science 339: 684–687."
+        url: null
 further_reading:
   - citation: "Lewis, C. (2000). The Dating Game: One Man's Search for the Age of the Earth. Cambridge University Press."
     url: null

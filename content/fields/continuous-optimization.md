@@ -185,7 +185,7 @@ applications:
       Protein Data Bank by stochastic gradient methods. In 2020 its predictions reached
       accuracy close to experiment for many proteins.
     domain: biology
-    field_id: molecular-biology
+    field_id: structure-prediction
     sources:
       - citation: "Jumper, J. et al. (2021). Highly accurate protein structure prediction with AlphaFold. Nature 596: 583–589."
         url: null

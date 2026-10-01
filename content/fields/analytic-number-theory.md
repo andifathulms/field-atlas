@@ -218,6 +218,7 @@ applications:
       primes should behave like a quantum chaotic system is unexplained, and it inspires
       hopes of a physical route to the Riemann hypothesis.
     domain: physics
+    field_id: nuclear-structure
     sources:
       - citation: "Montgomery, H. L. (1973). The pair correlation of zeros of the zeta function. Proceedings of Symposia in Pure Mathematics 24: 181–193."
         url: null

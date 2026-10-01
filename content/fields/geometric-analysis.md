@@ -202,6 +202,7 @@ applications:
       Calabi–Yau manifolds, whose existence rests on Yau's theorem. Much of the
       interaction between geometry and physics since then has run through them.
     domain: physics
+    field_id: quantum-field-theory
     sources:
       - citation: "Candelas, P., Horowitz, G. T., Strominger, A. & Witten, E. (1985). Vacuum configurations for superstrings. Nuclear Physics B 258: 46–74."
         url: null

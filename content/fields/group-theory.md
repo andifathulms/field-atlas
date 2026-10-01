@@ -166,6 +166,21 @@ applications:
       - citation: "Rokicki, T., Kociemba, H., Davidson, M. & Dethridge, J. (2014). The diameter of the Rubik's Cube group is twenty. SIAM Review 56(4): 645–670."
         url: null
 
+  - area: Virology
+    title: Why so many viruses are icosahedra
+    description: >-
+      A virus must build a closed shell from many copies of one protein, which is a problem in the
+      symmetry groups of the sphere: the icosahedral group is the largest finite rotation group, so it
+      allows a container to be assembled from the greatest number of identical subunits in identical
+      environments. Caspar and Klug's quasi-equivalence theory of 1962 enumerates the permitted shells
+      by a triangulation number, and the resulting list matches the capsids observed.
+    domain: biology
+    field_id: virology
+    sources:
+      - citation: "Caspar, D. L. D. & Klug, A. (1962). Physical principles in the construction of regular viruses. Cold Spring Harbor Symposia on Quantitative Biology 27: 1–24."
+        url: null
+      - citation: "Twarock, R. & Luque, A. (2019). Structural puzzles in virology solved with an overarching icosahedral design principle. Nature Communications 10: 4414."
+        url: null
 further_reading:
   - citation: "Ronan, M. (2006). Symmetry and the Monster: One of the Greatest Quests of Mathematics. Oxford University Press."
     url: null

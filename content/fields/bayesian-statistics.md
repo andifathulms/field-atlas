@@ -187,7 +187,7 @@ applications:
       possible trees. Bayesian phylogenetics samples trees by MCMC in proportion to their
       posterior probability, and reports how certain each branch is.
     domain: biology
-    field_id: evolutionary-biology
+    field_id: phylogenetics
     sources:
       - citation: "Huelsenbeck, J. P. & Ronquist, F. (2001). MRBAYES: Bayesian inference of phylogenetic trees. Bioinformatics 17(8): 754–755."
         url: null

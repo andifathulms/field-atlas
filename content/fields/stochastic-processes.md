@@ -229,6 +229,21 @@ applications:
       - citation: "Erlang, A. K. (1909). The theory of probabilities and telephone conversations. Nyt Tidsskrift for Matematik B 20: 33–39."
         url: null
 
+  - area: Macroevolution
+    title: Birth and death on a phylogeny
+    description: >-
+      Treating speciation and extinction as a birth–death process gives a model whose parameters can be
+      fitted to the branching times of a dated tree, and the practice became standard in evolutionary
+      biology. In 2020 it was proved that such data cannot identify the two rates separately —
+      infinitely many rate histories produce the same distribution of branching times — which is a
+      statement about the process, not about the data, and it invalidated a large literature.
+    domain: biology
+    field_id: macroevolution
+    sources:
+      - citation: "Nee, S., May, R. M. & Harvey, P. H. (1994). The reconstructed evolutionary process. Philosophical Transactions of the Royal Society B 344: 305–311."
+        url: null
+      - citation: "Louca, S. & Pennell, M. W. (2020). Extant timetrees are consistent with a myriad of diversification histories. Nature 580: 502–505."
+        url: null
 further_reading:
   - citation: "Norris, J. R. (1997). Markov Chains. Cambridge University Press."
     url: null

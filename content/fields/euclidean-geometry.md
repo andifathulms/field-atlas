@@ -209,6 +209,7 @@ applications:
       independently in 1891, decades before X-ray diffraction could see a crystal
       lattice. They are still how crystal structures are catalogued.
     domain: physics
+    field_id: crystallography
     sources:
       - citation: "Schoenflies, A. (1891). Krystallsysteme und Krystallstructur. Teubner, Leipzig."
         url: null

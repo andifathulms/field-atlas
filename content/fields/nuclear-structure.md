@@ -217,6 +217,21 @@ applications:
       fluorine-18, attached to sugar, show where tissue is most active in PET scans.
     sources: []
 
+  - area: Structural biology
+    title: Nuclear spins as a structural probe
+    description: >-
+      A nucleus with spin precesses in a magnetic field at a frequency that depends on its chemical
+      surroundings, and magnetisation can be passed between nuclei that are close together. Both
+      facts are nuclear physics, and together they let a protein's structure be determined in
+      solution, without a crystal, by assembling a list of short interatomic distances. The same
+      physics, imaged spatially, is magnetic resonance imaging.
+    domain: biology
+    field_id: structural-biology
+    sources:
+      - citation: "Wüthrich, K. (1986). NMR of Proteins and Nucleic Acids. Wiley."
+        url: null
+      - citation: "Ernst, R. R., Bodenhausen, G. & Wokaun, A. (1987). Principles of Nuclear Magnetic Resonance in One and Two Dimensions. Clarendon Press."
+        url: null
 further_reading:
   - citation: "Pais, A. (1986). Inward Bound: Of Matter and Forces in the Physical World. Oxford University Press."
     url: null

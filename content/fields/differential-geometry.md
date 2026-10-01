@@ -211,12 +211,28 @@ applications:
       explains the biconcave disc shape of human red blood cells, as Canham (1970) and
       Helfrich (1973) showed.
     domain: biology
+    field_id: membrane-biophysics
     sources:
       - citation: "Canham, P. B. (1970). The minimum energy of bending as a possible explanation of the biconcave shape of the human red blood cell. Journal of Theoretical Biology 26(1): 61–81."
         url: null
       - citation: "Helfrich, W. (1973). Elastic properties of lipid bilayers: theory and possible experiments. Zeitschrift für Naturforschung C 28: 693–703."
         url: null
 
+  - area: Optics
+    title: Transformation optics
+    description: >-
+      Maxwell's equations keep their form under a change of coordinates if the material properties
+      are transformed accordingly, so a desired bending of light can be specified as a coordinate map
+      and then realised as a prescription for a material's permittivity and permeability. Designs for
+      cloaks and flat lenses are produced this way: the geometry is chosen first and the metamaterial
+      is derived from it.
+    domain: physics
+    field_id: nonlinear-optics
+    sources:
+      - citation: "Pendry, J. B., Schurig, D. & Smith, D. R. (2006). Controlling electromagnetic fields. Science 312: 1780–1782."
+        url: null
+      - citation: "Leonhardt, U. (2006). Optical conformal mapping. Science 312: 1777–1780."
+        url: null
 further_reading:
   - citation: "do Carmo, M. P. (1976). Differential Geometry of Curves and Surfaces. Prentice-Hall."
     url: null

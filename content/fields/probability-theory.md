@@ -181,6 +181,22 @@ applications:
       - citation: "Black, F. & Scholes, M. (1973). The pricing of options and corporate liabilities. Journal of Political Economy 81(3): 637–654."
         url: null
 
+  - area: Soft matter
+    title: A polymer is a random walk
+    description: >-
+      Treating a long molecule as a sequence of randomly oriented steps gives its size as
+      $b\sqrt{N}$ rather than $bN$, and the Gaussian distribution of end-to-end distances supplies
+      the entropy from which rubber's elasticity follows — a restoring force proportional to
+      temperature, with no bond being stretched. The excluded-volume correction, which forbids the
+      walk from crossing itself, changes the exponent and was computed by borrowing the
+      renormalisation group from critical phenomena.
+    domain: physics
+    field_id: soft-matter
+    sources:
+      - citation: "de Gennes, P.-G. (1979). Scaling Concepts in Polymer Physics. Cornell University Press."
+        url: null
+      - citation: "Rubinstein, M. & Colby, R. H. (2003). Polymer Physics. Oxford University Press."
+        url: null
 further_reading:
   - citation: "Devlin, K. (2008). The Unfinished Game: Pascal, Fermat, and the Seventeenth-Century Letter that Made the World Modern. Basic Books."
     url: null

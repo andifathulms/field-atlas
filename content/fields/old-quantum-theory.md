@@ -163,6 +163,7 @@ applications:
       quantum measurement, and its sensitivity is limited by the statistics of photon
       arrival.
     domain: biology
+    field_id: systems-neuroscience
     sources:
       - citation: "Hecht, S., Shlaer, S. & Pirenne, M. H. (1942). Energy, quanta, and vision. Journal of General Physiology 25(6): 819–840."
         url: null

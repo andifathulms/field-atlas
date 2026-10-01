@@ -181,6 +181,7 @@ applications:
       "spectral gap", a basic physical property, is undecidable in general. The halting
       problem reappears inside a question about matter.
     domain: physics
+    field_id: solid-state-physics
     sources:
       - citation: "Cubitt, T. S., Perez-Garcia, D. & Wolf, M. M. (2015). Undecidability of the spectral gap. Nature 528: 207–211."
         url: null

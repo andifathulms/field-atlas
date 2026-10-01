@@ -159,6 +159,7 @@ applications:
       becomes possible. Network models refine the classical threshold for populations
       whose contacts are very uneven.
     domain: biology
+    field_id: infectious-disease-dynamics
     sources:
       - citation: "Pastor-Satorras, R. & Vespignani, A. (2001). Epidemic spreading in scale-free networks. Physical Review Letters 86(14): 3200–3203."
         url: null

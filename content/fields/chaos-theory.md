@@ -174,6 +174,7 @@ applications:
       slightly different starting states. The spread of the results, a direct response
       to Lorenz, measures how far ahead the weather can be predicted on a given day.
     domain: physics
+    field_id: geophysical-fluid-dynamics
     sources:
       - citation: "Molteni, F., Buizza, R., Palmer, T. N. & Petroliagis, T. (1996). The ECMWF ensemble prediction system: methodology and validation. Quarterly Journal of the Royal Meteorological Society 122(529): 73–119."
         url: null

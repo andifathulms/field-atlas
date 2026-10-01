@@ -284,6 +284,7 @@ applications:
       quintic. That was a problem algebraic geometers had struggled with for decades. The
       predictions were later proved, and the exchange created a new branch of the field.
     domain: physics
+    field_id: quantum-field-theory
     sources:
       - citation: "Candelas, P., de la Ossa, X. C., Green, P. S. & Parkes, L. (1991). A pair of Calabi–Yau manifolds as an exactly soluble superconformal theory. Nuclear Physics B 359(1): 21–74."
         url: null

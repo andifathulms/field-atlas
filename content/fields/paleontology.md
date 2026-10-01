@@ -238,6 +238,7 @@ applications:
       Maximum, a carbon release 56 million years ago, is used as a natural experiment against
       which climate models are checked at warming far beyond the instrumental record.
     domain: physics
+    field_id: geophysical-fluid-dynamics
     sources:
       - citation: "Zachos, J. C., Dickens, G. R. & Zeebe, R. E. (2008). An early Cenozoic perspective on greenhouse warming and carbon-cycle dynamics. Nature 451: 279–283."
         url: null

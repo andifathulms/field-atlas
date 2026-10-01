@@ -222,6 +222,7 @@ applications:
       the magnetic field of the human brain. Magnetoencephalography now maps brain activity
       millisecond by millisecond and helps surgeons locate the source of epileptic seizures.
     domain: biology
+    field_id: systems-neuroscience
     sources:
       - citation: "Cohen, D. (1972). Magnetoencephalography: detection of the brain's electrical activity with a superconducting magnetometer. Science 175(4022): 664–666."
         url: null

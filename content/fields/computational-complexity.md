@@ -179,6 +179,7 @@ applications:
       proteins must be special, and prediction methods like AlphaFold exploit patterns
       rather than brute force.
     domain: biology
+    field_id: structure-prediction
     sources:
       - citation: "Berger, B. & Leighton, T. (1998). Protein folding in the hydrophobic-hydrophilic (HP) model is NP-complete. Journal of Computational Biology 5(1): 27–40."
         url: null

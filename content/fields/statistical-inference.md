@@ -211,6 +211,8 @@ applications:
       Research Council's 1948 trial of streptomycin for tuberculosis, designed by Austin
       Bradford Hill, allocated patients by chance. It is now the standard of evidence for
       every new drug.
+    domain: biology
+    field_id: epidemiology
     sources:
       - citation: "Medical Research Council (1948). Streptomycin treatment of pulmonary tuberculosis. British Medical Journal 2(4582): 769–782."
         url: null

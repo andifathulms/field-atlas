@@ -178,6 +178,7 @@ applications:
       working in complex dynamics, notably Sullivan, McMullen and Lyubich, turned that
       argument into a proof, explaining numbers measured in fluids and circuits.
     domain: physics
+    field_id: phase-transitions
     sources:
       - citation: "Lyubich, M. (1999). Feigenbaum–Coullet–Tresser universality and Milnor's hairiness conjecture. Annals of Mathematics 149(2): 319–420."
         url: null

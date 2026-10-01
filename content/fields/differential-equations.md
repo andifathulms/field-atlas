@@ -152,6 +152,7 @@ applications:
       Their model predicts a threshold for an outbreak, and its descendants guided
       responses to COVID-19.
     domain: biology
+    field_id: infectious-disease-dynamics
     sources:
       - citation: "Kermack, W. O. & McKendrick, A. G. (1927). A contribution to the mathematical theory of epidemics. Proceedings of the Royal Society A 115(772): 700–721."
         url: null
@@ -176,6 +177,19 @@ applications:
       - citation: "Butcher, J. C. (2016). Numerical Methods for Ordinary Differential Equations (3rd ed.). Wiley."
         url: null
 
+  - area: Fluid dynamics
+    title: The equations nobody can solve
+    description: >-
+      The Navier–Stokes equations are a system of nonlinear partial differential equations, and they
+      are the standard example of how far existence theory lags behind use: they are solved
+      numerically every day to design aircraft and forecast weather, and whether smooth solutions
+      exist in three dimensions for all time is a Millennium Prize problem. The nonlinear term that
+      makes them intractable is the one describing fluid carrying its own momentum.
+    domain: physics
+    field_id: fluid-dynamics
+    sources:
+      - citation: "Fefferman, C. L. (2006). Existence and smoothness of the Navier–Stokes equation. In The Millennium Prize Problems, 57–67. Clay Mathematics Institute."
+        url: null
 further_reading:
   - citation: "Strogatz, S. (2019). Infinite Powers: How Calculus Reveals the Secrets of the Universe. Houghton Mifflin Harcourt."
     url: null

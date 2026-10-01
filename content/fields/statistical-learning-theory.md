@@ -202,7 +202,7 @@ applications:
       predicted the shapes of proteins from their sequences with accuracy close to
       experiment in the 2020 CASP assessment, largely solving a fifty-year-old problem.
     domain: biology
-    field_id: molecular-biology
+    field_id: structure-prediction
     sources:
       - citation: "Jumper, J. et al. (2021). Highly accurate protein structure prediction with AlphaFold. Nature 596: 583–589."
         url: null

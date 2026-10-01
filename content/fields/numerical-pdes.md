@@ -190,7 +190,7 @@ applications:
       day per decade: a forecast for six days ahead is now as good as a forecast for five
       days ahead was ten years earlier.
     domain: physics
-    field_id: classical-mechanics
+    field_id: geophysical-fluid-dynamics
     sources:
       - citation: "Bauer, P., Thorpe, A. & Brunet, G. (2015). The quiet revolution of numerical weather prediction. Nature 525: 47–55."
         url: null
@@ -211,6 +211,8 @@ applications:
       Aircraft, bridges, engines and car bodies are tested by finite element simulation
       long before anything is built. Crash tests, for example, are now mostly run on
       computers, with physical tests to confirm the result.
+    domain: physics
+    field_id: elasticity
     sources:
       - citation: "Zienkiewicz, O. C., Taylor, R. L. & Zhu, J. Z. (2013). The Finite Element Method: Its Basis and Fundamentals, 7th edition. Butterworth-Heinemann."
         url: null

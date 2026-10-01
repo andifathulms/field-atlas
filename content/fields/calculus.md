@@ -135,6 +135,7 @@ applications:
       descendants, with ideas such as the reproduction number, guide public-health
       responses to outbreaks.
     domain: biology
+    field_id: infectious-disease-dynamics
     sources:
       - citation: "Kermack, W. O. & McKendrick, A. G. (1927). A contribution to the mathematical theory of epidemics. Proceedings of the Royal Society A 115: 700–721."
         url: null

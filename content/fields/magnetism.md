@@ -216,6 +216,7 @@ applications:
       downhill to the whole. The work helped revive neural networks, and Hopfield shared the
       2024 Nobel prize in physics for it.
     domain: biology
+    field_id: computational-neuroscience
     sources:
       - citation: "Hopfield, J. J. (1982). Neural networks and physical systems with emergent collective computational abilities. Proceedings of the National Academy of Sciences 79(8): 2554–2558."
         url: null

@@ -166,7 +166,7 @@ applications:
       phase information is recovered, reveals the positions of atoms, which is how the
       structures of DNA and proteins were solved.
     domain: biology
-    field_id: molecular-biology
+    field_id: protein-crystallography
     sources:
       - citation: "Glusker, J. P. & Trueblood, K. N. (2010). Crystal Structure Analysis: A Primer (3rd ed.). Oxford University Press."
         url: null
@@ -195,6 +195,19 @@ applications:
       (OFDM), using the fast Fourier transform in every modem to send and receive them.
     sources: []
 
+  - area: Optics
+    title: Diffraction is a Fourier transform
+    description: >-
+      The pattern of light far from an aperture is the Fourier transform of the aperture's
+      transmission, which is why a narrow slit spreads light widely and a wide one does not, and why
+      a lens placed one focal length away displays that transform directly. Image formation is then
+      two transforms in succession, and the resolution limit is a statement about which spatial
+      frequencies the lens collects.
+    domain: physics
+    field_id: wave-optics
+    sources:
+      - citation: "Goodman, J. W. (2017). Introduction to Fourier Optics, 4th edition. W. H. Freeman."
+        url: null
 further_reading:
   - citation: "Körner, T. W. (1988). Fourier Analysis. Cambridge University Press."
     url: null

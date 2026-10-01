@@ -10,7 +10,7 @@
   <a href="https://github.com/andifathulms/field-atlas/actions/workflows/deploy.yml"><img alt="Deploy" src="https://github.com/andifathulms/field-atlas/actions/workflows/deploy.yml/badge.svg"></a>
   <img alt="Next.js 14, static export" src="https://img.shields.io/badge/Next.js-14%20static%20export-16130F">
   <img alt="No backend" src="https://img.shields.io/badge/backend-none-9098E0">
-  <img alt="104 fields" src="https://img.shields.io/badge/fields-104-D98456">
+  <img alt="134 fields" src="https://img.shields.io/badge/fields-134-D98456">
 </p>
 
 ---
@@ -21,18 +21,18 @@ split, the people who were there, and the questions it still cannot answer.
 
 - **Maps, not timelines.** Lineage is a DAG — a field can be born at the seam of two parents — so
   each thread is drawn as a branching map with the turning points hung along the branch.
-- **Dated turning points.** 604 of them, each with sources. Contested ones are marked as contested
+- **Dated turning points.** 789 of them, each with sources. Contested ones are marked as contested
   and say what is disputed, rather than picking a side.
-- **The fog is drawn.** 121 open problems, rendered as branches that fade into dashes: the atlas
+- **The fog is drawn.** 156 open problems, rendered as branches that fade into dashes: the atlas
   shows its own edge instead of pretending the map is finished.
 
 ## What is surveyed
 
 | Domain | Threads | Fields |
 | --- | --- | --- |
-| **Mathematics** | Geometry, Number Theory, Analysis, Foundations, Algebra, Combinatorics, Dynamics, Statistics, Computation | 49 |
-| **Physics** | Relativity, Entropy, Quantum, Stars, Matter, Nuclear | 30 |
-| **Biology** | Heredity, Cell, Brain, Ecology, Development | 25 |
+| **Mathematics** | Geometry, Number Theory, Analysis, Foundations, Algebra, Combinatorics, Dynamics, Statistics, Computation, Decision | 54 |
+| **Physics** | Relativity, Entropy, Quantum, Stars, Light, Flow, Matter, Nuclear | 40 |
+| **Biology** | Heredity, Cell, Disease, Brain, Ecology, Tree of Life, Development, Molecular Structure | 40 |
 
 Every field carries an *A Closer Look* chapter: one worked example or key argument with real
 numbers, so the central idea is seen working rather than described.

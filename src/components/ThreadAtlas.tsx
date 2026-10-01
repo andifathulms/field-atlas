@@ -4,7 +4,10 @@ import { withBase } from "@/lib/paths";
 import type { Domain } from "@/lib/types";
 
 const W = 1060;
-const H = 820;
+// Tall enough that the domain arc labels, at R + 175, clear the bottom of the
+// viewBox when a domain's arc is centred on the vertical — which it is once a
+// domain has eight threads.
+const H = 900;
 const CX = W / 2;
 const CY = H / 2;
 const R = 250;
