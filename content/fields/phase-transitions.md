@@ -187,6 +187,8 @@ applications:
       Above its critical point, carbon dioxide dissolves substances like a liquid but
       flows like a gas. It is used to decaffeinate coffee and extract flavours without
       toxic solvents.
+    domain: chemistry
+    field_id: chemical-thermodynamics
     sources:
       - citation: "McHugh, M. A. & Krukonis, V. J. (1994). Supercritical Fluid Extraction (2nd ed.). Butterworth-Heinemann."
         url: null

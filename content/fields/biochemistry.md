@@ -196,6 +196,19 @@ applications:
       - citation: "Berg, J. M., Tymoczko, J. L., Gatto, G. J. & Stryer, L. (2019). Biochemistry (9th ed.). W. H. Freeman."
         url: null
 
+  - area: Chemistry
+    title: The catalysts everything else is compared against
+    description: >-
+      An enzyme accelerates its reaction by factors up to $10^{17}$, with essentially complete
+      selectivity, in water at ambient temperature — conditions no synthetic catalyst matches. That
+      makes enzymology the benchmark for catalysis rather than an application of it, and the source of
+      its most productive idea: that catalytic power is affinity for the transition state rather than
+      for the substrate.
+    domain: chemistry
+    field_id: catalysis
+    sources:
+      - citation: "Wolfenden, R. & Snider, M. J. (2001). The depth of chemical time and the power of enzymes as catalysts. Accounts of Chemical Research 34: 938–945."
+        url: null
 further_reading:
   - citation: "Lane, N. (2005). Power, Sex, Suicide: Mitochondria and the Meaning of Life. Oxford University Press."
     url: null

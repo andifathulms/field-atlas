@@ -227,6 +227,19 @@ applications:
       - citation: "LeCun, Y., Bottou, L., Bengio, Y. & Haffner, P. (1998). Gradient-based learning applied to document recognition. Proceedings of the IEEE 86(11): 2278–2324."
         url: null
 
+  - area: Chemistry
+    title: Planning a synthesis by learned search
+    description: >-
+      Retrosynthetic planning is a search over a tree with no exact evaluation function, which
+      defeated rule-based programs for fifty years. Networks trained on some twelve million published
+      reactions, used to propose disconnections and to judge whether a fragment is purchasable, and
+      combined with Monte Carlo tree search, find routes that chemists rate as highly as published
+      ones in a double-blind comparison.
+    domain: chemistry
+    field_id: retrosynthetic-analysis
+    sources:
+      - citation: "Segler, M. H. S., Preuss, M. & Waller, M. P. (2018). Planning chemical syntheses with deep neural networks and symbolic AI. Nature 555: 604–610."
+        url: null
 further_reading:
   - citation: "Shalev-Shwartz, S. & Ben-David, S. (2014). Understanding Machine Learning: From Theory to Algorithms. Cambridge University Press."
     url: null

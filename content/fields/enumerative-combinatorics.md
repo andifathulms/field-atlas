@@ -192,6 +192,8 @@ applications:
       Cayley counted the possible alkanes, chains of carbon and hydrogen, in 1875, and
       Pólya's theorem made such counts routine. Chemists use them to know how many
       isomers a formula allows, and drug designers to estimate the size of chemical space.
+    domain: chemistry
+    field_id: organic-structure-theory
     sources:
       - citation: "Pólya, G. & Read, R. C. (1987). Combinatorial Enumeration of Groups, Graphs, and Chemical Compounds. Springer."
         url: null

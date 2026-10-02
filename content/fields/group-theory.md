@@ -153,6 +153,8 @@ applications:
       Each molecule has a symmetry group, and group theory predicts which of its vibrations
       absorb infrared light, which electronic transitions are allowed, and how orbitals
       combine. It is standard equipment in physical chemistry.
+    domain: chemistry
+    field_id: spectroscopic-structure-determination
     sources:
       - citation: "Cotton, F. A. (1990). Chemical Applications of Group Theory (3rd ed.). Wiley."
         url: null

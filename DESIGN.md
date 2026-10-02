@@ -43,17 +43,18 @@ Ink on paper, plus one accent per domain. Everything is a CSS variable on `:root
 | `--fog` | `#a29a8c` | unmapped: intentionally below text contrast |
 | `--math` | `#2c3b80` | fountain-pen indigo, the color of proof |
 | `--physics` | `#a4541d` | instrument amber / oscilloscope graphite-orange |
+| `--chemistry` | `#6b3a63` | retort plum, the one gap left in the wheel |
 | `--biology` | `#4f6e3c` | field-notebook moss |
 | `--contested` | `#a8372a` | warning-red hatch, used sparingly |
 
-**Night: the notebook by lamplight.** Chosen by the reader with the header toggle, or following the system setting. Warm charcoal paper (`#161512`) and bone ink (`#ebe4d4`), with each accent lifted to a lighter, less saturated version of itself (math `#9fb0f0`, physics `#e59c62`, biology `#9fbf86`, contested `#e57a64`). Fog stays below text contrast in both themes. Night is not a "dark UI": no pure black, no neon, same paper grain.
+**Night: the notebook by lamplight.** Chosen by the reader with the header toggle, or following the system setting. Warm charcoal paper (`#161512`) and bone ink (`#ebe4d4`), with each accent lifted to a lighter, less saturated version of itself (math `#9fb0f0`, physics `#e59c62`, chemistry `#c99cc4`, biology `#9fbf86`, contested `#e57a64`). Fog stays below text contrast in both themes. Night is not a "dark UI": no pure black, no neon, same paper grain.
 
 A faint paper grain (SVG turbulence, ~4% opacity) sits over the page in both themes, so the surface reads as paper rather than screen.
 
 Rules:
 - Contested items get the red hatch or a red rule, never a red fill or badge.
 - Open problems are desaturated and lower-contrast than settled content, so they read as less certain before any label is read.
-- A domain accent appears only in that domain's context (its pages, its name, its lines), except on the crossings view and the landing plate, where all three meet.
+- A domain accent appears only in that domain's context (its pages, its name, its lines), except on the crossings view and the landing plate, where all four meet.
 
 ## Layout and navigation
 - **Sticky header**, translucent paper with a backdrop blur and a hairline. It holds the mark (a small branching tree whose third branch runs out into dashes), the domain links with the current one underlined in its accent, Crossings, and the day/night toggle. On mobile the nav becomes one sideways-scrolling row.

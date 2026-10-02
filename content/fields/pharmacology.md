@@ -258,6 +258,19 @@ applications:
       - citation: "Van Boeckel, T. P. et al. (2015). Global trends in antimicrobial use in food animals. PNAS 112: 5649–5654."
         url: null
 
+  - area: Chemistry
+    title: A regulatory requirement that created a field
+    description: >-
+      Once regulators required single enantiomers rather than mixtures, making one hand of a molecule
+      at scale stopped being an academic exercise and became a manufacturing necessity. Asymmetric
+      catalysis was developed largely in response — the first industrial example, Knowles's route to
+      L-DOPA, was a pharmaceutical process — and the demand continues to set which chemistry is worth
+      developing.
+    domain: chemistry
+    field_id: catalysis
+    sources:
+      - citation: "Agranat, I., Caner, H. & Caldwell, J. (2002). Putting chirality to work: the strategy of chiral switches. Nature Reviews Drug Discovery 1: 753–768."
+        url: null
 further_reading:
   - citation: "Lesch, J. E. (2007). The First Miracle Drugs. Oxford University Press."
     url: null

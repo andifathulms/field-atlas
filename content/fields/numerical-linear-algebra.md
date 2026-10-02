@@ -195,6 +195,21 @@ applications:
       - citation: "Saad, Y. (2011). Numerical Methods for Large Eigenvalue Problems, revised edition. SIAM."
         url: null
 
+  - area: Chemistry
+    title: The largest consumer of eigenvalue solvers
+    description: >-
+      A quantum chemical calculation is, in the end, the repeated diagonalisation of a matrix whose
+      size is the number of basis functions, inside a loop that iterates to self-consistency. Density
+      functional theory applied to molecules and solids is probably the single largest use of dense
+      and sparse eigensolvers in science, and the scaling of those routines — rather than any
+      chemistry — sets how large a system can be treated.
+    domain: chemistry
+    field_id: quantum-chemistry
+    sources:
+      - citation: "Roothaan, C. C. J. (1951). New developments in molecular orbital theory. Reviews of Modern Physics 23: 69–89."
+        url: null
+      - citation: "Saad, Y., Chelikowsky, J. R. & Shontz, S. M. (2010). Numerical methods for electronic structure calculations of materials. SIAM Review 52: 3–54."
+        url: null
 further_reading:
   - citation: "Trefethen, L. N. & Bau, D. (1997). Numerical Linear Algebra. SIAM."
     url: null

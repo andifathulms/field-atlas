@@ -219,6 +219,8 @@ applications:
       crystal form had appeared that no one had seen in development, and once it existed
       the old form became almost impossible to make. The drug had to be reformulated.
       Screening for polymorphs is now a routine step in drug development.
+    domain: chemistry
+    field_id: chemical-composition
     sources:
       - citation: "Bauer, J. et al. (2001). Ritonavir: an extraordinary example of conformational polymorphism. Pharmaceutical Research 18(6): 859–866."
         url: null

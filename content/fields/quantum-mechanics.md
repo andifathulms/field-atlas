@@ -201,6 +201,21 @@ applications:
       - citation: "Maiman, T. H. (1960). Stimulated optical radiation in ruby. Nature 187: 493–494."
         url: null
 
+  - area: Chemistry
+    title: The equation that governs every molecule
+    description: >-
+      A year after Schrödinger's equation appeared, Heitler and London applied it to two hydrogen
+      atoms and obtained a chemical bond, held together by a term arising from the electrons being
+      indistinguishable. Dirac remarked in 1929 that the laws underlying the whole of chemistry were
+      thereby known, and that the difficulty was only that the equations could not be solved —
+      which turned out to be the subject of a discipline rather than a footnote.
+    domain: chemistry
+    field_id: quantum-chemistry
+    sources:
+      - citation: "Heitler, W. & London, F. (1927). Wechselwirkung neutraler Atome und homöopolare Bindung nach der Quantenmechanik. Zeitschrift für Physik 44: 455–472."
+        url: null
+      - citation: "Dirac, P. A. M. (1929). Quantum mechanics of many-electron systems. Proceedings of the Royal Society A 123: 714–733."
+        url: null
 further_reading:
   - citation: "Feynman, R. P., Leighton, R. B. & Sands, M. (1965). The Feynman Lectures on Physics, Vol. III. Addison-Wesley."
     url: https://www.feynmanlectures.caltech.edu/III_toc.html

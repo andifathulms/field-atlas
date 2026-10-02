@@ -167,6 +167,8 @@ applications:
       Within two years of inventing spectral analysis, Bunsen and Kirchhoff discovered
       caesium and rubidium from unfamiliar lines in mineral water and minerals. Thallium,
       indium, helium and several rare gases followed the same way.
+    domain: chemistry
+    field_id: periodic-system
     sources:
       - citation: "Kirchhoff, G. & Bunsen, R. (1861). Chemische Analyse durch Spectralbeobachtungen. Zweite Abhandlung. Annalen der Physik und Chemie 113: 337–381."
         url: null
@@ -176,6 +178,8 @@ applications:
       Atomic absorption spectroscopy, developed by Alan Walsh in 1955 on Kirchhoff's
       principle, measures traces of lead, mercury and other metals in water, blood and
       food, and is a standard tool of environmental and clinical laboratories.
+    domain: chemistry
+    field_id: chemical-analysis
     sources:
       - citation: "Walsh, A. (1955). The application of atomic absorption spectra to chemical analysis. Spectrochimica Acta 7: 108–117."
         url: null

@@ -184,6 +184,19 @@ applications:
       - citation: "Çengel, Y. A. & Boles, M. A. (2019). Thermodynamics: An Engineering Approach (9th ed.). McGraw-Hill."
         url: null
 
+  - area: Chemistry
+    title: Which way a reaction goes
+    description: >-
+      Applied to a reaction rather than an engine, the second law gives the criterion chemistry had
+      been missing: the combination of enthalpy and entropy that must decrease, and whose vanishing
+      is equilibrium. It replaced the plausible and false rule that reactions proceed in the
+      direction releasing most heat, and it says what no amount of catalysis or engineering can
+      achieve.
+    domain: chemistry
+    field_id: chemical-thermodynamics
+    sources:
+      - citation: "Gibbs, J. W. (1878). On the equilibrium of heterogeneous substances. Transactions of the Connecticut Academy of Arts and Sciences 3: 343–524."
+        url: null
 further_reading:
   - citation: "Atkins, P. (2010). The Laws of Thermodynamics: A Very Short Introduction. Oxford University Press."
     url: null
