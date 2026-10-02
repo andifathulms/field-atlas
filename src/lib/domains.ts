@@ -156,6 +156,12 @@ export const DOMAINS: DomainInfo[] = [
         intro:
           "From the wrong criterion for which way a reaction goes to watching a bond break with a flash a hundred femtoseconds long. Heat release looked like the driving force for most of the nineteenth century and is not: ammonium nitrate dissolves while getting cold. The right quantity decides direction and says nothing about speed, so rates had to be studied separately — and because the exponent in Arrhenius's equation does the work, a barrier lowered by a third buys a hundred thousandfold in rate. That is the whole economics of catalysis, and the reason nitrogen can be taken out of the air at all. The fog here is the thermodynamics of anything more concentrated than a dilute solution, networks of thousands of coupled steps, reactions that bypass the saddle point, fixing nitrogen the way a bacterium does, and exact dynamics for a molecule worth reacting.",
       },
+      {
+        id: "synthesis",
+        title: "The Synthesis Thread",
+        intro:
+          "From two substances with the same formula and nothing else in common to a reaction that ignores everything in a living cell. Isomerism was a crisis, because composition was all chemistry could measure, and the resolution — that carbon bonds to itself, so a molecule is a specific connected structure — let the number of isomers a formula permits be counted and checked. A tetrahedron then explained why two molecules can be mirror images distinguishable by nothing but the light they rotate, which turns out to matter because every receptor is handed too. Building such molecules deliberately became the discipline's demonstration of competence, governed by an arithmetic in which forty steps at ninety per cent each deliver one and a half. The fog here is what aromaticity is, why life uses one hand, how to make a complex molecule in few steps, how to get from a planned route to a working one, and how to choose one carbon-hydrogen bond out of forty.",
+      },
     ],
   },
   {
