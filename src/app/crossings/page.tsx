@@ -22,6 +22,12 @@ const DOMAIN_TEXT: Record<Domain, string> = {
   biology: "text-biology",
 };
 
+/** "a, b and c" — the unmapped areas read as a sentence, not a list. */
+function proseList(items: string[]) {
+  if (items.length < 2) return items.join("");
+  return `${items.slice(0, -1).join(", ")} and ${items[items.length - 1]}`;
+}
+
 function groupByDirection(crossings: Crossing[]) {
   const groups = new Map<string, { from: Domain; to: Domain; items: Crossing[] }>();
   for (const c of crossings) {
@@ -38,6 +44,13 @@ function groupByDirection(crossings: Crossing[]) {
 export default function CrossingsPage() {
   const { links, seeds } = getCrossings();
   const fieldCounts = Object.fromEntries(DOMAINS.map((d) => [d.id, getFields(d.id).length])) as Record<Domain, number>;
+  // Name the unmapped ground from the seeds themselves, biggest cluster first, so the
+  // sentence below cannot go stale as seeds are linked up to new fields.
+  const seedCounts = new Map<string, number>();
+  for (const { application } of seeds) seedCounts.set(application.area, (seedCounts.get(application.area) ?? 0) + 1);
+  const seedAreas = [...seedCounts]
+    .sort((a, b) => b[1] - a[1] || a[0].localeCompare(b[0]))
+    .map(([area]) => area.toLowerCase());
 
   return (
     <main className="mx-auto max-w-6xl px-4 sm:px-8">
@@ -105,8 +118,8 @@ export default function CrossingsPage() {
             Reaching past the survey
           </h2>
           <p className="mt-3 max-w-prose text-ink-faint">
-            Uses that land in another domain, but in a part of it this atlas has not surveyed yet: medicine,
-            crystallography, statistics. Each is a place a future field would connect.
+            Uses that land in another domain, but in a part of it this atlas has not surveyed yet:{" "}
+            {proseList(seedAreas)}. Each is a place a future field would connect.
           </p>
           <ul className="mt-6">
             {seeds.map(({ from, application }) => (
