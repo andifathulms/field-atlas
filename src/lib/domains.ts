@@ -168,6 +168,12 @@ export const DOMAINS: DomainInfo[] = [
         intro:
           "From a pile of zinc and silver discs to the arithmetic of why a battery cannot match petrol. A steady current was the first tool that could take apart compounds no reagent would touch, and within two years it had produced six new elements; Faraday then made the relation between charge and chemical change exact, and in doing so measured the charge on the electron sixty years before anyone knew there was one. Ions turned out to be present before the current rather than made by it, a potential turned out to read a concentration at fifty-nine millivolts per decade, and a metal turned out to corrode by acting as its own short-circuited cell. The fog here is what the electrode interface actually looks like, whether a single ion's activity means anything, how to predict an overpotential, how to make the lithium-metal anode safe, and when a pit will start.",
       },
+      {
+        id: "analysis",
+        title: "The Analysis Thread",
+        intro:
+          "From weighing a precipitate to weighing a protein, and the discovery that the instrument is rarely where the error is. Chemistry's oldest service is to say what is in something and how much, and the discipline that made it reliable was procedural: a fixed scheme of reagents, a reagent of known strength, a certified sample to check against. Then separation made mixtures tractable, with resolving power that can be bought by the metre; exact mass made a formula readable to four decimal places; and a radio receiver turned out to count a molecule's hydrogens and their neighbours, so that a structure which once took a career took an afternoon. The fog here is whether a sample represents anything, samples with more components than the separation has peaks, the great majority of detected masses that cannot be identified, getting a structure from spectra without a chemist, and what the surface of a working catalyst actually is.",
+      },
     ],
   },
   {
