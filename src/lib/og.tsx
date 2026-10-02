@@ -19,11 +19,17 @@ const PAPER = "#EDE7D9";
 const VIOLET = "#9098E0";
 const TERRACOTTA = "#D98456";
 const SAGE = "#8CAA79";
+const PLUM = "#BE92C0";
 
-/** Accent per domain, in the fixed brand order: math, physics, biology. */
+/**
+ * Accent per domain. The mark itself stays a trifork: it is a mark, not a key to
+ * the domains, and the brand masters are not in the repository to redraw. The
+ * fourth domain therefore has a card colour and no prong.
+ */
 export const DOMAIN_COLOR: Record<string, string> = {
   math: VIOLET,
   physics: TERRACOTTA,
+  chemistry: PLUM,
   biology: SAGE,
 };
 

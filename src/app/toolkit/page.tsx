@@ -17,11 +17,13 @@ export const metadata: Metadata = pageMetadata({
 const DOMAIN_TEXT: Record<Domain, string> = {
   math: "text-math",
   physics: "text-physics",
+  chemistry: "text-chemistry",
   biology: "text-biology",
 };
 const DOMAIN_BG: Record<Domain, string> = {
   math: "bg-math",
   physics: "bg-physics",
+  chemistry: "bg-chemistry",
   biology: "bg-biology",
 };
 

@@ -1,7 +1,7 @@
 // Shared data model — one collection per entity across all three domains.
 // Filter by `domain`; never split into per-domain tables. See CLAUDE.md.
 
-export type Domain = "math" | "physics" | "biology";
+export type Domain = "math" | "physics" | "chemistry" | "biology";
 
 export interface Source {
   citation: string;
@@ -110,6 +110,7 @@ export interface Field {
 export const TURNING_POINT_TYPES: Record<Domain, readonly string[]> = {
   math: ["CONJECTURE", "PROOF", "DISPROOF", "REFORMULATION", "CRISIS"],
   physics: ["DISCOVERY", "EXPERIMENT", "THEORY-REPLACED", "PARADIGM-SHIFT"],
+  chemistry: ["SUBSTANCE-ISOLATED", "SYNTHESIS-ACHIEVED", "MECHANISM-ESTABLISHED", "THEORY-REPLACED", "TECHNIQUE-INVENTED"],
   biology: ["DISCOVERY", "SYNTHESIS", "TECHNIQUE-INVENTED", "CONSENSUS-OVERTURNED"],
 };
 

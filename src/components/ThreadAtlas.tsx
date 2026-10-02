@@ -94,6 +94,7 @@ function chord(a: number, b: number) {
 const DOMAIN_VAR: Record<Domain, string> = {
   math: "var(--math)",
   physics: "var(--physics)",
+  chemistry: "var(--chemistry)",
   biology: "var(--biology)",
 };
 

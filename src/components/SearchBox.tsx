@@ -27,6 +27,7 @@ const KIND_WEIGHT: Record<SearchItem["kind"], number> = {
 const DOMAIN_TEXT: Record<Domain, string> = {
   math: "text-math",
   physics: "text-physics",
+  chemistry: "text-chemistry",
   biology: "text-biology",
 };
 

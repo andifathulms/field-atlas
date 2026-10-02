@@ -22,7 +22,7 @@ const CONTENT_DIR = path.join(process.cwd(), "content");
 const FIELDS_DIR = path.join(CONTENT_DIR, "fields");
 const FIGURES_FILE = path.join(CONTENT_DIR, "figures.json");
 
-const DOMAIN_IDS: Domain[] = ["math", "physics", "biology"];
+const DOMAIN_IDS: Domain[] = ["math", "physics", "chemistry", "biology"];
 const STATUSES: OpenProblemStatus[] = ["open", "recently_resolved", "conjectured"];
 
 /** `{{fig:gauss}}` or `{{fig:gauss|Gauss}}` inside chapter prose. */

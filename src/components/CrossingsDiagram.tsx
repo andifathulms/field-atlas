@@ -3,22 +3,49 @@ import { DOMAINS } from "@/lib/domains";
 import { withBase } from "@/lib/paths";
 import type { Domain } from "@/lib/types";
 
-const W = 720;
-const H = 470;
+const W = 900;
+const H = 620;
 const R = 46;
+/**
+ * Four territories at the corners of a quadrilateral. The order round it —
+ * mathematics, physics, chemistry, biology — is chosen so that the two pairs
+ * left as diagonals are the two that exchange least, and chemistry sits next to
+ * both of the domains it crosses with most.
+ */
 const POS: Record<Domain, [number, number]> = {
-  math: [150, 150],
-  physics: [570, 150],
-  biology: [360, 360],
+  math: [170, 165],
+  physics: [730, 165],
+  chemistry: [730, 450],
+  biology: [170, 450],
 };
-/** Extra push off the arc for labels that would otherwise meet in the middle of the triangle. */
-const LABEL_NUDGE: Partial<Record<string, number>> = { "physics>math": 24 };
+
+/**
+ * Both directions of a pair bow the same way and are nested, rather than bowing
+ * left of travel: with six pairs instead of three, the reverse arcs would
+ * otherwise all pass through the middle and their labels would pile up there.
+ * `n` is the side they bow towards, `near`/`far` how far the inner and outer of
+ * the two arcs are pushed.
+ */
+const PAIRS: Array<{ a: Domain; b: Domain; n: [number, number]; near: number; far: number }> = [
+  { a: "math", b: "physics", n: [0, -1], near: 44, far: 150 },
+  { a: "physics", b: "chemistry", n: [1, 0], near: 44, far: 150 },
+  { a: "chemistry", b: "biology", n: [0, 1], near: 44, far: 150 },
+  { a: "biology", b: "math", n: [-1, 0], near: 44, far: 150 },
+  { a: "math", b: "chemistry", n: [0.447, -0.894], near: 70, far: 190 },
+  { a: "physics", b: "biology", n: [0.447, 0.894], near: 70, far: 190 },
+];
+const ARC: Record<string, { n: [number, number]; bow: number }> = Object.fromEntries(
+  PAIRS.flatMap(({ a, b, n, near, far }) => [
+    [`${a}>${b}`, { n, bow: near }],
+    [`${b}>${a}`, { n, bow: far }],
+  ]),
+);
 
 /** Stroke width grows with the number of crossings, but slowly, so one heavy arc doesn't swamp the rest. */
 const arcWidth = (linked: number) => 1.4 + Math.sqrt(linked) * 1.5;
 
-/** Top-row domains carry their labels above the circle, the bottom one below, so arcs never cross them. */
-const LABEL_ABOVE: Record<Domain, boolean> = { math: true, physics: true, biology: false };
+/** Top-row domains carry their labels above the circle, the bottom row below, so arcs never cross them. */
+const LABEL_ABOVE: Record<Domain, boolean> = { math: true, physics: true, chemistry: false, biology: false };
 
 interface Arc {
   from: Domain;
@@ -27,29 +54,27 @@ interface Arc {
   seeds: number;
 }
 
-/** Quadratic arc between two domain nodes, bowed to the left of travel so opposite directions separate. */
-function arcGeometry(from: Domain, to: Domain, bow: number) {
-  const nudge = LABEL_NUDGE[`${from}>${to}`] ?? 0;
+/** Quadratic arc between two domain nodes, bowed to its pair's side by its own amount. */
+function arcGeometry(from: Domain, to: Domain) {
+  const { n, bow } = ARC[`${from}>${to}`];
+  const [nx, ny] = n;
   const [x0, y0] = POS[from];
   const [x1, y1] = POS[to];
   const dx = x1 - x0;
   const dy = y1 - y0;
   const len = Math.hypot(dx, dy);
   const [ux, uy] = [dx / len, dy / len];
-  const [px, py] = [uy, -ux];
-  const s: [number, number] = [x0 + ux * (R + 8) + px * 10, y0 + uy * (R + 8) + py * 10];
-  const e: [number, number] = [x1 - ux * (R + 14) + px * 10, y1 - uy * (R + 14) + py * 10];
-  const c: [number, number] = [(x0 + x1) / 2 + px * bow, (y0 + y1) / 2 + py * bow];
-  // The label sits just off the arc's midpoint, on its outer (bowed) side.
-  const mid: [number, number] = [
-    0.25 * s[0] + 0.5 * c[0] + 0.25 * e[0] + px * (44 + nudge),
-    0.25 * s[1] + 0.5 * c[1] + 0.25 * e[1] + py * (34 + nudge),
-  ];
+  const s: [number, number] = [x0 + ux * (R + 8) + nx * 10, y0 + uy * (R + 8) + ny * 10];
+  const e: [number, number] = [x1 - ux * (R + 14) + nx * 10, y1 - uy * (R + 14) + ny * 10];
+  const c: [number, number] = [(x0 + x1) / 2 + nx * bow, (y0 + y1) / 2 + ny * bow];
+  // The label sits just beyond the arc's own apex, so nested arcs never share one.
+  const apex: [number, number] = [0.25 * s[0] + 0.5 * c[0] + 0.25 * e[0], 0.25 * s[1] + 0.5 * c[1] + 0.25 * e[1]];
+  const mid: [number, number] = [apex[0] + nx * 14, apex[1] + ny * 14];
   return { d: `M${s[0]},${s[1]} Q${c[0]},${c[1]} ${e[0]},${e[1]}`, mid };
 }
 
 /**
- * The three domains as surveyed territories, with the crossings between them.
+ * The domains as surveyed territories, with the crossings between them.
  * Solid arcs land in a surveyed field; dashed, fading arcs reach a domain the
  * survey hasn't mapped at that point yet.
  */
@@ -100,7 +125,7 @@ export function CrossingsDiagram({
       </defs>
 
       {[...arcs.values()].map((a) => {
-        const { d, mid } = arcGeometry(a.from, a.to, 46);
+        const { d, mid } = arcGeometry(a.from, a.to);
         const colour = `var(--${a.from})`;
         return (
           <g key={`${a.from}-${a.to}`}>

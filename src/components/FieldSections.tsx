@@ -10,6 +10,7 @@ import type { Application, Domain, Field, KeyIdea, Reading } from "@/lib/types";
 const DOMAIN_TEXT: Record<Domain, string> = {
   math: "text-math",
   physics: "text-physics",
+  chemistry: "text-chemistry",
   biology: "text-biology",
 };
 

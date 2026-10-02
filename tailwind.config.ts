@@ -21,6 +21,7 @@ const config: Config = {
         fog: withAlpha("--fog"),
         math: withAlpha("--math"),
         physics: withAlpha("--physics"),
+        chemistry: withAlpha("--chemistry"),
         biology: withAlpha("--biology"),
       },
       fontFamily: {

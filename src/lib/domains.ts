@@ -140,6 +140,19 @@ export const DOMAINS: DomainInfo[] = [
     ],
   },
   {
+    id: "chemistry",
+    name: "Chemistry",
+    blurb: "How weighing the gases killed phlogiston and gave the elements a list, how that list turned out to have a hidden order that predicted elements nobody had seen, and what a chemical bond is once electrons are allowed to be shared.",
+    threads: [
+      {
+        id: "substance",
+        title: "The Substance Thread",
+        intro:
+          "From a definition of an element that refuses to say what matter is, to an equation that governs every molecule and cannot be solved for any of them. Chemistry became quantitative when it started weighing gases, because only then could anyone tell what was conserved — and metals gaining weight as they burn is not something an escaping substance can explain. Fixed proportions gave atoms something to be, atomic weights gave the elements an order, and the order turned out to predict three elements and their densities before they were isolated. The bond then acquired a content, a pair of electrons shared, and the shape of a molecule became something countable on an envelope. The fog here is which compositions are stable, what counts as a bond at all, whether periodicity survives at the bottom of the table, and how to improve a density functional on purpose rather than by fitting.",
+      },
+    ],
+  },
+  {
     id: "biology",
     name: "Biology",
     blurb: "How evolution and heredity, long at odds, merged, and how reading DNA rewrote both. How the cell became the unit of life and disease, how the brain was found to signal with electricity and chemistry, how the study of where species live became the science of ecosystems, and how a single egg builds a body.",

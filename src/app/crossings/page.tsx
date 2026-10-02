@@ -9,7 +9,7 @@ import type { Domain } from "@/lib/types";
 
 export const metadata: Metadata = pageMetadata({
   title: "Crossings",
-  description: "Where results from one domain of knowledge land in another: mathematics, physics and biology.",
+  description: "Where results from one domain of knowledge land in another: mathematics, physics, chemistry and biology.",
   path: "/crossings/",
   card: "crossings",
 });
@@ -18,6 +18,7 @@ export const metadata: Metadata = pageMetadata({
 const DOMAIN_TEXT: Record<Domain, string> = {
   math: "text-math",
   physics: "text-physics",
+  chemistry: "text-chemistry",
   biology: "text-biology",
 };
 

@@ -1,6 +1,6 @@
 /**
  * The frontispiece: a general survey in miniature. One trunk forks into the
- * three domains, each branch charted with waypoints and running out into fog
+ * four domains, each branch charted with waypoints and running out into fog
  * where the survey stops. A faint arc marks a crossing between two of them.
  * Decorative: the real maps live on the domain pages.
  */
@@ -18,8 +18,10 @@ const BRANCHES: Branch[] = [
   // Physics, straight down, forking again.
   { d: "M220 118 V290", stroke: "var(--physics)", delay: 420 },
   { d: "M220 290 C220 330 184 322 184 362", stroke: "var(--physics)", delay: 1000 },
+  // Chemistry, between physics and biology.
+  { d: "M220 118 C220 174 276 158 276 230 V300", stroke: "var(--chemistry)", delay: 460 },
   // Biology, to the right.
-  { d: "M220 118 C220 170 332 150 332 214 V300", stroke: "var(--biology)", delay: 490 },
+  { d: "M220 118 C220 170 332 150 332 214 V300", stroke: "var(--biology)", delay: 530 },
 ];
 
 /** Waypoint ticks: [x, y, colour, contested]. */
@@ -33,6 +35,9 @@ const TICKS: Array<[number, number, string, boolean?]> = [
   [220, 238, "var(--physics)", true],
   [220, 256, "var(--physics)"],
   [220, 274, "var(--physics)"],
+  [276, 250, "var(--chemistry)"],
+  [276, 268, "var(--chemistry)", true],
+  [276, 286, "var(--chemistry)"],
   [332, 236, "var(--biology)"],
   [332, 258, "var(--biology)"],
   [332, 278, "var(--biology)"],
@@ -42,6 +47,7 @@ const NODES: Array<[number, number, string]> = [
   [220, 60, "var(--ink)"],
   [108, 214, "var(--math)"],
   [220, 196, "var(--physics)"],
+  [276, 230, "var(--chemistry)"],
   [332, 214, "var(--biology)"],
   [70, 360, "var(--math)"],
   [184, 362, "var(--physics)"],
@@ -53,6 +59,7 @@ const FADES: Array<[number, number, number]> = [
   [70, 360, 0],
   [220, 290, 1],
   [184, 362, 0],
+  [276, 300, 0],
   [332, 300, 0],
 ];
 
@@ -169,7 +176,10 @@ export function SurveyPlate({ className = "" }: { className?: string }) {
           <text x={234} y={200} fill="var(--physics)" className="tree-fade" style={{ animationDelay: "750ms" }}>
             PHYSICS
           </text>
-          <text x={346} y={218} fill="var(--biology)" className="tree-fade" style={{ animationDelay: "800ms" }}>
+          <text x={290} y={252} fill="var(--chemistry)" className="tree-fade" style={{ animationDelay: "800ms" }}>
+            CHEMISTRY
+          </text>
+          <text x={346} y={218} fill="var(--biology)" className="tree-fade" style={{ animationDelay: "850ms" }}>
             BIOLOGY
           </text>
           <text x={W - 32} y={H - 28} textAnchor="end" className="fill-fog italic tree-fade" style={{ animationDelay: "1700ms" }}>

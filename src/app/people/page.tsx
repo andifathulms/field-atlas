@@ -18,6 +18,7 @@ export const metadata: Metadata = pageMetadata({
 const DOMAIN_TEXT: Record<Domain, string> = {
   math: "text-math",
   physics: "text-physics",
+  chemistry: "text-chemistry",
   biology: "text-biology",
 };
 
