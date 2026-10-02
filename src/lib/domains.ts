@@ -150,6 +150,12 @@ export const DOMAINS: DomainInfo[] = [
         intro:
           "From a definition of an element that refuses to say what matter is, to an equation that governs every molecule and cannot be solved for any of them. Chemistry became quantitative when it started weighing gases, because only then could anyone tell what was conserved — and metals gaining weight as they burn is not something an escaping substance can explain. Fixed proportions gave atoms something to be, atomic weights gave the elements an order, and the order turned out to predict three elements and their densities before they were isolated. The bond then acquired a content, a pair of electrons shared, and the shape of a molecule became something countable on an envelope. The fog here is which compositions are stable, what counts as a bond at all, whether periodicity survives at the bottom of the table, and how to improve a density functional on purpose rather than by fitting.",
       },
+      {
+        id: "reaction",
+        title: "The Reaction Thread",
+        intro:
+          "From the wrong criterion for which way a reaction goes to watching a bond break with a flash a hundred femtoseconds long. Heat release looked like the driving force for most of the nineteenth century and is not: ammonium nitrate dissolves while getting cold. The right quantity decides direction and says nothing about speed, so rates had to be studied separately — and because the exponent in Arrhenius's equation does the work, a barrier lowered by a third buys a hundred thousandfold in rate. That is the whole economics of catalysis, and the reason nitrogen can be taken out of the air at all. The fog here is the thermodynamics of anything more concentrated than a dilute solution, networks of thousands of coupled steps, reactions that bypass the saddle point, fixing nitrogen the way a bacterium does, and exact dynamics for a molecule worth reacting.",
+      },
     ],
   },
   {
