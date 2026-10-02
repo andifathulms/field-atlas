@@ -162,6 +162,12 @@ export const DOMAINS: DomainInfo[] = [
         intro:
           "From two substances with the same formula and nothing else in common to a reaction that ignores everything in a living cell. Isomerism was a crisis, because composition was all chemistry could measure, and the resolution — that carbon bonds to itself, so a molecule is a specific connected structure — let the number of isomers a formula permits be counted and checked. A tetrahedron then explained why two molecules can be mirror images distinguishable by nothing but the light they rotate, which turns out to matter because every receptor is handed too. Building such molecules deliberately became the discipline's demonstration of competence, governed by an arithmetic in which forty steps at ninety per cent each deliver one and a half. The fog here is what aromaticity is, why life uses one hand, how to make a complex molecule in few steps, how to get from a planned route to a working one, and how to choose one carbon-hydrogen bond out of forty.",
       },
+      {
+        id: "electrochemistry",
+        title: "The Electrochemistry Thread",
+        intro:
+          "From a pile of zinc and silver discs to the arithmetic of why a battery cannot match petrol. A steady current was the first tool that could take apart compounds no reagent would touch, and within two years it had produced six new elements; Faraday then made the relation between charge and chemical change exact, and in doing so measured the charge on the electron sixty years before anyone knew there was one. Ions turned out to be present before the current rather than made by it, a potential turned out to read a concentration at fifty-nine millivolts per decade, and a metal turned out to corrode by acting as its own short-circuited cell. The fog here is what the electrode interface actually looks like, whether a single ion's activity means anything, how to predict an overpotential, how to make the lithium-metal anode safe, and when a pit will start.",
+      },
     ],
   },
   {
