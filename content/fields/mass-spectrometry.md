@@ -252,6 +252,16 @@ That looked like a defect and turned out to be the method's second source of inf
 
 The wartime driver was petroleum. Refineries needed to know the composition of hydrocarbon streams faster than distillation could tell them, and the instruments built for that purpose established the practice. Then {{fig:gohlke|Roland Gohlke}} and McLafferty connected a gas chromatograph to the inlet, so that components arriving one at a time from a column were each weighed and fragmented in turn. Retention time plus mass spectrum is a much stronger claim than either alone, which is why the combination became the standard of proof in forensic toxicology and doping control, and why an instrument of this kind was sent to Mars on the Viking landers.
 
+## Fragments as a Language
+
+The electron-ionisation spectra that dominated the field's first forty years were read rather than computed, and the reading rests on the fact that molecules do not break at random.
+
+Three regularities do most of the work. A bond adjacent to a heteroatom breaks preferentially, because the resulting fragment is stabilised by the lone pair — so an amine or an ether announces itself by losing the group next to the nitrogen or oxygen. A molecule containing a carbonyl with a hydrogen four atoms away undergoes the rearrangement {{fig:mclafferty|McLafferty}} described in 1959, in which that hydrogen migrates through a six-membered arrangement before the bond breaks, giving a fragment of characteristic mass. And stable neutral molecules — water, carbon monoxide, ethene — are lost in preference to anything else, so a difference of 18, 28 or 44 between two peaks is read immediately.
+
+Two counting rules come free. The *nitrogen rule*: a molecule of carbon, hydrogen, oxygen and nitrogen has an odd nominal mass only if it contains an odd number of nitrogens. And the isotope satellites: carbon is 1.1% carbon-13, so a compound with $n$ carbons shows a peak one mass unit above the main one with intensity about $1.1n$ per cent of it — which counts the carbons directly. Chlorine's isotopes in a 3:1 ratio and bromine's in nearly 1:1 make halogenated compounds unmistakable at a glance.
+
+The whole of this was then mechanised. Spectra proved reproducible enough between instruments that a library search works: measure a spectrum, compare it against a few hundred thousand reference spectra, and rank the matches. That is how a gas chromatography–mass spectrometry run identifies a pesticide or a drug metabolite without a chemist interpreting anything — and it is also the method's limit, since a compound absent from the library cannot be identified this way at all, which is the problem the open question below describes in its modern form.
+
 ## A Closer Look: Weighing a Molecule Precisely Enough to Count Its Atoms
 
 The most useful thing a mass spectrometer does is determine an elemental formula, and it works because atomic masses are not integers.

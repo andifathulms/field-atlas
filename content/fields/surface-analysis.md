@@ -246,9 +246,17 @@ The numbers make the difficulty plain. A square centimetre of surface carries ab
 
 {{fig:brunauer|Stephen Brunauer}}, {{fig:emmett|Paul Emmett}} and {{fig:edward-teller|Edward Teller}} extended it in 1938 to the case that actually occurs — molecules continuing to pile up in further layers once the first is full — and their equation, fitted over a modest range of pressures, extracts the amount of gas corresponding to exactly one layer. That is the measurement on which the whole of heterogeneous catalysis rests, and it is still what a catalyst's specification quotes.
 
+## Probes That Cannot Escape From Deep
+
+The breakthrough in surface specificity came from choosing a signal that is absorbed by the material itself. An X-ray penetrates micrometres into a solid and ejects electrons all the way down; but an electron travelling through a solid loses energy within one to three nanometres. So electrons arriving at a detector with their full original energy must have come from the top few atomic layers. Depth sensitivity is obtained not by focusing but by attenuation.
+
+{{fig:siegbahn|Kai Siegbahn}} built spectrometers able to measure those energies to a fraction of an electronvolt, and found more than he needed. The binding energies identify the elements, as expected. The *small shifts* in those energies — typically one to six electronvolts — identify the chemical state, because an atom that has given up electron density to a neighbour holds its remaining core electrons more tightly. Metallic iron and iron in an oxide give separate peaks a few electronvolts apart, so a single spectrum reports both what is there and what it is bonded to. He called it electron spectroscopy for chemical analysis, and the shifts are the reason it is a chemical technique rather than an elemental one.
+
+Two companions complete the toolkit. Low-energy electron diffraction, available once ultra-high vacuum could keep a surface clean for hours rather than seconds, showed that a clean crystal surface is not the bulk structure cut in half — the top layers rearrange into periodicities of their own, and silicon's reconstruction took twenty years to solve. And secondary ion mass spectrometry sputters the surface away with an ion beam while weighing what comes off, which destroys the sample and in exchange gives composition against depth at a few nanometres' resolution, the measurement semiconductor manufacturing depends on.
+
 ## A Closer Look: How Much Surface Is in a Gram
 
-A commercial catalyst support is quoted at 200 square metres per gram. Both halves of that figure repay checking, because the number sounds impossible and follows from simple geometry.
+Before any of those instruments, the measurement everything else rests on is the crudest: how much surface there is. A commercial catalyst support is quoted at 200 square metres per gram. Both halves of that figure repay checking, because the number sounds impossible and follows from simple geometry.
 
 **From area to particle size.** For spheres of diameter $d$ and density $\rho$, the area per unit mass is
 
@@ -287,14 +295,6 @@ $$
 Forty-six cubic centimetres of nitrogen gas, measured by the pressure drop in a known volume as a cooled sample takes it up. That is the entire BET experiment, and it is why the area of a powder can be stated to a few per cent from a measurement of gas pressure.
 
 **The limits.** The method assumes that all the gas taken up is on an accessible surface and that the molecule's footprint is known. For pores only slightly wider than the molecule, neither holds — gas condenses in them by a different mechanism, and the area reported is an artefact of applying the equation outside its range. Areas quoted for microporous materials above about 3,000 m²/g should be read as a characterisation parameter rather than as a geometric area, since they begin to exceed what the atoms present could physically expose.
-
-## Probes That Cannot Escape From Deep
-
-The breakthrough in surface specificity came from choosing a signal that is absorbed by the material itself. An X-ray penetrates micrometres into a solid and ejects electrons all the way down; but an electron travelling through a solid loses energy within one to three nanometres. So electrons arriving at a detector with their full original energy must have come from the top few atomic layers. Depth sensitivity is obtained not by focusing but by attenuation.
-
-{{fig:siegbahn|Kai Siegbahn}} built spectrometers able to measure those energies to a fraction of an electronvolt, and found more than he needed. The binding energies identify the elements, as expected. The *small shifts* in those energies — typically one to six electronvolts — identify the chemical state, because an atom that has given up electron density to a neighbour holds its remaining core electrons more tightly. Metallic iron and iron in an oxide give separate peaks a few electronvolts apart, so a single spectrum reports both what is there and what it is bonded to. He called it electron spectroscopy for chemical analysis, and the shifts are the reason it is a chemical technique rather than an elemental one.
-
-Two companions complete the toolkit. Low-energy electron diffraction, available once ultra-high vacuum could keep a surface clean for hours rather than seconds, showed that a clean crystal surface is not the bulk structure cut in half — the top layers rearrange into periodicities of their own, and silicon's reconstruction took twenty years to solve. And secondary ion mass spectrometry sputters the surface away with an ion beam while weighing what comes off, which destroys the sample and in exchange gives composition against depth at a few nanometres' resolution, the measurement semiconductor manufacturing depends on.
 
 ## The Gap That Remains
 

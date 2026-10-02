@@ -242,6 +242,18 @@ Three instruments replaced it, and the first was the least discriminating. Infra
 
 What produced structures was nuclear magnetic resonance, and it arrived as a physics result with no chemical content at all.
 
+## What Infrared and Ultraviolet Add
+
+Nuclear magnetic resonance does most of the work of structure determination, and two older spectroscopies remain in use because they answer questions it answers badly.
+
+**Infrared** reports on bonds rather than nuclei. A bond's stretching frequency depends on the masses of the two atoms and the stiffness of the bond, so it is nearly independent of the rest of the molecule — a carbonyl absorbs near 1700 cm⁻¹ in an aldehyde, a ketone, an ester or an amide, shifted by a few tens of wavenumbers in each. That makes the region above 1500 cm⁻¹ a list of functional groups: hydroxyl broad near 3300, nitrile sharp near 2250, carbonyl strong near 1700. The information is coarse and it is obtained in thirty seconds from a milligram, and it answers the first question about an unknown — what kind of compound is this — faster than anything else.
+
+Below about 1400 cm⁻¹ the absorptions involve the whole skeleton and cannot be assigned individually. That fingerprint region is useless for deduction and excellent for comparison: two samples with identical fingerprint regions are the same substance, which is how an incoming raw material is verified in a warehouse and how an adulterated batch is caught.
+
+**Ultraviolet and visible** absorption reports on conjugation. An isolated double bond absorbs in the far ultraviolet where it is hard to observe; extend the conjugated system and the absorption moves to longer wavelength and gets stronger, by amounts regular enough that empirical rules predict the position for a diene or an enone to within a few nanometres. The technique says little about structure and a great deal about *quantity*, since absorbance is proportional to concentration — which is why it remains the detector on most liquid chromatographs and the basis of most clinical assays.
+
+**Raman** completes the set by measuring the light a sample scatters with a shifted frequency rather than the light it absorbs. The selection rules are complementary to infrared — symmetric vibrations that are invisible in one are strong in the other — and because water scatters weakly, Raman works on aqueous and biological samples where infrared is swamped.
+
 ## A Closer Look: What a Proton Spectrum Tells You, and What It Costs
 
 {{fig:purcell|Edward Purcell}} and {{fig:felix-bloch|Felix Bloch}} detected nuclear magnetic resonance in 1946: a nucleus with spin, placed in a magnetic field, absorbs radio waves at a frequency proportional to the field. For hydrogen in a modern 9.4 tesla magnet that frequency is 400 MHz.

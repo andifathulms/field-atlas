@@ -249,6 +249,18 @@ For sixty years the subject was faintly disreputable, because it looked like get
 
 That constraint is worth keeping in view, because it is routinely forgotten. A catalyst in an ammonia plant does not improve the yield that thermodynamics allows at a given temperature — it allows a lower temperature, where the allowed yield is better.
 
+## Three Kinds of Catalyst
+
+Catalysts divide into three classes that share a principle and little else, and the differences decide what each is used for.
+
+A **homogeneous** catalyst is dissolved in the reaction mixture, usually a metal complex with organic ligands. Every molecule of it is accessible, so activity per atom is high; the ligands can be modified one at a time, which makes the structure-activity relationship legible and is why asymmetric catalysis is almost entirely homogeneous; and the catalyst must be separated from the product afterwards, which for a pharmaceutical means removing a toxic metal to parts per million. Turnover frequencies are typically one to a thousand per second.
+
+A **heterogeneous** catalyst is a solid that the reactants flow over. Separation is free — the catalyst stays in the reactor — which is why essentially all bulk chemistry is heterogeneous, and the price is that only the surface atoms work. For a 15-nanometre particle that is about a tenth of them; dispersed as 2-nanometre particles, three quarters. The sites are also not identical: a surface has terraces, steps and corners that bind differently, so measured activity is an average over a population, and the most active sites may be a per cent of the total.
+
+An **enzyme** is a protein with a pocket built around one reaction. Rate enhancements reach $10^{17}$ over the uncatalysed reaction, selectivity is essentially complete, and the conditions are water at ambient temperature — against which both other classes compare badly. The costs are fragility, a narrow range of tolerable conditions, and that each enzyme does one thing.
+
+The numbers worth holding together are these. An industrial iron ammonia catalyst turns over a few times per second per site and lasts years. A homogeneous hydrogenation catalyst turns over hundreds of times per second and is discarded after one batch. Carbonic anhydrase turns over a million times per second. The spread is nine orders of magnitude, and the design trade-off running through it is between activity, selectivity and the ease of getting the catalyst back.
+
 ## A Closer Look: The Strongest Bond in the Air
 
 Four fifths of the atmosphere is nitrogen, and almost nothing can use it. The reason is one number: the $\mathrm{N{\equiv}N}$ bond energy is **941 kJ/mol**, the strongest bond in common chemistry.

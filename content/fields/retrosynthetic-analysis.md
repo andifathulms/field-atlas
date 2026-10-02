@@ -244,9 +244,19 @@ Two features make this more than a change of direction. The fragments a disconne
 
 The result was a curriculum. Synthesis planning had been a tacit skill acquired by watching; after 1967 it could be set as an exercise, and that is most of why Corey's influence on the field exceeded even his own syntheses.
 
+## What a Metric Changed
+
+Running alongside the planning problem is a measurement problem: what makes one route better than another?
+
+Yield alone is a poor answer, because it says nothing about what was consumed. {{fig:trost|Barry Trost}}'s atom economy — the fraction of the total mass of reactants that ends up in the product — exposes reactions that proceed in 95% yield while discarding four fifths of the atoms they used, which a great many classical reactions do. {{fig:roger-sheldon|Roger Sheldon}} then defined the E-factor, kilograms of waste per kilogram of product, and published the figures that followed from it: around 1 for bulk chemicals, 5 to 50 for fine chemicals, and **25 to 100 for pharmaceuticals**, most of it solvent.
+
+{{fig:hendrickson|James Hendrickson}} had already defined the standard those numbers are measured against. In an ideal synthesis every step builds skeleton, nothing is protected and unprotected, nothing is purified between steps. Real routes fall short mainly through protecting groups — a third of the steps in a long synthesis may install and remove them, contributing nothing to the structure — which is the cost of using reagents less selective than enzymes, and the subject of the next field.
+
+Publishing those numbers changed behaviour, which metrics in science do not always do. Process chemists now report E-factors, companies set targets for them, and the difference between a medicinal chemist's first route and the manufacturing route is routinely a halving of the step count.
+
 ## A Closer Look: The Size of the Tree
 
-Corey saw at once that a procedure this explicit could be given to a computer, and by 1969 he and {{fig:wipke|Todd Wipke}} had LHASA running. The programme of the next fifty years was to make it work. The obstacle is arithmetic.
+Return to the planning problem itself. {{fig:ej-corey|Corey}} saw at once that a procedure this explicit could be given to a computer, and by 1969 he and {{fig:wipke|Todd Wipke}} had LHASA running. The programme of the next fifty years was to make it work. The obstacle is arithmetic.
 
 Consider the branching. A molecule of moderate complexity offers somewhere between ten and a hundred disconnections that a chemist would take seriously. Each produces fragments that offer about as many again. For a route of depth $d$ with branching factor $b$, the number of distinct routes is of order $b^{d}$:
 
@@ -262,16 +272,6 @@ Rule-based programs failed on exactly this. They could generate the tree — tha
 What changed is that both missing pieces were learned rather than written. {{fig:segler|Marwin Segler}}, {{fig:preuss|Mike Preuss}} and {{fig:waller|Mark Waller}} trained one network on roughly 12 million published reactions to propose which disconnections are plausible for a given structure, a second to filter proposals that would not actually work, and a third to estimate whether a fragment is reachable. The tree is then explored by Monte Carlo tree search — sample a path to the end, use the outcome to update which branches are worth revisiting — which is the method that had just beaten human players at Go.
 
 The result in 2018 was a system about thirty times faster than its rule-based predecessors, finding routes for molecules absent from its training set. The evaluation is the part worth noting: chemists were shown pairs of routes, one from the literature and one from the machine, without being told which was which, and rated them as equally plausible. In the same year {{fig:grzybowski|Bartosz Grzybowski}}'s group took eight computer-planned routes into the laboratory and executed all eight.
-
-## What a Metric Changed
-
-Running alongside the planning problem is a measurement problem: what makes one route better than another?
-
-Yield alone is a poor answer, because it says nothing about what was consumed. {{fig:trost|Barry Trost}}'s atom economy — the fraction of the total mass of reactants that ends up in the product — exposes reactions that proceed in 95% yield while discarding four fifths of the atoms they used, which a great many classical reactions do. {{fig:roger-sheldon|Roger Sheldon}} then defined the E-factor, kilograms of waste per kilogram of product, and published the figures that followed from it: around 1 for bulk chemicals, 5 to 50 for fine chemicals, and **25 to 100 for pharmaceuticals**, most of it solvent.
-
-{{fig:hendrickson|James Hendrickson}} had already defined the standard those numbers are measured against. In an ideal synthesis every step builds skeleton, nothing is protected and unprotected, nothing is purified between steps. Real routes fall short mainly through protecting groups — a third of the steps in a long synthesis may install and remove them, contributing nothing to the structure — which is the cost of using reagents less selective than enzymes, and the subject of the next field.
-
-Publishing those numbers changed behaviour, which metrics in science do not always do. Process chemists now report E-factors, companies set targets for them, and the difference between a medicinal chemist's first route and the manufacturing route is routinely a halving of the step count.
 
 ## Planning Is Not Making
 

@@ -238,6 +238,18 @@ Two nineteenth-century developments turned it into a discipline. {{fig:gay-lussa
 
 {{fig:beer|August Beer}} supplied the third ingredient in 1852 by making colour quantitative. Light passing through an absorbing solution is attenuated in proportion to both the path length and the concentration, so the logarithm of the attenuation is proportional to concentration — which means a colour can be read off a scale. Nearly every clinical and environmental assay performed today is a descendant.
 
+## What a Number Needs Behind It
+
+A result consists of a number and a statement of how much to trust it, and the second part is the harder half. Four pieces of apparatus, none of them an instrument, do that work.
+
+A **blank** is the whole procedure carried out with no sample: same reagents, same glassware, same operator. Whatever it reports is contributed by the process rather than the specimen, and at trace levels it is frequently the larger part of the signal. Clair Patterson's lead measurements in the 1960s are the standard case — the figures then accepted for natural lead concentrations were almost entirely laboratory contamination, and establishing the true values required rebuilding the laboratory in order to lower the blank by three orders of magnitude.
+
+A **calibration** relates signal to concentration, using standards of known composition, and it has to be re-established often enough that drift does not matter. The *detection limit* then follows from the blank's variability, conventionally as three times its standard deviation — which makes a detection limit a property of the procedure on that day rather than of the instrument, and the reason two laboratories quote different limits for the same method.
+
+A **reference material** checks the whole chain. Its composition has been established independently by several methods, so analysing it answers a question no internal check can: not whether the measurement is reproducible, but whether it is right. Running one alongside real samples converts an unverifiable number into a verified one.
+
+And **proficiency testing** distributes the same material to many laboratories and publishes the spread. Those exercises are humbling and are the main reason the apparatus above exists: when a well-characterised sample is sent to fifty competent laboratories using a published method, the results routinely span a factor of two, and the outliers are rarely the laboratories that suspected a problem.
+
 ## A Closer Look: Why the Sample Matters More Than the Instrument
 
 Here is the calculation that the rest of this thread's instrumentation cannot help with.

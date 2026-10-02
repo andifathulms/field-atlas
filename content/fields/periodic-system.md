@@ -251,6 +251,16 @@ Karlsruhe left chemistry with one agreed table of atomic weights, and within a d
 
 {{fig:lothar-meyer|Lothar Meyer}} had the same arrangement independently, and published a graph of atomic volume against weight in 1864 that shows the periodicity more vividly than any table. The two later argued about priority. The conventional verdict — Meyer found it, Mendeleev bet on it — is roughly right and flatters both of them, since the arrangement was in the air.
 
+## A Family With No Column
+
+The table's sternest test came from an element nobody had looked for, and it was found because of a discrepancy in the fourth decimal place.
+
+{{fig:rayleigh|Lord Rayleigh}} had been measuring gas densities carefully for years when he noticed that nitrogen prepared from the air was consistently denser than nitrogen prepared from ammonia — by about half a per cent, reproducibly, well beyond his errors. With {{fig:ramsay|William Ramsay}} he set about removing everything known from a sample of air, burning away the oxygen and absorbing the nitrogen with hot magnesium, and found a residue of about one per cent of the original volume that would react with nothing at all. They named it argon, from the Greek for idle.
+
+An element that forms no compounds is awkward in a system built on valency, and the table had no column for it. {{fig:mendeleev|Mendeleev}} initially doubted that it was an element, suggesting it might be a triatomic form of nitrogen. Within four years Ramsay had found helium in a uranium mineral, and then neon, krypton and xenon by fractionating liquid air — a whole family, all unreactive, with atomic weights that placed them between the halogens and the alkali metals.
+
+The outcome is the strongest evidence the periodic law received. Inserting an entire new group *between* two existing ones left the rest of the arrangement untouched: every other element kept its place, every other family stayed intact, and the period lengths went from 8 to 8 with a new member each. A classification that can absorb eight unforeseen elements without rearrangement is describing something real. It also sharpened the question the table could not answer — why periods are the length they are — because the noble gases sit exactly where a shell closes, which is a fact about electrons that nothing in 1898 could have supplied.
+
 ## A Closer Look: Predicting Germanium Fifteen Years Early
 
 Mendeleev's 1871 paper describes three missing elements. Take the one under silicon, which he called eka-silicon.

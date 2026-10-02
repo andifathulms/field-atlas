@@ -248,6 +248,16 @@ What the measurement gives is the direction and speed of the products, and that 
 
 {{fig:john-polanyi|John Polanyi}} measured the complementary quantity: not where the energy went in space but which motion it went into. Fresh product molecules glow in the infrared, and the spectrum of that glow says how the released energy is divided between vibration, rotation and recoil. The division is nothing like thermal. Hydrogen and chlorine put most of the energy into vibration of the new bond; other reactions put it into flinging the fragments apart. The pattern maps directly onto the shape of the potential energy surface — whether the barrier comes early in the approach or late — and the fact that it produced more excited molecules than unexcited ones is a population inversion, which is to say a laser.
 
+## A Spectrum of the Saddle Point
+
+The transition state is defined by being unstable, which seems to rule out observing it: a species that survives for less than one vibration cannot be put in a cell and have a spectrum taken. Two methods get at it anyway, from opposite directions.
+
+{{fig:neumark|Daniel Neumark}}'s approach starts from a stable species with the right shape. Many neutral transition states resemble the equilibrium geometry of a corresponding negative ion — the arrangement $\mathrm{[F \cdots H \cdots H]^{-}}$, for instance, is a bound anion and also approximately the saddle point for fluorine attacking hydrogen. Remove the extra electron with a photon of known energy and measure the kinetic energy of the electron that leaves: the difference reports the energy of the neutral system *at the geometry it was created in*, which is the transition state. The resulting spectrum shows vibrational structure in a species with no bound vibrations along the reaction coordinate, and in several cases shows sharp features that are not vibrations at all.
+
+Those features are **reactive resonances**: states in which the system is held near the saddle point for a few vibrational periods, long enough for the wavefunction to interfere with itself, before committing to products. Theory had predicted them for decades. Observing them required beams monochromatic enough that the collision energy is defined to a fraction of a kilojoule, and they appear as a spike in the reaction probability at one particular energy — reported for fluorine with hydrogen deuteride in 2000 and for chlorine with the same partner in 2018, with lifetimes of tens of femtoseconds.
+
+Resonances matter beyond their novelty. A trajectory picture of a reaction — a ball rolling over a pass — cannot produce them, and they are therefore direct evidence that a chemical reaction is a wave phenomenon in which amplitude can be trapped and interfere. They also mean that a rate constant is not always a smooth function of energy, which no form of transition state theory anticipates.
+
 ## A Closer Look: Why a Hundred Femtoseconds Is the Right Shutter Speed
 
 Watching a bond break requires knowing how long it takes. Two estimates, which agree.

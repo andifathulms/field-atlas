@@ -239,6 +239,28 @@ Chemists did not notice for thirty years, which is one of the longer delays in t
 
 It is in fact entirely general, because the only requirement is that components differ in how much they prefer one phase to another. Adsorption on a solid will do it; so will dissolving in a liquid held on a support, which is what {{fig:archer-martin|Archer Martin}} and {{fig:synge|Richard Synge}} used in 1941 when they needed to separate the amino acids from wool. Their contribution was as much theoretical as practical, and it is the reason the technique became quantitative.
 
+## Why There Is an Optimum Flow Rate
+
+Plate theory counts the equilibrations and says nothing about what limits their number. Three processes broaden a band as it travels, and because they depend differently on how fast the mobile phase moves, there is a speed at which the column performs best — slower is worse as well as faster.
+
+The analysis is Jan van Deemter's, and it states the plate height as a sum:
+
+$$
+H = A + \frac{B}{u} + Cu,
+$$
+
+where $u$ is the mobile-phase velocity.
+
+The $A$ term is **packing irregularity**: molecules take different paths through a bed of particles, some shorter than others, so the band spreads by an amount independent of speed. It is reduced by packing uniformly with small particles and vanishes entirely in an open capillary, which is one reason capillary columns outperform packed ones.
+
+The $B/u$ term is **longitudinal diffusion**: while the band is in the column it spreads by ordinary diffusion along the direction of travel, and the slower it moves the longer it has to do so. This term punishes going too slowly.
+
+The $Cu$ term is **resistance to mass transfer**: a molecule must diffuse into and out of the stationary phase to be retained, and if the band moves fast there is not time for equilibrium, so the molecules at the front run ahead of those still in the stationary phase. This term punishes going too fast, and it is why a thick stationary phase broadens peaks.
+
+Differentiating gives the optimum at $u = \sqrt{B/C}$, with minimum plate height $H = A + 2\sqrt{BC}$. For a gas chromatographic capillary that optimum is around 20 to 40 cm/s, and the curve is shallow on the fast side — which is the practically important detail, since it means a separation can be run two or three times faster than optimal at modest cost in resolution, and cannot be improved by running slowly.
+
+The equation also explains the last thirty years of column development as a campaign against each term in turn: smaller particles to reduce $A$ and $C$, which costs pressure and produced the move to ultra-high-pressure instruments; thinner stationary films to reduce $C$; and for a gas, hydrogen rather than nitrogen as carrier, because its higher diffusivity shifts the optimum to higher speed.
+
 ## A Closer Look: Why Columns Are Thirty Metres Long
 
 Martin and Synge's model treats the column as a sequence of discrete stages, each of which brings the two phases to equilibrium — theoretical plates, borrowed from distillation. A column of length $L$ with plate height $H$ has

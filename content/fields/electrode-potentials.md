@@ -250,6 +250,16 @@ The standard term is a property of the couple, tabulated once. The logarithmic t
 
 Nernst's equation also predicted something that sounds impossible — a cell made of two identical electrodes in the same solution at different concentrations produces a voltage, with no net chemistry at all except the transfer of material from the concentrated side to the dilute. Such concentration cells work, they are the basis of every ion-selective electrode, and they are how a nerve cell stores energy, which is the subject of [electrophysiology](/biology/electrophysiology/).
 
+## Tables That Say What Is Possible
+
+The practical output of this field is a table, and it is worth being clear about what the table does and does not license.
+
+Standard reduction potentials are tabulated for several hundred half-reactions, each measured against the hydrogen electrode under defined conditions. Subtract two of them and the difference is the voltage of the cell those halves would make; if it is positive, the reaction proceeds as written. That single operation answers an enormous range of questions without any experiment: whether a metal will dissolve in acid, whether one ion will oxidise another, whether a proposed battery chemistry has a useful voltage, whether a reagent is strong enough for a given oxidation.
+
+The series also fixes what *cannot* be done in water. Water itself is oxidised above about 1.23 V and reduced below 0 V at pH 7, with overpotentials extending the usable range by a few tenths of a volt in each direction. A couple lying outside that window will decompose the solvent instead: sodium cannot be plated from aqueous solution at any current, which is why {{fig:davy|Davy}} needed a molten salt and why lithium cells use organic electrolytes. The window is the single most consequential constraint in applied electrochemistry.
+
+Two cautions are permanent. The potentials are thermodynamic, so a reaction the table permits may not proceed at a measurable rate — aluminium should dissolve vigorously in water and does not, because its oxide film gets in the way. And the sign convention for the table was genuinely disputed for decades, with American and European tabulations carrying opposite signs for the same couple until a 1953 agreement settled on reduction potentials, so any figure taken from a pre-war source has to be read with care.
+
 ## A Closer Look: Fifty-Nine Millivolts, and What They Cost in Precision
 
 Convert the Nernst equation to base-ten logarithms and the coefficient becomes a number worth committing to memory. At 25 °C,

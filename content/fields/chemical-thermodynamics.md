@@ -251,6 +251,16 @@ $$
 
 the enthalpy change less the temperature times the entropy change. A reaction proceeds while $\Delta G$ is negative and stops when it reaches zero — which is equilibrium, not exhaustion. Gibbs also introduced the chemical potential, the quantity whose differences drive matter from one place or phase to another, and the phase rule relating the number of coexisting phases to the number of components. The paper covered heterogeneous equilibria, surfaces and electrochemical cells, and it was published in the *Transactions of the Connecticut Academy of Arts and Sciences* in a notation of such austerity that {{fig:ostwald|Wilhelm Ostwald}}, who translated it into German in 1892, said it was like reading a book written in a language one had to invent first.
 
+## Heat Before Free Energy
+
+Thermochemistry preceded thermodynamics, and for a while it was the whole of the quantitative subject. {{fig:lavoisier|Lavoisier}} and Laplace had built an ice calorimeter in 1783 — a jacket of packed ice around a reaction vessel, with the mass of meltwater measuring the heat released — and the heats of combustion, neutralisation and solution were being tabulated long before anyone could say what they implied.
+
+{{fig:hess|Germain Hess}} supplied the rule that makes a table of such numbers more useful than the sum of its entries. The heat of a reaction depends only on its start and end points, not on the path, so reactions can be added and subtracted and their heats added and subtracted with them. The consequence is practical: a heat that cannot be measured directly, because the reaction will not go cleanly or at all, can be assembled from ones that can. The heat of formation of carbon monoxide is impossible to measure, since burning carbon in limited oxygen always gives a mixture — and it follows immediately from the heats of combustion of carbon and of carbon monoxide, which are both straightforward.
+
+The same construction run over bond-breaking steps gives average bond enthalpies, from which the heat of an unmeasured reaction can be estimated to within ten or twenty kilojoules by counting bonds broken and formed. That is poor accuracy by thermodynamic standards and often enough to decide whether a proposed reaction is worth attempting.
+
+What the heats could not do was predict direction, and this is where the subject stalled for thirty years. Reactions that absorb heat happen; reactions that release it sometimes do not. The missing term was entropy, and the reason it took so long to find is that entropy is not a heat and cannot be measured by a calorimeter directly — it has to be assembled from heat capacities measured down towards absolute zero, which is a twentieth-century capability.
+
 ## A Closer Look: Why Heat Release Is the Wrong Criterion
 
 Take the counterexample and do the arithmetic. Ammonium nitrate dissolving in water:

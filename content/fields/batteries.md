@@ -241,6 +241,16 @@ The {{fig:leclanche|Leclanché}} cell and {{fig:gassner|Gassner}}'s sealed paste
 
 What neither could do was be recharged many times without destroying itself, because in both the electrodes dissolve and are rebuilt, and material does not return to where it came from.
 
+## What a Cell Has to Survive
+
+A battery's specific energy is chemistry, and almost everything else about it is degradation. A cell that stores a great deal and fails after fifty cycles is a laboratory result, not a product.
+
+The first thing that happens to a lithium cell is that its electrolyte decomposes. The graphite electrode, holding lithium, sits outside the voltage window within which the electrolyte is stable, so on the first charge a film forms on its surface from the decomposition products — the solid electrolyte interphase. This is not a defect but the thing that makes the cell possible: the film conducts lithium ions and blocks electrons, so the decomposition stops once the surface is covered. It consumes a few per cent of the cell's lithium permanently, which is why the first cycle has a lower efficiency than every subsequent one, and if it is unstable — cracking as the electrode expands and contracting, reforming, consuming more lithium each time — the cell fades.
+
+Capacity loss therefore has two clocks. *Cycle ageing* tracks how many times the electrodes have swelled and shrunk, which cracks particles and thickens films. *Calendar ageing* proceeds while the cell sits unused, faster when it is hot and when it is held at a high state of charge, because both raise the rate of the side reactions. A cell kept at full charge in a warm place loses capacity measurably in a year while doing nothing, which is why a laptop left plugged in ages faster than one that is cycled.
+
+The failure that matters most is thermal. Above about 80 °C the interphase begins to break down; the exposed electrode then reacts with the electrolyte, which releases more heat, which accelerates the breakdown. Past the tipping point the cell vents and burns, and because the cathode supplies its own oxygen the fire does not need air. Preventing that is why commercial cells contain a pressure vent, a separator that melts shut to stop ion flow, and a management circuit that refuses to charge outside a narrow window — engineering around an energy source that is, by design, a long way from equilibrium.
+
 ## A Closer Look: The Arithmetic of a Battery
 
 Three calculations fix what batteries can and cannot do.

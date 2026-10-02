@@ -251,9 +251,17 @@ The resolution took thirty years and arrived as a proposal about carbon. {{fig:k
 
 The claim is testable, and sharply so, because the number of distinct structures a formula permits is a matter of counting. $\mathrm{C_4H_{10}}$ allows two arrangements and two butanes were known; $\mathrm{C_5H_{12}}$ allows three and three pentanes were known; $\mathrm{C_6H_{14}}$ allows five. A theory of arrangement predicts isomer counts, and the counts came out right — which is why structure theory was accepted quickly, and also why chemistry became a source of problems for [combinatorics](/math/enumerative-combinatorics/).
 
+## Why That Ring Is So Stable
+
+Benzene's isomer counts were explained. Its *behaviour* was not. A compound with three double bonds should be eager to add things across them; benzene prefers to have a hydrogen replaced and keep the ring intact, and its heat of hydrogenation is some 150 kJ/mol less than three separate double bonds would predict. Chemists called this aromaticity, after the smell of the compounds in which it was first met, and used benzene itself as the definition.
+
+{{fig:huckel|Erich Hückel}} supplied a criterion in 1931 using a drastically simplified molecular orbital calculation — the method described under [quantum chemistry](/chemistry/quantum-chemistry/). For a flat ring of carbons sharing delocalised electrons, the orbital energies come out in a pattern such that the stable, closed-shell arrangements occur at $4n + 2$ electrons: 2, 6, 10, 14. Benzene has six and is exceptionally stable. Cyclobutadiene has four, falls in the $4n$ case, and is so unstable it was not isolated until 1965 and only then trapped in frozen argon.
+
+A property defined by resemblance had become a count. It has not become a measurement, though, which is the open problem recorded above: the stability criterion needs an imaginary reference molecule, the magnetic criterion measures a response, and the two disagree on a growing list of compounds.
+
 ## A Closer Look: Finding a Position Without Seeing It
 
-Benzene presented the sharpest case, and the way it was solved is a piece of reasoning rather than a measurement.
+Return to the ring itself, because the way its isomers were told apart is a piece of reasoning rather than a measurement, and it needed no instrument at all.
 
 {{fig:kekule|Kekulé}}'s ring explains the isomer counts immediately. There is one monosubstituted benzene, because all six positions are equivalent in a ring. There are three disubstituted ones, because the second substituent can be adjacent to the first, one position further round, or opposite — what chemists came to call ortho, meta and para. Three isomers were known, so the ring survived its first test.
 
@@ -272,14 +280,6 @@ Work through the middle row to see how it goes. With substituents at 1 and 2, th
 So the isomer that yields a single trisubstituted product is para; the one that yields two is ortho; the one that yields three is meta. Körner carried out the substitutions, counted the products and assigned all three. The positions of atoms in a molecule were established by pure combinatorics on a hexagon, from a theory that had been proposed nine years earlier, using no observation of the molecule at all.
 
 Two further notes make the episode more interesting, not less. Kekulé's alternating single and double bonds are *wrong*: all six bonds in benzene are identical, as the equivalence of the positions already hints and as {{fig:kathleen-lonsdale|Kathleen Lonsdale}}'s X-ray work confirmed in 1929 when she showed the ring is flat with equal bond lengths — described under [crystallography](/physics/crystallography/). And the famous story of the dream of a snake seizing its own tail was told by Kekulé twenty-five years after the fact, at a banquet in his honour, and historians treat it as reconstruction. {{fig:josef-loschmidt|Josef Loschmidt}} had meanwhile drawn ring diagrams in a privately printed pamphlet of 1861, which is one of chemistry's unresolved priority questions.
-
-## Why That Ring Is So Stable
-
-Benzene's isomer counts were explained. Its *behaviour* was not. A compound with three double bonds should be eager to add things across them; benzene prefers to have a hydrogen replaced and keep the ring intact, and its heat of hydrogenation is some 150 kJ/mol less than three separate double bonds would predict. Chemists called this aromaticity, after the smell of the compounds in which it was first met, and used benzene itself as the definition.
-
-{{fig:huckel|Erich Hückel}} supplied a criterion in 1931 using a drastically simplified molecular orbital calculation — the method described under [quantum chemistry](/chemistry/quantum-chemistry/). For a flat ring of carbons sharing delocalised electrons, the orbital energies come out in a pattern such that the stable, closed-shell arrangements occur at $4n + 2$ electrons: 2, 6, 10, 14. Benzene has six and is exceptionally stable. Cyclobutadiene has four, falls in the $4n$ case, and is so unstable it was not isolated until 1965 and only then trapped in frozen argon.
-
-A property defined by resemblance had become a count. It has not become a measurement, though, which is the open problem recorded above: the stability criterion needs an imaginary reference molecule, the magnetic criterion measures a response, and the two disagree on a growing list of compounds.
 
 ## Shape Without Changing Anything
 

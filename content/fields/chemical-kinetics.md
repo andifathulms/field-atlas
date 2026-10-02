@@ -250,6 +250,16 @@ The study of rates began in 1850 with a measurement of unusual elegance. Cane su
 
 And the orders turned out not to match the balanced equations. A reaction written with two molecules of one reactant may be first order in it, or half order, or of an order that changes with concentration. This mismatch is the most useful fact in the subject, because it means the rate law carries information the equation does not: it constrains the *sequence of steps*. Kinetics cannot prove a mechanism — several mechanisms may predict the same rate law — but it can rule one out, and that is how every mechanism in chemistry has been established.
 
+## How a Rate Law Is Measured
+
+A rate law is not derived; it is determined, and the methods are worth stating because the field's conclusions are only as good as they are.
+
+The direct approach is to follow a concentration against time and fit. Which quantity is followed matters more than it seems: an analysis that requires sampling disturbs the reaction, so the preferred observables are ones that can be read continuously from outside — the rotation of polarised light, as {{fig:wilhelmy|Wilhelmy}} used, or an absorbance, a pressure, a conductivity, a volume of gas. The resulting curve is then fitted to the integrated form for each candidate order: a first-order reaction gives a straight line when the logarithm of concentration is plotted against time, a second-order one when the reciprocal is.
+
+The difficulty is that several orders fit a single run almost equally well over the first half-life, so the determination is made by varying conditions instead. The method of initial rates measures the slope at the very start for several starting concentrations, which gives each order independently without the complication of products accumulating. The isolation method floods the mixture with all reactants but one, so their concentrations barely change and the reaction appears to depend only on the remaining one — the pseudo-first-order trick that makes most biochemical kinetics tractable.
+
+Two diagnostics then test a proposed mechanism. The half-life of a first-order reaction is independent of the starting concentration and nothing else behaves that way, which identifies the order at a glance. And where a mechanism involves a reactive intermediate, the steady-state approximation — assuming the intermediate is consumed as fast as it is made — converts the differential equations into algebra and predicts a specific, often unusual, rate law: an order of one and a half, or an order that falls from two to one as pressure rises. Such predictions are the strongest kinetic evidence available, because they are peculiar enough that a wrong mechanism rarely reproduces them.
+
 ## A Closer Look: What the Exponential Does
 
 {{fig:arrhenius|Svante Arrhenius}}'s equation is

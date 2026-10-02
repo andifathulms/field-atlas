@@ -254,9 +254,25 @@ Faraday had named the travelling species and left its nature open. The consensus
 
 That is hard to explain if the ions are produced in pairs by the current, and easy if they are moving independently and were already there. {{fig:arrhenius|Svante Arrhenius}} argued exactly that in his 1884 thesis, adding that the fraction dissociated increases with dilution, which accounted for the longstanding puzzle that dilute solutions depress a freezing point as though they contained more particles than formula units. The Uppsala examiners gave the thesis the lowest passing grade. {{fig:ostwald|Ostwald}} read it, travelled to meet him, and the theory became the foundation of solution chemistry; Arrhenius took the 1903 Nobel Prize for it.
 
+## Why the Theory Only Works When Dilute
+
+Arrhenius's picture predicts that a dissolved salt behaves ideally, each ion independent. Measurements disagree measurably at a thousandth of a mole per litre, which is very dilute indeed.
+
+{{fig:debye|Peter Debye}} and {{fig:huckel|Erich Hückel}} explained the deviation in 1923 by treating the problem statistically. An ion is not in a uniform medium: it attracts opposite charges and repels like ones, so it sits at the centre of a diffuse atmosphere carrying a slight net charge of the opposite sign. That atmosphere screens the ion, lowering its effective concentration — its activity — and it drags on the ion when it moves, lowering its conductivity.
+
+Solving for the potential gives a characteristic screening distance, the Debye length, which shrinks as the square root of concentration, and hence the limiting law
+
+$$
+\log \gamma_{\pm} = -0.509\, z_{+}|z_{-}|\sqrt{I}
+$$
+
+for water at 25 °C, with $I$ the ionic strength. For 0.01 molar sodium chloride this gives $\log\gamma = -0.0509$, so $\gamma = 0.889$: ions behave as though eleven per cent of them were absent. At 0.1 molar the prediction is $\gamma = 0.69$ and the measured value is about 0.78, so the theory has gone wrong by the second figure. At one molar it is useless.
+
+The result is therefore exact in a limit nothing of interest occupies, which is the frustration recorded under [chemical thermodynamics](/chemistry/chemical-thermodynamics/) as an open problem. Its compensation is unexpected generality: the same screening argument, with electrons or ions as the mobile charges, gives the Debye length of a plasma, the depletion width of a semiconductor junction and the range of the forces that keep a colloid from flocculating.
+
 ## A Closer Look: The Ion That Moves Too Fast
 
-Kohlrausch's tables contain an anomaly that took nearly a century to explain, and it is visible at a glance. Limiting molar conductivities in water at 25 °C, in S cm² mol⁻¹:
+One entry in Kohlrausch's tables took nearly a century to explain, and the anomaly is visible at a glance. Limiting molar conductivities in water at 25 °C, in S cm² mol⁻¹:
 
 | Cation | Conductivity | Anion | Conductivity |
 |---|---|---|---|
@@ -277,22 +293,6 @@ A quick estimate shows how large the discrepancy is. Taking sodium's 50.1 as the
 Simulations in the 1990s by {{fig:marx|Dominik Marx}} and {{fig:parrinello|Michele Parrinello}} showed the mechanism in detail, and also why the question of what exactly hops has stayed open. The excess proton is sometimes centred on one molecule with three neighbours attached, sometimes shared equally between two, and the structures interconvert within picoseconds — so the species is a continuum rather than one of the two canonical ions that textbooks name. The hopping is agreed; the hopper is not.
 
 The same mechanism is why a pH electrode responds in seconds, why acid-catalysed reactions proceed as fast as they do, and why proton transport in a fuel-cell membrane can approach that in water. It is also a case where an 1806 hypothesis, abandoned as unfounded, turned out to be the right picture.
-
-## Why the Theory Only Works When Dilute
-
-Arrhenius's picture predicts that a dissolved salt behaves ideally, each ion independent. Measurements disagree measurably at a thousandth of a mole per litre, which is very dilute indeed.
-
-{{fig:debye|Peter Debye}} and {{fig:huckel|Erich Hückel}} explained the deviation in 1923 by treating the problem statistically. An ion is not in a uniform medium: it attracts opposite charges and repels like ones, so it sits at the centre of a diffuse atmosphere carrying a slight net charge of the opposite sign. That atmosphere screens the ion, lowering its effective concentration — its activity — and it drags on the ion when it moves, lowering its conductivity.
-
-Solving for the potential gives a characteristic screening distance, the Debye length, which shrinks as the square root of concentration, and hence the limiting law
-
-$$
-\log \gamma_{\pm} = -0.509\, z_{+}|z_{-}|\sqrt{I}
-$$
-
-for water at 25 °C, with $I$ the ionic strength. For 0.01 molar sodium chloride this gives $\log\gamma = -0.0509$, so $\gamma = 0.889$: ions behave as though eleven per cent of them were absent. At 0.1 molar the prediction is $\gamma = 0.69$ and the measured value is about 0.78, so the theory has gone wrong by the second figure. At one molar it is useless.
-
-The result is therefore exact in a limit nothing of interest occupies, which is the frustration recorded under [chemical thermodynamics](/chemistry/chemical-thermodynamics/) as an open problem. Its compensation is unexpected generality: the same screening argument, with electrons or ions as the mobile charges, gives the Debye length of a plasma, the depletion width of a semiconductor junction and the range of the forces that keep a colloid from flocculating.
 
 ## Acidity as a Relation
 

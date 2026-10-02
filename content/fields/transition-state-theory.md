@@ -259,6 +259,18 @@ The replacement came from the new quantum mechanics, applied not to a molecule b
 
 The potential energy surface gave the subject its working vocabulary — reaction coordinate, barrier, saddle point — and it made the activation energy a *height on a landscape* rather than a fitted constant. It also made clear what the species at the top is. It is a definite arrangement of atoms, stable against every distortion except one: along the reaction coordinate it is at a maximum, so that one vibration has an imaginary frequency and tears the thing apart. It cannot be bottled, and it has a structure.
 
+## The Assumption at the Top
+
+Transition state theory is an approximation, and it is worth being explicit about what it assumes, because the assumptions are where its failures come from.
+
+The first is that the species at the top of the barrier can be treated as being in thermal equilibrium with the reactants. This is strange on its face: the transition state is by construction unstable, it exists for less than one vibrational period, and it is being consumed continuously. The justification is that the reactants are in equilibrium among themselves, so the population of any configuration — including the one at the saddle — is given by its free energy, provided the configurations further along the path do not feed back. {{fig:eyring|Eyring}}'s derivation makes this a quasi-equilibrium; {{fig:meredith-evans|Evans}} and {{fig:polanyi|Polanyi}}'s avoids the word and reaches the same formula, and the two papers were read for decades as differing in rigour rather than in content.
+
+The second assumption is that anything crossing the barrier proceeds to products. A trajectory that reaches the top and comes back is counted as a reaction when it is not, so the theory overestimates the rate. The error is absorbed into a transmission coefficient, conventionally set to one, and in solution it is not one: molecular dynamics shows trajectories recrossing the barrier several times before committing, because the solvent takes energy out and puts it back. The coefficient is typically between 0.5 and 1 for simple reactions, which is a factor the theory cannot supply from the properties of the saddle alone.
+
+The third is that the reaction has a single well-defined bottleneck. Where the barrier is flat, or where several paths compete, the dividing surface can be chosen in different places and the computed rate depends on the choice — which is why variational transition state theory places the surface so as to *minimise* the computed rate, the minimum being the best estimate.
+
+What survives all this is better than the assumptions suggest. For reactions with a definite barrier the theory is usually accurate to a factor of a few, and its real value is not numerical: it converts a question about dynamics into a question about the structure, energy and vibrations of one configuration, which quantum chemistry can compute and a chemist can reason about.
+
 ## A Closer Look: What a Barrier Costs
 
 {{fig:eyring|Eyring}}'s equation of 1935 is
