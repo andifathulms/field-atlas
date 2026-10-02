@@ -89,6 +89,8 @@ One file per Field so a correction is a single-file diff, consistent with the "c
 - Every field, in all four domains, has exactly one "A Closer Look: …" chapter, always immediately before its closing chapter, in a body of four to six `## ` chapters: one worked example or key argument with real numbers, so readers see the central idea work. Verify every calculation in such a chapter before committing it. Prose supports GFM tables, lists and code blocks (styled in `globals.css` under `.prose-atlas`).
 - Figure mentions in chapter prose: `{{fig:gauss}}` or `{{fig:gauss|Gauss}}` links the name to that figure's turning point.
 - Internal links in prose use root-relative paths (`/math/riemannian-geometry/`); the renderer applies the base path.
+- Before adding a thread, search the whole corpus for the turning points and figures it would claim (`ids.py`-style scan over every field's frontmatter). Turning-point ids are global, so a collision fails the build — but the worse failure is silent: re-telling an event another field already owns. This check has killed a planned field (green chemistry, whose atom economy and E-factor are already `synthesis-metrics` in retrosynthetic-analysis) and split several claims between fields rather than duplicating them. Reference the owner in prose instead.
+- Watch for plain YAML scalars containing `": "` on `note:`, `title:` and `name:` lines — YAML reads them as a nested mapping and the load fails. Quote them.
 - `src/lib/content.ts` validates everything at build time: unknown parents, cycles, cross-domain parents, turning-point types outside the domain vocabulary, contested points without a note, and unresolved figure references all fail the build.
 
 ## Pages / routing
@@ -100,7 +102,7 @@ One file per Field so a correction is a single-file diff, consistent with the "c
 - `/search` — client-side search over fields, turning points, open problems, key ideas and people; the index is built at export time and the query lives in `?q=`.
 - `/toolkit` — influence proxy from `src/lib/reach.ts`: threads reached directly (a successor in another thread, or an application landing in another domain), then direct links, then everything downstream.
 - `/open-problems` — every open problem grouped by domain and thread. Status notes are dated ("as of 2026"), so re-check them when the year changes.
-- The landing page carries an all-threads chord map (`ThreadAtlas`): solid chords are cross-thread lineage, dashed chords are crossings.
+- The landing page carries an all-threads chord map (`ThreadAtlas`): solid chords are cross-thread lineage, dashed chords are crossings. Adding a thread anywhere rotates every domain's arc, so the four domain labels (drawn at `R + 175`) move. Recompute their positions numerically against `H` after any change to the thread list; eyeballing the rendered page missed this once, when the PHYSICS label fell below the viewBox at eight threads.
 
 ## Field tree rendering
 This is a DAG, not a strict linear chain — a field can have more than one parent. Don't reuse a pure linear-timeline component from [[empire-rankings]] unmodified; the layout needs to handle branch/merge points (e.g. a field born at the seam of two parents). D3's DAG/tree layout utilities (or a simple manual layered layout, given v1 is only 3–5 nodes) are enough for v1 — no need for a general graph-layout library at this scale.

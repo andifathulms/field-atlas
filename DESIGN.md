@@ -58,7 +58,7 @@ Rules:
 
 ## Layout and navigation
 - **Sticky header**, translucent paper with a backdrop blur and a hairline. It holds the mark (a small branching tree whose third branch runs out into dashes), the domain links with the current one underlined in its accent, Crossings, and the day/night toggle. On mobile the nav becomes one sideways-scrolling row.
-- **Domain pages are long** (up to seven threads). A second sticky strip under the header lists the threads and highlights the one in view, so a reader always knows where they are and can jump.
+- **Domain pages are long** (up to ten threads). A second sticky strip under the header lists the threads and highlights the one in view, so a reader always knows where they are and can jump.
 - **Field page:** a header (breadcrumb, stamp line, name, core question, lineage) followed by a reading meta line: chapters, estimated reading time, turning points, open problems. Then a two-column body. The left column holds *Contents*, *In brief*, *Key ideas* and the chapters. The right column holds the turning-point waypoint list. Below that come Applications, Open problems (dashed frame, fogged) and Further reading. The page closes with "Continue the survey": the parent and successor fields, each shown with its core question.
 - No rounded card grids, no icon tiles. Grouping is done with hairlines, dashed frames and the grid of the map sheet. Radii stay at 0–2px.
 - Every page works at 360px with a 16px gutter. The field tree scrolls sideways inside its sheet, never the page, and it keeps a minimum drawing width so its labels stay legible.
