@@ -174,6 +174,12 @@ export const DOMAINS: DomainInfo[] = [
         intro:
           "From weighing a precipitate to weighing a protein, and the discovery that the instrument is rarely where the error is. Chemistry's oldest service is to say what is in something and how much, and the discipline that made it reliable was procedural: a fixed scheme of reagents, a reagent of known strength, a certified sample to check against. Then separation made mixtures tractable, with resolving power that can be bought by the metre; exact mass made a formula readable to four decimal places; and a radio receiver turned out to count a molecule's hydrogens and their neighbours, so that a structure which once took a career took an afternoon. The fog here is whether a sample represents anything, samples with more components than the separation has peaks, the great majority of detected masses that cannot be identified, getting a structure from spectra without a chemist, and what the surface of a working catalyst actually is.",
       },
+      {
+        id: "coordination",
+        title: "The Coordination Thread",
+        intro:
+          "From an orange solid nobody could write a formula for to a cluster of four manganese atoms splitting water in every leaf. A metal turned out to have a second kind of combining capacity — a fixed number of positions in space, fillable by whole neutral molecules — and the geometry was settled by counting, because an octahedron permits two isomers of a given formula where a flat hexagon or a prism permits three, and only two were ever found. The experiment that closed the case produced a handed molecule containing no carbon at all, which took chirality away from organic chemistry. The colours those compounds were named for then turned out to measure how the metal's d orbitals are split, so a spectrum became two numbers and whether a complex is magnetic became an inequality. Fill one position with a carbon and you have a catalytic cycle written as named steps and counted to eighteen; fill it with boron or xenon and the octet rule fails in instructive ways. The fog here is what a dissolved metal salt actually contains, how to compute the gap between two spin states, which species in a working flask is the catalyst, doing with iron what is done with palladium, how far multiple bonding survives down a group, and how a cell gets the right metal to the right site.",
+      },
     ],
   },
   {
