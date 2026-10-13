@@ -195,6 +195,37 @@ further_reading:
   - citation: "Weil, A. (1984). Number Theory: An Approach Through History from Hammurapi to Legendre. Birkhäuser."
     url: null
     note: A great number theorist's history of the subject up to Gauss's time.
+
+images:
+  - id: fermat-margin-note
+    src: /images/fields/elementary-number-theory/fermat-margin-note.jpg
+    alt: A printed page in Latin and Greek, with a paragraph headed "Observatio Domini Petri de Fermat" set between two numbered problems.
+    caption: >-
+      The margin note in print. After Fermat's death his son Samuel published an edition of
+      Diophantus (1670) that included his father's notes. Below Question VIII, on splitting a
+      square into two squares, comes the *Observatio Domini Petri de Fermat*: no cube splits
+      into two cubes, nor any higher power, and the margin is too narrow for the proof.
+    credit: Diophantus, Arithmetica, ed. Samuel de Fermat, 1670
+    license: Public domain
+    source: https://commons.wikimedia.org/wiki/File:Diophantus-II-8-Fermat.jpg
+  - id: euler
+    src: /images/fields/elementary-number-theory/euler.jpg
+    alt: Painted portrait of Leonhard Euler in a turban-like cap and a dark coat.
+    caption: >-
+      Leonhard Euler in 1753. By then he had proved Fermat's little theorem and refuted
+      Fermat's guess that $2^{32} + 1$ is prime.
+    credit: Jakob Emanuel Handmann, Kunstmuseum Basel
+    license: Public domain
+    source: https://commons.wikimedia.org/wiki/File:Leonhard_Euler_-_Jakob_Emanuel_Handmann_(Kunstmuseum_Basel).jpg
+  - id: disquisitiones
+    src: /images/fields/elementary-number-theory/disquisitiones.jpg
+    alt: A plain printed title page reading Disquisitiones Arithmeticae, auctore D. Carolo Friderico Gauss, Lipsiae 1801, with a library stamp.
+    caption: >-
+      The title page of the *Disquisitiones Arithmeticae* (Leipzig, 1801), published when Gauss
+      was twenty-four.
+    credit: Carl Friedrich Gauss, 1801
+    license: Public domain
+    source: https://commons.wikimedia.org/wiki/File:Disqvisitiones-800.jpg
 ---
 
 ## Euclid's Primes
@@ -209,9 +240,13 @@ Five centuries later, {{fig:diophantus|Diophantus}} of Alexandria collected prob
 
 Fermat filled its margins with claims. Beside a problem about writing a square as the sum of two squares, he noted around 1637 that no cube can be the sum of two cubes, nor any higher power the sum of two like powers, and that he had a marvellous proof that the margin was too narrow to contain. He never published it, and almost certainly did not have one. The claim, *Fermat's Last Theorem*, would drive number theory for 358 years.
 
+{{img:fermat-margin-note}}
+
 ## Euler's Century
 
 {{fig:euler|Leonhard Euler}} took Fermat's claims seriously and proved most of them: that $a^{p-1}$ leaves remainder 1 when divided by a prime $p$ (Fermat's little theorem), and that primes of the form $4k + 1$ are sums of two squares. He also found one claim false. In 1732 he showed that $2^{32} + 1$, which Fermat believed prime, is divisible by 641. Number theory stopped being a collection of confident guesses and became a subject of proofs.
+
+{{img:euler}}
 
 ## A Closer Look: Why Fermat's Little Theorem Is True
 
@@ -236,5 +271,7 @@ That half-page argument, essentially Euler's, has three lives in this atlas. It 
 ## Gauss Makes a Discipline
 
 {{fig:gauss|Carl Friedrich Gauss}} is said to have called mathematics the queen of the sciences and number theory the queen of mathematics. His *Disquisitiones Arithmeticae* (1801), written in his early twenties, organised the whole subject. It introduced the congruence notation $a \equiv b \pmod n$ and proved the law of quadratic reciprocity that Euler and {{fig:legendre|Adrien-Marie Legendre}} had conjectured. He later gave several more proofs of that law.
+
+{{img:disquisitiones}}
 
 After Gauss the subject split under the pressure of its hardest questions. How are the primes distributed? Calculus turned out to hold the answer, and that became [analytic number theory](/math/analytic-number-theory/). Why did every attempt on Fermat's theorem fail? Unique factorisation breaks down in larger number systems, and repairing it became [algebraic number theory](/math/algebraic-number-theory/). And in the 1970s, Fermat's little theorem turned out to be exactly what was needed to build [public-key cryptography](/math/public-key-cryptography/).
