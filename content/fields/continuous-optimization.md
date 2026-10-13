@@ -219,11 +219,34 @@ further_reading:
   - citation: "Bottou, L., Curtis, F. E. & Nocedal, J. (2018). Optimization methods for large-scale machine learning. SIAM Review 60(2): 223–311."
     url: null
     note: A survey of stochastic gradient methods and the theory behind them.
+
+images:
+  - id: lagrange-multipliers
+    src: /images/fields/continuous-optimization/lagrange-multipliers.png
+    alt: Dashed elliptical contours of a function f and a red constraint curve g equals c, which touches one contour where the arrows perpendicular to both line up.
+    caption: >-
+      Lagrange's condition, drawn. Moving along the red constraint curve, $f$ stops changing
+      where the curve just touches a contour of $f$. There the two gradients, the arrows,
+      point along the same line, and the multiplier is their ratio.
+    credit: Nexcis
+    license: Public domain
+    source: https://commons.wikimedia.org/wiki/File:LagrangeMultipliers2D.svg
+  - id: gradient-vs-conjugate
+    src: /images/fields/continuous-optimization/gradient-vs-conjugate.png
+    alt: Elliptical contours of a quadratic bowl, with a green zigzag path from x0 creeping toward the centre and a red two-segment path reaching it directly.
+    caption: >-
+      Steepest descent (green) zigzags across a narrow bowl, as in the table above. Conjugate
+      gradients (red) reach the bottom of a two-variable quadratic in exactly two steps.
+    credit: Oleg Alexandrov
+    license: Public domain
+    source: https://commons.wikimedia.org/wiki/File:Conjugate_gradient_illustration.svg
 ---
 
 ## Downhill
 
 [Real analysis](/math/real-analysis/) says that at a smooth minimum the slope is zero. For constraints, {{fig:lagrange|Joseph-Louis Lagrange}} added a trick in 1788: attach each constraint to the function with an unknown multiplier, and look for points where everything balances. These conditions describe the answer but do not say how to find it. For that, one needs an algorithm.
+
+{{img:lagrange-multipliers}}
 
 The first came from astronomy. In 1847 {{fig:cauchy|Augustin-Louis Cauchy}}, facing large systems of equations for planetary orbits, proposed to minimise the sum of their squared errors by stepping repeatedly in the direction in which that sum decreases fastest, the direction opposite the gradient. This is gradient descent. It is simple, it needs only first derivatives, and it is slow on functions whose valleys are long and narrow. [Newton's method](/math/numerical-analysis/), applied to the gradient, is much faster near a minimum but needs second derivatives, which for many variables form a large matrix that is costly to compute and to solve with.
 
@@ -269,6 +292,8 @@ The ratio of the steepest to the shallowest curvature, here 10, is the condition
 | 1,000 | 6,908 | 219 |
 
 The cost grows in proportion to $\kappa$. Methods with momentum, which let each step carry on partly in the direction of the last, such as conjugate gradients and Nesterov's accelerated method, need a number of steps proportional to about $\sqrt{\kappa}$ instead. For badly conditioned problems, that difference decides whether an optimisation finishes at all.
+
+{{img:gradient-vs-conjugate}}
 
 ## Convexity and Scale
 
