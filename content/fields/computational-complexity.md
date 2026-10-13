@@ -201,6 +201,28 @@ further_reading:
   - citation: "Arora, S. & Barak, B. (2009). Computational Complexity: A Modern Approach. Cambridge University Press."
     url: null
     note: The standard graduate textbook.
+
+images:
+  - id: hamiltonian-dodecahedron
+    src: /images/fields/computational-complexity/hamiltonian-dodecahedron.png
+    alt: The graph of a dodecahedron with twenty numbered vertices, and a thick blue cycle passing through every vertex once in order from 1 to 20.
+    caption: >-
+      A Hamiltonian circuit on the dodecahedron, visiting all twenty corners once and returning
+      home, one of Karp's 21 problems. Checking that the blue cycle works takes a glance;
+      finding such a cycle in a large graph is NP-complete.
+    credit: Zorgit
+    license: CC BY-SA 3.0
+    source: https://commons.wikimedia.org/wiki/File:Hamiltonian_Dodecahedron_Graph.svg
+  - id: p-np-diagram
+    src: /images/fields/computational-complexity/p-np-diagram.png
+    alt: Two diagrams side by side. On the left, P sits inside NP, NP-complete is the part of NP overlapping NP-hard. On the right, P, NP and NP-complete collapse into one circle.
+    caption: >-
+      The two possible worlds. If P ≠ NP (left), the NP-complete problems lie outside P. If
+      P = NP (right), the classes collapse and every problem whose answer can be checked
+      quickly can also be solved quickly.
+    credit: Behnam Esfahbod
+    license: CC BY-SA 3.0
+    source: https://commons.wikimedia.org/wiki/File:P_np_np-complete_np-hard.svg
 ---
 
 ## From Possible to Practical
@@ -211,7 +233,11 @@ further_reading:
 
 In 1971 {{fig:stephen-cook|Stephen Cook}} identified the class NP, problems whose solutions can be *checked* in polynomial time, and proved that one of them, deciding whether a logical formula can be made true, is as hard as every other. In Moscow, {{fig:levin|Leonid Levin}} had reached the same insight, but it reached print only in 1973. A year after Cook, {{fig:karp|Richard Karp}} showed that 21 central problems (Hamiltonian circuit, graph colouring, knapsack) are all NP-complete. Efficiently solve one and you solve them all.
 
+{{img:hamiltonian-dodecahedron}}
+
 That turned an engineering frustration into a single mathematical question: does P equal NP? It later emerged that {{fig:goedel|Gödel}} had asked something like it in a 1956 letter to a dying von Neumann: could a machine find proofs as quickly as they can be checked?
+
+{{img:p-np-diagram}}
 
 ## Barriers
 
