@@ -226,6 +226,44 @@ further_reading:
   - citation: "Griffiths, D. J. & Schroeter, D. F. (2018). Introduction to Quantum Mechanics (3rd ed.). Cambridge University Press."
     url: null
     note: The standard undergraduate textbook.
+
+images:
+  - id: heisenberg-1926
+    src: /images/fields/quantum-mechanics/heisenberg-1926.jpg
+    alt: Photograph of a young Werner Heisenberg with short fair hair, in a jacket and tie.
+    caption: >-
+      Werner Heisenberg in 1926, the year after his matrix mechanics.
+    credit: Friedrich Hund
+    license: CC BY 3.0
+    source: https://commons.wikimedia.org/wiki/File:Heisenberg,Werner_1926.jpeg
+  - id: hydrogen-orbitals
+    src: /images/fields/quantum-mechanics/hydrogen-orbitals.jpg
+    alt: A grid of glowing orange and white patterns on black, the probability clouds of hydrogen's electron, labelled by three quantum numbers.
+    caption: >-
+      Solutions of Schrödinger's equation for hydrogen, drawn as where the electron is likely
+      to be found. The labels $(n, l, m)$ are the quantum numbers; Bohr's orbits had only $n$.
+    credit: PoorLeno
+    license: Public domain
+    source: https://commons.wikimedia.org/wiki/File:Hydrogen_Density_Plots.png
+  - id: tonomura-double-slit
+    src: /images/fields/quantum-mechanics/tonomura-double-slit.jpg
+    alt: Three panels of white dots on black, sparse at left, denser in the middle, and at right dense enough to show vertical light and dark bands.
+    caption: >-
+      Electrons sent one at a time through a double slit, in Akira Tonomura's 1989 experiment,
+      after 11, 6,000 and 140,000 arrivals. Each lands at a single point, but the interference
+      bands of a wave build up: Born's probability made visible.
+    credit: Akira Tonomura, via Belsazar (cropped)
+    license: CC BY-SA 3.0
+    source: https://commons.wikimedia.org/wiki/File:Double-slit_experiment_results_Tonomura_2.jpg
+  - id: solvay-1927
+    src: /images/fields/quantum-mechanics/solvay-1927.jpg
+    alt: Group photograph of twenty-nine physicists in three rows, including Einstein seated at the centre of the front row.
+    caption: >-
+      The 1927 Solvay conference in Brussels, where Bohr and Einstein argued over what the new
+      theory means. Seventeen of the twenty-nine were or became Nobel laureates.
+    credit: Benjamin Couprie, Institut International de Physique Solvay
+    license: Public domain
+    source: https://commons.wikimedia.org/wiki/File:Solvay_conference_1927.jpg
 ---
 
 ## Particles as Waves
@@ -236,11 +274,17 @@ The [old quantum theory](/physics/old-quantum-theory/) had shown that light wave
 
 The new theory arrived twice in a year. In June 1925 {{fig:werner-heisenberg|Werner Heisenberg}}, aged twenty-three, went to the treeless island of Heligoland to recover from hay fever. There he built a mechanics in which only observable quantities appear, arranged in arrays with a strange rule of multiplication. {{fig:max-born|Max Born}} recognised the arrays as matrices, which do not commute, and with {{fig:pascual-jordan|Pascual Jordan}} completed the theory.
 
+{{img:heisenberg-1926}}
+
 Over the Christmas holiday of 1925, {{fig:erwin-schrodinger|Erwin Schrödinger}} found a wave equation for de Broglie's waves. Its solutions for hydrogen gave Bohr's energy levels with no ad hoc rules, as the natural vibration patterns of a wave confined around a nucleus. Schrödinger soon showed that his mechanics and Heisenberg's were mathematically equivalent. Most physicists preferred waves, which they could picture.
+
+{{img:hydrogen-orbitals}}
 
 ## Probability and Uncertainty
 
 What was the wave? Schrödinger hoped it was a real spread-out electron. In 1926 Born proposed, in a footnote, that its squared size gives the *probability* of finding the particle. Physics would predict only the odds of each outcome. In 1927 Heisenberg showed that position and momentum cannot both be sharp. Einstein never accepted that this was the final word, and his debates with {{fig:niels-bohr|Niels Bohr}} at the Solvay conferences became famous. The same year, {{fig:clinton-davisson|Clinton Davisson}} and {{fig:lester-germer|Lester Germer}} at Bell Labs, and {{fig:george-paget-thomson|George Paget Thomson}} in Aberdeen, saw electrons diffract exactly as waves should.
+
+{{img:tonomura-double-slit}}
 
 ## A Closer Look: Why You Don't Diffract
 
@@ -267,3 +311,6 @@ The same formula explains electron microscopes. Electrons accelerated through 10
 ## Success and Unease
 
 Quantum mechanics explained the periodic table, chemical bonding, the conduction of metals and semiconductors, radioactivity and the nuclear fusion that powers the Sun. {{fig:von-neumann|John von Neumann}} gave it a rigorous mathematical form in 1932. It has never failed an experimental test. Yet its founders disagreed about what it describes, and the measurement problem, how one definite outcome emerges from a superposition, is still open. Combining it with special relativity led to [quantum field theory](/physics/quantum-field-theory/). Einstein's deepest objection, to entanglement, became the starting point of [quantum information](/physics/quantum-information/).
+
+
+{{img:solvay-1927}}
