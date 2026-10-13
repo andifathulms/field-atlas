@@ -208,11 +208,44 @@ further_reading:
   - citation: "Stanley, R. P. (2012). Enumerative Combinatorics, Vol. 1 (2nd ed.). Cambridge University Press."
     url: null
     note: The standard graduate text, with hundreds of exercises.
+
+images:
+  - id: zhu-shijie-triangle
+    src: /images/fields/enumerative-combinatorics/zhu-shijie-triangle.png
+    alt: A woodblock-printed triangle of circled Chinese rod numerals, from a single one at the top down to a row of nine numbers, with Chinese labels down both sides.
+    caption: >-
+      The triangle as Zhu Shijie printed it in *Jade Mirror of the Four Unknowns* (1303),
+      written in rod numerals and called the "ancient method" even then. Its bottom row,
+      1 8 28 56 70 56 28 8 1, gives the coefficients of $(a + b)^8$.
+    credit: Zhu Shijie, 1303
+    license: Public domain
+    source: https://commons.wikimedia.org/wiki/File:Yanghui_triangle.gif
+  - id: ramanujan
+    src: /images/fields/enumerative-combinatorics/ramanujan.jpg
+    alt: Photograph of Srinivasa Ramanujan, a young man with dark swept-back hair, in a dark jacket and open-collared shirt.
+    caption: >-
+      Srinivasa Ramanujan in his 1913 passport photograph, taken before he sailed to
+      Cambridge.
+    credit: Photograph, unknown author, Trinity College Cambridge Add. MS a94
+    license: CC BY 4.0
+    source: https://commons.wikimedia.org/wiki/File:Srinivasa_Ramanujan-Add._MS_a94_version2_(cropped).jpg
+  - id: ferrers-diagrams
+    src: /images/fields/enumerative-combinatorics/ferrers-diagrams.png
+    alt: Nested panels of small block diagrams, each a partition drawn as left-aligned rows of squares, grouped by size from 1 up to 8.
+    caption: >-
+      Every partition of the numbers 1 to 8, each drawn as rows of squares: 66 diagrams,
+      nested by size from 8 on the outside down to the single square of 1 in the corner.
+      The fifteen partitions of 7 are in the second panel.
+    credit: R. A. Nonenmacher
+    license: CC BY-SA 4.0
+    source: https://commons.wikimedia.org/wiki/File:Ferrer_partitioning_diagrams.svg
 ---
 
 ## Counting Before Combinatorics
 
 Counting problems are old. Around the second century BCE the Indian prosodist Pingala asked how many rhythms of long and short syllables a line of verse can have, and his commentators built the triangle of numbers that answers such questions. Bhaskara II gave rules for permutations and combinations in his *Lilavati* around 1150. In China, Jia Xian and Yang Hui used the same triangle to expand powers of $(a + b)$, and it was known in Baghdad and in Italy long before it reached France.
+
+{{img:zhu-shijie-triangle}}
 
 What {{fig:pascal|Blaise Pascal}} added in 1654 was a systematic treatise. He derived the triangle's properties one after another, proving several by what is now called mathematical induction, and applied them to the problem of dividing stakes in an interrupted game. The same numbers count committees, paths through a grid and heads in a run of coin tosses, and they became the basis of [probability theory](/math/probability-theory/).
 
@@ -229,6 +262,8 @@ and the coefficient of $x^n$ is the answer, because each way of picking terms fr
 ## Hardy and Ramanujan
 
 Partitions grow unpredictably fast. The number 10 has 42 of them, 100 has 190,569,292, and 200 has almost four trillion. In 1918 {{fig:gh-hardy|G. H. Hardy}} and {{fig:srinivasa-ramanujan|Srinivasa Ramanujan}}, the self-taught Indian mathematician Hardy had brought to Cambridge, attacked Euler's generating function with the tools of [complex analysis](/math/complex-analysis/). They studied how it behaves near the edge of its circle of convergence and extracted a formula whose leading term is
+
+{{img:ramanujan}}
 
 $$
 p(n) \approx \frac{1}{4n\sqrt3}\, e^{\pi \sqrt{2n/3}} .
@@ -251,6 +286,8 @@ $$
 $$
 
 Again five. This is no coincidence. Euler proved that for every number the two counts agree, and his generating functions show why in one line. Partitions into distinct parts are counted by $(1+x)(1+x^2)(1+x^3)\cdots$. Each factor can be rewritten as $1 + x^k = \dfrac{1 - x^{2k}}{1 - x^k}$, so the product is
+
+{{img:ferrers-diagrams}}
 
 $$
 \frac{1-x^2}{1-x} \cdot \frac{1-x^4}{1-x^2} \cdot \frac{1-x^6}{1-x^3} \cdot \frac{1-x^8}{1-x^4} \cdots
