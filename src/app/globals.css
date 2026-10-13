@@ -25,7 +25,6 @@
 
   /* Mount for chapter images: diagrams are drawn for white paper, so they keep a light card in both themes. */
   --plate: #fbf8f1;
-  --plate-dim: 1;
 
   /* Paper grain, blended over both themes. */
   --grain-opacity: 0.05;
@@ -51,8 +50,7 @@
   --chemistry: #c99cc4;
   --biology: #9fbf86;
   --contested: #e57a64;
-  --plate: #d9d2c3;
-  --plate-dim: 0.88;
+  --plate: #d2cab9;
   --grain-opacity: 0.07;
   --grain-blend: screen;
 }
@@ -71,8 +69,7 @@
     --chemistry: #c99cc4;
     --biology: #9fbf86;
     --contested: #e57a64;
-    --plate: #d9d2c3;
-    --plate-dim: 0.88;
+    --plate: #d2cab9;
     --grain-opacity: 0.07;
     --grain-blend: screen;
   }
@@ -341,7 +338,8 @@ button:focus-visible {
   height: auto;
   max-height: 32rem;
   object-fit: contain;
-  filter: brightness(var(--plate-dim));
+  /* White paper in the image takes the plate's tone, so diagrams sit on the mount without a box. */
+  mix-blend-mode: multiply;
 }
 .prose-atlas .plate figcaption {
   margin-top: 0.75rem;
