@@ -244,6 +244,26 @@ further_reading:
   - citation: "Roth, A. E. (2015). Who Gets What — and Why. Houghton Mifflin Harcourt."
     url: null
     note: Market design for general readers, by the person who did most of it.
+
+images:
+  - id: shapley
+    src: /images/fields/cooperative-game-theory/shapley.jpg
+    alt: Photograph of Lloyd Shapley, elderly and bearded, in a dark coat, leaning on a walking stick.
+    caption: >-
+      Lloyd Shapley in Stockholm in 2012, the year he shared the economics prize with Alvin
+      Roth for stable matching.
+    credit: Bengt Nyman
+    license: CC BY 2.0
+    source: https://commons.wikimedia.org/wiki/File:Lloyd_Shapley_1_2012.jpg
+  - id: core-vs-shapley
+    src: /images/fields/cooperative-game-theory/core-vs-shapley.png
+    alt: A number line from 0 to 100 of the seller's share, with the core shaded from 80 to 100 and the Shapley value marked at 63.3, outside it.
+    caption: >-
+      The seller's share on one line. Stability demands at least 80; fairness, by Shapley's
+      axioms, gives 63.3. The two answers do not overlap.
+    credit: Drawn for Field Atlas from the example above
+    license: Field Atlas original
+    source: https://github.com/andifathulms/field-atlas/blob/main/scripts/diagrams/decision.py
 ---
 
 ## Two Questions That Have Different Answers
@@ -253,6 +273,8 @@ Suppose three people can produce something of value together, and smaller groups
 The first is about stability. A division of the total is *stable* if no subgroup could do better by leaving. This is the core, formalised by {{fig:gillies|Donald Gillies}} and {{fig:shapley|Lloyd Shapley}} in the 1950s, and it is a demanding requirement — one inequality for every subset, so $2^{n}$ of them.
 
 The second is about fairness, and it cannot be read off the characteristic function without further commitments. Shapley's move in 1953 was to state the commitments as axioms and see what they force. Divide the whole thing; treat interchangeable players alike; give nothing to a player who adds nothing to any coalition; and let the rule be additive when two independent games are played at once. Exactly one assignment satisfies all four, and it has a vivid description: imagine the players arriving in a random order, each being paid what they add to the group already present, and average over all orders.
+
+{{img:shapley}}
 
 Both questions are reasonable. Their answers frequently disagree.
 
@@ -298,6 +320,8 @@ $$
 $$
 
 The fair division gives the seller 63.3, and the core requires at least 80. **The Shapley value is not in the core.** By the fairness axioms, the losing bidder deserves 13.3 for having been a credible alternative; by the stability requirement, he gets nothing, because the seller and the winning buyer can simply exclude him. No reconciliation is available: these are different questions, and in games like this one — where coalitions substitute rather than complement — they have different answers.
+
+{{img:core-vs-shapley}}
 
 **The core can also be empty.** Take three players where any two can secure 1 and a single player nothing:
 
