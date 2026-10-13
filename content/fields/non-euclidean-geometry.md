@@ -169,6 +169,56 @@ further_reading:
   - citation: "Bonola, R. (1955). Non-Euclidean Geometry. Dover. (Includes translations of Bolyai's and Lobachevsky's original works.)"
     url: null
     note: The classic history, bundled with the two founding texts themselves.
+
+images:
+  - id: lobachevsky
+    src: /images/fields/non-euclidean-geometry/lobachevsky.jpg
+    alt: Engraved portrait of Nikolai Lobachevsky in a high-collared coat with decorations, a book in front of him and his signature below.
+    caption: >-
+      Nikolai Lobachevsky, rector of Kazan University, who published the first account of the
+      new geometry in 1829–30. Few readers took it seriously in his lifetime.
+    credit: Portrait by Lev Kryukov
+    license: Public domain
+    source: https://commons.wikimedia.org/wiki/File:Lobachevsky_03.jpg
+  - id: four-models
+    src: /images/fields/non-euclidean-geometry/four-models.png
+    alt: Four panels showing the same hyperbolic straight lines drawn in the upper half-plane, the Poincaré disc, on a trumpet-shaped pseudosphere, and in the Klein disc.
+    caption: >-
+      The same straight lines in four pictures of the hyperbolic plane: the upper half-plane,
+      the Poincaré disc, Beltrami's pseudosphere and the projective (Klein) disc. In the discs
+      lines become circular arcs or chords; on the pseudosphere they wind up the trumpet.
+    credit: Ferkel
+    license: CC BY-SA 4.0
+    source: https://commons.wikimedia.org/wiki/File:Geodesics_on_the_pseudosphere_and_three_other_models_of_hyperbolic_geometry.png
+  - id: triangle-tiling
+    src: /images/fields/non-euclidean-geometry/triangle-tiling.png
+    alt: A disc filled with red and white curved triangles that shrink without end toward the boundary circle.
+    caption: >-
+      Every triangle here is the same size. Each has angles $\pi/2$, $\pi/4$ and $\pi/6$, which
+      add up to $11\pi/12$, so by the formula each has area $\pi/12$. They look smaller near
+      the rim only because the disc compresses distance there.
+    credit: Tom Ruen and Roice Nelson
+    license: Public domain
+    source: https://commons.wikimedia.org/wiki/File:Hyperbolic_domains_642.png
+  - id: parallels
+    src: /images/fields/non-euclidean-geometry/parallels.png
+    alt: A Poincaré disc with one thick blue arc and a fan of thin black arcs passing through a single point, none of which cross the blue arc.
+    caption: >-
+      Lobachevsky's postulate in the disc: through one point pass infinitely many lines that
+      never meet the thick blue line.
+    credit: Trevorgoodchild
+    license: Public domain
+    source: https://commons.wikimedia.org/wiki/File:Poincare_disc_hyperbolic_parallel_lines.svg
+  - id: three-curvatures
+    src: /images/fields/non-euclidean-geometry/three-curvatures.jpg
+    alt: A triangle drawn on a sphere, on a saddle-shaped surface, and on a flat sheet, each a gridded surface on a black background.
+    caption: >-
+      A triangle on a sphere, a saddle and a plane: angles adding to more than, less than, and
+      exactly $\pi$. NASA drew it for the question cosmologists now answer by measurement,
+      which of the three describes space on the largest scales.
+    credit: NASA / WMAP Science Team
+    license: Public domain
+    source: https://commons.wikimedia.org/wiki/File:End_of_universe.jpg
 ---
 
 ## Denying the Postulate
@@ -187,6 +237,8 @@ So there are no similar triangles of different sizes, because changing the size 
 
 The breakthrough came from three places at once. {{fig:lobachevsky|Nikolai Lobachevsky}} lectured on it at Kazan in 1826 and published in 1829–30, in Russian, in a provincial journal few Western mathematicians read. {{fig:bolyai|János Bolyai}}, a Hungarian army officer, wrote it up as a 26-page appendix to his father's textbook in 1832.
 
+{{img:lobachevsky}}
+
 {{fig:gauss|Gauss}}, the most famous mathematician alive, answered Bolyai's father that to praise the work "would be to praise myself," because he had found the same results long before. He had written as much in private letters, but he had published none of it and never would. Some historians read this as caution about the controversy. Others doubt that his unpublished work ever amounted to a full geometry. Either way, the credit is contested, and this atlas marks it that way.
 
 What none of them had was proof that the new geometry was *consistent*. Lobachevsky and Bolyai had pushed a long way without finding a contradiction, just as Saccheri had. But finding no contradiction is not the same as there being none.
@@ -197,11 +249,15 @@ What none of them had was proof that the new geometry was *consistent*. Lobachev
 
 Beltrami's surfaces came straight out of Gauss's theory of curvature, from the neighbouring [differential-geometry](/math/differential-geometry/) branch. The two branches were already converging. The models standard today are the projective disc, the Poincaré disc and the upper half-plane. Beltrami had already described versions of all three. Felix Klein recast the first in projective terms in 1871, and from 1882 {{fig:poincare|Henri Poincaré}} made the other two famous.
 
+{{img:four-models}}
+
 ## A Closer Look: Triangles in the Poincaré Disc
 
 Poincaré's disc model makes hyperbolic geometry visible. The whole infinite plane is drawn inside a circle. "Straight lines" are arcs of circles that meet the boundary at right angles, together with diameters. Angles are measured as they appear, but distances are distorted: the same step covers less and less of the drawing as you approach the edge, which is infinitely far away.
 
 Draw three such arcs to make a triangle. Because the arcs bow inward, the corners look pinched, and the angles visibly add up to less than $180°$. The shortfall is not arbitrary. For a plane of curvature $-1$,
+
+{{img:triangle-tiling}}
 
 $$
 \text{Area} = \pi - (\alpha + \beta + \gamma) .
@@ -211,10 +267,14 @@ Push the three corners out to the boundary circle and each angle shrinks to zero
 
 Parallels behave just as Lobachevsky said. Take a line and a point off it. Infinitely many arcs through the point never meet the line, and two of them, the *limiting parallels*, meet it only at the boundary, at infinity. Nothing in the picture contradicts Euclid's first four postulates. That is exactly Beltrami's point: the model sits inside ordinary geometry, so if hyperbolic geometry were inconsistent, so would Euclid's be.
 
+{{img:parallels}}
+
 ## Geometry as a Choice
 
 Once several geometries were known to be consistent, "which one is true?" stopped being a mathematical question. {{fig:klein|Felix Klein}}'s Erlangen Program (1872) organised the new situation. A geometry is defined by a group of transformations and studies whatever those transformations leave unchanged. Euclidean geometry keeps distances fixed under rigid motions. Projective geometry keeps only incidence and cross-ratio. Hyperbolic geometry has its own group of motions.
 
 Whether *physical* space is Euclidean became a question for measurement. A popular story says Gauss tried to measure the angle sum of a triangle of mountain peaks for this reason. Historians doubt the story. What is certain is that the question later found an answer in general relativity.
+
+{{img:three-curvatures}}
 
 Non-Euclidean geometry, as a separate subject, largely finished its own work. Its questions moved into its successors. Hyperbolic space turned out to be the geometry of most three-dimensional shapes, and it became a main character in [geometric topology](/math/geometric-topology/).
