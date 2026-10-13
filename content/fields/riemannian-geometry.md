@@ -201,11 +201,55 @@ further_reading:
   - citation: "Berger, M. (2003). A Panoramic View of Riemannian Geometry. Springer."
     url: null
     note: A survey of the whole field's landscape, results and open problems, with few proofs. Best for orientation.
+
+images:
+  - id: riemann
+    src: /images/fields/riemannian-geometry/riemann.jpg
+    alt: Oval photographic portrait of a bearded young man in a dark coat and high white collar.
+    caption: >-
+      Bernhard Riemann. His 1854 lecture contained almost no formulas, and he did not live to
+      see it printed.
+    credit: Photograph, Familienarchiv Thomas Schilling
+    license: Public domain
+    source: https://commons.wikimedia.org/wiki/File:Bernhard_Riemann_2.jpg
+  - id: parallel-transport
+    src: /images/fields/riemannian-geometry/parallel-transport.png
+    alt: A sphere with a triangle running from a point A on the equator up to the North Pole, down to a point B, and back along the equator, with arrows showing a vector carried around it and returning turned by an angle alpha.
+    caption: >-
+      The same walk, started from a corner on the equator: from $A$ up to the pole, down to
+      $B$, and back along the equator. The arrow never turns, yet comes home rotated by
+      $\alpha$. When $A$ and $B$ are a quarter of the way round the globe apart, the triangle
+      is one eighth of the sphere and $\alpha = \pi/2$.
+    credit: Fred the Oyster
+    license: CC BY-SA 4.0
+    source: https://commons.wikimedia.org/wiki/File:Parallel_Transport.svg
+  - id: gravity-probe-b
+    src: /images/fields/riemannian-geometry/gravity-probe-b.jpg
+    alt: Illustration of the Gravity Probe B satellite orbiting over the Earth, with arrows showing its gyroscope axis drifting away from a guide star by two small precessions.
+    caption: >-
+      Gravity Probe B (2004–05) kept gyroscopes pointed at a guide star while orbiting over
+      the poles. Parallel transport through Earth's curved spacetime predicts a drift of 6,606
+      milliarcseconds a year; the probe measured 6,602 ± 18.
+    credit: Gravity Probe B Team, Stanford University and NASA
+    license: Public domain
+    source: https://commons.wikimedia.org/wiki/File:Gravity_Probe_B_Confirms_the_Existence_of_Gravitomagnetism-en.jpg
+  - id: ricci-flow
+    src: /images/fields/riemannian-geometry/ricci-flow.jpg
+    alt: A column of eight surfaces of revolution, starting as a three-lobed dumbbell and smoothing step by step into a small round ball.
+    caption: >-
+      Ricci flow on a surface, top to bottom: the thin necks of a dumbbell fatten, the bumps
+      even out, and the shape rounds off as it shrinks. In three dimensions a neck can pinch
+      off instead, the kind of singularity that took twenty years to get past.
+    credit: CBM
+    license: Public domain
+    source: https://commons.wikimedia.org/wiki/File:Ricci_flow.png
 ---
 
 ## A Lecture at the Seam
 
 On 10 June 1854, the young {{fig:riemann|Bernhard Riemann}} gave the qualifying lecture that would let him teach at Göttingen. Candidates proposed three topics and the faculty chose one. Gauss, then 77, skipped the two safe topics and picked the third: the foundations of geometry.
+
+{{img:riemann}}
 
 Riemann's answer used almost no formulas. A space, he proposed, is a *manifold* of any number of dimensions, and its geometry is given by a rule for measuring small lengths at each point:
 
@@ -233,11 +277,15 @@ Stand at the North Pole holding an arrow pointing along a line of longitude towa
 
 The rotation measures the curvature enclosed by the loop. The triangle you walked covers one eighth of the sphere, an area of $\frac{4\pi R^2}{8} = \frac{\pi R^2}{2}$, and
 
+{{img:parallel-transport}}
+
 $$
 \text{rotation angle} = K \times \text{Area} = \frac{1}{R^2} \cdot \frac{\pi R^2}{2} = \frac{\pi}{2} ,
 $$
 
 exactly a right angle. On a flat plane the arrow would return unrotated. The same idea works in any dimension and needs no surrounding space. Levi-Civita's parallel transport is how curvature is defined in Riemannian geometry, and in general relativity it is how gravity turns the axis of a gyroscope orbiting the Earth, an effect measured by the Gravity Probe B satellite.
+
+{{img:gravity-probe-b}}
 
 ## Curvature and Shape
 
@@ -250,3 +298,6 @@ $$
 $$
 
 It lets a metric evolve over time, smoothing out its bumps the way heat flow evens out temperature. Hamilton's hope was that any three-dimensional space would flow toward a perfectly uniform geometry, which would reveal its topology. The flow could develop singularities, places where it pinches and breaks down, and getting past them took another twenty years. That story continues in [geometric topology](/math/geometric-topology/).
+
+
+{{img:ricci-flow}}
