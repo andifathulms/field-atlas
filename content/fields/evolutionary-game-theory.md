@@ -273,6 +273,38 @@ further_reading:
   - citation: "Nowak, M. A. (2006). Evolutionary Dynamics. Harvard University Press."
     url: null
     note: Covers spatial games, finite populations and the cooperation mechanisms, with the models worked through.
+
+images:
+  - id: hamilton-wasp-nest
+    src: /images/fields/evolutionary-game-theory/hamilton-wasp-nest.jpg
+    alt: A papery paper-wasp comb of hexagonal cells in a museum specimen box, with a handwritten label and a vial holding a wasp.
+    caption: >-
+      A *Polistes* paper-wasp nest that Hamilton collected in Brazil in the 1960s, now at the
+      Natural History Museum, London. Social wasps, bees and ants are where his accounting
+      was first tested.
+    credit: Natural History Museum, London
+    license: CC BY-SA 4.0
+    source: https://commons.wikimedia.org/wiki/File:Polistes_carnifex_-_nest_collect_in_Brazil_in_1967_by_W.D._Hamilton_-_stored_at_the_Natural_History_Museum,_London.jpg
+  - id: fiddler-crabs
+    src: /images/fields/evolutionary-game-theory/fiddler-crabs.jpg
+    alt: Two fiddler crabs on dark mud grappling with their enlarged claws.
+    caption: >-
+      Fiddler crabs settling a dispute with their outsized claws. Most such contests end in
+      display and retreat, not injury, which is the puzzle Maynard Smith and Price set out
+      to explain.
+    credit: Wilfredor
+    license: CC0
+    source: https://commons.wikimedia.org/wiki/File:Fiddler_crabs_fighting_in_La_Restinga.jpg
+  - id: hawk-dove
+    src: /images/fields/evolutionary-game-theory/hawk-dove.png
+    alt: Payoffs to Hawk and Dove against the share of Hawks, the Hawk line falling steeply from 50 to minus 25 and the Dove line from 25 to 0, crossing at 0.5 where both earn 12.5.
+    caption: >-
+      Hawk and Dove payoffs with  = 50$ and /private/tmp/claude-501/-Users-andifathulmukminin-Documents-Project-field-atlas/1e8b8277-9c0c-4a60-9d6e-964ac1b5650a/scratchpad/charts2 = 100$. Left of the crossing Hawks do better
+      and spread; right of it Doves do. The population settles at half Hawks, where both earn
+      12.5, half of what universal restraint would pay.
+    credit: Drawn for Field Atlas from the payoffs above
+    license: Field Atlas original
+    source: https://github.com/andifathulms/field-atlas/blob/main/scripts/diagrams/decision.py
 ---
 
 ## Strategy Without a Strategist
@@ -287,6 +319,8 @@ The machinery of [game theory](/math/game-theory/) assumes almost nothing about 
 
 The rule explains a pattern that had looked arbitrary. Sterile worker castes have evolved independently more than a dozen times in ants, bees and wasps, and almost nowhere else among animals, and these insects share an unusual genetics: males are haploid, so full sisters share three-quarters of their genes rather than a half. A worker is therefore more closely related to her sisters than she would be to her own daughters, which makes raising sisters a better genetic investment than reproducing. Hamilton pointed this out, and it remains the most-cited application of the rule — though termites are eusocial without haplodiploidy, and the modern account leans more on the benefits of staying in a defensible nest.
 
+{{img:hamilton-wasp-nest}}
+
 The accounting also makes quantitative predictions that have been tested in the field. Birds that help at the nest are overwhelmingly helping relatives, and the amount of help tracks relatedness; ground squirrels give alarm calls more readily when kin are within earshot; and in social insects, conflicts over the sex ratio of the brood come out close to where the inclusive-fitness arithmetic of workers and queen predicts, which is not where either party alone would want it.
 
 Whether inclusive fitness is the right formalism, or one correct way of keeping the books among several, has been argued since 2010, when {{fig:martin-nowak|Martin Nowak}}, Corina Tarnita and E. O. Wilson argued that ordinary models of natural selection handle the same cases without it. More than a hundred biologists signed replies. The empirical claims are not what is in dispute; the argument is about which quantity is doing the explanatory work, and it is a good example of a field disagreeing about a formalism while agreeing about every observation.
@@ -294,6 +328,8 @@ Whether inclusive fitness is the right formalism, or one correct way of keeping 
 ## A Closer Look: Hawks, Doves and Where the Mixture Settles
 
 {{fig:maynard-smith|John Maynard Smith}} and {{fig:george-price|George Price}} asked in 1973 why animals contesting a resource usually posture instead of fighting. The received explanation was restraint for the good of the species, which is not a mechanism natural selection can supply.
+
+{{img:fiddler-crabs}}
 
 Their model has two strategies. A **Hawk** escalates until it wins or is injured; a **Dove** displays and retreats if the opponent escalates. Let the resource be worth $V$ and an injury cost $C$. The payoffs to the row player are:
 
@@ -321,6 +357,8 @@ W_H - W_D = \frac{p(V-C) + (1-p)V}{2} = \frac{V - pC}{2} = 0 \;\Longrightarrow\;
 $$
 
 With the numbers above, $p^{*} = 0.5$. Checking: $W_H = 0.5(-25) + 0.5(50) = 12.5$ and $W_D = 0.5(25) = 12.5$. Equal, as required.
+
+{{img:hawk-dove}}
 
 The dynamics make the stability explicit. The replicator equation for this game is
 
