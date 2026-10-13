@@ -189,6 +189,46 @@ further_reading:
   - citation: "Feynman, R. P., Leighton, R. B. & Sands, M. (1964). The Feynman Lectures on Physics, Vol. II. Addison-Wesley."
     url: https://www.feynmanlectures.caltech.edu/
     note: Electromagnetism from the field outward. Free online.
+
+images:
+  - id: faraday
+    src: /images/fields/electromagnetism/faraday.jpg
+    alt: Oil portrait of Michael Faraday, middle-aged, with curly greying hair, in a dark coat.
+    caption: >-
+      Michael Faraday in 1842, painted by Thomas Phillips, a decade after he found
+      electromagnetic induction.
+    credit: Thomas Phillips, National Portrait Gallery, London
+    license: Public domain
+    source: https://commons.wikimedia.org/wiki/File:M_Faraday_Th_Phillips_oil_1842.jpg
+  - id: iron-filings
+    src: /images/fields/electromagnetism/iron-filings.jpg
+    alt: A sepia photograph of iron filings on paper arranged in curved lines around two round magnets.
+    caption: >-
+      Iron filings around two magnets. Each filing turns along the field, tracing the lines of
+      force Faraday believed were physically real.
+    credit: Tangopaso
+    license: Public domain
+    source: https://commons.wikimedia.org/wiki/File:Field_lines_around_magnets.jpg
+  - id: maxwell
+    src: /images/fields/electromagnetism/maxwell.jpg
+    alt: Engraved portrait of James Clerk Maxwell with a full beard, in a dark coat.
+    caption: >-
+      James Clerk Maxwell, engraved by G. J. Stodart. His added term turned four laws about
+      charges and currents into a theory of light.
+    credit: G. J. Stodart, 1890
+    license: Public domain
+    source: https://commons.wikimedia.org/wiki/File:James_Clerk_Maxwell,_G.J._Stodart,_1890.jpg
+  - id: michelson-morley
+    src: /images/fields/electromagnetism/michelson-morley.png
+    alt: A diagram of an interferometer, with light from a source split at a half-silvered plate into two perpendicular beams that reflect off two mirrors and recombine at a detector.
+    caption: >-
+      The Michelson–Morley interferometer. Light from the source (1) is split at a
+      half-silvered plate (5), runs out to two mirrors (3 and 4) at right angles, and
+      recombines at the detector (2). Motion through the ether should have shifted the
+      fringes as the apparatus turned. It did not.
+    credit: Tttrung
+    license: CC BY-SA 4.0
+    source: https://commons.wikimedia.org/wiki/File:Michelson-Morley-numbered.svg
 ---
 
 ## Two Forces, One Needle
@@ -201,7 +241,11 @@ In 1820 {{fig:oersted|Hans Christian Ørsted}} noticed a compass needle twitch b
 
 {{fig:faraday|Michael Faraday}}, a bookbinder's apprentice turned experimenter with almost no mathematics, asked the reverse question: can magnetism make electricity? In 1831 he found that it can, but only when something *changes*. Switching a current on in one coil, or moving a magnet through another, drives a brief current. {{fig:henry|Joseph Henry}} in Albany found the same effect independently.
 
+{{img:faraday}}
+
 To think about it, Faraday imagined space around magnets and charges filled with lines of force, visible in the patterns iron filings make. Most physicists treated the lines as a picture. Faraday insisted they were real, and that the space between objects is where the physics happens. The *field* was the most consequential idea of the century.
+
+{{img:iron-filings}}
 
 ## Maxwell's Light
 
@@ -215,6 +259,8 @@ $$
 $$
 
 The last term was Maxwell's own addition. With it, a changing electric field makes a magnetic field and a changing magnetic field makes an electric one, so the fields can sustain each other as a wave travelling through empty space. Its speed is $1/\sqrt{\mu_0\varepsilon_0}$, calculated from laboratory measurements of coils and capacitors, and it came out equal to the measured speed of light. "We can scarcely avoid the inference," Maxwell wrote, "that light consists in the transverse undulations of the same medium which is the cause of electric and magnetic phenomena."
+
+{{img:maxwell}}
 
 ## A Closer Look: The Speed of Light From Coils and Capacitors
 
@@ -241,5 +287,7 @@ The calculation also carries the puzzle that led to relativity. The formula give
 In 1887–88 {{fig:hertz|Heinrich Hertz}} made Maxwell's waves with a spark gap and detected them across his lab. Radio was born, and the theory seemed complete.
 
 But the equations contained a puzzle. They give *one* speed for light, $c$. Relative to what? The natural answer was a medium, the luminiferous ether, at rest in absolute space, with light moving at $c$ relative to it. The Earth moves through the ether at about 30 km/s around the Sun, so light should travel slightly faster in some directions than others. {{fig:michelson|Albert Michelson}} and {{fig:morley|Edward Morley}} built an interferometer sensitive enough to detect the difference. It found almost nothing.
+
+{{img:michelson-morley}}
 
 FitzGerald and {{fig:lorentz|Hendrik Lorentz}} proposed that objects moving through the ether shrink along their direction of motion by exactly enough to hide it. The fix worked but explained nothing. The deeper answer, that there is no ether and that $c$ is the same for everyone, needed a new idea of time. That idea is [special relativity](/physics/special-relativity/), born at the seam between this field and [classical mechanics](/physics/classical-mechanics/).
