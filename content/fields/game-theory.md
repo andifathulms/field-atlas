@@ -241,6 +241,27 @@ further_reading:
   - citation: "Leonard, R. (2010). Von Neumann, Morgenstern, and the Creation of Game Theory. Cambridge University Press."
     url: null
     note: How the subject was made, and why it took economics two decades to absorb it.
+
+images:
+  - id: borel
+    src: /images/fields/game-theory/borel.jpg
+    alt: Press photograph of Émile Borel, grey-bearded, in a dark suit and striped tie.
+    caption: >-
+      Émile Borel in 1932, then a deputy in the French parliament. In the 1920s he brought
+      mixed strategies back and guessed, wrongly, that no general minimax theorem existed.
+    credit: Agence Mondial Photo-Presse, Bibliothèque nationale de France
+    license: Public domain
+    source: https://commons.wikimedia.org/wiki/File:Emile_Borel-1932.jpg
+  - id: penalty-kick
+    src: /images/fields/game-theory/penalty-kick.png
+    alt: Two straight lines of the kicker's scoring chance against the share of shots aimed left, one falling for a keeper who dives left and one rising for a keeper who dives right, crossing at about 0.364 and 0.791.
+    caption: >-
+      The kicker's scoring chance as the share of shots to the left changes, against each dive.
+      The keeper will always pick the lower line, so the kicker's best is where they cross:
+      shoot left 4 times in 11, and score 79.1% whatever the keeper does.
+    credit: Drawn for Field Atlas from the table above
+    license: Field Atlas original
+    source: https://github.com/andifathulms/field-atlas/blob/main/scripts/diagrams/decision.py
 ---
 
 ## The Regress, and How to Stop It
@@ -250,6 +271,8 @@ Suppose you and an opponent each choose heads or tails, and you win if the choic
 {{fig:waldegrave|James Waldegrave}} found the way out in 1713, in a letter about a card game. Choose at random, with carefully computed probabilities, and the question of what the opponent anticipates becomes irrelevant — against *any* reply, the randomised strategy guarantees a known expected outcome. He calculated the mixture for *le Her*, {{fig:montmort|Montmort}} published the letter, and nothing happened for two hundred years.
 
 {{fig:emile-borel|Émile Borel}} reintroduced mixed strategies in the 1920s and conjectured that no general theorem existed. {{fig:von-neumann|John von Neumann}} proved one in 1928. For any finite two-player game of pure opposition, there is a number $v$ — the value — such that the first player can guarantee at least $v$ whatever the opponent does, and the opponent can guarantee that the first player gets no more. The two bounds coincide, which is the content of the theorem and the reason the regress stops: at the optimum, there is nothing left to anticipate, because each player is indifferent among their own options and nothing can be exploited.
+
+{{img:borel}}
 
 ## When the Interests Are Not Opposed
 
@@ -307,6 +330,8 @@ $$
 $$
 
 and substituting back gives the kicker 0.791 either way — the same number, which is the minimax theorem doing its work. Neither player can do better than 79.1% and 20.9%, and any deviation can be punished: a kicker who always shoots right faces a keeper who always dives right and scores 70%.
+
+{{img:penalty-kick}}
 
 Three things in this are worth keeping. First, each player's optimal mixture is computed from the *opponent's* payoffs, not their own, which is counterintuitive and correct. Second, a mixed equilibrium makes both players indifferent, so neither has any positive reason to play their equilibrium mixture rather than anything else — the mixture is sustained by the fact that departing from it would be noticed. Third, the prediction is testable, and it survives: records of thousands of professional penalties show frequencies close to the computed mixtures, no serial correlation that an opponent could exploit, and equal scoring rates across sides, which is exactly the indifference condition. Professionals, without computing anything, play the minimax solution.
 
