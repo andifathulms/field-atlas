@@ -200,11 +200,45 @@ further_reading:
   - citation: "Arnold, V. I. (1992). Ordinary Differential Equations. Springer."
     url: null
     note: A geometric, intuitive treatment by one of the masters of the subject.
+
+images:
+  - id: brachistochrone
+    src: /images/fields/differential-equations/brachistochrone.png
+    alt: A red curve dipping from point A down below and up again to point B, with a ball rolling along it.
+    caption: >-
+      The brachistochrone: of all curves from $A$ to $B$, a bead sliding without friction
+      arrives soonest along this one, an arc of a cycloid. It dips below $B$ to pick up speed
+      early.
+    credit: UniCollab
+    license: CC BY-SA 3.0
+    source: https://commons.wikimedia.org/wiki/File:Brachistochrone.svg
+  - id: kovalevskaya
+    src: /images/fields/differential-equations/kovalevskaya.jpg
+    alt: An engraved profile portrait of Sofia Kovalevskaya with short wavy hair, a high collar and a brooch.
+    caption: >-
+      Sofia Kovalevskaya, engraved for the *Century Magazine* after a Russian print from a
+      photograph. In 1889 she became a full professor at Stockholm, the first woman to hold
+      such a chair in Northern Europe.
+    credit: R. G. Tietze, engraver
+    license: Public domain
+    source: https://commons.wikimedia.org/wiki/File:Century_Mag_Sonya_Kovalevsky.png
+  - id: euler-method
+    src: /images/fields/differential-equations/euler-method.png
+    alt: A blue curve, the true solution, and a red broken line of four straight steps from A0 to A4 that starts on the curve and drifts above it.
+    caption: >-
+      Euler's method in four steps. Each red segment follows the slope at its starting point,
+      so the broken line drifts away from the true solution in blue; shorter steps keep it
+      closer, as the table shows.
+    credit: Oleg Alexandrov
+    license: Public domain
+    source: https://commons.wikimedia.org/wiki/File:Euler_method.png
 ---
 
 ## Laws of Change
 
 [Calculus](/math/calculus/) made it possible to state a law of nature as a rule about rates of change. {{fig:newton|Newton}} wrote the laws of motion that way, and in a treatise of 1671 he classified the "fluxional equations" that result. The task was to go backwards, from the rule to the motion. Early successes were spectacular. In 1696 {{fig:johann-bernoulli|Johann Bernoulli}} challenged Europe to find the curve of fastest descent. Newton solved it overnight, and {{fig:leibniz|Leibniz}} and {{fig:jacob-bernoulli|Jacob Bernoulli}} solved it too: a cycloid, the curve traced by a point on a rolling wheel.
+
+{{img:brachistochrone}}
 
 ## Euler's Toolbox
 
@@ -216,11 +250,15 @@ The hope that every equation could be solved by formula ended with {{fig:liouvil
 
 That raised a basic question: if no formula exists, does a solution exist at all? {{fig:cauchy|Augustin-Louis Cauchy}} proved in the 1820s that it does, under mild conditions, and that it is unique. {{fig:rudolf-lipschitz|Rudolf Lipschitz}} and {{fig:emile-picard|Émile Picard}} later gave the sharp conditions and the proof by successive approximation. {{fig:sofia-kovalevskaya|Sofia Kovalevskaya}} extended existence to partial differential equations in her thesis of 1874. Determinism, the idea that the present fixes the future, was now a theorem.
 
+{{img:kovalevskaya}}
+
 ## A Closer Look: Stepping Towards $e$
 
 The simplest growth law is $y' = y$: the rate of growth equals the current amount, starting from $y(0) = 1$. Its exact solution is $y = e^t$, so at $t = 1$ the answer is $e = 2.71828\ldots$ Pretend we don't know that, and use Euler's method.
 
 With step size $h$, each step multiplies the current value by $(1 + h)$, since the value grows by $h$ times itself. Reaching $t = 1$ takes $1/h$ steps, so the estimate is $(1 + h)^{1/h}$:
+
+{{img:euler-method}}
 
 | Step size $h$ | Steps | Estimate of $y(1)$ | Error |
 |---|---|---|---|
