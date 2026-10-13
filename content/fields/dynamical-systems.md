@@ -206,11 +206,45 @@ further_reading:
   - citation: "Strogatz, S. H. (2015). Nonlinear Dynamics and Chaos (2nd ed.). Westview Press."
     url: null
     note: The standard introductory textbook, full of applications.
+
+images:
+  - id: poincare
+    src: /images/fields/dynamical-systems/poincare.jpg
+    alt: Photograph of Henri Poincaré, seated in a carved chair, with a pince-nez and a beard, with his signature below.
+    caption: >-
+      Henri Poincaré, who found the first trace of chaos while correcting his prize memoir
+      on the three-body problem.
+    credit: Henri Manuel
+    license: Public domain
+    source: https://commons.wikimedia.org/wiki/File:Henri_Poincar%C3%A9_sitting.jpg
+  - id: pendulum-phase-portrait
+    src: /images/fields/dynamical-systems/pendulum-phase-portrait.png
+    alt: A phase portrait with angle across and angular velocity up, showing closed loops around 0 and 2 pi, eye-shaped separatrices meeting at plus and minus pi, and wavy open curves above and below.
+    caption: >-
+      The pendulum's phase plane: angle across, angular velocity up. Closed loops around
+      $\theta = 0$ are swings; the wavy curves above and below are full rotations; the eye
+      shapes meeting at $\pm\pi$, the upside-down position, are the separatrix. The pattern
+      repeats every $2\pi$ because those angles are the same position.
+    credit: Krishnavedala, lower panel
+    license: CC BY-SA 4.0
+    source: https://commons.wikimedia.org/wiki/File:Pendulum_phase_portrait.svg
+  - id: horseshoe
+    src: /images/fields/dynamical-systems/horseshoe.png
+    alt: A square ABCD stretched into a tall thin strip, then bent into a horseshoe and laid back across the original square.
+    caption: >-
+      Smale's horseshoe: stretch the square, fold it, lay it back over itself. Repeat, and the
+      points that stay in the square forever can be made to follow any sequence of "left leg,
+      right leg" you like, as random as coin tosses.
+    credit: Yapparina
+    license: CC0
+    source: https://commons.wikimedia.org/wiki/File:A_definition_of_Horseshoe_map.svg
 ---
 
 ## Pictures Instead of Formulas
 
 Most [differential equations](/math/differential-equations/) have no formula for their solutions. In a series of memoirs from 1881, {{fig:poincare|Henri Poincaré}} proposed studying them anyway, by drawing. Represent every possible state of the system as a point in a space, and the equation becomes a flow through that space, sweeping each point along its future. The questions then become geometric. Where are the resting points? Which solutions close up into loops? Where does a solution end up?
+
+{{img:poincare}}
 
 ## The Prize and the Error
 
@@ -241,8 +275,13 @@ stays constant along every motion, so each motion traces a curve of constant $E$
 
 That is a complete description of every possible motion, obtained without solving anything. It also shows stability: the bottom position is stable, since nearby curves stay nearby, while the top position is unstable. Near the separatrix, the time for one swing grows without limit. That is why a large swing takes longer than the small-swing period $2\pi\sqrt{L/g}$, about 2.0 seconds for a pendulum one metre long.
 
+{{img:pendulum-phase-portrait}}
+
 Poincaré's method was to draw such pictures for systems where they are far more complex. Add a small periodic push to the pendulum, and the separatrix breaks into exactly the tangle that Poincaré found in the three-body problem. Near it, the pendulum's motion becomes chaotic.
 
 ## Stretching and Folding
 
 In 1960, working on a beach in Rio de Janeiro, {{fig:smale|Stephen Smale}} found the geometric mechanism behind Poincaré's tangle: the horseshoe. A map that stretches a square, folds it and lays it back across itself contains orbits that behave like sequences of coin tosses, and the behaviour survives any small change to the map. His 1967 programme made stretching and folding the core of the subject. Computer experiments were about to show the same behaviour in weather models and simple population equations, and [chaos theory](/math/chaos-theory/) and [ergodic theory](/math/ergodic-theory/) grew from both sides.
+
+
+{{img:horseshoe}}
