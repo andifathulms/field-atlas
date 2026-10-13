@@ -243,6 +243,48 @@ further_reading:
   - citation: "Pressley, A. (2010). Elementary Differential Geometry (2nd ed.). Springer."
     url: null
     note: A gentle, carefully paced introduction for readers who know multivariable calculus.
+
+images:
+  - id: principal-curvatures
+    src: /images/fields/differential-geometry/principal-curvatures.jpg
+    alt: A saddle surface with its tangent plane, normal vector, and two perpendicular planes cutting it along curves that bend in opposite directions.
+    caption: >-
+      Euler's two principal curvatures on a saddle. The two perpendicular planes through the
+      normal cut the surface along the curves that bend most and least, here one upward and
+      one downward, so $\kappa_1$ and $\kappa_2$ have opposite signs.
+    credit: Eric Gaba
+    license: CC BY-SA 3.0
+    source: https://commons.wikimedia.org/wiki/File:Minimal_surface_curvature_planes-en.svg
+  - id: hanover-triangulation
+    src: /images/fields/differential-geometry/hanover-triangulation.jpg
+    alt: An old map covered in a network of straight lines joining named hilltops and towers into triangles, with Göttingen near the bottom.
+    caption: >-
+      The network of triangles Gauss measured across the Kingdom of Hanover, with Göttingen,
+      where he worked, near the bottom. Measuring them on a curved Earth is what turned him to
+      the geometry of surfaces.
+    credit: Gauss's survey map, photographed by Hajotthu at the Bomann-Museum Celle
+    license: CC BY-SA 3.0
+    source: https://commons.wikimedia.org/wiki/File:Dreieckssystem-%C3%9Cbersicht_Gau%C3%9F-Ausstellung_Bomann-Museum_(1).JPG
+  - id: three-curvatures
+    src: /images/fields/differential-geometry/three-curvatures.jpg
+    alt: Three gridded surfaces side by side, a waisted hyperboloid, a cylinder and a sphere.
+    caption: >-
+      Negative, zero and positive Gaussian curvature. On the waisted hyperboloid the rope's
+      circle comes out longer than $2\pi r$, on the cylinder exactly $2\pi r$, and on the sphere
+      shorter.
+    credit: Nicoguaro
+    license: CC0
+    source: https://commons.wikimedia.org/wiki/File:Gaussian_curvature.svg
+  - id: mercator-tissot
+    src: /images/fields/differential-geometry/mercator-tissot.png
+    alt: A Mercator world map dotted with orange circles that are small near the equator and grow much larger toward the poles.
+    caption: >-
+      Circles of one size on the globe, drawn on Mercator's map. They stay round, because the
+      map keeps angles, but they swell toward the poles. The Theorema Egregium says every map
+      must distort something; a projection only chooses what.
+    credit: Justin Kunimune
+    license: CC BY-SA 4.0
+    source: https://commons.wikimedia.org/wiki/File:Mercator_with_Tissot%27s_Indicatrices_of_Distortion.svg
 ---
 
 ## Calculus Meets Shape
@@ -251,11 +293,15 @@ When Newton and Leibniz made [calculus](/math/calculus/) in the late seventeenth
 
 Surfaces were harder, because a surface curves differently in different directions. A cylinder is curved around its circumference and flat along its length. A saddle curves up one way and down the other. {{fig:euler|Leonhard Euler}} showed in 1760 that all of this is controlled by two numbers, the *principal curvatures* $\kappa_1$ and $\kappa_2$, which occur in perpendicular directions. Gaspard Monge's school in France then built a whole descriptive theory of surfaces on that idea. For curves the story was essentially finished by the 1850s. {{fig:frenet|Frenet}} and {{fig:serret|Serret}} showed that two functions, curvature $\kappa$ and torsion $\tau$, determine any curve in space.
 
+{{img:principal-curvatures}}
+
 Up to here, this is still Euclid's space. Curves and surfaces are objects sitting in flat three-dimensional space, and their curvature describes how they bend within it.
 
 ## The Remarkable Theorem
 
 The turn came from surveying. In the 1820s {{fig:gauss|Gauss}} ran a geodetic survey of the Kingdom of Hanover, measuring huge triangles on the curved Earth. That work led to his *Disquisitiones generales circa superficies curvas* (1827). In it, he described a surface entirely by how distances are measured on it, the *first fundamental form*:
+
+{{img:hanover-triangulation}}
 
 $$
 ds^2 = E\,du^2 + 2F\,du\,dv + G\,dv^2 .
@@ -293,7 +339,11 @@ $$
 
 and for the sphere this gives $K = 1/R^2$. On a saddle the circle comes out *longer* than $2\pi r$, and $K$ is negative. On a cylinder it is exactly $2\pi r$, and $K = 0$, which is why a cylinder can be unrolled flat while a sphere cannot.
 
+{{img:three-curvatures}}
+
 This is why every flat map of the Earth distorts. A map that kept all distances would carry the creature's rope-and-circle experiment over unchanged, but on paper the circle comes out $2\pi r$ and on the globe it comes out shorter. No choice of projection can reconcile the two.
+
+{{img:mercator-tissot}}
 
 ## Surfaces Today
 
