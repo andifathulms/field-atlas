@@ -11,8 +11,30 @@ export interface Source {
 export interface Chapter {
   /** Free text, no fixed template. */
   title: string;
-  /** Markdown, with KaTeX math (`$…$`, `$$…$$`) and `{{fig:id}}` or `{{fig:id|Short name}}` figure mentions. */
+  /**
+   * Markdown, with KaTeX math (`$…$`, `$$…$$`), `{{fig:id}}` or `{{fig:id|Short name}}` figure mentions,
+   * and `{{img:id}}` on a line of its own to place one of the field's images.
+   */
   body: string;
+}
+
+/** An illustration placed in a chapter. Every image is freely licensed and credited. */
+export interface FieldImage {
+  id: string;
+  /** Path under `public/`, e.g. `/images/fields/euclidean-geometry/papyrus.jpg`. JPEG or PNG. */
+  src: string;
+  alt: string;
+  /** Markdown; what the reader is looking at and why it belongs here. */
+  caption: string;
+  /** Who made the image, and where it was published, e.g. "Albrecht Dürer, 1525". */
+  credit: string;
+  /** Short license name, e.g. "Public domain", "CC BY-SA 3.0". */
+  license: string;
+  /** The page the image was taken from, which carries its full license terms. */
+  source: string;
+  /** Read from the file at load time. */
+  width: number;
+  height: number;
 }
 
 export interface TurningPoint {
@@ -103,6 +125,8 @@ export interface Field {
   open_problems: OpenProblem[];
   applications: Application[];
   further_reading: Reading[];
+  /** Illustrations, each placed once in a chapter with `{{img:id}}`. */
+  images: FieldImage[];
   /** Derived from the figures collection at load time. */
   figure_ids: string[];
 }

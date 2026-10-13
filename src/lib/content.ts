@@ -11,6 +11,7 @@ import {
   type Chapter,
   type Domain,
   type Field,
+  type FieldImage,
   type Figure,
   type OpenProblem,
   type OpenProblemStatus,
@@ -21,12 +22,16 @@ import {
 const CONTENT_DIR = path.join(process.cwd(), "content");
 const FIELDS_DIR = path.join(CONTENT_DIR, "fields");
 const FIGURES_FILE = path.join(CONTENT_DIR, "figures.json");
+const PUBLIC_DIR = path.join(process.cwd(), "public");
 
 const DOMAIN_IDS: Domain[] = ["math", "physics", "chemistry", "biology"];
 const STATUSES: OpenProblemStatus[] = ["open", "recently_resolved", "conjectured"];
 
 /** `{{fig:gauss}}` or `{{fig:gauss|Gauss}}` inside chapter prose. */
 export const FIGURE_MENTION = /\{\{fig:([a-z0-9-]+)(?:\|([^}]+))?\}\}/g;
+
+/** `{{img:id}}` on a line of its own inside chapter prose. */
+export const IMAGE_MENTION = /^\{\{img:([a-z0-9-]+)\}\}$/gm;
 
 interface Collections {
   fields: Field[];
@@ -56,6 +61,34 @@ function parseChapters(body: string, file: string): Chapter[] {
 
 function fail(file: string, message: string): never {
   throw new Error(`[content] ${file}: ${message}`);
+}
+
+/** Pixel size of a PNG or baseline/progressive JPEG, read from its header. */
+function imageSize(buf: Buffer): { width: number; height: number } | null {
+  if (buf.readUInt32BE(0) === 0x89504e47) return { width: buf.readUInt32BE(16), height: buf.readUInt32BE(20) };
+  if (buf[0] !== 0xff || buf[1] !== 0xd8) return null;
+  let i = 2;
+  while (i + 9 < buf.length) {
+    if (buf[i] !== 0xff) return null;
+    const marker = buf[i + 1];
+    // SOF0–SOF15, except DHT (C4), JPG (C8) and DAC (CC), carry the frame size.
+    if (marker >= 0xc0 && marker <= 0xcf && ![0xc4, 0xc8, 0xcc].includes(marker)) {
+      return { width: buf.readUInt16BE(i + 7), height: buf.readUInt16BE(i + 5) };
+    }
+    i += 2 + buf.readUInt16BE(i + 2);
+  }
+  return null;
+}
+
+function readImage(file: string, img: Omit<FieldImage, "width" | "height">): FieldImage {
+  for (const key of ["id", "src", "alt", "caption", "credit", "license", "source"] as const) {
+    if (!img[key]) fail(file, `image "${img.id ?? img.src}" is missing "${key}"`);
+  }
+  const onDisk = path.join(PUBLIC_DIR, img.src);
+  if (!img.src.startsWith("/") || !fs.existsSync(onDisk)) fail(file, `image "${img.id}" file not found: public${img.src}`);
+  const size = imageSize(fs.readFileSync(onDisk));
+  if (!size) fail(file, `image "${img.id}" must be a PNG or JPEG`);
+  return { ...img, ...size };
 }
 
 function readField(file: string): Field {
@@ -101,6 +134,7 @@ function readField(file: string): Field {
     if (!r.citation || !r.note) fail(file, `further reading entries need a citation and a note`);
     return { ...r, url: r.url ?? null };
   });
+  const images: FieldImage[] = (data.images ?? []).map((img: FieldImage) => readImage(file, img));
 
   return {
     id,
@@ -118,6 +152,7 @@ function readField(file: string): Field {
     open_problems,
     applications,
     further_reading,
+    images,
     figure_ids: [],
   };
 }
@@ -197,6 +232,20 @@ function load(): Collections {
       for (const m of c.body.matchAll(FIGURE_MENTION)) {
         if (!figureIds.has(m[1])) fail(`${f.id}.md`, `unknown figure mention "${m[1]}"`);
       }
+    }
+  }
+
+  // Each image is placed exactly once, on a line of its own, and every placement resolves.
+  for (const f of fields) {
+    const placed = f.chapters.flatMap((c) => [...c.body.matchAll(IMAGE_MENTION)].map((m) => m[1]));
+    const stray = f.chapters.some((c) => c.body.replace(IMAGE_MENTION, "").includes("{{img:"));
+    if (stray) fail(`${f.id}.md`, `an {{img:…}} mention must sit on a line of its own`);
+    for (const id of placed) {
+      if (!f.images.some((img) => img.id === id)) fail(`${f.id}.md`, `unknown image "${id}"`);
+    }
+    for (const img of f.images) {
+      const count = placed.filter((id) => id === img.id).length;
+      if (count !== 1) fail(`${f.id}.md`, `image "${img.id}" is placed ${count} times; place it exactly once`);
     }
   }
 

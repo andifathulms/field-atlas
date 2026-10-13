@@ -1,11 +1,12 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
+import { ChapterBody } from "@/components/ChapterBody";
 import { Applications, DrawsOn, FurtherReading, InBrief, KeyIdeas } from "@/components/FieldSections";
 import { FieldContents, type ContentsEntry } from "@/components/FieldContents";
 import { Markdown } from "@/components/Markdown";
 import { Sources } from "@/components/Sources";
-import { getField, getFields, getFigure, getFiguresForTurningPoint, getIncomingLinks } from "@/lib/content";
+import { IMAGE_MENTION, getField, getFields, getFigure, getFiguresForTurningPoint, getIncomingLinks } from "@/lib/content";
 import { getDomain, getThread, threadPath } from "@/lib/domains";
 import { figureAnchor, resolveFigureMentions } from "@/lib/mentions";
 import { pageMetadata } from "@/lib/meta";
@@ -45,7 +46,7 @@ function chapterId(title: string): string {
 
 /** Minutes to read the page's prose at an unhurried 220 words a minute. */
 function readingMinutes(field: Field): number {
-  const text = [field.summary ?? "", ...field.chapters.map((c) => c.body)].join(" ");
+  const text = [field.summary ?? "", ...field.chapters.map((c) => c.body.replace(IMAGE_MENTION, ""))].join(" ");
   return Math.max(1, Math.round(text.split(/\s+/).filter(Boolean).length / 220));
 }
 
@@ -273,7 +274,7 @@ export default function FieldPage({ params }: Params) {
                   <Markdown inline>{c.title}</Markdown>
                 </h2>
                 <div className={i === 0 ? "dropcap" : undefined}>
-                  <Markdown>{resolveFigureMentions(c.body, field)}</Markdown>
+                  <ChapterBody body={resolveFigureMentions(c.body, field)} images={field.images} />
                 </div>
               </section>
             ))}
