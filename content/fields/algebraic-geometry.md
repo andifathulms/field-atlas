@@ -314,6 +314,39 @@ further_reading:
   - citation: "Dieudonné, J. (1985). History of Algebraic Geometry. Trans. J. D. Sally. Wadsworth."
     url: null
     note: A participant's history, from ancient conics to Grothendieck.
+
+images:
+  - id: riemann-surface-sqrt
+    src: /images/fields/algebraic-geometry/riemann-surface-sqrt.jpg
+    alt: A coloured surface made of two sheets that spiral around a central point and pass through each other.
+    caption: >-
+      Riemann's idea in its simplest case, the equation $w^2 = z$. Each $z$ has two square
+      roots, so the solutions form two sheets, and circling the origin carries you from one
+      root to the other. For a smooth cubic the sheets close up into a torus.
+    credit: Leonid 2
+    license: CC BY-SA 3.0
+    source: https://commons.wikimedia.org/wiki/File:Riemann_surface_sqrt.svg
+  - id: clebsch-cubic-surface
+    src: /images/fields/algebraic-geometry/clebsch-cubic-surface.jpg
+    alt: A white plaster model of a curved surface with three holes, with numbered straight lines drawn on it in red and blue.
+    caption: >-
+      A plaster teaching model of Clebsch's diagonal cubic surface.
+      Every smooth cubic surface contains exactly 27 straight lines; on this one all 27 are
+      real, and some are drawn on the plaster. Surfaces like this were what the Italian school
+      set out to classify.
+    credit: Martin Schilling catalogue, photographed by Oliver Zauzig
+    license: CC BY-SA 3.0
+    source: https://commons.wikimedia.org/wiki/File:Modell_der_Diagonalfl%C3%A4che_von_Clebsch_-Schilling_VII,_1_-_44-.jpg
+  - id: curve-mod-61
+    src: /images/fields/algebraic-geometry/curve-mod-61.png
+    alt: A square grid from 0 to 60 on both axes, scattered with small circles that show no visible pattern.
+    caption: >-
+      The same curve, $y^2 = x^3 - x$, modulo 61. Over a finite field the curve is a scatter of
+      points: 71 of them, plus the point at infinity makes 72. Hasse's bound holds again,
+      $|72 - 62| = 10 \le 2\sqrt{61} \approx 15.6$.
+    credit: Technopop.tattoo
+    license: Public domain
+    source: https://commons.wikimedia.org/wiki/File:Elliptic_curve_y%5E2%3Dx%5E3-x_on_finite_field_Z_61.PNG
 ---
 
 ## Curves as Equations
@@ -326,11 +359,15 @@ The simplest question to ask is how often two curves meet. A line meets a conic 
 
 The second reason came from topology. In 1857 {{fig:riemann|Bernhard Riemann}} looked at the complex solutions of a polynomial equation in two variables and saw a surface, a real two-dimensional object. For a smooth cubic curve, that surface is a torus. The number of holes, the *genus*, turned out to govern the curve's algebra: which functions live on it, and how it can be mapped to other curves.
 
+{{img:riemann-surface-sqrt}}
+
 From then on, the topology of complex varieties and the algebra of their equations were studied together, which is why this field's second parent is [algebraic topology](/math/algebraic-topology/). Lefschetz and Hodge carried the connection into higher dimensions in the first half of the twentieth century. The link became decisive when the topology of equations over *finite* fields was needed.
 
 ## The Italian Crisis
 
 Around 1890–1930, the Italian school of {{fig:castelnuovo|Guido Castelnuovo}}, {{fig:enriques|Federigo Enriques}} and {{fig:severi|Francesco Severi}} achieved something extraordinary: a classification of algebraic surfaces, driven by brilliant geometric intuition. But intuition ran ahead of proof. Some arguments turned out to have gaps, some claimed results could not be checked, and by the 1930s no one could say with confidence which theorems were solid.
+
+{{img:clebsch-cubic-surface}}
 
 {{fig:zariski|Oscar Zariski}} and {{fig:weil|André Weil}} responded by rebuilding the field on commutative algebra, the theory of polynomial rings and their ideals. It was a second foundational repair after Hilbert's rebuilding of Euclid, and it made the subject both more rigorous and far more abstract.
 
@@ -365,6 +402,8 @@ $$
 $$
 
 Here $|8 - 6| = 2 \le 2\sqrt 5 \approx 4.47$. Hasse's bound is the Riemann hypothesis for elliptic curves: it says the zeros of the curve's zeta function lie on a critical line. Weil proved the analogue for all curves in the 1940s and conjectured it for all varieties. The error term $2\sqrt p$ is controlled by the curve's genus, its topology over the complex numbers. That link between counting and topology is what Grothendieck's cohomology and Deligne's 1974 proof finally explained.
+
+{{img:curve-mod-61}}
 
 ## From Geometry to Fermat
 
