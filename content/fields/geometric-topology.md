@@ -288,6 +288,38 @@ further_reading:
   - citation: "Thurston, W. P. (1997). Three-Dimensional Geometry and Topology, Vol. 1. Princeton University Press."
     url: null
     note: Thurston's own account of the geometric viewpoint. Demanding, but full of insight.
+
+images:
+  - id: poincare
+    src: /images/fields/geometric-topology/poincare.jpg
+    alt: Photographic portrait of a bearded man with a pince-nez and a bow tie.
+    caption: >-
+      Henri Poincaré, who stated the conjecture in 1904 after finding a counterexample to his
+      own first version of it.
+    credit: Photograph, unknown author
+    license: Public domain
+    source: https://commons.wikimedia.org/wiki/File:Henri_Poincar%C3%A9-2.jpg
+  - id: figure-eight-knot-complement
+    src: /images/fields/geometric-topology/figure-eight-knot-complement.jpg
+    alt: A white 3D-printed sculpture of curved shells arranged around a small knotted lattice at its centre.
+    caption: >-
+      A 3D-printed model of the figure-eight knot complement, the space left around the knot.
+      Thurston showed it carries a hyperbolic geometry; its volume, about 2.03, is the smallest
+      of any hyperbolic knot complement.
+    credit: François Guéritaud, Saul Schleimer and Henry Segerman
+    license: CC BY-SA 3.0
+    source: https://commons.wikimedia.org/wiki/File:Figure_eight_knot_complement.jpg
+  - id: genus-two-octagon
+    src: /images/fields/geometric-topology/genus-two-octagon.png
+    alt: A regular octagon with inward-curving sides, numbered 1 to 4 in opposite pairs, filled with a pattern of grey and white hyperbolic triangles.
+    caption: >-
+      A two-holed surface cut open into a hyperbolic octagon; gluing the sides with matching
+      numbers closes it up again. All eight corners meet at one point, so each angle is
+      $\pi/4$, and the area is $6\pi - 8 \cdot \tfrac{\pi}{4} = 4\pi$, exactly $2\pi\,|\chi|$
+      for $\chi = -2$, as Gauss–Bonnet requires.
+    credit: Parcly Taxel, after Joroco246
+    license: Free Art License
+    source: https://commons.wikimedia.org/wiki/File:Fundamental_domain_of_Bolza_surface.svg
 ---
 
 ## Poincaré's Question
@@ -296,6 +328,8 @@ This field has three parents, and it needed all of them. From [algebraic topolog
 
 It starts with {{fig:poincare|Henri Poincaré}}, whose *Analysis Situs* (1895) had just given topology its algebraic tools. He wanted to use them to tell three-dimensional spaces apart. In 1900 he claimed that a closed three-manifold with the same homology as the three-sphere must *be* the three-sphere. By 1904 he had found his own counterexample, now called the Poincaré homology sphere. So he asked a sharper question: if every loop in such a space can be shrunk to a point, must it be $S^3$?
 
+{{img:poincare}}
+
 ## Higher Dimensions Fall First
 
 For half a century the question resisted everyone, and attention moved to other dimensions. The territory turned out to be stranger than expected. In 1956 {{fig:milnor|John Milnor}} found spheres of dimension seven that are topologically ordinary but smooth in a genuinely different way. In 1961 {{fig:smale|Stephen Smale}} proved the analogous Poincaré statement in every dimension five and above, where there is enough room to untangle things. In 1982 {{fig:freedman|Michael Freedman}} proved the topological version in dimension four. Dimension three, the original, remained. Many false proofs were announced along the way.
@@ -303,6 +337,8 @@ For half a century the question resisted everyone, and attention moved to other 
 ## Thurston's Picture
 
 {{fig:thurston|William Thurston}} changed the question in the late 1970s. He showed that *most* three-manifolds, including the complements of most knots, carry a hyperbolic metric. Lobachevsky's geometry, once dismissed as a curiosity, turned out to be the most common geometry of three-dimensional space. Mostow's rigidity theorem (1968) had already shown that such a metric is unique when it exists. Geometric measurements like hyperbolic volume therefore become topological invariants.
+
+{{img:figure-eight-knot-complement}}
 
 In 1982 Thurston conjectured that every closed three-manifold can be cut into pieces, each carrying one of eight uniform geometries. Poincaré's conjecture is the special case in which the only piece is the round sphere. The question was no longer just "is it a sphere?" but "which geometry does this space want to have?" That is why this field has a [non-Euclidean](/math/non-euclidean-geometry/) parent as well as a [Riemannian](/math/riemannian-geometry/) one.
 
@@ -323,6 +359,8 @@ The model for Thurston's geometrization is the classical theory of surfaces, com
 | Two or more holes | $g \ge 2$ | $2 - 2g < 0$ | hyperbolic (curvature $-1$) |
 
 The Gauss–Bonnet theorem ties the two columns together: total curvature equals $2\pi$ times the Euler characteristic. So the sign of the curvature is forced by the topology. Most surfaces, all those with two or more holes, are hyperbolic.
+
+{{img:genus-two-octagon}}
 
 Thurston's conjecture was that three dimensions work the same way, with two complications. First, a 3-manifold may need to be cut along spheres and tori into pieces before each piece carries a uniform geometry. Second, there are eight model geometries instead of three: spherical, flat and hyperbolic, plus five that exist only in three dimensions and mix directions of different kinds. As with surfaces, hyperbolic geometry is the typical case. Perelman's proof via Ricci flow confirmed the whole picture, including Poincaré's conjecture, the special case of a single spherical piece.
 
