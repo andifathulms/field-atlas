@@ -193,6 +193,35 @@ further_reading:
   - citation: "Milnor, J. (2006). Dynamics in One Complex Variable (3rd ed.). Princeton University Press."
     url: null
     note: The standard graduate text, clearly written.
+
+images:
+  - id: mandelbrot
+    src: /images/fields/complex-dynamics/mandelbrot.jpg
+    alt: Photograph of Benoit Mandelbrot, elderly, in glasses, a dark suit and a red tie.
+    caption: >-
+      Benoit Mandelbrot at the EPFL in 2007. At IBM in 1980 he drew the set that bears his name.
+    credit: Rama
+    license: CC BY-SA 2.0 fr
+    source: https://commons.wikimedia.org/wiki/File:Benoit_Mandelbrot_mg_1804-d.jpg
+  - id: mandelbrot-set
+    src: /images/fields/complex-dynamics/mandelbrot-set.jpg
+    alt: The Mandelbrot set in black, a heart-shaped body joined to a round disc on its left, fringed with blue filaments, on a deep blue background.
+    caption: >-
+      The Mandelbrot set, in black. $c = 0$ lies inside the heart-shaped body, $c = -1$ at the
+      centre of the disc to its left, and $c = -2$ at the far tip of the thin spike; $c = 1$ is
+      off the picture to the right. The colours outside count how fast each orbit escapes.
+    credit: Wolfgang Beyer
+    license: CC BY-SA 3.0
+    source: https://commons.wikimedia.org/wiki/File:Mandel_zoom_00_mandelbrot_set.jpg
+  - id: seahorse-valley
+    src: /images/fields/complex-dynamics/seahorse-valley.jpg
+    alt: A magnified piece of the Mandelbrot set's edge, full of blue and orange spirals and tiny black copies of the set.
+    caption: >-
+      A small piece of the boundary, magnified. Spirals, filaments and tiny black copies of
+      the whole set keep appearing however far the zoom goes.
+    credit: Wolfgang Beyer
+    license: CC BY-SA 3.0
+    source: https://commons.wikimedia.org/wiki/File:Mandel_zoom_11_satellite_double_spiral.jpg
 ---
 
 ## Iteration Without Pictures
@@ -204,6 +233,8 @@ They could only imagine what these regions looked like. Calculating even one det
 ## The Pictures Arrive
 
 By the late 1970s computers could test millions of points. {{fig:robert-brooks|Robert Brooks}} and {{fig:peter-matelski|Peter Matelski}} printed a crude image in 1978 of the set of parameters $c$ for which $z^2 + c$ keeps 0 bounded. {{fig:benoit-mandelbrot|Benoit Mandelbrot}}, at IBM, drew it in detail and saw that it was extraordinary. Zooming in reveals spirals, filaments and tiny copies of the whole set, without end. Mandelbrot had coined the word "fractal" in 1975 for shapes with detail at every scale, and this became its emblem.
+
+{{img:mandelbrot}}
 
 Then the pictures became theorems. {{fig:adrien-douady|Adrien Douady}} and {{fig:john-hubbard|John Hubbard}} proved in 1982 that the set is connected, although the pictures seemed to show separate islands, and named it after Mandelbrot. In 1985 {{fig:dennis-sullivan|Dennis Sullivan}} settled a question left open by Fatou, using methods borrowed from hyperbolic geometry.
 
@@ -223,8 +254,13 @@ For $c = i$, squaring $-1 + i$ gives $(-1)^2 + 2(-1)(i) + i^2 = -2i$, and adding
 
 The Mandelbrot set is the set of all $c$ whose orbit stays bounded, so $0$, $-1$, $i$ and $-2$ are in it and $1$ is not. There is a simple test: once an orbit gets farther than 2 from the origin, it must escape. That is how computers draw the set, colouring each $c$ by how many steps its orbit takes to pass distance 2.
 
+{{img:mandelbrot-set}}
+
 The boundary is where it gets hard. The real number $c = 0.25$ is in the set: its orbit creeps up towards $0.5$ and never passes it. But $c = 0.26$, only a hundredth larger, escapes after 30 steps, and $c = 0.251$ after 97. The closer $c$ is to the boundary, the longer it takes to decide. For points exactly on the boundary, no finite computation can settle the question. That is why the set's finest structure is still not fully understood.
 
 ## Still Unmapped
 
 In 1998 {{fig:mitsuhiro-shishikura|Mitsuhiro Shishikura}} proved that the boundary of the Mandelbrot set is as complicated as a boundary in the plane can be, with dimension 2. The central conjecture of the field, that the set is locally connected, would give a complete description of it, and with it of all quadratic [dynamical systems](/math/dynamical-systems/). Jean-Christophe Yoccoz proved it at most points, and his work contributed to his Fields Medal in 1994. The remaining points, deep inside nested copies of the set, are still out of reach. The same zooming, or renormalisation, that produces those copies also explains the universal constants of [chaos theory](/math/chaos-theory/).
+
+
+{{img:seahorse-valley}}
