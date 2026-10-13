@@ -183,6 +183,36 @@ further_reading:
   - citation: "Einstein, A. (1920). Relativity: The Special and the General Theory. Trans. R. W. Lawson. Methuen."
     url: null
     note: Einstein's own popular account, still one of the clearest.
+
+images:
+  - id: einstein-1904
+    src: /images/fields/special-relativity/einstein-1904.jpg
+    alt: Photograph of a young Albert Einstein with dark curly hair and a moustache, in a checked suit, seated at a desk.
+    caption: >-
+      Einstein in Bern around 1904, while he worked at the Swiss patent office, photographed
+      by his friend Lucien Chavan.
+    credit: Lucien Chavan, Historical Museum of Bern
+    license: Public domain
+    source: https://commons.wikimedia.org/wiki/File:Einstein_patentoffice_full.jpg
+  - id: light-cone
+    src: /images/fields/special-relativity/light-cone.png
+    alt: A double cone with time vertical and space horizontal, an event A at its tip, an event B inside the upper cone and an event C outside it.
+    caption: >-
+      A light cone. Every observer agrees that $B$, inside $A$'s future cone, comes after $A$,
+      and a signal from $A$ can reach it. $C$ lies outside: observers in different frames
+      disagree about whether it happens before or after $A$, and nothing from $A$ can reach it.
+    credit: Sakurambo
+    license: Public domain
+    source: https://commons.wikimedia.org/wiki/File:Light_cone.svg
+  - id: muon-survival
+    src: /images/fields/special-relativity/muon-survival.png
+    alt: Two curves of the share of muons still alive against kilometres fallen; without time dilation the share falls to almost nothing within a few kilometres, with it about 22 percent reach the ground at 10 km.
+    caption: >-
+      The muons of the calculation above, falling 10 km at $0.995c$. Without time dilation
+      almost none would survive; with their clocks slowed tenfold, about 22% reach the ground.
+    credit: Drawn for Field Atlas from the numbers above
+    license: Field Atlas original
+    source: https://github.com/andifathulms/field-atlas/blob/main/scripts/diagrams/relativity.py
 ---
 
 ## Two Theories, One Contradiction
@@ -195,6 +225,8 @@ But the Earth's motion through the ether would not show up. {{fig:lorentz|Hendri
 
 In June 1905 {{fig:einstein|Albert Einstein}}, a 26-year-old examiner at the Swiss patent office, took that step. He assumed only two things: the principle of relativity holds for all of physics, and light always moves at $c$. Instead of asking how the ether distorts clocks, he asked what "at the same time" means for distant events. It can only mean what clocks synchronised by light signals say, and observers in relative motion synchronise differently. Simultaneity is relative.
 
+{{img:einstein-1904}}
+
 From there everything followed as *kinematics*, with no mechanism needed. Moving clocks run slow by the factor $\gamma = 1/\sqrt{1 - v^2/c^2}$, moving lengths contract by the same factor, and velocities combine so that nothing overtakes light. The ether became, in his word, "superfluous". A three-page sequel that September showed that a body's mass is a measure of its energy content, the result now written $E = mc^2$.
 
 ## Space and Time Become Spacetime
@@ -206,6 +238,8 @@ s^2 = (c\,\Delta t)^2 - \Delta x^2 - \Delta y^2 - \Delta z^2 ,
 $$
 
 just as rotated observers in ordinary space disagree about $x$ and $y$ but agree on distance. Special relativity is the geometry of a four-dimensional *spacetime*, and a change of velocity is a kind of rotation in it. The minus sign makes the geometry strange: the space of possible velocities turns out to be a [hyperbolic space](/math/non-euclidean-geometry/), the non-Euclidean geometry of Lobachevsky and Bolyai.
+
+{{img:light-cone}}
 
 Einstein at first is said to have called this "superfluous learnedness". Within a few years he found he could not build a theory of gravity without it.
 
@@ -230,6 +264,8 @@ $$
 The muon's own clock records only $33.5 / 10 \approx 3.35$ microseconds for the trip, about one and a half lifetimes, so the fraction surviving is $e^{-3.35/2.2} \approx 0.22$. About one muon in five arrives.
 
 Muons do reach the ground in large numbers, about one per square centimetre per minute. Rossi and Hall measured it in 1941, and in 1963 David Frisch and James Smith compared the muon counts on the summit of Mount Washington and at sea level, 1,907 metres lower. Far more survived the descent than the muons' lifetime would allow without time dilation, in close agreement with Einstein's factor.
+
+{{img:muon-survival}}
 
 From the muon's point of view, its clock is normal. Instead the atmosphere, rushing past at 0.995c, is contracted by the same factor of 10, to about 1 km thick. Both descriptions give the same count of surviving muons. They are the same prediction, seen from two frames.
 
