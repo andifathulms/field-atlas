@@ -207,21 +207,58 @@ further_reading:
   - citation: "Fermi, E. (1937). Thermodynamics. Prentice-Hall (Dover reprint 1956)."
     url: null
     note: A short, lucid classic textbook.
+
+images:
+  - id: carnot
+    src: /images/fields/thermodynamics/carnot.jpg
+    alt: Portrait of Sadi Carnot at seventeen in the uniform of the École Polytechnique, with curly dark hair.
+    caption: >-
+      Sadi Carnot at seventeen, from Boilly's 1813 portrait, as reproduced in the 1897
+      English translation of his *Réflexions*. He published the book at 28 and died of cholera
+      at 36.
+    credit: After Louis-Léopold Boilly
+    license: Public domain
+    source: https://commons.wikimedia.org/wiki/File:CarnotSadi1813Bailly.jpg
+  - id: joule-apparatus
+    src: /images/fields/thermodynamics/joule-apparatus.png
+    alt: Engraving of Joule's apparatus, a falling weight on a cord turning a paddle wheel inside an insulated vessel of water fitted with a thermometer.
+    caption: >-
+      Joule's paddle-wheel apparatus. A falling weight turns paddles in a vessel of water, and
+      the thermometer records the temperature rise: a fixed amount of work always makes the same
+      amount of heat.
+    credit: Harper's New Monthly Magazine, 1869
+    license: Public domain
+    source: https://commons.wikimedia.org/wiki/File:Joule%27s_Apparatus_(Harper%27s_Scan).png
+  - id: clausius
+    src: /images/fields/thermodynamics/clausius.jpg
+    alt: Engraved portrait of Rudolf Clausius with a full beard, in a dark coat.
+    caption: >-
+      Rudolf Clausius, who named entropy in 1865 and put the two laws in their classic form:
+      the energy of the universe is constant; its entropy tends to a maximum.
+    credit: Popular Science Monthly, 1889
+    license: Public domain
+    source: https://commons.wikimedia.org/wiki/File:PSM_V35_D010_Rudolf_Julius_Emanuel_Clausius.jpg
 ---
 
 ## The Motive Power of Fire
 
 By 1820 steam engines were driving Britain's mines and mills, built by trial and error with no theory behind them. In 1824 {{fig:sadi-carnot|Sadi Carnot}}, a French engineer and son of a revolutionary general, asked the question no one had posed in general: how much work can an engine get from heat? He imagined an ideal engine, perfectly reversible, and showed that nothing could do better. Its output depends only on the temperatures of the hot source and the cold sink, not on steam, air or any other working substance. Carnot thought of heat as a fluid, caloric, falling from hot to cold like water turning a mill wheel. His short book sold few copies and was nearly forgotten.
 
+{{img:carnot}}
+
 ## Heat Is Energy
 
 In the 1840s the caloric theory broke down. {{fig:julius-robert-mayer|Julius Robert Mayer}}, a ship's doctor, argued in 1842 that heat and motion were two forms of the same thing. {{fig:james-joule|James Joule}}, a brewer's son from Salford, near Manchester, measured the exchange rate: the work of a falling weight, used to turn a paddle wheel in water, always produced the same amount of heat. {{fig:hermann-helmholtz|Hermann von Helmholtz}} generalised the result in 1847 into the conservation of energy. The priority dispute over who found it first was bitter, and Mayer was recognised only late in life.
+
+{{img:joule-apparatus}}
 
 But if heat was not conserved, Carnot's argument seemed to collapse. {{fig:william-thomson|William Thomson}}, who admired Carnot's work, used it in 1848 to define an absolute temperature scale that does not depend on any substance. In its revised form of 1854, the scale's zero sits at about $-273\,^\circ\text{C}$.
 
 ## Entropy
 
 {{fig:rudolf-clausius|Rudolf Clausius}} saw in 1850 that both ideas could be kept. Energy is conserved, but it has a direction: heat does not flow by itself from cold to hot. In 1865 he defined the quantity that captures this, entropy, from the Greek for "transformation", and put the two laws in one sentence: the energy of the universe is constant, and its entropy tends to a maximum. For the first time, a law of physics distinguished past from future. Thomson, and then Helmholtz, had already drawn a bleak conclusion from the dissipation of energy, the "heat death" of the universe, in which everything eventually reaches one uniform temperature.
+
+{{img:clausius}}
 
 In 1906 {{fig:walther-nernst|Walther Nernst}} added a third law, about behaviour near absolute zero. The laws made no assumptions about what matter is made of. Explaining *why* they hold required the atoms of [kinetic theory](/physics/kinetic-theory/), and the explanation turned out to be statistical.
 
