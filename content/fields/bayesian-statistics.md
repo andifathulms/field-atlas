@@ -213,11 +213,34 @@ further_reading:
   - citation: "Gelman, A., Carlin, J. B., Stern, H. S., Dunson, D. B., Vehtari, A. & Rubin, D. B. (2013). Bayesian Data Analysis (3rd ed.). CRC Press."
     url: null
     note: The standard modern textbook.
+
+images:
+  - id: laplace
+    src: /images/fields/bayesian-statistics/laplace.jpg
+    alt: An engraved oval portrait of Pierre-Simon Laplace in an embroidered coat and lace jabot, with medals, labelled P. S. Laplace.
+    caption: >-
+      Pierre-Simon Laplace, from the frontispiece of an 1829 volume of his *Mécanique céleste*.
+      He used Bayes's rule to estimate planetary masses and birth ratios.
+    credit: Frontispiece, Niels Bohr Library and Archives, AIP
+    license: Public domain
+    source: https://commons.wikimedia.org/wiki/File:Laplace-6.jpg
+  - id: banbury-sheet
+    src: /images/fields/bayesian-statistics/banbury-sheet.jpg
+    alt: A long sheet printed with columns of the alphabet A to Z, with holes punched through some letters.
+    caption: >-
+      Part of a Banbury sheet, found in 2014 in the roof of Hut 6 at Bletchley Park. Each
+      intercepted message was punched onto a sheet; sliding two sheets over each other and
+      counting the holes that lined up gave the evidence that Banburismus scored in decibans.
+    credit: TedColes
+    license: CC BY-SA 4.0
+    source: https://commons.wikimedia.org/wiki/File:Part_of_a_Banbury_Sheet_as_used_in_Banburismus.jpg
 ---
 
 ## Laplace's Method
 
 The theorem that bears Bayes's name, from [probability theory](/math/probability-theory/), says how to turn the probability of the data given a cause into the probability of the cause given the data. {{fig:laplace|Pierre-Simon Laplace}} turned it into a working method. From 1774 he used it to estimate the masses of planets, to decide whether boys are genuinely more likely than girls to be born, and to judge the reliability of witnesses. His rule of succession, derived by assuming that before any evidence every chance is equally likely, became the method's best-known result and its best-known target.
+
+{{img:laplace}}
 
 ## The Eclipse
 
@@ -226,6 +249,8 @@ Critics asked where the prior came from. George Boole and John Venn objected tha
 A few people kept the other view alive. {{fig:frank-ramsey|Frank Ramsey}} and {{fig:bruno-de-finetti|Bruno de Finetti}} showed that anyone whose betting odds break the rules of probability can be made to lose money whatever happens, so rational degrees of belief must be probabilities. {{fig:harold-jeffreys|Harold Jeffreys}}, a geophysicist, wrote a Bayesian manual for scientists in 1939, and {{fig:leonard-savage|Leonard Jimmie Savage}} gave the subject axioms in 1954.
 
 The most consequential Bayesian work was secret. At Bletchley Park, {{fig:turing|Alan Turing}} attacked the naval Enigma with a procedure he called Banburismus. Each clue multiplied the odds on a candidate setting, so he worked with logarithms and simply added the scores, in units of decibans. {{fig:i-j-good|I. J. Good}}, his assistant, later developed the ideas in public and spent a career arguing for them.
+
+{{img:banbury-sheet}}
 
 ## A Closer Look: Will the Sun Rise Tomorrow?
 
