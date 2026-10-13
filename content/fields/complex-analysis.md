@@ -193,15 +193,50 @@ further_reading:
   - citation: "Ahlfors, L. V. (1979). Complex Analysis (3rd ed.). McGraw-Hill."
     url: null
     note: The classic graduate text.
+
+images:
+  - id: ars-magna
+    src: /images/fields/complex-analysis/ars-magna.jpg
+    alt: A printed Latin title page, Artis Magnae sive de Regulis Algebraicis, with an oval woodcut portrait of Cardano in a cap.
+    caption: >-
+      The title page of Cardano's *Ars Magna* (1545), with his portrait. Besides the cubic
+      formula, the book contains one of the first appearances in print of the square root of a
+      negative number: splitting 10 into two parts whose product is 40 gives $5 \pm \sqrt{-15}$.
+    credit: Gerolamo Cardano, 1545
+    license: Public domain
+    source: https://commons.wikimedia.org/wiki/File:ArsMagna.jpg
+  - id: euler-formula
+    src: /images/fields/complex-analysis/euler-formula.png
+    alt: A unit circle in the complex plane with an arrow from the origin at angle phi, its horizontal and vertical components marked cos phi and sin phi, labelled e to the i phi equals cos phi plus i sin phi.
+    caption: >-
+      Euler's formula as a picture: $e^{i\varphi}$ is the point at angle $\varphi$ on the unit
+      circle. At $\varphi = \pi$ the point is $-1$, which is $e^{i\pi} + 1 = 0$.
+    credit: Gunther and Wereon
+    license: CC BY-SA 3.0
+    source: https://commons.wikimedia.org/wiki/File:Euler%27s_formula.svg
+  - id: conformal-map
+    src: /images/fields/complex-analysis/conformal-map.png
+    alt: A square grid above, and below it the same grid after a mapping f, curved and stretched but still made of small near-squares meeting at right angles.
+    caption: >-
+      A complex-differentiable function seen Riemann's way. It bends and stretches the grid, but
+      wherever its derivative is not zero, lines that met at right angles still do, and small
+      squares stay nearly square.
+    credit: Oleg Alexandrov
+    license: Public domain
+    source: https://commons.wikimedia.org/wiki/File:Conformal_map.svg
 ---
 
 ## Impossible Numbers
 
 Complex numbers did not arrive because anyone wanted them. They were forced on mathematicians by the [theory of equations](/math/theory-of-equations/). In 1545 {{fig:cardano|Gerolamo Cardano}} published a formula for solving cubic equations, and it had a disturbing feature. For some equations with three perfectly ordinary real solutions, the formula passes through the square root of a negative number. {{fig:bombelli|Rafael Bombelli}} showed in 1572 that if you simply calculate with these "impossible" quantities, following the usual rules, the real answers come out at the end. For two centuries they were used and distrusted, and the name "imaginary" stuck.
 
+{{img:ars-magna}}
+
 ## Numbers as Points
 
 The distrust ended with a picture. Represent $a + bi$ as the point $(a, b)$. Adding complex numbers is sliding, and multiplying by $i$ is rotating a quarter-turn. {{fig:wessel|Caspar Wessel}}, a surveyor, published this in 1799 and was ignored. {{fig:argand|Jean-Robert Argand}} published it anonymously in 1806, and {{fig:gauss|Gauss}}'s endorsement in 1831 made it standard. Euler's formula $e^{i\theta} = \cos\theta + i\sin\theta$ now had a meaning: exponentials of imaginary numbers are rotations.
+
+{{img:euler-formula}}
 
 ## Calculus in the Complex Plane
 
@@ -240,5 +275,7 @@ The answer involves both $\pi$ and $e$, and it came from a single point off the 
 ## Riemann's Geometry and Weierstrass's Doubts
 
 {{fig:riemann|Bernhard Riemann}}'s 1851 thesis saw complex functions geometrically, as maps that preserve angles, and introduced the surfaces that bear his name. It became the root of [algebraic geometry](/math/algebraic-geometry/)'s Riemann surfaces. In 1859 he turned the same tools on the prime numbers, extending the zeta function to the whole complex plane apart from a single point, which is the founding move of [analytic number theory](/math/analytic-number-theory/).
+
+{{img:conformal-map}}
 
 His methods leaned on an assumption, the Dirichlet principle, that {{fig:weierstrass|Karl Weierstrass}} showed in 1870 could fail. The two schools were built differently: Riemann's geometric and intuitive, Weierstrass's built on power series and strict proof. Riemann's results survived, reproved by other means, and Hilbert repaired the principle in 1900. The episode was part of the push for rigour that runs through [real analysis](/math/real-analysis/).
