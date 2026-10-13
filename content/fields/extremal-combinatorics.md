@@ -216,6 +216,37 @@ further_reading:
   - citation: "Bollobás, B. (1978). Extremal Graph Theory. Academic Press."
     url: null
     note: The classic monograph, by a student of Erdős.
+
+images:
+  - id: turan-graph
+    src: /images/fields/extremal-combinatorics/turan-graph.png
+    alt: Thirteen points in four coloured groups of four, three, three and three, with every pair of points from different groups joined and no lines inside a group.
+    caption: >-
+      A Turán graph: thirteen points split as evenly as possible into four groups, with every
+      pair from different groups joined, 63 lines in all. No five points are all joined to
+      each other, and no network on thirteen points without five such points has more lines.
+      Turán's first case, avoiding four, uses three groups.
+    credit: Braindrain0000, after a public-domain original
+    license: Public domain
+    source: https://commons.wikimedia.org/wiki/File:Turan_13-4.svg
+  - id: five-people
+    src: /images/fields/extremal-combinatorics/five-people.png
+    alt: Five points at the corners of a pentagon, with the pentagon's sides in red and the five diagonals, forming a star, in blue.
+    caption: >-
+      Five people with no three mutual friends and no three mutual strangers: the red pentagon
+      and the blue star contain no single-coloured triangle, so $R(3,3) > 5$.
+    credit: Richtom80
+    license: CC BY-SA 3.0
+    source: https://commons.wikimedia.org/wiki/File:RamseyTheory_K5_no_mono_K3.svg
+  - id: szemeredi
+    src: /images/fields/extremal-combinatorics/szemeredi.jpg
+    alt: Photograph of Endre Szemerédi, white-haired and bearded, speaking, with a conference lanyard reading BMC 2014.
+    caption: >-
+      Endre Szemerédi at the British Mathematical Colloquium in 2014. His 1975 theorem
+      showed that density alone forces arithmetic progressions.
+    credit: Bert Seghers
+    license: CC0
+    source: https://commons.wikimedia.org/wiki/File:Szemeredi1.JPG
 ---
 
 ## Order From Colouring
@@ -228,6 +259,8 @@ In 1930 {{fig:frank-ramsey|Frank Ramsey}} proved the general principle for netwo
 
 In 1941 {{fig:paul-turan|Pál Turán}}, conscripted into a Hungarian labour camp, asked how many connections a network can have without containing a given cluster, say four points all joined to each other. He found the exact answer and the unique best network: split the points into three groups as evenly as possible and join every pair from different groups. This was the start of extremal graph theory. Its central question, how many edges force a given pattern, has been asked of every kind of structure since.
 
+{{img:turan-graph}}
+
 ## A Closer Look: Six People at a Party
 
 Among any six people, there are always three who all know each other or three who are all strangers. To see why, draw six points and join every pair with a red line (acquainted) or a blue line (strangers).
@@ -236,10 +269,14 @@ Pick one person, $A$. Of the five lines from $A$, at least three have the same c
 
 Five people are not enough. Seat them round a table and let each person know only their two neighbours. The red lines form a pentagon and the blue lines form a five-pointed star, and neither contains a triangle. So $R(3,3) = 6$ exactly.
 
+{{img:five-people}}
+
 The next case is much harder. $R(4,4) = 18$, proved in 1955 with a clever colouring of 17 points built from the squares modulo 17. For five, the answer is between 43 and 46, and the full search is hopeless: 43 people have $\binom{43}{2} = 903$ pairs, so $2^{903}$ colourings. Ramsey theory can prove that the triangle is always there, but finding the exact threshold is beyond reach for groups barely larger than a dinner party.
 
 ## Progressions and Randomness
 
 In 1936 Erdős and Turán conjectured that density alone forces arithmetic progressions: any set containing a fixed positive fraction of the whole numbers contains progressions of every length. {{fig:endre-szemeredi|Endre Szemerédi}} proved it in 1975, in a proof so intricate that his own diagram of its logical structure became famous. Its key tool, the regularity lemma, says that every large graph can be split into pieces between which it behaves almost randomly. Two years later Hillel Furstenberg found a completely different proof using [ergodic theory](/math/ergodic-theory/), and a third proof came from Fourier analysis.
+
+{{img:szemeredi}}
 
 These methods then reached the primes. In 2004 {{fig:ben-green|Ben Green}} and {{fig:terence-tao|Terence Tao}} proved that the primes contain arithmetic progressions of every length. And in 2023 {{fig:marcelo-campos|Marcelo Campos}}, {{fig:simon-griffiths|Simon Griffiths}}, {{fig:rob-morris|Robert Morris}} and {{fig:julian-sahasrabudhe|Julian Sahasrabudhe}} made the first exponential improvement in almost ninety years to the upper bound for Ramsey numbers. Lower bounds for $R(k, k)$ have barely moved since 1947, because the best ones come from randomness, the subject of [probabilistic combinatorics](/math/probabilistic-combinatorics/).
