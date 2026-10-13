@@ -188,13 +188,66 @@ further_reading:
   - citation: "Pais, A. (1982). 'Subtle is the Lord…': The Science and the Life of Albert Einstein. Oxford University Press."
     url: null
     note: The scientific biography of Einstein, strong on the light quantum.
+
+images:
+  - id: black-body
+    src: /images/fields/old-quantum-theory/black-body.png
+    alt: Curves of light emitted against wavelength at 3000, 4000 and 5000 K, each rising to a peak and falling, beside a classical curve that climbs without limit toward short wavelengths.
+    caption: >-
+      Light from a hot body at three temperatures, as Planck's formula gives it, against the
+      classical prediction for 5000 K (black), which rises without limit toward short
+      wavelengths. Hotter bodies peak at shorter wavelengths and shine far more brightly.
+    credit: Darth Kule
+    license: Public domain
+    source: https://commons.wikimedia.org/wiki/File:Black_body.svg
+  - id: planck
+    src: /images/fields/old-quantum-theory/planck.jpg
+    alt: Photograph of Max Planck standing in his study, bald, with spectacles and a moustache, in a three-piece suit.
+    caption: >-
+      Max Planck, who called his quantum assumption "an act of desperation".
+    credit: Bundesarchiv, Bild 183-R0116-504
+    license: CC BY-SA 3.0 de
+    source: https://commons.wikimedia.org/wiki/File:Bundesarchiv_Bild_183-R0116-504,_Max_Planck.jpg
+  - id: geiger-marsden
+    src: /images/fields/old-quantum-theory/geiger-marsden.png
+    alt: Two panels comparing alpha particles passing straight through a spread-out Thomson atom with alpha particles deflected, some sharply backward, by a tiny Rutherford nucleus, above sketches of the gold-foil apparatus.
+    caption: >-
+      What Geiger and Marsden expected (left) and found (right). If the atom's charge were
+      spread out, alpha particles would pass almost straight through the gold foil; a few
+      bounced back, which only a tiny, dense nucleus could do.
+    credit: Kurzon
+    license: CC BY 3.0
+    source: https://commons.wikimedia.org/wiki/File:Geiger-Marsden_experiment_expectation_and_result.svg
+  - id: hydrogen-spectrum
+    src: /images/fields/old-quantum-theory/hydrogen-spectrum.png
+    alt: Four bright coloured lines on black at 410, 434, 486 and 656 nanometres.
+    caption: >-
+      Hydrogen's visible lines. Each is a jump down to Bohr's second orbit: the red line at
+      656 nm comes from the third, carrying $1240/656 \approx 1.89$ eV, exactly the
+      $13.6 \times (\tfrac14 - \tfrac19)$ eV between those two orbits.
+    credit: Merikanto and Adrignola
+    license: CC0
+    source: https://commons.wikimedia.org/wiki/File:Emission_spectrum-H_labeled.svg
+  - id: photoelectric-threshold
+    src: /images/fields/old-quantum-theory/photoelectric-threshold.png
+    alt: A falling curve of photon energy against wavelength from 380 to 720 nanometres, crossing a horizontal line at 2.3 electronvolts near 539 nanometres, with the table's three colours marked.
+    caption: >-
+      Photon energy against colour, with sodium's 2.3 eV threshold. Light bluer than about
+      539 nm frees electrons; redder light frees none, however bright.
+    credit: Drawn for Field Atlas from the table above
+    license: Field Atlas original
+    source: https://github.com/andifathulms/field-atlas/blob/main/scripts/diagrams/quantum.py
 ---
 
 ## An Act of Desperation
 
 Around 1900, [statistical mechanics](/physics/statistical-mechanics/) and [electromagnetism](/physics/electromagnetism/) combined to give a prediction that was obviously wrong. A hot oven's light is a set of electromagnetic waves, and statistical mechanics shares energy equally among all of them. But there are infinitely many possible short waves, so the oven should radiate infinite energy in the ultraviolet. Real ovens glow red, then white, and radiate a finite amount.
 
+{{img:black-body}}
+
 In October 1900 {{fig:max-planck|Max Planck}}, a conservative physicist in Berlin, found a formula that matched the measurements exactly. To derive it, which he did in December, he had to assume that the oven's walls exchange energy with light only in lumps of size $hf$, proportional to the frequency $f$. High-frequency lumps are too expensive to be produced often, so the ultraviolet catastrophe disappears. Planck was not in fact aiming at that problem, which Rayleigh and Jeans spelled out only in 1900–1905, but his formula removes it. In 1931 Planck called it an act of desperation. He expected the lumps to be a device that would go away.
+
+{{img:planck}}
 
 ## Light Quanta
 
@@ -204,7 +257,11 @@ In 1905 {{fig:einstein|Albert Einstein}} took the lumps literally. Light itself,
 
 Meanwhile the atom had acquired a nucleus. In 1909 {{fig:hans-geiger|Hans Geiger}} and {{fig:ernest-marsden|Ernest Marsden}}, working for {{fig:ernest-rutherford|Ernest Rutherford}} in Manchester, found alpha particles bouncing back from gold foil, and Rutherford concluded in 1911 that atoms have a tiny, heavy nucleus. But by classical physics, an electron orbiting a nucleus should radiate and spiral inwards in a fraction of a second. Atoms should not exist.
 
+{{img:geiger-marsden}}
+
 In 1913 {{fig:niels-bohr|Niels Bohr}} simply declared that electrons can occupy only certain orbits, where they do not radiate, and emit light only when they jump between them. The energies of hydrogen's orbits come out as $-13.6/n^2$ electronvolts. A jump from orbit 3 to orbit 2 releases $13.6 \times (\tfrac14 - \tfrac19) \approx 1.89$ eV, a photon of wavelength 656 nanometres, exactly hydrogen's red spectral line. Bohr's rules reproduced the whole spectrum, but they were rules without a reason, and for atoms with more than one electron they failed.
+
+{{img:hydrogen-spectrum}}
 
 ## A Closer Look: Colour, Not Brightness
 
@@ -223,6 +280,8 @@ E_{\max} = hf - W .
 $$
 
 Shine red light on sodium and no electrons come out at all, however bright the light, because no single red photon carries 2.3 eV, and electrons absorb photons one at a time. Violet light releases electrons with up to $3.10 - 2.3 \approx 0.8$ eV, and making it brighter releases more electrons, but none faster. Green light, at 2.34 eV, just barely frees them.
+
+{{img:photoelectric-threshold}}
 
 In the wave picture this makes no sense. A brighter wave carries more energy and should shake electrons loose eventually, whatever its colour. The experimental facts, a sharp colour threshold and electron energies set by colour alone, were exactly what Einstein predicted. Millikan's measurements of $E_{\max}$ against frequency formed a straight line whose slope gave Planck's constant to within about one per cent of today's value.
 
