@@ -299,7 +299,7 @@ images:
     src: /images/fields/evolutionary-game-theory/hawk-dove.png
     alt: Payoffs to Hawk and Dove against the share of Hawks, the Hawk line falling steeply from 50 to minus 25 and the Dove line from 25 to 0, crossing at 0.5 where both earn 12.5.
     caption: >-
-      Hawk and Dove payoffs with  = 50$ and /private/tmp/claude-501/-Users-andifathulmukminin-Documents-Project-field-atlas/1e8b8277-9c0c-4a60-9d6e-964ac1b5650a/scratchpad/charts2 = 100$. Left of the crossing Hawks do better
+      Hawk and Dove payoffs with $V = 50$ and $C = 100$. Left of the crossing Hawks do better
       and spread; right of it Doves do. The population settles at half Hawks, where both earn
       12.5, half of what universal restraint would pay.
     credit: Drawn for Field Atlas from the payoffs above

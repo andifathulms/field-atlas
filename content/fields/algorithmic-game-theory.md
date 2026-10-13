@@ -262,8 +262,8 @@ images:
     src: /images/fields/algorithmic-game-theory/braess-network.png
     alt: Two copies of a four-node road network from s to t through a and b, the second with an extra zero-delay road from a to b; travel times are 1.5 before and 2 after.
     caption: >-
-      Braess's network before and after the free road from $ to $. Edge labels are delays,
-      with $ the share of traffic on that edge. Adding the road raises every driver's time
+      Braess's network before and after the free road from $a$ to $b$. Edge labels are delays,
+      with $x$ the share of traffic on that edge. Adding the road raises every driver's time
       from 1.5 to 2.
     credit: Drawn for Field Atlas from the example above
     license: Field Atlas original

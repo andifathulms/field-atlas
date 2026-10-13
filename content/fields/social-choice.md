@@ -285,7 +285,7 @@ images:
     alt: A falling red line of a bidder's payoff against the highest rival bid, reaching zero at the bidder's own value.
     caption: >-
       A truthful bidder's payoff in a second-price auction, against the highest rival bid. It
-      falls one for one and reaches zero exactly at the bidder's value $: bidding the value
+      falls one for one and reaches zero exactly at the bidder's value $v_i$: bidding the value
       never wins at a loss, and never loses a win worth having.
     credit: Pajz
     license: CC0
