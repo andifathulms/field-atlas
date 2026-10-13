@@ -226,15 +226,58 @@ further_reading:
   - citation: "Diestel, R. (2017). Graph Theory (5th ed.). Springer."
     url: https://diestel-graph-theory.com/
     note: The standard graduate text. An electronic edition is free to read.
+
+images:
+  - id: konigsberg-map
+    src: /images/fields/graph-theory/konigsberg-map.jpg
+    alt: A bird's-eye engraving of Königsberg with the river Pregel coloured blue and its seven bridges marked in orange around a central island.
+    caption: >-
+      Königsberg in a seventeenth-century engraving, with the Pregel coloured blue and the
+      seven bridges in orange. Five of them reach the central island, Kneiphof.
+    credit: Merian heirs, colourised on Wikimedia Commons
+    license: Public domain
+    source: https://commons.wikimedia.org/wiki/File:Konigsberg_Bridge.png
+  - id: kirchhoff
+    src: /images/fields/graph-theory/kirchhoff.jpg
+    alt: Photograph of Gustav Kirchhoff with short hair and side whiskers, in a dark coat.
+    caption: >-
+      Gustav Kirchhoff, whose 1847 circuit laws tied the currents in an electrical network to
+      its spanning trees.
+    credit: Photograph, unknown author, Smithsonian Libraries
+    license: Public domain
+    source: https://commons.wikimedia.org/wiki/File:Gustav_Robert_Kirchhoff.jpg
+  - id: four-colour-usa
+    src: /images/fields/graph-theory/four-colour-usa.png
+    alt: A map of the contiguous United States in which every state is red, yellow, green or cyan, with no two bordering states the same colour.
+    caption: >-
+      The forty-eight contiguous states in four colours, no two neighbours alike. Some maps
+      can be coloured with three; none ever needs five.
+    credit: DanBishop
+    license: Public domain
+    source: https://commons.wikimedia.org/wiki/File:Four-color_map_of_the_United_States.png
+  - id: euler-figure-1
+    src: /images/fields/graph-theory/euler-figure-1.png
+    alt: A pen drawing of a river splitting around an island A, with banks C and B above and below, land D to the east, and seven bridges labelled a to g.
+    caption: >-
+      Euler's own Figure 1 from his 1736 paper: the island is $A$, the banks $B$ and $C$, the
+      eastern land $D$, and the bridges $a$ to $g$. Five bridges touch $A$ and three touch
+      each of the others, the four odd counts in the table.
+    credit: Leonhard Euler, Commentarii Academiae Scientiarum Petropolitanae, 1741
+    license: Public domain
+    source: https://commons.wikimedia.org/wiki/File:Solutio_problematis_ad_geometriam_situs_pertinentis,_Fig._1_-_Cleaned_Up.png
 ---
 
 ## Seven Bridges
 
 The Prussian city of Königsberg was built on both banks of the Pregel river and on two islands, joined by seven bridges. Its citizens liked to ask whether a walk could cross every bridge exactly once. In 1735 {{fig:euler|Leonhard Euler}} showed that it could not, and, more importantly, why. The shapes of the islands and the lengths of the bridges were irrelevant. All that mattered was which land masses each bridge joined. Euler called this the "geometry of position", after a phrase of Leibniz. It is now counted as the first theorem of graph theory, and it has the same flavour as his polyhedron formula of 1750, which became part of [algebraic topology](/math/algebraic-topology/).
 
+{{img:konigsberg-map}}
+
 ## Networks and Molecules
 
 For a century, graphs turned up in unrelated places. In 1847 {{fig:gustav-kirchhoff|Gustav Kirchhoff}}, aged twenty-three, found that the equations of an electrical network are governed by its spanning trees. Arthur Cayley counted trees to count the possible molecules of a chemical formula, and James Joseph Sylvester borrowed the word "graph" from chemists' diagrams in 1878. Puzzles fed in too. Hamilton invented a game in 1857 that asked for a round trip through all twenty vertices of a dodecahedron.
+
+{{img:kirchhoff}}
 
 In 1936 {{fig:denes-konig|Dénes Kőnig}}, in Budapest, gathered the results into the first textbook, and graph theory became a subject. Hungary produced many of its leading figures over the next half-century.
 
@@ -242,11 +285,15 @@ In 1936 {{fig:denes-konig|Dénes Kőnig}}, in Budapest, gathered the results int
 
 The most famous problem started with a map of England. In 1852 {{fig:francis-guthrie|Francis Guthrie}} noticed that four colours were enough to give every pair of neighbouring counties different colours, and asked if that was always true. The question passed through {{fig:augustus-de-morgan|Augustus De Morgan}} to the mathematical world. In 1879 {{fig:alfred-kempe|Alfred Kempe}} published a proof, and it was accepted for eleven years until {{fig:percy-heawood|Percy Heawood}} found the flaw. Heawood proved that five colours always suffice, and the gap between five and four stayed open for most of a century.
 
+{{img:four-colour-usa}}
+
 In 1976 {{fig:kenneth-appel|Kenneth Appel}} and {{fig:wolfgang-haken|Wolfgang Haken}} closed it. They showed that every map must contain one of nearly two thousand configurations, each of which could be removed and recoloured. The checking took more than a thousand hours of computer time. Many mathematicians were uneasy about a proof no human could read in full. A shorter computer proof in 1997, and a formal verification in 2005, settled its truth. The question of what counts as a proof is discussed in [metamathematics](/math/metamathematics/).
 
 ## A Closer Look: Counting Bridges
 
 Draw Königsberg as a graph. The island Kneiphof is one vertex, the north bank, the south bank and the island of Lomse to the east are the other three, and each of the seven bridges is an edge. Count the edges at each vertex:
+
+{{img:euler-figure-1}}
 
 | Land mass | Bridges |
 |---|---|
