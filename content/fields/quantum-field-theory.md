@@ -176,6 +176,28 @@ further_reading:
   - citation: "Lancaster, T. & Blundell, S. J. (2014). Quantum Field Theory for the Gifted Amateur. Oxford University Press."
     url: null
     note: An unusually accessible textbook.
+
+images:
+  - id: positron-1932
+    src: /images/fields/quantum-field-theory/positron-1932.jpg
+    alt: A round cloud-chamber photograph with a thick horizontal lead plate and a thin curved track crossing it, curving more tightly above the plate.
+    caption: >-
+      Anderson's 1932 cloud-chamber photograph of the first positron. The particle crossed the
+      lead plate and lost energy, so it curves more tightly above it; that fixes its direction,
+      and the curve in the magnetic field then shows a positive charge on an electron's mass.
+    credit: Carl D. Anderson
+    license: Public domain
+    source: https://commons.wikimedia.org/wiki/File:PositronDiscovery.jpg
+  - id: feynman-diagram
+    src: /images/fields/quantum-field-theory/feynman-diagram.png
+    alt: A Feynman diagram of an electron and a positron meeting and annihilating into a photon.
+    caption: >-
+      A Feynman diagram: an electron and a positron annihilate into a photon. Each diagram
+      stands for one term in the calculation; Schwinger's correction to the electron's magnet
+      is the simplest diagram with a loop.
+    credit: Romainbehar
+    license: CC0
+    source: https://commons.wikimedia.org/wiki/File:Basic_Feynman_diagram_-_electron_and_positron_annihilate.svg
 ---
 
 ## Dirac's Equation
@@ -183,6 +205,8 @@ further_reading:
 [Quantum mechanics](/physics/quantum-mechanics/) described electrons moving slowly. For fast electrons it had to be combined with [special relativity](/physics/special-relativity/). In 1928 {{fig:paul-dirac|Paul Dirac}}, a famously silent Cambridge physicist, found an equation that did so. It explained the electron's spin, which had been added to the theory by hand, and predicted its magnetic strength. It also had solutions with negative energy, which seemed nonsensical. By 1931 Dirac had concluded that they described a new particle: the same mass as the electron, opposite charge.
 
 In 1932 {{fig:carl-anderson|Carl Anderson}}, photographing cosmic rays at Caltech, saw exactly that particle, the positron. Particles could now be created and destroyed, a photon turning into an electron and a positron, the pair annihilating back into light. A theory with a fixed number of particles could not describe this. What was needed was a theory of fields, whose quantised ripples are particles.
+
+{{img:positron-1932}}
 
 ## The Infinities
 
@@ -193,6 +217,8 @@ After the war, experiments forced the issue. In 1947 {{fig:willis-lamb|Willis La
 ## Renormalisation
 
 Between 1947 and 1949, {{fig:julian-schwinger|Julian Schwinger}}, {{fig:richard-feynman|Richard Feynman}} and, independently in war-ravaged Tokyo, {{fig:sin-itiro-tomonaga|Sin-Itiro Tomonaga}} found systematic ways to do it. The infinities could all be absorbed into the electron's measured mass and charge, leaving finite corrections that could be calculated to any accuracy. Feynman's diagrams made the calculations visual and fast. {{fig:freeman-dyson|Freeman Dyson}} showed that the three methods were the same theory. Many physicists, Dirac among them, regarded renormalisation as sweeping infinities under the rug. [Phase transitions](/physics/phase-transitions/) later showed what it really means: physics at one scale is insensitive to the details at much smaller scales.
+
+{{img:feynman-diagram}}
 
 In 1954 {{fig:chen-ning-yang|Chen-Ning Yang}} and {{fig:robert-mills|Robert Mills}} generalised the symmetry behind electromagnetism. Their theory seemed to predict massless particles no one had seen, and it was set aside for years. It later became the framework of [particle physics](/physics/particle-physics/).
 
