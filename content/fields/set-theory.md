@@ -171,11 +171,55 @@ further_reading:
   - citation: "Kunen, K. (1980). Set Theory: An Introduction to Independence Proofs. North-Holland."
     url: null
     note: The standard graduate text on forcing and independence.
+
+images:
+  - id: cantor
+    src: /images/fields/set-theory/cantor.jpg
+    alt: Sepia studio photograph of Georg Cantor, bearded, in a dark jacket and bow tie.
+    caption: >-
+      Georg Cantor, who showed that infinite sets can be compared by pairing their elements,
+      and that some infinities are larger than others.
+    credit: Ferdinand Anders-Paltzow and Otto Zeth, Kunstbibliothek Berlin
+    license: Public domain
+    source: https://commons.wikimedia.org/wiki/File:George_Cantor_(Kunstbibliothek_Berlin)_-_crop.jpg
+  - id: banach-tarski
+    src: /images/fields/set-theory/banach-tarski.png
+    alt: A green ball broken into a few irregular pieces, with an arrow showing the pieces reassembled into two green balls the same size as the first.
+    caption: >-
+      The Banach–Tarski paradox, schematically: one ball cut into finitely many pieces (five
+      are enough) and reassembled, by rigid motions alone, into two balls of the same size.
+      The real pieces cannot be drawn. They have no volume at all, and only the axiom of choice
+      says they exist.
+    credit: Benjamin D. Esham
+    license: Public domain
+    source: https://commons.wikimedia.org/wiki/File:Banach-Tarski_Paradox.svg
+  - id: rationals-grid
+    src: /images/fields/set-theory/rationals-grid.png
+    alt: A grid of fractions p over q with arrows zigzagging along the diagonals, and fractions not in lowest terms marked in red.
+    caption: >-
+      Cantor's grid of fractions with a zigzag walk through it. The order differs slightly from
+      the list above, but any walk along the diagonals reaches every fraction; the red ones,
+      not in lowest terms, are skipped.
+    credit: Cronholm144
+    license: CC BY-SA 3.0
+    source: https://commons.wikimedia.org/wiki/File:Diagonal_argument.svg
+  - id: binary-diagonal
+    src: /images/fields/set-theory/binary-diagonal.png
+    alt: A boxed list of eleven binary sequences with the diagonal digits in red, and below it a blue sequence made by flipping each red digit.
+    caption: >-
+      The diagonal argument at full length. The red digits run down the diagonal; flipping each
+      one gives the blue sequence $s$, which differs from $s_n$ in the $n$th place and so
+      appears nowhere in the list.
+    credit: Jochen Burghardt
+    license: CC BY-SA 3.0
+    source: https://commons.wikimedia.org/wiki/File:Diagonal_argument_01_svg.svg
 ---
 
 ## Sizes of Infinity
 
 Set theory grew out of [real analysis](/math/real-analysis/). Studying where a Fourier series could misbehave, {{fig:cantor|Georg Cantor}} was led in the 1870s to think about infinite sets of points as objects in their own right, and to ask how big they are. His answer was to compare sets by pairing their elements. The even numbers pair perfectly with all whole numbers ($1 \leftrightarrow 2$, $2 \leftrightarrow 4$, …), so they are the same size, even though one is a part of the other. So are the fractions, which can be listed cleverly.
+
+{{img:cantor}}
 
 But the real numbers cannot. In 1891 Cantor gave the *diagonal argument*. Take any list of real numbers and build a new one that differs from the first in its first digit, from the second in its second, and so on. It cannot be on the list. There are strictly more real numbers than whole numbers, and the same idea shows there is no largest infinity at all. Leopold Kronecker is said to have called Cantor a "corrupter of youth", while Hilbert declared that "no one shall expel us from the paradise that Cantor has created."
 
@@ -189,6 +233,8 @@ Worse was coming. Frege and others had assumed that any property defines a set, 
 
 Zermelo's response was to replace "any property defines a set" with careful axioms saying which sets exist. In 1904 he made explicit a principle mathematicians had used without noticing: the *axiom of choice*, that one can always pick an element from each of any collection of non-empty sets. The French analysts Borel, Baire and Lebesgue attacked it for asserting the existence of objects nobody could construct, and when Banach and Tarski later used it to cut a ball into finitely many pieces and reassemble them into two balls of the same size, the objection seemed vindicated. The axiom stayed because too much of mathematics needs it. With Abraham Fraenkel's refinements, Zermelo's system became ZFC, the standard foundation of mathematics today.
 
+{{img:banach-tarski}}
+
 ## A Closer Look: Listing the Fractions, and Failing to List the Reals
 
 It seems obvious that there are more fractions than whole numbers: between any two whole numbers lie infinitely many fractions. Cantor showed it is false. Arrange all positive fractions $\frac{p}{q}$ in a grid, numerator along the rows and denominator along the columns, and walk it diagonal by diagonal:
@@ -198,6 +244,8 @@ $$
 $$
 
 Skip any fraction already seen in lower terms (like $\frac22 = \frac11$), and every positive fraction receives a position in one list. So the fractions are *countable*: exactly as numerous as the whole numbers.
+
+{{img:rationals-grid}}
 
 The real numbers are different. Suppose someone claims to list every infinite sequence of 0s and 1s (each real number between 0 and 1 has a binary expansion):
 
@@ -209,6 +257,8 @@ The real numbers are different. Suppose someone claims to list every infinite se
 | 4 | 1 0 1 **1** 0 … |
 
 Read down the diagonal (0, 1, 0, 1, …) and flip every digit to get $1, 0, 1, 0, \ldots$. This new sequence differs from the first entry in position 1, from the second in position 2, from the $n$th in position $n$. It is on no line of the list. Every attempted list misses something, so the reals are *uncountable*, a strictly larger infinity.
+
+{{img:binary-diagonal}}
 
 The same diagonal trick, turned on sets and their subsets, proves there is no largest infinity. Turned on formulas and proofs, it gives Gödel's incompleteness theorem. Turned on programs, it gives the unsolvability of the halting problem. Few arguments in mathematics have travelled further.
 
