@@ -164,17 +164,51 @@ further_reading:
   - citation: "Smith, P. (2013). An Introduction to Gödel's Theorems (2nd ed.). Cambridge University Press."
     url: null
     note: A careful textbook treatment for readers who want the proofs.
+
+images:
+  - id: hilbert
+    src: /images/fields/metamathematics/hilbert.jpg
+    alt: Photograph of David Hilbert in a wide-brimmed white hat, round spectacles and a short grey beard.
+    caption: >-
+      David Hilbert, from a portrait postcard. His programme asked
+      for a finitary proof that mathematics can never contradict itself.
+    credit: Photograph, unknown author (retouched)
+    license: Public domain
+    source: https://commons.wikimedia.org/wiki/File:David_Hilbert_postcard_retusche.jpg
+  - id: goedel-1925
+    src: /images/fields/metamathematics/goedel-1925.jpg
+    alt: Studio photograph of a young man with slicked-back hair, round glasses, a checked tie and a tweed jacket.
+    caption: >-
+      Kurt Gödel as a student in Vienna, 1925. Six years later, at twenty-five, he published
+      the incompleteness theorems.
+    credit: Photograph, unknown author
+    license: Public domain
+    source: https://commons.wikimedia.org/wiki/File:Young_Kurt_G%C3%B6del_as_a_student_in_1925.jpg
+  - id: four-colour-map
+    src: /images/fields/metamathematics/four-colour-map.png
+    alt: An abstract map of overlapping shapes coloured in only four colours, with no two neighbouring regions sharing a colour.
+    caption: >-
+      A map coloured with four colours, no two neighbours alike. That four always suffice was
+      proved by computer in 1976, a proof too long to check by hand; Gonthier's 2005
+      formalisation checked every step down to the axioms.
+    credit: Inductiveload
+    license: CC BY-SA 3.0
+    source: https://commons.wikimedia.org/wiki/File:Four_Colour_Map_Example.svg
 ---
 
 ## Hilbert's Programme
 
 The paradoxes of [set theory](/math/set-theory/) raised a frightening possibility: that mathematics itself might be inconsistent, a contradiction waiting to be derived. {{fig:hilbert|David Hilbert}} proposed a way to settle the matter for good. Write all of mathematics in a formal system, as *Principia Mathematica* had begun to do. Then treat that system as a mathematical object, a game with finitely many rules on strings of symbols, and prove with the simplest, most indubitable reasoning that the game can never produce a contradiction. He also wanted a mechanical procedure to decide the truth of any mathematical statement, the *Entscheidungsproblem*.
 
+{{img:hilbert}}
+
 Not everyone accepted the premise. {{fig:brouwer|L. E. J. Brouwer}}, whose fixed-point theorem helped found [algebraic topology](/math/algebraic-topology/), had turned against classical mathematics. His intuitionism accepted only what could be constructed, and denied that every statement about an infinite collection must be either true or false. The dispute turned personal. In 1928 Hilbert, gravely ill and fearing for the future of mathematics, had Brouwer removed from the editorial board of the leading journal.
 
 ## Gödel
 
 The answer came from a quiet 25-year-old in Vienna. In 1931 {{fig:goedel|Kurt Gödel}} showed how to encode formulas and proofs as numbers, so that statements about provability become statements of arithmetic. Then he built a statement that says, in effect, "this statement is not provable". If the system is consistent, the statement is true and unprovable. Any consistent formal system rich enough for arithmetic is therefore *incomplete*. A second theorem followed: such a system cannot prove its own consistency. Hilbert's central goal, a finitary proof that mathematics is safe, was impossible.
+
+{{img:goedel-1925}}
 
 It was not the end of the programme but a change of question. In 1936 {{fig:gentzen|Gerhard Gentzen}} proved arithmetic consistent after all, by assuming a principle of transfinite induction arithmetic cannot prove. Four decades later, {{fig:paris|Jeff Paris}} and Leo Harrington found a natural statement about colouring finite sets that is true but unprovable in ordinary arithmetic. Incompleteness reached everyday mathematics.
 
@@ -201,3 +235,6 @@ The second theorem follows by formalising this very argument inside the system: 
 ## Proofs by Machine
 
 Gödel's encoding of proofs as numbers had a second consequence: checking a proof is a mechanical operation. Within five years that insight became the theory of [computation](/math/computability-theory/). About seventy years later it became practical. Proof assistants now check proofs down to the axioms. {{fig:gonthier|Georges Gonthier}} formalised the four colour theorem in 2005, and in 2022 a Lean collaboration verified a new theorem that Peter Scholze himself had doubts about. Hilbert's hope of certainty from inside failed, but his idea of mechanically checkable proof has become everyday practice.
+
+
+{{img:four-colour-map}}
