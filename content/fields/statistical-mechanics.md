@@ -184,11 +184,42 @@ further_reading:
   - citation: "Kittel, C. & Kroemer, H. (1980). Thermal Physics (2nd ed.). W. H. Freeman."
     url: null
     note: A classic introduction that starts from counting states.
+
+images:
+  - id: boltzmann
+    src: /images/fields/statistical-mechanics/boltzmann.jpg
+    alt: Halftone photograph of Ludwig Boltzmann with swept-back hair, small round spectacles and a full beard.
+    caption: >-
+      Ludwig Boltzmann, whose $S = k \log W$ is carved on his gravestone in Vienna.
+    credit: Photograph by Leopold Bude
+    license: Public domain
+    source: https://commons.wikimedia.org/wiki/File:Das_Fotoalbum_f%C3%BCr_Weierstra%C3%9F_040_(Ludwig_Boltzmann).jpg
+  - id: gibbs
+    src: /images/fields/statistical-mechanics/gibbs.jpg
+    alt: Photograph of Josiah Willard Gibbs, grey-bearded, in a dark coat.
+    caption: >-
+      Josiah Willard Gibbs, whose 1902 ensembles turned Boltzmann's counting into a general
+      method.
+    credit: Frontispiece of The Scientific Papers of J. Willard Gibbs
+    license: Public domain
+    source: https://commons.wikimedia.org/wiki/File:Josiah_Willard_Gibbs_-from_MMS-.jpg
+  - id: bec-1995
+    src: /images/fields/statistical-mechanics/bec-1995.jpg
+    alt: Three false-colour peaks of atom velocities; the left is a broad mound, the middle has a sharp spike rising from a broad base, and the right is almost all spike.
+    caption: >-
+      The JILA team's 1995 data for rubidium, cooled further from left to right. The broad mound
+      of a thermal gas gives way to a sharp spike: atoms piling into the single lowest state,
+      a Bose–Einstein condensate.
+    credit: NIST/JILA/University of Colorado
+    license: Public domain
+    source: https://commons.wikimedia.org/wiki/File:Bose_Einstein_condensate.png
 ---
 
 ## Counting Arrangements
 
 [Kinetic theory](/physics/kinetic-theory/) had left a puzzle. If the laws of motion run equally well backwards, how can entropy only increase? In 1877 {{fig:boltzmann|Ludwig Boltzmann}} answered by counting. A macroscopic state, such as "the gas fills the box evenly", can be realised by a vast number of microscopic arrangements of the molecules. A state such as "all the gas is in one corner" can be realised by comparatively few. Entropy is a measure of that number, and systems move towards higher entropy because almost all arrangements are high-entropy ones. The second law is a statement about overwhelming probability.
+
+{{img:boltzmann}}
 
 {{fig:max-planck|Max Planck}} wrote the relation in its famous form, $S = k \log W$, and it is engraved on Boltzmann's gravestone.
 
@@ -196,11 +227,15 @@ further_reading:
 
 In 1902 {{fig:josiah-willard-gibbs|Josiah Willard Gibbs}}, a reserved professor at Yale who had spent decades on thermodynamics, published a general method. Forget the individual molecules. Imagine every state the whole system could be in, and weight each by the factor $e^{-E/kT}$, so that states of lower energy are more likely at lower temperature. Every thermodynamic quantity can then be computed from a single sum over states. Gibbs cautioned that the approach could not explain everything: some predictions, like the heat stored in gases, disagreed with experiment. The disagreements were the first signs of quantum mechanics.
 
+{{img:gibbs}}
+
 ## Quantum Counting
 
 When quantum theory arrived, statistical mechanics needed only new rules for counting. In 1924 {{fig:satyendra-nath-bose|Satyendra Nath Bose}}, a young physicist in Dacca, derived Planck's law for light by treating photons as truly indistinguishable. His paper had reportedly been rejected, and he sent it to {{fig:einstein|Einstein}}, who translated it himself and applied the idea to atoms. He predicted that very cold atoms would pile into a single state, a Bose–Einstein condensate. In 1926 {{fig:enrico-fermi|Enrico Fermi}} and {{fig:paul-dirac|Paul Dirac}} found the rules for particles that refuse to share, such as electrons. Those two kinds of counting explain lasers and superfluids on one side, and metals, chemistry and white dwarf stars on the other.
 
 The condensate took seventy years to make. In 1995 {{fig:eric-cornell|Eric Cornell}} and {{fig:carl-wieman|Carl Wieman}} cooled rubidium atoms to 170 billionths of a degree above absolute zero and saw them condense. {{fig:wolfgang-ketterle|Wolfgang Ketterle}} did the same with sodium months later.
+
+{{img:bec-1995}}
 
 ## A Closer Look: Why Gas Never Gathers in One Half of a Room
 
