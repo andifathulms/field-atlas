@@ -256,6 +256,28 @@ further_reading:
   - citation: "Papadimitriou, C. H. (2007). The complexity of finding Nash equilibria. In Algorithmic Game Theory, 29–51. Cambridge University Press."
     url: null
     note: The complexity story told by one of the people who settled it.
+
+images:
+  - id: braess-network
+    src: /images/fields/algorithmic-game-theory/braess-network.png
+    alt: Two copies of a four-node road network from s to t through a and b, the second with an extra zero-delay road from a to b; travel times are 1.5 before and 2 after.
+    caption: >-
+      Braess's network before and after the free road from $ to $. Edge labels are delays,
+      with $ the share of traffic on that edge. Adding the road raises every driver's time
+      from 1.5 to 2.
+    credit: Drawn for Field Atlas from the example above
+    license: Field Atlas original
+    source: https://github.com/andifathulms/field-atlas/blob/main/scripts/diagrams/decision.py
+  - id: fcc-band-plan
+    src: /images/fields/algorithmic-game-theory/fcc-band-plan.jpg
+    alt: A grid of rows of numbered TV channels, each row ending in a different number of blue lettered blocks, with channel 37 marked orange in every row.
+    caption: >-
+      Possible outcomes of the 2016–17 incentive auction, one per row. The more channels
+      broadcasters gave up, the more blocks (blue) went to mobile operators; channel 37
+      (orange) stays reserved in every plan.
+    credit: Federal Communications Commission
+    license: Public domain
+    source: https://commons.wikimedia.org/wiki/File:FCC_600-MHz-Bandplan.jpg
 ---
 
 ## Two Assumptions That Broke
@@ -320,6 +342,8 @@ $$
 
 Everyone's journey is a third longer than before the road was built, and no one can improve by deviating: the old routes now cost $1 + 1 = 2$ as well. This is {{fig:braess|Dietrich Braess}}'s paradox, it is a consequence of equilibrium rather than of anything irrational, and it has been seen in practice — traffic in New York improved when 42nd Street was closed in 1990.
 
+{{img:braess-network}}
+
 Both examples point to the same remedy, which is why this is a mathematical result with a policy attached. The inefficiency arises because a driver pays their own delay and not the delay they add to everyone else. Charge the difference — a congestion toll equal to the externality — and the equilibrium moves to the optimum exactly.
 
 ## Mechanisms That Have to Run
@@ -329,3 +353,6 @@ The design side ran into the complementary obstacle. The general truthful mechan
 Two decades of work went into finding mechanisms that are both approximately optimal and exactly truthful, with real successes in restricted settings and no general solution. Meanwhile the practical world did not wait. Search advertising was sold for years by a ranking rule that resembles a second-price auction and is not truthful with more than one slot, a fact established by {{fig:edelman|Benjamin Edelman}} and colleagues and by {{fig:varian|Hal Varian}} only after the mechanism was handling enormous sums.
 
 The clearest demonstration that the two halves can be made to meet is the American spectrum incentive auction of 2016. Broadcasters bid to give up channels while mobile operators bid for cleared bandwidth, and the price offered to each broadcaster depended on whether the remaining stations could be repacked into fewer channels without interference — an NP-hard graph-colouring question that had to be answered tens of thousands of times, in seconds each, inside the auction's own pricing rule. A purpose-built satisfiability solver did it, and the auction reallocated 84 MHz of spectrum. It is the closest thing the subject has to a controlled demonstration that incentives and computation can be designed together, and it took sixty years from {{fig:vickrey|Vickrey}}'s paper to get there.
+
+
+{{img:fcc-band-plan}}
