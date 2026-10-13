@@ -202,6 +202,28 @@ further_reading:
   - citation: "Feynman, R. P., Leighton, R. B. & Sands, M. (1963). The Feynman Lectures on Physics, Vol. I, ch. 39–43. Addison-Wesley."
     url: https://www.feynmanlectures.caltech.edu/I_39.html
     note: Kinetic theory explained with Feynman's usual clarity. Free online.
+
+images:
+  - id: nitrogen-speeds
+    src: /images/fields/kinetic-theory/nitrogen-speeds.png
+    alt: A bell-like curve of molecular speeds rising from zero to a peak near 422 metres per second and trailing off past 1,000, with lines marking the speed of sound, the most likely speed and the root-mean-square speed.
+    caption: >-
+      Maxwell's distribution for nitrogen at 300 K. The most likely speed is 422 m/s and the
+      root-mean-square speed 517 m/s, the value above; only about 29% of molecules move
+      slower than sound.
+    credit: Drawn for Field Atlas from the numbers above
+    license: Field Atlas original
+    source: https://github.com/andifathulms/field-atlas/blob/main/scripts/diagrams/entropy.py
+  - id: perrin-brownian
+    src: /images/fields/kinetic-theory/perrin-brownian.png
+    alt: A tangled zigzag path of straight segments joining dots, wandering across the page from one large dot to another.
+    caption: >-
+      A single grain's Brownian motion as Perrin recorded it, its position marked at regular
+      intervals and joined by straight lines. The real path between marks is just as jagged.
+      Measuring how far such grains wander gave him the number of molecules in a mole.
+    credit: Jean Perrin, Les Atomes (1913), redrawn by ElioPrrl
+    license: Public domain
+    source: https://commons.wikimedia.org/wiki/File:PerrinPlot1.svg
 ---
 
 ## Particles in Motion
@@ -234,6 +256,8 @@ $$
 
 That is about twice the cruising speed of an airliner, and faster than the speed of sound, about 350 m/s in air. The two are related: sound is a disturbance passed from molecule to molecule, so it cannot outrun the molecules carrying it.
 
+{{img:nitrogen-speeds}}
+
 So why does a smell take minutes to cross a room? Each cubic metre of air holds about $2.4 \times 10^{25}$ molecules. With so many, a nitrogen molecule travels only about 70 nanometres, around a thousandth of the width of a human hair, before hitting another. At 500 m/s that means about 7 billion collisions every second, each sending it off in a new random direction. A random walk of $N$ steps gets only about $\sqrt N$ steps from its start. So diffusion alone moves a scent molecule only a few millimetres in a second, and in a real room it is mostly carried by air currents.
 
 The same calculation, run backwards, measured the size of molecules. In 1865 Loschmidt combined the mean free path, inferred from viscosity, with the density of liquids to estimate how many molecules a gas contains: the first estimate of what is now Avogadro's number.
@@ -241,3 +265,6 @@ The same calculation, run backwards, measured the size of molecules. In 1865 Los
 ## Atoms Made Real
 
 Even so, many physicists and chemists around 1900, led by Ernst Mach and Wilhelm Ostwald, regarded atoms as a convenient fiction. Boltzmann, who felt he was fighting alone, took his own life in 1906. Proof came within two years. {{fig:einstein|Albert Einstein}} had predicted in 1905 how far a pollen-sized particle in water should wander under random molecular impacts. In 1908 {{fig:jean-perrin|Jean Perrin}} measured it and obtained the number of molecules in a mole. Several other independent methods gave the same value. Ostwald conceded, and atoms became as real as anything in physics. Deriving fluid equations rigorously from the motion of molecules, Hilbert's sixth problem, took much longer. A proof for an idealised gas of hard spheres came only in 2025.
+
+
+{{img:perrin-brownian}}
