@@ -273,6 +273,27 @@ further_reading:
   - citation: "Misner, C. W., Thorne, K. S. & Wheeler, J. A. (1973). Gravitation. W. H. Freeman."
     url: null
     note: The encyclopaedic classic. Huge and demanding, and still a reference.
+
+images:
+  - id: eclipse-1919
+    src: /images/fields/general-relativity/eclipse-1919.jpg
+    alt: A black eclipsed Sun surrounded by the white glow of the corona, with faint short lines marking the positions of stars.
+    caption: >-
+      One of the 1919 eclipse plates taken at Sobral in Brazil, as reproduced in the
+      expedition's report. The faint marks pick out the stars whose apparent positions, shifted
+      by the Sun's gravity, were measured against a plate of the same field taken at night.
+    credit: F. W. Dyson, A. S. Eddington and C. Davidson, 1920
+    license: Public domain
+    source: https://commons.wikimedia.org/wiki/File:1919_eclipse_positive.jpg
+  - id: ligo-hanford
+    src: /images/fields/general-relativity/ligo-hanford.jpg
+    alt: Aerial view of the LIGO Hanford observatory in desert, with two long straight arms meeting at a right angle at a central building.
+    caption: >-
+      LIGO's Hanford observatory in Washington. Each arm is 4 km long; a passing gravitational
+      wave stretches one arm and squeezes the other by far less than the width of a proton.
+    credit: LIGO Laboratory
+    license: Public domain
+    source: https://commons.wikimedia.org/wiki/File:LIGO_Hanford_aerial_05.jpg
 ---
 
 ## The Happiest Thought
@@ -299,11 +320,15 @@ The left side measures the curvature of spacetime. The right side measures the m
 
 The prediction that starlight bends near the Sun could be checked only during a total eclipse. In 1919 {{fig:eddington|Arthur Eddington}} and Frank Dyson sent expeditions to Brazil and West Africa, and the measured shifts favoured Einstein's value over the Newtonian one. The announcement made Einstein a household name. Whether the eclipse data alone justified such confidence has been debated by historians since, but decades of later tests, from radar echoes off planets to clocks in towers and satellites, have confirmed the theory to high precision.
 
+{{img:eclipse-1919}}
+
 ## Black Holes and Ripples
 
 Within weeks of the final equations, {{fig:schwarzschild|Karl Schwarzschild}}, writing from the First World War's eastern front, found their exact solution around a single mass. It contained a spherical surface where the equations misbehaved. For decades most physicists, Einstein included, believed nature would never produce such a thing. By the 1960s it was clear that sufficiently massive collapsing stars must, and Wheeler popularised the name *black hole*.
 
 The theory also predicts that accelerating masses shake spacetime itself, sending out gravitational waves. Einstein doubted they could ever be detected. In 2015 the two LIGO observatories, whose four-kilometre laser arms change length by a small fraction of a proton's width, caught the waves from two black holes merging over a billion light years away. In 2019 the Event Horizon Telescope photographed the glowing ring around a black hole's shadow.
+
+{{img:ligo-hanford}}
 
 ## A Closer Look: Forty-Three Seconds of Arc
 
