@@ -173,17 +173,72 @@ further_reading:
   - citation: "Enderton, H. B. (2001). A Mathematical Introduction to Logic (2nd ed.). Academic Press."
     url: null
     note: A standard rigorous textbook.
+
+images:
+  - id: aristotle
+    src: /images/fields/mathematical-logic/aristotle.jpg
+    alt: A marble bust of a bearded man with wavy hair, set on a draped mantle of banded stone.
+    caption: >-
+      Aristotle, in a Roman marble copy of a Greek bronze by Lysippos. His syllogisms were the
+      whole of logic for two thousand years.
+    credit: After Lysippos, Palazzo Altemps, Rome
+    license: Public domain
+    source: https://commons.wikimedia.org/wiki/File:Aristotle_Altemps_Inv8575.jpg
+  - id: boole
+    src: /images/fields/mathematical-logic/boole.jpg
+    alt: A hand-coloured engraving of George Boole in a dark coat and bow tie.
+    caption: >-
+      George Boole, the self-taught schoolmaster who turned deduction into algebra with two
+      values, 0 and 1.
+    credit: Engraving, unknown artist
+    license: Public domain
+    source: https://commons.wikimedia.org/wiki/File:George_Boole_color.jpg
+  - id: begriffsschrift
+    src: /images/fields/mathematical-logic/begriffsschrift.png
+    alt: A page of Frege's two-dimensional logical notation, with formulas drawn as branching horizontal and vertical strokes.
+    caption: >-
+      A page of Frege's *Begriffsschrift*. His notation was two-dimensional: conditions hang
+      below conclusions on branching strokes, and a dip in a stroke binds a variable, his
+      quantifier. It was exact, and almost nobody else ever wrote in it.
+    credit: Gottlob Frege, 1879
+    license: Public domain
+    source: https://commons.wikimedia.org/wiki/File:One_page_from_Frege%27s_Begriffsschrift.png
+  - id: half-adder
+    src: /images/fields/mathematical-logic/half-adder.png
+    alt: A circuit diagram of a half adder, with an AND gate producing the carry and two AND gates, two NOT gates and an OR gate producing the sum.
+    caption: >-
+      A half adder. The carry is a single AND gate. The sum, built here from AND, NOT and OR,
+      is exclusive or: 1 when exactly one input is 1, as the paragraph above requires.
+    credit: Kofani1997
+    license: CC BY-SA 4.0
+    source: https://commons.wikimedia.org/wiki/File:Half-adder_scheme.png
+  - id: principia-54-43
+    src: /images/fields/mathematical-logic/principia-54-43.png
+    alt: A proposition in dense logical symbols numbered 54.43, with a short proof and the remark that it will follow that 1 + 1 = 2 once addition has been defined.
+    caption: >-
+      Proposition ✱54·43 of *Principia Mathematica*, hundreds of pages into the first volume.
+      The authors remark that from it, "when arithmetical addition has been defined", it will
+      follow that $1 + 1 = 2$.
+    credit: Alfred North Whitehead and Bertrand Russell, 1910
+    license: Public domain
+    source: https://commons.wikimedia.org/wiki/File:Principia_Mathematica_54-43.png
 ---
 
 ## From Syllogisms to Algebra
 
 For two thousand years, logic was {{fig:aristotle|Aristotle}}'s. His *Prior Analytics* catalogued valid forms of argument, the syllogisms, and it remained the core of logic teaching from Athens through Baghdad to Oxford. Kant thought it complete. But it could not express the reasoning mathematicians actually used: "for every number there is a larger prime" has a structure no syllogism captures.
 
+{{img:aristotle}}
+
 The change began in 1847. {{fig:boole|George Boole}}, a self-taught schoolmaster in Lincoln, showed that logical reasoning follows algebraic laws. Let $x$ stand for a class of things and $x \cdot y$ for things in both classes. Then $x \cdot x = x$, and logical deduction becomes calculation with only two values, 0 and 1. It was ninety years before anyone found a practical use. Then Claude Shannon noticed that electrical switches obey exactly these laws, and every digital circuit since is Boolean algebra.
+
+{{img:boole}}
 
 ## A Language for Mathematics
 
 {{fig:frege|Gottlob Frege}}, a mathematician at Jena, wanted more: a language in which *all* of mathematics could be written and checked. His *Begriffsschrift* (1879) introduced variables and the quantifiers "for all" and "there exists". With them any mathematical statement could be written with complete precision, and any proof broken into steps a machine could verify. {{fig:peirce|Charles Sanders Peirce}}, in America, reached quantifiers independently, and it was his notation, not Frege's, that others adopted.
+
+{{img:begriffsschrift}}
 
 Frege then tried to derive arithmetic from logic alone. In 1902, as the second volume went to press, he received a letter from Bertrand Russell showing that his system contained a contradiction. That paradox and its consequences belong to [set theory](/math/set-theory/).
 
@@ -202,10 +257,14 @@ The last column is 1 in every row, so the formula is a *tautology*: true whateve
 
 The same tables built the digital world. Adding two one-bit numbers $p$ and $q$ needs a sum bit, which is 1 when exactly one of them is 1 ("exclusive or"), and a carry bit, which is 1 when both are ("and"). Wire a gate for each and you have a *half adder*. Chain adders together and you can add numbers of any length. Every processor is built from such circuits, which is Shannon's discovery that Boole's algebra and switching circuits are the same thing.
 
+{{img:half-adder}}
+
 Truth tables cannot handle "for all" and "there exists" over infinite domains, where there are too many rows to check. That is where Frege's quantifiers, Gödel's completeness theorem and, eventually, undecidability come in.
 
 ## Principia and Completeness
 
 {{fig:russell|Bertrand Russell}} and {{fig:whitehead|Alfred North Whitehead}} took up the project anyway. *Principia Mathematica* (1910–13) rebuilt mathematics from logic with a theory of "types" to block the paradoxes. Its sheer bulk made a point: all of mathematics *could* be formalised, at least in principle.
+
+{{img:principia-54-43}}
 
 Did formal rules capture every logical truth? In 1929 {{fig:goedel|Kurt Gödel}}, a 23-year-old in Vienna, proved that for first-order logic they do. Any statement true in every model of some axioms can be derived from those axioms. It seemed the formalist dream was within reach. Two years later, the same young man showed that it was not. That story is [metamathematics](/math/metamathematics/).
