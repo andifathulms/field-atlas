@@ -244,6 +244,52 @@ further_reading:
   - citation: "Milgrom, P. (2004). Putting Auction Theory to Work. Cambridge University Press."
     url: null
     note: Mechanism design as practised, by someone who designed auctions that sold real spectrum.
+
+images:
+  - id: condorcet
+    src: /images/fields/social-choice/condorcet.jpg
+    alt: Engraved profile portrait of the Marquis de Condorcet with long curled hair, in an oval frame.
+    caption: >-
+      The Marquis de Condorcet, drawn from life by Lemort in 1786 and engraved by Mercurj in
+      1846.
+    credit: J. P. Lemort and P. Mercurj
+    license: Public domain
+    source: https://commons.wikimedia.org/wiki/File:Portrait_du_Marquis_de_Condorcet,_1786,_1846.png
+  - id: condorcet-essai
+    src: /images/fields/social-choice/condorcet-essai.jpg
+    alt: Title page of the Essai sur l'application de l'analyse à la probabilité des décisions rendues à la pluralité des voix, by the Marquis de Condorcet, Paris, Imprimerie Royale, 1785.
+    caption: >-
+      The title page of Condorcet's *Essai* of 1785, where the majority cycle first appears.
+    credit: Marquis de Condorcet, 1785
+    license: Public domain
+    source: https://commons.wikimedia.org/wiki/File:Essai_sur_l_application.jpg
+  - id: sen
+    src: /images/fields/social-choice/sen.jpg
+    alt: Photograph of Amartya Sen at a lectern, in glasses, a grey suit and a dotted tie.
+    caption: >-
+      Amartya Sen around 2000, shortly after his 1998 Nobel prize.
+    credit: LSE Library, via Flickr Commons
+    license: No known restrictions
+    source: https://commons.wikimedia.org/wiki/File:Amartya_Sen,_c2000_(4378493325).jpg
+  - id: head-to-head
+    src: /images/fields/social-choice/head-to-head.png
+    alt: Three candidates A, B and C at the corners of a triangle, with arrows showing that C beats A 60 to 40, C beats B 65 to 35, and B beats A 60 to 40.
+    caption: >-
+      The same 100 ballots as head-to-head contests. Every arrow points away from C, the
+      Condorcet winner, and into A, who has the most first places and loses every contest.
+    credit: Drawn for Field Atlas from the ballots above
+    license: Field Atlas original
+    source: https://github.com/andifathulms/field-atlas/blob/main/scripts/diagrams/decision.py
+  - id: second-price-auction
+    src: /images/fields/social-choice/second-price-auction.png
+    alt: A falling red line of a bidder's payoff against the highest rival bid, reaching zero at the bidder's own value.
+    caption: >-
+      A truthful bidder's payoff in a second-price auction, against the highest rival bid. It
+      falls one for one and reaches zero exactly at the bidder's value $: bidding the value
+      never wins at a loss, and never loses a win worth having.
+    credit: Pajz
+    license: CC0
+    source: https://commons.wikimedia.org/wiki/File:Second_price_auction_1_(truthful_bidding).png
 ---
 
 ## Two Commissioners and a Bad Surprise
@@ -252,7 +298,11 @@ In 1770 {{fig:borda|Jean-Charles de Borda}} pointed out to the Académie des Sci
 
 {{fig:condorcet|The Marquis de Condorcet}} objected that the proper criterion is simpler: a candidate should win if they would beat each rival in a head-to-head majority vote. Then he found that this criterion can fail to pick anybody. For some distributions of preferences, A beats B, B beats C, and C beats A, all by majorities. Collective preference, built from perfectly transitive individual preferences, need not be transitive itself.
 
+{{img:condorcet}}
+
 This is not a paradox in the sense of a puzzle to be dissolved. It is a fact about majority aggregation, and it means that "what the electorate wants" may not name anything.
+
+{{img:condorcet-essai}}
 
 ## Impossibility, Twice
 
@@ -261,6 +311,8 @@ This is not a paradox in the sense of a puzzle to be dissolved. It is a fact abo
 No rule satisfies all four. The proof is a page of combinatorics, and it has generated seventy years of argument about which condition to give up rather than about whether the theorem is right. Independence is the usual casualty, because insisting on it discards all information about *how strongly* options are preferred — which is why the Borda count, which uses the whole ranking, violates it, and why rules that satisfy it end up relying on pairwise comparisons that can cycle. The theorem's lasting effect was to turn the question from "which voting rule is correct?" into "which failure is acceptable here?".
 
 {{fig:sen|Amartya Sen}} added a second impossibility in 1970 with a different moral. Grant each person decisiveness over at least one matter that is plainly their own business — which book they read, which way up they sleep — and also require the Pareto criterion, that a unanimously preferred outcome be chosen. Sen constructs preferences, involving two people who each care what the other reads, for which no social ranking satisfies both. Minimal individual rights and unanimity are logically incompatible once people have preferences about each other's private affairs, which is not a defect of any procedure but a property of the two principles.
+
+{{img:sen}}
 
 ## A Closer Look: Three Rules, One Set of Ballots, Three Winners
 
@@ -281,6 +333,8 @@ Take an electorate of 100 voters with these preferences:
 - B vs C: B by the 35; C by the 40 and the 25, so 35 to 65. **C beats B.**
 
 C beats both rivals head to head, so C is the Condorcet winner — with the fewest first preferences. And A, the plurality winner, loses to each of the other two by 60 to 40. Sixty per cent of the electorate prefers *anyone* to the person plurality elects.
+
+{{img:head-to-head}}
 
 **Borda count.** Award 2 points for a first place, 1 for second, 0 for third.
 
@@ -303,6 +357,8 @@ The three rules are all defensible and they do not agree, and nothing in the bal
 Faced with two impossibilities, the field turned the question around. Instead of asking which rule is best, ask what *is* achievable, and design the procedure to make the behaviour you want into each participant's self-interest. {{fig:vickrey|William Vickrey}} gave the founding example in 1961, and it is worth stating exactly because the argument is three lines.
 
 In a sealed-bid auction, let the highest bidder win and pay the **second**-highest bid. Suppose your value is 100. If you bid 100 and the next bid is 80, you win and pay 80, gaining 20. Could you do better by bidding 90? Only if that changes the outcome — and it changes it only when the highest rival bid is between 90 and 100, in which case you now lose an auction you would have won at a profit. Could you gain by bidding 110? Only when the highest rival bid is between 100 and 110, in which case you win and pay more than the item is worth to you. In every other case your bid makes no difference, because the price is set by someone else. Truthful bidding is a dominant strategy: optimal whatever anyone else does, with no need to guess at their values at all.
+
+{{img:second-price-auction}}
 
 Vickrey also proved the first revenue equivalence result: the familiar formats raise the same expected revenue when values are drawn independently from the same distribution. With two bidders whose values are uniform on $[0,1]$, the second-price auction collects the lower of two draws, whose expectation is $1/3$. In a first-price auction the equilibrium is to bid half one's value, so the seller receives half the higher draw, and the higher of two uniform draws averages $2/3$ — giving $1/3$ again. The strategic behaviour differs completely and the revenue is identical.
 
