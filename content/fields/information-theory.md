@@ -217,17 +217,53 @@ further_reading:
   - citation: "Gleick, J. (2011). The Information: A History, a Theory, a Flood. Pantheon."
     url: null
     note: A popular history of information, with Shannon at its centre.
+
+images:
+  - id: shannon
+    src: /images/fields/information-theory/shannon.jpg
+    alt: Black-and-white portrait of Claude Shannon with swept-back dark hair, in a tweed jacket and tie.
+    caption: >-
+      Claude Shannon, whose 1948 paper defined information, entropy and channel capacity.
+    credit: Photograph, unknown author, Tekniska museet
+    license: CC BY 2.0
+    source: https://commons.wikimedia.org/wiki/File:C.E._Shannon._Tekniska_museet_43069_(cropped).jpg
+  - id: communication-system
+    src: /images/fields/information-theory/communication-system.png
+    alt: A block diagram from information source to transmitter, a signal joined by a noise source, then receiver and destination.
+    caption: >-
+      Shannon's diagram of a general communication system, redrawn from the 1948 paper:
+      source, transmitter, noisy channel, receiver, destination. His theorems say how much
+      each stage can carry, whatever the medium.
+    credit: Wanderingstan and Stannered, after Shannon
+    license: Public domain
+    source: https://commons.wikimedia.org/wiki/File:Shannon_communication_system.svg
+  - id: hamming-7-4
+    src: /images/fields/information-theory/hamming-7-4.png
+    alt: Three overlapping circles labelled p1, p2 and p3, with data bits d1 to d4 in the overlaps.
+    caption: >-
+      Hamming's (7,4) code: four data bits sit in the overlaps of three circles, and each
+      parity bit makes its circle's total even. Flip any one bit and the circles that now fail
+      point to exactly where it is.
+    credit: Cburnett
+    license: CC BY-SA 3.0
+    source: https://commons.wikimedia.org/wiki/File:Hamming(7,4).svg
 ---
 
 ## Measuring the Telegraph
 
 Telephone engineers of the 1920s needed to know how many messages a line could carry. {{fig:harry-nyquist|Harry Nyquist}} showed in 1924 that the speed of signalling is limited by the range of frequencies the line transmits. {{fig:ralph-hartley|Ralph Hartley}} proposed in 1928 that the information in a message be measured by the logarithm of the number of messages that could have been sent, and insisted that meaning be left out of it. His measure treated every possible message as equally likely. That is exactly what messages in a real language are not.
 
+{{img:communication-system}}
+
 ## Shannon's Paper
 
 {{fig:claude-shannon|Claude Shannon}} had already shown, in his master's thesis of 1937, that Boole's logic could design switching circuits. In 1948, at Bell Labs, he published "A Mathematical Theory of Communication". It brought probability into Hartley's measure. The information in a source is its entropy, $H = -\sum p_i \log_2 p_i$, in bits, a name Shannon credited to his colleague John Tukey. He proved that a source can be compressed to $H$ bits per symbol and no further. Then came the surprise. Every noisy channel has a capacity, and below it information can be sent with as few errors as desired, not by slowing down but by coding long blocks cleverly. His proof picked a code at random and showed it works on average. It proved that good codes exist without exhibiting one.
 
+{{img:shannon}}
+
 Others took up the search. In 1950 {{fig:richard-hamming|Richard Hamming}}, tired of Bell Labs computers giving up on weekend jobs at the first error, published codes that correct errors themselves. In 1952 {{fig:david-huffman|David Huffman}}, a student who chose a term paper over an exam, found the optimal way to compress a source with known probabilities. The gap to capacity stayed wide for decades.
+
+{{img:hamming-7-4}}
 
 ## A Closer Look: Squeezing a Biased Coin
 
