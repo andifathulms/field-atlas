@@ -155,6 +155,36 @@ further_reading:
   - citation: "Edwards, H. M. (1984). Galois Theory. Springer."
     url: null
     note: Develops the theory along Galois's own path, with his memoir translated.
+
+images:
+  - id: abel
+    src: /images/fields/galois-theory/abel.jpg
+    alt: An oval portrait of Niels Henrik Abel as a young man with curly hair, a white cravat and a dark coat.
+    caption: >-
+      Niels Henrik Abel, the only portrait made from life, by Johan Gørbitz. Abel died at 26,
+      two days before the news of his Berlin appointment was sent.
+    credit: Johan Gørbitz, 1826
+    license: Public domain
+    source: https://commons.wikimedia.org/wiki/File:G%C3%B8rbitz_-_Niels_Henrik_Abel.jpg
+  - id: galois-portrait
+    src: /images/fields/galois-theory/galois-portrait.png
+    alt: A woodcut-style portrait of Évariste Galois as a teenager with swept-up hair, a cravat and a buttoned coat, signed Galois 1848 A.G.
+    caption: >-
+      Évariste Galois, drawn from memory in 1848 by his brother Alfred, sixteen years after
+      his death.
+    credit: Alfred Galois, 1848
+    license: Public domain
+    source: https://commons.wikimedia.org/wiki/File:E._Galois_Portrait_No.2.jpg
+  - id: galois-letter
+    src: /images/fields/galois-theory/galois-letter.jpg
+    alt: A handwritten page in French with crossings-out, signed É. Galois and dated 29 May 1832.
+    caption: >-
+      The last page of Galois's letter to Auguste Chevalier, signed and dated 29 May 1832, the
+      night before the duel. He asks Chevalier to have it printed and to seek the opinion of
+      Jacobi or Gauss, "not on the truth, but on the importance of these theorems".
+    credit: Évariste Galois, 1832
+    license: Public domain
+    source: https://commons.wikimedia.org/wiki/File:E._Galois_Letter.jpg
 ---
 
 ## Why the Old Formulas Work
@@ -165,13 +195,19 @@ After the cubic and quartic were solved in the sixteenth century, the quintic re
 
 In 1799 {{fig:ruffini|Paolo Ruffini}} published a proof that no formula built from radicals solves the general quintic. It was long, had a gap, and was ignored. In 1824 {{fig:abel|Niels Henrik Abel}}, a young Norwegian mathematician, gave a proof that was accepted. Abel spent years seeking a position, and died of tuberculosis at 26. Two days later a letter was sent telling him he had a professorship in Berlin.
 
+{{img:abel}}
+
 Abel had shown that the general quintic has no formula. But some particular quintics do. Which ones, and why?
 
 ## Galois
 
 The answer came from {{fig:galois|Évariste Galois}}, a French teenager whose life was as turbulent as his mathematics was deep. He failed the entrance examination of the École Polytechnique twice, was expelled from the École Normale for his republican politics, and spent time in prison. His papers to the Academy were lost or rejected, and Poisson found one incomprehensible. In May 1832, aged twenty, he was killed in a duel whose circumstances are still unclear. The night before, he wrote a letter to a friend summarising his discoveries. In the margin of a manuscript he was correcting he scribbled, "I have no time."
 
+{{img:galois-portrait}}
+
 His idea was to study an equation through the *group* of symmetries of its roots. An equation is solvable by radicals exactly when that group can be taken apart into simple abelian steps, and the symmetric group on five letters, the group of the general quintic, cannot. The same insight explains the ruler-and-compass impossibilities of [Euclidean geometry](/math/euclidean-geometry/). Liouville published Galois's work in 1846, and {{fig:camille-jordan|Camille Jordan}}'s 1870 treatise made it widely understood.
+
+{{img:galois-letter}}
 
 ## A Closer Look: The Symmetries of an Equation
 
