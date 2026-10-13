@@ -250,6 +250,37 @@ further_reading:
   - citation: "Stigler, S. M. (2016). The Seven Pillars of Statistical Wisdom. Harvard University Press."
     url: null
     note: A short book on the handful of ideas that make statistics work.
+
+images:
+  - id: galton-heights
+    src: /images/fields/statistical-inference/galton-heights.jpg
+    alt: A grid of counts with mid-parent height down the side and adult children's height across the top, overlaid with an ellipse and lines labelled major axis, minor axis and loci.
+    caption: >-
+      Galton's diagram of children's heights against the average height of their parents.
+      The counts fall in an ellipse, and the line through its centre is shallower than the
+      diagonal: children of tall parents are tall, but less so. That slope is regression.
+    credit: Francis Galton
+    license: Public domain
+    source: https://commons.wikimedia.org/wiki/File:Galton%27s_correlation_diagram_1875.jpg
+  - id: gosset
+    src: /images/fields/statistical-inference/gosset.jpg
+    alt: Photograph of William Sealy Gosset, with round spectacles and a moustache, in a tweed suit.
+    caption: >-
+      William Sealy Gosset, "Student", in 1908, the year he published the t-test while
+      working as a brewer at Guinness.
+    credit: Photograph from Gosset's obituary in the Annals of Eugenics
+    license: Public domain
+    source: https://commons.wikimedia.org/wiki/File:William_Sealy_Gosset.jpg
+  - id: chi-squared
+    src: /images/fields/statistical-inference/chi-squared.png
+    alt: Curves of the chi-squared distribution for one to five degrees of freedom, the one-degree curve falling steeply from the left.
+    caption: >-
+      The chi-squared distribution. Mendel's test uses the black curve, one degree of
+      freedom. His value of 0.263 sits far to the left, where most of the area lies to its
+      right: about 61% of the time chance alone gives a larger value.
+    credit: Mikael Häggström
+    license: Public domain
+    source: https://commons.wikimedia.org/wiki/File:Chi-square_distributionPDF-English.png
 ---
 
 ## Combining Observations
@@ -260,7 +291,11 @@ Astronomers were the first to face the problem. They had more measurements than 
 
 For most of the nineteenth century statistics measured the heavens and averaged away variation. {{fig:francis-galton|Francis Galton}}, Darwin's cousin, made variation the object of study. In 1886 he found that tall parents have children who are tall, but on average less tall than their parents. He called it regression towards mediocrity and drew a line through the data to measure it. {{fig:karl-pearson|Karl Pearson}} turned Galton's ideas into mathematics, founded the journal *Biometrika*, and in 1900 gave the chi-squared test: one number measuring the misfit between observed counts and a theory, with a known distribution when the theory is true.
 
+{{img:galton-heights}}
+
 Pearson's methods assumed large samples. {{fig:william-gosset|William Sealy Gosset}}, a brewer at Guinness, had samples of four or five. In 1908, writing as "Student", he found how the average of a small sample really behaves when its spread is estimated from the same data. The t-test is still one of the most used significance tests in science.
+
+{{img:gosset}}
 
 ## Fisher and His Rivals
 
@@ -294,6 +329,8 @@ $$
 $$
 
 With one degree of freedom, a value this large or larger occurs by chance about 61% of the time, so the data sit comfortably with the theory. A value above 3.84 would have been needed to reject it at the 5% level. In 1936 Fisher applied the same test to all of Mendel's experiments together and found the fit too good: chance would rarely give results so close to the predictions. Whether Mendel, an assistant or simple selective reporting was responsible is still debated.
+
+{{img:chi-squared}}
 
 ## Significance Under Pressure
 
