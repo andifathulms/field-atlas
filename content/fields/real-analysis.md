@@ -145,11 +145,54 @@ further_reading:
   - citation: "Grabiner, J. V. (1981). The Origins of Cauchy's Rigorous Calculus. MIT Press."
     url: null
     note: How the ε–δ definitions came to be.
+
+images:
+  - id: cours-d-analyse
+    src: /images/fields/real-analysis/cours-d-analyse.png
+    alt: Title page of Cours d'Analyse de l'École Royale Polytechnique by Augustin-Louis Cauchy, first part, Analyse algébrique, Paris 1821, with royal arms and library stamps.
+    caption: >-
+      The title page of Cauchy's *Cours d'analyse* (1821), written for engineering students at
+      the École Polytechnique. Its definitions of limit, continuity and convergence are close
+      to the ones taught today; one of its theorems is the false one in the Closer Look below.
+    credit: Augustin-Louis Cauchy, 1821
+    license: CC0
+    source: https://commons.wikimedia.org/wiki/File:Cauchy_Cours_d%27Analyse_1821_Title_Page.gif
+  - id: weierstrass-function
+    src: /images/fields/real-analysis/weierstrass-function.png
+    alt: A jagged continuous curve between x equals minus 2 and 2, with a magnified inset showing that one small piece is just as jagged.
+    caption: >-
+      Weierstrass's function. It is continuous everywhere, yet magnify any piece, as in the
+      inset, and it is as jagged as the whole: there is no point where it has a slope.
+    credit: Eeyore22
+    license: Public domain
+    source: https://commons.wikimedia.org/wiki/File:WeierstrassFunction.svg
+  - id: diagonal-argument
+    src: /images/fields/real-analysis/diagonal-argument.png
+    alt: Twelve rows of m and w letters labelled E0 to E11, with the diagonal letters in red, and a final row in blue that differs from every row in its diagonal position.
+    caption: >-
+      Cantor's later and simpler proof, the diagonal argument of 1891, in his own letters $m$
+      and $w$. Flip each red diagonal letter to build the blue sequence: it differs from every
+      listed sequence somewhere, so no list can contain them all.
+    credit: Cronholm144
+    license: CC BY-SA 3.0
+    source: https://commons.wikimedia.org/wiki/File:Diagonal_argument_2.svg
+  - id: lebesgue-steps
+    src: /images/fields/real-analysis/lebesgue-steps.png
+    alt: The curve y equals square root of x from 0 to 1, with yellow rectangles of varying widths filling the area beneath it like a staircase.
+    caption: >-
+      A step function lying under $\sqrt{x}$, the kind of simple function Lebesgue's integral
+      is built from. His integral of a function is the limit of the areas of such step
+      functions beneath it, and that definition copes with limits far better than Riemann's.
+    credit: KSmrq
+    license: CC BY-SA 3.0
+    source: https://commons.wikimedia.org/wiki/File:Integral_of_sqrt_-_Riemann_and_Lebesgue.svg
 ---
 
 ## Answering Berkeley
 
 For a century after Berkeley's attack, [calculus](/math/calculus/) ran on results rather than foundations. What changed that was teaching. At the École Polytechnique, {{fig:cauchy|Augustin-Louis Cauchy}} had to explain calculus to engineering students, and his *Cours d'analyse* (1821) tried to prove everything. It defined a limit as a value that quantities approach as closely as desired, a continuous function as one where small changes in input give small changes in output, and an infinite series as convergent when its partial sums settle down. The ghosts of departed quantities were replaced by statements about arbitrarily small, but always finite, numbers.
+
+{{img:cours-d-analyse}}
 
 In Prague, the priest-philosopher {{fig:bolzano|Bernard Bolzano}} had reached similar definitions a few years earlier, in pamphlets almost no one read. Whether Cauchy saw them is still argued.
 
@@ -159,9 +202,13 @@ What made rigour urgent was [Fourier analysis](/math/fourier-analysis/). Fourier
 
 Then came the counterexamples. In 1872 {{fig:weierstrass|Karl Weierstrass}}, who taught analysis in Berlin with ε and δ exactly as students learn it today, presented a function that is continuous everywhere and has a slope nowhere: a curve that is all corners. Charles Hermite wrote of turning away "with fright and horror from this lamentable plague of continuous functions which do not have derivatives". The lesson was blunt. Geometric intuition had misled the best mathematicians for two centuries, and only precise definitions could be trusted.
 
+{{img:weierstrass-function}}
+
 ## What Is a Real Number?
 
 Limits need something to converge to. If the number line had gaps, a sequence could close in on a hole. Nobody had defined the real numbers; everyone had assumed them. In 1872 {{fig:dedekind|Richard Dedekind}} and {{fig:cantor|Georg Cantor}} independently constructed them from the rationals, Dedekind by cutting the rational line into two pieces, Cantor by sequences that bunch together. Two years later Cantor proved that the real numbers cannot be listed one by one: there are strictly more of them than whole numbers. Infinity came in different sizes, and set theory was born.
+
+{{img:diagonal-argument}}
 
 ## A Closer Look: When Intuition About Limits Fails
 
@@ -186,3 +233,6 @@ guarantees $|x^2 - 4| < \varepsilon$. No infinitesimals are involved, only finit
 ## Measure
 
 The last repair was to the integral. Riemann's integral cannot handle Dirichlet's function (1 on rationals, 0 on irrationals), and it behaves badly under limits. In 1902 {{fig:lebesgue|Henri Lebesgue}} built a new one on a theory of *measure*, a consistent way of assigning size to very general sets. He compared it to counting money. Riemann adds up coins in the order he picks them up, while Lebesgue first sorts them by value. Measure theory became the foundation of modern analysis, and thirty years later the foundation of [probability](/math/probability-theory/) too.
+
+
+{{img:lebesgue-steps}}
