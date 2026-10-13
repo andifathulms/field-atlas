@@ -208,17 +208,63 @@ further_reading:
   - citation: "Field, J. V. (1997). The Invention of Infinity: Mathematics and Art in the Renaissance. Oxford University Press."
     url: null
     note: The history of how painters' perspective became mathematics, for general readers.
+
+images:
+  - id: durer-lute
+    src: /images/fields/projective-geometry/durer-lute.jpg
+    alt: Woodcut of two men at a table. One holds a thread stretched from a lute through an open wooden frame to a point on the wall; the other marks dots on a board hinged to the frame.
+    caption: >-
+      Albrecht Dürer's *Draughtsman Drawing a Lute* (1525). A thread runs from a fixed point
+      on the wall, standing in for the eye, to a point on the lute. Where it crosses the open
+      frame, the assistant marks a dot, and dot by dot the frame becomes Alberti's window.
+    credit: Albrecht Dürer, 1525, Metropolitan Museum of Art
+    license: CC0
+    source: https://commons.wikimedia.org/wiki/File:The_Draughtsman_of_the_Lute_MET_DP816495.jpg
+  - id: conic-sections
+    src: /images/fields/projective-geometry/conic-sections.png
+    alt: A cone cut by four planes, giving a circle, an ellipse, a parabola and a hyperbola.
+    caption: >-
+      One cone, four curves. The cone is every line from its apex through a circle, so each
+      slice is that circle projected onto a tilted plane, which is why Desargues could prove a
+      theorem once for the circle and carry it to all the conics.
+    credit: Magister Mathematicae and Phancy Physicist
+    license: CC BY-SA 3.0
+    source: https://commons.wikimedia.org/wiki/File:Conic_Sections.svg
+  - id: desargues-theorem
+    src: /images/fields/projective-geometry/desargues-theorem.png
+    alt: Two triangles, a green ABC and a yellow abc, with dotted lines through corresponding corners meeting at one point on the right, and their extended sides meeting at three points on a red line at the bottom.
+    caption: >-
+      Desargues' theorem, with the second triangle labelled $abc$ rather than $A'B'C'$. The
+      lines through matching corners meet at the centre of perspectivity; the extended sides
+      meet in pairs at three points on one line, the red axis.
+    credit: Jujutacular
+    license: CC BY-SA 3.0
+    source: https://commons.wikimedia.org/wiki/File:Desargues_theorem_alt.svg
+  - id: fano-plane
+    src: /images/fields/projective-geometry/fano-plane.png
+    alt: A triangle with its three medians and an inscribed circle, marking seven numbered points.
+    caption: >-
+      The Fano plane: seven points and seven lines, with three points on every line. The six
+      straight segments are lines, and so is the circle. It is the plane of order 2, with
+      $2^2 + 2 + 1 = 7$ points.
+    credit: Daniel FR
+    license: CC BY 3.0
+    source: https://commons.wikimedia.org/wiki/File:Fano_Plane_numbered.svg
 ---
 
 ## The Painter's Window
 
 Projective geometry began in the workshops of Renaissance Florence, not in mathematics. In the early fifteenth century {{fig:brunelleschi|Filippo Brunelleschi}} is said to have painted the Baptistery so exactly that, viewed through a peephole with a mirror, the painting was indistinguishable from the building. In 1435 {{fig:alberti|Leon Battista Alberti}} wrote the method down. Treat the canvas as a window. Every line from the eye to the scene crosses it at one point, and lines that run parallel away from the viewer are drawn meeting at a single *vanishing point*.
 
+{{img:durer-lute}}
+
 That is a geometric statement, and it breaks Euclid. On the canvas, parallel lines meet. Lengths shrink with distance and angles distort, yet a straight line in the world is still a straight line in the picture. The question the painters implicitly raised was: which properties does projection preserve? Euclidean geometry had never asked it, which is why this field branches off from [Euclidean geometry](/math/euclidean-geometry/) rather than growing inside it.
 
 ## Desargues and the Point at Infinity
 
 {{fig:desargues|Girard Desargues}}, an architect and engineer from Lyon, turned the painters' practice into mathematics in 1639. Project a circle from a point onto a tilted plane and you get an ellipse, a parabola or a hyperbola. So all conic sections are one curve seen from different angles, and a theorem proved for the circle transfers to all of them. To make this work he treated parallel lines as meeting at a point "at an infinite distance", completing the plane.
+
+{{img:conic-sections}}
 
 A year later {{fig:pascal|Blaise Pascal}}, aged sixteen, published his hexagon theorem. For any six points on a conic, the three pairs of opposite sides of the hexagon they form meet in three points on one straight line. Then the subject nearly vanished. Desargues' book was printed in a tiny run and lost for two centuries, and Descartes' coordinates, published two years earlier, carried geometry in a different direction.
 
@@ -242,6 +288,8 @@ Desargues' theorem is the signature result of projective geometry, a statement a
 
 Take two triangles $ABC$ and $A'B'C'$ in *perspective from a point*: the lines $AA'$, $BB'$ and $CC'$ all pass through one point $O$, as if one triangle were a shadow of the other cast by a lamp at $O$. Now extend corresponding sides until they meet: $AB$ with $A'B'$, $BC$ with $B'C'$, and $CA$ with $C'A'$. The theorem says these three meeting points always lie on a single straight line. (If two sides are parallel, they meet at a point at infinity, and the statement still holds, one reason projective geometry adds those points.)
 
+{{img:desargues-theorem}}
+
 The slickest proof leaves the plane. Suppose the two triangles lie in different planes in space. Each pair of corresponding sides, like $AB$ and $A'B'$, lies in the plane through $O$, $A$ and $B$, so they meet. All three meeting points lie in the plane of triangle $ABC$ *and* in the plane of triangle $A'B'C'$. Two different planes meet in a line, so the three points are collinear. The flat case follows by viewing a flat drawing as the shadow of the three-dimensional one.
 
 The converse also holds, and by duality, swapping "point" and "line", the theorem proves its own converse. Stranger still, there exist projective planes where Desargues' theorem fails. Hilbert showed that it holds exactly when the plane can be given coordinates from a number system in which multiplication is associative. A theorem about lines in a drawing is secretly a theorem about algebra.
@@ -249,3 +297,6 @@ The converse also holds, and by duality, swapping "point" and "line", the theore
 ## Finite Planes
 
 Nothing in the axioms of a projective plane requires infinitely many points. The smallest possible one has seven points and seven lines, each line holding three points: the Fano plane. More generally, finite planes exist with $n^2 + n + 1$ points whenever $n$ is a prime power. Whether any other orders are possible is one of the oldest open questions in combinatorics. Order 10 took a supercomputer search in the 1980s to rule out, and order 12 is still unknown.
+
+
+{{img:fano-plane}}
