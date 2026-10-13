@@ -176,19 +176,66 @@ further_reading:
   - citation: "Tignol, J.-P. (2001). Galois' Theory of Algebraic Equations. World Scientific."
     url: null
     note: The mathematics of equations developed historically, from quadratics to Galois.
+
+images:
+  - id: bm-13901
+    src: /images/fields/theory-of-equations/bm-13901.jpg
+    alt: A hand-drawn copy of a broken clay tablet densely covered in cuneiform signs, arranged in ruled sections.
+    caption: >-
+      The tablet BM 13901, in Thureau-Dangin's 1936 hand copy. Its first problem is the one
+      above: "I added the area and the side of my square: three-quarters." The recipe that
+      follows halves 1, squares it to get $\tfrac14$, adds $\tfrac34$ to make 1, takes the
+      square root, and subtracts the half: the side is $\tfrac12$.
+    credit: François Thureau-Dangin, 1936, after the British Museum tablet
+    license: Public domain
+    source: https://commons.wikimedia.org/wiki/File:BM-13901.png
+  - id: al-khwarizmi-manuscript
+    src: /images/fields/theory-of-equations/al-khwarizmi-manuscript.jpg
+    alt: An open Arabic manuscript with two pages of brown script, each with a red-ruled geometric diagram of squares and rectangles near the bottom.
+    caption: >-
+      Two pages of al-Khwārizmī's *Algebra* in a later copy at the Bodleian Library. The
+      red-ruled diagrams are his geometric proofs: completing the square is drawn as literally
+      adding the missing corner of a square.
+    credit: Muḥammad ibn Mūsā al-Khwārizmī, Bodleian Libraries MS. Huntington 214
+    license: Public domain
+    source: https://commons.wikimedia.org/wiki/File:Bodleian_MS._Huntington_214_roll332_frame36.jpg
+  - id: tartaglia
+    src: /images/fields/theory-of-equations/tartaglia.jpg
+    alt: Engraved portrait of Niccolò Tartaglia with a long beard, a feathered cap and a fur-trimmed coat.
+    caption: >-
+      Niccolò Tartaglia, who rediscovered the cubic formula in 1535 and saw Cardano publish it
+      ten years later.
+    credit: Antonio Locatelli, after a painting
+    license: CC0
+    source: https://commons.wikimedia.org/wiki/File:Niccol%C3%B2_Tartaglia._A._Locatelli_sculp.jpg
+  - id: bombelli-algebra
+    src: /images/fields/theory-of-equations/bombelli-algebra.jpg
+    alt: Title page reading L'Algebra parte maggiore dell'arimetica, divisa in tre libri, di Rafael Bombelli da Bologna, Bologna 1572, with a woodcut emblem.
+    caption: >-
+      The title page of Bombelli's *L'Algebra* (Bologna, 1572), where the calculation above
+      first appeared in print.
+    credit: Rafael Bombelli, 1572
+    license: Public domain
+    source: https://commons.wikimedia.org/wiki/File:Bombelli_-_Algebra,_1572_-_56656.jpg
 ---
 
 ## Recipes on Clay
 
 The oldest algebra is nearly four thousand years old. Old Babylonian scribes posed problems like adding the area and the side of a square to get three-quarters, and solved them with fixed procedures: halve this, square that, add, take the square root. These are the steps of completing the square, stated as recipes without symbols. Greek mathematicians treated such problems geometrically, as rectangles and squares of unknown size.
 
+{{img:bm-13901}}
+
 ## Al-Jabr
 
 Around 820, at the House of Wisdom in Baghdad, {{fig:al-khwarizmi|Muḥammad ibn Mūsā al-Khwārizmī}} wrote a short book that made equation-solving a discipline. He sorted linear and quadratic equations into six standard types and gave a general method, with a geometric proof, for each. His operation *al-jabr*, "restoring" a subtracted quantity by moving it to the other side, gave the subject its name. His own name, Latinised, gave us "algorithm". The Persian poet-mathematician Omar Khayyam later solved cubic equations geometrically, by intersecting conic sections, and said an algebraic formula might be found by others.
 
+{{img:al-khwarizmi-manuscript}}
+
 ## Duels in Italy
 
 It was found in sixteenth-century Italy, where mathematicians made their reputations in public problem-solving contests and guarded their methods. Around 1515 Scipione del Ferro found a formula for one kind of cubic and told only a few people, among them a student. In 1535 {{fig:tartaglia|Niccolò Tartaglia}} rediscovered it and won a contest with it. {{fig:cardano|Gerolamo Cardano}} persuaded Tartaglia to reveal it under a solemn oath of secrecy. Then, having seen del Ferro's older notes, he published it in *Ars Magna* (1545), with his student Lodovico Ferrari's solution of the quartic. Tartaglia never forgave him.
+
+{{img:tartaglia}}
 
 The formula had a strange feature. For some cubics with three real roots it passes through square roots of negative numbers. Working with those "impossible" numbers was the start of [complex analysis](/math/complex-analysis/).
 
@@ -215,6 +262,8 @@ $$
 So $\sqrt[3]{2 + 11i} = 2 + i$ and $\sqrt[3]{2 - 11i} = 2 - i$, and the formula gives $x = (2 + i) + (2 - i) = 4$. The imaginary parts cancel and the true answer appears.
 
 It was one of the first times anyone had computed with complex numbers and got a meaningful result. Bombelli could not say what these numbers *were*, only that the rules worked. It took another two centuries, and the picture of numbers as points in a plane, before [complex analysis](/math/complex-analysis/) could say.
+
+{{img:bombelli-algebra}}
 
 ## Symbols and Existence
 
