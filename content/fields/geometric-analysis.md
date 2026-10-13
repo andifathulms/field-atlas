@@ -226,11 +226,43 @@ further_reading:
   - citation: "Schoen, R. & Yau, S.-T. (1994). Lectures on Differential Geometry. International Press."
     url: null
     note: Lectures by two of the field's founders. Advanced, and close to the source.
+
+images:
+  - id: soap-film-cube
+    src: /images/fields/geometric-analysis/soap-film-cube.jpg
+    alt: A cube-shaped wire frame dipped in soap, holding thin films that run in from every edge to a small square film at the centre.
+    caption: >-
+      Soap films in a cubic wire frame. Rather than covering each face, the films take a
+      smaller total area: they run in from the edges to a small square at the centre, meeting
+      three at a time at 120°, one of the rules Plateau recorded.
+    credit: Daniela de Gol
+    license: CC BY 4.0
+    source: https://commons.wikimedia.org/wiki/File:Minimal_surface.jpg
+  - id: calabi-yau
+    src: /images/fields/geometric-analysis/calabi-yau.jpg
+    alt: A smooth, self-intersecting translucent surface in shades of blue, violet and pink, folding through itself around several openings.
+    caption: >-
+      A two-dimensional slice of the quintic Calabi–Yau threefold, one of the spaces that
+      Yau's theorem equips with a Ricci-flat metric.
+    credit: Jbourjai
+    license: Public domain
+    source: https://commons.wikimedia.org/wiki/File:Calabi_yau.jpg
+  - id: catenoid
+    src: /images/fields/geometric-analysis/catenoid.jpg
+    alt: Two hands holding a pair of wire rings apart, with a waisted soap film stretched between them against a dark background.
+    caption: >-
+      A catenoid between two rings. At every point the film curves one way around the rings
+      and the opposite way along its length, by equal amounts, so the mean curvature is zero.
+    credit: Blinking Spirit
+    license: CC0
+    source: https://commons.wikimedia.org/wiki/File:Bulle_cat%C3%A9no%C3%AFde.png
 ---
 
 ## Soap Films
 
 Dip a bent wire loop into soapy water and a film forms across it. Surface tension pulls it to the smallest area the wire allows. The Belgian physicist Joseph Plateau spent decades in the nineteenth century documenting such films, and his question became a mathematical one: does *every* closed curve bound a surface of least area?
+
+{{img:soap-film-cube}}
 
 This is where differential geometry meets analysis. A surface of least area has zero *mean curvature* at every point, $H = 0$, which is a partial differential equation. Asking whether it has a solution with prescribed boundary is asking whether a certain energy has a minimiser. {{fig:rado|Tibor Radó}} (1930) and {{fig:douglas|Jesse Douglas}} (1931) independently proved that it always does. Douglas received one of the first two Fields Medals for it. The question of how to divide the credit between them has never quite gone away.
 
@@ -239,6 +271,8 @@ The field's parents are visible in that problem. From [differential geometry of 
 ## Curvature from Equations
 
 The field got its name and its confidence in the 1970s, largely through {{fig:yau|Shing-Tung Yau}} and his collaborators. Eugenio Calabi had conjectured in the 1950s that certain complex manifolds could be given metrics with any prescribed Ricci curvature. In 1976 Yau proved it by solving the complex Monge–Ampère equation,
+
+{{img:calabi-yau}}
 
 $$
 \det\!\left( g_{i\bar{j}} + \partial_i \partial_{\bar{j}} \varphi \right) = e^{F} \det\!\left( g_{i\bar{j}} \right),
@@ -273,6 +307,8 @@ $$
 (up to a convention factor). A surface of least area cannot decrease under any small push, so $H$ must vanish. Minimal surfaces are exactly the critical points of area.
 
 Dip two parallel rings into soapy water and pull them apart, and the film between them forms a *catenoid*, the surface made by spinning the curve $y = a\cosh(x/a)$. Pull the rings too far apart and the catenoid snaps into two flat discs: beyond a critical distance, no catenoid spans the rings at all. Deciding when solutions exist and when they break down is the central work of geometric analysis.
+
+{{img:catenoid}}
 
 ## The Min-Max Revival
 
