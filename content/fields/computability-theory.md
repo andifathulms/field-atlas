@@ -196,6 +196,27 @@ further_reading:
   - citation: "Sipser, M. (2012). Introduction to the Theory of Computation (3rd ed.). Cengage."
     url: null
     note: The standard undergraduate textbook, admired for its clarity.
+
+images:
+  - id: turing-machine-model
+    src: /images/fields/computability-theory/turing-machine-model.jpg
+    alt: A working model of a Turing machine, with a long paper tape running between two reels through a small read-write head on a black base.
+    caption: >-
+      Turing's abstraction built in hardware: a tape on two reels and a head that reads,
+      writes and moves one cell at a time, following a finite rule table. Mike Davey's model,
+      exhibited at Harvard.
+    credit: Rocky Acosta
+    license: CC BY 3.0
+    source: https://commons.wikimedia.org/wiki/File:Turing_Machine_Model_Davey_2012.jpg
+  - id: edvac-first-draft
+    src: /images/fields/computability-theory/edvac-first-draft.jpg
+    alt: The typed yellowed cover of First Draft of a Report on the EDVAC by John von Neumann, Moore School of Electrical Engineering, June 30, 1945.
+    caption: >-
+      The cover of von Neumann's *First Draft of a Report on the EDVAC*, dated 30 June 1945.
+      Only his name appears on it.
+    credit: John von Neumann, 1945
+    license: Public domain
+    source: https://commons.wikimedia.org/wiki/File:Firstdraftofrepo00vonn_0003.jpg
 ---
 
 ## What Is an Algorithm?
@@ -203,6 +224,8 @@ further_reading:
 Hilbert's *Entscheidungsproblem* asked for a mechanical method to decide whether any mathematical statement follows from given axioms. To prove no such method exists, you first have to say exactly what a "mechanical method" is. No one had.
 
 In 1936 two answers arrived within weeks. {{fig:church|Alonzo Church}} at Princeton defined computation with his lambda calculus. {{fig:turing|Alan Turing}}, a 23-year-old at Cambridge, imagined a clerk working with pencil and paper and stripped the process down to its essentials: a tape of symbols, a head that reads and writes one symbol at a time, and a finite table of rules. The two definitions turned out equivalent, as did every later proposal. The *Church–Turing thesis* holds that together they capture everything computable.
+
+{{img:turing-machine-model}}
 
 ## Machines That Cannot Decide
 
@@ -213,6 +236,8 @@ Undecidability spread. In 1953 Rice proved that *every* non-trivial question abo
 ## The Universal Machine
 
 Turing's paper held a second idea. A machine's rule table can itself be written on a tape, so one *universal* machine can read any other machine's description and simulate it. Hardware need not change for each task, only software. In 1945 {{fig:von-neumann|John von Neumann}}'s report on the EDVAC described an electronic computer that stored its program in memory alongside its data. The report bore only his name, to the lasting anger of ENIAC's builders, J. Presper Eckert and John Mauchly. Turing designed his own stored-program computer that same year. Every computer since has been a universal machine.
+
+{{img:edvac-first-draft}}
 
 ## A Closer Look: The Halting Problem in Five Lines
 
