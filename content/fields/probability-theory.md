@@ -207,6 +207,37 @@ further_reading:
   - citation: "Feller, W. (1968). An Introduction to Probability Theory and Its Applications, Vol. 1 (3rd ed.). Wiley."
     url: null
     note: The classic textbook, rich in examples, and still widely used.
+
+images:
+  - id: ars-conjectandi
+    src: /images/fields/probability-theory/ars-conjectandi.png
+    alt: Title page reading Jacobi Bernoulli, Ars Conjectandi, Opus Posthumum, Basileae 1713, with a coat of arms.
+    caption: >-
+      The title page of Jacob Bernoulli's *Ars Conjectandi* ("The Art of Conjecturing"),
+      published in Basel in 1713, eight years after his death. It contains the first law of
+      large numbers.
+    credit: Jacob Bernoulli, 1713
+    license: Public domain
+    source: https://commons.wikimedia.org/wiki/File:Arsconj.gif
+  - id: galton-board
+    src: /images/fields/probability-theory/galton-board.png
+    alt: A diagram of a bean machine in which red balls fall from a funnel through four rows of round pegs into five bins, piling highest in the middle.
+    caption: >-
+      A Galton board. At each of the four rows of pegs a ball goes left or right with equal
+      chance, so the five bins fill in proportions $1 : 4 : 6 : 4 : 1$. With many rows the
+      piles take the shape of de Moivre's bell curve, the central limit theorem made visible.
+    credit: IdS
+    license: CC BY-SA 3.0
+    source: https://commons.wikimedia.org/wiki/File:Galton_Board.svg
+  - id: brownian-paths
+    src: /images/fields/probability-theory/brownian-paths.png
+    alt: Five jagged coloured paths starting at zero and wandering up and down over time, inside a grey band that widens as time goes on.
+    caption: >-
+      Five sample paths of Brownian motion. Each wanders at random, yet as a family they obey
+      a law: the grey band, one standard deviation wide, grows like $\sqrt{t}$.
+    credit: Geek3
+    license: CC BY-SA 4.0
+    source: https://commons.wikimedia.org/wiki/File:Wiener-process-5traces.svg
 ---
 
 ## A Gambler's Question
@@ -217,7 +248,11 @@ In 1654 the Chevalier de Méré, a gambler, put a puzzle to {{fig:pascal|Blaise 
 
 Chance individually is unpredictable, yet it has laws in bulk. {{fig:jacob-bernoulli|Jacob Bernoulli}} spent twenty years proving the first. As an experiment is repeated, the fraction of successes converges to the true probability. His *Ars Conjectandi* appeared posthumously in 1713. {{fig:de-moivre|Abraham de Moivre}}, a French Protestant exile in London who earned his living partly advising gamblers, found in 1733 the shape of the fluctuations, the bell curve. {{fig:laplace|Pierre-Simon Laplace}} generalised it to the central limit theorem: sums of many independent small effects are always approximately normal, whatever the effects. It explains why heights, measurement errors and exam scores so often follow the same curve.
 
+{{img:ars-conjectandi}}
+
 Reasoning backwards, from observed data to the chance behind it, came from {{fig:bayes|Thomas Bayes}}, whose essay was published by a friend after his death in 1763, and more powerfully from Laplace. Their "inverse probability" is today's Bayesian inference.
+
+{{img:galton-board}}
 
 ## Respectability
 
@@ -242,3 +277,6 @@ The same reasoning, updating a probability as evidence arrives, runs spam filter
 ## Everywhere
 
 Probability now runs through science. It is the mathematics of genetic drift in [population genetics](/biology/population-genetics/), of Brownian motion and statistical physics, of statistics, finance and machine learning. Its frontier includes random structures whose behaviour at a critical point, where a sudden global change happens, is still out of reach, most famously percolation in three dimensions.
+
+
+{{img:brownian-paths}}
