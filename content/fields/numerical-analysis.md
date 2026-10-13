@@ -213,17 +213,65 @@ further_reading:
   - citation: "Trefethen, L. N. (2013). Approximation Theory and Approximation Practice. SIAM."
     url: null
     note: A short, readable modern treatment of interpolation, including Runge's example.
+
+images:
+  - id: difference-engine
+    src: /images/fields/numerical-analysis/difference-engine.jpg
+    alt: A large machine of brass gear columns and a printing mechanism in a glass case at the Science Museum, London.
+    caption: >-
+      Babbage's Difference Engine No. 2, built by the Science Museum in London from his
+      plans: the calculating section in 1991, the printer in 2000. It works, computing and
+      printing tables by the method of differences, as Babbage intended.
+    credit: geni
+    license: CC BY-SA 4.0
+    source: https://commons.wikimedia.org/wiki/File:Babbage_Difference_Engine.jpg
+  - id: runge-phenomenon
+    src: /images/fields/numerical-analysis/runge-phenomenon.png
+    alt: A smooth bell curve sampled at eleven equally spaced points, with the interpolating polynomial matching in the middle but swinging high near both ends.
+    caption: >-
+      Runge's effect on a bell-shaped curve: the polynomial through eleven equally spaced
+      points fits the middle well and overshoots badly near the ends. Adding more equally
+      spaced points makes the ends worse, not better.
+    credit: Glosser.ca
+    license: CC BY-SA 4.0
+    source: https://commons.wikimedia.org/wiki/File:Runge%27s_phenomenon_in_Lagrange_polynomials.svg
+  - id: newton-step
+    src: /images/fields/numerical-analysis/newton-step.png
+    alt: A blue curve crossing the x-axis at x, with a red tangent line drawn at the point above x_n that crosses the axis at x_{n+1}, closer to the root.
+    caption: >-
+      One step of Newton's method: follow the tangent at $x_n$ down to the axis to get
+      $x_{n+1}$. Near the root the tangent hugs the curve, which is why each step roughly
+      squares the error.
+    credit: Oleg Alexandrov
+    license: Public domain
+    source: https://commons.wikimedia.org/wiki/File:Newton_iteration.png
+  - id: newton-basins
+    src: /images/fields/numerical-analysis/newton-basins.jpg
+    alt: The complex plane split into three coloured regions, magenta, yellow and cyan, whose shared boundaries are chains of ever-smaller bulbs of all three colours.
+    caption: >-
+      Cayley's question answered by computer: starting points for Newton's method on
+      $z^3 - 1$, coloured by which of the three cube roots of 1 they reach. Wherever two
+      colours meet, the third is there too, in ever smaller pieces.
+    credit: LutzL
+    license: CC BY-SA 3.0
+    source: https://commons.wikimedia.org/wiki/File:Newtroot_1_0_0_m1.png
 ---
 
 ## Computing by Hand
 
 [Calculus](/math/calculus/) gave exact rules for rates and areas, but it rarely gave numbers directly. In a manuscript of 1669 {{fig:newton|Isaac Newton}} showed how to find a root of $x^3 - 2x - 5 = 0$: guess 2, replace the curve by a straight line near the guess, see where that line crosses zero, and repeat. {{fig:joseph-raphson|Joseph Raphson}} published a simpler general version in 1690. The idea of improving a guess by linear approximation, over and over, is still the most used tool for solving equations.
 
+{{img:newton-step}}
+
 For two centuries most numbers came from people. Astronomers hired teams of computers, the original meaning of the word, to produce tables of logarithms, planetary positions and tides. They worked by rule, often by adding differences, and the tables carried their mistakes. {{fig:charles-babbage|Charles Babbage}} found so many errors that in 1822 he began building a Difference Engine to calculate and print tables by machine. His later Analytical Engine was a design for a general computer, and {{fig:ada-lovelace|Ada Lovelace}} wrote in 1843 how it could be programmed. Neither machine was finished, and hand computation lasted into the 1950s.
+
+{{img:difference-engine}}
 
 ## Approximation and Its Surprises
 
 The methods of this period rested on replacing a hard function by a polynomial. Newton and Lagrange gave formulas for the polynomial through given points, and from it came rules for integrating and differentiating tabulated data. Intuition said that more points would give a better fit. In 1901 {{fig:carl-runge|Carl Runge}} showed that it can give a much worse one. For $1/(1 + 25x^2)$ on $[-1, 1]$, polynomials through equally spaced points oscillate more and more wildly near the ends as the number of points grows. Placing the points more densely near the ends cures it.
+
+{{img:runge-phenomenon}}
 
 Runge's example set the tone for the subject. A method can be exact in principle and useless in practice. Numerical analysis is as much about when methods fail as about the methods themselves.
 
@@ -263,6 +311,8 @@ $$
 so each error is about the square of the one before, divided by $2\sqrt{2} \approx 2.8$. Five steps give 24 correct decimal places, more than double precision can store. A method that merely halved the error each step would need about 80 steps for the same accuracy.
 
 The catch is the start. Quadratic convergence holds only close to the root. From a poor guess, Newton's method can wander, cycle or jump to a different root, and for polynomials of degree three and higher the regions of starting points that lead to each root have fractal boundaries. Arthur Cayley first asked about those regions in 1879, and his question is one of the roots of [complex dynamics](/math/complex-dynamics/).
+
+{{img:newton-basins}}
 
 ## Trusting the Answer
 
