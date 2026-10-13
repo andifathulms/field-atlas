@@ -208,11 +208,42 @@ further_reading:
   - citation: "Taylor, J. R. (2005). Classical Mechanics. University Science Books."
     url: null
     note: A clear undergraduate textbook, from Newton's laws through Lagrangian mechanics and chaos.
+
+images:
+  - id: galileo
+    src: /images/fields/classical-mechanics/galileo.jpg
+    alt: Oil portrait of Galileo Galilei, elderly, with a white beard and a dark coat.
+    caption: >-
+      Galileo, painted by Justus Sustermans. His inclined planes slowed falling down enough to
+      time, and showed that the distance fallen grows with the square of the time.
+    credit: Justus Sustermans
+    license: Public domain
+    source: https://commons.wikimedia.org/wiki/File:Galileo-sustermans2.jpg
+  - id: newton
+    src: /images/fields/classical-mechanics/newton.jpg
+    alt: Oil portrait of Isaac Newton at forty-six, with long grey hair, in a dark gown with a white shirt.
+    caption: >-
+      Isaac Newton in 1689, two years after the *Principia*, painted by Godfrey Kneller.
+    credit: Godfrey Kneller
+    license: Public domain
+    source: https://commons.wikimedia.org/wiki/File:GodfreyKneller-IsaacNewton-1689.jpg
+  - id: newtons-cannonball
+    src: /images/fields/classical-mechanics/newtons-cannonball.png
+    alt: An engraving of the Earth with a mountain at the top, V, and cannonball paths curving down to D, E, F and G, the fastest circling all the way round.
+    caption: >-
+      Newton's own picture of the idea, from *A Treatise of the System of the World*. A ball
+      fired from the mountain at $V$ falls to $D$, $E$, $F$ or $G$, depending on its speed; fast
+      enough, it falls all the way round and never lands. The Moon is that ball.
+    credit: Isaac Newton, A Treatise of the System of the World (1728)
+    license: Public domain
+    source: https://commons.wikimedia.org/wiki/File:Newton%27s_cannonball_cropped.svg
 ---
 
 ## Falling and Orbiting
 
 For two thousand years, motion meant Aristotle. Heavy things fall faster than light ones, moving things stop unless something keeps pushing them, and the heavens obey different rules from the Earth. {{fig:galileo|Galileo Galilei}} broke the first two rules with experiments. Rolling balls down gentle ramps slowed falling enough to time with a water clock, and the result was simple: every body falls with the same steady acceleration, and distance grows with the square of the time.
+
+{{img:galileo}}
 
 He also saw that motion needs no cause. A ball rolling on a perfectly smooth, level surface would roll forever. In his 1632 *Dialogue* he imagined a closed cabin below decks on a smoothly sailing ship: butterflies fly and water drips exactly as they would in harbour. No experiment inside can tell whether the ship is moving. This *principle of relativity* would become the seed of Einstein's theory three centuries later.
 
@@ -221,6 +252,8 @@ Meanwhile {{fig:kepler|Johannes Kepler}}, fitting Tycho Brahe's observations, fo
 ## Newton's Synthesis
 
 {{fig:newton|Isaac Newton}}'s *Principia* (1687) supplied it. Three laws of motion (inertia, $F = ma$, action and reaction) and one law of gravity, an attraction between every pair of masses falling off as the square of the distance, reproduce Kepler's ellipses exactly. The Moon is falling toward the Earth just as an apple does. It simply moves sideways fast enough to keep missing.
+
+{{img:newton}}
 
 The achievement was contested from the start. {{fig:hooke|Robert Hooke}} insisted he had suggested the inverse-square law to Newton in their correspondence, and Newton answered by striking nearly every mention of Hooke from his book. Others objected to gravity itself: a force acting instantly across empty space, with no mechanism. Newton famously declined to explain it: *hypotheses non fingo*, "I frame no hypotheses". That unease about how gravity acts at a distance would be answered only by [general relativity](/physics/general-relativity/).
 
@@ -249,6 +282,8 @@ $$
 The two agree. The fall of an apple in an orchard and the orbit of the Moon are the same phenomenon, given one rule about how gravity weakens with distance.
 
 Put differently, in one second the Moon falls about $\tfrac12 \times 0.00272 \approx 1.4$ millimetres towards the Earth, while moving about a kilometre sideways. The curve of its path is exactly that fall. Newton's first attempt did not match as well, partly because the Earth's radius was poorly known. The close agreement, published in the *Principia*, showed that a law found on Earth governs the heavens.
+
+{{img:newtons-cannonball}}
 
 ## Cracks at the Edges
 
