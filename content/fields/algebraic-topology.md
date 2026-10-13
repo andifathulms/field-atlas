@@ -263,6 +263,46 @@ further_reading:
   - citation: "Lakatos, I. (1976). Proofs and Refutations: The Logic of Mathematical Discovery. Cambridge University Press."
     url: null
     note: A dialogue retracing how counterexamples reshaped Euler's formula. A classic of the philosophy of mathematics.
+
+images:
+  - id: kepler-solids
+    src: /images/fields/algebraic-topology/kepler-solids.jpg
+    alt: An old woodcut page showing an octahedron, a cube, a dodecahedron and tetrahedra, some nested inside one another, with Latin text below.
+    caption: >-
+      Platonic solids nested inside one another, from Kepler's *Harmonices Mundi* (1619).
+      Every one obeys Euler's count: the dodecahedron gives $20 - 30 + 12 = 2$, the same as
+      the cube.
+    credit: Johannes Kepler, 1619
+    license: Public domain
+    source: https://commons.wikimedia.org/wiki/File:Ioanniskepplerih00kepl_0271_crop.jpg
+  - id: hexagonal-torus
+    src: /images/fields/algebraic-topology/hexagonal-torus.png
+    alt: A ring-shaped polyhedron with coloured four-sided faces arranged around a hexagonal hole.
+    caption: >-
+      A polyhedron with a tunnel, the kind Lhuilier used. It has 24 vertices, 48 edges and 24
+      faces, so $V - E + F = 0$, not 2.
+    credit: Tom Ruen and Antonsusi
+    license: Public domain
+    source: https://commons.wikimedia.org/wiki/File:Hexagonal_torus.svg
+  - id: torus-cycles
+    src: /images/fields/algebraic-topology/torus-cycles.jpg
+    alt: A wireframe torus with one loop drawn around the tube in red and another around the central hole in magenta.
+    caption: >-
+      The two loops behind $H_1 = \mathbb{Z}^2$: one around the tube (red), one around the
+      hole (magenta). Neither can be shrunk to a point or slid into the other.
+    credit: Krishnavedala
+    license: CC0
+    source: https://commons.wikimedia.org/wiki/File:Torus_cycles.svg
+  - id: hopf-fibration
+    src: /images/fields/algebraic-topology/hopf-fibration.jpg
+    alt: Nested coloured bands of interlocking circles in space, beside a small sphere marked with coloured arcs.
+    caption: >-
+      Hopf's map, drawn. Each point of the 2-sphere (bottom right) corresponds to a whole
+      circle in the 3-sphere, and every two of those circles are linked. Circles over one
+      coloured arc sweep out one of the bands.
+    credit: Niles Johnson
+    license: CC BY 4.0
+    source: https://commons.wikimedia.org/wiki/File:Hopf_Fibration.png
 ---
 
 ## A Formula That Ignored Measurement
@@ -275,11 +315,15 @@ $$
 
 A cube gives $8 - 12 + 6$. An icosahedron gives $12 - 30 + 20$. Squash the solid, bend its faces, stretch it into any shape, and the count never changes. It was a fact about how the pieces are *connected*, not how large they are. Leibniz had once wished for an *analysis situs*, a geometry of position rather than magnitude. Euler, who had already solved the bridges of Königsberg by ignoring distances, supplied its first real theorem.
 
+{{img:kepler-solids}}
+
 That is why the field's parent is [Euclidean geometry](/math/euclidean-geometry/). The formula was born as a theorem about Euclid's solids, and it had to be pried loose from them.
 
 ## The Counterexamples
 
 The formula did not stay simple. In 1813 {{fig:lhuilier|Simon Lhuilier}} produced solids where it fails: a polyhedral picture frame gives $V - E + F = 0$, and each extra tunnel lowers the count by two. Lakatos later made this episode famous as a case study in how mathematics grows. Every counterexample was met either by narrowing the definition of "polyhedron" or by realising that the formula measured something new.
+
+{{img:hexagonal-torus}}
 
 The second response won. $V - E + F$ measures the number of *holes*, the genus, and it is a property of the surface, not of any particular way of cutting it into faces. By the mid-nineteenth century Riemann was using the same kind of count to classify surfaces, and Möbius and Jordan were classifying closed surfaces completely by it.
 
@@ -309,6 +353,11 @@ A sphere, cut like a cube, gives $8 - 12 + 6 = 2$. In general a surface with $g$
 
 Homology records more. The first homology group of the torus is $H_1 = \mathbb{Z}^2$: two independent loops, one around the tube and one through the hole, that cannot be deformed into each other or shrunk away. For the sphere, $H_1 = 0$: every loop shrinks. Because deformation never changes these groups, they prove at once that no stretching turns a doughnut into a ball, the kind of impossibility statement the field exists to make. And Euler's number reappears: $\chi$ is the alternating sum of the ranks of the homology groups, here $1 - 2 + 1$.
 
+{{img:torus-cycles}}
+
 ## Wrapping Spheres Around Spheres
 
 The simplest-looking questions in the field are still unanswered. How many ways can one sphere be wrapped around another? {{fig:hopf|Heinz Hopf}}'s discovery in 1931 that a 3-sphere wraps nontrivially around a 2-sphere, in infinitely many distinct ways, showed that these *homotopy groups of spheres* are wild. Computing them has driven the field's most powerful machinery for more than ninety years. Some of the answers now come from computer-assisted calculation, and the table still has no visible end.
+
+
+{{img:hopf-fibration}}
