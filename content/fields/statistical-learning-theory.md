@@ -250,17 +250,52 @@ further_reading:
   - citation: "Hastie, T., Tibshirani, R. & Friedman, J. (2009). The Elements of Statistical Learning (2nd ed.). Springer."
     url: null
     note: The standard reference on learning methods from a statistical point of view.
+
+images:
+  - id: mark-i-perceptron
+    src: /images/fields/statistical-learning-theory/mark-i-perceptron.jpg
+    alt: A man adjusting a camera-like device aimed at a large printed letter C, in front of racks of electronics.
+    caption: >-
+      The Mark I Perceptron, in a photograph released by the US Navy, which funded it. A
+      printed letter C faces its camera; the racks behind hold the adjustable weights.
+    credit: U.S. Navy, National Museum of the U.S. Navy
+    license: Public domain
+    source: https://commons.wikimedia.org/wiki/File:330-PSA-80-60_(USN_710739)_(20897323365).jpg
+  - id: svm-hyperplanes
+    src: /images/fields/statistical-learning-theory/svm-hyperplanes.png
+    alt: Filled and open dots on a plane with three lines; H1 fails to separate them, H2 separates them narrowly, and H3 separates them with the widest gap.
+    caption: >-
+      Three lines through two classes. $H_1$ fails to separate them; $H_2$ does, by a hair;
+      $H_3$ leaves the widest margin. The support vector machine picks the widest margin,
+      which is what its generalisation guarantee rewards.
+    credit: Zack Weinberg, after Cyc
+    license: CC BY-SA 3.0
+    source: https://commons.wikimedia.org/wiki/File:Svm_separating_hyperplanes_(SVG).svg
+  - id: double-descent
+    src: /images/fields/statistical-learning-theory/double-descent.png
+    alt: A schematic of error against model capacity, with test error falling, rising to a peak at the interpolation threshold, then falling again.
+    caption: >-
+      Double descent, schematically. Classical theory expects test error to rise once a model
+      can fit its training data perfectly; past that threshold it falls again, as Belkin and
+      colleagues showed.
+    credit: Dkarkada, after Belkin (2021)
+    license: CC BY-SA 4.0
+    source: https://commons.wikimedia.org/wiki/File:Double_descent.png
 ---
 
 ## Machines That Learn
 
 In 1958 {{fig:frank-rosenblatt|Frank Rosenblatt}} announced the perceptron, a machine that learned to classify patterns by adjusting the weights on its inputs after each mistake. The press predicted machines that would walk, talk and be conscious. In 1969 {{fig:marvin-minsky|Marvin Minsky}} and {{fig:seymour-papert|Seymour Papert}} proved what a single perceptron cannot do. It cannot tell whether two inputs differ, because no single straight boundary separates the cases. Multi-layer networks might, but nobody knew how to train them. Interest in neural networks collapsed for more than a decade. In 1986 {{fig:david-rumelhart|David Rumelhart}}, {{fig:geoffrey-hinton|Geoffrey Hinton}} and Ronald Williams showed that backpropagation, sending the error backwards through the layers, trains them.
 
+{{img:mark-i-perceptron}}
+
 ## The Mathematics of Generalisation
 
 Meanwhile a theory of why learning works had been built in Moscow. Fitting examples is the problem of [statistical inference](/math/statistical-inference/), but with a twist: the learner chooses its rule from a huge family after seeing the data, so the usual error bars do not apply. In 1971 {{fig:vladimir-vapnik|Vladimir Vapnik}} and {{fig:alexey-chervonenkis|Alexey Chervonenkis}} found the condition under which training error is a reliable guide to future error for every rule in the family at once. It depends on one number, the largest set of points the family can label in all possible ways.
 
 In 1984 {{fig:leslie-valiant|Leslie Valiant}}, a computer scientist at Harvard, asked a different question. Which concepts can be learned efficiently, with polynomially many examples and polynomial computation? His PAC model brought learning into [computational complexity](/math/computational-complexity/), and it turned out that some concepts are learnable from few examples yet impossible to learn efficiently if cryptography is secure. Five years later it was shown that the number of examples needed is set by the VC dimension, joining the two theories. At Bell Labs, Vapnik and {{fig:corinna-cortes|Corinna Cortes}} turned the theory into the support vector machine in 1995, and for a decade it outperformed neural networks on many tasks.
+
+{{img:svm-hyperplanes}}
 
 ## A Closer Look: How Many Ways Can a Line Divide Points?
 
@@ -282,5 +317,7 @@ With ten points, lines can produce only 92 of the 1,024 labellings. If a line fi
 ## The Deep Learning Puzzle
 
 From 2012, deep neural networks trained by backpropagation on large data sets and fast hardware began to beat every other method at recognising images and speech, translating languages and, in 2020, predicting protein structures. They have millions or billions of parameters, far more than their training examples. In 2016 a team including Chiyuan Zhang showed that such networks can memorise pictures whose labels have been randomly shuffled, so by Vapnik's measure they can fit anything. Yet on real labels they generalise well. In 2019 Mikhail Belkin and colleagues showed that past the point of perfect fit, test error can fall a second time.
+
+{{img:double-descent}}
 
 The classical theory is not wrong, but its bounds say nothing useful about these networks. Explanations under study involve the implicit preferences of the training algorithm, the margins and compressibility of the learned networks, links to [information theory](/math/information-theory/), and the structure of natural data. Why overparameterised networks generalise is the central open question of the field, and it matters, because such systems are now trusted with decisions far beyond recognising handwriting.
