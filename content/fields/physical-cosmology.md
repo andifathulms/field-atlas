@@ -234,6 +234,38 @@ further_reading:
   - citation: "Kragh, H. (1996). Cosmology and Controversy: The Historical Development of Two Theories of the Universe. Princeton University Press."
     url: null
     note: The history of the Big Bang versus steady-state debate, carefully told.
+
+images:
+  - id: hubble-1929
+    src: /images/fields/physical-cosmology/hubble-1929.png
+    alt: A scatter plot of galaxy velocities against distance up to two million parsecs, with straight lines rising through the points.
+    caption: >-
+      Hubble's 1929 diagram: the farther the galaxy, the faster it recedes. His distances
+      were too small, so the slope, about 500 km/s per megaparsec, was seven times today's value.
+    credit: Edwin Hubble, Proceedings of the National Academy of Sciences, 1929
+    license: Public domain
+    source: https://commons.wikimedia.org/wiki/File:Edwin_Hubble_velocity-distance_relation_1929.png
+  - id: holmdel-horn
+    src: /images/fields/physical-cosmology/holmdel-horn.jpg
+    alt: A large horn-shaped radio antenna mounted on a rotating base, on a grassy hill.
+    caption: >-
+      The Holmdel horn antenna at Bell Labs, New Jersey, where Penzias and Wilson heard the
+      hiss that turned out to be the cosmic microwave background.
+    credit: Erik Dunham
+    license: CC BY-SA 3.0
+    source: https://commons.wikimedia.org/wiki/File:Holmdel_Horn_Antenna.jpg
+  - id: cobe-spectrum
+    src: /images/fields/physical-cosmology/cobe-spectrum.jpg
+    alt: A smooth single-peaked curve of intensity against waves per centimetre, titled Cosmic Microwave Background Spectrum from COBE, with the note that theory and observation agree.
+    caption: >-
+      The background's spectrum as measured by NASA's COBE satellite in 1990: a perfect
+      black-body curve at 2.725 K, with the measurements so close to it that at this scale they
+      cannot be told apart from the line. Plotted against
+      frequency, as here, it peaks near 5 waves per centimetre; plotted against wavelength it
+      peaks near 1 mm.
+    credit: NASA, COBE/FIRAS
+    license: Public domain
+    source: https://commons.wikimedia.org/wiki/File:Firas_spectrum.jpg
 ---
 
 ## A Universe for Einstein's Equations
@@ -248,11 +280,15 @@ Others took the equations at face value. {{fig:friedmann|Alexander Friedmann}}, 
 
 The observational case was made by {{fig:hubble|Edwin Hubble}} in 1929. Using the relation between the brightness and pulsation period of Cepheid stars discovered by {{fig:leavitt|Henrietta Leavitt}}, he measured distances to galaxies and found that their recession speeds grow in proportion to distance. The universe is expanding. Run the film backward and everything was once packed together; Lemaître called it the "primeval atom". Einstein visited Hubble in 1931 and accepted the expansion.
 
+{{img:hubble-1929}}
+
 ## Echo of the Big Bang
 
 For decades expansion did not settle how the universe began. The steady-state theory of Hoyle, Bondi and Gold (1948) proposed that new matter appears continuously as space expands, so the universe has no beginning. Hoyle would coin the name "Big Bang" for the rival idea on BBC radio in 1949. It was widely heard as mockery, though he denied meaning it that way. Meanwhile {{fig:alpher|Ralph Alpher}}, {{fig:herman|Robert Herman}} and George Gamow worked out what a hot beginning implies: the right mix of hydrogen and helium, and a faint radiation left over from the hot early universe, now cooled to a few degrees above absolute zero.
 
 In 1965 {{fig:penzias|Arno Penzias}} and {{fig:robert-wilson|Robert Wilson}} found that radiation by accident, as a hiss in a Bell Labs antenna that would not go away. It filled the sky evenly at 2.7 K. The steady state theory could not explain it, and the Big Bang became the standard picture. Satellites since then (COBE, WMAP, Planck) have mapped its tiny ripples, the seeds of all later galaxies, and measured the universe's age as 13.8 billion years.
+
+{{img:holmdel-horn}}
 
 ## A Closer Look: The Age and Temperature of the Universe
 
@@ -273,6 +309,8 @@ $$
 $$
 
 That is the temperature Penzias and Wilson found, and which satellites have since measured as 2.7255 K. By Wien's law it peaks at a wavelength of about 1 millimetre, in the microwave band, which is why an antenna built for satellite communications picked it up. Two measurements, a rate of expansion and a temperature, describe the same history.
+
+{{img:cobe-spectrum}}
 
 ## The Dark Universe
 
