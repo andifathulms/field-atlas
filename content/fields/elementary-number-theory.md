@@ -199,13 +199,13 @@ further_reading:
 images:
   - id: fermat-margin-note
     src: /images/fields/elementary-number-theory/fermat-margin-note.jpg
-    alt: A printed page in Latin and Greek, with a paragraph headed "Observatio Domini Petri de Fermat" set between two numbered problems.
+    alt: Detail of a printed page, Question VIII in Latin and Greek columns, followed by a paragraph headed "Observatio Domini Petri de Fermat".
     caption: >-
       The margin note in print. After Fermat's death his son Samuel published an edition of
       Diophantus (1670) that included his father's notes. Below Question VIII, on splitting a
       square into two squares, comes the *Observatio Domini Petri de Fermat*: no cube splits
       into two cubes, nor any higher power, and the margin is too narrow for the proof.
-    credit: Diophantus, Arithmetica, ed. Samuel de Fermat, 1670
+    credit: Diophantus, Arithmetica, ed. Samuel de Fermat, 1670 (detail of p. 61)
     license: Public domain
     source: https://commons.wikimedia.org/wiki/File:Diophantus-II-8-Fermat.jpg
   - id: euler
