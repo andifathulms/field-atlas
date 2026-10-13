@@ -220,11 +220,36 @@ further_reading:
   - citation: "Grcar, J. F. (2011). Mathematicians of Gaussian elimination. Notices of the American Mathematical Society 58(6): 782–792."
     url: null
     note: A short history from the Nine Chapters to the computer age.
+
+images:
+  - id: nine-chapters
+    src: /images/fields/numerical-linear-algebra/nine-chapters.jpg
+    alt: A page of a traditionally bound Chinese book in vertical columns of characters, the title column naming the Nine Chapters on the Mathematical Art.
+    caption: >-
+      The opening page of an 1820 edition of the *Nine Chapters*, with Liu Hui's commentary.
+      Its first problems ask for the areas of fields: 15 by 16 paces makes one *mu*. The
+      method of elimination comes in chapter eight.
+    credit: Nine Chapters on the Mathematical Art, 1820 edition
+    license: Public domain
+    source: https://commons.wikimedia.org/wiki/File:%E4%B9%9D%E7%AB%A0%E7%AE%97%E8%A1%93%E7%B4%B0%E8%8D%89%E5%9C%96%E8%AA%AA.jpg
+  - id: strassen
+    src: /images/fields/numerical-linear-algebra/strassen.png
+    alt: Grids showing how each of the four blocks C11 to C22 of a matrix product is built from seven products M1 to M7, with green plus-one and red minus-one cells.
+    caption: >-
+      Strassen's trick for multiplying two 2-by-2 block matrices. The usual method needs eight
+      block products; Strassen's needs seven, $M_1$ to $M_7$, combined with additions and
+      subtractions (green and red). Applied recursively, the cost falls from $n^3$ to about
+      $n^{2.81}$.
+    credit: Cyp
+    license: CC BY-SA 3.0
+    source: https://commons.wikimedia.org/wiki/File:Strassen_algorithm.svg
 ---
 
 ## Elimination
 
 Systems of linear equations are among the oldest problems in mathematics. The Chinese *Nine Chapters on the Mathematical Art*, compiled by about the first century CE, solves them by writing the coefficients in columns on a counting board and subtracting one column from another until the unknowns can be read off one at a time. The method is exactly what is now taught as Gaussian elimination.
+
+{{img:nine-chapters}}
 
 The European name comes from least squares. In 1805 {{fig:legendre|Adrien-Marie Legendre}} published a rule for fitting an orbit to more observations than it has unknowns: minimise the sum of the squared errors. In 1809 {{fig:gauss|Carl Friedrich Gauss}} gave the rule a basis in probability and a systematic way to solve the resulting equations. He also claimed to have used it since 1795, which Legendre resented, a dispute followed in [statistical inference](/math/statistical-inference/). Through the nineteenth century, surveyors and geodesists solved such systems by hand, sometimes with dozens of unknowns.
 
@@ -239,6 +264,8 @@ A year later {{fig:turing|Alan Turing}} separated the two sources of trouble. A 
 The 1950s and 1960s produced most of the algorithms still in daily use. In 1952 {{fig:magnus-hestenes|Magnus Hestenes}} and {{fig:eduard-stiefel|Eduard Stiefel}} published the conjugate gradient method, which never changes the matrix at all and only multiplies vectors by it. That made it ideal, once its value was recognised, for the huge sparse systems that come from [partial differential equations](/math/numerical-pdes/). For eigenvalues, {{fig:john-francis|John Francis}} and {{fig:vera-kublanovskaya|Vera Kublanovskaya}} independently found the QR algorithm around 1961. In 1965 Gene Golub and William Kahan showed how to compute the singular value decomposition stably, which made least squares and data compression reliable.
 
 In 1969 {{fig:volker-strassen|Volker Strassen}}, trying to prove that elimination was the best possible method, found instead that it was not. His paper, three pages long, was titled "Gaussian elimination is not optimal". The algorithms were then collected into shared libraries: EISPACK and LINPACK in the 1970s, and LAPACK from 1992, which still sits beneath most scientific software.
+
+{{img:strassen}}
 
 ## A Closer Look: Counting and Conditioning
 
