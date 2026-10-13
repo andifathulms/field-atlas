@@ -240,6 +240,38 @@ further_reading:
   - citation: "Apostol, T. M. (1976). Introduction to Analytic Number Theory. Springer."
     url: null
     note: The standard first textbook, rigorous and self-contained.
+
+images:
+  - id: prime-counting
+    src: /images/fields/analytic-number-theory/prime-counting.png
+    alt: A line chart up to 10,000 with three rising curves; the green prime count hugs the blue logarithmic integral, while the red x over log x curve falls below both.
+    caption: >-
+      Counting primes up to 10,000. The true count $\pi(x)$ (green) reaches 1,229. Gauss's
+      logarithmic integral (blue) predicts about 1,245; $x/\ln x$ (red) predicts about 1,086.
+    credit: Vickvvy
+    license: CC BY-SA 4.0
+    source: https://commons.wikimedia.org/wiki/File:Comparison_of_prime-counting_approximations.svg
+  - id: zeta-critical-line
+    src: /images/fields/analytic-number-theory/zeta-critical-line.png
+    alt: A plot of the absolute value of the zeta function along the critical line, an oscillating curve that dips to zero three times between 10 and 30.
+    caption: >-
+      The size of $\zeta(\tfrac12 + ix)$ along Riemann's line. It touches zero at $x \approx 14.13$,
+      $21.02$ and $25.01$, the first three zeros. Trillions more have been checked since, and
+      every one lies on the line.
+    credit: Geek3
+    license: CC BY 3.0
+    source: https://commons.wikimedia.org/wiki/File:Mplwp_riemann_zeta0.5abs.svg
+  - id: prime-counting-error
+    src: /images/fields/analytic-number-theory/prime-counting-error.png
+    alt: A log-log chart of two error curves out to ten to the twenty-fourth; the error of x over ln x climbs steeply while the error of the logarithmic integral stays far lower.
+    caption: >-
+      The two errors on logarithmic scales, out to $10^{24}$. There $x/\ln x$ is off by about
+      $3.4 \times 10^{20}$, while the logarithmic integral is off by about $1.7 \times 10^{10}$,
+      well inside the bound the Riemann hypothesis would guarantee,
+      $\frac{1}{8\pi}\sqrt{x}\,\ln x \approx 2.2 \times 10^{12}$.
+    credit: Dcoetzee
+    license: CC0
+    source: https://commons.wikimedia.org/wiki/File:Prime_number_theorem_absolute_error.svg
 ---
 
 ## Counting Primes with Calculus
@@ -254,11 +286,15 @@ a consequence of unique factorisation written in the language of calculus. From 
 
 Half a century later, poring over tables, the teenage {{fig:gauss|Gauss}} and {{fig:legendre|Legendre}} each guessed the law: up to $x$, about $x/\ln x$ numbers are prime. In 1837 {{fig:dirichlet|Dirichlet}} proved that primes are spread across all compatible arithmetic progressions, using new functions, now called L-functions, and the full machinery of analysis. The methods of [elementary number theory](/math/elementary-number-theory/) had been left behind.
 
+{{img:prime-counting}}
+
 ## Riemann's Eight Pages
 
 In 1859 {{fig:riemann|Bernhard Riemann}}, better known for his work in [geometry](/math/riemannian-geometry/), wrote his only paper on number theory. Using the [complex analysis](/math/complex-analysis/) he had developed in his thesis, he extended Euler's function to complex numbers, where it becomes the zeta function $\zeta(s)$, and showed that the exact count of primes is determined by the locations of its zeros. The primes are, in a precise sense, a sum of waves whose frequencies are those zeros.
 
 He also computed a few zeros and found them all on one vertical line. It was "very probable", he wrote, that all of them lie there, but he had put aside the search for a proof "after some fleeting vain attempts". That remark is the Riemann hypothesis.
+
+{{img:zeta-critical-line}}
 
 ## The Theorem, Twice
 
@@ -276,6 +312,8 @@ The prime number theorem predicts that there are about $x / \ln x$ primes up to 
 | $10^9$ | 50,847,534 | 48,254,942 | 50,849,235 |
 
 Both estimates have the right growth, but $\operatorname{li}(x)$ is far better. Up to a billion it is off by about 1,700, where $x/\ln x$ is off by more than two and a half million.
+
+{{img:prime-counting-error}}
 
 How large can the error $\pi(x) - \operatorname{li}(x)$ get? That is exactly what the Riemann hypothesis controls. If it is true, the error never grows much faster than $\sqrt{x}\,\ln x$, about the size of the fluctuations in a random walk of $x$ steps. At $x = 10^9$ that scale is about 660,000. Lowell Schoenfeld's explicit form of the bound, $\frac{1}{8\pi}\sqrt{x}\,\ln x$, is about 26,000. The actual error is 1,701, well inside it. Riemann's explicit formula shows where the error comes from: each zero of the zeta function contributes a wave to the count of primes. Zeros on the critical line produce waves of the smallest possible size. A zero off the line would produce a larger wave, and the primes would be measurably less regular than they appear.
 
