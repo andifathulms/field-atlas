@@ -214,11 +214,42 @@ further_reading:
   - citation: "Einsiedler, M. & Ward, T. (2011). Ergodic Theory with a View towards Number Theory. Springer."
     url: null
     note: A textbook that leads from the basics to Furstenberg's theorem and beyond.
+
+images:
+  - id: boltzmann
+    src: /images/fields/ergodic-theory/boltzmann.jpg
+    alt: A halftone photograph of Ludwig Boltzmann with swept-back hair, small round spectacles and a full beard.
+    caption: >-
+      Ludwig Boltzmann, from the photograph album presented to Karl Weierstrass on his
+      seventieth birthday in 1885.
+    credit: Photograph by Leopold Bude
+    license: Public domain
+    source: https://commons.wikimedia.org/wiki/File:Das_Fotoalbum_f%C3%BCr_Weierstra%C3%9F_040_(Ludwig_Boltzmann).jpg
+  - id: sinai-billiard
+    src: /images/fields/ergodic-theory/sinai-billiard.png
+    alt: A square table with a round obstacle in the middle and a ball's path bouncing between the walls and the obstacle; a cluster of nearby starting points spreads apart after hitting the disc.
+    caption: >-
+      A Sinai billiard: a square table with a convex obstacle. Each bounce off the curved disc
+      spreads nearby paths apart, which is what makes the motion ergodic and chaotic.
+    credit: George Stamatiou, after XaosBits
+    license: CC BY 2.5
+    source: https://commons.wikimedia.org/wiki/File:SinaiBilliard.svg
+  - id: benford
+    src: /images/fields/ergodic-theory/benford.png
+    alt: A bar chart of first-digit frequencies from 1 to 9, falling from about 30 percent for 1 to under 5 percent for 9.
+    caption: >-
+      Benford's law, $\log_{10}(1 + 1/d)$: a first digit of 1 about 30.1% of the time, 7
+      about 5.8%, and 9 only 4.6%. The powers of two follow it exactly in the long run.
+    credit: Gknor
+    license: Public domain
+    source: https://commons.wikimedia.org/wiki/File:Rozklad_benforda.svg
 ---
 
 ## Boltzmann's Assumption
 
 A gas contains around $10^{23}$ molecules, far too many to follow. In 1871 {{fig:boltzmann|Ludwig Boltzmann}} proposed a way around it. Assume that the gas, over time, passes through every state with its energy. Then its long-run average behaviour equals the average over all those states, which can be calculated. Thermodynamics would follow from mechanics plus this ergodic hypothesis, a name usually traced to the Greek words for "work" and "path".
+
+{{img:boltzmann}}
 
 The hypothesis was attacked from two sides. Literally, a single trajectory cannot pass through every point of a many-dimensional space. And in 1890 {{fig:poincare|Henri Poincaré}} proved that a system preserving volume in a bounded space must return, again and again, arbitrarily close to where it started. Ernst Zermelo pointed out that a gas must then eventually return to its initial, lower-entropy state, which seemed to contradict the second law. Boltzmann replied that the return times are unimaginably long. The objections showed that the foundations needed exact mathematics.
 
@@ -230,6 +261,8 @@ The mathematics came from [real analysis](/math/real-analysis/). Lebesgue's meas
 
 In 1958 {{fig:kolmogorov|Andrey Kolmogorov}} brought in Shannon's information theory. He defined the entropy of a dynamical system: the rate at which watching it reveals new information. {{fig:yakov-sinai|Yakov Sinai}} gave the definition its final form, and in 1970 {{fig:donald-ornstein|Donald Ornstein}} showed that for random processes like coin tossing, entropy is the whole story. Processes with the same entropy are equivalent. In 1970 Sinai proved that a ball bouncing among convex obstacles, a fully deterministic system, is ergodic and chaotic, and such billiards were later shown to be, in Ornstein's sense, exactly as random as tossing a coin.
 
+{{img:sinai-billiard}}
+
 ## A Closer Look: The First Digits of the Powers of Two
 
 List the powers of two: 2, 4, 8, 16, 32, 64, 128, 256, 512, 1024, … and look at their first digits: 2, 4, 8, 1, 3, 6, 1, 2, 5, 1, … How often is the first digit a 1?
@@ -239,6 +272,8 @@ A number starts with the digit 1 exactly when the fractional part of its base-10
 Adding $\log_{10} 2$ each time and keeping the fractional part is a rotation of a circle of circumference 1 by the angle $0.30103\ldots$ Because $\log_{10} 2$ is irrational, the rotation never repeats, and it is ergodic. {{fig:weyl|Hermann Weyl}} and others proved between 1909 and 1916 that the orbit of such a rotation spends time in each arc in proportion to its length, and ergodic theory later explained why: an irrational rotation is ergodic in the strongest possible way, with only one invariant measure. So the first digit is 1 with long-run frequency $\log_{10} 2 \approx 30.1\%$.
 
 Counting confirms it: of $2^1$ to $2^{1000}$, exactly 301 begin with 1. The same argument gives frequency $\log_{10}(1 + 1/d)$ for first digit $d$. Digit 7 should appear about 5.8% of the time, and it does, 56 times in the first thousand, although it first appears only at $2^{46} = 70{,}368{,}744{,}177{,}664$. This is Benford's law, and ergodic theory explains why it holds exactly for the powers of two. Auditors use Benford's law to detect fabricated accounts, whose first digits tend to be too evenly spread.
+
+{{img:benford}}
 
 ## Dynamics and Numbers
 
