@@ -234,6 +234,47 @@ further_reading:
   - citation: "Coxeter, H. S. M. (1961). Introduction to Geometry. Wiley."
     url: null
     note: A wide, classic tour of Euclidean geometry and what grows out of it, for readers comfortable with proofs.
+
+images:
+  - id: oxyrhynchus-papyrus
+    src: /images/fields/euclidean-geometry/oxyrhynchus-papyrus.jpg
+    alt: A torn papyrus fragment with lines of Greek capitals and a small diagram of a square divided into rectangles.
+    caption: >-
+      One of the oldest surviving pieces of the *Elements*, found at Oxyrhynchus in Egypt
+      and copied around 100 CE, some four centuries after Euclid. The diagram belongs to
+      Book II, Proposition 5.
+    credit: Papyrus Oxyrhynchus 29, Penn Museum
+    license: Public domain
+    source: https://commons.wikimedia.org/wiki/File:P._Oxy._I_29.jpg
+  - id: saccheri-quadrilateral
+    src: /images/fields/euclidean-geometry/saccheri-quadrilateral.png
+    alt: A quadrilateral with right angles at the two base corners, equal sides, and question marks at the two top angles.
+    caption: >-
+      Saccheri's quadrilateral: two equal sides standing at right angles on a base. With the
+      fifth postulate the top angles are right angles. Saccheri tried to rule out the other two
+      cases, and the case of acute top angles never produced the contradiction he wanted.
+    credit: HB, after Saccheri (1733)
+    license: CC BY-SA 3.0
+    source: https://commons.wikimedia.org/wiki/File:Saccheri%27s_quadrilateral.svg
+  - id: proposition-i-47
+    src: /images/fields/euclidean-geometry/proposition-i-47.png
+    alt: A right triangle ABC with squares on all three sides, the lines FC and AD drawn, and the square on BC split by a line from A into two shaded rectangles.
+    caption: >-
+      The figure for I.47. Triangles $FBC$ and $ABD$ are the congruent pair, and the line from
+      $A$ through $K$ to $L$ splits the square on $BC$ into two rectangles, each shaded to
+      match the square it equals.
+    credit: Jokes Free4Me and Pbroks13
+    license: Public domain
+    source: https://commons.wikimedia.org/wiki/File:Illustration_to_Euclid%27s_proof_of_the_Pythagorean_theorem2.svg
+  - id: byrne-pythagoras
+    src: /images/fields/euclidean-geometry/byrne-1847-pythagoras.jpg
+    alt: A printed double page in which the proof of the Pythagorean theorem is told almost entirely with red, yellow, blue and black shapes instead of letters.
+    caption: >-
+      The same proof in Oliver Byrne's 1847 edition of the *Elements*, which replaced the
+      letters with coloured shapes so the argument could be followed by eye.
+    credit: Oliver Byrne, 1847
+    license: Public domain
+    source: https://commons.wikimedia.org/wiki/File:Byrne_1847_Pythagoras_Querformat.jpg
 ---
 
 ## Origins
@@ -241,6 +282,8 @@ further_reading:
 Greek geometry did not begin with Euclid. Thales was credited with proving that a diameter bisects a circle. The Pythagoreans had their theorem about right triangles. Eudoxus built a theory of proportion careful enough to handle lengths that no fraction describes. Hippocrates of Chios even wrote an earlier *Elements*, now lost.
 
 What {{fig:euclid|Euclid}} did, around 300 BCE in Alexandria, was put all of it in order. The *Elements* opens with definitions ("a point is that which has no part"), five postulates, and five common notions. Then, over thirteen books, it derives more than four hundred propositions, each one resting only on what came before it. For two thousand years this was what a proof looked like. Not all of it is geometry: Books VII to IX, on whole numbers and primes, are where [number theory](/math/elementary-number-theory/) begins.
+
+{{img:oxyrhynchus-papyrus}}
 
 ## The Fifth Postulate
 
@@ -258,6 +301,8 @@ The attempts form a long, international chain. Ptolemy and Proclus tried in anti
 
 {{fig:saccheri|Girolamo Saccheri}} took the boldest route. In *Euclid Freed of Every Flaw* (1733), he assumed the postulate was false and tried to derive a contradiction. What he actually derived was a long run of valid theorems about a geometry in which triangle angles add up to less than $\pi$. He had no contradiction, so he declared one and stopped. Johann Lambert (1766) and Adrien-Marie Legendre went down the same road. Without accepting it, they had been mapping the ground that the [non-Euclidean](/math/non-euclidean-geometry/) geometers would later claim.
 
+{{img:saccheri-quadrilateral}}
+
 ## Ruler, Compass, and Coordinates
 
 Two other threads ran through the same centuries. Greek geometers had posed three construction problems they could not solve using only a straightedge and compass: trisect any angle, double the volume of a cube, and draw a square with the same area as a given circle. For two thousand years no one could do them, and no one could prove they were impossible.
@@ -272,6 +317,8 @@ Book I, Proposition 47 of the *Elements* proves that in a right triangle the squ
 
 Draw a right triangle $ABC$ with the right angle at $A$, and build a square outward on each side. From $A$, drop a line perpendicular to the hypotenuse $BC$ and extend it across the big square on $BC$, cutting that square into two rectangles. The claim is that each rectangle equals one of the smaller squares.
 
+{{img:proposition-i-47}}
+
 Take the square on $AB$. Join $C$ to the far corner of that square, and join $A$ to the far corner of the big square beyond $B$. The two triangles this makes are *congruent*: they have two sides equal (sides of the same squares) and the angle between those sides equal, a right angle plus the angle at $B$ in each case. Now use a fact proved earlier (I.41): a triangle has half the area of a parallelogram on the same base between the same parallels. One triangle is half the square on $AB$. The other is half the rectangle next to $B$. So the square on $AB$ equals that rectangle.
 
 The same argument on the other side shows the square on $AC$ equals the other rectangle. Together the two rectangles make the whole square on $BC$, so
@@ -281,6 +328,8 @@ AB^2 + AC^2 = BC^2 .
 $$
 
 Every step cites an earlier proposition, and those rest on the postulates. In particular I.41 depends, through the theory of parallels, on the fifth postulate. On a sphere or a saddle, where that postulate fails, the theorem is false. The most famous theorem in geometry is secretly a theorem about flat space.
+
+{{img:byrne-pythagoras}}
 
 ## Rebuilding the Foundations
 
