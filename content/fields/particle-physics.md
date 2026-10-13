@@ -213,6 +213,45 @@ further_reading:
   - citation: "Griffiths, D. (2008). Introduction to Elementary Particles (2nd ed.). Wiley-VCH."
     url: null
     note: The standard undergraduate introduction.
+
+images:
+  - id: bubble-chamber
+    src: /images/fields/particle-physics/bubble-chamber.jpg
+    alt: A labelled line tracing beside a liquid-hydrogen bubble chamber photograph of an antiproton collision, the tracing naming each track.
+    caption: >-
+      An antiproton striking a proton in a liquid-hydrogen bubble chamber, with a tracing that
+      names each track. Pictures like this, by the hundred thousand, filled the particle zoo.
+    credit: U.S. Department of Energy
+    license: Public domain
+    source: https://commons.wikimedia.org/wiki/File:Liquid_hydrogen_bubble_chamber_photograph_of_an_anti-proton_colliding_with_a_proton.jpg
+  - id: standard-model
+    src: /images/fields/particle-physics/standard-model.png
+    alt: A chart of the Standard Model's particles, three generations of quarks and leptons beside the gauge bosons and the Higgs boson, with mass, charge and spin for each.
+    caption: >-
+      The Standard Model's particles: six quarks and six leptons in three generations, the
+      force carriers, and the Higgs boson found in 2012.
+    credit: Cush and MissMJ
+    license: Public domain
+    source: https://commons.wikimedia.org/wiki/File:Standard_Model_of_Elementary_Particles.svg
+  - id: davis-detector
+    src: /images/fields/particle-physics/davis-detector.jpg
+    alt: A cutaway drawing of an underground cavern holding a horizontal 100,000-gallon tank, with pumps, a control room and a tunnel to the Yates Shaft.
+    caption: >-
+      Davis's detector in the Homestake gold mine, South Dakota: 100,000 gallons of
+      perchloroethylene, about 615 tonnes, 1,478 m underground. A few neutrinos a week turned
+      chlorine atoms into radioactive argon.
+    credit: Brookhaven National Laboratory, U.S. Department of Energy
+    license: Public domain
+    source: https://commons.wikimedia.org/wiki/File:Atomic_Energy_Commission%27s_Brookhaven_National_Laboratory_solar_neutrino_detector._c._1972_(diagram).jpg
+  - id: cms-event-2012
+    src: /images/fields/particle-physics/cms-event-2012.jpg
+    alt: A colourful 3D rendering of particle tracks spraying out from a collision at the centre of the CMS detector.
+    caption: >-
+      A proton–proton collision recorded by CMS at the Large Hadron Collider in 2012, the year
+      the Higgs boson was found. Each line is a particle reconstructed from the detector's hits.
+    credit: CMS Collaboration, CERN
+    license: CC BY 4.0
+    source: https://commons.wikimedia.org/wiki/File:CMS-PHO-EVENTS-2012-007-1.png
 ---
 
 ## The Invisible Particle
@@ -225,11 +264,15 @@ The same year, {{fig:tsung-dao-lee|Tsung-Dao Lee}} and {{fig:chen-ning-yang|Chen
 
 By the early 1960s accelerators had found dozens of short-lived particles, a "zoo" with no apparent order. {{fig:murray-gell-mann|Murray Gell-Mann}} organised them with [representation theory](/math/representation-theory/): they fell into patterns of eight and ten predicted by the symmetry group SU(3), and the missing member of one pattern, the omega-minus, was found in 1964 with the predicted mass. The same year, Gell-Mann and {{fig:george-zweig|George Zweig}} proposed that the patterns arise because the particles are made of three smaller constituents, quarks, with fractional charges. No free quark has ever been seen. But in 1968 electron-scattering experiments at SLAC found hard, point-like objects inside protons, as a beam of bullets might reveal stones inside a cloud.
 
+{{img:bubble-chamber}}
+
 Why quarks are never seen alone was made plausible in 1973 by asymptotic freedom: the strong force, carried by gluons, weakens at short distances and strengthens as quarks are pulled apart, so separating them takes ever more energy. A proof of this confinement is still lacking.
 
 ## Unification
 
 In 1967 {{fig:steven-weinberg|Steven Weinberg}}, and independently {{fig:abdus-salam|Abdus Salam}}, building on the work of {{fig:sheldon-glashow|Sheldon Glashow}}, combined electromagnetism and the weak force into one [quantum field theory](/physics/quantum-field-theory/) of Yang–Mills type. The weak force's carriers are heavy because of a field that fills space, the mechanism found in 1964 by {{fig:francois-englert|François Englert}} and {{fig:robert-brout|Robert Brout}}, by {{fig:peter-higgs|Peter Higgs}}, and by others. The W and Z particles were found at CERN in 1983 by the UA1 team led by {{fig:carlo-rubbia|Carlo Rubbia}} and the rival UA2 team, at the predicted masses. On 4 July 2012 the Large Hadron Collider found the Higgs boson itself, completing the Standard Model.
+
+{{img:standard-model}}
 
 ## A Closer Look: Sixty-Five Billion Neutrinos a Second
 
@@ -245,6 +288,11 @@ and each produces two neutrinos, so about $6.4 \times 10^{14}$ neutrinos cross e
 
 Almost none of them interact. That is why {{fig:raymond-davis|Raymond Davis}} needed a tank of 600 tonnes of cleaning fluid nearly a mile underground to catch a few. From 1968 his experiment found only about a third of the rate predicted by {{fig:john-bahcall|John Bahcall}}'s detailed model of the Sun. For thirty years physicists argued over whether the model or the experiment was wrong. Neither was. The Sun makes only electron neutrinos, and Davis could detect only those. In 1998 Super-Kamiokande in Japan, in an analysis led by {{fig:takaaki-kajita|Takaaki Kajita}}, found that neutrinos made in the atmosphere change type in flight, and in 2001 the Sudbury Neutrino Observatory in Canada, led by {{fig:arthur-mcdonald|Arthur McDonald}}, counted all types and found the full predicted total. Neutrinos oscillate, so they have mass, and the Standard Model had to be extended.
 
+{{img:davis-detector}}
+
 ## Beyond the Standard Model
 
 The Standard Model has passed every test at accelerators. It is nonetheless incomplete. It does not include gravity, it says nothing about the dark matter that makes up most of the matter in [the universe](/physics/physical-cosmology/), neutrino masses had to be added, and it cannot explain why the universe is made of matter rather than equal parts matter and antimatter. Whether the next step comes from larger colliders, underground detectors or the sky is unknown.
+
+
+{{img:cms-event-2012}}
