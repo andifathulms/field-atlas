@@ -191,13 +191,47 @@ further_reading:
   - citation: "Fulton, W. & Harris, J. (1991). Representation Theory: A First Course. Springer."
     url: null
     note: The standard graduate introduction, rich in examples.
+
+images:
+  - id: sophus-lie
+    src: /images/fields/representation-theory/sophus-lie.jpg
+    alt: Cabinet-card photograph of Sophus Lie, with a full beard and oval spectacles, from a studio in Christiania.
+    caption: >-
+      Sophus Lie in 1896, three years before his death. His continuous groups were meant as a
+      Galois theory for differential equations.
+    credit: L. Szaciński, Christiania
+    license: No known restrictions
+    source: https://commons.wikimedia.org/wiki/File:Portrett_av_Sophus_Lie,_1896.jpg
+  - id: e8-projection
+    src: /images/fields/representation-theory/e8-projection.jpg
+    alt: A dense, symmetric web of coloured lines joining points arranged in concentric rings, on a dark background.
+    caption: >-
+      The 240 roots of $E_8$, the largest of Killing's five exceptional Lie algebras, projected
+      from eight dimensions onto the plane.
+    credit: Jgmoxness, on a dark background
+    license: CC BY-SA 3.0
+    source: https://commons.wikimedia.org/wiki/File:E8Coxeter.svg
+  - id: ammonia
+    src: /images/fields/representation-theory/ammonia.jpg
+    alt: A ball-and-stick model of ammonia, a blue nitrogen atom bonded to three white hydrogen atoms in a low pyramid.
+    caption: >-
+      Ammonia, NH₃: a nitrogen atom above a triangle of hydrogens, with the six symmetries of
+      the triangle. Its six vibrations sort by the table above: two of the trivial type and two
+      pairs of the standard, two-dimensional type.
+    credit: Ben Mills
+    license: Public domain
+    source: https://commons.wikimedia.org/wiki/File:Ammonia-3D-balls-A.png
 ---
 
 ## Symmetry for Differential Equations
 
 In the 1870s the Norwegian mathematician {{fig:sophus-lie|Sophus Lie}} set out to do for differential equations what [Galois](/math/galois-theory/) had done for polynomials: understand when they can be solved through their symmetries. Those symmetries are *continuous*, like rotations by any angle, so they form smooth groups, now called Lie groups. Lie saw that such a group is governed by its "infinitesimal" transformations, which form a simpler linear object, a Lie algebra.
 
+{{img:sophus-lie}}
+
 Which Lie algebras are possible? {{fig:killing|Wilhelm Killing}}, teaching at a small-town lyceum, answered in 1888–90. The simple ones fall into four infinite families and exactly five exceptions, the largest being $E_8$, of dimension 248. His proofs were flawed. {{fig:elie-cartan|Élie Cartan}} made them rigorous in 1894. Credit went mostly to Cartan for decades, and historians now argue that Killing's paper was one of the most remarkable ever written.
+
+{{img:e8-projection}}
 
 ## Groups as Matrices
 
@@ -228,6 +262,8 @@ The *character* of a representation records the trace of each matrix, one number
 This small table obeys striking laws. The squares of the dimensions (first column) add up to the size of the group: $1^2 + 1^2 + 2^2 = 6$. Any two different rows are orthogonal once each column is weighted by its class size. For example, trivial and standard give $1 \cdot 2 \cdot 1 + 3 \cdot 1 \cdot 0 + 2 \cdot 1 \cdot (-1) = 0$. These laws hold for every finite group, and they let mathematicians pin down groups, including the Monster, through character tables alone.
 
 In quantum mechanics the same table is physics. A molecule with threefold symmetry, such as ammonia, a pyramid on a triangular base, has this symmetry group, and its vibrations and electron orbitals sort themselves into these three types. The table predicts which vibrations can absorb infrared light, before anyone looks at a spectrum.
+
+{{img:ammonia}}
 
 ## Moonshine
 
