@@ -213,11 +213,45 @@ further_reading:
   - citation: "Dantzig, G. B. (1963). Linear Programming and Extensions. Princeton University Press."
     url: null
     note: The founder's own account of linear programming.
+
+images:
+  - id: lp-feasible-region
+    src: /images/fields/combinatorial-optimization/lp-feasible-region.png
+    alt: A chart of a two-variable linear programme, with three constraint lines bounding a blue region and dashed red lines of constant objective value.
+    caption: >-
+      A linear programme in two variables. The constraints cut out the blue region; the dashed
+      lines are levels of the quantity being maximised. The best value is always reached at a
+      corner, which is why the simplex method only walks from corner to corner.
+    credit: Sdo
+    license: Public domain
+    source: https://commons.wikimedia.org/wiki/File:Linear_programming_polytope.png
+  - id: max-flow
+    src: /images/fields/combinatorial-optimization/max-flow.png
+    alt: A network from s to t through nodes o, p, q and r, each arrow labelled with flow over capacity.
+    caption: >-
+      Another network, each pipe labelled flow / capacity. Five units leave $s$ and five
+      reach $t$. The pipes $o \to q$ and $p \to r$ form a cut of capacity $3 + 2 = 5$, and
+      both are full, so this flow is the most possible.
+    credit: Maksim and Cyhawk
+    license: CC BY-SA 3.0
+    source: https://commons.wikimedia.org/wiki/File:Max_flow.svg
+  - id: germany-tour
+    src: /images/fields/combinatorial-optimization/germany-tour.jpg
+    alt: A map of Germany covered by a single red line that winds through thousands of towns and returns to its start.
+    caption: >-
+      The shortest round trip through 15,112 towns in Germany, found and proved optimal in 2001
+      by Applegate, Bixby, Chvátal and Cook. The 85,900-point record of 2006 came five years
+      later.
+    credit: William Cook
+    license: Public domain
+    source: https://commons.wikimedia.org/wiki/File:Optimal_tour_traveling_salesman_problem_Germany.gif
 ---
 
 ## Planning
 
 Optimisation problems came from planning. In 1939 the Leningrad plywood trust asked {{fig:leonid-kantorovich|Leonid Kantorovich}} how to divide work among its machines to produce the most. He saw that the question, and many like it, meant maximising a linear quantity subject to linear constraints. In 1947 {{fig:george-dantzig|George Dantzig}}, planning logistics for the US Air Force, reached the same formulation independently and invented the simplex method to solve it. The method walks from corner to corner of a many-sided region, improving at each step. It was soon running on the first commercial computers.
+
+{{img:lp-feasible-region}}
 
 Kantorovich's work was met with suspicion at home, since it attached prices to resources in a planned economy, but he later shared the 1975 Nobel memorial prize in economics. Dantzig did not, although for many the simplex method is his monument.
 
@@ -245,8 +279,12 @@ Can more get through? Draw a line around $s$ alone. Everything leaving it must p
 
 Ford and Fulkerson proved that this always happens: in every network, the maximum flow equals the minimum cut, and their algorithm finds both. The two are a matching pair of problems, one maximising and one minimising, with the same answer. That duality runs through all of linear programming, and it is what lets optimisation software certify that an answer is optimal rather than just good.
 
+{{img:max-flow}}
+
 ## Hard Problems, Good Answers
 
 For NP-hard problems, the goal became guaranteed approximation. In 1976 {{fig:nicos-christofides|Nicos Christofides}}, and independently {{fig:anatoliy-serdyukov|Anatoliy Serdyukov}}, found a method that finds a travelling-salesman tour at most 50% longer than the shortest. For 44 years that was the best guarantee known, until {{fig:anna-karlin|Anna Karlin}}, {{fig:nathan-klein|Nathan Klein}} and {{fig:shayan-oveis-gharan|Shayan Oveis Gharan}} improved it in 2020 by a fraction of about $10^{-36}$. In practice, exact methods do much better than the guarantees suggest: in 2006 an optimal tour through 85,900 locations was found and proved optimal.
+
+{{img:germany-tour}}
 
 Linear programming itself was proved efficient in 1979 by {{fig:leonid-khachiyan|Leonid Khachiyan}}. Whether it can be solved in a number of steps independent of the size of its numbers is still open.
