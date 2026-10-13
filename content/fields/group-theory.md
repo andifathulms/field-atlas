@@ -193,11 +193,42 @@ further_reading:
   - citation: "Armstrong, M. A. (1988). Groups and Symmetry. Springer."
     url: null
     note: A gentle undergraduate introduction that starts from geometric symmetry.
+
+images:
+  - id: cayley
+    src: /images/fields/group-theory/cayley.jpg
+    alt: Photograph of Arthur Cayley, seated, resting his head on one hand, with papers at his elbow.
+    caption: >-
+      Arthur Cayley, who in 1854 defined a group abstractly, by its multiplication alone.
+    credit: Herbert Beraud
+    license: Public domain
+    source: https://commons.wikimedia.org/wiki/File:Arthur_Cayley.jpg
+  - id: square-symmetries
+    src: /images/fields/group-theory/square-symmetries.png
+    alt: Eight squares each containing a letter F in a different orientation, labelled by products of two reflections s and t, with the reflection lines dashed.
+    caption: >-
+      The eight symmetries of a square, shown by what they do to a letter F. Everything is
+      built from two flips, $s$ and $t$. The products $st$ and $ts$ are the two quarter-turns,
+      in opposite directions: order matters.
+    credit: JayBeeEll
+    license: CC BY 4.0
+    source: https://commons.wikimedia.org/wiki/File:Dihedral_group_actions_on_a_square.svg
+  - id: rubiks-cube
+    src: /images/fields/group-theory/rubiks-cube.jpg
+    alt: A Rubik's cube with its top layer partly turned and coloured stickers scrambled.
+    caption: >-
+      The Rubik's cube is a group too: its moves combine, can be undone, and depend on order.
+      It has $43{,}252{,}003{,}274{,}489{,}856{,}000$ reachable positions.
+    credit: Booyabazooka, Meph666 and Niabot
+    license: CC BY-SA 3.0
+    source: https://commons.wikimedia.org/wiki/File:Rubik%27s_cube_v3.svg
 ---
 
 ## Three Roots
 
 Groups arrived from several directions at once. In [Galois theory](/math/galois-theory/) they were the symmetries of an equation's roots. In geometry, Felix Klein's Erlangen programme of 1872, on the [non-Euclidean geometry](/math/non-euclidean-geometry/) page, defined each geometry by its group of motions. In number theory, Gauss had worked with structures that were groups in all but name. What united them was an abstraction. In 1854 {{fig:cayley|Arthur Cayley}} defined a group simply as a set with a multiplication obeying a few rules, whatever the elements happen to be. For decades almost no one noticed.
+
+{{img:cayley}}
 
 The abstraction paid off. {{fig:sylow|Ludwig Sylow}}, teaching at a Norwegian secondary school, proved in 1872 that every finite group contains certain predictable subgroups. Theorems about all groups at once, whatever their origin, became possible.
 
@@ -215,7 +246,11 @@ The classification was announced complete in 1983. Then a gap surfaced: one case
 
 Cut a square out of paper and label its corners 1, 2, 3, 4 clockwise. How many ways can you pick it up and put it back so that it fills the same hole? There are four rotations (by $0°$, $90°$, $180°$, $270°$) and four flips (about the two diagonals and the two lines through the midpoints of opposite sides). That makes eight symmetries in all, and they form a group, called $D_4$.
 
+{{img:square-symmetries}}
+
 Combine two of them: $r$, a quarter-turn clockwise, and $s$, a flip about the vertical axis. Doing $r$ then $s$ does not give the same result as doing $s$ then $r$. Try it with the labelled square: the corners end up in different places. In fact $s$ followed by $r$ equals $r$ turned the other way followed by $s$. The group is *non-commutative*: order matters, just as it does for turning a Rubik's cube or rotating a book first about one axis and then another.
+
+{{img:rubiks-cube}}
 
 Lagrange's theorem predicts which smaller groups can sit inside $D_4$: their sizes must divide 8. They do. There is the group of just "do nothing" (size 1), a single flip with "do nothing" (size 2), the four rotations (size 4), and a few others of sizes 2 and 4. None has size 3, 5, 6 or 7.
 
