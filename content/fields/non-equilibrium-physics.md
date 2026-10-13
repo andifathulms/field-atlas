@@ -213,11 +213,33 @@ further_reading:
   - citation: "Seifert, U. (2012). Stochastic thermodynamics, fluctuation theorems and molecular machines. Reports on Progress in Physics 75(12): 126001."
     url: null
     note: A technical review of the modern theory of small driven systems.
+
+images:
+  - id: maxwells-demon
+    src: /images/fields/non-equilibrium-physics/maxwells-demon.png
+    alt: Two boxes of mixed fast red and slow blue molecules; after a small demon operates a trapdoor, the slow ones are all on one side and the fast ones on the other.
+    caption: >-
+      Maxwell's demon sorting fast molecules (red) to one side and slow ones (blue) to the
+      other, so one chamber heats and the other cools with no work done.
+    credit: Htkym
+    license: CC BY 2.5
+    source: https://commons.wikimedia.org/wiki/File:Maxwell%27s_demon.svg
+  - id: bz-reaction
+    src: /images/fields/non-equilibrium-physics/bz-reaction.jpg
+    alt: A petri dish of red liquid crossed by concentric pale blue waves spreading outward from several centres.
+    caption: >-
+      The Belousov–Zhabotinsky reaction in a dish: waves of colour spreading from centres across
+      a mixture held far from equilibrium.
+    credit: Stephen Morris
+    license: CC BY 2.0
+    source: https://commons.wikimedia.org/wiki/File:Belousov_Zhabotinsky_reaction_(3572095252).jpg
 ---
 
 ## The Demon
 
 In 1867, in a letter to his friend Tait, {{fig:maxwell|James Clerk Maxwell}} imagined a tiny being guarding a trapdoor between two chambers of gas. It lets fast molecules pass one way and slow ones the other. Without any work being done, one chamber heats up and the other cools, in apparent violation of the second law. Maxwell's point was that the second law is statistical: it holds because we cannot handle molecules one by one. {{fig:william-thomson|William Thomson}} called the being a demon, and for a century physicists argued about what stops it.
+
+{{img:maxwells-demon}}
 
 In 1929 {{fig:leo-szilard|Leo Szilard}} reduced the problem to a box containing a single molecule and argued that the demon's knowledge must carry a cost in entropy. The full answer came from computing. {{fig:rolf-landauer|Rolf Landauer}} at IBM argued in 1961 that the unavoidable cost lies in *erasing* information, and {{fig:charles-bennett|Charles Bennett}} showed in 1982 that the demon can measure for free but must eventually clear its memory, and that erasure pays back the entropy it saved. Information is physical.
 
@@ -228,6 +250,8 @@ Most real processes involve flows: heat through a wall, current through a wire, 
 ## Order From Flow
 
 Far from equilibrium, systems can organise themselves. In 1951 {{fig:boris-belousov|Boris Belousov}} found a chemical mixture that oscillated between colours for hours. Journals rejected his paper because chemical reactions were supposed to run steadily towards equilibrium. Anatol Zhabotinsky developed it in the 1960s, and it produces spirals and travelling waves. {{fig:ilya-prigogine|Ilya Prigogine}} argued that such "dissipative structures", ordered patterns sustained by a flow of energy, are common. Convection cells, chemical waves and living organisms all maintain their order by exporting entropy.
+
+{{img:bz-reaction}}
 
 In the 1990s exact laws were found that hold arbitrarily far from equilibrium. {{fig:denis-evans|Denis Evans}} and colleagues found how often small systems briefly run "backwards", with entropy decreasing. {{fig:christopher-jarzynski|Christopher Jarzynski}} and {{fig:gavin-crooks|Gavin Crooks}} found equalities that extract equilibrium quantities from violently irreversible processes. Biophysicists now use them on single molecules.
 
