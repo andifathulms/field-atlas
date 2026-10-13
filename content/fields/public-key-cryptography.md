@@ -228,11 +228,63 @@ further_reading:
   - citation: "Hoffstein, J., Pipher, J. & Silverman, J. H. (2014). An Introduction to Mathematical Cryptography (2nd ed.). Springer."
     url: null
     note: An undergraduate textbook covering RSA, elliptic curves and lattice-based systems.
+
+images:
+  - id: enigma
+    src: /images/fields/public-key-cryptography/enigma.jpg
+    alt: Top view of an Enigma machine in its wooden case, with four rotor windows, a lamp board, a keyboard and plug cables below.
+    caption: >-
+      A four-rotor Enigma machine. Its rotor order, starting letters and plug wiring were the
+      shared secret, and every operator needed the same settings, distributed in advance on
+      printed key sheets. That is the problem Diffie and Hellman removed.
+    credit: Robert Brook
+    license: CC0
+    source: https://commons.wikimedia.org/wiki/File:An_Enigma_machine.jpg
+  - id: public-key-encryption
+    src: /images/fields/public-key-cryptography/public-key-encryption.png
+    alt: A diagram in which Bob encrypts the message Hello Alice with Alice's public key, producing hexadecimal ciphertext that only Alice's private key decrypts.
+    caption: >-
+      Public-key encryption: anyone can lock a message with Alice's published key, but only
+      her private key opens it. In RSA the public key is $(n, e)$ and the private key is $d$.
+    credit: David Göthberg
+    license: Public domain
+    source: https://commons.wikimedia.org/wiki/File:Public_key_encryption.svg
+  - id: curve-addition-mod-23
+    src: /images/fields/public-key-cryptography/curve-addition-mod-23.jpg
+    alt: A grid of scattered dots for the curve y squared equals x cubed plus x plus 1 over the field with 23 elements, with points P, Q and R highlighted and the addition worked out beside it.
+    caption: >-
+      The chord-and-tangent law over a finite field, where cryptography uses it. On
+      $y^2 = x^3 + x + 1$ modulo 23, adding $P = (3, 10)$ and $Q = (9, 7)$ gives slope
+      $\lambda = 11$ and $R = (17, 20)$. All three points satisfy the equation modulo 23.
+    credit: יוסי א
+    license: Public domain
+    source: https://commons.wikimedia.org/wiki/File:ECC_ADD.jpg
+  - id: diffie-hellman-paint
+    src: /images/fields/public-key-cryptography/diffie-hellman-paint.png
+    alt: Two columns of paint pots for Alice and Bob. Each adds a secret colour to a shared yellow, swaps the mixture in public, and adds their secret colour again, both ending with the same brown.
+    caption: >-
+      Diffie–Hellman as paint. The shared yellow is $g$, the secret colours are $a$ and $b$,
+      the mixtures sent in public are $g^a$ and $g^b$, and the common brown is $g^{ab}$. Mixing
+      is easy and unmixing is hard, as computing powers is easy and discrete logarithms are not.
+    credit: Lorddota
+    license: CC BY-SA 4.0
+    source: https://commons.wikimedia.org/wiki/File:Diffie-Hellman_Key_Exchange_Paint_Analogy.svg
+  - id: ibm-quantum
+    src: /images/fields/public-key-cryptography/ibm-quantum.jpg
+    alt: A tiered gold-coloured cryostat hung with coiled cables, the cooling assembly of a superconducting quantum computer.
+    caption: >-
+      The cooling stages of an IBM quantum computer prototype, exhibited in 2018. Machines like
+      it are still far too small to run Shor's algorithm against real keys.
+    credit: Lars Ploughman
+    license: CC BY-SA 2.0
+    source: https://commons.wikimedia.org/wiki/File:IBM_Q_at_CES_(39660636671).jpg
 ---
 
 ## The Key Distribution Problem
 
 Every cipher in history had the same weakness. Sender and receiver needed the same secret key, and they had to share it somehow beforehand, by courier, diplomatic bag or codebook. In a world of millions of strangers exchanging data, that was impossible.
+
+{{img:enigma}}
 
 In 1976 {{fig:diffie|Whitfield Diffie}} and {{fig:hellman|Martin Hellman}} showed it was unnecessary. Take a large prime $p$ and a base $g$. Alice picks a secret $a$ and sends $g^a \bmod p$; Bob picks $b$ and sends $g^b \bmod p$. Each raises what they received to their own secret, and both arrive at $g^{ab} \bmod p$. An eavesdropper sees only $g^a$ and $g^b$, and recovering $a$ from $g^a$, a *discrete logarithm*, has no known fast method. The arithmetic is from [elementary number theory](/math/elementary-number-theory/). The idea was new.
 
@@ -240,11 +292,15 @@ In 1976 {{fig:diffie|Whitfield Diffie}} and {{fig:hellman|Martin Hellman}} showe
 
 A year later, three MIT researchers, {{fig:rivest|Ron Rivest}}, {{fig:shamir|Adi Shamir}} and {{fig:adleman|Leonard Adleman}}, found a full public-key cipher. Publish $n = pq$, the product of two large secret primes, and an exponent $e$. Anyone can encrypt a message $m$ as $m^e \bmod n$. Undoing it needs an exponent $d$ that can be computed only by someone who knows $p$ and $q$, and it works because of Euler's generalisation of Fermat's little theorem: a 1640 curiosity turned into the lock on the world's data.
 
+{{img:public-key-encryption}}
+
 The story had a secret prologue. At Britain's signals intelligence agency GCHQ, {{fig:james-ellis|James Ellis}} had conceived of "non-secret encryption" in 1970. {{fig:cocks|Clifford Cocks}} found essentially RSA in 1973, and Malcolm Williamson found Diffie–Hellman in 1974. All of it stayed classified until 1997.
 
 ## Curves and Primes
 
 In 1985 {{fig:koblitz|Neal Koblitz}} and {{fig:victor-miller|Victor Miller}} independently proposed moving the discrete logarithm into the group of points on an elliptic curve, the central object of [arithmetic geometry](/math/arithmetic-geometry/). No known shortcut works there, so a 256-bit elliptic-curve key matches a roughly 3,000-bit RSA key. Elliptic curves, studied for their own beauty since Mordell, now carry most secure web traffic.
+
+{{img:curve-addition-mod-23}}
 
 Cryptography also needs a plentiful supply of large primes, and a fast way to recognise them. In 2002 {{fig:agrawal|Manindra Agrawal}} and his students Neeraj Kayal and Nitin Saxena proved that primality can be decided in guaranteed polynomial time, using a generalisation of Fermat's little theorem. Gauss had called telling primes from composites one of the most important problems in arithmetic, in the *Disquisitiones*.
 
@@ -264,6 +320,8 @@ The key holder recovers it: $13^{27} \bmod 55 = 7$. It works because of Euler's 
 
 **Diffie–Hellman.** Alice and Bob agree in public on a prime $p = 23$ and a base $g = 5$. Alice secretly picks $a = 6$ and sends $5^6 \bmod 23 = 8$. Bob secretly picks $b = 15$ and sends $5^{15} \bmod 23 = 19$. Each raises what they received to their own secret:
 
+{{img:diffie-hellman-paint}}
+
 $$
 19^6 \bmod 23 = 2, \qquad 8^{15} \bmod 23 = 2 .
 $$
@@ -273,5 +331,7 @@ Both now hold the shared secret 2, which never crossed the wire. An eavesdropper
 ## The Quantum Threat
 
 In 1994 {{fig:shor|Peter Shor}} showed that a quantum computer could factor numbers and compute discrete logarithms efficiently. RSA, Diffie–Hellman and elliptic curves would all fall. No machine is yet large enough, but data intercepted now could be read later, so the replacement has already begun. In 2024 the US standards body published its first post-quantum standards, most of them built on hard problems in lattices over rings of [algebraic integers](/math/algebraic-number-theory/).
+
+{{img:ibm-quantum}}
 
 Beneath it all lies an unproved assumption. Every public-key system presumes that some problems are genuinely hard, that one-way functions exist, and no one has proved it. That question belongs to [computational complexity](/math/computational-complexity/), where it sits beside P versus NP. The security of the digital world rests, in the end, on a conjecture.
