@@ -225,6 +225,27 @@ further_reading:
   - citation: "Robert, C. P. & Casella, G. (2004). Monte Carlo Statistical Methods, 2nd edition. Springer."
     url: null
     note: The standard textbook from the statistical side.
+
+images:
+  - id: quarter-circle
+    src: /images/fields/monte-carlo-methods/quarter-circle.png
+    alt: A unit square with a green quarter circle and six random dots, five inside the quarter circle and one outside.
+    caption: >-
+      The simplest Monte Carlo estimate: scatter points in a square and count those inside the
+      quarter circle, which fill $\pi/4$ of it on average. Here 5 of 6 land inside, giving
+      $\pi \approx 4 \times 5/6 \approx 3.3$; the square-root law governs how fast more points help.
+    credit: Ramac
+    license: Public domain
+    source: https://commons.wikimedia.org/wiki/File:Monte-Carlo_method_pi.svg
+  - id: buffon-needles
+    src: /images/fields/monte-carlo-methods/buffon-needles.png
+    alt: Black needles scattered at random angles across horizontal parallel lines, some crossing a line and some not.
+    caption: >-
+      Buffon's needles on a floor of boards, each needle as long as a board is wide. The share
+      that cross a crack tends to $2/\pi$, about 64%.
+    credit: Vladusty
+    license: CC0
+    source: https://commons.wikimedia.org/wiki/File:Buffon_Pi_Needles.svg
 ---
 
 ## Needles and Solitaire
@@ -232,6 +253,8 @@ further_reading:
 In 1777 {{fig:buffon|Georges-Louis Leclerc, Comte de Buffon}} published the answer to a question he had posed decades earlier. Drop a needle on a floor of parallel boards. If the needle is as long as a board is wide, it crosses a crack with probability $2/\pi$. The problem belongs to [probability theory](/math/probability-theory/), but it can be run backwards: drop enough needles, count the crossings, and estimate $\pi$. A few people tried in the nineteenth century. It was a curiosity, because deterministic formulas gave $\pi$ far faster.
 
 The idea became a method in 1946. {{fig:stanislaw-ulam|Stanislaw Ulam}}, recovering from an illness, tried to work out the chance that a game of solitaire comes out. The combinatorics was hopeless, but he saw that playing a hundred games and counting would give a good estimate. He told {{fig:von-neumann|John von Neumann}}, who at once saw how to apply it to the problem that mattered at Los Alamos: how neutrons scatter, split nuclei and multiply inside a bomb. Each neutron's life could be simulated as a sequence of random events and repeated thousands of times on the ENIAC. {{fig:nicholas-metropolis|Nicholas Metropolis}} suggested the name, after the casino where Ulam's uncle liked to gamble. Enrico Fermi, it later emerged, had used similar sampling by hand in Rome in the 1930s without publishing it.
+
+{{img:quarter-circle}}
 
 ## Walking Towards the Answer
 
@@ -244,6 +267,8 @@ Computing by chance needs random numbers, and computers cannot make them. Von Ne
 ## A Closer Look: Buffon's Needle
 
 Let the boards have width 1 and the needle length 1. Where the needle lands is described by two random numbers: the distance $y$ from its centre to the nearest crack, between 0 and $\tfrac12$, and its angle $\theta$ to the cracks, between 0 and $\tfrac{\pi}{2}$. The needle crosses a crack when $y \le \tfrac12 \sin\theta$. The probability is the area under that curve divided by the area of the rectangle:
+
+{{img:buffon-needles}}
 
 $$
 P = \frac{\int_0^{\pi/2} \tfrac12 \sin\theta \, d\theta}{\tfrac12 \cdot \tfrac{\pi}{2}} = \frac{1/2}{\pi/4} = \frac{2}{\pi} \approx 0.6366.
