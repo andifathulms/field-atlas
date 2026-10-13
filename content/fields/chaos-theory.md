@@ -210,6 +210,28 @@ further_reading:
   - citation: "Strogatz, S. H. (2015). Nonlinear Dynamics and Chaos (2nd ed.). Westview Press."
     url: null
     note: The standard introductory textbook.
+
+images:
+  - id: lorenz-attractor
+    src: /images/fields/chaos-theory/lorenz-attractor.jpg
+    alt: A single golden trajectory looping around two lobes, like the wings of a butterfly, on a black background.
+    caption: >-
+      One trajectory of Lorenz's 1963 convection model, drawn for a long time. It circles one
+      lobe, then the other, never repeating and never settling, and when it switches lobes is
+      unpredictable in practice.
+    credit: Wikimol and Dschwen
+    license: CC BY-SA 3.0
+    source: https://commons.wikimedia.org/wiki/File:Lorenz_attractor_yb.svg
+  - id: logistic-bifurcation
+    src: /images/fields/chaos-theory/logistic-bifurcation.png
+    alt: A bifurcation diagram with growth rate from 0 to 4 across the bottom, showing one curve that splits in two at 3, then into four, then dissolves into a dark band of chaos.
+    caption: >-
+      Where the logistic map settles, for each growth rate from 0 to 4. One stable value
+      splits into two at 3, four at about 3.45, then eight and more ever faster, until chaos
+      sets in near 3.57. Feigenbaum's 4.6692… is the ratio between successive gaps.
+    credit: Basti Schneider
+    license: CC BY-SA 3.0
+    source: https://commons.wikimedia.org/wiki/File:Bifurcation_diagram_logistic_map_lambda_0_to_4.png
 ---
 
 ## Before the Name
@@ -222,11 +244,15 @@ In 1961 {{fig:edward-lorenz|Edward Lorenz}}, a meteorologist at MIT, was running
 
 Lorenz realised this was not a fault of the computer but a property of the equations. His 1963 paper, a three-variable model of convection, showed motion that never repeats and never settles, winding forever around a butterfly-shaped set. If the atmosphere behaves like that, he concluded, detailed weather forecasts for weeks ahead are impossible. His 1972 talk, "Does the flap of a butterfly's wings in Brazil set off a tornado in Texas?", gave the idea its popular name.
 
+{{img:lorenz-attractor}}
+
 ## Simple Rules
 
 In the 1970s chaos turned up in equations far simpler than the weather. {{fig:robert-may|Robert May}} showed in 1976 that the logistic map, a one-line population model, becomes chaotic as its growth rate rises. {{fig:tien-yien-li|Tien-Yien Li}} and {{fig:james-yorke|James Yorke}} proved that "period three implies chaos", naming the field, unaware that {{fig:oleksandr-sharkovsky|Oleksandr Sharkovsky}} had proved a sharper theorem in Kyiv eleven years earlier.
 
 Then came a surprise in the other direction: order in chaos. At Los Alamos in 1975, {{fig:mitchell-feigenbaum|Mitchell Feigenbaum}} studied how the logistic map's cycles double in length, 1, 2, 4, 8, and so on, on the way to chaos. The growth rates at which the doublings occur crowd together at a steady ratio of $4.6692\ldots$. He tried a different equation and found the same number. It is universal, a property of the route to chaos rather than of any particular system. Experiments on convecting liquid helium measured it in 1980, and {{fig:oscar-lanford|Oscar Lanford}} proved it in 1982 with a computer-assisted proof.
+
+{{img:logistic-bifurcation}}
 
 ## A Closer Look: Two Populations That Start Almost Equal
 
