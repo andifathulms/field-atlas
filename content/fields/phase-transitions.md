@@ -213,11 +213,45 @@ further_reading:
   - citation: "Wilson, K. G. (1979). Problems in physics with many scales of length. Scientific American 241(2): 158–179."
     url: null
     note: Wilson's own non-technical account of the renormalisation group.
+
+images:
+  - id: co2-phase-diagram
+    src: /images/fields/phase-transitions/co2-phase-diagram.png
+    alt: A pressure-temperature phase diagram of carbon dioxide with solid, liquid, gas and supercritical fluid regions, a triple point near 217 K and a critical point near 304 K.
+    caption: >-
+      Carbon dioxide's phases. The liquid-gas boundary ends at the critical point, 31 °C and
+      74 bar, which is why Andrews could not liquefy the gas above 31 °C however hard he
+      compressed it.
+    credit: Rifleman 82
+    license: CC0
+    source: https://commons.wikimedia.org/wiki/File:Carbon_dioxide_pressure-temperature_phase_diagram-en.svg
+  - id: critical-opalescence
+    src: /images/fields/phase-transitions/critical-opalescence.jpg
+    alt: Three photos of a sealed glass cell of ethane, first with a clear meniscus between liquid and gas, then milky white, then clear and uniform.
+    caption: >-
+      Ethane heated through its critical point at 32.17 °C. Below it, liquid and gas meet at a
+      meniscus (1); at it, density fluctuations on every scale scatter light and the fluid turns
+      milky, critical opalescence (2); above it, a single fluid (3).
+    credit: Sven Horstmann
+    license: CC BY-SA 3.0
+    source: https://commons.wikimedia.org/wiki/File:CriticalPointMeasurementEthane.jpg
+  - id: ising-panels
+    src: /images/fields/phase-transitions/ising-panels.png
+    alt: Three square grids of blue and cream cells; the left almost all blue, the middle with large irregular patches of both, the right a fine speckle of both.
+    caption: >-
+      The two-dimensional Ising model simulated at three temperatures (blue up, cream down).
+      Below Onsager's temperature the magnets mostly agree; above it they are disordered. At it,
+      patches of every size form, the fluctuations mean-field theory leaves out.
+    credit: Simulated for Field Atlas
+    license: Field Atlas original
+    source: https://github.com/andifathulms/field-atlas/blob/main/scripts/diagrams/entropy.py
 ---
 
 ## Continuity of Liquid and Gas
 
 Water boils at 100 °C, abruptly, not gradually. In 1869 {{fig:thomas-andrews|Thomas Andrews}}, in Belfast, found that this sharp boundary can disappear. Compressing carbon dioxide below 31 °C, he saw it condense suddenly into liquid. Above 31 °C, no pressure produced a separate liquid. The gas simply grew denser, smoothly, until it was as dense as a liquid. Liquid and gas were two faces of one state, separated only below a *critical point*.
+
+{{img:co2-phase-diagram}}
 
 Four years later {{fig:johannes-van-der-waals|Johannes Diderik van der Waals}}, a Dutch schoolteacher writing his doctoral thesis, explained it with a simple equation. Molecules take up space and attract each other weakly, and those two corrections to the ideal gas law produce both condensation and a critical point. Maxwell reviewed the thesis and admired it.
 
@@ -230,6 +264,8 @@ Could statistical mechanics produce such sharpness at all? Every sum over states
 ## Universality
 
 Experiments showed that near critical points, quantities such as the magnetisation or the density difference change as powers of the distance from the transition, and that the powers are *the same* for carbon dioxide, xenon and certain magnets. Why should a fluid and a magnet agree? {{fig:leo-kadanoff|Leo Kadanoff}} suggested in 1966 that at a critical point, fluctuations exist at every scale, so the system looks the same when viewed from further away. {{fig:kenneth-wilson|Kenneth Wilson}} turned this into the renormalisation group in 1971: zoom out step by step, averaging over small details, and follow what survives. Only a few features do, such as the dimension of space and the symmetry of the order parameter. Everything else is washed out, which is why different materials share their critical behaviour. With {{fig:michael-fisher|Michael Fisher}} he computed the exponents, and they matched experiment.
+
+{{img:critical-opalescence}}
 
 The same ideas transformed [quantum field theory](/physics/quantum-field-theory/), where renormalisation had been a mathematical trick. In the 1970s {{fig:michael-kosterlitz|Michael Kosterlitz}} and {{fig:david-thouless|David Thouless}}, and independently {{fig:vadim-berezinskii|Vadim Berezinskii}}, found a new kind of transition driven by topology, the start of the study of topological matter.
 
@@ -248,6 +284,8 @@ k_B T_c = \frac{2J}{\ln(1 + \sqrt2)} \approx 2.269\,J, \qquad \beta = \tfrac18 .
 $$
 
 Mean-field theory overestimates the critical temperature by more than 75%, and gets the exponent badly wrong. The reason is fluctuations. Averaging ignores the large, correlated patches of up and down magnets that form near the transition, and those patches are what destroy order at a lower temperature than the average predicts.
+
+{{img:ising-panels}}
 
 In three dimensions, fluctuations matter less but still matter. The exponent is $\beta \approx 0.326$, known from the renormalisation group and computer calculations. It is the same number measured at the liquid–gas critical point of carbon dioxide, xenon and water, and in uniaxial magnets. None of those materials resemble a grid of magnets in detail. At the critical point, the details stop mattering. Above four dimensions, fluctuations become unimportant and mean-field theory's $\beta = \tfrac12$ becomes exact. The dimension of space is one of the few features that survives the zooming out.
 
