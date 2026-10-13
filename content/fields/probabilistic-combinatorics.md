@@ -184,17 +184,41 @@ further_reading:
   - citation: "Bollobás, B. (2001). Random Graphs (2nd ed.). Cambridge University Press."
     url: null
     note: The comprehensive account of random graph theory.
+
+images:
+  - id: erdos
+    src: /images/fields/probabilistic-combinatorics/erdos.jpg
+    alt: Photograph of Paul Erdős, elderly, with grey hair and thick-rimmed glasses, in a jacket and open shirt.
+    caption: >-
+      Paul Erdős at a student seminar in Budapest in 1992, four years before his death.
+    credit: Kmhkmh
+    license: CC BY 3.0
+    source: https://commons.wikimedia.org/wiki/File:Erdos_budapest_fall_1992_(cropped).jpg
+  - id: random-graph
+    src: /images/fields/probabilistic-combinatorics/random-graph.png
+    alt: A thousand red dots, most isolated or in tiny clusters around the edge, with a long tangled chain of connected dots in the middle.
+    caption: >-
+      A random graph on 1,000 points at the critical moment, when each point has on average
+      one connection. Most points sit alone or in tiny clusters; the largest piece, in the
+      centre, is about to become the giant.
+    credit: David Eppstein
+    license: CC0
+    source: https://commons.wikimedia.org/wiki/File:Critical_1000-vertex_Erd%C5%91s%E2%80%93R%C3%A9nyi%E2%80%93Gilbert_graph.svg
 ---
 
 ## Proof by Coin Toss
 
 In 1947 {{fig:erdos|Paul Erdős}} wanted to show that large networks can be coloured without creating big single-coloured clusters, which would put a lower bound on Ramsey numbers from [extremal combinatorics](/math/extremal-combinatorics/). Nobody could construct such colourings. Erdős did not try. He coloured each connection by tossing a coin and showed that the expected number of bad clusters was less than one, so some colouring must have none. The argument took a page. Its bound, $R(k,k) > 2^{k/2}$, has barely been improved since, and no explicit colouring matches it.
 
+{{img:erdos}}
+
 The method uses the tools of [probability theory](/math/probability-theory/) but its conclusions are certain. The randomness is a device for counting: "positive probability" just means "at least one". In 1959 Erdős used it for a result that seemed paradoxical: networks with no short cycles, which look sparse and tree-like everywhere up close, that still need any number of colours.
 
 ## The Giant Component
 
 With {{fig:alfred-renyi|Alfréd Rényi}}, Erdős then turned the method around and studied random networks themselves. Start with $n$ isolated points and add connections at random. At first the network is a dust of small pieces. When the average number of connections per point passes 1, a giant piece suddenly appears, containing a fixed fraction of all the points, while the next largest pieces stay tiny. It is a phase transition, like water turning to ice, and it happens in a network with no physics in it. {{fig:edgar-gilbert|Edgar Gilbert}} at Bell Labs had defined the same model independently.
+
+{{img:random-graph}}
 
 Random graphs became the reference point for real networks. When a social network or a food web differs from a random one, the difference is the interesting part.
 
