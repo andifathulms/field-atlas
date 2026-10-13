@@ -171,11 +171,33 @@ further_reading:
   - citation: "van der Waerden, B. L. (1991). Algebra (2 vols., English translation of Moderne Algebra). Springer."
     url: null
     note: The book that defined modern algebra, still readable.
+
+images:
+  - id: broom-bridge-plaque
+    src: /images/fields/abstract-algebra/broom-bridge-plaque.jpg
+    alt: A stone plaque on a bridge wall reading that on 16 October 1843 Sir William Rowan Hamilton discovered the formula for quaternion multiplication, i squared equals j squared equals k squared equals ijk equals minus one, beside a bronze relief of Hamilton.
+    caption: >-
+      The plaque on Broom Bridge in Dublin, with the rule Hamilton cut into the stone:
+      $i^2 = j^2 = k^2 = ijk = -1$. His original carving has long since worn away.
+    credit: Brendan Ward
+    license: CC0
+    source: https://commons.wikimedia.org/wiki/File:Broombridge_Hamilton_Plaque.jpg
+  - id: noether
+    src: /images/fields/abstract-algebra/noether.jpg
+    alt: Photograph of a young Emmy Noether with dark hair pinned up, in a pale striped high-collared blouse with a dark bow.
+    caption: >-
+      Emmy Noether around 1900, as a young woman in Erlangen, years before her work at
+      Göttingen reshaped algebra.
+    credit: Photograph, unknown author
+    license: Public domain
+    source: https://commons.wikimedia.org/wiki/File:Emmy-noether-2.jpg
 ---
 
 ## Numbers That Don't Commute
 
 For a long time algebra meant manipulating numbers, and the laws of arithmetic, like $ab = ba$, seemed beyond question. In 1843 {{fig:rowan-hamilton|William Rowan Hamilton}} broke one. He had spent years trying to build a three-dimensional analogue of the complex numbers. Walking along a canal in Dublin, he saw that it worked in four dimensions if multiplication was allowed to depend on order. He carved the rule into the stone of Broome Bridge. Quaternions showed that algebraic laws could be chosen, and by 1858 Cayley was studying matrices, which do not commute either.
+
+{{img:broom-bridge-plaque}}
 
 ## Existence Without Construction
 
@@ -208,6 +230,8 @@ Abstract algebra's method is to list the rules a system obeys, find the theorems
 ## Noether's Revolution
 
 The decisive figure was {{fig:noether|Emmy Noether}}. Barred as a woman from a regular position at Göttingen, she lectured for years under Hilbert's name without pay. In 1921 she showed that the decomposition of ideals, known separately in number theory and in polynomial algebra, follows from one abstract condition: every increasing chain of ideals stops. Rings satisfying it are now called *Noetherian*. Calculations gave way to structure: study objects through the maps that preserve their operations. Her students, the "Noether boys", carried the style everywhere.
+
+{{img:noether}}
 
 {{fig:van-der-waerden|Bartel van der Waerden}}, who attended her lectures and Artin's, wrote them up as *Moderne Algebra* (1930–31). It presented algebra as the study of groups, rings and fields, and became the template of algebra courses worldwide. In 1933 Noether, who was Jewish, was dismissed by the Nazi government and emigrated to Bryn Mawr, where she died in 1935. Einstein called her the most significant creative mathematical genius since higher education for women began.
 
