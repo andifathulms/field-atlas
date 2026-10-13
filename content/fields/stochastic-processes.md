@@ -254,11 +254,41 @@ further_reading:
   - citation: "Davis, M. & Etheridge, A. (2006). Louis Bachelier's Theory of Speculation: The Origins of Modern Finance. Princeton University Press."
     url: null
     note: Bachelier's thesis in translation, with a history of its influence.
+
+images:
+  - id: markov
+    src: /images/fields/stochastic-processes/markov.jpg
+    alt: An oval photographic portrait of Andrey Markov in 1886, with dark hair and a full beard.
+    caption: >-
+      Andrey Markov in 1886, twenty years before his chains.
+    credit: Photograph, unknown author
+    license: Public domain
+    source: https://commons.wikimedia.org/wiki/File:Andrei_Markov.jpg
+  - id: ito
+    src: /images/fields/stochastic-processes/ito.jpg
+    alt: Photograph of Kiyosi Itô in 1954, in a dark suit and striped tie.
+    caption: >-
+      Kiyosi Itô in 1954, ten years after he defined the stochastic integral.
+    credit: Photograph courtesy of the Itô family
+    license: Public domain
+    source: https://commons.wikimedia.org/wiki/File:Kiyoshi_Ito_1954.jpg
+  - id: pagerank
+    src: /images/fields/stochastic-processes/pagerank.png
+    alt: A network of eleven pages drawn as circles sized by their PageRank, with B at 38.4 percent and C at 34.3 percent the largest.
+    caption: >-
+      PageRank on a larger network, with the same 15% random jump. Page C has only one
+      incoming link, but it comes from B, the most visited page, so C ranks second. A link's
+      weight depends on where it comes from.
+    credit: 345Kai and Stannered
+    license: Public domain
+    source: https://commons.wikimedia.org/wiki/File:PageRanks-Example.svg
 ---
 
 ## Chance That Remembers
 
 [Probability theory](/math/probability-theory/) grew up on independent trials. The law of large numbers said that the average of independent coin tosses settles down. In 1902 the Russian mathematician Pavel Nekrasov argued that independence was therefore necessary for the law to hold, and drew conclusions about free will from it. {{fig:andrey-markov|Andrey Markov}}, a combative atheist, set out to prove him wrong. In 1906 he showed that the law also holds for chains of events in which each depends on the one before. To show that such chains occur in reality, he spent part of 1913 counting letters in Pushkin's verse novel *Eugene Onegin*.
+
+{{img:markov}}
 
 ## Brownian Paths
 
@@ -267,6 +297,8 @@ In 1900, in Paris, {{fig:louis-bachelier|Louis Bachelier}} modelled the price of
 The mathematical object came from [real analysis](/math/real-analysis/). In 1923 {{fig:norbert-wiener|Norbert Wiener}} constructed a probability measure on the space of all continuous paths, proving that Brownian motion exists. Its paths are continuous but so jagged that they have no slope at any point. In 1931 {{fig:kolmogorov|Andrey Kolmogorov}} showed that the probabilities of any Markov process in continuous time obey two differential equations, joining random paths to the heat equation. Two years later he gave all of probability its axioms.
 
 Calculus along a Brownian path still made no sense, because the path has no derivative. In 1944 {{fig:kiyosi-ito|Kiyosi Itô}}, who had developed his ideas at a government statistics office in Tokyo, defined the integral that makes it work. His chain rule has an extra term, because the square of a small Brownian step is not negligible: it is proportional to the time elapsed. In 2000 a sealed envelope that {{fig:wolfgang-doeblin|Wolfgang Doeblin}} had sent to the Paris Academy in 1940, shortly before he died as a soldier, was opened. It held a version of the same formula.
+
+{{img:ito}}
 
 ## A Closer Look: Markov Counts Letters
 
@@ -286,6 +318,8 @@ $$
 This is the stationary distribution, and it matches the observed share of vowels, $8638 / 20000 = 0.432$. The chain, knowing only which letter class came last, reproduces the overall frequency exactly, as Markov's theorem says it should.
 
 The same calculation ranks the web. Take three pages: A links to B and C, B links to C, and C links back to A. A surfer clicking links at random settles into spending 40% of the time on A, 20% on B and 40% on C. With PageRank's rule that the surfer jumps to a random page 15% of the time, the shares become about 38.8%, 21.5% and 39.7%. C, with two incoming links, edges ahead of A.
+
+{{img:pagerank}}
 
 ## Random Worlds
 
