@@ -218,15 +218,49 @@ further_reading:
   - citation: "Grattan-Guinness, I. (1972). Joseph Fourier, 1768–1830. MIT Press."
     url: null
     note: The historian's account of Fourier's work and its reception.
+
+images:
+  - id: string-harmonics
+    src: /images/fields/fourier-analysis/string-harmonics.png
+    alt: Seven stacked diagrams of a string fixed at both ends, vibrating in one, two, three and up to seven segments, with the nodes at 1/2, 1/3 and so on marked.
+    caption: >-
+      A string fixed at both ends vibrates in whole segments: the fundamental, then halves,
+      thirds, quarters, each a pure sine wave. Bernoulli's claim was that every vibration of the
+      string is a sum of these.
+    credit: Qef and Houtlijm
+    license: Public domain
+    source: https://commons.wikimedia.org/wiki/File:Harmonic_partials_on_strings.svg
+  - id: fourier
+    src: /images/fields/fourier-analysis/fourier.jpg
+    alt: Engraved portrait of Joseph Fourier with curly hair, a high white cravat and an embroidered coat.
+    caption: >-
+      Joseph Fourier, engraved by Geille after a drawing by Julien-Léopold Boilly.
+    credit: Amédée Félix Barthélemy Geille, after Julien-Léopold Boilly
+    license: Public domain
+    source: https://commons.wikimedia.org/wiki/File:Joseph_Fourier.jpg
+  - id: gibbs-phenomenon
+    src: /images/fields/fourier-analysis/gibbs-phenomenon.png
+    alt: A square wave drawn as the sum of 25 sine terms, nearly square but with small ripples along each flat part and a sharp spike just past every jump.
+    caption: >-
+      The square wave's series cut off after 25 terms, up to $\tfrac{1}{49}\sin 49x$. The flat
+      parts are nearly flat, but a spike rises beside every jump. Adding terms pushes the spike
+      closer to the jump without making it shorter: that is the Gibbs phenomenon.
+    credit: Johannes Rössel
+    license: Public domain
+    source: https://commons.wikimedia.org/wiki/File:Gibbs_phenomenon_50.svg
 ---
 
 ## Waves on a String
 
 In 1747 Jean d'Alembert wrote down the equation for a vibrating string, and a quarrel began. Daniel Bernoulli argued that every possible vibration is a sum of simple sine waves, the fundamental tone and its overtones. {{fig:euler|Euler}} and d'Alembert disagreed: a plucked string starts with a sharp corner, and how could a sum of smooth sines have one? The argument ran for decades. Underneath it was a question [calculus](/math/calculus/) had never asked: what exactly is a function?
 
+{{img:string-harmonics}}
+
 ## Fourier's Claim
 
 {{fig:fourier|Joseph Fourier}} gave a bold answer while studying something else. A prefect under Napoleon and a veteran of the Egyptian expedition, he was working out how heat spreads through solid bodies. In 1807 he claimed that *any* function on an interval, however jagged, can be written as a sum of sines and cosines, with coefficients given by integrals:
+
+{{img:fourier}}
 
 $$
 f(x) = \frac{a_0}{2} + \sum_{n=1}^{\infty} \left(a_n \cos nx + b_n \sin nx\right), \qquad a_n = \frac{1}{\pi}\int_{-\pi}^{\pi} f(x)\cos nx\,dx .
@@ -257,6 +291,8 @@ $$
 $$
 
 the Leibniz series for $\pi$, falling out as a by-product. Second, near each jump the partial sums always overshoot, by about 9% of the jump, however many terms are added. The overshoot squeezes closer to the jump but never shrinks. This is the *Gibbs phenomenon*. Henry Wilbraham noticed it in 1848, and it is named after Josiah Willard Gibbs, who described it in 1898–99. It shows up today as "ringing" around sharp edges in compressed images.
+
+{{img:gibbs-phenomenon}}
 
 That the series converges at every point except the jumps, and exactly what happens at the jumps (it converges to the midpoint, 0), was proved by Dirichlet in 1829. It was one of the first theorems of rigorous analysis.
 
