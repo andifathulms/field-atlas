@@ -209,6 +209,36 @@ further_reading:
   - citation: "Neukirch, J. (1999). Algebraic Number Theory. Springer."
     url: null
     note: The standard graduate text, through class field theory.
+
+images:
+  - id: gaussian-primes
+    src: /images/fields/algebraic-number-theory/gaussian-primes.png
+    alt: A square grid centred on the origin with black dots marking the Gaussian primes, arranged with fourfold symmetry.
+    caption: >-
+      The Gaussian primes with both coordinates between $-11$ and $11$. On the axes, 3, 7 and 11
+      are dots but 5 is missing: it splits as $(2 + i)(2 - i)$, and those two factors are the
+      dots at $2 \pm i$.
+    credit: Georg-Johann
+    license: CC BY-SA 3.0
+    source: https://commons.wikimedia.org/wiki/File:Gaussian-primes.svg
+  - id: kummer
+    src: /images/fields/algebraic-number-theory/kummer.jpg
+    alt: Sepia photograph of an older man with swept-back hair, a heavy moustache, a high collar and a bow tie.
+    caption: >-
+      Ernst Kummer, whose ideal numbers rescued unique factorisation and proved Fermat's Last
+      Theorem for every regular prime exponent.
+    credit: Photograph, unknown author
+    license: Public domain
+    source: https://commons.wikimedia.org/wiki/File:Ernst_Eduard_Kummer_photo.jpg
+  - id: dedekind
+    src: /images/fields/algebraic-number-theory/dedekind.jpg
+    alt: Full-length studio photograph of a young bearded man in spectacles and a long coat, one hand resting on books on a small table.
+    caption: >-
+      Richard Dedekind as a young man. His ideals replaced Kummer's phantom numbers with sets
+      of actual numbers, and the move set the pattern for modern algebra.
+    credit: Photograph by Johannes Ganz, ETH-Bibliothek Zürich
+    license: Public domain
+    source: https://commons.wikimedia.org/wiki/File:ETH-BIB-Dedekind,_Julius_Wilhelm_Richard_(1831-1916)-Portrait-Portr_11953.tif_(cropped).jpg
 ---
 
 ## A New Kind of Integer
@@ -233,7 +263,11 @@ and none of the four factors can be broken down further. Arithmetic had lost its
 
 Kummer's remedy was audacious. He invented *ideal numbers*: phantom factors, not in the system at all, that behaved like primes and restored unique factorisation. With them he proved Fermat's Last Theorem for all "regular" primes, the first proof to cover a whole class of exponents at once.
 
+{{img:kummer}}
+
 In 1871 {{fig:dedekind|Richard Dedekind}} made the phantoms concrete. An *ideal* is a set of actual numbers, closed under addition and under multiplication by anything in the system. Ideals, unlike numbers, always factor uniquely into prime ideals, in every number field. The shift of attention from individual numbers to sets with structure became the template for modern abstract algebra, as Emmy Noether, working on Dedekind's foundations, later made explicit.
+
+{{img:dedekind}}
 
 ## A Closer Look: Primes That Split, and Ideals That Repair
 
@@ -244,6 +278,8 @@ $$
 $$
 
 while 3, 7 and 11 cannot be factored. The rule is exact: an odd prime splits precisely when it leaves remainder 1 on division by 4. Splitting means $p = (a + bi)(a - bi) = a^2 + b^2$, so this is Fermat's theorem on sums of two squares, $5 = 2^2 + 1^2$ and $13 = 3^2 + 2^2$, recovered as a fact about factorisation in a larger number system.
+
+{{img:gaussian-primes}}
 
 In the numbers $a + b\sqrt{-5}$ unique factorisation fails:
 
