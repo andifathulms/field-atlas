@@ -157,11 +157,55 @@ further_reading:
   - citation: "Spivak, M. (2008). Calculus (4th ed.). Publish or Perish."
     url: null
     note: A rigorous, beautifully written first course for readers ready for proofs.
+
+images:
+  - id: parabola-triangle
+    src: /images/fields/calculus/parabola-triangle.png
+    alt: A parabola cut by a chord, with a shaded triangle inscribed whose top corner lies horizontally midway between the chord's ends.
+    caption: >-
+      Archimedes' quadrature of the parabola. The inscribed triangle's top corner sits midway,
+      measured across, between the ends of the chord. Fill each leftover gap with a smaller
+      triangle of the same kind, again and again: each round adds a quarter of the last, and
+      $1 + \tfrac14 + \tfrac1{16} + \cdots = \tfrac43$.
+    credit: Pbroks13
+    license: Public domain
+    source: https://commons.wikimedia.org/wiki/File:Parabola_and_inscribed_triangle.svg
+  - id: leibniz-nova-methodus
+    src: /images/fields/calculus/leibniz-nova-methodus.jpg
+    alt: A printed Latin journal page headed Nova Methodus pro Maximis et Minimis, with rules for differentials written using dx, dy and dv.
+    caption: >-
+      The first page of Leibniz's *Nova Methodus pro Maximis et Minimis* in the *Acta
+      Eruditorum* of October 1684, the first published calculus. His $dx$ and $dy$ are already
+      on the page, with the rules for sums, products and quotients.
+    credit: G. W. Leibniz, Acta Eruditorum, 1684
+    license: Public domain
+    source: https://commons.wikimedia.org/wiki/File:Leibniz-Acta-1684-NovaMethodus.jpg
+  - id: berkeley
+    src: /images/fields/calculus/berkeley.jpg
+    alt: Oil portrait of George Berkeley in a black cap and clerical bands, seated, holding a book, with a coastal landscape through a window.
+    caption: >-
+      George Berkeley, painted while he was Dean of Derry, as the inscription says. In 1734,
+      the year he became Bishop of Cloyne, he published *The Analyst*.
+    credit: John Smibert
+    license: Public domain
+    source: https://commons.wikimedia.org/wiki/File:John_Smibert_-_Bishop_George_Berkeley_-_Google_Art_Project.jpg
+  - id: secants-to-tangent
+    src: /images/fields/calculus/secants-to-tangent.png
+    alt: A rising curve with several straight lines drawn through the point x and points further along at x plus h, x plus h prime and x plus h double prime, closing in on the tangent line.
+    caption: >-
+      Secants through $x$ and a second point that slides closer: $x + h$, then $x + h'$, then
+      $x + h''$. Their slopes are the averages, $2x + h$ for the parabola, and they close in on
+      the slope of the tangent without $h$ ever being zero.
+    credit: Pbroks13
+    license: CC BY-SA 3.0
+    source: https://commons.wikimedia.org/wiki/File:Lim-secant.svg
 ---
 
 ## Exhaustion
 
 The problems of calculus are ancient. How long is a curve? What area does it enclose? {{fig:archimedes|Archimedes}} answered such questions for particular shapes around 250 BCE by *exhaustion*. He trapped a curved region between inscribed and circumscribed polygons with ever more sides, and proved that no other value could fit between them. He found that a parabolic segment has exactly four-thirds the area of a certain inscribed triangle, and that a sphere has two-thirds the volume of its enclosing cylinder.
+
+{{img:parabola-triangle}}
 
 His methods grew out of [Euclidean geometry](/math/euclidean-geometry/), and they were rigorous but laborious: each new shape needed a new argument. A lost treatise, *The Method*, recovered from a prayer book in 1906, revealed that he had found his results first by imagining figures sliced into infinitely thin strips. That is the idea calculus would make routine.
 
@@ -171,11 +215,15 @@ Descartes' coordinates turned curves into equations, and in the seventeenth cent
 
 Leibniz published in 1684, and Newton had published almost nothing. What followed was one of the ugliest disputes in science. Newton's supporters accused Leibniz of stealing from Newton's unpublished papers, and a Royal Society inquiry, secretly drafted by Newton, agreed. Historians now credit both as independent inventors. The feud is often blamed for cutting British mathematicians off from the far more productive Continental school for a century.
 
+{{img:leibniz-nova-methodus}}
+
 ## Ghosts of Departed Quantities
 
 Calculus worked astonishingly well. {{fig:euler|Euler}} made the *function* its central object and poured out results: infinite series for $e^x$, $\sin x$ and $\cos x$, and the formula $e^{ix} = \cos x + i \sin x$, which gives $e^{i\pi} + 1 = 0$. Newton's mechanics, the [physics](/physics/classical-mechanics/) of the entire eighteenth century, was calculus in action.
 
 But no one could say what it was about. In 1734 {{fig:berkeley|George Berkeley}}, Bishop of Cloyne, published *The Analyst*, addressed to "an infidel mathematician". To find a derivative, he noted, you divide by a small increment, treating it as nonzero, and then set it to zero to get a clean answer. The vanishing increments of the calculus were "neither finite quantities, nor quantities infinitely small, nor yet nothing". They were "the ghosts of departed quantities". Mathematicians knew the objection was fair and had no good answer.
+
+{{img:berkeley}}
 
 ## A Closer Look: The Slope of a Parabola, Two Ways
 
@@ -190,6 +238,8 @@ so the average slope over that step is $\frac{2xh + h^2}{h} = 2x + h$. Now let $
 This is exactly what Berkeley objected to. To divide by $h$ it must be nonzero, and to throw it away it must be zero. Newton spoke of "ultimate ratios" and Leibniz of infinitesimals, but neither could say what $h$ was at the moment of discarding it.
 
 The nineteenth-century answer, the *limit*, changes the question. Do not set $h$ to anything. Instead observe that $2x + h$ can be made as close to $2x$ as you like by taking $h$ small enough, and *define* the derivative as the number the averages approach:
+
+{{img:secants-to-tangent}}
 
 $$
 \frac{d}{dx}x^2 = \lim_{h \to 0} \frac{(x+h)^2 - x^2}{h} = \lim_{h \to 0} (2x + h) = 2x .
