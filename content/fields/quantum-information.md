@@ -215,6 +215,27 @@ further_reading:
   - citation: "Nielsen, M. A. & Chuang, I. L. (2010). Quantum Computation and Quantum Information (10th anniversary ed.). Cambridge University Press."
     url: null
     note: The standard textbook.
+
+images:
+  - id: bell-test-setup
+    src: /images/fields/quantum-information/bell-test-setup.png
+    alt: A schematic of a Bell test, a source sending photons to two polarisers, Alice's and Bob's, each with two detectors for plus one and minus one, wired to a coincidence monitor.
+    caption: >-
+      A Bell test. Each photon of a pair meets a two-way polariser and lands at a detector for
+      $+1$ or $-1$; a coincidence monitor records the matched results.
+    credit: CSTAR
+    license: CC BY-SA 3.0
+    source: https://commons.wikimedia.org/wiki/File:Bell-test-photon-analyer.svg
+  - id: bell-correlations
+    src: /images/fields/quantum-information/bell-correlations.png
+    alt: A cosine curve of the quantum correlation against polariser angle, bulging beyond a straight line from plus one to minus one, with points marked at 22.5 and 67.5 degrees.
+    caption: >-
+      The quantum correlation $\cos 2(a - b)$ against a straight-line, pre-set-answer model
+      that reaches exactly $S = 2$. At the chosen angles the curve overshoots by 0.207 each time,
+      and the four overshoots carry $S$ to $2\sqrt2$.
+    credit: Drawn for Field Atlas from the table above
+    license: Field Atlas original
+    source: https://github.com/andifathulms/field-atlas/blob/main/scripts/diagrams/quantum.py
 ---
 
 ## Spooky Action
@@ -228,6 +249,8 @@ For thirty years the argument was treated as philosophy. Bohr replied, most phys
 In 1964 {{fig:john-bell|John Bell}}, a CERN physicist who worked on the foundations in his spare time, found that the dispute had observable consequences. Any theory in which particles carry pre-set answers, and in which nothing travels faster than light, must obey a certain limit on correlations. Quantum mechanics predicts a violation. The question could be settled in a laboratory.
 
 {{fig:john-clauser|John Clauser}} and Stuart Freedman did the first test in 1972 with entangled photons, and found the quantum prediction. {{fig:alain-aspect|Alain Aspect}} in 1982 changed the measurement settings while the photons were in flight, so that no signal could coordinate them. In 2015 teams including {{fig:ronald-hanson|Ronald Hanson}}'s in Delft and {{fig:anton-zeilinger|Anton Zeilinger}}'s in Vienna closed the last loopholes. Einstein's picture of pre-existing local properties is wrong.
+
+{{img:bell-test-setup}}
 
 ## A Closer Look: Bell's Inequality in Numbers
 
@@ -257,6 +280,8 @@ For photons entangled in polarisation, quantum mechanics predicts that the avera
 | $a', b'$ | $-22.5^\circ$ | $\cos(-45^\circ) = 0.707$ |
 
 So quantum mechanics predicts $S = 0.707 - (-0.707) + 0.707 + 0.707 = 2\sqrt2 \approx 2.83$, well above 2. One of Aspect's 1982 experiments, with fixed settings, measured $S = 2.697 \pm 0.015$, close to the quantum prediction once imperfect equipment is accounted for, and more than forty standard deviations above the classical limit. No assignment of pre-set answers can produce these correlations.
+
+{{img:bell-correlations}}
 
 This cannot be used to send messages faster than light: each lab alone sees a random sequence of $\pm 1$. The correlation shows up only when the two records are compared.
 
