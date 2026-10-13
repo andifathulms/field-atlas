@@ -227,6 +227,45 @@ further_reading:
   - citation: "Strang, G. & Fix, G. (1973). An Analysis of the Finite Element Method. Prentice-Hall."
     url: null
     note: The book that gave the engineers' method its mathematical foundations.
+
+images:
+  - id: richardson
+    src: /images/fields/numerical-pdes/richardson.jpg
+    alt: Photograph of Lewis Fry Richardson, elderly, with white hair and round glasses.
+    caption: >-
+      Lewis Fry Richardson, who computed a weather forecast by hand between ambulance shifts
+      in the First World War.
+    credit: NOAA
+    license: Public domain
+    source: https://commons.wikimedia.org/wiki/File:Lewis_Fry_Richardson.png
+  - id: eniac
+    src: /images/fields/numerical-pdes/eniac.jpg
+    alt: A technician kneeling in front of tall racks of vacuum tubes, holding a tube; the printed caption reads that replacing a bad tube meant checking among ENIAC's 19,000 possibilities.
+    caption: >-
+      Changing a tube on the ENIAC, the machine that ran Charney's 1950 forecasts. Each
+      24-hour forecast took about 24 hours of computing.
+    credit: U.S. Army photo, from M. Weik, The ENIAC Story
+    license: Public domain
+    source: https://commons.wikimedia.org/wiki/File:ENIAC-changing_a_tube.jpg
+  - id: fem-mesh
+    src: /images/fields/numerical-pdes/fem-mesh.png
+    alt: A disc divided into a mesh of irregular triangles.
+    caption: >-
+      A finite element mesh: a curved region cut into triangles, each carrying a simple
+      approximation, joined at shared corners. Unlike a square grid, it follows any shape.
+    credit: Oleg Alexandrov
+    license: Public domain
+    source: https://commons.wikimedia.org/wiki/File:Finite_element_triangulation.svg
+  - id: black-hole-merger
+    src: /images/fields/numerical-pdes/black-hole-merger.jpg
+    alt: Two black holes close together against a starfield, the background light bent into rings around them.
+    caption: >-
+      Two black holes just before merging, rendered from a numerical relativity simulation of
+      the kind LIGO's 2015 detection was matched against. The bent starlight is computed from
+      the simulated spacetime.
+    credit: SXS Lensing
+    license: CC BY 4.0
+    source: https://commons.wikimedia.org/wiki/File:Computer_simulation_of_colliding_black_holes_(ann16008a).tif
 ---
 
 ## The Forecast Factory
@@ -235,15 +274,21 @@ further_reading:
 
 {{fig:lewis-fry-richardson|Lewis Fry Richardson}} decided to compute instead. He divided the atmosphere into boxes, replaced derivatives by differences between neighbouring boxes, and stepped the equations forward in time by arithmetic. During the First World War, between shifts with an ambulance unit in France, he computed a six-hour forecast for two points in central Europe. It took about six weeks. The result was a change in pressure of 145 hectopascals in six hours, when the real pressure barely changed. He published the whole calculation in 1922, with the failure stated plainly, and imagined a hall of 64,000 people computing the world's weather in time. Much later, Peter Lynch recomputed the forecast and showed that the method was sound. The starting data were unbalanced, and a small smoothing would have given a sensible answer.
 
+{{img:richardson}}
+
 ## Stability
 
 In 1928 {{fig:richard-courant|Richard Courant}}, {{fig:kurt-friedrichs|Kurt Friedrichs}} and {{fig:hans-lewy|Hans Lewy}} studied grid equations for a different reason: to prove that certain partial differential equations have solutions, by showing that grid solutions converge as the grid is refined. They found that for wave-like equations this happens only if the time step is small enough compared with the grid spacing. If a wave can cross more than one cell in a single step, the grid cannot follow it.
 
 The condition became essential when electronic computers arrived. In 1950 {{fig:jule-charney|Jule Charney}}, working with {{fig:von-neumann|John von Neumann}} and Ragnar Fjørtoft, ran the first computer weather forecast on the ENIAC. Charney had simplified the equations to remove the fast gravity waves that had wrecked Richardson's forecast, and chose time steps that respected the CFL condition. Each 24-hour forecast took about 24 hours to compute, but the results were realistic. Von Neumann also developed a way to test a scheme's stability by following each wave pattern separately, and in 1956 Peter Lax and Robert Richtmyer proved that, for linear problems, a consistent scheme converges exactly when it is stable.
 
+{{img:eniac}}
+
 ## Elements and Grids
 
 Grids of squares suit the atmosphere but not an aircraft wing. In the 1950s engineers, among them {{fig:ray-clough|Ray Clough}}, working with a Boeing team, and John Argyris in London, broke structures into small triangular and rectangular elements, each with simple behaviour, joined at their corners. Clough named it the finite element method in 1960. Courant had proposed the same idea in 1943, as a way to solve variational problems, and mathematicians later proved that the engineers' method converges and how fast. It is now the standard tool for anything with a complicated shape.
+
+{{img:fem-mesh}}
 
 Solving the resulting equations was the next bottleneck. A fine three-dimensional mesh has millions of unknowns, and simple iterative methods need many thousands of sweeps to converge, because smooth errors fade slowly. {{fig:radii-fedorenko|Radii Fedorenko}} saw in 1964 that a coarser grid could remove those smooth errors cheaply, and {{fig:achi-brandt|Achi Brandt}} turned the idea into the general multigrid method in 1977. Together with the [linear algebra](/math/numerical-linear-algebra/) of conjugate gradients, it made problems with billions of unknowns solvable.
 
@@ -279,3 +324,6 @@ Now take a weather model with a 10-kilometre grid and winds of up to 100 metres 
 ## From Grids to Spacetime
 
 The same methods now simulate almost every physical system. The hardest test came from [general relativity](/physics/general-relativity/). For decades simulations of two orbiting black holes crashed after a fraction of an orbit, as small errors in Einstein's equations grew without limit. The instability was not in the grid but in the way the equations were written. In 2005 {{fig:frans-pretorius|Frans Pretorius}} found a formulation that stayed stable and followed two black holes through their merger. Ten years later, LIGO's first detection was matched against such simulations. The underlying mathematics is still incomplete, and for the equations of gas dynamics in more than one dimension it is not known whether the simulations converge at all.
+
+
+{{img:black-hole-merger}}
