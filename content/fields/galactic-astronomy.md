@@ -209,11 +209,45 @@ further_reading:
   - citation: "Binney, J. & Tremaine, S. (2008). Galactic Dynamics (2nd ed.). Princeton University Press."
     url: null
     note: The standard graduate text on how galaxies move.
+
+images:
+  - id: herschel-galaxy
+    src: /images/fields/galactic-astronomy/herschel-galaxy.png
+    alt: A flattened, ragged blob of small star symbols, split at one end into two arms, with a larger star near the middle marking the Sun.
+    caption: >-
+      The Milky Way as Herschel mapped it in 1785 from star counts: a flattened disc, with the
+      Sun near the centre. The shape was roughly right; the Sun's place was wrong, because dust
+      hid the distant stars.
+    credit: William Herschel, 1785
+    license: Public domain
+    source: https://commons.wikimedia.org/wiki/File:Herschel-Galaxy.png
+  - id: rotation-curve
+    src: /images/fields/galactic-astronomy/rotation-curve.png
+    alt: A chart of orbital speed against distance from the galactic centre, with a measured curve staying near 220 to 250 kilometres per second far out, and a predicted curve falling away.
+    caption: >-
+      The Milky Way's rotation curve. Measured speeds (blue) stay high far from the centre; the
+      curve expected from the visible stars and gas (red) falls. The gap is the dark matter.
+      The Sun is the marked point.
+    credit: Brews ohare, vectorised by B. Jankuloski
+    license: CC BY-SA 4.0
+    source: https://commons.wikimedia.org/wiki/File:Rotation_curve_(Milky_Way).svg
+  - id: s2-orbit
+    src: /images/fields/galactic-astronomy/s2-orbit.png
+    alt: A long ellipse with a black dot near its right-hand end, beside a tiny circle for Neptune's orbit to the same scale.
+    caption: >-
+      S2's orbit to scale, from the Closer Look's numbers. The black hole sits at one focus;
+      the star swings in to about 120 AU, barely outside a circle the size of Neptune's orbit,
+      and out to about 1,940 AU.
+    credit: Drawn for Field Atlas from the numbers above
+    license: Field Atlas original
+    source: https://github.com/andifathulms/field-atlas/blob/main/scripts/diagrams/stars.py
 ---
 
 ## The Shape of the Milky Way
 
 In 1785 {{fig:william-herschel|William Herschel}}, who had discovered Uranus four years earlier, set out to map the shape of the Milky Way. With his sister {{fig:caroline-herschel|Caroline}} he counted stars in hundreds of directions and concluded that the Sun sits near the middle of a flattened disc of stars. The flattening was right. The central position was an illusion. Interstellar dust dims distant stars in every direction, so the Herschels, like everyone for the next 130 years, could see only the Sun's neighbourhood.
+
+{{img:herschel-galaxy}}
 
 ## Measuring Distance
 
@@ -224,6 +258,8 @@ The breakthrough was a way to measure great distances. At Harvard, {{fig:leavitt
 ## Rotation and Missing Mass
 
 In 1927 {{fig:jan-oort|Jan Oort}} confirmed {{fig:bertil-lindblad|Bertil Lindblad}}'s idea that the Milky Way rotates. [Spectroscopy](/physics/astronomical-spectroscopy/) measures how fast stars move towards or away from us, and the pattern matched a disc whose inner parts orbit faster than its outer parts. In the 1970s {{fig:vera-rubin|Vera Rubin}} and {{fig:kent-ford|Kent Ford}} measured rotation far out in other spiral galaxies, where the visible stars thin out. The speeds did not fall off as they should if the visible matter were all there is. Galaxies are embedded in halos of unseen mass, several times more than the stars.
+
+{{img:rotation-curve}}
 
 ## A Closer Look: Weighing the Black Hole at the Centre
 
@@ -242,6 +278,8 @@ M = \frac{1030^3}{16.05^2} = \frac{1.09 \times 10^9}{257.6} \approx 4.2 \times 1
 $$
 
 That is over four million Suns in a region smaller than S2's orbit, where it comes within about 120 AU of the centre, about four times Neptune's distance from the Sun. Nothing but a black hole can be that massive, that small and that dark.
+
+{{img:s2-orbit}}
 
 The same law weighs the whole galaxy. The Sun orbits the centre at about 230 km/s, at a distance of about 27,000 light-years. For a circular orbit, $M = v^2 r / G$, which gives about $10^{11}$ solar masses inside the Sun's orbit. One lap takes about 220 million years. Since the Sun formed, it has gone round about twenty times.
 
