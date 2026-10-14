@@ -208,6 +208,35 @@ further_reading:
   - citation: "Brown, A. (2003). In the Beginning Was the Worm: Finding the Secrets of Life in a Tiny Hermaphrodite. Columbia University Press."
     url: null
     note: A popular history of the C. elegans community.
+
+images:
+  - id: eve-stripes
+    src: /images/fields/developmental-genetics/eve-stripes.jpg
+    alt: A fly embryo, oval, with nuclei in blue and seven red stripes of even-skipped protein across it, beside a close-up of stripes.
+    caption: >-
+      A fruit-fly embryo shortly before its cells form, stained for even-skipped (red), one of
+      the pair-rule genes from the 1979 screen: seven stripes, laid down from the cascade above them.
+    credit: Thomas Gregor (left) and Erik Clark (right)
+    license: CC BY 4.0
+    source: https://commons.wikimedia.org/wiki/File:Drosophila_pair_rule_pattern.png
+  - id: c-elegans
+    src: /images/fields/developmental-genetics/c-elegans.jpg
+    alt: A long, thin, transparent worm seen under the microscope against a grey background.
+    caption: >-
+      An adult *Caenorhabditis elegans*, a millimetre long and transparent enough for Sulston to
+      watch every cell division.
+    credit: Kbradnam, from Zeynep F. Altun, WormAtlas
+    license: CC BY-SA 2.5
+    source: https://commons.wikimedia.org/wiki/File:Adult_Caenorhabditis_elegans.jpg
+  - id: bicoid-gradient
+    src: /images/fields/developmental-genetics/bicoid-gradient.png
+    alt: Two falling exponential curves of Bicoid concentration along the egg, the doubled one crossing the one-tenth threshold 69 micrometres further back than the normal one.
+    caption: >-
+      The Bicoid gradient with $\lambda = 100$ µm. Doubling the Bicoid moves the point where it
+      falls to a tenth of the normal peak back by $\lambda \ln 2 \approx 69$ µm.
+    credit: Drawn for Field Atlas from the numbers above
+    license: Field Atlas original
+    source: https://github.com/andifathulms/field-atlas/blob/main/scripts/diagrams/development.py
 ---
 
 ## From Embryos to Mutants
@@ -220,6 +249,8 @@ A few kept the link alive. In 1915 Calvin Bridges found a fly whose tiny balanci
 
 In 1979 {{fig:christiane-nusslein-volhard|Christiane Nüsslein-Volhard}} and {{fig:eric-wieschaus|Eric Wieschaus}} set out to find every gene needed to lay out the body of a fly larva. They mutated flies, bred thousands of lines and examined the dead embryos of each under a two-headed microscope. The mutants fell into classes. Gap mutants lacked a broad block of segments. Pair-rule mutants lacked every other segment. Segment-polarity mutants had each segment's pattern half replaced by a mirror image of the other half. The classes turned out to be tiers of a cascade that divides the embryo more and more finely.
 
+{{img:eve-stripes}}
+
 The cascade starts with the mother. {{fig:wolfgang-driever|Wolfgang Driever}}, Nüsslein-Volhard and colleagues showed in 1988 that the mother places the messenger RNA of bicoid at the front of the egg. Its protein spreads backwards and forms a gradient, and the genes below it read the concentration. Here was Wolpert's [positional information](/biology/experimental-embryology/), as a molecule.
 
 Why did the genes work? In 1984 {{fig:william-mcginnis|William McGinnis}} and Michael Levine in {{fig:walter-gehring|Walter Gehring}}'s laboratory, and {{fig:matthew-scott|Matthew Scott}} and Amy Weiner in Indiana, found that homeotic genes share a stretch of DNA, the homeobox. It encodes part of a protein that binds DNA. These genes make switches that turn other genes on and off. Within months the homeobox turned up in vertebrates, and [evolutionary developmental biology](/biology/evo-devo/) was born.
@@ -227,6 +258,8 @@ Why did the genes work? In 1984 {{fig:william-mcginnis|William McGinnis}} and Mi
 ## The Worm
 
 {{fig:sydney-brenner|Sydney Brenner}} chose a different animal. C. elegans is a transparent roundworm a millimetre long, with few enough cells to count. {{fig:john-sulston|John Sulston}} watched its cells divide under the microscope, hour after hour, and by 1983 he and colleagues had traced the whole lineage from egg to adult. It is identical in every worm. Of 1,090 cells made, exactly 131 die, and the adult hermaphrodite has 959 body cells. The deaths are part of the plan. {{fig:robert-horvitz|H. Robert Horvitz}} found the genes that carry them out, and their human versions control cell death in people, including its failure in cancer.
+
+{{img:c-elegans}}
 
 ## A Closer Look: Reading Position from a Gradient
 
@@ -257,6 +290,8 @@ $$
 $$
 
 about 14 per cent of the egg's length. Driever and Nüsslein-Volhard found that extra copies of bicoid do shift the pattern backwards, and fewer copies shift it forwards, as the model predicts.
+
+{{img:bicoid-gradient}}
 
 How finely can position be read? Neighbouring nuclei at this stage are roughly 10 micrometres apart, and over 10 micrometres the gradient falls by $1 - e^{-0.1} \approx 9.5$ per cent. To tell one nucleus from its neighbour, the embryo must detect a concentration difference of about a tenth. Measurements in 2007 showed that the hunchback boundary is placed to about the width of one nucleus, so the embryo does roughly this well, close to the limit set by the random arrival of molecules.
 
