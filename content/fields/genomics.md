@@ -229,6 +229,35 @@ further_reading:
   - citation: "Doudna, J. A. & Sternberg, S. H. (2017). A Crack in Creation: Gene Editing and the Unthinkable Power to Control Evolution. Houghton Mifflin Harcourt."
     url: null
     note: CRISPR from one of its discoverers, including the ethical questions it raises.
+
+images:
+  - id: abi-3730
+    src: /images/fields/genomics/abi-3730.jpg
+    alt: A large beige laboratory instrument with a window and a computer screen beside it.
+    caption: >-
+      An Applied Biosystems 3730 capillary DNA analyser: Sanger sequencing automated, with
+      fluorescent dyes read through hair-thin capillaries.
+    credit: RE73
+    license: CC BY-SA 3.0
+    source: https://commons.wikimedia.org/wiki/File:ABI_3730_(2).JPG
+  - id: pcr-machine
+    src: /images/fields/genomics/pcr-machine.jpg
+    alt: A scientist in a white coat at a laboratory bench beside a PCR machine.
+    caption: >-
+      A PCR machine at work in a genetics laboratory: repeated heating and cooling, doubling the
+      chosen stretch of DNA each cycle.
+    credit: K. Aken, CSIRO
+    license: CC BY 3.0
+    source: https://commons.wikimedia.org/wiki/File:CSIRO_ScienceImage_610_PCR_Machine_in_Genetics_Laboratory.jpg
+  - id: coverage
+    src: /images/fields/genomics/coverage.png
+    alt: A straight falling line on a log scale of the fraction of bases never read against coverage, 37 per cent at 1x, 5 per cent at 3x, about a million bases at 8x, and essentially none at 30x.
+    caption: >-
+      Lander and Waterman's ^{-c}$: every extra round of coverage divides the unread fraction
+      by $.
+    credit: Drawn for Field Atlas from the table above
+    license: Field Atlas original
+    source: https://github.com/andifathulms/field-atlas/blob/main/scripts/diagrams/heredity.py
 ---
 
 ## Reading DNA
@@ -237,9 +266,13 @@ further_reading:
 
 The second tool was copying. In 1983 {{fig:mullis|Kary Mullis}}, by his own account while driving through the California hills at night, imagined using repeated heating and cooling to double a chosen stretch of DNA again and again. His colleagues at Cetus turned the idea into a reliable method, the polymerase chain reaction, which can turn a single molecule into billions. It now underpins everything from forensic DNA to COVID tests.
 
+{{img:pcr-machine}}
+
 ## The Human Genome
 
 In 1990 the international Human Genome Project set out to read all three billion letters of human DNA within fifteen years. In 1998 {{fig:venter|Craig Venter}}'s company Celera announced it would do the job faster, and privately. The race that followed, between Celera and the public consortium led by {{fig:francis-collins|Francis Collins}}, ended in a truce announced at the White House in June 2000, and in rival draft papers in 2001.
+
+{{img:abi-3730}}
 
 The draft's great surprise was a small number: perhaps 30,000 protein-coding genes, since revised to about 20,000, not much more than a roundworm has. Complexity came from how genes are regulated and combined, not from how many there are. The project was declared complete in 2003. The hardest 8%, highly repetitive regions, was finished only in 2022.
 
@@ -267,6 +300,8 @@ Eric Lander and Michael Waterman worked out this and related formulas in 1988. T
 | 30× | $e^{-30} \approx 10^{-13}$ | none, on average |
 
 Sequencing the same total amount again gives diminishing returns, but each extra round of coverage cuts the gaps by a factor of $e$. The draft human genome of 2001 used several-fold coverage and had many gaps. Clinical genome sequencing today typically uses about 30× coverage, which also allows the two copies of each chromosome to be told apart and errors to be outvoted.
+
+{{img:coverage}}
 
 Random coverage is not the only problem. About half the human genome consists of repeated sequences, and a short fragment from inside a repeat could belong to any copy of it, so the formula's gaps are the easy part. The last 8% of the genome, mostly long repeats, was finished in 2022 only with new machines that read single molecules tens of thousands of letters long. The cost of reading a human genome has meanwhile fallen from billions of dollars for the first to a few hundred dollars today.
 
