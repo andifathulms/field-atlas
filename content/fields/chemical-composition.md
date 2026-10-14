@@ -246,11 +246,43 @@ further_reading:
   - citation: "Brock, W. H. (1992). The Fontana History of Chemistry. Fontana."
     url: null
     note: The standard one-volume history; good on why the nomenclature reform was so contentious.
+
+images:
+  - id: sceptical-chymist
+    src: /images/fields/chemical-composition/sceptical-chymist.jpg
+    alt: The title page of The Sceptical Chymist, printed in red and black, London, 1661.
+    caption: >-
+      The title page of Boyle's *Sceptical Chymist* (1661), the book in which an element became
+      whatever could not yet be split into anything simpler.
+    credit: Robert Boyle, 1661
+    license: Public domain
+    source: https://commons.wikimedia.org/wiki/File:The_Sceptical_Chymist.jpg
+  - id: lavoisiers
+    src: /images/fields/chemical-composition/lavoisiers.jpg
+    alt: Painting of Marie-Anne Lavoisier standing and leaning on the shoulder of Antoine Lavoisier, who sits writing at a table covered with red cloth and glass apparatus.
+    caption: >-
+      Antoine and Marie-Anne Lavoisier, painted by Jacques-Louis David in 1788. The glassware on
+      the table and floor is the new chemistry's apparatus for collecting and weighing gases.
+    credit: Jacques-Louis David, Metropolitan Museum of Art
+    license: CC0
+    source: https://commons.wikimedia.org/wiki/File:Antoine-Laurent_Lavoisier_(1743%E2%80%931794)_and_His_Wife_(Marie-Anne-Pierrette_Paulze,_1758%E2%80%931836)_MET_DT1992.jpg
+  - id: gasometer-plate
+    src: /images/fields/chemical-composition/gasometer-plate.jpg
+    alt: An engraved plate showing a large balance-beam gasometer with a counterweighted bell over a water tank, and smaller details of its parts.
+    caption: >-
+      Lavoisier's large gasometer, a plate from the *Traité élémentaire de chimie*, engraved and
+      signed by Marie-Anne Paulze Lavoisier. The balance measured how much gas went in or out,
+      so the gas could be weighed with everything else.
+    credit: Wellcome Collection
+    license: CC BY 4.0
+    source: https://commons.wikimedia.org/wiki/File:A.L._Lavoisier,_Traite_elementaire_de_chimie_Wellcome_L0031292.jpg
 ---
 
 ## An Operational Definition
 
 Before anything could be said about what substances are made of, there had to be a test for a substance that is made of nothing else. {{fig:boyle|Robert Boyle}} supplied one in 1661, and its merit is that it refuses to answer the metaphysical question. Aristotle's four elements and the alchemists' three principles both fail, he argued, for the same reason: nobody can produce them. So define an element as whatever resists decomposition by any means available.
+
+{{img:sceptical-chymist}}
 
 This is a definition that moves. Lime was an element until Davy decomposed it; light and caloric appear in Lavoisier's own table of simple substances and are not elements at all. Boyle's test tells you what has not yet been done, which sounds like a weakness and is the reason the definition survived three subsequent revolutions in what matter was thought to be.
 
@@ -262,7 +294,11 @@ The prevailing account of combustion held that burning substances release phlogi
 
 {{fig:lavoisier|Antoine Lavoisier}}'s method was to work in sealed vessels and weigh everything, including the air. Done that way, the gain in the product is matched by a loss from the air, and about a fifth of the air is consumed before combustion stops. The remaining four-fifths will not support burning or breathing. Combustion is therefore combination with one component of the atmosphere, not the release of anything — and that component was the gas {{fig:priestley|Joseph Priestley}} had prepared in 1774 and {{fig:scheele|Carl Wilhelm Scheele}} probably before him, which Lavoisier named oxygen.
 
+{{img:lavoisiers}}
+
 {{fig:marie-anne-lavoisier|Marie-Anne Paulze Lavoisier}} translated the English phlogistic literature for him — including Richard Kirwan's defence, published with her husband's rebuttals attached — kept the laboratory records, and drew the plates of the apparatus in the *Traité*. The instruments she drew are the argument: sealed, graduated, and designed so that nothing enters or leaves unweighed.
+
+{{img:gasometer-plate}}
 
 The 1789 *Traité élémentaire de chimie* states conservation of mass as a principle and writes reactions as balanced equations. Two years earlier the same group had reformed the language, replacing oil of vitriol and flowers of zinc with sulfuric acid and zinc oxide. That reform was fought over harder than the chemistry, because adopting the names meant conceding the composition.
 
