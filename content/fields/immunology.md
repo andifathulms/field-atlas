@@ -218,17 +218,58 @@ further_reading:
   - citation: "Murphy, K. & Weaver, C. (2016). Janeway's Immunobiology (9th ed.). Garland Science."
     url: null
     note: The standard textbook.
+
+images:
+  - id: jenner
+    src: /images/fields/immunology/jenner.jpg
+    alt: A painting of a man in a dark coat scratching the arm of a child held on its mother's lap.
+    caption: >-
+      Edward Jenner vaccinating a boy, as imagined by Eugène-Ernest Hillemacher in 1884.
+    credit: Eugène-Ernest Hillemacher, Wellcome Collection
+    license: CC BY 4.0
+    source: https://commons.wikimedia.org/wiki/File:Edward_Jenner_vaccinating_a_boy._Oil_painting_by_E.-E._Hille_Wellcome_L0029094_(cropped).jpg
+  - id: metchnikoff
+    src: /images/fields/immunology/metchnikoff.jpg
+    alt: Photograph of Élie Metchnikoff, white-bearded, seated at a laboratory bench beside a microscope.
+    caption: >-
+      Élie Metchnikoff, whose rose thorns in starfish larvae showed wandering cells that swallow
+      invaders.
+    credit: Bain News Service, Library of Congress
+    license: Public domain
+    source: https://commons.wikimedia.org/wiki/File:Elie_Metchnikoff_-_Between_ca._1910_and_ca._1915_-_LOC.jpg
+  - id: antibody
+    src: /images/fields/immunology/antibody.png
+    alt: A ribbon model of a Y-shaped antibody, two heavy chains in blue and yellow and two light chains in green and pink.
+    caption: >-
+      An IgG antibody: two heavy chains (blue, yellow) and two light chains (green, pink). The tips
+      of the arms, built from the shuffled gene segments, grip the target.
+    credit: Tokenzero
+    license: CC BY-SA 4.0
+    source: https://commons.wikimedia.org/wiki/File:Antibody_IgG1_structure.png
+  - id: antibody-combinations
+    src: /images/fields/immunology/antibody-combinations.png
+    alt: Bars on a log scale, about 150 gene segments, 5,520 heavy chains, 320 light chains and about 1.8 million heavy and light pairs.
+    caption: >-
+      The table's arithmetic: about 150 segments give 5,520 heavy chains and 320 light ones, and
+      pairing them gives 1.8 million antibodies before any of the imprecise joining.
+    credit: Drawn for Field Atlas from the table above
+    license: Field Atlas original
+    source: https://github.com/andifathulms/field-atlas/blob/main/scripts/diagrams/cell.py
 ---
 
 ## Cowpox
 
 Smallpox killed perhaps a third of those it infected, and scarred or blinded many survivors. People had long known that survivors never caught it again, and in Asia and Africa healthy people were deliberately infected with material from mild cases, a risky practice called variolation. In 1796 {{fig:edward-jenner|Edward Jenner}}, a country doctor in Gloucestershire, tested a local belief that milkmaids who caught cowpox were protected. He inoculated a boy, James Phipps, with cowpox, then with smallpox, and the boy stayed well. Vaccination, from *vacca*, the Latin for cow, spread across the world within a few years. {{fig:benjamin-jesty|Benjamin Jesty}}, a farmer, had done the same for his family twenty years earlier without publishing it.
 
+{{img:jenner}}
+
 A century later [microbiology](/biology/microbiology/) supplied the reason. {{fig:louis-pasteur|Louis Pasteur}} found he could weaken bacteria and viruses in the laboratory and use them as vaccines against chicken cholera, anthrax and, in 1885, rabies.
 
 ## Cells or Chemicals?
 
 What does the protecting? In 1882 {{fig:elie-metchnikoff|Élie Metchnikoff}}, working in Messina, pushed rose thorns into transparent starfish larvae and watched wandering cells swarm around them the next morning. He proposed that such phagocytes, eating cells, are the body's defence. In 1890 {{fig:emil-von-behring|Emil von Behring}} and {{fig:kitasato-shibasaburo|Kitasato Shibasaburō}} in Berlin found that serum from immunised animals neutralises toxins, and {{fig:paul-ehrlich|Paul Ehrlich}} developed a chemical theory of antibodies. The cellular and chemical schools feuded for decades. Both were right: the innate system of phagocytes and the adaptive system of antibodies work together.
+
+{{img:metchnikoff}}
 
 ## Selection Inside the Body
 
@@ -239,6 +280,8 @@ That required enormous diversity, which the genome seemed too small to encode. I
 ## A Closer Look: Billions of Antibodies From a Few Hundred Genes
 
 An antibody is built from two chains, a heavy chain and a light chain, and the part that grips the target is assembled from gene segments chosen at random in each B cell. In humans, roughly:
+
+{{img:antibody}}
 
 | Chain | Segments to choose from | Combinations |
 |---|---|---|
@@ -253,6 +296,8 @@ $$
 $$
 
 different antibodies from about 150 gene segments. That is still not enough. The joins between segments are made imprecisely, with letters added or removed at random, which multiplies the diversity by a factor of thousands or more. Estimates of the total potential repertoire run to more than $10^{11}$, a hundred billion, far more than the roughly twenty thousand genes in the whole genome.
+
+{{img:antibody-combinations}}
 
 When a B cell is selected by an invader, a second process adds more. The cell deliberately mutates its antibody genes at a high rate while dividing, and the daughters whose antibodies bind best are selected again. The fit improves over weeks, which is why a second vaccine dose or a booster often gives stronger protection than the first. Clonal selection is Darwinian evolution, running in days inside a lymph node.
 
