@@ -223,13 +223,58 @@ further_reading:
   - citation: "Hecht, E. (2017). Optics, 5th edition. Pearson."
     url: null
     note: The standard textbook; its historical notes are unusually good.
+
+images:
+  - id: ibn-sahl
+    src: /images/fields/classical-optics/ibn-sahl.jpg
+    alt: A page of an Arabic manuscript with a geometric diagram of lines, a semicircle and labelled points above lines of script.
+    caption: >-
+      A page from Ibn Sahl's treatise on burning mirrors and lenses, around 984. His diagrams
+      relate the bending of a ray to a fixed ratio of lengths: the law of refraction, six
+      centuries before Snell.
+    credit: Ibn Sahl, Milli Library, Tehran, MS 867, via R. Rashed (1990)
+    license: Public domain
+    source: https://commons.wikimedia.org/wiki/File:Ibn_Sahl_manuscript.jpg
+  - id: opticae-thesaurus
+    src: /images/fields/classical-optics/opticae-thesaurus.jpg
+    alt: A woodcut of a harbour scene with a rainbow, the sun, mirrors setting ships on fire, and a man standing in water whose legs appear bent.
+    caption: >-
+      The frontispiece of the 1572 Latin edition of Ibn al-Haytham's *Optics*, showing
+      vision direct, reflected and refracted: a rainbow, burning mirrors aimed at ships, and a
+      wader whose legs seem to bend at the water's surface.
+    credit: Opticae Thesaurus (Basel, 1572), Houghton Library, Harvard
+    license: Public domain
+    source: https://commons.wikimedia.org/wiki/File:Houghton_GC5_R4947_572i_-_Optic%C3%A6_thesavrvs.jpg
+  - id: experimentum-crucis
+    src: /images/fields/classical-optics/experimentum-crucis.jpg
+    alt: A modern painting of Newton in his room at Woolsthorpe, sunlight through a shutter hole split by a prism into colours, one of which passes through a second prism.
+    caption: >-
+      Newton's *experimentum crucis* as reconstructed in a modern painting: one colour picked
+      out of the spectrum is bent again by a second prism, but stays the same colour.
+    credit: Sascha Grusche, 2015
+    license: CC BY-SA 4.0
+    source: https://commons.wikimedia.org/wiki/File:Newton%27s_Experimentum_Crucis_(Grusche_2015).jpg
+  - id: romer-1676
+    src: /images/fields/classical-optics/romer-1676.png
+    alt: An engraving of the Sun at A inside Earth's orbit, with Jupiter at B and its moon's shadow, and points L, K, F and G marking Earth's positions.
+    caption: >-
+      Rømer's own figure from 1676. The Sun is at $A$, Jupiter at $B$; Io's eclipses run late
+      while the Earth moves from $L$ to $K$, away from Jupiter, and early from $F$ to $G$, as it
+      approaches.
+    credit: Ole Rømer, Journal des Sçavans, 1676
+    license: Public domain
+    source: https://commons.wikimedia.org/wiki/File:Illustration_from_1676_article_on_Ole_R%C3%B8mer%27s_measurement_of_the_speed_of_light.png
 ---
 
 ## The Rule for Bending
 
 Put a stick in water and it appears to break at the surface. The rule behind that appearance was found in Baghdad. {{fig:ibn-sahl|Ibn Sahl}}, writing around 984 about mirrors and lenses that set things alight, drew a construction in which the ratio of two lengths stays fixed as the angle changes — the relation we write as $n_1 \sin\theta_1 = n_2 \sin\theta_2$ — and used it to design a lens that focuses rays to a point. His manuscript sat unread until 1990, so the law is named for Willebrord Snell, who found it in 1621 and did not publish, and for René Descartes, who published it in 1637.
 
+{{img:ibn-sahl}}
+
 A generation after Ibn Sahl, {{fig:ibn-al-haytham|Ibn al-Haytham}} settled a more basic question. For a thousand years there had been two accounts of vision: light travels from the object to the eye, or something travels from the eye to the object. He argued the first, and argued it the way we would — a dark room with a small hole makes an inverted image on the far wall, bright light leaves an afterimage, staring at the sun injures the eye. All of these make sense if light arrives and none if it departs. The *Book of Optics* reached Europe in Latin translation and was the standard work for five hundred years. {{fig:kepler|Kepler}} was still working from it in 1604.
+
+{{img:opticae-thesaurus}}
 
 ## Least Time
 
@@ -241,6 +286,8 @@ The principle is more important than the problem. It says that the path is deter
 
 {{fig:newton|Isaac Newton}} let a thin beam of sunlight through a prism and got a band of colours. That much was known. His decisive addition was to take one colour out of the band and send it through a second prism: it emerged the same colour, bent by the same amount, unchanged. So the prism does not manufacture colour; it sorts a mixture that was in the white light all along. The *experimentum crucis* was published in 1672, attacked immediately by Hooke, and defended by Newton for the rest of his life.
 
+{{img:experimentum-crucis}}
+
 {{fig:huygens|Christiaan Huygens}} built the other theory. In the *Traité de la Lumière* of 1690, light is a disturbance spreading through a medium, and every point on a wavefront is treated as a source of a new spherical wavelet whose envelope gives the front an instant later. From this he derived reflection, derived refraction with the index as a ratio of speeds, and — the triumph — explained the double image formed by a calcite crystal, which no account made of particles could approach. His theory required light to go slower in glass, which was correct and, at the time, unmeasurable.
 
 Two theories, both quantitative, both covering nearly all the evidence, separated by a measurement nobody could make for 160 years. Newton's prestige settled the matter socially rather than physically, and the particle view prevailed in Britain until {{fig:thomas-young|Thomas Young}} put two slits in front of a light source.
@@ -250,6 +297,8 @@ Two theories, both quantitative, both covering nearly all the evidence, separate
 Io circles Jupiter every 42.5 hours and is eclipsed by it each orbit, so the Jupiter system is a clock visible from Earth. {{fig:romer|Ole Rømer}} compiled eclipse times at the Paris Observatory through the 1670s and found they did not keep step with a uniform period. When the Earth was approaching Jupiter the eclipses came early; when receding, late. The discrepancy accumulated to something like twenty-two minutes between the two extremes.
 
 His interpretation: the eclipses happen when they happen, and the *news* of them travels at a finite speed. When the Earth is on the far side of its orbit the news has an extra distance to cross, equal to the diameter of the Earth's orbit. So
+
+{{img:romer-1676}}
 
 $$
 c = \frac{\text{diameter of Earth's orbit}}{\text{accumulated delay}}.
