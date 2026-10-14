@@ -240,6 +240,36 @@ further_reading:
   - citation: "Fenn, J. B. (2003). Electrospray wings for molecular elephants. Angewandte Chemie International Edition 42: 3871–3894."
     url: null
     note: The Nobel lecture, and an unusually frank account of how long the idea took to be believed.
+
+images:
+  - id: co-n2
+    src: /images/fields/mass-spectrometry/co-n2.png
+    alt: Three panels of a mass peak at 28, merged into one at resolving power 1,000, just split at 2,500, and two clean peaks for CO and N2 at 10,000.
+    caption: >-
+      Carbon monoxide and nitrogen, both mass 28, at three resolving powers. At 1,000 they are
+      one peak; at the 2,500 worked out above they just separate; at 10,000 they are cleanly
+      apart.
+    credit: Drawn for Field Atlas from the numbers above
+    license: Field Atlas original
+    source: https://github.com/andifathulms/field-atlas/blob/main/scripts/diagrams/analysis.py
+  - id: orbitrap
+    src: /images/fields/mass-spectrometry/orbitrap.jpg
+    alt: A large laboratory mass spectrometer in grey and blue casing, with an attached computer.
+    caption: >-
+      A Thermo Scientific LTQ Orbitrap XL, which pairs an ion trap with Makarov's orbiting-ion
+      analyser.
+    credit: Nadina Wiórkiewicz
+    license: CC BY-SA 3.0
+    source: https://commons.wikimedia.org/wiki/File:LTQ_OrbiTrap_XL-Thermo_Scientific_1.jpg
+  - id: electrospray
+    src: /images/fields/mass-spectrometry/electrospray.jpg
+    alt: A schematic of a capillary tip drawn into a cone, from which a jet breaks into a plume of droplets.
+    caption: >-
+      Electrospray. Liquid at the tip of a charged capillary is pulled into a cone, the Taylor
+      cone, which throws off a jet that breaks into a plume of charged droplets.
+    credit: Kkmurray
+    license: CC BY-SA 3.0
+    source: https://commons.wikimedia.org/wiki/File:Taylor_cone.jpg
 ---
 
 ## A Physicist's Instrument, Repurposed
@@ -288,6 +318,8 @@ $$
 
 which a modest instrument achieves. The two gases are chemically unrelated, both weigh 28 on a balance, and a mass spectrometer tells them apart without hesitation.
 
+{{img:co-n2}}
+
 The harder and more valuable case is a molecule of 300 daltons, where the candidate formulas are numerous. The number of combinations of carbon, hydrogen, nitrogen and oxygen whose exact mass falls within a window $\Delta m$ grows in proportion to that window, so accuracy translates directly into how many candidates survive:
 
 | Mass accuracy at $m/z$ 300 | Window | Candidate formulas (C, H, N, O) |
@@ -298,6 +330,8 @@ The harder and more valuable case is a molecule of 300 daltons, where the candid
 
 At one part per million, measuring a mass to the fourth decimal place, the formula is usually determined. That is what {{fig:makarov|Alexander Makarov}}'s analyser made routine: ions orbiting a spindle-shaped electrode oscillate at a frequency set by their mass, and taking the Fourier transform of the induced current gives masses to about a part per million on a bench instrument.
 
+{{img:orbitrap}}
+
 Two refinements come free with the same measurement. The *nitrogen rule* — an organic molecule with an odd nominal mass contains an odd number of nitrogens — and the count of double bonds and rings, which follows from the formula by arithmetic on the valences. And the isotope pattern: carbon is 1.1% carbon-13, so a molecule with 20 carbons shows a satellite peak at $M+1$ with about 22% of the main peak's intensity, which counts the carbons directly. Chlorine's two isotopes in a 3:1 ratio make a chlorinated compound unmistakable.
 
 So a single accurate mass plus an isotope pattern yields a formula; fragmentation then constrains how those atoms are joined. What neither gives is the structure itself, which is why this field and [spectroscopic structure determination](/chemistry/spectroscopic-structure-determination/) are used together.
@@ -307,6 +341,8 @@ So a single accurate mass plus an isotope pattern yields a formula; fragmentatio
 Everything above requires a gas-phase ion, and for forty years that restricted the method to substances that could be vaporised — which excludes proteins, nucleic acids, polymers and most pharmaceuticals in their biological form. Heating them destroys them.
 
 Two solutions arrived within four years, from different directions. {{fig:fenn|John Fenn}} took up a suggestion of Malcolm Dole's from 1968: push a solution through a fine needle held at several kilovolts, and it emerges as a mist of charged droplets. As each droplet evaporates its charge density rises until it breaks up, and eventually the molecules it carried are left as bare, *multiply* charged ions. The multiple charge is the crucial detail, because an instrument measures mass divided by charge — so a 50-kilodalton protein carrying 40 charges appears at 1,250, comfortably inside an ordinary range. Fenn published protein spectra in 1989 and titled his Nobel lecture "Electrospray wings for molecular elephants".
+
+{{img:electrospray}}
 
 {{fig:karas|Michael Karas}} and {{fig:hillenkamp|Franz Hillenkamp}} solved it from the solid side. A laser pulse fired at a protein destroys it; fired at a protein embedded in a thousandfold excess of a small molecule chosen to absorb strongly at that wavelength, the matrix takes the energy, vaporises, and carries the analyte along intact. The method gives mainly singly charged ions and suits a time-of-flight analyser, and it is how a protein spot cut out of a gel is identified.
 
