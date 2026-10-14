@@ -253,6 +253,35 @@ further_reading:
   - citation: "Benton, M. J. & Harper, D. A. T. (2020). Introduction to Paleobiology and the Fossil Record, 2nd edition. Wiley-Blackwell."
     url: null
     note: The standard modern textbook, strong on how the record is corrected for its biases.
+
+images:
+  - id: cuvier-jaws
+    src: /images/fields/paleontology/cuvier-jaws.jpg
+    alt: An engraved plate of four elephant lower jaws, two in side view and two from above, comparing an Indian elephant with a fossil mammoth.
+    caption: >-
+      Cuvier's plate comparing the jaw of an Indian elephant with the fossil jaw of a mammoth,
+      from his 1798–99 paper on living and fossil elephants.
+    credit: Georges Cuvier
+    license: Public domain
+    source: https://commons.wikimedia.org/wiki/File:Cuvier_elephant_jaw.jpg
+  - id: crystal-palace-iguanodon
+    src: /images/fields/paleontology/crystal-palace-iguanodon.jpg
+    alt: A large Victorian sculpture of an Iguanodon as a heavy four-legged reptile, standing among plants in a park.
+    caption: >-
+      The Iguanodon at Crystal Palace Park, modelled by Benjamin Waterhouse Hawkins under Owen's
+      direction in 1854: a dinosaur as Owen's group was first imagined, heavy and four-legged.
+    credit: Tom Page
+    license: CC BY-SA 2.0
+    source: https://commons.wikimedia.org/wiki/File:Crystal_Palace_Iguanodon_2024-06-08.jpg
+  - id: kpg-clay
+    src: /images/fields/paleontology/kpg-clay.jpg
+    alt: A finger pointing to a thin dark layer of clay between pale beds of rock in a tunnel wall.
+    caption: >-
+      The Cretaceous–Palaeogene boundary clay in the Geulhemmergroeve tunnels in the Netherlands:
+      the same thin layer that, at Gubbio, held thirty times the expected iridium.
+    credit: Wilson44691
+    license: CC0
+    source: https://commons.wikimedia.org/wiki/File:Cretaceous_Paleogene_clay_at_Geulhemmergroeve.jpg
 ---
 
 ## Extinction Becomes a Fact
@@ -260,6 +289,8 @@ further_reading:
 In 1796 a young anatomist at the Paris museum gave a lecture on elephants. {{fig:cuvier|Georges Cuvier}} compared the jaws and teeth of the Indian and African species — different enough, he argued, to be distinct — and then set beside them the mammoth skulls dug from the Siberian permafrost and the enormous molars sent from a salt lick in Ohio. Neither matched either living elephant. Animals of that size could not be overlooked in some unexplored country. They were gone.
 
 This was not a small claim. It cut against the idea of a complete and permanent chain of being, and it meant the Earth had a history in which whole populations of creatures ended. Cuvier spent the next sixteen years proving it over and over, species by species, in the *Recherches sur les ossemens fossiles*. He also noticed that the faunas in the Paris basin changed abruptly between strata, and concluded that the history was punctuated by catastrophes — a view his successors rejected and the evidence later partly restored.
+
+{{img:cuvier-jaws}}
 
 The supply of fossils came largely from people outside the lecture halls. {{fig:mary-anning|Mary Anning}} sold specimens from the Jurassic cliffs at Lyme Regis to support her family, and in the process produced the first described ichthyosaur, the first complete plesiosaur and the first British pterosaur. She worked out that the coprolites in the blue lias were fossil faeces, and could therefore say what the animals had eaten. Her finds were named and published by Fellows of a society that would not admit her.
 
@@ -273,6 +304,8 @@ Faunal succession gives order but no duration. Smith could say that the lias is 
 
 In 1842 {{fig:owen|Richard Owen}} noticed that three poorly known British fossil reptiles shared a fused sacrum and limbs held beneath the body rather than sprawled, and gave the group a name: Dinosauria. The name did more work than the anatomy. Within twelve years full-sized concrete reconstructions stood in the grounds at Crystal Palace, and palaeontology acquired a public that no other science had.
 
+{{img:crystal-palace-iguanodon}}
+
 The deeper surprise came later and higher up. In 1909 {{fig:walcott|Charles Walcott}} found a Cambrian shale on a ridge in British Columbia in which soft parts were preserved as carbon films — guts, eyes, gills, whole animals that had no hard tissue to leave behind. He placed the fossils in known groups. Sixty years on, {{fig:whittington|Harry Whittington}} and his students took the specimens apart again and found creatures that resisted placement: *Opabinia* with five eyes and a grasping proboscis, *Anomalocaris*, *Hallucigenia*. {{fig:gould|Stephen Jay Gould}} made the case in *Wonderful Life* that the Cambrian had run more experiments in body plan than have existed since, and that the survivors were chosen by luck as much as by fitness. Simon Conway Morris, who had done much of the redescription, argued the opposite: that the oddities are early branches of lineages that still exist, and that convergence makes life's outcomes largely predictable. The disagreement is live and is as much about how to measure difference as about the animals.
 
 ## A Closer Look: Weighing an Asteroid from a Centimetre of Clay
@@ -280,6 +313,8 @@ The deeper surprise came later and higher up. In 1909 {{fig:walcott|Charles Walc
 At Gubbio in Italy the Cretaceous limestones end, a centimetre of clay intervenes, and the Palaeogene limestones begin. {{fig:walter-alvarez|Walter Alvarez}} wanted to know how long the clay took to accumulate, and his father {{fig:luis-alvarez|Luis Alvarez}} suggested a clock: iridium. It is almost absent from the Earth's crust, which was stripped of siderophile elements when the core formed, but it is present in meteorites at around 500 parts per billion, and it rains down steadily as micrometeorite dust. A slowly deposited clay should hold more of it than a fast one.
 
 The measurement, by Frank Asaro and Helen Michel, found about 9 parts per billion against a background near 0.3 — thirty times too much, and far more than slow deposition could explain. The same spike appeared at Stevns Klint in Denmark and in New Zealand. Suppose instead that it arrived all at once, as a vaporised impactor spread through the atmosphere and settled worldwide. How big was it?
+
+{{img:kpg-clay}}
 
 Take the layer as 1 cm thick with a density of about 2 g/cm³, so it holds 2 grams of material per square centimetre of ground. At 9 parts per billion, each square centimetre carries
 
