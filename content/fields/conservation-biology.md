@@ -229,11 +229,33 @@ further_reading:
   - citation: "Primack, R. B. (2014). Essentials of Conservation Biology (6th ed.). Sinauer Associates."
     url: null
     note: A standard introductory textbook.
+
+images:
+  - id: rachel-carson
+    src: /images/fields/conservation-biology/rachel-carson.jpg
+    alt: Portrait photograph of Rachel Carson, smiling, in a dark jacket with a white collar.
+    caption: >-
+      Rachel Carson in her official photograph at the U.S. Fish and Wildlife Service, around 1940,
+      two decades before *Silent Spring*.
+    credit: U.S. Fish and Wildlife Service
+    license: Public domain
+    source: https://commons.wikimedia.org/wiki/File:Rachel-Carson.jpg
+  - id: heterozygosity
+    src: /images/fields/conservation-biology/heterozygosity.png
+    alt: Four falling curves of genetic variation over 100 generations, for effective sizes 10, 50, 500 and 5,000, ending at 0.6, 37, 90 and 99 per cent.
+    caption: >-
+      The table's decay curves. An effective size of 10 loses nearly everything in a hundred
+      generations; 5,000 keeps 99%.
+    credit: Drawn for Field Atlas from the table above
+    license: Field Atlas original
+    source: https://github.com/andifathulms/field-atlas/blob/main/scripts/diagrams/ecology.py
 ---
 
 ## Silent Spring
 
 People had protected forests and game for centuries, and the first national parks were created in the nineteenth century. But these efforts were driven by hunters, foresters and lovers of scenery, not by a science of extinction. That changed in 1962, when {{fig:rachel-carson|Rachel Carson}}, a marine biologist who had written best-selling books about the sea, published *Silent Spring*. She showed that DDT and other pesticides did not stay where they were sprayed. They accumulated up food chains, becoming more concentrated at each level, and killed birds and fish far from any field.
+
+{{img:rachel-carson}}
 
 The chemical industry attacked her, but the evidence mounted. British ornithologists found that the eggshells of peregrine falcons and sparrowhawks had become thinner since the late 1940s, when DDT came into use, and the eggs were breaking under their parents. The United States banned DDT for farm use in 1972. Peregrines, bald eagles and ospreys recovered. The episode showed that ecology could detect damage that no one was looking for, and that it had a place in public policy.
 
@@ -263,6 +285,8 @@ The fraction remaining after $t$ generations is:
 | 5,000 | 0.999 | 0.990 |
 
 A population of effective size 10 loses 40% of its variation in ten generations and almost all of it in a hundred. At 50 the short-term loss is modest, which is the reasoning behind the first half of the 50/500 rule. But even at 50, half the variation is gone after about 69 generations. At 500 the population keeps about 90% for a hundred generations, and new mutations roughly make up the loss, which is the reasoning behind the second half.
+
+{{img:heterozygosity}}
 
 The catch is that $N_e$ is usually much smaller than the number of animals. In a species where a few males father all the young, the effective size is
 
