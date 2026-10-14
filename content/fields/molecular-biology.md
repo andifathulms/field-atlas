@@ -237,6 +237,26 @@ further_reading:
   - citation: "Alberts, B. et al. (2022). Molecular Biology of the Cell (7th ed.). W. W. Norton."
     url: null
     note: The standard textbook, comprehensive and well illustrated.
+
+images:
+  - id: dna-structure
+    src: /images/fields/molecular-biology/dna-structure.jpg
+    alt: A ball-and-stick model of the DNA double helix with its major and minor grooves labelled, and close-ups of the A–T and G–C base pairs.
+    caption: >-
+      The double helix. A pairs with T by two hydrogen bonds and G with C by three, so each strand
+      fixes the sequence of the other.
+    credit: Zephyris
+    license: CC BY-SA 3.0
+    source: https://commons.wikimedia.org/wiki/File:DNA_Structure%2BKey%2BLabelled.pn_NoBB.png
+  - id: genetic-code
+    src: /images/fields/molecular-biology/genetic-code.jpg
+    alt: A circular chart of the genetic code, reading from the centre outwards three letters at a time to each amino acid, with drawings of the amino acids around the rim.
+    caption: >-
+      The genetic code as a wheel: read three letters from the centre outwards to find the amino
+      acid, or a stop signal. Sixty-four codons cover twenty amino acids.
+    credit: Meir2
+    license: CC BY-SA 4.0
+    source: https://commons.wikimedia.org/wiki/File:Genetic-code-with-images.svg
 ---
 
 ## What Is a Gene Made Of?
@@ -253,11 +273,15 @@ At King's College London, {{fig:rosalind-franklin|Rosalind Franklin}} was taking
 
 The structure explained itself. Each strand is a template for the other, so DNA can be copied, and in 1958 Matthew Meselson and Franklin Stahl showed that it is copied exactly that way. The sequence of bases along a strand could be a message. Franklin, who had moved on to pioneering work on viruses, died in 1958 at 37. The Nobel Prize went to the three men four years later.
 
+{{img:dna-structure}}
+
 ## Cracking the Code
 
 If DNA is a message, how is it read? In 1958 Crick set out the *central dogma*: DNA is transcribed into RNA, RNA is translated into protein, and information never flows back out of protein. Its most important consequence is that a protein's amino-acid sequence is spelled out by its gene.
 
 The spelling was cracked by experiment. In 1961 {{fig:nirenberg|Marshall Nirenberg}} and Heinrich Matthaei made an RNA of nothing but U and got a protein of nothing but phenylalanine. Within five years every three-letter codon had been assigned. The code turned out to be nearly identical in bacteria, plants and people, powerful evidence for the common descent Darwin had argued from anatomy.
+
+{{img:genetic-code}}
 
 ## A Closer Look: How Much Information Is in DNA?
 
