@@ -269,11 +269,42 @@ further_reading:
   - citation: "Hull, D. L. (1988). Science as a Process. University of Chicago Press."
     url: null
     note: How Hennig's argument won, as institutional history rather than logic.
+
+images:
+  - id: haeckel-tree
+    src: /images/fields/phylogenetics/haeckel-tree.jpg
+    alt: A hand-drawn branching tree of the primates, with handwritten German group names along the branches and humans near the top.
+    caption: >-
+      Haeckel's sketch of the primate family tree. Trees like this were drawn by authority and
+      judgement; the methods in this field set out to replace that with a rule.
+    credit: Ernst Haeckel
+    license: Public domain
+    source: https://commons.wikimedia.org/wiki/File:Ernst_Haeckel_-_Tree_of_Life.jpg
+  - id: three-trees
+    src: /images/fields/phylogenetics/three-trees.png
+    alt: Three unrooted four-taxon trees, (AB)(CD) with 10 steps, (AC)(BD) with 11, and (AD)(BC) with 12.
+    caption: >-
+      The three possible trees for four species, scored by counting changes on the eight sites.
+      (AB)(CD) wins, by a single step.
+    credit: Drawn for Field Atlas from the table above
+    license: Field Atlas original
+    source: https://github.com/andifathulms/field-atlas/blob/main/scripts/diagrams/phylogeny.py
+  - id: jukes-cantor
+    src: /images/fields/phylogenetics/jukes-cantor.png
+    alt: A curve of substitutions per site against the observed fraction of differing sites, close to the line d = p at first and rising steeply towards p = 0.75.
+    caption: >-
+      The Jukes–Cantor correction. At small $p$ the observed difference is nearly the true change;
+      by $p = 0.3$ a quarter of it is hidden, and towards $p = 3/4$ the estimate runs away.
+    credit: Drawn for Field Atlas from the numbers above
+    license: Field Atlas original
+    source: https://github.com/andifathulms/field-atlas/blob/main/scripts/diagrams/phylogeny.py
 ---
 
 ## Only Novelties Group
 
 By the 1950s everyone agreed that classification should reflect descent. Nobody could say how to get from characters to descent without judgement. {{fig:willi-hennig|Willi Hennig}}, a specialist in flies who drafted his theory in an Allied prisoner-of-war camp, supplied the missing rule in 1950, and it is almost embarrassingly simple: a shared character groups organisms only if it is *new*.
+
+{{img:haeckel-tree}}
 
 Birds and crocodiles both lay shelled eggs, but so did their remote ancestors, and so do turtles and lizards; the character cannot separate any group from any other. Birds and crocodiles also share a four-chambered heart and a particular arrangement of skull openings that their common ancestor acquired and that lizards never had. Those are evidence. Hennig called a shared novelty a synapomorphy and a retained ancestral state a plesiomorphy, and insisted that only the former counts. From the rule follows a severe consequence: a named group must contain *all* of its ancestor's descendants. Reptilia without birds fails that test and is therefore not a group at all — which is why, in every modern classification, birds are reptiles.
 
@@ -320,6 +351,8 @@ $$
 
 Parsimony picks $(AB)(CD)$, by one step. That margin is the whole evidence: three sites for it, two against, one for the third topology. Resample those eight sites with replacement and the winner changes often — which is exactly what Felsenstein's bootstrap measures.
 
+{{img:three-trees}}
+
 Now scale up. The number of unrooted binary trees on $n$ tips is $(2n-5)!!$:
 
 | Tips | Trees |
@@ -338,6 +371,8 @@ d = -\tfrac{3}{4}\ln\!\left(1 - \tfrac{4}{3}p\right).
 $$
 
 At $p = 0.05$ this gives $d = 0.052$ — observed difference and real change are nearly the same. At $p = 0.3$, $d = 0.38$: a quarter of the history is already hidden by sites that changed twice. At $p = 0.6$, $d = 1.21$, and at $p = 0.75$ the formula diverges, because two random sequences over four bases differ at three sites in four. Past that point the sequences carry no information about time at all — they are saturated — and two long branches will look alike simply because both have gone random. That is long-branch attraction in one line, and it is why the sister group of all other animals is still disputed with whole genomes in hand.
+
+{{img:jukes-cantor}}
 
 ## One Tree, or Many?
 
