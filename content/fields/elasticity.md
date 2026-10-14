@@ -250,6 +250,18 @@ further_reading:
   - citation: "Timoshenko, S. P. (1953). History of Strength of Materials. McGraw-Hill."
     url: null
     note: A history written by a practitioner, strong on how design rules preceded theory.
+
+images:
+  - id: p-wave-shadow
+    src: /images/fields/elasticity/p-wave-shadow.png
+    alt: A cross-section of half the Earth with curved seismic ray paths from a source at the top, bending sharply at the core and leaving a gap at the surface between about 104 and 140 degrees.
+    caption: >-
+      Compression waves from an earthquake at the top bend where they enter the liquid outer
+      core, leaving a shadow zone at the surface where they barely arrive. Shear waves do not
+      cross the core at all, which is how Jeffreys knew it is liquid.
+    credit: U.S. Geological Survey, SVG by Vanessa Ezekowitz
+    license: CC BY-SA 3.0
+    source: https://commons.wikimedia.org/wiki/File:Earthquake_wave_shadow_zone.svg
 ---
 
 ## The Same Continuum, Different Memory
@@ -315,6 +327,8 @@ Metals present the mirror-image puzzle. Their *shear* strength should be about $
 A continuum with elasticity supports waves, and a solid supports two kinds that a fluid does not: shear waves, in which the motion is transverse, and surface waves. {{fig:rayleigh|Lord Rayleigh}} found the latter in 1885 — a disturbance that decays within about a wavelength of depth and travels just below the shear speed.
 
 This is what made the Earth's interior accessible. An earthquake generates compression waves, shear waves and surface waves; each travels at a speed set by the elastic moduli and density of the rock it is in; each arrives at a seismograph at a different time, refracted and reflected along the way. In 1926 Harold Jeffreys concluded from the absence of shear waves through the centre that the outer core must be liquid, since a fluid has no shear modulus and cannot carry them. The same inversion, with thousands of stations and modern computation, now images subducted slabs and mantle plumes in three dimensions.
+
+{{img:p-wave-shadow}}
 
 Making those computations possible required something else that came out of this field. Stresses in a complicated structure have no closed-form solution, and the method devised for aircraft and dams in the 1940s and 1950s — divide the object into elements, write each one's energy in terms of its corner displacements, minimise the total — turned out to be a general way to solve partial differential equations. The [finite element method](/math/numerical-pdes/) is now the largest single use of engineering computation, and it began as a way of finding out whether a wing would hold.
 
