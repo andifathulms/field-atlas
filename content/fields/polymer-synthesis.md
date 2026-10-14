@@ -263,6 +263,36 @@ further_reading:
   - citation: "Matyjaszewski, K. & Davis, T. P., eds. (2002). Handbook of Radical Polymerization. Wiley."
     url: null
     note: Where the controlled-radical methods are set out together, with their limits stated.
+
+images:
+  - id: bakelite-shaker
+    src: /images/fields/polymer-synthesis/bakelite-shaker.jpg
+    alt: A cream and blue marbled cocktail shaker with its lid beside it and a small dark dish.
+    caption: >-
+      A Bakelite cocktail shaker, moulded and then set hard for good: one cross-linked molecule
+      running through the whole object.
+    credit: Tangerineduel
+    license: CC BY-SA 4.0
+    source: https://commons.wikimedia.org/wiki/File:Bakelite_Cocktail_Shaker.jpg
+  - id: cold-drawing
+    src: /images/fields/polymer-synthesis/cold-drawing.jpg
+    alt: A black-and-white photograph of two hands drawing a fibre out of a lump of polymer on a rod.
+    caption: >-
+      Cold-drawing a polyester fibre, the technique Julian Hill found in Carothers's group at
+      DuPont in 1930: stretching aligns the chains and makes the fibre strong. It led to nylon.
+    credit: DuPont, Science History Institute
+    license: Public domain
+    source: https://commons.wikimedia.org/wiki/File:Demonstration_of_cold-drawing_technique_for_polyester_-_DPLA_-_26c6e802f6ba31da739a63b5446bdb81_(page_1).jpg
+  - id: chain-length
+    src: /images/fields/polymer-synthesis/chain-length.png
+    alt: A rising line of average chain length against conversion on log scales, reaching 10 at 90 per cent and 10,000 at 99.99 per cent, with a second line that levels off at 199.
+    caption: >-
+      Carothers's equation. Ninety per cent conversion gives chains of ten; a fibre needs 99%
+      and more. With 1% too much of one monomer the chains can never pass 199 units, however
+      long the reaction runs.
+    credit: Drawn for Field Atlas from the tables above
+    license: Field Atlas original
+    source: https://github.com/andifathulms/field-atlas/blob/main/scripts/diagrams/materials.py
 ---
 
 ## A Plastic Made Before Anyone Believed in Large Molecules
@@ -271,7 +301,11 @@ further_reading:
 
 The material itself helps explain the delay. Bakelite is one covalent network running through the whole object: it cannot be dissolved, melted, distilled or given a molecular weight, so every method chemistry had for establishing what a substance is was inapplicable. The reasonable-sounding alternative view — that such materials are aggregates of ordinary small molecules held by some unusual attraction — was not easily refuted by anything Bakelite could be made to do. {{fig:staudinger|Hermann Staudinger}}'s long argument for the macromolecule, described under [soft matter](/physics/soft-matter/), had to be won on other polymers.
 
+{{img:bakelite-shaker}}
+
 {{fig:carothers|Wallace Carothers}}'s approach at DuPont was to settle it constructively: build polymers from reactions whose chemistry was already known, so that the structure of the product followed from the structure of the reagents and no inference was required. Along the way he made neoprene and nylon. And in working out how to do it he found the arithmetic that constrains one half of the subject permanently.
+
+{{img:cold-drawing}}
 
 ## Two Mechanisms With Opposite Requirements
 
@@ -316,6 +350,8 @@ Put numbers in it:
 | 0.9999 | 10,000 | high-performance |
 
 This is the tyranny of the mechanism. At 90% conversion — which in most of organic chemistry is a good yield — there is no polymer, only an oligomer that crumbles. Useful properties start around $\overline{DP} = 100$, which requires **99%**, and every further factor of ten in chain length costs another decimal place of conversion. There is no clever reagent that shortens this; it is arithmetic.
+
+{{img:chain-length}}
 
 There is a second and sharper constraint that follows from the same algebra. Suppose the two monomers are not present in exactly equal amounts, with a ratio $r < 1$. Once the minority monomer is exhausted, every chain end is of the majority kind and cannot react with another, so growth stops at
 
