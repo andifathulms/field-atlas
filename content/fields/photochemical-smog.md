@@ -268,11 +268,42 @@ further_reading:
   - citation: "Jacobs, C. & Kelly, W. J. (2008). Smogtown: The Lung-Burning History of Pollution in Los Angeles. Overlook."
     url: null
     note: How the science was argued over in public for a decade before it was acted on.
+
+images:
+  - id: la-smog
+    src: /images/fields/photochemical-smog/la-smog.jpg
+    alt: Downtown Los Angeles towers seen from above through a thick brown haze.
+    caption: >-
+      Downtown Los Angeles in heavy smog, photographed by Gene Daniels for the Environmental
+      Protection Agency's Documerica project in the 1970s.
+    credit: Gene Daniels, U.S. National Archives
+    license: Public domain
+    source: https://commons.wikimedia.org/wiki/File:LOS_ANGELES_IN_HEAVY_SMOG_-_NARA_-_552394.jpg
+  - id: ozone-ratio
+    src: /images/fields/photochemical-smog/ozone-ratio.png
+    alt: A rising straight line of midday ozone against the ratio of NO2 to NO, 17 ppb at 1 to 1, 84 at 5 to 1 and 170 at 10 to 1, with a limit line at 70 ppb.
+    caption: >-
+      The photostationary state at midday: ozone is 17 ppb times the ratio of NO₂ to NO, whatever
+      the total amount of nitrogen oxides.
+    credit: Drawn for Field Atlas from the numbers above
+    license: Field Atlas original
+    source: https://github.com/andifathulms/field-atlas/blob/main/scripts/diagrams/environment.py
+  - id: reactivity
+    src: /images/fields/photochemical-smog/reactivity.png
+    alt: Bars of ozone formed per gram emitted, ethane 0.28, propane 0.49, ethanol 1.53, formaldehyde 9.46, m-xylene 10.6 and propene 11.6.
+    caption: >-
+      Carter's reactivity scale from the table: a gram of propene makes forty times as much ozone
+      as a gram of ethane.
+    credit: Drawn for Field Atlas from the table above
+    license: Field Atlas original
+    source: https://github.com/andifathulms/field-atlas/blob/main/scripts/diagrams/environment.py
 ---
 
 ## A Pollutant Nobody Emitted
 
 Los Angeles filled with haze in the summer of 1943. It stung the eyes, cut visibility, cracked rubber and ruined the local lettuce, and it was not the smoke that older industrial cities knew. London's killing fog of December 1952 was coal smoke and sulphur dioxide, produced by burning, visible at the chimney, and worst in cold windless weather; Los Angeles's haze was worst on bright hot afternoons and had no obvious chimney at all. For seven years individual factories were blamed in turn.
+
+{{img:la-smog}}
 
 {{fig:haagen-smit|Arie Haagen-Smit}} was a plant biochemist working on the volatile compounds that give pineapple its flavour when he was asked to find out what was damaging the crops. His answer, published in 1952, had three parts. The irritant is ozone. Nothing emits ozone. And ozone appears when hydrocarbons and nitrogen oxides are illuminated — which he demonstrated by putting exhaust and light into a chamber and reproducing both the plant damage and the eye irritation.
 
@@ -325,6 +356,8 @@ $$
 
 **Ozone is a ratio, not an amount.** Equal NO₂ and NO give 17 ppb; a ratio of five gives 84 ppb, which breaches most air quality standards; a ratio of ten gives 170. Doubling total NOₓ with the ratio unchanged does nothing at all. Everything therefore depends on what is oxidising NO to NO₂, and the hydrocarbons' entire role is to do that without spending ozone.
 
+{{img:ozone-ratio}}
+
 Now the two corrections that cost American policy twenty years.
 
 **First: hydrocarbons are not interchangeable.** Carter's incremental reactivity scale gives grams of ozone formed per gram of compound emitted:
@@ -339,6 +372,8 @@ Now the two corrections that cost American policy twenty years.
 | Propene | 11.6 |
 
 A factor of **forty** between ethane and propene. A regulation written as a limit on total hydrocarbon mass treats those as equivalent, and they are not: replacing a kilogram of propene with a kilogram of ethane cuts the ozone produced by about 97% while leaving the regulated quantity unchanged. California eventually wrote reactivity-weighted limits for this reason.
+
+{{img:reactivity}}
 
 **Second: nitrogen oxides can go either way.** The radical chain needs radicals, and NO₂ consumes them — the reaction OH + NO₂ → HNO₃ removes a hydroxyl radical and a nitrogen oxide together, terminating the chain. So nitrogen oxides are both the fuel for ozone production and the brake on it:
 
