@@ -238,6 +238,35 @@ further_reading:
   - citation: "Hoffmann, P. M. (2012). Life's Ratchet. Basic Books."
     url: null
     note: A popular account of molecular motors as rectifiers of thermal noise.
+
+images:
+  - id: sarcomere
+    src: /images/fields/molecular-machines/sarcomere.png
+    alt: A diagram of a sarcomere, thin filaments attached to Z lines at each end overlapping thick filaments in the middle.
+    caption: >-
+      A sarcomere, the repeating unit of muscle. Thin filaments anchored at the Z lines overlap
+      the thick filaments; contraction slides them further together.
+    credit: MecciaC0410
+    license: CC BY-SA 4.0
+    source: https://commons.wikimedia.org/wiki/File:Normal_Sarcomere.svg
+  - id: flagellar-motor
+    src: /images/fields/molecular-machines/flagellar-motor.png
+    alt: A labelled diagram of a bacterial flagellum's base, a rotor of rings set in the inner and outer membranes and the cell wall, joined by a hook to the filament.
+    caption: >-
+      The base of a bacterial flagellum: a rotary motor of rings set in the cell envelope, turning
+      the hook and filament as a propeller.
+    credit: LadyofHats
+    license: Public domain
+    source: https://commons.wikimedia.org/wiki/File:Flagellum_base_diagram-en.svg
+  - id: motor-energy
+    src: /images/fields/molecular-machines/motor-energy.png
+    alt: Bars of energy in piconewton-nanometres, thermal energy 4.3, a kinesin step 49, one ATP 83, and ATP synthase per ATP 84.
+    caption: >-
+      The step's energy budget. A kinesin step uses 59% of an ATP; ATP synthase turns through 120°
+      for each ATP with essentially all of it.
+    credit: Drawn for Field Atlas from the numbers above
+    license: Field Atlas original
+    source: https://github.com/andifathulms/field-atlas/blob/main/scripts/diagrams/structure.py
 ---
 
 ## Sliding, Not Shortening
@@ -245,6 +274,8 @@ further_reading:
 Muscle was the obvious place to start, because it is the one case where molecular motion produces an effect visible to the naked eye. The received explanation into the 1950s was that contraction came from protein chains coiling up, as a stretched rubber band retracts.
 
 Two papers in one issue of *Nature* in 1954 showed otherwise. {{fig:hugh-huxley|Hugh Huxley}} and {{fig:jean-hanson|Jean Hanson}} watched isolated myofibrils under phase contrast; {{fig:andrew-huxley|Andrew Huxley}} and {{fig:niedergerke|Rolf Niedergerke}} used interference microscopy on living fibres. Both found that the dark and light bands of striated muscle change in a particular way during contraction: one set of filaments keeps its length and the other set keeps its length, while the region where they overlap grows. Nothing shortens. Things slide.
+
+{{img:sarcomere}}
 
 That changes the problem completely. If filaments slide, something must be stepping along something — attaching, pulling, letting go, reattaching further on. The projections visible between the filaments became the obvious candidate, and the question became what a single one of them does.
 
@@ -257,6 +288,8 @@ A **team motor** detaches after every working stroke. Muscle myosin spends most 
 A **processive motor** must never let go. Kinesin, dragging a vesicle along a microtubule for tens of micrometres, has two heads that alternate: the rear head detaches only after the front one has bound, so the molecule is always attached by at least one point and walks hand over hand for a hundred steps or more. That requires the two heads to communicate, which is the field's main unsolved mechanical problem.
 
 A third design abandons the stroke entirely. {{fig:howard-berg|Howard Berg}} established in 1973 that a bacterium's flagellum is not a whip but a propeller, turned by a rotary motor embedded in the membrane, driven by protons flowing down their gradient rather than by ATP, spinning at a few hundred revolutions per second and reversing in about a millisecond. The reason rotation rather than reciprocation is the right answer is hydrodynamic: at the Reynolds number of a swimming bacterium, around $10^{-5}$, the equations are time-reversible, so any stroke that merely runs backwards on the return brings the organism back where it started. A corkscrew does not have a return stroke. The constraint belongs to [fluid dynamics](/physics/fluid-dynamics/) and the solution to this chapter.
+
+{{img:flagellar-motor}}
 
 ATP synthase is rotary too, and runs the same machinery in reverse: instead of consuming ATP to turn, it is turned by a proton gradient and makes ATP, which is how almost all of the ATP in the biosphere is produced.
 
@@ -291,6 +324,8 @@ $$
 $$
 
 A protein converting chemical energy to mechanical work at nearly 60% efficiency, which is better than a car engine and close to the thermodynamic constraints of the cycle.
+
+{{img:motor-energy}}
 
 The same calculation for ATP synthase, approached from the other direction, agrees in a way that is worth noticing. The motor turns through 120° for each ATP, three per revolution, against a measured torque of about 40 pN·nm. The work per revolution is $2\pi \times 40 = 251$ pN·nm, so per ATP
 
