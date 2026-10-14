@@ -234,6 +234,35 @@ further_reading:
   - citation: "Rhodes, G. (2006). Crystallography Made Crystal Clear, 3rd edition. Academic Press."
     url: null
     note: The clearest explanation of the phase problem and how it is solved.
+
+images:
+  - id: helix-density
+    src: /images/fields/protein-crystallography/helix-density.jpg
+    alt: A stick model of an alpha helix enclosed in a grey mesh of electron density contours.
+    caption: >-
+      An α-helix of myoglobin inside its electron-density map, at a modern 0.91 Å. The map is what
+      the measured intensities and the recovered phases give together; the model is fitted into it.
+    credit: Dcrjsr
+    license: CC BY 3.0
+    source: https://commons.wikimedia.org/wiki/File:Helix_electron_density_myoglobin_2nrl_17-32.jpg
+  - id: kendrew-model
+    src: /images/fields/protein-crystallography/kendrew-model.jpg
+    alt: A dense model of rods and coloured beads on a gridded base, tracing a folded protein chain in three dimensions.
+    caption: >-
+      A myoglobin model built by Kendrew and a technician at Cambridge, now in the National Museum
+      of American History in Washington.
+    credit: Daderot
+    license: CC0
+    source: https://commons.wikimedia.org/wiki/File:Myoglobin_protein_model,_created_by_Dr._John_Kendrew_and_technician_at_Cambridge_University,_1965_-_National_Museum_of_American_History_-_DSC00018.jpg
+  - id: myoglobin
+    src: /images/fields/protein-crystallography/myoglobin.jpg
+    alt: A ribbon model of myoglobin, eight grey helices packed around a blue haem group.
+    caption: >-
+      Myoglobin as a ribbon: eight helices of different lengths packed round the haem, with no
+      symmetry of any kind.
+    credit: Belles14104, from PDB entry 1A6M
+    license: CC0
+    source: https://commons.wikimedia.org/wiki/File:1a6m_Oxy-myoglobin.png
 ---
 
 ## A Pattern With Half Its Information Missing
@@ -259,6 +288,8 @@ Both were published in 1951, derived from bond lengths and angles on paper, with
 The reasoning behind the solution is worth following, because it is a case of extracting missing information by deliberately perturbing the sample.
 
 First, the scale of the problem. Each diffraction spot is one Fourier component, and the number of them grows as the inverse cube of the resolution. Myoglobin's 2 Å map required about ten thousand independent measurements, each needing a phase angle somewhere between 0 and 360 degrees. Guessing is not available: a Fourier synthesis with wrong phases gives noise that looks like nothing.
+
+{{img:helix-density}}
 
 {{fig:perutz|Max Perutz}}'s idea was to add a heavy atom. Haemoglobin has two reactive sulphydryl groups that will bind mercury, and if the crystal's packing is undisturbed — an *isomorphous* derivative — then every spot's amplitude becomes the sum of two contributions: the protein's, unknown in phase, and the mercury's, whose phase is calculable once its position is known. The two interfere. Where they are in step the spot gets brighter; where they oppose, dimmer. The *change* in each amplitude therefore carries information about the protein's phase at that reflection.
 
@@ -290,7 +321,11 @@ Spots at larger angles are weaker and are the first casualties of radiation dama
 
 {{fig:kendrew|John Kendrew}} chose myoglobin because it is a quarter the size of haemoglobin and crystallises well from the muscle of sperm whales, which were then still being hunted. His 6 Å map of 1958 showed a sausage of electron density; the 2 Å map of 1960 showed the chain.
 
+{{img:kendrew-model}}
+
 It was a mess. Eight helical segments of varying length, joined by irregular turns, packed into a compact lump with the haem group wedged in a pocket, and no symmetry of any kind. Kendrew wrote that the most striking feature was the almost total absence of the regularity that had been expected. The helical segments were exactly the ones Pauling and Corey had derived on paper seven years earlier, at the predicted pitch. The way those segments were arranged relative to one another was not derivable from anything.
+
+{{img:myoglobin}}
 
 This is the result the field was founded on, and it set the agenda for everything after. A protein's shape is specific, reproducible and irregular, which means it must be determined rather than deduced — and, as the chemistry turned out, it is determined by the amino acid sequence alone, a fact established at almost the same time and discussed under [protein structure prediction](/biology/structure-prediction/). The immediate payoff was medical: Perutz's haemoglobin maps located the glutamate at position 6 of the β chain whose replacement by valine causes sickle-cell disease, and showed that the substitution creates a sticky hydrophobic patch on the deoxygenated molecule — a surface defect that makes the molecules polymerise into fibres.
 
