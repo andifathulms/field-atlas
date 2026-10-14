@@ -238,6 +238,26 @@ further_reading:
   - citation: "Semenov, N. N. (1935). Chemical Kinetics and Chain Reactions. Clarendon Press."
     url: null
     note: The founding account of branching chains, by the person who worked out why mixtures explode.
+
+images:
+  - id: arrhenius
+    src: /images/fields/chemical-kinetics/arrhenius.jpg
+    alt: Photograph of Svante Arrhenius in later life, heavy-set, with a moustache, in a dark suit.
+    caption: >-
+      Svante Arrhenius, whose 1889 equation put temperature in an exponent.
+    credit: Transocean, Berlin; Smithsonian Institution Libraries
+    license: Public domain
+    source: https://commons.wikimedia.org/wiki/File:Portrait_of_Svante_Arrhenius_(1859-1927),_Chemist_and_Physicist_(2536015089)_(cropped).jpg
+  - id: ten-degree-rule
+    src: /images/fields/chemical-kinetics/ten-degree-rule.png
+    alt: Two rising lines of rate against temperature from 298 to 338 K on a logarithmic scale, the 50 kJ/mol barrier reaching 1.93 at 308 K and the 100 kJ/mol barrier reaching 3.7.
+    caption: >-
+      The ten-degree rule from the Arrhenius equation. Ten degrees nearly doubles the rate over
+      a 50 kJ/mol barrier and multiplies it by 3.7 over a 100 kJ/mol one; the higher the
+      barrier, the more the temperature matters.
+    credit: Drawn for Field Atlas from the numbers above
+    license: Field Atlas original
+    source: https://github.com/andifathulms/field-atlas/blob/main/scripts/diagrams/reaction.py
 ---
 
 ## Thermodynamics Does Not Say When
@@ -270,6 +290,8 @@ $$
 
 and almost everything distinctive about chemical rates follows from the fact that the temperature sits in an exponent.
 
+{{img:arrhenius}}
+
 **The ten-degree rule.** Chemists learn that a rate roughly doubles for every 10 °C. That is not a rule of nature but a consequence of a typical barrier. With $E_a = 50$ kJ/mol, the ratio of rate constants between 298 K and 308 K is
 
 $$
@@ -277,6 +299,8 @@ $$
 $$
 
 A factor of 1.9, for the most ordinary barrier there is. Double the barrier to 100 kJ/mol and the same ten degrees gives a factor of 3.7.
+
+{{img:ten-degree-rule}}
 
 **Why some reactions never go.** In solution a molecule collides with its neighbours of order $10^{10}$ times a second. With $RT = 2478$ J/mol at 298 K, the fraction of collisions carrying 100 kJ/mol is
 
