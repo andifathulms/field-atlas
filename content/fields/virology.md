@@ -254,6 +254,36 @@ further_reading:
   - citation: "Zimmer, C. (2015). A Planet of Viruses, 2nd edition. University of Chicago Press."
     url: null
     note: Short, accurate essays for readers who want the scale of the virosphere rather than the mechanisms.
+
+images:
+  - id: bacteriophages
+    src: /images/fields/virology/bacteriophages.jpg
+    alt: An electron micrograph of virus particles with round heads and long thin tails.
+    caption: >-
+      Bacteriophages in the electron microscope, negatively stained: heads that carry the genome,
+      and tails that inject it into a bacterium.
+    credit: Dr Graham Beards
+    license: CC BY-SA 4.0
+    source: https://commons.wikimedia.org/wiki/File:Bacteriophages.jpg
+  - id: tmv-tem
+    src: /images/fields/virology/tmv-tem.jpg
+    alt: An electron micrograph of many straight rods lying in all directions, with a 0.2 micrometre scale bar.
+    caption: >-
+      Tobacco mosaic virus under the electron microscope: rods 18 nm across and 300 nm long. The
+      scale bar is 0.2 µm, about the pore size of a Chamberland filter.
+    credit: T. Moravec
+    license: Public domain
+    source: https://commons.wikimedia.org/wiki/File:TMV_virus_under_magnification.jpg
+  - id: serial-passage
+    src: /images/fields/virology/serial-passage.png
+    alt: A falling line of toxin molecules per millilitre from about 10 to the 16 to about 12 over five passages, with a flat line showing the sap stayed infectious.
+    caption: >-
+      Beijerinck's argument in numbers. A toxin diluted a thousandfold at each of five passages
+      would be down to about twelve molecules per millilitre; the sap stayed as infectious as it
+      began, so the agent was multiplying.
+    credit: Drawn for Field Atlas from the numbers above
+    license: Field Atlas original
+    source: https://github.com/andifathulms/field-atlas/blob/main/scripts/diagrams/disease.py
 ---
 
 ## What the Filter Let Through
@@ -264,9 +294,13 @@ By 1890 bacteriology had a reliable way to tell an organism from a poison. Pass 
 
 In the same year Loeffler and Frosch showed that foot-and-mouth disease has a filterable cause, so the phenomenon was not a quirk of plants. {{fig:twort|Frederick Twort}} and {{fig:dherelle|Félix d'Hérelle}} then found, independently, that bacteria have their own viruses. These bacteriophages clear a culture overnight and leave countable holes — plaques — in a lawn of bacteria on agar, each one the progeny of a single particle. A virus you can count, grow in a day and mutate at will became the organism of choice for early molecular biology, which is why so much of what is known about genes was learned from phage.
 
+{{img:bacteriophages}}
+
 ## Crystals, Cultures and the Question of Life
 
 {{fig:wendell-stanley|Wendell Stanley}} processed tonnes of infected tobacco leaves and in 1935 obtained needle-like crystals which, redissolved, still caused disease. Crystallisation is what a pure chemical substance does. Stanley called the material a protein; {{fig:bawden|Frederick Bawden}} and {{fig:pirie|Norman Pirie}} found two years later that it also contained RNA, which is in fact its genome. By 1939 electron micrographs showed rods of a single size.
+
+{{img:tmv-tem}}
 
 This is where the question "is a virus alive?" stops being interesting and starts being badly posed. A virion has no metabolism, makes no ATP, synthesises no protein, and can sit dry on a surface for months. Inside a cell it is an actively evolving population with ancestry, variation and selection. The honest answer is that the categories were built for cells.
 
@@ -289,6 +323,8 @@ $$
 $$
 
 and multiplying by Avogadro's number gives about **12 molecules per millilitre**. Twelve molecules cannot disease a plant. If the fifth-passage sap is as infectious as the first, the agent is being made anew in each host. That is the experiment's logic, and it required no microscope, no chemistry, and no idea of what a virus is.
+
+{{img:serial-passage}}
 
 The sizes involved explain why nobody saw one for another forty years. A Chamberland filter stops particles above roughly 200 nm. Tobacco mosaic virus is a rod 18 nm across and 300 nm long — it passes because it is thin, not because it is short. Poliovirus is a 30-nm sphere, influenza about 100 nm, and the largest, the mimiviruses found in 2003, reach 750 nm and are retained by the same filters that defined viruses in the first place. The operational definition ran out, as operational definitions do.
 
