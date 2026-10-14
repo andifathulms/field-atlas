@@ -232,6 +232,27 @@ further_reading:
   - citation: "Becker, E. D. (1993). A brief history of nuclear magnetic resonance. Analytical Chemistry 65: 295A–302A."
     url: null
     note: How a physics experiment became the chemist's standard instrument in fifteen years.
+
+images:
+  - id: nmr-900
+    src: /images/fields/spectroscopic-structure-determination/nmr-900.jpg
+    alt: A tall white superconducting magnet standing inside a wooden platform with stairs, in a laboratory.
+    caption: >-
+      A 900 MHz NMR spectrometer, its 21.1 tesla magnet so tall that it is reached by a staircase.
+      It sits at the Canadian national ultrahigh-field facility in Ottawa.
+    credit: Speeding Cars
+    license: CC BY-SA 3.0
+    source: https://commons.wikimedia.org/wiki/File:900_magnet_new.jpg
+  - id: ethanol-nmr
+    src: /images/fields/spectroscopic-structure-determination/ethanol-nmr.png
+    alt: A stick spectrum with a quartet near 3.7 ppm, a single line at 2.6 ppm and a triplet near 1.2 ppm.
+    caption: >-
+      The ethanol spectrum from the table: a quartet for the CH₂ beside three neighbours, a
+      triplet for the CH₃ beside two, and the OH as a single line. Each group's lines add up to
+      its share of the hydrogens, 2 : 3 : 1.
+    credit: Drawn for Field Atlas from the table above
+    license: Field Atlas original
+    source: https://github.com/andifathulms/field-atlas/blob/main/scripts/diagrams/analysis.py
 ---
 
 ## Reading Instead of Dismantling
@@ -258,6 +279,8 @@ Below about 1400 cm⁻¹ the absorptions involve the whole skeleton and cannot b
 
 {{fig:purcell|Edward Purcell}} and {{fig:felix-bloch|Felix Bloch}} detected nuclear magnetic resonance in 1946: a nucleus with spin, placed in a magnetic field, absorbs radio waves at a frequency proportional to the field. For hydrogen in a modern 9.4 tesla magnet that frequency is 400 MHz.
 
+{{img:nmr-900}}
+
 The chemistry is in a detail the physicists found inconvenient. The nucleus does not feel the applied field exactly, because the electrons around it circulate and shield it slightly. The shift is tiny — parts per million — and it depends on the electron density, which is to say on the chemical environment. Divide the shift by the operating frequency and the result is a number independent of the instrument, which is why shifts are quoted in ppm and are the same on any spectrometer.
 
 Take ethanol, $\mathrm{CH_3CH_2OH}$, the molecule on which the effect was first seen in 1951. Its spectrum has:
@@ -269,6 +292,8 @@ Take ethanol, $\mathrm{CH_3CH_2OH}$, the molecule on which the effect was first 
 | $\mathrm{OH}$ | 2–5 | 1 | singlet |
 
 Three pieces of information, each independent.
+
+{{img:ethanol-nmr}}
 
 **The shifts** place each group: a methyl attached to carbon sits near 1, a methylene attached to oxygen is pulled downfield to about 3.7 because oxygen withdraws electron density and so removes shielding.
 
