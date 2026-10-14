@@ -194,6 +194,35 @@ further_reading:
   - citation: "Perryman, M. (2018). The Exoplanet Handbook (2nd ed.). Cambridge University Press."
     url: null
     note: A comprehensive reference on methods and results.
+
+images:
+  - id: radial-velocity
+    src: /images/fields/exoplanetary-science/radial-velocity.png
+    alt: A diagram of a star and planet orbiting a common centre of mass; as the star moves toward Earth its light is shifted blue, as it moves away, red.
+    caption: >-
+      The wobble method. Star and planet both circle their common centre of mass (×). As the
+      star swings towards us its lines shift blue, and as it swings away they shift red.
+    credit: Tenefifi
+    license: CC0
+    source: https://commons.wikimedia.org/wiki/File:Radial_Velocity_Exoplanet_Detection.png
+  - id: wasp-96b-transit
+    src: /images/fields/exoplanetary-science/wasp-96b-transit.jpg
+    alt: A Webb telescope chart of a star's brightness over seven hours, steady at 100 percent, dipping to about 98.6 percent for a few hours, then recovering.
+    caption: >-
+      A transit observed by the James Webb Space Telescope in 2022: the giant planet WASP-96 b
+      dims its star by about 1.4%, the same order as Jupiter's 1% across the Sun.
+    credit: NASA
+    license: Public domain
+    source: https://commons.wikimedia.org/wiki/File:Exoplanet_WASP-96_b_(NIRISS_Transit_Light_Curve).png
+  - id: wasp-39b-spectrum
+    src: /images/fields/exoplanetary-science/wasp-39b-spectrum.jpg
+    alt: A Webb telescope chart of the share of light blocked against wavelength from 3 to 5.5 microns, with a clear bump near 4.3 microns labelled carbon dioxide.
+    caption: >-
+      The spectrum in which Webb found carbon dioxide on WASP-39 b. The planet blocks slightly
+      more light around 4.3 microns, where CO₂ absorbs.
+    credit: NASA's James Webb Space Telescope
+    license: CC BY 2.0
+    source: https://commons.wikimedia.org/wiki/File:Hot_Gas_Giant_Exoplanet_WASP-39_b_(NIRSpec_Transmission_Spectrum).png
 ---
 
 ## Other Worlds
@@ -206,7 +235,11 @@ The first confirmed planets were a surprise. In 1992 {{fig:aleksander-wolszczan|
 
 In 1995 {{fig:michel-mayor|Michel Mayor}} and his student {{fig:didier-queloz|Didier Queloz}} found a planet around the Sun-like star 51 Pegasi. [Spectroscopy](/physics/astronomical-spectroscopy/) showed the star's lines shifting back and forth every 4.2 days, as the star wobbled at about 60 metres per second. The companion was half as massive as Jupiter and orbited about seven times closer to its star than Mercury is to the Sun. Theories of planet formation, built on our own solar system, said giant planets form far out. Planets, it emerged, migrate.
 
+{{img:radial-velocity}}
+
 In 1999 {{fig:david-charbonneau|David Charbonneau}} and {{fig:gregory-henry|Gregory Henry}}, working in separate teams, saw a planet pass in front of its star, dimming it slightly. The transit method gives a planet's size, and combined with the wobble, its density. In 2009 NASA launched Kepler, the mission {{fig:william-borucki|William Borucki}} had proposed again and again from 1992 onwards. It watched 150,000 stars and found thousands of planets. Most stars have planets, and small rocky ones are common.
+
+{{img:wasp-96b-transit}}
 
 ## A Closer Look: How Faint Is a Planet's Signal?
 
@@ -241,3 +274,6 @@ about the pace of a walking tortoise. 51 Pegasi b made its star wobble at about 
 ## Reading Atmospheres
 
 The newest step is chemistry. When a planet transits, a little starlight filters through its atmosphere, and the molecules there leave their spectral fingerprints. In 2022 the James Webb Space Telescope detected carbon dioxide in a giant planet's atmosphere. In 2017 {{fig:michael-gillon|Michaël Gillon}}'s team found seven Earth-sized planets around TRAPPIST-1, a nearby dwarf star, several at temperatures where water could be liquid. The ultimate goal is a signature of life, such as oxygen alongside methane, on a rocky planet. That would bear on the deepest open problem of [evolutionary biology](/biology/evolutionary-biology/): how, and how often, life begins.
+
+
+{{img:wasp-39b-spectrum}}
