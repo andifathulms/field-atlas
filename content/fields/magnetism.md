@@ -231,13 +231,47 @@ further_reading:
   - citation: "Stein, D. L. & Newman, C. M. (2013). Spin Glasses and Complexity. Princeton University Press."
     url: null
     note: An accessible account of spin glasses and their links to computing and biology.
+
+images:
+  - id: pierre-curie
+    src: /images/fields/magnetism/pierre-curie.jpg
+    alt: Photograph of Pierre Curie with a full beard and high collar.
+    caption: >-
+      Pierre Curie, whose 1895 thesis measured how magnetism vanishes at what is now called the
+      Curie point.
+    credit: Nobel Foundation
+    license: Public domain
+    source: https://commons.wikimedia.org/wiki/File:PierreCurie.jpg
+  - id: magnetic-domains
+    src: /images/fields/magnetism/magnetic-domains.jpg
+    alt: A grey microscope image of a steel grain outlined in black, crossed by light and dark vertical bands, with white and black arrows pointing in opposite directions.
+    caption: >-
+      Magnetic domains in a grain of electrical steel, 0.1 mm across, seen through a Kerr-effect
+      microscope. Within each band the atomic magnets agree; neighbouring bands point opposite
+      ways.
+    credit: Zureks and Chris Vardon
+    license: CC BY-SA 3.0
+    source: https://commons.wikimedia.org/wiki/File:Magnetic_domain_with_arrows_by_Zureks.png
+  - id: hdd-head
+    src: /images/fields/magnetism/hdd-head.jpg
+    alt: A close-up of a hard drive's read-write head, a tiny dark slider on the end of a metal arm.
+    caption: >-
+      The read-write head of a 2013 hard drive. Its read sensor depends on giant
+      magnetoresistance, or the tunnelling version that followed it.
+    credit: Roman Starkov
+    license: CC BY-SA 4.0
+    source: https://commons.wikimedia.org/wiki/File:HDD_read-write_head.jpg
 ---
 
 ## The Curie Point
 
 A magnet heated red-hot stops being a magnet. In 1895 {{fig:pierre-curie|Pierre Curie}} measured this carefully for his doctoral thesis. Iron loses its strong magnetism abruptly at about 770 °C. Above that temperature it behaves like the many substances that are only weakly attracted to a magnet, and for those Curie found a simple rule: the magnetism induced by a field falls in proportion to the inverse of temperature. Heat jostles the atomic magnets out of line.
 
+{{img:pierre-curie}}
+
 In 1907 {{fig:pierre-weiss|Pierre Weiss}} explained the Curie point. Suppose each atomic magnet feels an internal field proportional to the magnetisation of its surroundings. Below a certain temperature this feedback sustains itself, and the magnets line up spontaneously. Above it, heat wins. The same kind of self-consistent argument would later become Landau's theory of [phase transitions](/physics/phase-transitions/). Weiss also saw why an ordinary nail is not a magnet. It is divided into small domains, each fully magnetised but pointing in different directions. But his molecular field had to be enormous, more than a thousand tesla, far stronger than the magnetic field of any atom could be.
+
+{{img:magnetic-domains}}
 
 ## A Quantum Effect
 
@@ -252,6 +286,8 @@ The exchange interaction can also favour opposite spins. {{fig:louis-neel|Louis 
 In some alloys the interactions are random, so no arrangement can satisfy every pair. The spins freeze into a disordered pattern, a *spin glass*. {{fig:sam-edwards|Sam Edwards}} and {{fig:philip-anderson|Philip Anderson}} wrote a model of this in 1975, and {{fig:giorgio-parisi|Giorgio Parisi}} solved a version of it in 1979, finding a rugged landscape of countless nearly equal frozen states. The mathematics proved useful far outside magnetism, in optimisation, in models of memory and in the theory of computation. Mathematicians took until 2006 to prove Parisi's solution rigorously.
 
 Magnetism also became engineering at the scale of atoms. In 1988 {{fig:albert-fert|Albert Fert}} and {{fig:peter-grunberg|Peter Grünberg}} independently found that stacks of alternating iron and chromium layers, a few atoms thick, change their electrical resistance dramatically in a magnetic field. The iron layers are coupled antiparallel through the chromium, and electrons of one spin pass easily through layers magnetised one way. Within ten years the effect was reading data in hard drives, and it often used an antiferromagnet to pin one layer in place.
+
+{{img:hdd-head}}
 
 ## A Closer Look: Why Magnetism Is Not Magnetic
 
