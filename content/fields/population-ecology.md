@@ -227,6 +227,27 @@ further_reading:
   - citation: "Gotelli, N. J. (2008). A Primer of Ecology (4th ed.). Sinauer Associates."
     url: null
     note: A gentle introduction to the equations of population ecology.
+
+images:
+  - id: lynx-hare
+    src: /images/fields/population-ecology/lynx-hare.jpg
+    alt: A mounted Canada lynx standing over a white snowshoe hare in a museum display.
+    caption: >-
+      A Canada lynx and a snowshoe hare at the Royal Ontario Museum. The fur-trade records of the
+      two species show the ten-year cycle Elton pointed out.
+    credit: Thomas Quine
+    license: CC BY 2.0
+    source: https://commons.wikimedia.org/wiki/File:Canada_Lynx_and_Snowshoe_Hare_(43543015694).jpg
+  - id: fish-quota
+    src: /images/fields/population-ecology/fish-quota.png
+    alt: A parabola of a fish stock's yearly growth against stock size peaking at 100,000 tonnes at 500,000 tonnes, with horizontal quota lines at 100,000 and 80,000 tonnes crossing it at 276,000 and 724,000.
+    caption: >-
+      The stock's growth against its size, with the two quotas from the text. A quota at the peak
+      leaves no margin; at 80,000 tonnes the stock settles at 724,000, unless it falls below
+      276,000.
+    credit: Drawn for Field Atlas from the numbers above
+    license: Field Atlas original
+    source: https://github.com/andifathulms/field-atlas/blob/main/scripts/diagrams/ecology.py
 ---
 
 ## Malthus and the Logistic Curve
@@ -238,6 +259,8 @@ In 1838 the Belgian mathematician {{fig:pierre-francois-verhulst|Pierre-Françoi
 ## Predators, Prey and the Fur Trade
 
 In 1924 {{fig:charles-elton|Charles Elton}}, a young Oxford zoologist who had been on expeditions to Arctic Spitsbergen, pointed out that many animals rise and fall in regular cycles. The most spectacular record came from the Hudson's Bay Company, which had counted the furs brought in by Canadian trappers for over a century. Lynx numbers peaked about every ten years, just after the snowshoe hares they hunt. In his 1927 book *Animal Ecology* Elton also set out the idea of the food chain, and of each species' niche, its role in the community.
+
+{{img:lynx-hare}}
 
 At the same time two scientists wrote down the mathematics. {{fig:alfred-lotka|Alfred Lotka}}, an American chemist interested in the physics of living systems, and {{fig:vito-volterra|Vito Volterra}}, one of Italy's leading mathematicians, each described a predator and its prey with a pair of equations. Prey multiply unless eaten. Predators multiply in proportion to the prey they catch, and die without them. The solutions go round in endless cycles, with predators lagging about a quarter of a cycle behind their prey.
 
@@ -278,6 +301,8 @@ $$
 The danger is in what happens below the peak. Suppose managers set a fixed quota of 100,000 tonnes, but the stock has already fallen to 400,000 tonnes. It now grows by only $0.4 \times 400{,}000 \times 0.6 = 96{,}000$ tonnes a year, less than is taken. The stock shrinks, so it grows even more slowly, and the gap widens. In this model the fishery removes the last fish in about twenty years. A quota of 110,000 tonnes, just 10% above the maximum, also empties the stock within about twenty years, even starting from the best possible size.
 
 A smaller fixed quota is safer, but only down to a point. A quota of 80,000 tonnes has two balance points, at about 724,000 tonnes and 276,000 tonnes. The upper one is stable, and a stock near it recovers from a bad year. Below 276,000 tonnes the stock can no longer keep up, and it collapses even under this modest quota. Real stocks add uncertainty about $r$ and $K$, random bad years and fish counted from the catch itself, which is why fixed quotas near the maximum led to collapses, and why modern management aims well below it.
+
+{{img:fish-quota}}
 
 ## From One Species to Many
 
