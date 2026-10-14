@@ -239,11 +239,43 @@ further_reading:
   - citation: "Nørskov, J. K. et al. (2009). Towards the computational design of solid catalysts. Nature Chemistry 1: 37–46."
     url: null
     note: How volcano plots are now computed rather than measured, and what that has and has not achieved.
+
+images:
+  - id: dobereiner-lamp
+    src: /images/fields/catalysis/dobereiner-lamp.png
+    alt: An engraving of a glass jar holding an inner bell over a lump of zinc, with a tap and nozzle on top aimed at a small holder of platinum.
+    caption: >-
+      Döbereiner's lamp of the 1820s. Zinc in acid makes hydrogen; opening the tap lets it out
+      onto a pinch of platinum sponge, which sets it alight while remaining unchanged.
+    credit: Engraving, unknown artist
+    license: Public domain
+    source: https://commons.wikimedia.org/wiki/File:D%C3%B6bereiner_fire_gadget.png
+  - id: oppau-reactor
+    src: /images/fields/catalysis/oppau-reactor.jpg
+    alt: A tall cylindrical steel reactor hanging from a crane inside a factory hall.
+    caption: >-
+      BASF's first full-scale ammonia reactor, built for 9,000 tonnes a year, during assembly at
+      Oppau in 1913.
+    credit: BASF Corporate History
+    license: CC BY-SA 3.0
+    source: https://commons.wikimedia.org/wiki/File:Ammoniak-Reaktor_1913_Oppau_(retuschiert).jpg
+  - id: femoco
+    src: /images/fields/catalysis/femoco.png
+    alt: A structural formula of a cage of seven iron atoms and nine sulfur atoms around a central carbon, capped by a molybdenum atom.
+    caption: >-
+      The iron–molybdenum cofactor of nitrogenase, the cluster with which soil bacteria break
+      nitrogen's triple bond at room temperature: seven iron atoms, nine sulfur, one molybdenum,
+      and a carbon at the centre.
+    credit: Smokefoot
+    license: Public domain
+    source: https://commons.wikimedia.org/wiki/File:FeMoco_cluster.svg
 ---
 
 ## A Name Before an Explanation
 
 Three unrelated observations in the 1810s and 1820s had the same shape. Dilute acid turns starch into sugar and is still there afterwards. A platinum wire makes hydrogen and oxygen combine, glowing, while remaining platinum. {{fig:berzelius|Berzelius}} gathered them in 1835, called the phenomenon catalysis, and ascribed it to a catalytic force — which is a name for the puzzle rather than a solution.
+
+{{img:dobereiner-lamp}}
 
 For sixty years the subject was faintly disreputable, because it looked like getting something for nothing. {{fig:ostwald|Wilhelm Ostwald}} made it respectable in 1894 with a definition and a prohibition. A catalyst changes the rate and does not appear in the products; and it *cannot* change the position of equilibrium, because a substance that favoured one direction over the other could be used to run a cycle indefinitely without work, which the second law forbids. Catalysis is therefore entirely kinetic. It cannot make an unfavourable reaction go; it can only make a favourable one go sooner.
 
@@ -279,9 +311,13 @@ The catalyst does not help with this barrier. It removes the step. On an iron su
 
 **What it cost and what it bought.** {{fig:haber|Haber}}'s bench demonstration gave a few per cent conversion per pass. {{fig:bosch|Carl Bosch}} had to build vessels that would hold 200 atmospheres of hydrogen at 500 °C without embrittling, and {{fig:mittasch|Alwin Mittasch}} ran some twenty thousand catalyst tests to replace osmium, which was unobtainable in quantity, finally arriving at iron promoted with alumina and potassium. The modern plant still uses that catalyst, at 400–500 °C and 150–300 bar, and the process consumes on the order of one to two per cent of the world's primary energy — most of it not for the ammonia reaction itself but for making hydrogen from methane.
 
+{{img:oppau-reactor}}
+
 The return is the largest single intervention of chemistry in human life. Isotopic evidence indicates that about half the nitrogen atoms in a person alive today were fixed in such a plant. The same nitrates, in the same years, made the munitions of two world wars, and Haber personally directed the first chlorine gas attack at Ypres in 1915. The Nobel committee honoured him in 1918 and was protested for it.
 
 Meanwhile a soil bacterium does the identical conversion at 20 °C and one atmosphere, using an iron–molybdenum cluster, and nobody can reproduce that. The gap between 500 °C and room temperature is the field's standing reproach to itself, recorded above as its open problem.
+
+{{img:femoco}}
 
 ## Controlling More Than the Rate
 
