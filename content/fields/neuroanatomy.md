@@ -213,6 +213,52 @@ further_reading:
   - citation: "Ramón y Cajal, S. (1989). Recollections of My Life. Translated by E. H. Craigie. MIT Press."
     url: null
     note: Cajal's own account of his life and his work on the neuron.
+
+images:
+  - id: willis-wren-brain
+    src: /images/fields/neuroanatomy/willis-wren-brain.jpg
+    alt: An engraving of the underside of a human brain, showing the cerebral hemispheres, cerebellum, brainstem and the nerves leaving it.
+    caption: >-
+      The base of the brain from Willis's *Cerebri anatome* (1664), drawn by Christopher Wren.
+    credit: Christopher Wren, in Thomas Willis, Cerebri anatome; Wellcome Collection
+    license: CC BY 4.0
+    source: https://commons.wikimedia.org/wiki/File:T._Willis,_Cerebri_anatome_;_cui_accessit_n_Wellcome_L0032335.jpg
+  - id: broca-wernicke
+    src: /images/fields/neuroanatomy/broca-wernicke.jpg
+    alt: A side view of the left hemisphere with Broca's area in the frontal lobe and Wernicke's area further back, joined by a band of fibres.
+    caption: >-
+      Broca's area, in the left frontal lobe, and Wernicke's area behind it, joined by a bundle
+      of fibres.
+    credit: OpenStax College, Anatomy & Physiology
+    license: CC BY 3.0
+    source: https://commons.wikimedia.org/wiki/File:1605_Brocas_and_Wernickes_Areas-02.jpg
+  - id: golgi-neuron
+    src: /images/fields/neuroanatomy/golgi-neuron.jpg
+    alt: A single dark neuron with a triangular cell body and branching dendrites against an amber background.
+    caption: >-
+      A pyramidal neuron stained by Golgi's method. Only a few cells in a hundred take up the
+      silver, so each one stands out whole.
+    credit: Bob Jacobs, Colorado College
+    license: CC BY-SA 3.0
+    source: https://commons.wikimedia.org/wiki/File:GolgiStainedPyramidalCell.jpg
+  - id: cajal-cortex
+    src: /images/fields/neuroanatomy/cajal-cortex.jpg
+    alt: Three tall drawings of layers of human cortex, two showing densely packed cell bodies and one showing branching neurons.
+    caption: >-
+      Three of Cajal's drawings of human cortex: two with every cell body stained (left, middle)
+      and one with Golgi's stain showing whole neurons and their branches (right).
+    credit: Santiago Ramón y Cajal
+    license: Public domain
+    source: https://commons.wikimedia.org/wiki/File:Cajal_cortex_drawings.png
+  - id: neuron-counts
+    src: /images/fields/neuroanatomy/neuron-counts.png
+    alt: Paired bars for the cerebral cortex, cerebellum and rest of the brain, showing share of mass and share of neurons; the cortex has about 80 per cent of the mass and 19 per cent of the neurons, the cerebellum about 10 per cent of the mass and 80 per cent of the neurons.
+    caption: >-
+      The 2009 count against the brain's mass. The cortex is most of the weight but holds under a
+      fifth of the neurons; the cerebellum, a tenth of the weight, holds four fifths.
+    credit: Drawn for Field Atlas from the table above
+    license: Field Atlas original
+    source: https://github.com/andifathulms/field-atlas/blob/main/scripts/diagrams/brain.py
 ---
 
 ## Ventricles and Tissue
@@ -221,9 +267,13 @@ For more than a thousand years, physicians following Galen placed the mind in th
 
 In 1664 {{fig:thomas-willis|Thomas Willis}}, an Oxford physician, published the most careful account of the brain yet written, with plates drawn by his friend Christopher Wren. Willis argued from dissection and from his patients that the functions of the mind lie in the brain substance itself. He described the cerebral hemispheres, the cerebellum and the nerves leaving the brain with a new precision. The question now became which parts of the tissue do what.
 
+{{img:willis-wren-brain}}
+
 ## Speech in the Left Hemisphere
 
 The first convincing answer came from a patient. In 1861 {{fig:paul-broca|Paul Broca}}, a Paris surgeon, examined a man who for twenty years had been able to say only one syllable, "tan". He understood speech and could answer with gestures. When the man died a few days later, Broca found a damaged patch in the left frontal lobe. More patients showed the same pattern, and by 1865 Broca concluded that speech is produced by the left hemisphere. In 1874 Carl Wernicke found that damage further back, in the temporal lobe, leaves speech fluent but destroys its understanding.
+
+{{img:broca-wernicke}}
 
 Experiment soon supported the clinic. In 1870 Gustav Fritsch and Eduard Hitzig passed weak electric currents through the cortex of dogs and made particular muscles twitch. The brain, it seemed, was a collection of organs, each with its job. What those organs were made of was still hidden, because under the microscope the grey matter looked like a dense tangle.
 
@@ -231,7 +281,11 @@ Experiment soon supported the clinic. In 1870 Gustav Fritsch and Eduard Hitzig p
 
 In 1873 {{fig:camillo-golgi|Camillo Golgi}}, working in a makeshift laboratory at a hospital for the chronically ill, found a way to cut through the tangle. Tissue hardened in potassium dichromate and soaked in silver nitrate showed a few nerve cells, apparently chosen at random, stained black from end to end. Because only a small fraction took the stain, each one stood out whole against a clear background, with its cell body, its branching dendrites and its long axon.
 
+{{img:golgi-neuron}}
+
 Golgi read his own images as showing that the fine fibres fused into one continuous net, the reticular theory held by most anatomists. {{fig:santiago-ramon-y-cajal|Santiago Ramón y Cajal}}, a Spanish anatomist who learned of the stain in 1887, read them differently. By staining young birds and mammals, whose axons had not yet grown their fatty insulation, he could follow fibres to their ends, and they ended freely. Every nerve cell was a separate cell, as [cell theory](/biology/cell-theory/) required of every other tissue. Heinrich Waldeyer named it the neuron in 1891. Cajal also argued, from the direction of branching, that signals flow one way, in through the dendrites and out along the axon.
+
+{{img:cajal-cortex}}
 
 {{fig:charles-sherrington|Charles Sherrington}}, studying spinal reflexes in England, needed a name for the point where one neuron meets the next, and in 1897 he chose synapse. His experiments showed that synapses slow a signal, pass it only one way, and can inhibit as well as excite. In 1906 Golgi and Cajal shared the Nobel prize, and in Stockholm Golgi used his lecture to attack the neuron doctrine. The gap between neurons, about twenty nanometres, was too small for any light microscope. It was finally seen with the electron microscope of [cell biology](/biology/cell-biology/) in the mid-1950s.
 
@@ -249,6 +303,8 @@ How many neurons are there? Old textbooks said a hundred billion, with ten suppo
 | Total | 86.1 | 100% |
 
 The cerebral cortex, the seat of Broca's speech area and Brodmann's map, is about four fifths of the brain's mass but holds under a fifth of its neurons. The cerebellum, at the back, is about a tenth of the mass and holds four fifths of the neurons, most of them tiny granule cells. Glial cells turned out to be roughly as numerous as neurons, not ten times more.
+
+{{img:neuron-counts}}
 
 Each neuron in the cortex makes thousands of synapses. Electron microscope counts put the number in the human neocortex at around $1.5 \times 10^{14}$, which is about
 
