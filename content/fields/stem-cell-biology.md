@@ -219,6 +219,25 @@ further_reading:
   - citation: "Gurdon, J. B. & Melton, D. A. (2008). Nuclear reprogramming in cells. Science 322(5909): 1811–1815."
     url: https://doi.org/10.1126/science.1160810
     note: A review of reprogramming, from frogs to induced stem cells.
+
+images:
+  - id: hes-colony
+    src: /images/fields/stem-cell-biology/hes-colony.jpg
+    alt: A phase-contrast micrograph of a dense, rounded colony of small cells surrounded by long, spindle-shaped feeder cells.
+    caption: >-
+      A colony of human embryonic stem cells on a layer of mouse feeder cells.
+    credit: Id711, English Wikipedia
+    license: Public domain
+    source: https://commons.wikimedia.org/wiki/File:Human_embryonic_stem_cell_colony_phase.jpg
+  - id: yamanaka-search
+    src: /images/fields/stem-cell-biology/yamanaka-search.png
+    alt: Three bars on a log scale, 16,777,216 possible mixtures, 10,626 sets of four, and 36 experiments by leaving one out at a time.
+    caption: >-
+      The search space against the subtraction method: 36 experiments instead of 10,626 sets of
+      four, or 16.8 million mixtures.
+    credit: Drawn for Field Atlas from the numbers above
+    license: Field Atlas original
+    source: https://github.com/andifathulms/field-atlas/blob/main/scripts/diagrams/development.py
 ---
 
 ## The Blood's Reserve
@@ -230,6 +249,8 @@ After the atomic bombs of 1945, doctors wanted to know why radiation kills. At m
 Stem cells in adults are rare and usually limited to one tissue. The early embryo has cells that can become anything, but only for a day or two. In 1981 {{fig:martin-evans|Martin Evans}} with Matthew Kaufman, and {{fig:gail-martin|Gail Martin}}, found how to keep them in that state in a dish. Mouse embryonic stem cells divide indefinitely and, put back into an embryo, take part in building every tissue. Combined with methods for altering a chosen gene, they let researchers make mice lacking any gene they wished, which became a basic tool of [developmental genetics](/biology/developmental-genetics/).
 
 In 1998 {{fig:james-thomson|James Thomson}} grew human embryonic stem cells. Hopes rose for replacement cells for diabetes, Parkinson's disease and spinal injury, and so did objections to using human embryos. One way round seemed to be cloning, which would make stem cells matched to a patient. In 2004 and 2005 Hwang Woo-suk in Seoul claimed to have done it. The data were fabricated. A later analysis suggested that his one genuine line had arisen from an unfertilised egg that began dividing on its own, not from cloning.
+
+{{img:hes-colony}}
 
 ## Four Genes
 
@@ -260,6 +281,8 @@ Each test took weeks, so testing combinations one by one was hopeless. Instead t
 | Total | 36 |
 
 In outline, about thirty-six experiments instead of ten thousand. The published work ran more controls than this, but the logic was the same. The method works because the effect needs every essential gene at once: leaving out any one of them breaks it.
+
+{{img:yamanaka-search}}
 
 Reprogramming was rare. In the early experiments only a small fraction of cells, commonly quoted as between 0.01 and 0.1 per cent, became iPS colonies. From a dish of one million cells that means 100 to 1,000 colonies. It was enough to find, pick and grow them, and later studies showed that the rest were not incapable, only slower: given time, nearly every cell can make the switch.
 
