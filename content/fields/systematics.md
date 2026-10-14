@@ -248,6 +248,34 @@ further_reading:
   - citation: "Stevens, P. F. (1994). The Development of Biological Systematics. Columbia University Press."
     url: null
     note: How the natural system of plants was built, and what its builders thought they were doing.
+
+images:
+  - id: systema-naturae-1735
+    src: /images/fields/systematics/systema-naturae-1735.jpg
+    alt: A large printed sheet headed "Caroli Linnaei" with columns of tabulated classes of animals, Quadrupedia, Aves and Amphibia.
+    caption: >-
+      A sheet from the first edition of *Systema Naturae* (1735): all of nature divided into
+      classes and orders, laid out as a table.
+    credit: Carl Linnaeus
+    license: CC BY-SA 3.0
+    source: https://commons.wikimedia.org/wiki/File:Carl_linne_1735_systema_naturae_s1.jpg
+  - id: linnaeus
+    src: /images/fields/systematics/linnaeus.jpg
+    alt: A painted portrait of an elderly Carl Linnaeus in a powdered wig and a brown coat.
+    caption: >-
+      Carl Linnaeus, painted by Alexander Roslin in 1775.
+    credit: Alexander Roslin
+    license: Public domain
+    source: https://commons.wikimedia.org/wiki/File:Carl_von_Linn%C3%A9_(cropped).png
+  - id: catalogue-years
+    src: /images/fields/systematics/catalogue-years.png
+    alt: Bars of years to finish describing eukaryotic species, nearly done if there are 2 million, about 370 years for 8.7 million, and about 5,400 years for 100 million.
+    caption: >-
+      The same arithmetic run on the three estimates of how many species there are: nearly done,
+      four centuries, or effectively never.
+    credit: Drawn for Field Atlas from the numbers above
+    license: Field Atlas original
+    source: https://github.com/andifathulms/field-atlas/blob/main/scripts/diagrams/phylogeny.py
 ---
 
 ## Naming the Living World
@@ -258,9 +286,13 @@ A seventeenth-century botanist who wanted to refer to a plant wrote a phrase: *P
 
 {{fig:linnaeus|Carl Linnaeus}} supplied the second half, and the habit of mind that went with it. *Systema Naturae* of 1735 is eleven folio pages that divide all of nature into classes, orders, genera and species, each defined by a terse diagnosis. The scheme nested completely — one species in one genus, one genus in one order — and it could be taught. Then, in *Species Plantarum* of 1753, he gave each plant a genus name and one further word, and did the same for animals in 1758. Two words, fixed by priority: the oldest validly published name wins. Those two books remain the legal starting points for botanical and zoological names, which is why the arguments of 1753 can still settle a question in 2026.
 
+{{img:systema-naturae-1735}}
+
 ## The Artificial and the Natural System
 
 Linnaeus sorted flowering plants by counting stamens and pistils. He knew this was artificial, and said so; it was a key for finding things, not a claim about nature. The trouble is that a key built on one character scatters obvious relatives. {{fig:michel-adanson|Michel Adanson}} and then {{fig:jussieu|Antoine-Laurent de Jussieu}} insisted that characters be weighed in bulk. Jussieu's *Genera Plantarum* of 1789 arranged a hundred families by overall agreement across many features, and most of those families are still recognised today, which is a remarkable survival rate for a pre-evolutionary book.
+
+{{img:linnaeus}}
 
 But why should agreement in many characters be trustworthy? Jussieu had no answer; he had an intuition that worked. The answer arrived in 1859, when [Darwin's argument](/biology/evolutionary-biology/) gave the nested hierarchy a cause. Groups within groups is what descent with modification produces, and characters agree in bulk because they were inherited together. Classification stopped being a filing system and became a claim about history — a claim that could be right or wrong.
 
@@ -297,6 +329,8 @@ $$
 $$
 
 and the project as conceived is hopeless. The three answers — nearly finished, four centuries, never — differ by a factor of fifteen, and the uncertainty is not in the arithmetic. It is in the extrapolation from the groups that have been sampled to the groups that have not.
+
+{{img:catalogue-years}}
 
 The microbes are not in these numbers at all. Estimates of bacterial and archaeal diversity run to $10^{12}$ operational units, counted by sequence similarity rather than by breeding, which is an admission that for most of life the Linnaean species is not the unit being counted. That is the practical form of the species problem: not a philosophical puzzle, but the reason the denominator of every biodiversity statistic is unknown to within a factor of ten.
 
