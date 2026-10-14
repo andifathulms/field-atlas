@@ -221,11 +221,52 @@ further_reading:
   - citation: "Shapiro, S. L. & Teukolsky, S. A. (1983). Black Holes, White Dwarfs, and Neutron Stars: The Physics of Compact Objects. Wiley."
     url: null
     note: The standard graduate textbook.
+
+images:
+  - id: sirius-xray
+    src: /images/fields/compact-objects/sirius-xray.jpg
+    alt: An X-ray image with a bright central point, a dimmer point just beside it, and spokes radiating outward.
+    caption: >-
+      Sirius in X-rays, from NASA's Chandra observatory. In visible light Sirius A outshines
+      its companion ten thousand times; here the bright source is the white dwarf Sirius B,
+      hot enough to glow in soft X-rays. The spokes come from the telescope's own grating.
+    credit: NASA/SAO/CXC
+    license: Public domain
+    source: https://commons.wikimedia.org/wiki/File:Sirius_A_%26_B_X-ray.jpg
+  - id: crab-nebula
+    src: /images/fields/compact-objects/crab-nebula.jpg
+    alt: A Hubble mosaic of the Crab Nebula, an oval cloud of orange filaments around a blue glow.
+    caption: >-
+      The Crab Nebula, the debris of a supernova recorded in 1054. At its centre spins a
+      neutron star, exactly as Baade and Zwicky proposed.
+    credit: NASA, ESA, J. Hester and A. Loll (Arizona State University)
+    license: Public domain
+    source: https://commons.wikimedia.org/wiki/File:Crab_Nebula.jpg
+  - id: first-pulsar-chart
+    src: /images/fields/compact-objects/first-pulsar-chart.jpg
+    alt: A chart-recorder strip on green graph paper with a red trace, annotated in pen with Pulsar CP 1919 at a small spike and dated 6 August 1967.
+    caption: >-
+      The chart from 6 August 1967 on which Jocelyn Bell first marked the signal later known as
+      the pulsar CP 1919, a small burst on the red trace beside a burst of interference.
+    credit: Billthom, photographed on display
+    license: CC BY-SA 4.0
+    source: https://commons.wikimedia.org/wiki/File:Chart_Showing_Radio_Signal_of_First_Identified_Pulsar,_crop_%26_rotate.jpg
+  - id: m87-black-hole
+    src: /images/fields/compact-objects/m87-black-hole.jpg
+    alt: A blurry orange ring of light around a dark centre on a black background.
+    caption: >-
+      The shadow of the black hole at the centre of the galaxy M87, imaged by the Event Horizon
+      Telescope in 2019. It is about 6.5 billion solar masses.
+    credit: Event Horizon Telescope
+    license: CC BY 4.0
+    source: https://commons.wikimedia.org/wiki/File:Black_hole_-_Messier_87.jpg
 ---
 
 ## Absurdly Dense
 
 Sirius, the brightest star in the night sky, wobbles as it moves, and in 1862 a faint companion, Sirius B, was seen. In 1915 {{fig:walter-adams|Walter Adams}} measured its spectrum. It was white-hot, yet so faint that it had to be tiny, and modern measurements put it at about the size of the Earth, while its orbit showed it had about the Sun's mass. A cubic centimetre of it weighs about two tonnes. Astronomers at first dismissed such a density as nonsense, as Eddington later recalled, but in 1926 Ralph Fowler showed that the new quantum statistics of [statistical mechanics](/physics/statistical-mechanics/) allowed it. Electrons packed that tightly resist further squeezing, whatever the temperature, and that pressure holds up white dwarfs.
+
+{{img:sirius-xray}}
 
 ## The Limit
 
@@ -233,11 +274,17 @@ In 1930, on the ship from India to England, {{fig:subrahmanyan-chandrasekhar|Sub
 
 What happened above the limit? In 1934 {{fig:walter-baade|Walter Baade}} and {{fig:fritz-zwicky|Fritz Zwicky}} proposed that supernovae are the collapse of stars into neutron stars. In 1939 {{fig:robert-oppenheimer|J. Robert Oppenheimer}} and his students showed that neutron stars also have a maximum mass, and that a heavier core collapses without end, sealing itself off from the universe. The Second World War took Oppenheimer to Los Alamos, and the subject slept.
 
+{{img:crab-nebula}}
+
 ## Pulsars and Black Holes
 
 In 1967 {{fig:jocelyn-bell-burnell|Jocelyn Bell}}, a PhD student in {{fig:antony-hewish|Antony Hewish}}'s group at Cambridge, spotted a regular pulse in a radio survey, one pulse every 1.337 seconds. Within a year, faster pulsars were found in the Vela and Crab supernova remnants, and only a spinning neutron star could flash so quickly and so regularly. Neutron stars were real. The Crab pulsar sits at the centre of the Crab Nebula, the remains of a supernova recorded by Chinese astronomers in 1054.
 
+{{img:first-pulsar-chart}}
+
 Black holes followed. In 1971–72 {{fig:louise-webster|Louise Webster}}, {{fig:paul-murdin|Paul Murdin}} and {{fig:tom-bolton|Tom Bolton}} showed that the X-ray source Cygnus X-1 is an invisible object too heavy to be a neutron star. And in 1974 {{fig:russell-hulse|Russell Hulse}} and {{fig:joseph-taylor|Joseph Taylor}} found two neutron stars orbiting each other, whose orbit shrank exactly as [general relativity](/physics/general-relativity/) predicts from the emission of gravitational waves.
+
+{{img:m87-black-hole}}
 
 ## A Closer Look: A Teaspoon of Star
 
