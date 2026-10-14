@@ -234,6 +234,36 @@ further_reading:
   - citation: "Purcell, E. M. (1977). Life at low Reynolds number. American Journal of Physics 45: 3–11."
     url: null
     note: Eleven pages on what the world is like for a swimming bacterium; the best short paper in the subject.
+
+images:
+  - id: hydrodynamica
+    src: /images/fields/fluid-dynamics/hydrodynamica.jpg
+    alt: The printed title page of Daniel Bernoulli's Hydrodynamica, Strasbourg 1738.
+    caption: >-
+      The title page of Daniel Bernoulli's *Hydrodynamica* (1738), the book that gave the
+      subject its name and stated his relation between pressure and speed.
+    credit: Daniel Bernoulli, 1738
+    license: Public domain
+    source: https://commons.wikimedia.org/wiki/File:HYDRODYNAMICA,_Danielis_Bernoulli.png
+  - id: karman-vortex-street
+    src: /images/fields/fluid-dynamics/karman-vortex-street.jpg
+    alt: A satellite view of a sea of small clouds with a chain of alternating swirls trailing away from a small island.
+    caption: >-
+      Wind flowing past Alejandro Selkirk Island, off Chile, seen from orbit. The flow separates
+      from the island and sheds vortices alternately from each side, a Kármán vortex street
+      written into the clouds downstream.
+    credit: NASA
+    license: Public domain
+    source: https://commons.wikimedia.org/wiki/File:Karman_vortex_street_off_Alejandro_Selkirk_Island.jpg
+  - id: reynolds-scale
+    src: /images/fields/fluid-dynamics/reynolds-scale.png
+    alt: A logarithmic scale of Reynolds number from one millionth to ten billion, with a bacterium at 3e-5 on the viscous side and a tadpole, sparrow, car, whale and weather system on the inertial side.
+    caption: >-
+      The Closer Look's flows on one scale. The bacterium and the car are eleven orders of
+      magnitude apart; everything we usually call flow lives on the inertial side.
+    credit: Drawn for Field Atlas from the numbers above
+    license: Field Atlas original
+    source: https://github.com/andifathulms/field-atlas/blob/main/scripts/diagrams/flow.py
 ---
 
 ## Newton's Laws for Something With No Shape
@@ -241,6 +271,8 @@ further_reading:
 A solid has a shape to keep track of; a fluid does not, and the first problem is deciding what to apply the laws of motion *to*. The answer that worked was to stop tracking matter and track the field: at each point in space, a density, a pressure and a velocity, changing with time. {{fig:euler|Leonhard Euler}} wrote the equations in 1757, and they say exactly what Newton's second law says — the acceleration of the fluid at a point equals the force per unit mass acting there, which for an ideal fluid is the pressure gradient — plus the requirement that mass not appear or vanish.
 
 {{fig:daniel-bernoulli|Daniel Bernoulli}} had already extracted the most useful consequence, in 1738, before the general equations existed. Along a streamline in steady frictionless flow, pressure and speed trade off: speed up and the pressure drops. This is energy conservation for a fluid parcel, and it is the basis of the venturi, the pitot tube that tells an aircraft its airspeed, and a great many wrong explanations of lift.
+
+{{img:hydrodynamica}}
 
 What the Euler equations lacked was friction. {{fig:navier|Claude-Louis Navier}} supplied a term for it in 1822 by an argument about intermolecular forces that was wrong in its reasoning and right in its result; {{fig:stokes|George Gabriel Stokes}} rederived it properly in 1845 from the assumption that internal stress depends linearly on the rate at which the fluid is being sheared, and added the condition that has done more work than any other in the subject: at a solid surface, the fluid does not slip. Its velocity there is zero.
 
@@ -253,6 +285,8 @@ Every rower, swimmer and sailor knew otherwise. D'Alembert said plainly that he 
 {{fig:prandtl|Ludwig Prandtl}} closed it in 1904, in eight pages, with an argument about where an approximation fails. Viscosity is small for air and water, in the sense that the Reynolds number is large, so throwing the viscous term away looks safe. But the no-slip condition forces the velocity to zero at the surface while the outer flow is moving at full speed, which means the velocity gradient near the wall is enormous — and the viscous stress is proportional to that gradient. In a thin layer, viscosity is never negligible, however large the Reynolds number is. The layer gets thinner as $\mathrm{Re}$ grows, and the stress in it does not vanish correspondingly.
 
 Three consequences follow, and they are the whole of applied aerodynamics. The layer carries the skin-friction drag. The layer can *separate* from the surface when pressure rises downstream, at which point a large wake forms and the drag rises by an order of magnitude — the difference between a streamlined and a blunt body. And the way the layer leaves a wing's trailing edge fixes the circulation around the wing, which by the Kutta–Joukowski theorem fixes the lift.
+
+{{img:karman-vortex-street}}
 
 ## A Closer Look: One Number Across Twelve Orders of Magnitude
 
@@ -299,6 +333,8 @@ $$
 two picometres — a fiftieth of the width of an atom. A bacterium that stops beating its flagellum stops instantly and absolutely. It cannot glide, cannot throw anything, and cannot swim by any stroke that is merely reversed on the return, because at $\mathrm{Re} \to 0$ the equations are time-reversible and a reciprocal motion returns the organism exactly where it began. The corkscrew flagellum and the breaststroke-with-a-twist of a flagellate are solutions to a constraint that has no analogue at human scale.
 
 Between the two lie everything else: $\mathrm{Re} \approx 10^{2}$ for a swimming tadpole, $10^{4}$ for a sparrow, $10^{8}$ for a whale, $10^{9}$ for a weather system. The transition from the viscous regime to the inertial one is not a smooth loss of accuracy. Around $\mathrm{Re} \approx 2000$ in a pipe, steady flow stops being stable at all, and the subject changes into [turbulence](/physics/turbulence/).
+
+{{img:reynolds-scale}}
 
 ## What Is Settled and What Is Not
 
