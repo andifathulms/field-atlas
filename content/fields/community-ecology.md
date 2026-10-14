@@ -220,6 +220,25 @@ further_reading:
   - citation: "Slack, N. G. (2010). G. Evelyn Hutchinson and the Invention of Modern Ecology. Yale University Press."
     url: null
     note: A biography of Hutchinson and the students who shaped the field.
+
+images:
+  - id: pisaster
+    src: /images/fields/community-ecology/pisaster.jpg
+    alt: An orange ochre sea star clinging to a dark rock among seaweed.
+    caption: >-
+      An ochre sea star, *Pisaster ochraceus*, the predator Paine removed from the shore.
+    credit: Charles J. Sharp
+    license: CC BY-SA 4.0
+    source: https://commons.wikimedia.org/wiki/File:Ochre_sea_star_(Pisaster_ochraceus)_Tofino.jpg
+  - id: competition
+    src: /images/fields/community-ecology/competition.png
+    alt: Two panels of two populations over time; on the left both settle, at about 86 and 29; on the right species 1 rises to 100 and species 2 falls to zero.
+    caption: >-
+      The worked example run forward from ten of each, with equal growth rates assumed. At
+      $\alpha_{21} = 0.6$ the species settle at 85.7 and 28.6; at 0.9 the second is driven out.
+    credit: Drawn for Field Atlas from the equations above
+    license: Field Atlas original
+    source: https://github.com/andifathulms/field-atlas/blob/main/scripts/diagrams/ecology.py
 ---
 
 ## Superorganism or Coincidence
@@ -237,6 +256,8 @@ Field studies turned the idea into research. Hutchinson's student {{fig:robert-m
 ## Who Holds a Community Together
 
 Competition is only one force. In 1963 {{fig:robert-paine|Robert Paine}} began prising ochre starfish off a stretch of rocky shore in Washington State and throwing them into the sea. The starfish eat mussels, the best competitors for space on the rock. Without the starfish, mussels spread and smothered the barnacles, limpets and seaweeds, and the number of species in the plot fell from fifteen to eight. A single predator had been holding the community together. Paine called such species keystones, after the stone at the top of an arch.
+
+{{img:pisaster}}
 
 Connell later generalised the point. In 1978 he argued that diversity is highest where disturbance, from storms, fires or predators, is neither too frequent nor too rare. With no disturbance the best competitors win. With too much, only the hardiest colonisers survive. This intermediate disturbance hypothesis was popular for decades, though critics have since argued that its logic is flawed and its evidence weak.
 
@@ -261,6 +282,8 @@ $$
 Both are positive, and a simulation started from ten of each settles there. The two species coexist, each held below its own carrying capacity by the other.
 
 Now let the niches overlap more, so that $\alpha_{21}$ rises to 0.9. The formula gives $N_2^* = (80 - 90)/0.55 \approx -18$, which is impossible. There is no balance point with both species present. A simulation shows species 2 dwindling to nothing, while species 1 rises to its full carrying capacity of 100. This is Gause's competitive exclusion.
+
+{{img:competition}}
 
 The general condition for stable coexistence is
 
