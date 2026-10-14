@@ -255,13 +255,37 @@ further_reading:
   - citation: "Tinkham, M. (1996). Introduction to Superconductivity (2nd ed.). McGraw-Hill."
     url: null
     note: The standard graduate textbook.
+
+images:
+  - id: onnes-mercury-1911
+    src: /images/fields/superconductivity/onnes-mercury-1911.png
+    alt: A hand-drawn graph of resistance against temperature from 4.00 to 4.40 kelvin, falling from about 0.11 ohm to essentially zero at 4.2 kelvin, with a point labelled 10 to the minus 5 ohm.
+    caption: >-
+      Onnes's own graph of mercury's resistance from 1911. Near 4.2 K it falls from about
+      0.11 Ω to below $10^{-5}$ Ω within a few hundredths of a degree.
+    credit: Heike Kamerlingh Onnes, 1911
+    license: Public domain
+    source: https://commons.wikimedia.org/wiki/File:Superconductivity_1911.png
+  - id: meissner-levitation
+    src: /images/fields/superconductivity/meissner-levitation.jpg
+    alt: A small dark magnet floating in the air above a disc of superconductor sitting in a foam bath of liquid nitrogen.
+    caption: >-
+      A magnet floating above a high-temperature superconductor cooled by liquid nitrogen. The
+      superconductor expels the magnet's field, the effect Meissner and Ochsenfeld found.
+    credit: Mai-Linh Doan
+    license: CC BY-SA 3.0
+    source: https://commons.wikimedia.org/wiki/File:Meissner_effect_p1390048.jpg
 ---
 
 ## Into the Cold
 
 In 1908 {{fig:heike-kamerlingh-onnes|Heike Kamerlingh Onnes}} liquefied helium in Leiden, reaching 4 degrees above absolute zero. For fifteen years no one else could. Physicists disagreed about what happens to a metal's resistance at such temperatures. Some expected it to fall smoothly to zero, others expected it to rise as the electrons froze in place. In 1911 Onnes's laboratory measured mercury, which could be purified by distillation. At 4.2 K its resistance vanished, suddenly and completely.
 
+{{img:onnes-mercury-1911}}
+
 The new state was more than perfect conduction. In 1933 {{fig:walther-meissner|Walther Meissner}} and {{fig:robert-ochsenfeld|Robert Ochsenfeld}} found that a superconductor expels a magnetic field when it is cooled. A perfect conductor would trap whatever field was inside it. A superconductor ends up in the same state however it gets there, which is the mark of a true phase of matter, in the sense of [phase transitions](/physics/phase-transitions/). The brothers {{fig:fritz-london|Fritz London}} and {{fig:heinz-london|Heinz London}}, refugees from Germany working in Oxford, wrote equations describing the expulsion in 1935. Fritz London suggested that superconductivity is a quantum state stretched across the whole material.
+
+{{img:meissner-levitation}}
 
 ## Forty-Six Years
 
