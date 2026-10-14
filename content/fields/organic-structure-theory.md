@@ -239,6 +239,46 @@ further_reading:
   - citation: "Eliel, E. L. & Wilen, S. H. (1994). Stereochemistry of Organic Compounds. Wiley."
     url: null
     note: The reference work; its early chapters cover conformational analysis thoroughly.
+
+images:
+  - id: kekule-ghent
+    src: /images/fields/organic-structure-theory/kekule-ghent.jpg
+    alt: A group photograph of nine men in nineteenth-century suits, three seated in front and six standing behind.
+    caption: >-
+      Kekulé (seated, centre) with his group at Ghent around 1866. Wilhelm Körner, standing
+      second from the left, was his assistant there; Albert Ladenburg stands at the right.
+    credit: Ghent University
+    license: Public domain
+    source: https://commons.wikimedia.org/wiki/File:August_Kekule_Gent_ca1866.jpg
+  - id: korner-count
+    src: /images/fields/organic-structure-theory/korner-count.png
+    alt: Three benzene hexagons with two X substituents each, para, ortho and meta, with the free positions marked by letters showing one, two and three distinct classes.
+    caption: >-
+      Körner's count, worked by the ring's symmetry. Free positions with the same letter give
+      the same product when a third group is added: one class for para, two for ortho, three
+      for meta.
+    credit: Drawn for Field Atlas from the table above
+    license: Field Atlas original
+    source: https://github.com/andifathulms/field-atlas/blob/main/scripts/diagrams/synthesis.py
+  - id: kekule-benzene
+    src: /images/fields/organic-structure-theory/kekule-benzene.png
+    alt: Two hexagonal formulas of benzene with numbered carbons, the double bonds placed in alternate positions in each.
+    caption: >-
+      Kekulé's two benzene formulas from his 1872 paper, with the double bonds in the two
+      possible places. He proposed that the molecule oscillates between them; in fact all six
+      bonds are the same.
+    credit: August Kekulé, 1872
+    license: Public domain
+    source: https://commons.wikimedia.org/wiki/File:Historic_Benzene_Formulae_Kekul%C3%A9_(original).png
+  - id: cyclohexane-chair
+    src: /images/fields/organic-structure-theory/cyclohexane-chair.png
+    alt: A ball-and-stick model of cyclohexane in the chair shape, with six hydrogens in red pointing up and down and six in blue pointing outwards.
+    caption: >-
+      Cyclohexane in its chair shape: six hydrogens stand roughly vertical (red, axial) and six
+      point outwards around the ring (blue, equatorial).
+    credit: Benjah-bmm27
+    license: Public domain
+    source: https://commons.wikimedia.org/wiki/File:Cyclohexane-chair-colour-coded-3D-balls.png
 ---
 
 ## A Crisis Made of Two Substances
@@ -267,6 +307,8 @@ Return to the ring itself, because the way its isomers were told apart is a piec
 
 But *which* known isomer was which? Nothing in their chemistry distinguishes them, and no instrument in 1874 could look. {{fig:korner|Wilhelm Körner}} found the answer in a count. Take each disubstituted isomer, add a third identical substituent, and ask how many distinct trisubstituted products it can give.
 
+{{img:kekule-ghent}}
+
 Number the ring 1 to 6 and put the two substituents down:
 
 | Starting isomer | Free positions | Distinct products |
@@ -279,12 +321,18 @@ Work through the middle row to see how it goes. With substituents at 1 and 2, th
 
 So the isomer that yields a single trisubstituted product is para; the one that yields two is ortho; the one that yields three is meta. Körner carried out the substitutions, counted the products and assigned all three. The positions of atoms in a molecule were established by pure combinatorics on a hexagon, from a theory that had been proposed nine years earlier, using no observation of the molecule at all.
 
+{{img:korner-count}}
+
 Two further notes make the episode more interesting, not less. Kekulé's alternating single and double bonds are *wrong*: all six bonds in benzene are identical, as the equivalence of the positions already hints and as {{fig:kathleen-lonsdale|Kathleen Lonsdale}}'s X-ray work confirmed in 1929 when she showed the ring is flat with equal bond lengths — described under [crystallography](/physics/crystallography/). And the famous story of the dream of a snake seizing its own tail was told by Kekulé twenty-five years after the fact, at a banquet in his honour, and historians treat it as reconstruction. {{fig:josef-loschmidt|Josef Loschmidt}} had meanwhile drawn ring diagrams in a privately printed pamphlet of 1861, which is one of chemistry's unresolved priority questions.
+
+{{img:kekule-benzene}}
 
 ## Shape Without Changing Anything
 
 The last layer took until 1950 and is easy to underestimate. A structural formula fixes connectivity and says nothing about the arrangement single bonds can rotate into. For a long time that rotation was assumed to be free and therefore unimportant.
 
 {{fig:hassel|Odd Hassel}} showed by electron diffraction that cyclohexane is not a flat hexagon but a puckered chair, in which six hydrogens stand roughly vertical and six roughly horizontal. {{fig:barton|Derek Barton}} then argued in 1950 that this matters enormously for reactivity: a group in the vertical position is hindered and reacts slowly, the same group in the horizontal position does not, and steroid chemistry — where the anomalies had been accumulating for years — becomes intelligible once each substituent's orientation is specified. Two compounds with identical structural formulas, differing only in which ring conformation they prefer, can react at rates differing by orders of magnitude.
+
+{{img:cyclohexane-chair}}
 
 Connectivity, then, is not the end of the story. The next layer down is arrangement in three dimensions that *cannot* be interconverted by rotation — the difference between a left hand and a right — which is [stereochemistry](/chemistry/stereochemistry/).
