@@ -195,6 +195,36 @@ further_reading:
   - citation: "Gould, S. J. (1977). Ontogeny and Phylogeny. Harvard University Press."
     url: null
     note: A long history of the idea that development repeats evolution, and what replaced it.
+
+images:
+  - id: harvey-frontispiece
+    src: /images/fields/embryology/harvey-frontispiece.jpg
+    alt: An engraved frontispiece of Zeus seated on a pedestal, opening an egg inscribed "ex ovo omnia" from which animals emerge.
+    caption: >-
+      The frontispiece of Harvey's *Exercitationes de generatione animalium* (1651): Zeus opens an
+      egg marked *ex ovo omnia*, everything from an egg, and living things pour out.
+    credit: William Harvey; Wellcome Collection
+    license: CC BY 4.0
+    source: https://commons.wikimedia.org/wiki/File:W._Harvey,_Exercitationes_de_generatione...,_frontispiece._Wellcome_L0006634.jpg
+  - id: haeckel-embryos
+    src: /images/fields/embryology/haeckel-embryos.jpg
+    alt: Two plates of embryos in rows, fish, salamander, turtle, chick, pig, cow, rabbit and human, each at three stages, looking alike at the earliest.
+    caption: >-
+      Haeckel's embryo plates from *Anthropogenie* (1874): fish, salamander, turtle, chick, pig,
+      cow, rabbit and human at three stages. Their early likeness was drawn more closely than the
+      embryos warrant.
+    credit: Ernst Haeckel, lithograph by J. G. Bach
+    license: Public domain
+    source: https://commons.wikimedia.org/wiki/File:Haeckel_Anthropogenie_1874.jpg
+  - id: frog-cleavage
+    src: /images/fields/embryology/frog-cleavage.jpg
+    alt: Eight drawings of a frog egg dividing, from two cells to dozens, the cells getting smaller with each division.
+    caption: >-
+      A frog egg cleaving, from a 1927 textbook: the egg is cut into ever smaller cells without
+      growing.
+    credit: Samuel J. Holmes, The Biology of the Frog (1927)
+    license: Public domain
+    source: https://commons.wikimedia.org/wiki/File:Frog_Segmentation_of_egg.jpg
 ---
 
 ## Eggs
@@ -202,6 +232,8 @@ further_reading:
 The oldest detailed study of an embryo to survive is {{fig:aristotle|Aristotle}}'s. He opened hens' eggs on successive days and saw the heart appear as a beating spot of blood before any other organ. He concluded that the parts of an embryo form one after another, in order. He called the process generation. It is now called epigenesis.
 
 Two thousand years later {{fig:william-harvey|William Harvey}}, physician to Charles I, took up the question. He dissected the king's deer at intervals after the rut, expecting to find an egg in the womb, and did not. He found only a formless fluid in which an embryo later appeared. He still concluded, from the chick and from reasoning, that every animal begins as an egg. His book of 1651 carried the motto "ex ovo omnia", everything from an egg.
+
+{{img:harvey-frontispiece}}
 
 ## Preformation
 
@@ -214,6 +246,8 @@ The microscope made the question harder, not easier. In 1672 Marcello Malpighi d
 In 1817 Christian Pander, working in Würzburg, saw that the early chick embryo is made of distinct layers. His friend {{fig:karl-ernst-von-baer|Karl Ernst von Baer}} traced the layers through many vertebrates and found that they give rise to the same organs in each. In 1827 he found the mammalian egg itself, a speck in the ovary of a dog, finishing what Harvey had begun. The next year he stated his laws of development. General features, such as a backbone, appear before special ones, such as feathers. The embryo of one animal never resembles the adult of another, only its embryo.
 
 Von Baer did not accept evolution. But once Darwin published in 1859, the resemblance of embryos became some of the best evidence for common descent. {{fig:ernst-haeckel|Ernst Haeckel}} went further. His biogenetic law of 1866 held that each embryo replays the history of its ancestors, so that a human embryo's throat grooves are the gills of a fish ancestor. His plates of embryos in rows, fish to human, were reprinted for a century. They were also accused, from 1868 onwards, of exaggerating the likeness.
+
+{{img:haeckel-embryos}}
 
 ## A Closer Look: From One Cell to Thirty Trillion
 
@@ -236,6 +270,8 @@ The first divisions are special. A frog egg is a huge cell, about 1.2 mm across,
 | 12 | 4,096 | 1/4,096 | 0.075 mm |
 
 Because volume goes as the cube of diameter, every three divisions halve the diameter, and after twelve the cells are $4096^{1/3} = 16$ times narrower, about 75 micrometres, close to the size of ordinary cells. In the frog *Xenopus* the first division comes about 90 minutes after fertilisation and later ones about every 30 minutes, so the twelfth division happens around $90 + 11 \times 30 = 420$ minutes, about seven hours in. Only then does the embryo's own genome switch on in earnest. Until that point it has been running on instructions and materials packed into the egg by the mother.
+
+{{img:frog-cleavage}}
 
 Human embryos are slower. Their first divisions come roughly once a day, so an embryo is only about eight cells three days after fertilisation. The principle is the same: a large cell is cut into many ordinary ones before growth begins.
 
