@@ -236,6 +236,44 @@ further_reading:
   - citation: "Edidin, M. (2003). Lipids on the frontier: a century of cell-membrane bilayers. Nature Reviews Molecular Cell Biology 4: 414–418."
     url: null
     note: A short history of how the bilayer picture was established and revised.
+
+images:
+  - id: bilayer-micelle
+    src: /images/fields/membrane-biophysics/bilayer-micelle.png
+    alt: Two cross-sections, a flat double row of lipids with heads outward and tails inward, and a round micelle with heads outward.
+    caption: >-
+      Lipids in water: a bilayer (1), tails meeting in the middle and heads facing the water on
+      each side, and a micelle (2).
+    credit: Stephen Gilbert, vectorised by Urutseg
+    license: CC BY-SA 3.0
+    source: https://commons.wikimedia.org/wiki/File:Lipid_bilayer_and_micelle.svg
+  - id: kcsa
+    src: /images/fields/membrane-biophysics/kcsa.jpg
+    alt: A ribbon model of a potassium channel in green, with a column of purple potassium ions in the narrow filter at the top.
+    caption: >-
+      The KcsA potassium channel (two of its four subunits shown). Potassium ions sit in single file
+      in the selectivity filter, where carbonyl oxygens take the place of their water shell.
+    credit: Boghog2, from PDB entry 1K4C
+    license: Public domain
+    source: https://commons.wikimedia.org/wiki/File:1K4C.png
+  - id: membrane-field
+    src: /images/fields/membrane-biophysics/membrane-field.png
+    alt: Two bars of electric field, 3 megavolts per metre for the breakdown of dry air and about 18 across a resting membrane.
+    caption: >-
+      Seventy millivolts across 4 nm is about 18 MV/m, six times the field at which air breaks
+      down into a spark.
+    credit: Drawn for Field Atlas from the numbers above
+    license: Field Atlas original
+    source: https://github.com/andifathulms/field-atlas/blob/main/scripts/diagrams/structure.py
+  - id: blood-cells
+    src: /images/fields/membrane-biophysics/blood-cells.jpg
+    alt: A coloured scanning electron micrograph of a red, dimpled disc beside a small yellow platelet and a round, bumpy white blood cell.
+    caption: >-
+      A red blood cell (left) beside a platelet and a white blood cell. Its dimpled disc is the
+      shape that minimises the bilayer's bending energy for its area and volume.
+    credit: Electron Microscopy Facility, National Cancer Institute at Frederick
+    license: Public domain
+    source: https://commons.wikimedia.org/wiki/File:Red_White_Blood_cells.jpg
 ---
 
 ## A Sheet Two Molecules Thick
@@ -246,11 +284,15 @@ The cell membrane was, for most of the nineteenth century, an inference: somethi
 
 The answer was about two. Not one, not twenty — two layers of molecules, which is the thinnest self-sealing barrier chemistry allows, and the structure has been confirmed by every later technique.
 
+{{img:bilayer-micelle}}
+
 ## Choosing Between Two Ions
 
 A barrier that good is only useful if it can be opened selectively, and the hardest thing a channel does is discriminate. Potassium channels pass K⁺ at near the diffusion limit and exclude Na⁺ by a factor of about ten thousand, and sodium is the *smaller* ion, so a simple size filter would do the opposite.
 
 {{fig:mackinnon|Roderick MacKinnon}}'s 1998 structure shows the trick. An ion in water is surrounded by a shell of water molecules whose oxygens coordinate it, and pulling it out of that shell costs energy — more for sodium, because it is smaller and holds its water more tightly. The channel's selectivity filter is lined with backbone carbonyl oxygens held rigidly at spacings that reproduce almost exactly the coordination geometry that water provided for potassium. A potassium ion therefore pays nothing on balance to enter. A sodium ion, being 0.3 Å smaller in radius, cannot reach those oxygens at the right distances; the filter cannot repay its larger dehydration cost, and it stays out. Selectivity comes from a structure rigid enough to be wrong for the smaller ion.
+
+{{img:kcsa}}
 
 {{fig:agre|Peter Agre}}'s aquaporin solves a related problem in the opposite direction: pass water at enormous rates while blocking protons, which travel through hydrogen-bonded water chains faster than any ion diffuses. The pore's answer is a positively charged arginine and a geometry that forces one water molecule in the middle to break the chain by reorienting — so there is no continuous hydrogen-bonded path for a proton to hop along.
 
@@ -286,6 +328,8 @@ $$
 
 or 18 megavolts per metre. Dry air breaks down at about 3 MV/m, so the membrane holds six times the field that would arc across a spark gap, and does so continuously, for the life of the cell, in a film that is held together by no covalent bonds at all. It is among the best insulators per unit thickness in nature, and the entire electrical activity described under [electrophysiology](/biology/electrophysiology/) consists of proteins briefly and selectively spoiling that insulation.
 
+{{img:membrane-field}}
+
 The same numbers set the scale of what a channel must do. A potassium channel passing $10^{7}$ ions per second carries a current of
 
 $$
@@ -299,6 +343,8 @@ which is a picoampere — measurable, one molecule at a time, which is what the 
 A bilayer is fluid in its own plane — lipids diffuse through it like molecules in a two-dimensional liquid — and it has no shear rigidity at all. What it does resist is bending, and {{fig:helfrich|Wolfgang Helfrich}} wrote down the energy for that in 1973 by analogy with liquid crystals: an energy per unit area quadratic in the curvature, with a bending modulus of about 20 $k_BT$.
 
 This converts the shape of a cell into a variational problem. Minimise bending energy over all closed surfaces with a given area and a given enclosed volume, and the solution for a red blood cell's ratio of the two is the biconcave disc it actually has. Changing the volume moves the solution through a family of shapes that matches those observed in vesicles under osmotic stress. The equations that result are fourth-order and belong to the [differential geometry](/math/differential-geometry/) of surfaces, close relatives of the Willmore functional — one of the clearest cases in biology where a shape is explained by a minimisation rather than by a mechanism.
+
+{{img:blood-cells}}
 
 The mechanics is not only descriptive. {{fig:patapoutian|Ardem Patapoutian}}'s Piezo channels, found in 2010, are gated by tension in the surrounding bilayer: each is a three-bladed propeller that dimples the membrane locally, and pulling the membrane taut flattens the blades and opens the pore. Touch, hearing and the sensing of blood pressure all run through a protein that reads the mechanical state of a sheet two molecules thick.
 
