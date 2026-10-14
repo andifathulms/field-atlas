@@ -189,13 +189,46 @@ further_reading:
   - citation: "Skloot, R. (2010). The Immortal Life of Henrietta Lacks. Crown."
     url: null
     note: The story of the HeLa cells and the family they came from.
+
+images:
+  - id: hooke-cork
+    src: /images/fields/cell-theory/hooke-cork.jpg
+    alt: An engraving of two circular microscope views of cork, showing rows of small empty boxes, above a drawing of a cork-oak sprig.
+    caption: >-
+      Hooke's cork from *Micrographia* (1665): rows of empty boxes he called cells, a word
+      often said to recall monks' rooms.
+    credit: Robert Hooke, Library of Congress
+    license: Public domain
+    source: https://commons.wikimedia.org/wiki/File:Cellular_structure_of_cork_plant_and_cells_of_a_honeycomb,_with_cork_plant_branch_below_LCCN92516621.jpg
+  - id: leeuwenhoek-microscope
+    src: /images/fields/cell-theory/leeuwenhoek-microscope.jpg
+    alt: A small brass plate holding a tiny lens, with a screw-mounted pin for the specimen in front of it.
+    caption: >-
+      A replica of a Leeuwenhoek microscope. The whole instrument is a single bead of a lens in a
+      brass plate, held up to the eye, with the specimen on the pin.
+    credit: Jeroen Rouwkema
+    license: CC BY-SA 3.0
+    source: https://commons.wikimedia.org/wiki/File:Leeuwenhoek_Microscope.png
+  - id: diffusion-time
+    src: /images/fields/cell-theory/diffusion-time.png
+    alt: Bars on a log scale of diffusion time, 0.5 milliseconds across a bacterium, 50 milliseconds across a human cell, about 8 minutes across a large egg and about 14 hours across a fingertip.
+    caption: >-
+      The table's diffusion times. Ten times the distance means a hundred times the wait, which is
+      why large organisms are built of small cells.
+    credit: Drawn for Field Atlas from the table above
+    license: Field Atlas original
+    source: https://github.com/andifathulms/field-atlas/blob/main/scripts/diagrams/cell.py
 ---
 
 ## Little Rooms and Little Animals
 
 In 1665 {{fig:hooke|Robert Hooke}} published *Micrographia*, a book of astonishing drawings made through his microscope: a flea, the eye of a fly, the point of a needle. Looking at a thin slice of cork, he saw a honeycomb of tiny empty boxes and called them cells, a word often said to recall monks' rooms. He was looking at the walls of dead plant cells, and saw no reason to think they were important.
 
+{{img:hooke-cork}}
+
 A decade later {{fig:antonie-van-leeuwenhoek|Antonie van Leeuwenhoek}}, a draper in Delft with no scientific training, saw far more. His tiny single lenses, a few millimetres across and held close to the eye, magnified more than two hundred times. In pond water, rainwater and the plaque from his teeth, he found creatures by the thousand, too small to see: protists and bacteria. The Royal Society in London doubted him until its own members confirmed the observations. He kept his lens-making methods secret, and for 150 years microscopes improved little.
+
+{{img:leeuwenhoek-microscope}}
 
 ## All Life Is Cells
 
@@ -221,6 +254,8 @@ where $D$ is the diffusion coefficient. For a small molecule such as glucose in 
 | 1 cm | a fingertip | about 14 hours |
 
 Because the time grows with the square of the distance, making something ten times larger makes diffusion across it a hundred times slower. A cell the size of a bacterium is supplied almost instantly. A cell a centimetre across would starve in its middle. There is a second constraint: a cell takes in food and gets rid of waste through its surface, and as a cell grows, its volume increases faster than its surface. Double the width and the volume grows eightfold while the surface grows only fourfold.
+
+{{img:diffusion-time}}
 
 That is why large organisms are made of many small cells rather than a few big ones, and why they need circulation, the blood that carries oxygen within a fraction of a millimetre of almost every cell. The few giant cells that exist, such as bird eggs, are mostly inert food store, or, like nerve cells a metre long, are thin in every direction but one and move material with molecular motors.
 
