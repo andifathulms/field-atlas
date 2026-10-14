@@ -237,6 +237,35 @@ further_reading:
   - citation: "Hoffmann, R. W. (2009). Elements of Synthesis Planning. Springer."
     url: null
     note: How routes are actually designed, including the arithmetic of yields and step counts.
+
+images:
+  - id: mauveine
+    src: /images/fields/total-synthesis/mauveine.png
+    alt: The skeletal structure of mauveine A, a central three-ring system bearing a phenyl group, an amino group and a tolyl-amino group.
+    caption: >-
+      Mauveine A, the main component of Perkin's dye. He was trying to make quinine; the dye
+      came from impurities in his aniline.
+    credit: Benjah-bmm27
+    license: Public domain
+    source: https://commons.wikimedia.org/wiki/File:Mauveine-A-2D-skeletal.png
+  - id: cobalamin
+    src: /images/fields/total-synthesis/cobalamin.png
+    alt: The skeletal structure of vitamin B12, a large corrin ring around a cobalt atom with amide side chains and a nucleotide loop below.
+    caption: >-
+      Vitamin B12: a corrin ring around a cobalt atom, with the bonds of the ring drawn in blue.
+      Woodward and Eschenmoser's groups completed it in 1972.
+    credit: RicHard-59
+    license: Public domain
+    source: https://commons.wikimedia.org/wiki/File:B12_Cobalamin.svg
+  - id: linear-yield
+    src: /images/fields/total-synthesis/linear-yield.png
+    alt: Three falling lines of overall yield against number of steps on a log scale, for 95, 90 and 80 per cent per step, with 40 steps at 90 per cent reaching 1.5 per cent and a 21-step convergent route at 11 per cent.
+    caption: >-
+      Overall yield against the length of the longest chain. At 90% a step, forty in a line
+      leave 1.5%; the same forty split into two branches of twenty, then joined, leave 11%.
+    credit: Drawn for Field Atlas from the numbers above
+    license: Field Atlas original
+    source: https://github.com/andifathulms/field-atlas/blob/main/scripts/diagrams/synthesis.py
 ---
 
 ## An Accident That Founded an Industry
@@ -244,6 +273,8 @@ further_reading:
 In 1856 {{fig:perkin|William Henry Perkin}} was eighteen, working at the Royal College of Chemistry under Hofmann, and spending his Easter holiday trying to make quinine in a laboratory at home. The attempt was hopeless in a way nobody could have known: quinine's composition was known, its structure was not, and Perkin's plan amounted to oxidising something of roughly the right formula and hoping. He got a black precipitate, and when he washed it with alcohol the liquid turned brilliant purple.
 
 He recognised a dye, patented it, persuaded his father to finance a works, and had mauveine in commercial production within two years. The consequences were out of all proportion: a synthetic dye industry, the German chemical firms that grew to dominate it, and the demonstration that a laboratory could manufacture a substance better than nature supplied it.
+
+{{img:mauveine}}
 
 The first *deliberate* synthesis of a complex natural product at scale came in 1903, and the motive was supply. Camphor was needed for celluloid and for smokeless powder, and came from a Taiwanese tree under monopoly control. {{fig:komppa|Gustaf Komppa}} built it, establishing its structure in the process, and a Finnish plant was making it by 1907. Those two motives — prove a structure, escape a monopoly — have driven the field ever since.
 
@@ -254,6 +285,8 @@ Before spectroscopy, a proposed structure could be confirmed in only one way tha
 {{fig:woodward|Robert Woodward}} changed what the activity was. Between 1951 and 1958 his group completed cholesterol, cortisone, strychnine, lysergic acid, reserpine and chlorophyll, and the difference from earlier work was that the routes were *planned*. Each step was chosen because its stereochemical outcome could be predicted, using the conformational reasoning {{fig:barton|Barton}} had just introduced to decide which face of a ring a reagent would attack. Woodward reportedly worked out the reserpine route on paper before any of it was attempted.
 
 The culmination was vitamin B12: a corrin ring, nine stereocentres, a cobalt atom, no useful symmetry. Woodward at Harvard and {{fig:eschenmoser|Albert Eschenmoser}} at Zurich ran it jointly with about a hundred collaborators over eleven years, building two halves separately and joining them. The project's most durable product was a by-product. A ring closure gave the wrong stereochemistry, reproducibly; thinking about why sent Woodward to {{fig:hoffmann|Roald Hoffmann}}, and the answer was the orbital symmetry rules.
+
+{{img:cobalamin}}
 
 ## A Closer Look: Why Convergent Beats Linear
 
@@ -286,6 +319,8 @@ $$
 $$
 
 eleven per cent — a sevenfold improvement from rearranging the same chemistry. The gain is larger still in practice, because each branch can be made in quantity on its own schedule, and a failure late in one branch does not destroy material from the other. This is why convergent, fragment-coupling design has been the dominant strategy since the 1970s, and why a long linear route is read as a planning failure rather than as diligence.
+
+{{img:linear-yield}}
 
 The second number worth stating is the stereochemical one. {{fig:kishi|Yoshito Kishi}}'s palytoxin has **64 stereocentres**. The number of distinct stereoisomers is
 
