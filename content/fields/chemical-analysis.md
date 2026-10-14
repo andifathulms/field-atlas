@@ -226,6 +226,45 @@ further_reading:
   - citation: "Currie, L. A. (1995). Nomenclature in evaluation of analytical methods. Pure and Applied Chemistry 67: 1699–1723."
     url: null
     note: What detection limits, blanks and uncertainties actually mean, stated carefully.
+
+images:
+  - id: fresenius
+    src: /images/fields/chemical-analysis/fresenius.jpg
+    alt: A lithograph portrait of Carl Remigius Fresenius, bearded, in a dark coat.
+    caption: >-
+      Carl Remigius Fresenius in 1860. His scheme of group separations made qualitative analysis
+      a procedure anyone trained could follow.
+    credit: Rudolf Hoffmann, lithograph after a photograph by Wagner
+    license: Public domain
+    source: https://commons.wikimedia.org/wiki/File:Karl_Remigius_Fresenius_Litho.jpg
+  - id: beer-lambert
+    src: /images/fields/chemical-analysis/beer-lambert.jpg
+    alt: A green laser beam entering a measuring cylinder of pink rhodamine solution from above, bright at the surface and fading as it goes down.
+    caption: >-
+      Beer's law made visible: a green laser shone down into a rhodamine solution grows fainter
+      the deeper it goes, as the dye absorbs it.
+    credit: Amirber
+    license: CC BY-SA 4.0
+    source: https://commons.wikimedia.org/wiki/File:Beer%E2%80%93Lambert_law_in_Rhodamine_6G.jpg
+  - id: sampling-error
+    src: /images/fields/chemical-analysis/sampling-error.png
+    alt: Two falling lines of sampling error against sample mass on log scales, for 1 mm grains passing 52 per cent at 1 gram and 1 per cent at 2.7 kg, and for 0.1 mm grains reaching 1 per cent at 2.7 g.
+    caption: >-
+      The error from sampling alone, for an ore with one grain in a hundred of the mineral. At
+      1 mm grains a gram gives 52% and 1% needs 2.7 kg; crushing to 0.1 mm brings that down to
+      2.7 g.
+    credit: Drawn for Field Atlas from the numbers above
+    license: Field Atlas original
+    source: https://github.com/andifathulms/field-atlas/blob/main/scripts/diagrams/analysis.py
+  - id: pregl-mikroanalyse
+    src: /images/fields/chemical-analysis/pregl-mikroanalyse.jpg
+    alt: The title page of Fritz Pregl's book Die quantitative organische Mikroanalyse.
+    caption: >-
+      The title page of Pregl's *Die quantitative organische Mikroanalyse*, the manual of
+      combustion analysis on a few milligrams.
+    credit: Fritz Pregl
+    license: Public domain
+    source: https://commons.wikimedia.org/wiki/File:Fritz_Pregl_-_Die_quantitative_organische_Mikroanalyse_(cover).jpg
 ---
 
 ## Procedures Instead of Skill
@@ -236,7 +275,11 @@ Two nineteenth-century developments turned it into a discipline. {{fig:gay-lussa
 
 {{fig:fresenius|Carl Remigius Fresenius}} did something less tangible and more consequential. His 1841 scheme for qualitative analysis prescribes a sequence: add hydrochloric acid and whatever precipitates belongs to one group, then hydrogen sulfide for the next, then ammonium sulfide, and so on, each group then separated internally by further reactions. The point is that the sequence is *fixed*. A student who follows it correctly identifies the metals present without needing judgement, and the composition of thousands of minerals was established this way. Fresenius founded the first laboratory devoted to analysis and the first journal for it, and his textbook ran through seventeen editions.
 
+{{img:fresenius}}
+
 {{fig:beer|August Beer}} supplied the third ingredient in 1852 by making colour quantitative. Light passing through an absorbing solution is attenuated in proportion to both the path length and the concentration, so the logarithm of the attenuation is proportional to concentration — which means a colour can be read off a scale. Nearly every clinical and environmental assay performed today is a descendant.
+
+{{img:beer-lambert}}
 
 ## What a Number Needs Behind It
 
@@ -288,6 +331,8 @@ $$
 
 Nearly three kilograms, to support a measurement made on a few milligrams. That is why mine laboratories handle sacks rather than vials.
 
+{{img:sampling-error}}
+
 The alternative is {{fig:gy|Pierre Gy}}'s: crush finer. Required mass scales as the cube of grain diameter, because grain mass does, so reducing the grain size from 1 mm to 0.1 mm cuts the required sample by a factor of a thousand — from 2.7 kg to 2.7 g. This is exactly why the sample preparation line in an assay laboratory is a sequence of crushers and pulverisers, and why the rule of thumb is that the sample must be *comminuted* before it is divided, never after.
 
 Two further consequences are worth drawing, because they generalise beyond ore.
@@ -301,6 +346,8 @@ And the same reasoning applies wherever a small portion stands for a large heter
 Two later developments complete the classical picture.
 
 {{fig:pregl|Fritz Pregl}} ran out of material. Working on bile acids, which he could obtain only in small quantities, he found that combustion analysis required more sample than he had, and spent years rebuilding the apparatus and the balance until carbon, hydrogen and nitrogen could be determined on three to five milligrams to the same accuracy as on three hundred. The 1923 Nobel Prize was for an improvement in technique, which is unusual, and it mattered because it changed what could be characterised at all: a natural product available in milligram quantity became a compound whose formula could be established.
+
+{{img:pregl-mikroanalyse}}
 
 The last ingredient is institutional. Two laboratories using the same published method on the same material routinely disagreed, by more than either one's stated uncertainty, and nothing internal to either could settle it. The answer was the certified reference material — a sample whose composition has been established by several independent methods and distributed so that anyone can check their procedure against a known answer. The United States National Bureau of Standards began issuing certified steels in 1906; the system of traceability, proficiency testing and stated uncertainty that grew from it is why an analysis performed in one country is accepted in another.
 
