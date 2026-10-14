@@ -224,6 +224,26 @@ further_reading:
   - citation: "Chen, F. F. (2011). An Indefinite Journey: Why Fusion Energy Is So Hard. World Scientific."
     url: null
     note: A plasma physicist explains the physics of confinement for non-specialists.
+
+images:
+  - id: ivy-mike
+    src: /images/fields/fusion-energy/ivy-mike.jpg
+    alt: A huge mushroom cloud rising over the ocean from the Ivy Mike test.
+    caption: >-
+      Ivy Mike, the first test of a Teller–Ulam device, at Enewetak Atoll on 1 November 1952:
+      about 10 megatons.
+    credit: National Nuclear Security Administration
+    license: Public domain
+    source: https://commons.wikimedia.org/wiki/File:IvyMike2.jpg
+  - id: nif-target-chamber
+    src: /images/fields/fusion-energy/nif-target-chamber.jpg
+    alt: The interior of a large spherical vacuum chamber lined with ports, with a technician on a lift beside a long target positioner.
+    caption: >-
+      Inside the National Ignition Facility's target chamber, where 192 laser beams converge on
+      a capsule of fuel smaller than a peppercorn.
+    credit: Lawrence Livermore National Laboratory
+    license: Public domain
+    source: https://commons.wikimedia.org/wiki/File:NIF_target_chamber_2.jpg
 ---
 
 ## The Stars' Fuel
@@ -235,6 +255,8 @@ In 1934 at Cambridge, {{fig:mark-oliphant|Mark Oliphant}}, {{fig:paul-harteck|Pa
 ## The Bomb First
 
 A fission bomb produces temperatures of tens of millions of degrees for a moment. {{fig:edward-teller|Edward Teller}} pressed for a fusion bomb from 1942 onwards, but his early designs would not work. In 1951 {{fig:stanislaw-ulam|Stanislaw Ulam}} and Teller found the arrangement that did: radiation from a fission explosion compresses and heats a separate charge of fusion fuel. On 1 November 1952 "Ivy Mike" released about 10 megatons, some 700 times the Hiroshima bomb. The Soviet Union followed within three years, with a design to which {{fig:andrei-sakharov|Andrei Sakharov}} was a leading contributor.
+
+{{img:ivy-mike}}
 
 ## Bottling the Sun
 
@@ -265,6 +287,8 @@ $$
 That is the design target of tokamaks such as ITER. Laser fusion takes the opposite route: it squeezes the fuel to many times the density of lead, and then a confinement time of well under a billionth of a second suffices.
 
 **The gain.** At the National Ignition Facility on 5 December 2022, 2.05 MJ of laser light produced 3.15 MJ of fusion energy, a gain of $3.15 / 2.05 \approx 1.5$. It was a real threshold. The best shot since, in April 2025, reached a gain of about 4.1. But a power plant would need a gain many times larger, since making the laser light takes more than a hundred times more electricity than the light carries.
+
+{{img:nif-target-chamber}}
 
 ## Still Coming
 
