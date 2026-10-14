@@ -268,6 +268,43 @@ further_reading:
   - citation: "Dresselhaus, M. S., Dresselhaus, G. & Eklund, P. C. (1996). Science of Fullerenes and Carbon Nanotubes. Academic Press."
     url: null
     note: Written while the field was being established; the structural reasoning is still the clearest available.
+
+images:
+  - id: lycurgus-cup
+    src: /images/fields/nanomaterials-chemistry/lycurgus-cup.jpg
+    alt: An ornate Roman glass cup carved with figures, glowing ruby red when lit from inside.
+    caption: >-
+      The Lycurgus Cup, Roman, fourth century. It looks green in reflected light and glows red
+      lit from behind, because the glass holds nanoparticles of gold and silver.
+    credit: Chappsnet, British Museum
+    license: CC BY 4.0
+    source: https://commons.wikimedia.org/wiki/File:Front_of_4th_century_CE_Roman_Lycurgus_Cup,_British_Museum_(1958,1202.1).jpg
+  - id: c60-crystals
+    src: /images/fields/nanomaterials-chemistry/c60-crystals.jpg
+    alt: Dark, glinting crystals of buckminsterfullerene.
+    caption: >-
+      Crystals of C₆₀, each molecule a closed cage of sixty carbon atoms.
+    credit: Jochen Gschnaller, University of Innsbruck
+    license: CC BY-SA 3.0
+    source: https://commons.wikimedia.org/wiki/File:C60-Fulleren-kristallin.JPG
+  - id: nanotube-tem
+    src: /images/fields/nanomaterials-chemistry/nanotube-tem.jpg
+    alt: An electron micrograph of a tube with several parallel walls.
+    caption: >-
+      A multi-walled carbon nanotube in the transmission electron microscope: concentric graphitic
+      cylinders, as Iijima first saw them in arc soot.
+    credit: Anna-Versh
+    license: CC BY 4.0
+    source: https://commons.wikimedia.org/wiki/File:Multi-walled_carbon_nanotube.jpg
+  - id: nanocrystal-vials
+    src: /images/fields/nanomaterials-chemistry/nanocrystal-vials.jpg
+    alt: A row of vials glowing blue, green, yellow, orange and red under ultraviolet light.
+    caption: >-
+      Vials of semiconductor nanocrystals glowing under ultraviolet light. Each colour is a
+      different particle size.
+    credit: Travis Jennings
+    license: CC BY 3.0
+    source: https://commons.wikimedia.org/wiki/File:EFluor_Nanocrystal_Vials.jpg
 ---
 
 ## Most of the Atoms Are on the Outside
@@ -275,6 +312,8 @@ further_reading:
 {{fig:faraday|Michael Faraday}} reduced a gold salt with phosphorus in 1857 and got a clear ruby-red fluid. He established that the gold in it was metallic and finely divided rather than chemically combined, noted that adding salt turned the liquid blue and that gelatin reversed the change, and kept the samples. They are still at the Royal Institution and they are still red.
 
 Nothing about the gold was different. The pieces were small, and smallness turned out to be sufficient to change the colour of a metal.
+
+{{img:lycurgus-cup}}
 
 The reason is a ratio that behaves badly. Divide a solid finer and the surface grows relative to the volume as the inverse of the diameter — gently while the pieces are large, and then not gently at all. For gold, where neighbouring atoms are 0.288 nm apart:
 
@@ -296,7 +335,11 @@ The element with the largest literature acquired two new allotropes in six years
 
 {{fig:kroto|Harold Kroto}}, {{fig:smalley|Richard Smalley}}, {{fig:curl|Robert Curl}}, {{fig:heath|James Heath}} and {{fig:obrien|Sean O'Brien}} were vaporising graphite with a laser in 1985 to study carbon chains in interstellar space, and found an unexpectedly intense mass-spectral peak at exactly sixty carbon atoms. Their proposal — a closed cage of twelve pentagons and twenty hexagons, the pattern of a football — was an inference from one number, and it was disputed for five years because a mass spectrum does not show a structure. The argument ended when {{fig:kratschmer|Wolfgang Krätschmer}} and {{fig:huffman|Donald Huffman}} found that an ordinary carbon arc makes the stuff by the gram, at which point it could be crystallised and settled.
 
+{{img:c60-crystals}}
+
 {{fig:iijima|Sumio Iijima}} looked at arc soot by electron microscopy in 1991 and found concentric cylinders of graphitic carbon, nanometres across and micrometres long. Carbon nanotubes have the highest measured tensile strength of any material, above a hundred gigapascals, and they conduct along their length as either a metal or a semiconductor — determined not by composition, which is pure carbon, but by the angle at which the sheet is notionally rolled up. Electronic character following from geometry is the same point the two-dimensional case makes in [topological matter](/physics/topological-matter/).
+
+{{img:nanotube-tem}}
 
 ## Colour by Size, and Shape by Ligand
 
@@ -338,6 +381,8 @@ Now the semiconductor case, where the effect is used rather than merely observed
 | bulk | 713 nm | invisible |
 
 One compound, one crystal structure, the entire visible spectrum covered by changing a diameter by a factor of three. It is worth noting honestly that the simple effective-mass formula gets this trend right and the magnitude wrong — it over-predicts the shift badly below about three nanometres, because a particle of 800 atoms is not well described by treating the electron as a free carrier in a dielectric continuum.
+
+{{img:nanocrystal-vials}}
 
 The third number explains why the synthesis has the form it does. Differentiating the confinement term, a relative spread in radius $\delta R/R$ produces a relative spread in confinement energy of about $2\,\delta R/R$. A display needs an emission linewidth of roughly 30 nm at 550 nm, which is 5% in wavelength; the confinement term is most of the photon energy's variable part, so the particles must be uniform to within a few per cent in **diameter** — which for an 830-atom particle means within about a single atomic layer.
 
