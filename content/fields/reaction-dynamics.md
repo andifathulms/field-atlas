@@ -236,6 +236,26 @@ further_reading:
   - citation: "Herschbach, D. R. (1987). Molecular dynamics of elementary chemical reactions. Angewandte Chemie International Edition 26: 1221–1243."
     url: null
     note: Crossed beams explained by the person who made them a method.
+
+images:
+  - id: zewail
+    src: /images/fields/reaction-dynamics/zewail.jpg
+    alt: Photograph of Ahmed Zewail in a suit and red tie.
+    caption: >-
+      Ahmed Zewail in 2010. He used femtosecond laser pulses to watch bonds break, and won the
+      1999 Nobel Prize in Chemistry for it.
+    credit: Simon Fraser University
+    license: CC BY 2.0
+    source: https://commons.wikimedia.org/wiki/File:Ahmed_Zewail_(2010)_(cropped).jpg
+  - id: femtosecond-scale
+    src: /images/fields/reaction-dynamics/femtosecond-scale.png
+    alt: A logarithmic time axis from 1 femtosecond to 10 picoseconds, marking a C–H stretch at 11.5 fs, a slower vibration at 33 fs, bond breaking at about 90 fs and the sodium iodide oscillation at about 1 ps, with the range below 100 fs shaded.
+    caption: >-
+      The timescales of the chemistry on one axis. Pulses shorter than 100 fs, available by 1987,
+      are fast enough to catch a bond breaking.
+    credit: Drawn for Field Atlas from the numbers above
+    license: Field Atlas original
+    source: https://github.com/andifathulms/field-atlas/blob/main/scripts/diagrams/reaction.py
 ---
 
 ## One Collision at a Time
@@ -290,7 +310,11 @@ $$
 
 Bond breaking takes roughly a hundred femtoseconds. To photograph it, the flash must be shorter than that.
 
+{{img:femtosecond-scale}}
+
 In 1987 such pulses existed, for the reasons set out under [lasers and photonics](/physics/lasers-photonics/) — mode-locked lasers and chirped pulse amplification had brought durations below 100 fs. {{fig:zewail|Ahmed Zewail}} put the two facts together: start the reaction with one pulse, probe it with a second at a controlled delay, and vary the delay to assemble the reaction frame by frame. The delay is set by path length, and 100 fs of delay is 30 µm of extra travel, so the clock is a translation stage.
+
+{{img:zewail}}
 
 The results included one that no inference would have produced. In sodium iodide, the excited pair of atoms does not simply fly apart: it separates, is pulled back, separates again, oscillating with a period of about 1 ps and leaking a fraction of its population to dissociation on each outward swing. The reaction was watched hesitating. {{fig:neumark|Daniel Neumark}} reached the same region a different way, by photodetaching an electron from a stable negative ion whose shape resembles the transition state and recording what the neutral system does at the instant it is created.
 
