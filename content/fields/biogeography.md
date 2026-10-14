@@ -199,6 +199,35 @@ further_reading:
   - citation: "Lomolino, M. V., Riddle, B. R. & Whittaker, R. J. (2017). Biogeography (5th ed.). Sinauer Associates."
     url: null
     note: The standard textbook.
+
+images:
+  - id: humboldt-chimborazo
+    src: /images/fields/biogeography/humboldt-chimborazo.jpg
+    alt: A coloured engraving of Chimborazo in cross-section, forest at its foot giving way to grassland and snow, with plant names written across the slope at the heights they grow.
+    caption: >-
+      Humboldt and Bonpland's *Naturgemälde* of Chimborazo (1807): the mountain in cross-section,
+      with each plant's name written on the slope at the height where it was found.
+    credit: Alexander von Humboldt and Aimé Bonpland; Zentralbibliothek Zürich
+    license: Public domain
+    source: https://commons.wikimedia.org/wiki/File:Zentralbibliothek_Z%C3%BCrich_-_Ideen_zu_einer_Geographie_der_Pflanzen_nebst_einem_Naturgem%C3%A4lde_der_Tropenl%C3%A4nder_-_000012142.jpg
+  - id: wallace-line
+    src: /images/fields/biogeography/wallace-line.png
+    alt: A map of the Malay Archipelago and Australia, with the Sunda and Sahul shelves shaded and the Wallace, Weber and Lydekker lines drawn between them.
+    caption: >-
+      The Wallace Line, running between Bali and Lombok and between Borneo and Sulawesi, with the
+      continental shelves of Sunda (Asian fauna) and Sahul (Australian) shaded.
+    credit: Kanguole
+    license: CC BY-SA 4.0
+    source: https://commons.wikimedia.org/wiki/File:Map_of_Sunda_and_Sahul.svg
+  - id: species-area
+    src: /images/fields/biogeography/species-area.png
+    alt: A straight line on log–log axes of species against island area, passing 10 species at 10 km² and 158 at 100,000 km².
+    caption: >-
+      The table's islands on log–log axes: $S = 5A^{0.3}$ is a straight line, and each tenfold step
+      in area doubles the species.
+    credit: Drawn for Field Atlas from the table above
+    license: Field Atlas original
+    source: https://github.com/andifathulms/field-atlas/blob/main/scripts/diagrams/ecology.py
 ---
 
 ## A Mountain in Cross-Section
@@ -207,6 +236,8 @@ In June 1802 {{fig:alexander-von-humboldt|Alexander von Humboldt}} and the botan
 
 Back in Europe he drew the mountain in cross-section and wrote the names of the plants on its slopes at the heights where he had found them. Palms and bananas grew at the foot, then forests, then high grasslands, then mosses and lichens below the snow line. The same sequence, he saw, is met by a traveller going from the tropics towards the poles. Climate arranges vegetation in zones, and a mountain compresses a hemisphere of climates into a few kilometres of height.
 
+{{img:humboldt-chimborazo}}
+
 Humboldt's essay on the geography of plants, published in 1807, founded the field. Its message was that the distribution of life is not random. It follows physical causes that can be measured.
 
 ## Lines on the Map
@@ -214,6 +245,8 @@ Humboldt's essay on the geography of plants, published in 1807, founded the fiel
 Humboldt explained where plants grow by climate. He could not explain why places with the same climate hold different species. Why are there no bears in Australia and no kangaroos in Africa, when both have grassland and forest? {{fig:darwin|Charles Darwin}} gave the answer in *On the Origin of Species* (1859). Species live where their ancestors lived, or where they could spread to. Distribution is a record of history as much as of climate.
 
 {{fig:wallace|Alfred Russel Wallace}} made that record visible. Collecting in the Malay Archipelago between 1854 and 1862, he found that the birds of Bali were Asian, while those of Lombok, across a narrow strait, were largely Australian: cockatoos and honeyeaters instead of barbets and woodpeckers. He traced a boundary through the islands that follows deep water. When sea level fell in the ice ages, the islands west of it joined Asia and those east of it joined Australia, but the gap between them never closed. Thomas Huxley named it the Wallace Line. In 1876 Wallace divided the whole world into zoological regions, and his map, with small changes, is still in use.
+
+{{img:wallace-line}}
 
 Some patterns defied every explanation. The same fossil reptiles and seed ferns turned up in South America, Africa, India and Antarctica. Biologists invented land bridges that had since sunk. {{fig:alfred-wegener|Alfred Wegener}} proposed instead, in 1915, that the continents themselves had moved. Geologists rejected the idea for half a century, until the discovery of sea-floor spreading in the 1960s made plate tectonics the consensus. Many distributions that had puzzled Darwin turned out to be the pieces of a broken supercontinent.
 
@@ -252,6 +285,8 @@ Take $c = 5$ and $z = 0.3$, with area in square kilometres:
 | 100,000 | 158.1 |
 
 Each row is ten times larger than the last and holds almost exactly twice as many species. A thousandfold difference in area yields only an eightfold difference in species.
+
+{{img:species-area}}
 
 The law also works in reverse, and this is why it matters to conservation. Suppose a forest is cut down until only a tenth of it remains, and treat the remnant as an island. The fraction of species that the remnant can hold is
 
