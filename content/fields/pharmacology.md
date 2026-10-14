@@ -281,6 +281,34 @@ further_reading:
   - citation: "Le Fanu, J. (2011). The Rise and Fall of Modern Medicine, revised edition. Little, Brown."
     url: null
     note: A sceptical account of the therapeutic era, useful as a counterweight to triumphal histories.
+
+images:
+  - id: ehrlich
+    src: /images/fields/pharmacology/ehrlich.jpg
+    alt: Photograph of Paul Ehrlich in a laboratory, holding up a flask among rows of bottles.
+    caption: >-
+      Paul Ehrlich around 1910, the year Salvarsan, the arsenical found with Sahachiro Hata,
+      came into use against syphilis.
+    credit: Unknown photographer
+    license: Public domain
+    source: https://commons.wikimedia.org/wiki/File:Paul_Ehrlich,_c._1910.jpg
+  - id: hitchings-elion
+    src: /images/fields/pharmacology/hitchings-elion.jpg
+    alt: Gertrude Elion and George Hitchings at a laboratory bench crowded with glassware.
+    caption: >-
+      Gertrude Elion and George Hitchings in their laboratory in 1948.
+    credit: GlaxoSmithKline
+    license: CC BY 4.0
+    source: https://commons.wikimedia.org/wiki/File:George_Hitchings_and_Gertrude_Elion_1948.jpg
+  - id: hiv-resistance
+    src: /images/fields/pharmacology/hiv-resistance.png
+    alt: Bars on a log scale of resistant HIV virions made per day, 300,000 against one drug, 9 against two, and one every ten years against three.
+    caption: >-
+      The arithmetic of combination therapy: resistant virions already made each day, before any
+      drug is given. Three drugs bring it from hundreds of thousands to about one a decade.
+    credit: Drawn for Field Atlas from the numbers above
+    license: Field Atlas original
+    source: https://github.com/andifathulms/field-atlas/blob/main/scripts/diagrams/disease.py
 ---
 
 ## Nothing Acts Unless It Binds
@@ -288,6 +316,8 @@ further_reading:
 Two lines of work converged on the same idea around 1900. {{fig:langley|John Newport Langley}}, studying the nerve endings in muscle, found that nicotine stimulates where curare blocks, and that the two interfere with each other rather than with the nerve or the muscle. Something in the tissue must be the point of attachment for both — a "receptive substance", which is where the word receptor comes from.
 
 {{fig:paul-ehrlich|Paul Ehrlich}} came from staining. He had spent years finding dyes that mark one tissue, one cell type, one granule and nothing else, and he drew the obvious conclusion: chemical affinity is specific enough to discriminate between parts of a body. If a dye can find one structure, a poison can find one organism. *Corpora non agunt nisi fixata* — substances do not act unless bound.
+
+{{img:ehrlich}}
 
 Making that into a drug took a systematic search. Ehrlich and {{fig:hata|Sahachiro Hata}} worked through hundreds of organic arsenic compounds against the spirochaete of syphilis, looking for one that killed the organism at a dose a rabbit could survive. Compound 606, marketed as Salvarsan in 1910, was it. The drug was difficult and dangerous — a weekly intravenous infusion, for over a year, with serious toxicity — and it was the only effective treatment for a common fatal disease, and it was *designed*, in the sense that the search was directed by a principle rather than by folklore.
 
@@ -302,6 +332,8 @@ The consequences are practical. Potency and maximum effect become separate quant
 Black's first target was the receptor through which adrenaline drives the heart. The received approach to angina was to widen the coronary arteries; he argued it would be better to reduce the heart's demand for oxygen, by blocking the signal that raises it. Propranolol followed in 1964 and became one of the most-used drugs in the world. He then inferred, from data alone, that histamine acts on a second class of receptor in the stomach distinct from the one antihistamines block, and set his chemists to build an antagonist for it. Cimetidine made most surgery for peptic ulcer unnecessary.
 
 Meanwhile {{fig:gertrude-elion|Gertrude Elion}} and {{fig:hitchings|George Hitchings}} pursued the other strategy: attack a metabolic step. The sulfonamides, found by screening dyes at Bayer, had turned out to work by mimicking a precursor of folate — a vitamin bacteria must synthesise and humans eat, which is the selectivity in one sentence. Elion and Hitchings applied the logic to nucleic acid metabolism deliberately and produced drugs for leukaemia, gout, transplant rejection and malaria from a single pathway. Their best demonstration of selectivity was acyclovir: the compound is inert until phosphorylated, and the enzyme that phosphorylates it efficiently is one the herpes virus supplies. An uninfected cell does essentially nothing with it.
+
+{{img:hitchings-elion}}
 
 ## A Closer Look: Why HIV Takes Three Drugs
 
@@ -342,6 +374,8 @@ $$
 $$
 
 That is the whole argument for triple therapy, and in 1996 it worked as the arithmetic said it would: viral loads fell below detection and stayed there, and HIV became a managed chronic infection.
+
+{{img:hiv-resistance}}
 
 The assumptions deserve to be stated, because each is a known failure mode. Independence is optimistic — recombination between two virions in a co-infected cell can combine resistance mutations in one step, and a single mutation sometimes confers resistance to several drugs in the same class, which is why combinations must mix mechanisms and not just molecules. The calculation also assumes the drugs reach the virus everywhere; sanctuary sites where concentrations are low support replication and therefore evolution. And it assumes doses are taken, which is why adherence, rather than pharmacology, is the main determinant of treatment failure in practice.
 
