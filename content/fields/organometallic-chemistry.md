@@ -293,11 +293,42 @@ further_reading:
   - citation: "Seyferth, D. (2002). Bis(benzene)chromium and the beginnings of a field. Organometallics 21: 1520–1530."
     url: null
     note: How the 1950s sandwich compounds were made and argued over, by someone who was there.
+
+images:
+  - id: zeise-anion
+    src: /images/fields/organometallic-chemistry/zeise-anion.png
+    alt: A ball-and-stick model of a platinum atom with three chlorines and an ethylene molecule bound side-on.
+    caption: >-
+      The anion of Zeise's salt, [PtCl₃(C₂H₄)]⁻: an ethylene molecule bound side-on to platinum
+      by its double bond, the arrangement nobody could explain for more than a century.
+    credit: Wikimedia Commons
+    license: Public domain
+    source: https://commons.wikimedia.org/wiki/File:Zeise%27s-salt-anion-3D-balls.png
+  - id: ferrocene
+    src: /images/fields/organometallic-chemistry/ferrocene.jpg
+    alt: A mass of shiny orange crystal flakes.
+    caption: >-
+      Ferrocene, grown as orange crystals by undergraduates at University College London.
+    credit: Andrea Sella
+    license: CC BY 4.0
+    source: https://commons.wikimedia.org/wiki/File:Ferrocene_Crystals.png
+  - id: carbonyl-stretch
+    src: /images/fields/organometallic-chemistry/carbonyl-stretch.png
+    alt: Lines on a wavenumber axis for free CO at 2,143, manganese hexacarbonyl cation at 2,090, nickel tetracarbonyl at 2,057, chromium hexacarbonyl at 2,000 and the vanadium hexacarbonyl anion at 1,860.
+    caption: >-
+      The carbonyl stretches from the tables. The richer the metal in electrons, the more it
+      pushes back into CO and the lower the frequency: 230 cm⁻¹ between the manganese cation and
+      the vanadium anion.
+    credit: Drawn for Field Atlas from the numbers above
+    license: Field Atlas original
+    source: https://github.com/andifathulms/field-atlas/blob/main/scripts/diagrams/coordination.py
 ---
 
 ## A Compound Nobody Could Explain for 125 Years
 
 {{fig:zeise|William Christopher Zeise}} boiled platinum chloride with ethanol in 1827 and got yellow crystals. The analysis said the salt contained a whole ethylene molecule bonded to the platinum, which was not a thing a molecule could do. A carbon–carbon double bond has no lone pair; there is nothing for it to donate. {{fig:liebig|Justus von Liebig}}, who was in a position to make his doubts count, argued for two decades that the formula must be wrong.
+
+{{img:zeise-anion}}
 
 It was not wrong. But it was also not explicable, and so it remained for a remarkably long time: the structure was not determined by diffraction until 1954, and the bonding not accounted for until the early 1950s.
 
@@ -308,6 +339,8 @@ Meanwhile the useful organometallic chemistry of the period was reagent chemistr
 ## The Sandwich
 
 In 1951 {{fig:kealy|Thomas Kealy}} and {{fig:pauson|Peter Pauson}} were trying to make a different compound and obtained an orange solid, Fe(C₅H₅)₂, with properties that did not fit. It melted at 173 °C, sublimed, was indifferent to air and water, and survived above 400 °C. Organometallic compounds were supposed to be unstable. {{fig:samuel-miller|Samuel Miller}}'s group had made the same substance independently by passing cyclopentadiene over hot iron, and had not recognised what they had.
+
+{{img:ferrocene}}
 
 The structure Kealy and Pauson proposed, with the iron bonded to one carbon of each ring, was wrong, and the error mattered because the right answer was new. {{fig:geoffrey-wilkinson|Geoffrey Wilkinson}}, {{fig:rosenblum|Myron Rosenblum}}, {{fig:whiting|Mark Whiting}} and {{fig:woodward|Robert Woodward}}, with {{fig:ernst-otto-fischer|Ernst Otto Fischer}} arriving at it independently, showed that the iron sits between two parallel rings, bonded to all five carbons of each.
 
@@ -349,6 +382,8 @@ Now the back-bonding, quantitatively. Take three carbonyl complexes that all hav
 | free CO | — | 2,143 |
 
 A span of **230 cm⁻¹** across the three, produced by nothing but the charge on the metal. The more electron-rich the metal, the more density it pushes into the π\* orbital, the weaker the C–O bond, the lower the frequency. Every one of the three is below free CO, so every one of them is back-bonding; the vanadium complex has weakened the C–O bond by 283 cm⁻¹, roughly 13% in frequency.
+
+{{img:carbonyl-stretch}}
 
 {{fig:tolman|Chadwick Tolman}} turned this into a measuring instrument. Make Ni(CO)₃L for a long list of ligands L and record the CO stretch: the frequency is a number for how electron-donating L is. For phosphines it runs from 2056.1 cm⁻¹ for tri-*tert*-butylphosphine, a strong donor, to 2110.8 cm⁻¹ for trifluorophosphine, a poor one. Then he built space-filling models and measured the **cone angle** each ligand sweeps out: 118° for trimethylphosphine, 145° for triphenylphosphine, 182° for tri-*tert*-butylphosphine, 194° for tri(*o*-tolyl)phosphine.
 
