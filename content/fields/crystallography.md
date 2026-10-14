@@ -235,6 +235,46 @@ further_reading:
   - citation: "Ferry, G. (1998). Dorothy Hodgkin: A Life. Granta Books."
     url: null
     note: A biography of the crystallographer who solved the molecules of medicine.
+
+images:
+  - id: rock-salt
+    src: /images/fields/crystallography/rock-salt.jpg
+    alt: A ball-and-stick model of a cube of alternating large blue sodium ions and smaller brown chlorine ions.
+    caption: >-
+      Rock salt's lattice: sodium and chlorine alternating on a cube, the arrangement the Braggs
+      read from its X-ray reflections in 1913.
+    credit: Xirintic
+    license: CC BY-SA 4.0
+    source: https://commons.wikimedia.org/wiki/File:NaCl-structure.png
+  - id: hodgkin
+    src: /images/fields/crystallography/hodgkin.jpg
+    alt: Photograph of Dorothy Hodgkin, older, in academic robes, smiling.
+    caption: >-
+      Dorothy Hodgkin, who solved penicillin, vitamin B12 and insulin by X-ray crystallography,
+      and won the 1964 Nobel prize in chemistry.
+    credit: University of Bristol
+    license: CC BY-SA 2.5
+    source: https://commons.wikimedia.org/wiki/File:Dorothy_Hodgkin_im_Talar.jpg
+  - id: quasicrystal
+    src: /images/fields/crystallography/quasicrystal.jpg
+    alt: An electron diffraction pattern of sharp bright spots on black, arranged with tenfold symmetry, with a red pentagon outlining five spots.
+    caption: >-
+      Electron diffraction from a decagonal quasicrystal of aluminium, copper, iron and chromium.
+      The spots are sharp, as for a crystal, but their tenfold symmetry is one no repeating
+      lattice allows; the red pentagon marks the fivefold arrangement.
+    credit: Ldm1954
+    license: CC BY-SA 4.0
+    source: https://commons.wikimedia.org/wiki/File:Al-Cu-Fe-Cr_decagonal_quasicrystal_diffraction_pattern.tif
+  - id: bragg-planes
+    src: /images/fields/crystallography/bragg-planes.png
+    alt: Two rows of atoms a distance d apart, with an incoming and reflected ray at each and the extra path d sin theta marked on the lower ray.
+    caption: >-
+      Bragg's picture: rays reflecting from planes $d$ apart. The lower ray travels an extra
+      $d\sin\theta$ on the way in and again on the way out, $2d\sin\theta$ in all, and the
+      reflections reinforce when that equals a whole number of wavelengths.
+    credit: Furiouslettuce
+    license: Public domain
+    source: https://commons.wikimedia.org/wiki/File:BraggPlaneDiffraction.svg
 ---
 
 ## Shapes Without Atoms
@@ -249,17 +289,25 @@ X-rays were discovered in 1895, and for years no one knew whether they were part
 
 Laue's own analysis of the spots was complicated. That autumn {{fig:william-lawrence-bragg|William Lawrence Bragg}}, a 22-year-old student at Cambridge, found a far simpler picture. Each plane of atoms reflects a little of the beam, and the reflections from many parallel planes add up only at particular angles. His father, {{fig:william-henry-bragg|William Henry Bragg}}, built an instrument to measure those angles precisely. In 1913 the Braggs solved rock salt and diamond. In salt, each sodium atom sits among six chlorine atoms and each chlorine among six sodium atoms, with nothing that could be called a molecule of sodium chloride. Some chemists found this hard to accept. They shared the 1915 Nobel prize, although the son felt for years that the public credited his father with his law.
 
+{{img:rock-salt}}
+
 ## Molecules Made Visible
 
 The method spread from minerals to chemistry. In 1929 {{fig:kathleen-lonsdale|Kathleen Lonsdale}} showed that the benzene ring, the backbone of organic chemistry, is flat. Solving larger molecules was a matter of heavy calculation, since the diffraction spots record how strongly each set of planes reflects but not the timing, or *phase*, of the reflected waves. Crystallographers found ways round this, such as adding a heavy atom as a marker.
 
 {{fig:dorothy-hodgkin|Dorothy Hodgkin}} pushed the method furthest. She solved penicillin in 1945, which showed chemists the unusual ring at the heart of the drug, then vitamin B12 in 1956, with the help of some of the first electronic computers. Insulin took her 34 years and was finished in 1969. Meanwhile X-ray photographs of DNA fibres helped reveal the double helix, and Max Perutz and John Kendrew solved the first protein structures, the start of [molecular biology](/biology/molecular-biology/) as a science of shapes.
 
+{{img:hodgkin}}
+
 In 1982 the rules themselves were broken. {{fig:dan-shechtman|Dan Shechtman}} saw a sharp diffraction pattern with tenfold symmetry in a rapidly cooled alloy of aluminium and manganese. The symmetry was forbidden for any repeating lattice. By his own account, his group leader asked him to leave, and Linus Pauling is reported to have said that there were no quasicrystals, only quasi-scientists. But others reproduced the result, and theorists explained it as order without repetition, like a Penrose tiling. In 1992 the definition of a crystal was changed to fit.
+
+{{img:quasicrystal}}
 
 ## A Closer Look: Reading Rock Salt
 
 X-rays reflected from two neighbouring planes of atoms, a distance $d$ apart, travel paths that differ by $2d\sin\theta$, where $\theta$ is the angle between the beam and the planes. The reflections reinforce only when that difference is a whole number of wavelengths:
+
+{{img:bragg-planes}}
 
 $$
 n\lambda = 2d\sin\theta .
