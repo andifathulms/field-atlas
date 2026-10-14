@@ -235,6 +235,37 @@ further_reading:
   - citation: "Lewis, G. N. & Randall, M. (1923). Thermodynamics and the Free Energy of Chemical Substances. McGraw-Hill."
     url: null
     note: The book that taught chemists to use thermodynamics; readable, and historically decisive.
+
+images:
+  - id: ice-calorimeter
+    src: /images/fields/chemical-thermodynamics/ice-calorimeter.jpg
+    alt: An engraving of a tall metal vessel on three legs, with a wire basket inside nested jackets and a tap at the bottom, beside a smaller bell jar apparatus.
+    caption: >-
+      Lavoisier and Laplace's ice calorimeter. The reaction sits in the inner basket, packed
+      round with ice; the heat it gives out is measured by the weight of meltwater that runs
+      from the tap.
+    credit: Antoine Lavoisier, Histoire de l'Académie royale des sciences
+    license: Public domain
+    source: https://commons.wikimedia.org/wiki/File:Ice_calorimeter.jpg
+  - id: ostwald-vant-hoff
+    src: /images/fields/chemical-thermodynamics/ostwald-vant-hoff.jpg
+    alt: Two bearded men in dark suits at a laboratory bench crowded with glassware.
+    caption: >-
+      Wilhelm Ostwald and Jacobus van 't Hoff in the laboratory. Van 't Hoff tied the
+      equilibrium constant to temperature; Ostwald defined what a catalyst can and cannot change.
+    credit: Benjamin Harrow, Eminent Chemists of Our Time
+    license: Public domain
+    source: https://commons.wikimedia.org/wiki/File:Ostwald_vant_Hoff.jpg
+  - id: ammonia-equilibrium
+    src: /images/fields/chemical-thermodynamics/ammonia-equilibrium.png
+    alt: A falling curve of ammonia's equilibrium constant on a logarithmic scale against temperature, from about 6.6 times 10 to the 5 at 298 K, through 1 at 466 K, to 3.45 times 10 to the minus 4 at 700 K.
+    caption: >-
+      Ammonia's equilibrium constant from $\Delta G = \Delta H - T\Delta S$ with the values
+      above. It passes 1 at 466 K and has fallen by a factor of a billion by 700 K, the
+      temperature needed for the reaction to go at a useful rate.
+    credit: Drawn for Field Atlas from the numbers above
+    license: Field Atlas original
+    source: https://github.com/andifathulms/field-atlas/blob/main/scripts/diagrams/reaction.py
 ---
 
 ## The Wrong Criterion
@@ -254,6 +285,8 @@ the enthalpy change less the temperature times the entropy change. A reaction pr
 ## Heat Before Free Energy
 
 Thermochemistry preceded thermodynamics, and for a while it was the whole of the quantitative subject. {{fig:lavoisier|Lavoisier}} and Laplace had built an ice calorimeter in 1783 — a jacket of packed ice around a reaction vessel, with the mass of meltwater measuring the heat released — and the heats of combustion, neutralisation and solution were being tabulated long before anyone could say what they implied.
+
+{{img:ice-calorimeter}}
 
 {{fig:hess|Germain Hess}} supplied the rule that makes a table of such numbers more useful than the sum of its entries. The heat of a reaction depends only on its start and end points, not on the path, so reactions can be added and subtracted and their heats added and subtracted with them. The consequence is practical: a heat that cannot be measured directly, because the reaction will not go cleanly or at all, can be assembled from ones that can. The heat of formation of carbon monoxide is impossible to measure, since burning carbon in limited oxygen always gives a mixture — and it follows immediately from the heats of combustion of carbon and of carbon monoxide, which are both straightforward.
 
@@ -317,6 +350,8 @@ $$
 
 Heating the reaction to make it go destroys the yield — a factor of $10^{9}$ in the equilibrium constant between 298 K and 700 K. This is {{fig:le-chatelier|Le Chatelier}}'s principle as a number: the reaction is exothermic, so heat pushes it backwards.
 
+{{img:ammonia-equilibrium}}
+
 Two escapes exist, and both are used. Pressure, because the forward reaction consumes gas molecules: at 200 atmospheres the equilibrium shifts far enough to be worth having. And a catalyst, which does not touch the equilibrium at all — {{fig:ostwald|Ostwald}} was explicit that a catalyst cannot — but allows a usable rate at a lower temperature, where the equilibrium is better. The whole design of the Haber–Bosch process is contained in the two calculations above, and it is taken up under [catalysis](/chemistry/catalysis/).
 
 ## Equilibrium Is Not Stasis
@@ -324,5 +359,7 @@ Two escapes exist, and both are used. Pressure, because the forward reaction con
 {{fig:guldberg|Cato Guldberg}} and {{fig:waage|Peter Waage}} supplied the other half of the picture in 1864, and it is easy to underrate because it now looks obvious. A reaction that has stopped changing has not stopped. It is proceeding in both directions at equal rates, and the ratio of concentrations that results — each raised to the power of its coefficient — is a constant at a given temperature.
 
 That reframing explains things the older picture could not: why a reaction leaves reactants behind, why adding product reverses it, why a sealed flask reaches a steady state rather than running to completion. {{fig:vant-hoff|Van 't Hoff}} then connected the constant to temperature, showing that its logarithm shifts in proportion to the heat of reaction — the same relation that appears in the calculation above — and, in a separate stroke, that dilute solutions obey a law formally identical to the gas law, with osmotic pressure in the role of pressure.
+
+{{img:ostwald-vant-hoff}}
 
 The last piece was making all of it apply to anything real. The equations above hold exactly for ideal gases and dilute solutions, and a concentrated brine is neither. {{fig:gilbert-lewis|Gilbert Lewis}}'s solution was definitional: introduce *activity*, an effective concentration chosen so that the ideal equations remain exactly true, and put all the deviation from reality into an activity coefficient to be measured. It works, and it leaves the field with the awkwardness recorded above as its open problem — those coefficients can be predicted from first principles only when the solution is dilute enough not to matter.
