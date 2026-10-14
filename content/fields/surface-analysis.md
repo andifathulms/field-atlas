@@ -234,6 +234,35 @@ further_reading:
   - citation: "Duke, P. J. (2000). Synchrotron Radiation: Production and Properties. Oxford University Press."
     url: null
     note: Where the photons for ambient-pressure surface spectroscopy come from, and why a synchrotron is needed.
+
+images:
+  - id: langmuir
+    src: /images/fields/surface-analysis/langmuir.jpg
+    alt: Photograph of Irving Langmuir wearing round glasses and a suit.
+    caption: >-
+      Irving Langmuir, whose 1916 isotherm treated a surface as a set of sites that gas molecules
+      fill and leave.
+    credit: Unknown photographer
+    license: Public domain
+    source: https://commons.wikimedia.org/wiki/File:Irving_Langmuir.jpg
+  - id: leed-pattern
+    src: /images/fields/surface-analysis/leed-pattern.jpg
+    alt: Bright spots in a square arrangement on a dark fluorescent screen, around a central shadow.
+    caption: >-
+      A low-energy electron diffraction pattern from a clean platinum–rhodium crystal face. The
+      spots map the arrangement of the outermost atoms.
+    credit: Mkosterv
+    license: CC0
+    source: https://commons.wikimedia.org/wiki/File:LEED_pattern_of_clean_Platinum-Rhodium_single_crystal.jpg
+  - id: surface-fraction
+    src: /images/fields/surface-analysis/surface-fraction.png
+    alt: A falling curve of the fraction of atoms at the surface against particle diameter, three quarters at 2 nm and 10 per cent at 15 nm.
+    caption: >-
+      The fraction of atoms in the outermost layer, roughly $6a/d$. At 15 nm, a 200 m²/g
+      support, it is a tenth; platinum at 2 nm puts three quarters of its atoms at the surface.
+    credit: Drawn for Field Atlas from the numbers above
+    license: Field Atlas original
+    source: https://github.com/andifathulms/field-atlas/blob/main/scripts/diagrams/analysis.py
 ---
 
 ## A Billionth of the Sample
@@ -244,6 +273,8 @@ The numbers make the difficulty plain. A square centimetre of surface carries ab
 
 {{fig:langmuir|Irving Langmuir}} made the first quantitative progress without any surface-specific instrument, by treating the surface as a set of chemical sites. Adsorption, he argued in 1916, is an equilibrium: gas molecules land on a fixed number of identical sites, each holding one molecule, and desorb again. The resulting relation between pressure and coverage rises and then saturates, and the saturation level counts the sites. A surface acquired a measurable capacity.
 
+{{img:langmuir}}
+
 {{fig:brunauer|Stephen Brunauer}}, {{fig:emmett|Paul Emmett}} and {{fig:edward-teller|Edward Teller}} extended it in 1938 to the case that actually occurs — molecules continuing to pile up in further layers once the first is full — and their equation, fitted over a modest range of pressures, extracts the amount of gas corresponding to exactly one layer. That is the measurement on which the whole of heterogeneous catalysis rests, and it is still what a catalyst's specification quotes.
 
 ## Probes That Cannot Escape From Deep
@@ -253,6 +284,8 @@ The breakthrough in surface specificity came from choosing a signal that is abso
 {{fig:siegbahn|Kai Siegbahn}} built spectrometers able to measure those energies to a fraction of an electronvolt, and found more than he needed. The binding energies identify the elements, as expected. The *small shifts* in those energies — typically one to six electronvolts — identify the chemical state, because an atom that has given up electron density to a neighbour holds its remaining core electrons more tightly. Metallic iron and iron in an oxide give separate peaks a few electronvolts apart, so a single spectrum reports both what is there and what it is bonded to. He called it electron spectroscopy for chemical analysis, and the shifts are the reason it is a chemical technique rather than an elemental one.
 
 Two companions complete the toolkit. Low-energy electron diffraction, available once ultra-high vacuum could keep a surface clean for hours rather than seconds, showed that a clean crystal surface is not the bulk structure cut in half — the top layers rearrange into periodicities of their own, and silicon's reconstruction took twenty years to solve. And secondary ion mass spectrometry sputters the surface away with an ion beam while weighing what comes off, which destroys the sample and in exchange gives composition against depth at a few nanometres' resolution, the measurement semiconductor manufacturing depends on.
+
+{{img:leed-pattern}}
 
 ## A Closer Look: How Much Surface Is in a Gram
 
@@ -279,6 +312,8 @@ $$
 $$
 
 A tenth of the atoms are available to do chemistry, which for an expensive metal is the difference between a viable process and an uneconomic one. Dispersing platinum as 2 nm particles raises that fraction to about three quarters, and this is why catalytic converters contain grams rather than kilograms of the metal.
+
+{{img:surface-fraction}}
 
 **What the instrument measures.** A nitrogen molecule occupies 0.162 nm² when packed in a monolayer, so covering 200 m² requires
 
