@@ -214,6 +214,44 @@ further_reading:
   - citation: "Weart, S. R. (2008). The Discovery of Global Warming (revised ed.). Harvard University Press."
     url: null
     note: A short history, including Keeling's measurements.
+
+images:
+  - id: hubbard-brook
+    src: /images/fields/ecosystem-ecology/hubbard-brook.jpg
+    alt: A forest edge in autumn, red and orange maples among dark conifers.
+    caption: >-
+      Hubbard Brook Experimental Forest in New Hampshire, where Likens and Bormann measured what
+      each small watershed took in and lost.
+    credit: Mariel Carr
+    license: CC BY-SA 3.0
+    source: https://commons.wikimedia.org/wiki/File:Hubbard_Brook_Experimental_Forest_2015_Mariel_Carr.JPG
+  - id: keeling-curve
+    src: /images/fields/ecosystem-ecology/keeling-curve.png
+    alt: A chart of monthly carbon dioxide at Mauna Loa from 1958 to 2024, rising from about 315 to over 420 parts per million with a yearly zigzag.
+    caption: >-
+      The Keeling curve: carbon dioxide at Mauna Loa since 1958. The yearly zigzag is the northern
+      hemisphere's forests breathing in each summer and out each winter.
+    credit: Scripps Institution of Oceanography
+    license: CC BY 4.0
+    source: https://commons.wikimedia.org/wiki/File:Keeling_Curve_up-to-date_-_MLO_record.png
+  - id: energy-pyramid
+    src: /images/fields/ecosystem-ecology/energy-pyramid.png
+    alt: A pyramid of five bars from plants at 10,000 kJ per square metre to third carnivores at 1.
+    caption: >-
+      The table as a pyramid: each feeding level gets about a tenth of the one below, so the fifth
+      gets 0.01% of what the plants captured.
+    credit: Drawn for Field Atlas from the table above
+    license: Field Atlas original
+    source: https://github.com/andifathulms/field-atlas/blob/main/scripts/diagrams/ecology.py
+  - id: sea-otters-kelp
+    src: /images/fields/ecosystem-ecology/sea-otters-kelp.jpg
+    alt: An aerial view of dark kelp beds in blue-green water, with small sea otters resting among the fronds.
+    caption: >-
+      Southern sea otters resting in a kelp bed off California. Where otters eat the urchins, the
+      kelp forest stands.
+    credit: Laney White, USGS Western Ecological Research Center
+    license: Public domain
+    source: https://commons.wikimedia.org/wiki/File:Kelp_bed_with_Southern_Sea_Otters_(Enhydra_lutris_nereis).png
 ---
 
 ## Tansley's Word
@@ -232,7 +270,11 @@ The first to do so was {{fig:raymond-lindeman|Raymond Lindeman}}, a young ecolog
 
 Energy flows through an ecosystem once and is lost as heat. Chemical elements cycle. In 1963 {{fig:gene-likens|Gene Likens}} and {{fig:herbert-bormann|Herbert Bormann}} began measuring those cycles at the Hubbard Brook Experimental Forest in New Hampshire. Its small valleys sit on watertight bedrock, so everything that leaves them must flow out in the stream, where it can be sampled. Comparing rain with streamwater gave a complete nutrient budget for a forest. When one valley was cut and kept bare, its streams carried away nitrogen and calcium far faster than before. The living forest had been holding its nutrients. The weekly rain samples also revealed that the rain was strongly acidic, some of the first clear evidence of acid rain in North America.
 
+{{img:hubbard-brook}}
+
 The largest ecosystem is the planet. In 1958 {{fig:charles-david-keeling|Charles David Keeling}} began measuring carbon dioxide on Mauna Loa in Hawaii. His record climbed year after year, but it also rose and fell with the seasons, lowest at the end of the northern summer, when the forests of the northern hemisphere have drawn carbon out of the air, and highest in spring, after a winter of decay. The Keeling curve shows the whole planet's vegetation breathing, on top of the steady rise from burning fossil fuels.
+
+{{img:keeling-curve}}
 
 ## A Closer Look: Why Food Chains Are Short
 
@@ -250,6 +292,8 @@ At each step up the food chain, the rule of thumb is that about a tenth of the e
 
 By the fifth level only 0.01% of the plants' energy remains. This is the main reason food chains rarely have more than four or five links. There is simply not enough energy left to support another level.
 
+{{img:energy-pyramid}}
+
 It also explains why large predators are rare and need large territories. Consider a carnivore that needs 10,000 kJ a day, or 3.65 million kJ a year. If it hunts at the level that receives 10 kJ per square metre per year, it needs the production of
 
 $$
@@ -263,5 +307,7 @@ The ten per cent figure is a rough average. Measured efficiencies range from a f
 ## Cascades and Tipping Points
 
 Energy flows up the food chain, but control can flow down. In 1974 James Estes and John Palmisano compared Aleutian islands with and without sea otters. Where otters lived, they kept sea urchins in check, and kelp forests flourished. Where otters had been hunted out, urchins grazed the kelp to bare rock. Such trophic cascades have since been found in lakes, streams and grasslands. The most famous claimed example, the return of wolves to Yellowstone National Park in 1995, is also the most disputed.
+
+{{img:sea-otters-kelp}}
 
 Ecosystems can also change suddenly. A lake enriched with fertiliser can stay clear for years and then turn green within a season, and returning it to clear water can take far larger cuts in nutrients than caused the change. Whether such tipping points can be predicted is an open question. Protecting ecosystems from being pushed past them is part of the work of [conservation biology](/biology/conservation-biology/).
