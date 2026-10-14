@@ -290,6 +290,26 @@ further_reading:
   - citation: "Lipscomb, W. N. (1977). The boranes and their relatives. Science 196: 1047–1055."
     url: null
     note: "The Nobel lecture: how the structures were solved and what the three-centre bond is for."
+
+images:
+  - id: diborane
+    src: /images/fields/main-group-chemistry/diborane.png
+    alt: Three panels of diborane structures, two showing the hydrogen bridges between the borons as dots or arcs and one showing two resonance forms.
+    caption: >-
+      Three ways of drawing diborane. Four hydrogens make ordinary bonds to boron; the other two
+      bridge the borons, each held by one electron pair shared over three atoms.
+    credit: Grajkowf
+    license: CC BY-SA 4.0
+    source: https://commons.wikimedia.org/wiki/File:B2H6_structures.svg
+  - id: b12h12
+    src: /images/fields/main-group-chemistry/b12h12.png
+    alt: A ball-and-stick model of twelve boron atoms at the corners of an icosahedron, each carrying an outward-pointing hydrogen.
+    caption: >-
+      The [B₁₂H₁₂]²⁻ icosahedron, the closo cage Wade's rules predict from thirteen skeletal
+      electron pairs.
+    credit: Episodesn
+    license: CC BY-SA 3.0
+    source: https://commons.wikimedia.org/wiki/File:B12H12_icosahedron.png
 ---
 
 ## Compounds the Octet Rule Forbids
@@ -330,6 +350,8 @@ Boron's structures cannot be drawn with ordinary bonds, and yet they are entirel
 
 The structure resolves it. Four hydrogens sit in ordinary terminal B–H bonds, using 4 pairs and leaving 2. Those two pairs hold the remaining two hydrogens in **bridges**, each pair binding a B, an H and the other B — one pair, three atoms. {{fig:lipscomb|William Lipscomb}}'s three-centre two-electron bond. The molecule is not electron-deficient at all once you stop insisting that a bond must join exactly two atoms.
 
+{{img:diborane}}
+
 **Wade's rules.** {{fig:wade|Kenneth Wade}} noticed in 1971 that the shape of a boron cage follows from counting the pairs available to the skeleton. A BH unit brings 3 electrons from boron and 1 from hydrogen, spends 2 on its own B–H bond, and contributes **2** to the skeleton. Every extra hydrogen contributes 1, and the charge is added. Then:
 
 - $n+1$ skeletal pairs → a **closo** cage: a closed deltahedron with $n$ vertices
@@ -345,6 +367,8 @@ Check it on three compounds:
 | B₄H₁₀ | 4 × 2 + 6 = 14 | 7 | $n+3$ = 7 | arachno: octahedron less two | butterfly |
 
 Three compounds, three correct shapes, from counting. And the icosahedral case is worth dwelling on: [B₁₂H₁₂]²⁻ and its carbon-substituted relative C₂B₁₀H₁₂ are among the most robust molecular species known — the carborane survives above 400 °C, resists concentrated acid, and is thermally more stable than benzene. A structure with no classical bonding description at all turns out to be more durable than the archetype of stability. Wade's rules were later extended to clusters of main-group and transition metals alike, so the count outgrew the compounds it was invented for.
+
+{{img:b12h12}}
 
 The arithmetic also does something the octet rule cannot. It predicts a three-dimensional shape for a species where the number of bonds is not even well defined, using only the number of electrons — which is the same move Werner made with isomer counts in [coordination chemistry](/chemistry/coordination-chemistry/), and the same move the eighteen-electron rule makes for metals.
 
