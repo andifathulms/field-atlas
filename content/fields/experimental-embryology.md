@@ -218,6 +218,26 @@ further_reading:
   - citation: "Gurdon, J. B. (2013). The egg and the nucleus: a battle for supremacy. Nobel lecture. Development 140(12): 2449–2456."
     url: https://doi.org/10.1242/dev.097170
     note: Gurdon's own account of nuclear transfer and what it led to.
+
+images:
+  - id: dolly
+    src: /images/fields/experimental-embryology/dolly.jpg
+    alt: A mounted white sheep in a glass case in a museum gallery.
+    caption: >-
+      Dolly, the first mammal cloned from an adult cell, preserved at the National Museum of
+      Scotland in Edinburgh.
+    credit: M J Richardson
+    license: CC BY-SA 2.0
+    source: https://commons.wikimedia.org/wiki/File:Dolly_at_the_National_Museum_Scotland_-_geograph.org.uk_-_5051696.jpg
+  - id: cloning-odds
+    src: /images/fields/experimental-embryology/cloning-odds.png
+    alt: Two rising curves of the chance of at least one success against the number of nuclear transfers, reaching 50 per cent at 50 attempts for Gurdon's rate and at 192 for Dolly's, and 95 per cent at about 830 for Dolly's.
+    caption: >-
+      The chance of at least one success, $1 - (1-p)^n$, at the two rates in the table. Even odds
+      need 50 transfers at Gurdon's rate and 192 at Dolly's; 95% needs about 830.
+    credit: Drawn for Field Atlas from the table above
+    license: Field Atlas original
+    source: https://github.com/andifathulms/field-atlas/blob/main/scripts/diagrams/development.py
 ---
 
 ## Mechanics of Development
@@ -249,6 +269,8 @@ Nuclear transfer almost always fails, which made the successes hard to interpret
 
 Dolly was made at the Roslin Institute by a team led by {{fig:ian-wilmut|Ian Wilmut}} and {{fig:keith-campbell|Keith Campbell}}. Of the 277 fused eggs, 29 grew into early embryos that could be transferred to surrogate ewes, about 10 per cent, and one of those 29, about 3 per cent, was born.
 
+{{img:dolly}}
+
 How many attempts should a laboratory expect to need? If each attempt succeeds independently with chance $p$, the chance that $n$ attempts all fail is $(1-p)^n$. Setting this to one half and solving,
 
 $$
@@ -258,6 +280,8 @@ $$
 For Gurdon's rate, $p = 10/726$, this gives $n \approx 50$ attempts for an even chance of a tadpole. For Dolly's, $p = 1/277$, it gives $n \approx 192$. To be 95 per cent sure of at least one lamb would need about 830 attempts. The Roslin team had been lucky, or determined, and many doubted that the result could be repeated. It was, in mice, in 1998.
 
 The low rates had a sharper consequence. A population of "specialised" cells may contain a few unspecialised ones, and if only one transfer in a hundred works, those few could account for every success. So a rare success does not by itself prove that a fully specialised nucleus can make an animal. The proof came in 2002, when mice were cloned from mature immune cells. Such cells permanently rearrange their antibody genes as they specialise, and the cloned mice carried the rearrangement in every cell. Their nucleus had certainly come from a specialised cell.
+
+{{img:cloning-odds}}
 
 ## From Surgery to Genes
 
