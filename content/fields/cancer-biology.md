@@ -256,6 +256,25 @@ further_reading:
   - citation: "Frank, S. A. (2007). Dynamics of Cancer. Princeton University Press."
     url: null
     note: The quantitative thread — age-incidence curves, multistage models, and what they can and cannot identify.
+
+images:
+  - id: age-incidence
+    src: /images/fields/cancer-biology/age-incidence.png
+    alt: A straight line on log–log axes of incidence against age, rising 32 times from age 40 to 80.
+    caption: >-
+      Incidence rising as the fifth power of age, the slope Armitage and Doll found for
+      large-bowel cancer: doubling the age from 40 to 80 multiplies the rate by 32.
+    credit: Drawn for Field Atlas from the numbers above
+    license: Field Atlas original
+    source: https://github.com/andifathulms/field-atlas/blob/main/scripts/diagrams/disease.py
+  - id: cancer-cell-sem
+    src: /images/fields/cancer-biology/cancer-cell-sem.jpg
+    alt: A scanning electron micrograph of a rounded cell with a ruffled surface and long thin projections.
+    caption: >-
+      A breast cancer cell in the scanning electron microscope.
+    credit: Unknown photographer
+    license: Public domain
+    source: https://commons.wikimedia.org/wiki/File:Breast_cancer_cell_(2).jpg
 ---
 
 ## A Disease With No Common Cause
@@ -290,6 +309,8 @@ $$
 
 Cancer is overwhelmingly a disease of the old not because old tissues are weak but because the required events take that long to pile up in one lineage.
 
+{{img:age-incidence}}
+
 **From a childhood tumour.** {{fig:knudson|Alfred Knudson}} found a case where $k$ is small enough to see. Retinoblastoma occurs in two forms. In the hereditary form, tumours appear in infancy, usually in both eyes, often at several points in each retina; in the sporadic form, later, in one eye, singly. He showed that this is what a two-event process looks like when the first event is either inherited or not.
 
 If a hereditary patient already carries one defective copy in every retinal cell, only one further event is needed, so tumours appear at a rate roughly constant in time: the number per patient follows a Poisson distribution, and Knudson's data fitted a mean of about three. The chance of having no tumour at all in either eye is then $e^{-3} \approx 5\%$, which matches the small fraction of carriers who escape. For sporadic cases both events must happen in the same cell, a far rarer coincidence, producing one tumour, later, and almost never two.
@@ -303,5 +324,7 @@ Three methods, three eras, three kinds of data: an age curve from 1954, 48 child
 ## A Clone Under Selection
 
 What holds the picture together is that a tumour is an evolving population. Peter Nowell set this out in 1976: the cells of a tumour are a clone with variation, their environment selects among them, and treatment is a selection pressure like any other. This is why resistance emerges — not because cells learn, but because the rare cell that already had the resistant mutation is the one that survives and repopulates. It is the same arithmetic as the resistance calculation in [pharmacology](/biology/pharmacology/) and the quasispecies problem in [virology](/biology/virology/), applied to a lineage of human cells.
+
+{{img:cancer-cell-sem}}
 
 It also explains the field's hardest unsolved problem. Metastasis is what kills, and sequencing has not found mutations specific to it. If the capacity to spread comes from the state a cell is in rather than from a gene it acquired, then the thing to find is not another driver but a configuration — which is a considerably harder object to look for, and the reason the most lethal step in the process is the least understood.
