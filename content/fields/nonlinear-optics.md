@@ -248,6 +248,27 @@ further_reading:
   - citation: "Krausz, F. & Ivanov, M. (2009). Attosecond physics. Reviews of Modern Physics 81: 163–234."
     url: null
     note: How attosecond pulses are made and what has been measured with them.
+
+images:
+  - id: ppln-opo
+    src: /images/fields/nonlinear-optics/ppln-opo.jpg
+    alt: An optical table crowded with mirrors and mounts, green laser light, and labelled overlays marking a pump beam, a PPLN crystal and an OPO cavity.
+    caption: >-
+      Nonlinear optics at work at JILA: a pump beam drives a periodically poled lithium niobate
+      (PPLN) crystal inside an optical parametric oscillator, converting it to the mid-infrared.
+      The poling is the trick that keeps the waves in step.
+    credit: National Institute of Standards and Technology
+    license: Public domain
+    source: https://commons.wikimedia.org/wiki/File:Comb_Apparatus_(7187334463).jpg
+  - id: split-ring-array
+    src: /images/fields/nonlinear-optics/split-ring-array.jpg
+    alt: Rows of small circuit boards printed with copper split-ring patterns, standing in a grid beside a ruler.
+    caption: >-
+      A microwave metamaterial built at NASA from copper split rings and wires on circuit
+      board: Pendry's recipe for a medium with negative magnetic response.
+    credit: NASA Glenn Research Center
+    license: Public domain
+    source: https://commons.wikimedia.org/wiki/File:Split-ring_resonator_array_10K_sq_nm.jpg
 ---
 
 ## When Beams Stop Ignoring Each Other
@@ -264,6 +285,8 @@ and the higher terms are always there. They are simply unobservable until the fi
 
 The second-order term also makes trouble that had to be engineered away. Light converted at the front of the crystal travels onwards at the index for $2\omega$ while the driving beam travels at the index for $\omega$, so they drift out of step and later contributions cancel earlier ones. Phase matching — orienting a birefringent crystal so the two speeds agree, or periodically reversing the crystal's sign every few microns so the mismatch resets — is the difference between a laboratory curiosity and the green laser pointer, which is an infrared diode doubled in a crystal.
 
+{{img:ppln-opo}}
+
 The third-order term gives an index that depends on intensity. In a fibre this does something useful: a pulse spreading out through dispersion can be held together by the index shift its own peak creates. {{fig:hasegawa|Akira Hasegawa}} and {{fig:tappert|Frederick Tappert}} predicted these optical solitons in 1973, and they obey the same equation as the solitary wave {{fig:scott-russell|John Scott Russell}} followed on horseback along a Scottish canal in 1834.
 
 ## Structure Instead of Substance
@@ -271,6 +294,8 @@ The third-order term gives an index that depends on intensity. In a fibre this d
 The other half of the subject leaves light alone and builds the material. Two observations in 1987, by {{fig:yablonovitch|Eli Yablonovitch}} and {{fig:sajeev-john|Sajeev John}}, pointed out that a dielectric patterned periodically at the scale of a wavelength does to photons what a crystal lattice does to electrons: bands, and with enough index contrast a complete gap in which no propagating mode exists in any direction. Inside a photonic bandgap, light cannot travel, so a line defect becomes a waveguide that turns a right angle without loss, and a point defect becomes a cavity the size of a wavelength.
 
 {{fig:pendry|John Pendry}} went further and asked what properties could be synthesised rather than found. A lattice of thin wires behaves as a medium with negative electric permittivity; a lattice of split metal rings has a magnetic resonance and can present negative permeability. {{fig:veselago|Victor Veselago}} had worked out in 1968 what a material with both would do: refract to the wrong side of the normal, reverse the Doppler shift, and focus with a flat slab. In 2000 {{fig:david-smith|David Smith}}'s group built one for microwaves, and in 2006 a structure that routed microwaves around a central region, leaving it in a shadowless hole.
+
+{{img:split-ring-array}}
 
 The claims outran the physics for a while. Pendry's perfect lens was supposed to recover evanescent waves and so beat the diffraction limit outright; absorption in the resonators limits how much of that survives. Later analysis showed that a passive linear cloak cannot hide an object across a wide band of frequencies at all. What is left is substantial — engineered index, flat metasurface optics now shipping in sensors — and narrower than the first announcements.
 
