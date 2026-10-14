@@ -279,6 +279,35 @@ further_reading:
   - citation: "Sarmiento, J. L. & Gruber, N. (2006). Ocean Biogeochemical Dynamics. Princeton University Press."
     url: null
     note: Where the chemistry is joined to the circulation, which is what turns a local equilibrium into a global sink.
+
+images:
+  - id: revelle-uptake
+    src: /images/fields/aquatic-chemistry/revelle-uptake.png
+    alt: Three bars of carbon absorbed per kilogram of seawater for doubled CO2, 10 as dissolved gas alone, 210 with the carbonate buffer and 2,100 if the buffer were perfect.
+    caption: >-
+      Step one and step two of the Revelle arithmetic. The carbonate buffer lets seawater take up
+      twenty-one times what dissolution alone would, and a tenth of what a perfect buffer could.
+    credit: Drawn for Field Atlas from the numbers above
+    license: Field Atlas original
+    source: https://github.com/andifathulms/field-atlas/blob/main/scripts/diagrams/environment.py
+  - id: acidification-noaa
+    src: /images/fields/aquatic-chemistry/acidification-noaa.jpg
+    alt: An illustration of the reaction of carbon dioxide, water and carbonate ion to two bicarbonate ions, with shelled sea creatures above it.
+    caption: >-
+      The reaction that buffers the ocean is the one that takes carbonate away from shell-builders:
+      CO₂ + H₂O + CO₃²⁻ → 2 HCO₃⁻.
+    credit: NOAA
+    license: Public domain
+    source: https://commons.wikimedia.org/wiki/File:A_pteropod_shell_is_shown_dissolving_over_time.jpg
+  - id: aloha-co2-ph
+    src: /images/fields/aquatic-chemistry/aloha-co2-ph.jpg
+    alt: A chart from 1958 to 2024 of rising atmospheric CO2 at Mauna Loa, rising seawater CO2 at station ALOHA, and falling seawater pH.
+    caption: >-
+      Carbon dioxide in the air at Mauna Loa and in the sea at station ALOHA off Hawaii, rising
+      together, while the seawater pH falls.
+    credit: NOAA Pacific Marine Environmental Laboratory
+    license: Public domain
+    source: https://commons.wikimedia.org/wiki/File:Co2_time_series_aloha_08-09-2023.jpg
 ---
 
 ## Why the Ocean Is Not Just Salty Water
@@ -339,11 +368,15 @@ $$
 
 Twenty-one times what plain dissolution would give. **This is why the ocean holds most of the carbon** — it has absorbed roughly a quarter of all fossil carbon dioxide emitted, and without the carbonate reaction it would have taken up almost nothing.
 
+{{img:revelle-uptake}}
+
 **Step two: the buffer is not free, and it weakens.** If the buffer were perfect — every added molecule converted, $R = 1$ — the ocean would absorb 2,100 µmol/kg for a doubling instead of 210. The factor of ten is the shortfall, and it exists because the reaction consumes carbonate ion, of which there is only 220 µmol/kg. The supply is the constraint.
 
 And it gets tighter. As carbon accumulates, carbonate is consumed, so the next increment is buffered less well and $R$ rises — from about 8 in pre-industrial surface water to around 10 now, heading to 15 and beyond. The ocean becomes a worse sink the more it absorbs, which is a positive feedback with no threshold and no drama, just a slowly worsening exchange rate.
 
 **Step three: the same equation is the damage.** Look again at what the reaction consumes. The ocean absorbs carbon dioxide **by spending carbonate ion**, and carbonate ion is what shells are made of. The two are not separate phenomena to be weighed against each other; they are one equation read twice.
+
+{{img:acidification-noaa}}
 
 The numbers, since 1750:
 
@@ -355,6 +388,8 @@ The numbers, since 1750:
 | Aragonite saturation state $\Omega$ | ~3.5 → ~2.9 |
 
 The pH figure looks small and the hydrogen ion figure does not, and they are the same measurement: a drop of 0.1 in a logarithm is a factor of $10^{0.1} = 1.26$.
+
+{{img:aloha-co2-ph}}
 
 The quantity that decides whether a shell survives is the saturation state,
 
