@@ -250,6 +250,36 @@ further_reading:
   - citation: "Moore, P. B. et al. (2022). The protein-folding problem: not yet solved. Science 375: 507."
     url: null
     note: One page on what remains, from four structural biologists.
+
+images:
+  - id: levinthal
+    src: /images/fields/structure-prediction/levinthal.png
+    alt: Bars on a log scale of years, a real protein folding in milliseconds, the age of the universe at 1.4 times 10 to the 10, and an exhaustive search at 1.6 times 10 to the 27.
+    caption: >-
+      Levinthal's arithmetic: trying every shape would take about $10^{17}$ times the age of the
+      universe. Real proteins fold in milliseconds to seconds.
+    credit: Drawn for Field Atlas from the numbers above
+    license: Field Atlas original
+    source: https://github.com/andifathulms/field-atlas/blob/main/scripts/diagrams/structure.py
+  - id: folding-funnel
+    src: /images/fields/structure-prediction/folding-funnel.png
+    alt: A funnel-shaped energy diagram, wide and rugged at the top where the chain is unfolded, narrowing through a molten globule to the native state at the bottom.
+    caption: >-
+      The folding funnel. Energy falls as the chain loses freedom, so every path leads downhill
+      towards the native state instead of wandering a flat landscape.
+    credit: Thomas Splettstoesser (scistyle.com)
+    license: CC BY-SA 3.0
+    source: https://commons.wikimedia.org/wiki/File:Folding_funnel_schematic.svg
+  - id: alphafold-casp14
+    src: /images/fields/structure-prediction/alphafold-casp14.jpg
+    alt: A multi-panel figure, a bar chart of AlphaFold's accuracy against other CASP14 entries above a schematic of its architecture, with predicted structures overlaid on experimental ones.
+    caption: >-
+      AlphaFold at CASP14, from Jumper and colleagues' 2021 paper: its accuracy against the other
+      leading entries, examples of its predictions against experiment, and an outline of the
+      network.
+    credit: John Jumper et al., Nature (2021)
+    license: CC BY 4.0
+    source: https://commons.wikimedia.org/wiki/File:AlphaFold_2.png
 ---
 
 ## The Sequence Contains the Structure
@@ -288,7 +318,11 @@ $$
 
 The universe is $1.4\times10^{10}$ years old. The search would take about $10^{17}$ times longer than the universe has existed. Real proteins of this size fold in milliseconds to seconds.
 
+{{img:levinthal}}
+
 So folding is not a search, and the paradox is about the shape of the energy landscape rather than about speed. If the landscape were a golf course — flat, with one hole — nothing would find the hole. The resolution, developed in the 1990s as the funnel picture, is that partly correct structures are already partly stabilised: forming a few native contacts lowers the energy, which makes the remaining search smaller. The landscape slopes towards the native state from almost everywhere, so a biased descent arrives quickly, and the chain never visits more than a tiny fraction of its conformations.
+
+{{img:folding-funnel}}
 
 This has a consequence that is easy to miss. The funnel is a property of the *sequence*, and it had to be selected for. A random sequence of 100 amino acids generally does not fold at all; it aggregates or stays a coil. Evolution has produced sequences whose landscapes are funnelled, which is why the folding problem is tractable for natural proteins and why designing new ones that fold reliably is difficult.
 
@@ -303,5 +337,7 @@ The second dataset carries structural information in an indirect form. If two re
 Rosetta had already shown what the structural database alone could support. The sequence database added the coevolution signal. What remained was a way to use both at once.
 
 The step change came at CASP14 in 2020. AlphaFold2 reasons jointly over the sequence alignment and over a representation of every pair of residues, iterating between them, and outputs coordinates directly with a per-residue confidence estimate that turns out to be well calibrated. Its median backbone accuracy was around 1 Å, within the range that two experimental determinations of the same protein differ by. {{fig:moult|John Moult}}, who had run the blind assessment since 1994 and watched two decades of modest progress, said the problem was in some sense solved.
+
+{{img:alphafold-casp14}}
 
 The qualification matters, and the field's own assessment is the right place to leave this. Accuracy is excellent for single folded chains with many known relatives and much weaker for sequences with no family, for complexes, for the effect of a single mutation, for the alternative conformations a protein passes through while working, and for the disordered third of the proteome that has no single structure to predict. A method trained on the endpoint also says nothing about the route: Levinthal's question, how a chain finds its way, is not answered by a system that never folds anything. What has changed is the supply. Every sequence now has a structure attached to it, which is a different science from one in which structures were produced a few hundred a year by people growing crystals.
