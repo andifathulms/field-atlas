@@ -213,6 +213,44 @@ further_reading:
   - citation: "Yong, E. (2016). I Contain Multitudes: The Microbes Within Us and a Grander View of Life. Ecco."
     url: null
     note: A popular account of the microbes that live with animals, including us.
+
+images:
+  - id: snow-map
+    src: /images/fields/microbiology/snow-map.jpg
+    alt: A street map of Soho with small black bars at each house marking cholera deaths, clustered around Broad Street.
+    caption: >-
+      Snow's map of the 1854 Soho outbreak. Each black bar is a death; they cluster around the pump
+      in Broad Street.
+    credit: John Snow, Wellcome Collection
+    license: CC BY 4.0
+    source: https://commons.wikimedia.org/wiki/File:A_map_taken_from_a_report_by_Dr._John_Snow_Wellcome_L0072917.jpg
+  - id: koch
+    src: /images/fields/microbiology/koch.jpg
+    alt: Portrait of Robert Koch, with a white beard and round glasses.
+    caption: >-
+      Robert Koch, who tied particular microbes to particular diseases, anthrax first and then
+      tuberculosis.
+    credit: Unknown photographer
+    license: Public domain
+    source: https://commons.wikimedia.org/wiki/File:Robert_Koch_BeW.jpg
+  - id: snow-rates
+    src: /images/fields/microbiology/snow-rates.png
+    alt: Two bars of cholera deaths per 10,000 houses, 315 for Southwark and Vauxhall and 37 for Lambeth.
+    caption: >-
+      Snow's two water companies. Computed from the house and death counts the ratio is 8.4: the
+      houses drinking sewage-laden water died at more than eight times the rate.
+    credit: Drawn for Field Atlas from the table above
+    license: Field Atlas original
+    source: https://github.com/andifathulms/field-atlas/blob/main/scripts/diagrams/cell.py
+  - id: penicillin-mould
+    src: /images/fields/microbiology/penicillin-mould.jpg
+    alt: A brass case with a glass window holding a dried culture of mould, engraved "Penicillium mould from Professor Alexander Fleming 1935".
+    caption: >-
+      A sample of the penicillin mould that Fleming gave to a colleague in 1935, sealed in a brass
+      case.
+    credit: Science Museum London
+    license: CC BY-SA 4.0
+    source: https://commons.wikimedia.org/wiki/File:Sample_of_penicillin_mould_presented_by_Alexander_Fleming_to_Douglas_Macleod,_1935_(9672239344).jpg
 ---
 
 ## Miasma
@@ -221,11 +259,15 @@ In the 1840s disease was widely blamed on miasma, foul air rising from rot and f
 
 In 1854, in London, {{fig:john-snow|John Snow}} mapped cholera deaths in Soho and traced them to one water pump. He argued that cholera was carried by something in the water, not the air. Neither man could see the agent. [Cell theory](/biology/cell-theory/) had established what microbes were, but not what they did.
 
+{{img:snow-map}}
+
 ## Pasteur and Koch
 
 {{fig:louis-pasteur|Louis Pasteur}}, a chemist, came to microbes through fermentation, which he showed is the work of living yeast. In 1859–62 he settled an old dispute: does life arise spontaneously in broth? In his swan-neck flasks, boiled broth open to air but protected from falling dust stayed sterile indefinitely. Microbes come only from other microbes. The Glasgow surgeon {{fig:joseph-lister|Joseph Lister}}, reading Pasteur, reasoned that wound infections were caused by microbes and in 1867 began treating wounds with carbolic acid. Deaths after surgery fell sharply.
 
 The proof that a particular microbe causes a particular disease came from {{fig:robert-koch|Robert Koch}}, a German country doctor who worked at home with a microscope his wife gave him. In 1876 he traced the life cycle of the anthrax bacterium. His laboratory developed ways to grow bacteria in pure culture on solid media, using agar, which {{fig:fanny-hesse|Fanny Hesse}} suggested from her kitchen, and in 1882 he identified the bacterium that causes tuberculosis. Pasteur and Koch, divided by the Franco-Prussian war, became bitter rivals, and their institutes raced to find the causes of cholera, diphtheria, plague and more. Within two decades the agents of most major bacterial diseases were known.
+
+{{img:koch}}
 
 ## A Closer Look: Snow's Natural Experiment
 
@@ -240,10 +282,14 @@ Snow went door to door to find which company supplied each house where someone h
 
 For example, $1{,}263 / 40{,}046 \times 10{,}000 \approx 315$. Houses drinking the sewage-contaminated water suffered about eight and a half times the death rate of their neighbours. The comparison removed the other explanations that miasma theorists offered. The houses were in the same streets, breathed the same air and were as rich or poor as each other. Only the water differed.
 
+{{img:snow-rates}}
+
 This is the logic of a controlled comparison, applied to a population rather than a laboratory. Epidemiologists still use it, and randomised trials are designed to create it deliberately. Snow never saw the cholera bacterium. Filippo Pacini in Florence had described it in 1854, but his work was ignored, and Koch rediscovered it in 1884.
 
 ## Antibiotics
 
 Vaccines and hygiene reduced infectious disease, but once infected, a patient had little defence. In 1928 {{fig:alexander-fleming|Alexander Fleming}} noticed a mould on a culture plate killing the bacteria around it. He could not purify the substance, penicillin, in useful amounts. At Oxford in 1939–41, {{fig:howard-florey|Howard Florey}}, {{fig:ernst-chain|Ernst Chain}} and {{fig:norman-heatley|Norman Heatley}} did, and showed it cured infections in mice and then people. By D-Day it was being mass-produced.
+
+{{img:penicillin-mould}}
 
 Antibiotics transformed medicine, and their overuse is now eroding them as resistant bacteria evolve. Meanwhile DNA sequencing has shown that the microbes grown in laboratories are a small minority of those that exist. How the body fights microbes by itself became [immunology](/biology/immunology/).
