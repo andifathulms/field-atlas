@@ -229,11 +229,51 @@ further_reading:
   - citation: "Snyder, L. R., Kirkland, J. J. & Dolan, J. W. (2010). Introduction to Modern Liquid Chromatography, 3rd edition. Wiley."
     url: null
     note: The practitioner's reference; the chapters on resolution and gradient design are the useful ones.
+
+images:
+  - id: tsvet
+    src: /images/fields/chromatography/tsvet.jpg
+    alt: Photograph of Mikhail Tsvet with a moustache and a short beard.
+    caption: >-
+      Mikhail Tsvet, who separated leaf pigments into coloured bands down a column of chalk and
+      named the method chromatography, colour-writing.
+    credit: Unknown photographer
+    license: Public domain
+    source: https://commons.wikimedia.org/wiki/File:Mikhail_Tsvet.jpg
+  - id: plates-needed
+    src: /images/fields/chromatography/plates-needed.png
+    alt: A falling line of theoretical plates needed against selectivity on log scales, marking 7,100 plates at 1.05 and 163,000 at 1.01.
+    caption: >-
+      Plates needed to separate two components, from the resolution equation with $R = 1$.
+      Five per cent apart takes 7,100; one per cent apart takes 163,000.
+    credit: Drawn for Field Atlas from the numbers above
+    license: Field Atlas original
+    source: https://github.com/andifathulms/field-atlas/blob/main/scripts/diagrams/analysis.py
+  - id: spinach-chromatogram
+    src: /images/fields/chromatography/spinach-chromatogram.jpg
+    alt: A strip of paper with a dark green spot at the left and a streak spreading to the right into green, blue-green and yellow bands.
+    caption: >-
+      Spinach pigments run out on paper: the green chlorophylls and yellow carotenoids pull
+      apart, the separation Tsvet first saw in his column.
+    credit: Mattia Luigi Nappi, rotated by Peter coxhead
+    license: CC BY-SA 4.0
+    source: https://commons.wikimedia.org/wiki/File:Chromatography_rev.jpg
+  - id: gc-autosampler
+    src: /images/fields/chromatography/gc-autosampler.jpg
+    alt: The carousel of a gas chromatograph's autosampler, loaded with small capped vials.
+    caption: >-
+      A gas chromatograph's autosampler, with a carousel of vials waiting to be injected one
+      after another.
+    credit: Hey Paul, Sacramento
+    license: CC BY 2.0
+    source: https://commons.wikimedia.org/wiki/File:Gas_Chromatograph_Autosampler.jpg
 ---
 
 ## Hesitation as a Separation
 
 {{fig:tsvet|Mikhail Tsvet}} was trying to settle whether chlorophyll is one substance or several. He poured an extract of leaves, dissolved in petroleum ether, through a glass tube packed with powdered chalk, and the extract separated as it descended into distinct bands of green and yellow. Each pigment stuck to the chalk to a different degree, so each travelled at its own speed. He named the method after the colours — chromatography — and published in botanical journals, in German and Russian, in 1906.
+
+{{img:tsvet}}
 
 Chemists did not notice for thirty years, which is one of the longer delays in the atlas. Part of the reason is that his conclusion was unpopular: the great Richard Willstätter held that chlorophyll was a single compound, and Tsvet's bands said otherwise. Part is that the technique looked like a botanist's trick rather than a general method.
 
@@ -291,6 +331,8 @@ $$
 
 That is the whole explanation of the shape of the apparatus. Resolving a one per cent difference requires of order $10^{5}$ equilibrations, and since a packed column achieves a plate every few hundred micrometres, $10^{5}$ plates means tens of metres. A packed column that long cannot be used, because forcing gas through the packing requires a pressure drop that nothing survives. {{fig:golay|Marcel Golay}}'s open capillary solves exactly that: coat the stationary phase on the inside wall of a tube a quarter of a millimetre across and leave the middle empty, and 30 metres can be coiled into a palm-sized spiral with a modest pressure drop and 150,000 plates.
 
+{{img:plates-needed}}
+
 The square root is also the field's permanent frustration. To double the resolution, quadruple the plates: four times the length, four times the run time. The gain is real and it is expensive, which is why the other lever — changing $\alpha$ by choosing a different stationary phase — is pulled first. A tenfold improvement in selectivity costs nothing but a different column; a tenfold improvement in plate count costs a hundredfold in time.
 
 That leads to the limit recorded above as an open problem. Peak capacity — the number of resolvable components — is roughly the run time divided by the average peak width, which for a good gas chromatogram is a few hundred. Blood plasma contains of order $10^{4}$ small molecules. When a sample has more components than the run has slots, most peaks are mixtures, and the statistics of random arrival make it worse than a naive count suggests: filling 200 slots with 200 randomly placed components leaves well under half of them pure.
@@ -299,7 +341,11 @@ That leads to the limit recorded above as an open problem. Peak capacity — the
 
 The first great application was biological, and it used the least impressive apparatus in the field. {{fig:consden|Raphael Consden}}, {{fig:gordon|Alfred Gordon}} and Martin spotted a protein hydrolysate on filter paper, let one solvent creep through it, dried it, and ran a second solvent at right angles. Every amino acid lands at its own coordinates, and the result is a map that can be read off by eye. For a sheet of paper and two jars of solvent, the method determined the amino acid composition of proteins, identified the intermediates of photosynthesis, and supplied {{fig:sanger|Sanger}} with the means to identify the fragments in his insulin sequencing.
 
+{{img:spinach-chromatogram}}
+
 Then came the two instrumental versions, each opening a class of compounds the other could not reach. Gas chromatography, from 1952, is fast and extraordinarily resolving and requires the analyte to be volatile — excellent for hydrocarbons, flavours, pesticides and solvents, useless for a protein or most drugs. {{fig:horvath|Csaba Horváth}}'s high-performance liquid chromatography, from 1967, works for anything that dissolves, by packing the column with particles a few micrometres across and pushing solvent through at hundreds of atmospheres. The pharmaceutical industry runs on it: a drug's identity, its purity and its stability are all defined by what a specified liquid chromatographic method shows.
+
+{{img:gc-autosampler}}
 
 {{fig:jorgenson|James Jorgenson}} added the last variant in 1981 by replacing pressure with an electric field inside a capillary 75 micrometres across. The field drives the liquid with a flat velocity profile rather than the parabolic one that pressure produces, so the peaks do not smear, and the narrow bore carries away the heat that would otherwise wreck the separation. Hundreds of thousands of plates, from nanolitres of sample. Loaded with a polymer sieve and DNA fragments, arrays of such capillaries replaced slab gels in sequencing machines — which is how a separation technique ended up underneath [genomics](/biology/genomics/).
 
