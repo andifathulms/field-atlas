@@ -234,6 +234,35 @@ further_reading:
   - citation: "Robinson, A. (2006). The Last Man Who Knew Everything. Pi Press."
     url: null
     note: A biography of Young, who also worked on Egyptian hieroglyphs and insurance mathematics.
+
+images:
+  - id: young-1807
+    src: /images/fields/wave-optics/young-1807.jpg
+    alt: A hand-coloured engraving of fan-shaped green and dark stripes spreading from a small opening, with the stripe pattern repeated in a strip labelled A below.
+    caption: >-
+      Young's own picture of the fringes, figure 442 in his *Lectures* of 1807: light and dark
+      bands spreading from two sources, as they would fall on a screen at $A$.
+    credit: Thomas Young, A Course of Lectures on Natural Philosophy (1807)
+    license: Public domain
+    source: https://commons.wikimedia.org/wiki/File:Young-Thomas-Lectures1807-Plate_XXX-fig442-dbl_slit.jpg
+  - id: arago-spot
+    src: /images/fields/wave-optics/arago-spot.jpg
+    alt: The dark round shadow of a small disc with faint coloured rings at its edge and a small bright spot at its exact centre.
+    caption: >-
+      Poisson's absurdity, photographed: the shadow of a 5.8 mm disc in sunlight, with the
+      bright spot at its centre that Arago found.
+    credit: Aleksandr Berdnikov
+    license: CC BY-SA 4.0
+    source: https://commons.wikimedia.org/wiki/File:A_photograph_of_the_Arago_spot.png
+  - id: airy-disk
+    src: /images/fields/wave-optics/airy-disk.jpg
+    alt: A bright central dot surrounded by faint concentric rings, the pattern of a laser beam passed through a pinhole.
+    caption: >-
+      A laser through a pinhole: not a point but a disc and rings. Every lens and mirror blurs
+      a point this way, and the size of the disc sets Abbe's and Rayleigh's limits.
+    credit: Anaqreon
+    license: CC0
+    source: https://commons.wikimedia.org/wiki/File:Airy_disk_created_by_laser_beam_through_pinhole.jpg
 ---
 
 ## Darkness Made of Light
@@ -242,6 +271,8 @@ further_reading:
 
 The demonstration is simple to describe and was delicate to perform with sunlight and a pinhole. Send light through two narrow openings close together and let the two emerging beams overlap on a screen. They do not merely brighten each other. They produce a regular series of bright and dark bands. Where the two paths differ by a whole number of wavelengths the crests coincide and the light is doubled; where they differ by half a wavelength, crest meets trough and the screen is dark. There is no way to arrange two streams of particles so that adding one to the other produces nothing.
 
+{{img:young-1807}}
+
 Young's reward was a review in the *Edinburgh Review* so contemptuous that he published a pamphlet in reply, of which one copy is said to have sold. Contradicting Newton in Britain in 1803 was a professional error.
 
 ## The Spot That Should Not Be There
@@ -249,6 +280,8 @@ Young's reward was a review in the *Edinburgh Review* so contemptuous that he pu
 The decisive episode happened in France, and it is the best-known example in physics of a prediction intended as a refutation. The Academy of Sciences set diffraction as the subject of its 1819 prize, expecting the particle theory to be vindicated. {{fig:fresnel|Augustin Fresnel}}, a road engineer, submitted a wave theory in which the field at any point is obtained by adding contributions from every element of the wavefront, each with its own phase — an integral, in modern terms.
 
 {{fig:poisson|Siméon Poisson}}, on the jury and a convinced Newtonian, examined Fresnel's integrals and extracted an absurdity: behind an opaque circular disc, at the exact centre of the shadow, all the contributions from the rim arrive in phase, so there must be a *bright spot*. {{fig:arago|François Arago}} set up the experiment. The spot was there, and it is there in every undergraduate laboratory now. Fresnel won.
+
+{{img:arago-spot}}
 
 Fresnel and Arago then found something less convenient. Two beams polarised at right angles produce no fringes at all, at any path difference. Young supplied the interpretation and Fresnel made it quantitative: light's oscillation is perpendicular to its travel, and perpendicular polarisations have no common component to add. This was a problem, because a transverse wave requires a medium that resists shear — a solid — and the planets move through it without resistance. The ether grew steadily more preposterous until {{fig:maxwell|Maxwell}}'s equations showed in 1865 that the oscillating quantities are the electric and magnetic fields themselves, which is the subject of [electromagnetism](/physics/electromagnetism/).
 
@@ -276,6 +309,8 @@ $$
 The accepted range for visible light is about 400 to 700 nm. In 1803, with sunlight, a slit and a screen, he was within a few per cent at both ends of the spectrum — and he had measured a length ten thousand times smaller than anything he could see, by counting something he could.
 
 The same wave behaviour that makes this measurement possible imposes a ceiling. {{fig:abbe|Ernst Abbe}} showed in 1873 that a microscope forms an image by collecting the light a specimen diffracts, so it can only reconstruct detail whose diffracted orders fall inside the objective's cone. The smallest resolvable separation is about
+
+{{img:airy-disk}}
 
 $$
 d_{\min} \approx \frac{\lambda}{2\,\mathrm{NA}},
