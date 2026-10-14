@@ -233,11 +233,43 @@ further_reading:
   - citation: "Geim, A. K. & Novoselov, K. S. (2007). The rise of graphene. Nature Materials 6: 183–191."
     url: null
     note: An early overview of graphene by its discoverers.
+
+images:
+  - id: hall-effect
+    src: /images/fields/topological-matter/hall-effect.png
+    alt: A thin yellow plate with current I flowing up through it, a magnetic field B passing through it, and a voltmeter across its sides reading the Hall voltage.
+    caption: >-
+      The Hall effect: a current $I$ along a plate in a field $B$ is pushed sideways, building a
+      voltage $V_H$ across it.
+    credit: Gregors, after an earlier diagram
+    license: CC BY-SA 3.0
+    source: https://commons.wikimedia.org/wiki/File:Hall-Effect-diagram.svg
+  - id: graphene-lattice
+    src: /images/fields/topological-matter/graphene-lattice.png
+    alt: A honeycomb of red and green atoms with a yellow diamond-shaped unit cell and two lattice vectors marked.
+    caption: >-
+      Graphene's honeycomb: two interleaved sets of carbon atoms (red and green), the lattice
+      Haldane had imagined in 1988 and Geim and Novoselov isolated in 2004.
+    credit: Д. Ильин
+    license: CC0
+    source: https://commons.wikimedia.org/wiki/File:Graphene_Crystal_Structure.svg
+  - id: quantum-hall-steps
+    src: /images/fields/topological-matter/quantum-hall-steps.png
+    alt: Hall resistance against magnetic field, rising along a straight classical line but breaking into flat steps at 6,453, 8,604, 12,906 and 25,813 ohms.
+    caption: >-
+      The quantum Hall staircase for the layer above, $n = 3 \times 10^{15}$ m⁻², drawn with
+      idealised step shapes. The flats sit exactly at $R_K/\nu$ from the table, and $\nu = 1$
+      is reached at 12.4 T.
+    credit: Drawn for Field Atlas from the numbers above
+    license: Field Atlas original
+    source: https://github.com/andifathulms/field-atlas/blob/main/scripts/diagrams/matter.py
 ---
 
 ## An Exact Number from a Dirty Sample
 
 The Hall effect has been known since 1879. Pass a current along a strip in a magnetic field, and the field pushes the charges sideways, building up a voltage across the strip. The ratio of that voltage to the current, the Hall resistance, normally rises smoothly with the field. On the night of 4–5 February 1980, at the high magnetic field laboratory in Grenoble, {{fig:klaus-von-klitzing|Klaus von Klitzing}} measured it for electrons confined to a thin layer at the surface of a silicon transistor, cooled to near absolute zero. The Hall resistance rose in flat steps, and the steps sat at $h/e^2$ divided by a whole number, where $h$ is Planck's constant and $e$ the electron's charge.
+
+{{img:hall-effect}}
 
 That was astonishing. The sample was a commercial device full of impurities and irregular edges, and yet it produced a combination of fundamental constants to high precision. Later measurements pushed the agreement to parts in a billion. Something had to make the answer immune to all the details.
 
@@ -252,6 +284,8 @@ In 1988 {{fig:duncan-haldane|Duncan Haldane}} showed that a quantum Hall effect 
 ## Topological Insulators and Graphene
 
 A real honeycomb of atoms arrived in 2004. {{fig:andre-geim|Andre Geim}} and {{fig:konstantin-novoselov|Konstantin Novoselov}} in Manchester pulled single sheets of carbon atoms from graphite with adhesive tape and measured their conduction. The electrons in graphene behave like massless particles obeying the relativistic equation of Dirac, and their quantum Hall steps are shifted by a half from those of ordinary electrons, a sign of the Dirac equation at work.
+
+{{img:graphene-lattice}}
 
 Graphene's honeycomb prompted {{fig:charles-kane|Charles Kane}} and {{fig:eugene-mele|Eugene Mele}} to ask in 2005 whether the coupling between an electron's spin and its motion could replace Haldane's fields. It could, giving a new invariant that takes only two values. Graphene's version is too weak to see, so {{fig:shoucheng-zhang|Shou-Cheng Zhang}} and his students predicted where to look instead, in thin wells of mercury telluride. In 2007 {{fig:laurens-molenkamp|Laurens Molenkamp}}'s group found the predicted conducting edges on otherwise insulating samples. A *topological insulator* is insulating inside, but its surface must conduct, because the invariant has to change at the boundary with empty space.
 
@@ -274,6 +308,8 @@ $$
 | 1/3 (fractional) | 77,438.422 |
 
 Which step appears depends on how many electrons there are per unit of magnetic flux. The flux quantum is $h/e = 4.136 \times 10^{-15}$ weber, and the filling is $\nu = n h / (eB)$ for $n$ electrons per square metre in a field $B$. A typical layer with $n = 3 \times 10^{15}$ m⁻² reaches $\nu = 1$ at $B = 12.4$ T and $\nu = 2$ near 6.2 T.
+
+{{img:quantum-hall-steps}}
 
 Von Klitzing's original paper was titled as a way to measure the fine-structure constant $\alpha$, the number that sets the strength of electromagnetism. With the magnetic constant fixed, as it then was, at $\mu_0 = 4\pi \times 10^{-7}$ N/A²,
 
