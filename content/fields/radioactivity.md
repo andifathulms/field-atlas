@@ -227,23 +227,70 @@ further_reading:
   - citation: "Campbell, J. (1999). Rutherford: Scientist Supreme. AAS Publications."
     url: null
     note: A full biography of the man at the centre of early nuclear physics.
+
+images:
+  - id: becquerel-plate
+    src: /images/fields/radioactivity/becquerel-plate.jpg
+    alt: A photographic plate with two dark blotches and handwritten notes in French above them.
+    caption: >-
+      The plate Becquerel developed on 1 March 1896 after uranium salts had sat on it, wrapped
+      in black paper, through days of cloud. The dark shapes are where the salts lay; the lower
+      one shows the outline of a small copper cross placed in between.
+    credit: Henri Becquerel, 1896
+    license: Public domain
+    source: https://commons.wikimedia.org/wiki/File:Becquerel_plate.jpg
+  - id: marie-curie
+    src: /images/fields/radioactivity/marie-curie.jpg
+    alt: Photograph of Marie Curie in middle age, in a dark dress, her hair pinned up.
+    caption: >-
+      Marie Curie in the 1920s. She coined the word radioactivity and, with Pierre Curie, found
+      polonium and radium by following the rays through chemical separations.
+    credit: Henri Manuel
+    license: Public domain
+    source: https://commons.wikimedia.org/wiki/File:Marie_Curie_c._1920s_(cropped).jpg
+  - id: alpha-beta-gamma
+    src: /images/fields/radioactivity/alpha-beta-gamma.png
+    alt: Alpha particles stopped by a sheet of paper, beta particles stopped by aluminium, and gamma rays weakened but passing through a block of lead.
+    caption: >-
+      Rutherford's sorting of the rays by what stops them: alpha by a sheet of paper, beta by a
+      few millimetres of aluminium, gamma only reduced by lead.
+    credit: Stannered and Ehamberg
+    license: CC BY 2.5
+    source: https://commons.wikimedia.org/wiki/File:Alfa_beta_gamma_radiation_penetration.svg
+  - id: geiger-rutherford
+    src: /images/fields/radioactivity/geiger-rutherford.jpg
+    alt: Two men in a laboratory beside a bench of apparatus, Hans Geiger on the left and Ernest Rutherford on the right.
+    caption: >-
+      Hans Geiger and Ernest Rutherford in their Manchester laboratory, where alpha particles
+      first revealed the atomic nucleus.
+    credit: Photograph, unknown author
+    license: Public domain
+    source: https://commons.wikimedia.org/wiki/File:Geiger-Rutherford.jpg
 ---
 
 ## Rays From Nowhere
 
 In January 1896 the world learned of Röntgen's X-rays, invisible rays from the glowing glass of a cathode-ray tube that passed through flesh and fogged photographic plates. {{fig:henri-becquerel|Henri Becquerel}}, an expert on minerals that glow after exposure to light, wondered whether they emit X-rays too. He wrapped photographic plates in black paper, laid uranium salts on top, and set them in the sun. The plates were fogged. Then a spell of cloudy weather stopped the experiment. He developed the plates anyway, expecting faint images, and found them strongly fogged. The uranium needed no sunlight. It emitted rays of its own, day after day, from no visible source of energy.
 
+{{img:becquerel-plate}}
+
 The rays made air conduct electricity, a legacy of [electromagnetism](/physics/electromagnetism/) that gave the best way to measure them. {{fig:marie-curie|Marie Curie}}, a doctoral student in Paris, used an electrometer designed by {{fig:pierre-curie|Pierre Curie}} and his brother Jacques. She found that the strength of the rays depended only on how much uranium a sample held, whatever its chemical form, so the emission came from inside the atoms. Thorium did the same. The uranium ore pitchblende was more active than its uranium could explain, so it had to contain something else. Working through tonnes of ore in a leaking shed, the Curies found polonium, named after Marie's native Poland, and radium, about a million times more active than uranium. She called the property radioactivity.
+
+{{img:marie-curie}}
 
 ## Atoms That Change
 
 At McGill University in Montreal, {{fig:ernest-rutherford|Ernest Rutherford}} sorted the radiation into kinds. Alpha rays were stopped by a sheet of paper, beta rays passed through thin metal, and gamma rays, found by Paul Villard in 1900, went through almost anything. The strangest finding was that thorium kept producing new radioactive substances. {{fig:harriet-brooks|Harriet Brooks}}, Rutherford's first research student at McGill, showed that one of them, the "emanation", was a gas much lighter than thorium, so not thorium at all. With the chemist {{fig:frederick-soddy|Frederick Soddy}}, Rutherford concluded in 1902 that radioactive atoms were changing into atoms of other elements. "Don't call it transmutation," Rutherford is said to have told Soddy, "they'll have our heads off as alchemists."
+
+{{img:alpha-beta-gamma}}
 
 Each substance decayed at its own fixed rate. Half of any sample was gone in a characteristic time, its half-life, and heat, pressure and chemistry had no effect on it. In 1903 Pierre Curie and Albert Laborde found that radium stays warmer than its surroundings, indefinitely. The energy locked inside atoms was a million times larger than any chemical energy. Kelvin had calculated that the Earth cooled from a molten ball in a few tens of millions of years, and that the Sun could shine only as long. Neither calculation had allowed for energy inside atoms, and both were wrong. The Sun, it turned out, runs on nuclear fusion. For the Earth, Kelvin's larger error was to treat its interior as a rigid solid, but radioactive heat mattered too.
 
 ## Probing the Atom
 
 Alpha particles, which Rutherford showed in 1908 with Thomas Royds to be helium nuclei, became his favourite tool. Fired at gold foil by {{fig:hans-geiger|Hans Geiger}} and Ernest Marsden in Manchester from 1909, they revealed, in Rutherford's analysis of 1911, that each atom has a tiny, heavy nucleus, a turning point of [old quantum theory](/physics/old-quantum-theory/). Radioactivity, it followed, happened inside the nucleus.
+
+{{img:geiger-rutherford}}
 
 The same year Geiger and {{fig:john-nuttall|John Nuttall}} found a curious rule. Alpha emitters with more energetic particles decay much faster. The dependence was absurdly steep, and classical physics could not explain how alpha particles escaped the nucleus at all, since they lacked the energy to climb over its electrical barrier. In 1928 {{fig:george-gamow|George Gamow}}, and independently Ronald Gurney and Edward Condon, explained both. Quantum mechanics lets a particle tunnel through a barrier it cannot climb, with a probability that depends extremely sharply on its energy. The same tunnelling, run in reverse, lets the Sun shine, as [stellar astrophysics](/physics/stellar-astrophysics/) describes.
 
