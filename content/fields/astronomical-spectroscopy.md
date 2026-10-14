@@ -194,13 +194,65 @@ further_reading:
   - citation: "Hirshfeld, A. (2014). Starlight Detectives: How Astronomers, Inventors, and Eccentrics Discovered the Modern Universe. Bellevue Literary Press."
     url: null
     note: A popular history of photography and spectroscopy in astronomy.
+
+images:
+  - id: fraunhofer-lines
+    src: /images/fields/astronomical-spectroscopy/fraunhofer-lines.png
+    alt: A rainbow strip from violet to deep red crossed by dark vertical lines, the strongest lettered A to K, with a wavelength scale in nanometres.
+    caption: >-
+      The Sun's spectrum with its dark lines, labelled with the letters Fraunhofer gave the
+      strongest. The close pair D near 589 nm is sodium, which is how Kirchhoff and Bunsen
+      put an element's name to a line in sunlight.
+    credit: MaureenV, after Fraunhofer
+    license: Public domain
+    source: https://commons.wikimedia.org/wiki/File:Fraunhofer_lines.svg
+  - id: kirchhoff-bunsen-spectroscope
+    src: /images/fields/astronomical-spectroscopy/kirchhoff-bunsen-spectroscope.jpg
+    alt: An engraving of a spectroscope, a prism box with two telescopes, one aimed at a gas burner flame.
+    caption: >-
+      Kirchhoff and Bunsen's spectroscope, from their 1860 paper. Light from the flame of
+      Bunsen's burner passes a prism and is viewed through the telescope, spread into its lines.
+    credit: Annalen der Physik und Chemie, 1860
+    license: Public domain
+    source: https://commons.wikimedia.org/wiki/File:Kirchhoff-Bunsen.Spectroscope.jpg
+  - id: harvard-computers-1913
+    src: /images/fields/astronomical-spectroscopy/harvard-computers-1913.jpg
+    alt: Group photograph of thirteen women and one bearded man standing in front of an ivy-covered brick building.
+    caption: >-
+      Edward Pickering with the Harvard computers outside the observatory, 13 May 1913.
+    credit: Harvard College Observatory
+    license: Public domain
+    source: https://commons.wikimedia.org/wiki/File:Edward_Charles_Pickering%27s_Harem_13_May_1913.jpg
+  - id: payne
+    src: /images/fields/astronomical-spectroscopy/payne.jpg
+    alt: Photograph of Cecilia Payne-Gaposchkin seated at a desk in a ribbed sweater, in an office lined with filing cabinets.
+    caption: >-
+      Cecilia Payne-Gaposchkin at Harvard College Observatory. Her 1925 thesis showed that the
+      stars are made overwhelmingly of hydrogen.
+    credit: Smithsonian Institution, Science Service
+    license: Public domain
+    source: https://commons.wikimedia.org/wiki/File:Cecilia_Helena_Payne-Gaposchkin_(1900-1979)_-_Science_Service.jpg
+  - id: star-spectra
+    src: /images/fields/astronomical-spectroscopy/star-spectra.png
+    alt: Three black-body curves, for Sirius peaking in the ultraviolet near 293 nanometres, the Sun near 502, and Betelgeuse in the infrared near 805, with the visible band shaded.
+    caption: >-
+      The table's three stars as black bodies, each scaled to its own peak. Hotter stars peak
+      at shorter wavelengths: Sirius in the ultraviolet, the Sun in the blue-green, Betelgeuse
+      in the infrared.
+    credit: Drawn for Field Atlas from the table above
+    license: Field Atlas original
+    source: https://github.com/andifathulms/field-atlas/blob/main/scripts/diagrams/stars.py
 ---
 
 ## Lines in the Rainbow
 
 In 1835 the philosopher Auguste Comte gave, as an example of knowledge forever beyond reach, the chemical composition of the stars. The key to it had already been found. In 1814 {{fig:joseph-fraunhofer|Joseph von Fraunhofer}}, a Bavarian optician who had survived the collapse of the workshop where he was apprenticed as a boy, spread sunlight through a fine prism and found it crossed by hundreds of dark lines. He mapped more than 500 and saw different patterns in the light of bright stars.
 
+{{img:fraunhofer-lines}}
+
 In 1859 {{fig:gustav-kirchhoff|Gustav Kirchhoff}} and {{fig:robert-bunsen|Robert Bunsen}}, using Bunsen's clean, nearly colourless gas burner, explained them. Every element heated in a flame glows at its own set of wavelengths, and cooler gas of the same element absorbs those wavelengths from light passing through it. The dark lines in sunlight were the Sun's elements absorbing light from the hotter layers below: sodium, iron, calcium and many more. Chemistry could be done at a distance of 150 million kilometres. [Electromagnetism](/physics/electromagnetism/) soon explained that light is an electromagnetic wave, and the lines were its wavelengths.
+
+{{img:kirchhoff-bunsen-spectroscope}}
 
 ## A Sequence of Stars
 
@@ -208,11 +260,15 @@ Spectroscopy found things chemistry had not. In 1868 {{fig:pierre-janssen|Pierre
 
 Photography made spectra of faint stars possible, and at Harvard {{fig:edward-pickering|Edward Pickering}} hired women to analyse them at a fraction of a man's wage. {{fig:williamina-fleming|Williamina Fleming}}, first employed as his housekeeper, devised an early scheme. {{fig:annie-jump-cannon|Annie Jump Cannon}} refined it into the sequence O, B, A, F, G, K, M and classified hundreds of thousands of stars by eye. In 1911–13 {{fig:ejnar-hertzsprung|Ejnar Hertzsprung}} and {{fig:henry-norris-russell|Henry Norris Russell}} plotted brightness against spectral type and found that most stars lie on a single band, the main sequence. Stars were not a random assortment. They followed patterns that a theory of their lives would have to explain.
 
+{{img:harvard-computers-1913}}
+
 ## Made of Hydrogen
 
 What did the sequence mean? The Sun's spectrum is dominated by lines of iron, calcium and other metals, and it was assumed that stars resemble the Earth in composition. In 1920 {{fig:meghnad-saha|Meghnad Saha}} used the new [quantum theory](/physics/old-quantum-theory/) of the atom to show how temperature controls which atoms can absorb which lines. In 1925 {{fig:cecilia-payne|Cecilia Payne}}, a young British astronomer at Harvard, applied Saha's theory to Cannon's spectra. The spectral sequence was a temperature sequence, and once temperature was accounted for, stars had almost the same composition. And that composition was mostly hydrogen and helium, with hydrogen about a million times more abundant than the metals whose lines are so prominent.
 
 Russell told her it was impossible, and she called it "almost certainly not real" in print. Four years later Russell confirmed it himself.
+
+{{img:payne}}
 
 ## A Closer Look: Reading Temperature From Colour
 
@@ -230,6 +286,8 @@ $$
 | Rigel (B) | about 12,100 K | about 240 nm (ultraviolet) | blue |
 
 The Sun's output peaks in the green-blue, in the middle of the range our eyes evolved to see. The mixture of all its colours looks white from space.
+
+{{img:star-spectra}}
 
 The lines tell a subtler story. Hydrogen's visible lines, the Balmer series, are absorbed only by hydrogen atoms whose electron is already in the second energy level. In a cool star like Betelgeuse, almost all hydrogen atoms sit in the lowest level, so the lines are weak. In very hot stars, most hydrogen is ionised and cannot absorb at all. The lines are strongest in between, around 10,000 K, in A stars like Sirius. In the Sun, only a few hydrogen atoms in every billion are in the right state. That is why hydrogen's lines looked unimpressive, and why astronomers concluded that the Sun contains little hydrogen. Saha's equation lets the tiny fraction be corrected for, and when Payne did so, hydrogen turned out to be by far the most common element. It is now known to make up about three-quarters of the Sun's mass.
 
