@@ -244,6 +244,27 @@ further_reading:
   - citation: "Agmon, N. (1995). The Grotthuss mechanism. Chemical Physics Letters 244: 456–462."
     url: null
     note: A short review of why the proton is anomalous and what hops.
+
+images:
+  - id: conductivity
+    src: /images/fields/electrolyte-theory/conductivity.png
+    alt: Horizontal bars of limiting molar conductivity for ten ions, with the hydrogen ion at 349.8 and hydroxide at 198.0 far longer than all the others, which lie between 38.7 for lithium and 78.1 for bromide.
+    caption: >-
+      Kohlrausch's table as bars. The ordinary ions sit between 39 and 78; the hydrogen ion is
+      seven times faster than sodium, and hydroxide more than
+      twice as fast as chloride.
+    credit: Drawn for Field Atlas from the table above
+    license: Field Atlas original
+    source: https://github.com/andifathulms/field-atlas/blob/main/scripts/diagrams/electrochemistry.py
+  - id: grotthuss-1806
+    src: /images/fields/electrolyte-theory/grotthuss-1806.jpg
+    alt: A U-shaped tube between a negative and a positive pole, filled with a chain of paired plus and minus circles.
+    caption: >-
+      Grotthuss's figure of 1806: a chain of water particles between the poles, each passing its
+      charge to the next rather than travelling the whole way.
+    credit: Theodor von Grotthuss, 1806
+    license: CC BY-SA 3.0
+    source: https://commons.wikimedia.org/wiki/File:Grotthuss_mechanism.jpg
 ---
 
 ## Ions Before the Current
@@ -284,11 +305,15 @@ One entry in Kohlrausch's tables took nearly a century to explain, and the anoma
 
 The ordinary cations behave sensibly. Lithium, the smallest, is the *slowest*, because a small ion holds its shell of water molecules tightly and must drag them along; caesium, large and weakly hydrated, moves fastest. The trend is explicable by Stokes' law applied to a hydrated sphere.
 
+{{img:conductivity}}
+
 Then there is the hydrogen ion, five to seven times faster than any of them. A bare proton does not exist in water — it is bound to a water molecule as $\mathrm{H_3O^+}$, which is about the size of a sodium ion with its shell and ought to move like one. Hydroxide is anomalous in the same way, by a factor of about three.
 
 A quick estimate shows how large the discrepancy is. Taking sodium's 50.1 as the expected value for a comparable hydrated species, the proton's 349.8 is a factor of **7.0** too high. In terms of the diffusion coefficient, the proton would have to be about seven times smaller than a water molecule to move that fast while pushing through water, which is impossible.
 
 {{fig:grotthuss|Theodor Grotthuss}} had the resolution in 1806, before anything else in this chapter existed. The charge moves without the atoms moving far. Picture a chain of water molecules linked by hydrogen bonds: the molecule at one end gives up a proton to its neighbour, which gives up one of its own to the next, and so on. Each atom shifts by a fraction of an ångström while the *charge* travels the length of the chain. Nothing has to be dragged through the liquid.
+
+{{img:grotthuss-1806}}
 
 Simulations in the 1990s by {{fig:marx|Dominik Marx}} and {{fig:parrinello|Michele Parrinello}} showed the mechanism in detail, and also why the question of what exactly hops has stayed open. The excess proton is sometimes centred on one molecule with three neighbours attached, sometimes shared equally between two, and the structures interconvert within picoseconds — so the species is a continuum rather than one of the two canonical ions that textbooks name. The hopping is agreed; the hopper is not.
 
