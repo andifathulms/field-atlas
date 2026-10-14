@@ -255,6 +255,36 @@ further_reading:
   - citation: "Frenking, G. & Shaik, S. (eds) (2014). The Chemical Bond. Wiley-VCH."
     url: null
     note: Modern perspectives, including the disagreements about what a bond is.
+
+images:
+  - id: cubical-atoms
+    src: /images/fields/chemical-bonding/cubical-atoms.png
+    alt: Seven small cubes labelled Li, Be, B, C, N, O and F, with one to seven corners marked by circles.
+    caption: >-
+      Lewis's cubical atoms, from his 1916 paper: the outer electrons of lithium through fluorine
+      at the corners of a cube, which is complete at eight.
+    credit: G. N. Lewis, 1916
+    license: Public domain
+    source: https://commons.wikimedia.org/wiki/File:Cubical_atom_1.png
+  - id: salt-lattice
+    src: /images/fields/chemical-bonding/salt-lattice.png
+    alt: A cubic block of alternating small purple and large green spheres.
+    caption: >-
+      Common salt: sodium ions (purple) and chloride ions (green), each surrounded by six of the
+      other. Nothing is shared; the crystal is held together by charge alone.
+    credit: Benjah-bmm27
+    license: Public domain
+    source: https://commons.wikimedia.org/wiki/File:Sodium-chloride-3D-ionic.png
+  - id: born-haber
+    src: /images/fields/chemical-bonding/born-haber.png
+    alt: An energy ladder from sodium and chlorine up through gaseous atoms and ions to +725 kJ/mol, down to the gaseous ions at +376, and a long drop to solid salt at −411, marked lattice energy −787.
+    caption: >-
+      The Born–Haber cycle for salt, drawn to scale from the table. The four measured steps
+      climb to +376 kJ/mol; the solid sits at −411; the drop between them, −787, is the lattice
+      energy.
+    credit: Drawn for Field Atlas from the numbers above
+    license: Field Atlas original
+    source: https://github.com/andifathulms/field-atlas/blob/main/scripts/diagrams/substance.py
 ---
 
 ## A Number Before a Mechanism
@@ -269,9 +299,13 @@ This is worth pausing on, because it is a pattern the atlas meets repeatedly: a 
 
 {{fig:gilbert-lewis|Gilbert Lewis}} filled it in 1916, and the key move was to stop thinking about transfer. A bond, he proposed, is a *pair of electrons shared* between two atoms, counted by both. Two chlorine atoms can hold a pair jointly without either becoming charged, which disposes of the difficulty Berzelius left. Lewis drew the electrons as dots at the corners of a cube around each atom, and noted that eight is the stable number — the octet rule. {{fig:langmuir|Irving Langmuir}} publicised the idea energetically enough that it was known for some years as the Lewis–Langmuir theory.
 
+{{img:cubical-atoms}}
+
 Lewis's 1923 monograph went further and redefined acids and bases in terms of the same pair: an acid accepts one, a base donates one. That definition is broader than the proton-transfer account and is the one still used for most of inorganic and organometallic chemistry.
 
 Meanwhile {{fig:kossel|Walther Kossel}} had developed the other half of the picture in 1916. In a salt, the electron really is transferred, leaving ions of opposite charge held by plain electrostatics. For a while these looked like rival theories of the bond. They are two limits of one continuum, and settling that required making the ionic case quantitative.
+
+{{img:salt-lattice}}
 
 ## A Closer Look: Two Routes to the Energy of a Crystal
 
@@ -313,6 +347,8 @@ U = -493 \times 1.7476 \times 0.875 = -753 \text{ kJ/mol}.
 $$
 
 Two routes, nothing in common but the substance: **−787** from calorimetry, **−753** from a lattice sum and a measured interionic distance. They agree to 4%.
+
+{{img:born-haber}}
 
 That margin is the interesting part. The agreement is close enough to establish that salt is held together by nothing but charges — no sharing, no directed bonds, just a sum over an infinite array. And the 4% discrepancy is real: it is the part of the cohesion that the point-charge model misses, chiefly the van der Waals attraction and the zero-point vibrational energy. Run the same comparison on silver chloride and the gap widens to about 8%, because silver's electrons are polarisable and the bonding has acquired covalent character. The size of the disagreement therefore measures how ionic a compound actually is.
 
