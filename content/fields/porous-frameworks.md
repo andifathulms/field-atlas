@@ -264,11 +264,51 @@ further_reading:
   - citation: "Barrer, R. M. (1982). Hydrothermal Chemistry of Zeolites. Academic Press."
     url: null
     note: The synthesis chemistry by the person who established it; still the reference on what controls the product.
+
+images:
+  - id: stilbite
+    src: /images/fields/porous-frameworks/stilbite.jpg
+    alt: A large cluster of pearly, peach-coloured stilbite crystals.
+    caption: >-
+      Stilbite, one of the natural zeolites, from Oregon. Heated, minerals like this give off the
+      water in their channels, which is the froth Cronstedt saw.
+    credit: Robert M. Lavinsky
+    license: CC BY-SA 3.0
+    source: https://commons.wikimedia.org/wiki/File:Stilbite-165638.jpg
+  - id: faujasite
+    src: /images/fields/porous-frameworks/faujasite.png
+    alt: A framework of truncated octahedral cages joined through hexagonal prisms around a large central cavity.
+    caption: >-
+      The framework of zeolite Y (the FAU type): sodalite cages linked through hexagonal prisms,
+      enclosing large cavities between them.
+    credit: Nao1958
+    license: CC0
+    source: https://commons.wikimedia.org/wiki/File:Framework_structure_of_the_FAU-type_zeolite.png
+  - id: mof-5
+    src: /images/fields/porous-frameworks/mof-5.png
+    alt: Eight cells of a cubic framework of zinc-oxide clusters joined by organic struts, with large yellow and orange spheres marking the pores.
+    caption: >-
+      Eight cells of MOF-5: zinc–oxygen clusters at the corners, joined by benzene dicarboxylate
+      struts. The spheres show the pores.
+    credit: Tony Boehle
+    license: CC BY-SA 3.0
+    source: https://commons.wikimedia.org/wiki/File:MOF-5.png
+  - id: surface-areas
+    src: /images/fields/porous-frameworks/surface-areas.png
+    alt: Bars of internal surface per gram, zeolite Y 900, MCM-41 1,000, graphene 2,630, MOF-5 3,800 and NU-110 7,100.
+    caption: >-
+      The table's internal surfaces against graphene, the most a sheet can offer. The frameworks
+      beat it because a strut one benzene ring wide exposes almost every atom.
+    credit: Drawn for Field Atlas from the table above
+    license: Field Atlas original
+    source: https://github.com/andifathulms/field-atlas/blob/main/scripts/diagrams/materials.py
 ---
 
 ## A Stone That Boils
 
 {{fig:cronstedt|Axel Fredrik Cronstedt}} put a mineral in a flame in 1756 and watched it froth. It gave off water, and on cooling it took the water back. He named the class **zeolites**, boiling stones, and the behaviour implies a structure that nothing then known would have suggested: a rigid solid with channels running through it, wide enough for water to enter and leave, narrow enough to be particular about what else can.
+
+{{img:stilbite}}
 
 That the channels are particular took until 1932 to state properly, when {{fig:mcbain|James McBain}} showed that such solids separate gas mixtures by molecular size and called them **molecular sieves**. The name is the important part. Almost every separation in chemistry works on chemical affinity or on boiling point; a sieve works on dimension, which is a property no solvent and no distillation column can address. Zeolite A will admit a straight-chain hydrocarbon and exclude the branched isomer of the same formula, a discrimination of about one ångström.
 
@@ -282,6 +322,8 @@ The mechanism of control is a mould. The framework crystallises around whatever 
 
 What the channels then bought was selectivity of a new kind. In 1962 zeolite Y replaced amorphous silica-alumina in petroleum cracking and raised the petrol yield per barrel substantially, which at the scale of global refining is one of the largest efficiency gains in the history of industrial chemistry. {{fig:weisz|Paul Weisz}} named the principle: **shape selectivity**, in which the pore decides. ZSM-5, patented in 1972, is the clean demonstration — its channels pass the para isomer of a disubstituted benzene and obstruct the ortho and meta, so a reaction whose intrinsic chemistry gives a mixture gives one product. The catalyst's selectivity is not in its chemistry but in its architecture.
 
+{{img:faujasite}}
+
 Zeolite channels stop at about a nanometre, which rules out most molecules a pharmaceutical chemist cares about. The way past it, found by {{fig:yanagisawa|Tsuneo Yanagisawa}} and {{fig:kuroda|Kazuyuki Kuroda}} and developed by {{fig:kresge|Charles Kresge}} and {{fig:beck|Jeffrey Beck}} at Mobil in 1992, was to template with an assembly instead of a molecule. Surfactant molecules in water arrange themselves into rods, the rods pack into a hexagonal array, silica condenses in the spaces between, and burning out the organic leaves a honeycomb of parallel channels. Since micelle diameter depends on the surfactant's chain length, the pore diameter became a continuously adjustable quantity between roughly two and ten nanometres — the self-assembly of [soft matter](/physics/soft-matter/) used as a mould for a hard solid.
 
 ## Node and Strut
@@ -291,6 +333,8 @@ Zeolite channels stop at about a nanometre, which rules out most molecules a pha
 Making such frameworks turned out to be the easy half. Emptying them was the problem: the channels are full of solvent during synthesis, and when it is removed the capillary forces pull the structure down. A great many papers reported open frameworks that were, once dried, dense amorphous solids. The distinguishing test is not a crystal structure but a gas uptake measurement — does the empty volume actually admit a gas?
 
 {{fig:yaghi|Omar Yaghi}}'s contribution was to make the nodes rigid. Instead of a single metal ion, use a small polyatomic cluster — four zinc atoms around a central oxygen, say — which behaves as one node with six fixed directions and far more resistance to twisting. Frameworks built this way survive activation, and their measured surface areas went past anything previously recorded within a few years. {{fig:kitagawa|Susumu Kitagawa}} established in parallel that flexibility need not be a defect: some frameworks breathe, opening and closing as gas enters, which gives adsorption isotherms with steps rather than curves and a release that can be triggered. Kitagawa, Robson and Yaghi shared the 2025 Nobel Prize in Chemistry.
+
+{{img:mof-5}}
 
 ## A Closer Look: How a Solid Gets More Surface Than Graphene
 
@@ -327,6 +371,8 @@ which is the most surface a two-dimensional material can offer. Yet measured fra
 | NU-110 | ~7,100 |
 
 The explanation is dimensional. A sheet has two sides; a thin rod has a whole circumference, and a framework made of struts a single benzene ring wide presents nearly every atom to the void. Going from sheets to struts is worth a factor of two or three in area per gram, and the table is that factor.
+
+{{img:surface-areas}}
 
 Put the top entry in physical terms. One gram of NU-110 has an internal surface of about 7,100 square metres. A full-size football pitch, 105 by 68 metres, is 7,140 square metres. **A gram of powder, less than a teaspoon, with the surface area of a football pitch folded inside it.**
 
