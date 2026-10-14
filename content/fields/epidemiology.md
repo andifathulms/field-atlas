@@ -246,13 +246,46 @@ further_reading:
   - citation: "Eyler, J. M. (1979). Victorian Social Medicine. Johns Hopkins University Press."
     url: null
     note: How vital statistics became a state function, and what Farr thought he was doing.
+
+images:
+  - id: bills-of-mortality
+    src: /images/fields/epidemiology/bills-of-mortality.jpg
+    alt: A title page bordered with skulls, bones and hourglasses, headed "London's Dreadful Visitation, or a Collection of All the Bills of Mortality".
+    caption: >-
+      The collected Bills of Mortality for the plague year of 1665, framed in skulls and
+      hourglasses: the weekly burial counts Graunt was the first to reason from.
+    credit: Company of Parish Clerks of London
+    license: Public domain
+    source: https://commons.wikimedia.org/wiki/File:Bills_of_Mortality_1665.jpg
+  - id: graunt-observations
+    src: /images/fields/epidemiology/graunt-observations.jpg
+    alt: The title page of Graunt's Natural and Political Observations beside a page of tabulated deaths by cause.
+    caption: >-
+      Graunt's *Natural and Political Observations … upon the Bills of Mortality* (1662), with
+      its table of deaths by cause, the first attempt to reason from counts of the dead.
+    credit: John Graunt
+    license: Public domain
+    source: https://commons.wikimedia.org/wiki/File:GRAUNT,_John._(1620-1674)._Natural_and_political_observations.png
+  - id: doll-hill
+    src: /images/fields/epidemiology/doll-hill.png
+    alt: Two bars of 649 men each, lung-cancer patients with 647 smokers and 2 non-smokers, and hospital controls with 622 smokers and 27 non-smokers.
+    caption: >-
+      Doll and Hill's table as bars. Two non-smokers among 649 patients against twenty-seven among
+      649 controls gives an odds ratio of 14.
+    credit: Drawn for Field Atlas from the table above
+    license: Field Atlas original
+    source: https://github.com/andifathulms/field-atlas/blob/main/scripts/diagrams/disease.py
 ---
 
 ## Counting the Dead
 
 London's parishes published a weekly bill of mortality: how many were buried, and of what. It existed as an early-warning system for plague, and nobody had tried to reason from it until {{fig:john-graunt|John Graunt}}, a haberdasher with a taste for arithmetic, worked through several decades of them and published his conclusions in 1662.
 
+{{img:bills-of-mortality}}
+
 He estimated the population of the city, which no one knew. He noticed that slightly more boys than girls are born, consistently, year after year. He separated causes of death that occur at a steady rate from those that come in waves, which is the distinction between endemic and epidemic. And he constructed a table showing how many of a hundred people born would be expected to survive to each decade — the first life table, the ancestor of every actuarial calculation since.
+
+{{img:graunt-observations}}
 
 Nearly two centuries later {{fig:william-farr|William Farr}} made the counting official. Appointed to the new General Register Office, he imposed a classification of causes of death, and insisted on two things that look obvious and are not: that counts be divided by the population at risk, and that comparisons between places be standardised for age, since a district full of young people will have fewer deaths whatever its conditions. His analysis of the 1849 cholera epidemic found that mortality fell steadily with height above the Thames, which he attributed to bad air being denser at low elevation. The pattern was real. The explanation was wrong, and the right one — that elevation predicts whose water came from the river — was being assembled a few streets away by {{fig:john-snow|John Snow}}, whose investigation is a waypoint on [microbiology](/biology/microbiology/).
 
@@ -284,6 +317,8 @@ $$
 $$
 
 The odds of having smoked are fourteen times higher among the cases. For a disease this rare in the population, the odds ratio approximates the relative risk, so smokers are of the order of fourteen times more likely to develop lung cancer.
+
+{{img:doll-hill}}
 
 Now notice what that figure does *not* say. The lifetime risk of lung cancer for a lifelong non-smoker is roughly 0.5%. Multiplying by 14 gives about 7% — a large and terrible number, and also a reminder that most smokers do not get lung cancer, which was a common argument against the finding at the time. A fourteenfold relative risk on a small base is still a small absolute risk for any one person, and an enormous one for a country where most men smoked.
 
