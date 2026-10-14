@@ -289,6 +289,27 @@ further_reading:
   - citation: "Schmalzried, H. (1981). Solid State Reactions, 2nd edition. Verlag Chemie."
     url: null
     note: What actually happens at the interface between two reacting solids, worked out properly.
+
+images:
+  - id: perovskite-mineral
+    src: /images/fields/solid-state-chemistry/perovskite-mineral.jpg
+    alt: Two small dark brown cube-shaped crystals on a pale green rock.
+    caption: >-
+      Perovskite, calcium titanate, as the mineral from the Susa Valley in Piedmont; the field of
+      view is 7 mm. Its name now covers every compound with the same structure.
+    credit: Leon Hupperichs
+    license: CC BY-SA 3.0
+    source: https://commons.wikimedia.org/wiki/File:Perovskite-108711.jpg
+  - id: tolerance-factor
+    src: /images/fields/solid-state-chemistry/tolerance-factor.png
+    alt: Three points on a tolerance-factor scale, calcium titanate at 0.966, strontium titanate at 1.002 and barium titanate at 1.062, each labelled with the symmetry it adopts.
+    caption: >-
+      Goldschmidt's tolerance factor for the three titanates in the table. Below 1 the octahedra
+      tilt, at 1 the cell stays cubic, above 1 the titanium rattles off-centre and the crystal
+      becomes ferroelectric.
+    credit: Drawn for Field Atlas from the table above
+    license: Field Atlas original
+    source: https://github.com/andifathulms/field-atlas/blob/main/scripts/diagrams/materials.py
 ---
 
 ## Chemistry Without a Solvent
@@ -312,6 +333,8 @@ A molecule has functional groups; an extended solid does not. What it has instea
 ## One Structure, a Thousand Compositions
 
 The perovskite structure is the clearest demonstration of what a structure type buys. It is a framework of corner-sharing octahedra with a large cation in the cavities, formula ABO₃, and it accepts most of the periodic table.
+
+{{img:perovskite-mineral}}
 
 It came to attention through a wartime secret. Barium titanate was found independently in the United States, the Soviet Union and Japan, in work none of the three could publish, to have a dielectric constant more than a hundred times anything a capacitor then used. {{fig:von-hippel|Arthur von Hippel}} showed in 1946 what was going on: the titanium ion is not at the centre of its octahedron but displaced to one side, giving every unit cell a permanent dipole that an applied field can switch. A ferroelectric.
 
@@ -348,6 +371,8 @@ Take three titanates that differ only in the large cation. With $r_{\mathrm{Ti}^
 | BaTiO₃ | 1.61 | 1.062 | A too big: B rattles off-centre | tetragonal, ferroelectric |
 
 Three compounds of the same formula type, three different symmetries, each one predicted by a number computed from a table in under a minute. And the third line is the commercially decisive one. Because barium is slightly too large for the cavity, the titanium has room to sit about 0.1 Å off-centre; every unit cell is then a dipole, the dipoles align in domains, and the dielectric constant at the transition reaches several thousand against about 5 for a typical glass. That single consequence of $t > 1$ is why barium titanate is in essentially every electronic device made.
+
+{{img:tolerance-factor}}
 
 The arithmetic also shows where composition becomes a dial rather than a choice. Replacing a fraction $x$ of the barium with calcium moves $t$ smoothly between 1.062 and 0.966, so the transition temperature can be placed where a specification requires it. Capacitor grades differ in exactly this way: the formulation is chosen so that the dielectric peak sits outside the operating range, giving a high and flat permittivity rather than a high and sharp one. A tolerance factor is being used as a design parameter, three quarters of a century after it was proposed to classify minerals.
 
