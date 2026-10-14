@@ -190,6 +190,44 @@ further_reading:
   - citation: "Bechtel, W. (2006). Discovering Cell Mechanisms: The Creation of Modern Cell Biology. Cambridge University Press."
     url: null
     note: A history of how cell biology became a field in the mid-twentieth century.
+
+images:
+  - id: ruska-microscope
+    src: /images/fields/cell-biology/ruska-microscope.jpg
+    alt: A tall column of metal lenses and housings on a cabinet, the first commercial electron microscope.
+    caption: >-
+      The first commercial electron microscope, designed by Ernst Ruska and sold by Siemens in
+      1939, now in the Deutsches Museum.
+    credit: J Brew
+    license: CC BY-SA 3.0
+    source: https://commons.wikimedia.org/wiki/File:Ernst_Ruska_Electron_Microscope_-_Deutsches_Museum_-_Munich-edit.jpg
+  - id: mitochondria-tem
+    src: /images/fields/cell-biology/mitochondria-tem.jpg
+    alt: An electron micrograph of two oval mitochondria with folded inner membranes, against grey cytoplasm.
+    caption: >-
+      Two mitochondria in lung tissue under the transmission electron microscope, their folded
+      inner membranes plain. The scale bar is 50 nm.
+    credit: Louisa Howard, Dartmouth
+    license: Public domain
+    source: https://commons.wikimedia.org/wiki/File:Mitochondria,_mammalian_lung_-_TEM.jpg
+  - id: resolution-limit
+    src: /images/fields/cell-biology/resolution-limit.png
+    alt: Cell structures on a log size scale, with the light microscope limit at 180 nm; cells and mitochondria lie above it, ribosomes, microtubules and membranes below.
+    caption: >-
+      Abbe's limit against the table's sizes. The cell and the mitochondrion lie above it; the
+      ribosome, microtubule and membrane are seven to thirty-six times too small.
+    credit: Drawn for Field Atlas from the table above
+    license: Field Atlas original
+    source: https://github.com/andifathulms/field-atlas/blob/main/scripts/diagrams/cell.py
+  - id: hela-cells
+    src: /images/fields/cell-biology/hela-cells.jpg
+    alt: Cultured cells stained in fluorescent colours, with cyan nuclei, a green mesh of microtubules and orange Golgi bodies beside each nucleus.
+    caption: >-
+      HeLa cells in fluorescence: a fluorescent protein marks the Golgi apparatus (orange),
+      with microtubules in green and DNA in cyan.
+    credit: National Institutes of Health
+    license: Public domain
+    source: https://commons.wikimedia.org/wiki/File:HeLa-I.jpg
 ---
 
 ## Below the Limit of Light
@@ -198,9 +236,13 @@ By 1900 [cell theory](/biology/cell-theory/) was established, but light microsco
 
 The electron microscope broke the limit. {{fig:ernst-ruska|Ernst Ruska}} built the first in 1931, focusing electrons with magnetic coils. Electrons have wavelengths many thousands of times shorter than light, and in 1945 {{fig:keith-porter|Keith Porter}}, {{fig:albert-claude|Albert Claude}} and Ernest Fullam published the first electron micrograph of a whole cell. It showed a lace of internal membranes that no one had seen, the endoplasmic reticulum.
 
+{{img:ruska-microscope}}
+
 ## The Cell's Factories
 
 At the Rockefeller Institute, {{fig:george-palade|George Palade}} combined electron microscopy with Claude's method of separating cell parts by spinning them in a centrifuge. Using radioactive labels, his group followed newly made proteins through the cell: made on ribosomes studding the endoplasmic reticulum, packaged in the Golgi apparatus, shipped out in small vesicles. {{fig:christian-de-duve|Christian de Duve}} found the lysosome, the cell's recycling compartment. The cell was a factory with an assembly line.
+
+{{img:mitochondria-tem}}
 
 In 1972 {{fig:s-jonathan-singer|S. Jonathan Singer}} and {{fig:garth-nicolson|Garth Nicolson}} described the membranes that bound all these compartments as a fluid mosaic, proteins floating in a double layer of lipids. Mitochondria and chloroplasts, with their own DNA and double membranes, turned out to be descended from bacteria that had moved in, the endosymbiosis of [evolutionary biology](/biology/evolutionary-biology/).
 
@@ -234,6 +276,8 @@ Compare the sizes of the things inside a cell:
 
 A mitochondrion is just visible as a blur. A ribosome, a microtubule and the membrane itself are about seven to forty times smaller than the limit. No improvement in lenses can fix this. It is set by the wave nature of light.
 
+{{img:resolution-limit}}
+
 Electrons get round it because their wavelength is tiny. Accelerated through 100,000 volts, an electron has a wavelength of about 0.004 nm, and electron microscopes resolve detail down to a fraction of a nanometre, enough to see individual proteins. The price is that cells must be fixed, sliced thin and placed in a vacuum. They are dead.
 
 Super-resolution light microscopy finds another way round. If only a few fluorescent molecules glow at once, each appears as a blurred spot 200 nm wide, but the centre of a spot can be located far more precisely than its width, to about 20 nm if enough photons are collected. Switching different molecules on and off, and locating each, builds up an image ten times sharper than Abbe's limit, in living cells.
@@ -241,3 +285,6 @@ Super-resolution light microscopy finds another way round. If only a few fluores
 ## Watching Molecules
 
 The glowing protein of a jellyfish, found by {{fig:osamu-shimomura|Osamu Shimomura}} in 1962, became the tool that let biologists watch cells live. {{fig:douglas-prasher|Douglas Prasher}} cloned its gene, {{fig:martin-chalfie|Martin Chalfie}} showed in 1994 that it glows in other organisms, and {{fig:roger-tsien|Roger Tsien}} made it in many colours. Fused to any protein, it shows where that protein goes. {{fig:stefan-hell|Stefan Hell}}, {{fig:eric-betzig|Eric Betzig}} and {{fig:w-e-moerner|W. E. Moerner}} then broke Abbe's limit for fluorescence. Cell biology now watches single molecules move in living cells. How a cell senses its own size, and times its division by it, is still not fully understood.
+
+
+{{img:hela-cells}}
