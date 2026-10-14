@@ -232,6 +232,27 @@ further_reading:
   - citation: "Segler, M. H. S., Preuss, M. & Waller, M. P. (2018). Planning chemical syntheses with deep neural networks and symbolic AI. Nature 555: 604–610."
     url: null
     note: The paper that made machine planning work, and clear about what it is and is not doing.
+
+images:
+  - id: e-factor
+    src: /images/fields/retrosynthetic-analysis/e-factor.png
+    alt: Waste per kilogram of product on a log scale, around 1 for bulk chemicals, 5 to 50 for fine chemicals and 25 to 100 for pharmaceuticals.
+    caption: >-
+      Sheldon's E-factors: kilograms of waste per kilogram of product. The smaller the volume of
+      a product, the more waste each kilogram of it carries.
+    credit: Drawn for Field Atlas from the numbers above
+    license: Field Atlas original
+    source: https://github.com/andifathulms/field-atlas/blob/main/scripts/diagrams/synthesis.py
+  - id: search-tree
+    src: /images/fields/retrosynthetic-analysis/search-tree.png
+    alt: Bars on a scale of powers of ten, retrosynthesis trees from 10 to the 5 up to 10 to the 17, chess at 10 to the 124 and Go at 10 to the 360.
+    caption: >-
+      Tree sizes as powers of ten, counted as branching factor raised to the depth. A
+      retrosynthesis tree is tiny next to chess or Go; what it lacks is a way to score a
+      position.
+    credit: Drawn for Field Atlas from the numbers above
+    license: Field Atlas original
+    source: https://github.com/andifathulms/field-atlas/blob/main/scripts/diagrams/synthesis.py
 ---
 
 ## Working Backwards
@@ -250,6 +271,8 @@ Running alongside the planning problem is a measurement problem: what makes one 
 
 Yield alone is a poor answer, because it says nothing about what was consumed. {{fig:trost|Barry Trost}}'s atom economy — the fraction of the total mass of reactants that ends up in the product — exposes reactions that proceed in 95% yield while discarding four fifths of the atoms they used, which a great many classical reactions do. {{fig:roger-sheldon|Roger Sheldon}} then defined the E-factor, kilograms of waste per kilogram of product, and published the figures that followed from it: around 1 for bulk chemicals, 5 to 50 for fine chemicals, and **25 to 100 for pharmaceuticals**, most of it solvent.
 
+{{img:e-factor}}
+
 {{fig:hendrickson|James Hendrickson}} had already defined the standard those numbers are measured against. In an ideal synthesis every step builds skeleton, nothing is protected and unprotected, nothing is purified between steps. Real routes fall short mainly through protecting groups — a third of the steps in a long synthesis may install and remove them, contributing nothing to the structure — which is the cost of using reagents less selective than enzymes, and the subject of the next field.
 
 Publishing those numbers changed behaviour, which metrics in science do not always do. Process chemists now report E-factors, companies set targets for them, and the difference between a medicinal chemist's first route and the manufacturing route is routinely a halving of the step count.
@@ -266,6 +289,8 @@ Consider the branching. A molecule of moderate complexity offers somewhere betwe
 | 50 | $3\times10^{8}$ | $10^{17}$ |
 
 For comparison, chess has a branching factor around 35 and games of about 80 moves; Go has around 250 and 150. Retrosynthesis sits between them in size — and lacks the one thing that makes game search tractable. In chess a position can be scored: count material, assess structure, and you have an estimate of how good it is. In retrosynthesis there is no reliable function that looks at a set of fragments and says how close they are to being purchasable, because the answer depends on the whole of chemical practice.
+
+{{img:search-tree}}
 
 Rule-based programs failed on exactly this. They could generate the tree — that was never the difficulty — and could not rank what they generated, so they handed the chemist thousands of suggestions, which is less useful than handing over none.
 
