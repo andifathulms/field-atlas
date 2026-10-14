@@ -212,6 +212,26 @@ further_reading:
   - citation: "Gehring, W. J. (1998). Master Control Genes in Development and Evolution: The Homeobox Story. Yale University Press."
     url: null
     note: The homeobox and eyeless stories told by the leader of the laboratory.
+
+images:
+  - id: amphioxus
+    src: /images/fields/evo-devo/amphioxus.jpg
+    alt: A small translucent, fish-shaped animal lying on its side, with a row of muscle blocks along its body.
+    caption: >-
+      Amphioxus, *Branchiostoma lanceolatum*: a small relative of the vertebrates with a single
+      Hox cluster, like the one the vertebrate ancestor had before its genome was copied.
+    credit: Parent Géry
+    license: CC BY-SA 3.0
+    source: https://commons.wikimedia.org/wiki/File:Branchiostoma_lanceolatum_(Pallas,_1774).jpg
+  - id: hox-counts
+    src: /images/fields/evo-devo/hox-counts.png
+    alt: Bars of Hox genes, 8 in the fruit fly, 15 in amphioxus, 39 of 52 possible slots in mouse or human, and 49 of 104 in zebrafish.
+    caption: >-
+      Hox genes from the table against the slots genome copying would have made: humans keep 39
+      of 52, zebrafish 49 of 104.
+    credit: Drawn for Field Atlas from the table above
+    license: Field Atlas original
+    source: https://github.com/andifathulms/field-atlas/blob/main/scripts/diagrams/development.py
 ---
 
 ## An Unexpected Unity
@@ -239,6 +259,8 @@ Why do mice have more Hox genes than flies? Count them:
 
 Amphioxus is a small, fish-shaped relative of the vertebrates, and its single cluster looks like the ancestral vertebrate one. Early in vertebrate history the whole genome was copied twice, so one cluster became
 
+{{img:amphioxus}}
+
 $$
 2^2 = 4
 $$
@@ -250,6 +272,8 @@ $$
 $$
 
 three quarters of the possible slots are filled, and 13 copies were lost. The ancestors of zebrafish and most other ray-finned fish copied their genome a third time, making $2^3 = 8$ clusters and $8 \times 13 = 104$ possible slots. Zebrafish have seven clusters left and about 49 Hox genes, fewer than half.
+
+{{img:hox-counts}}
 
 Most spare copies are lost. The ones that survive often take on new jobs, and some are later found at the heart of vertebrate novelties. The Hox genes of groups 9 to 13 in the A and D clusters pattern the limbs, and a late phase of Hoxd13 activity builds the fingers and toes. Duplication gives evolution spare copies to experiment with while the original keeps working.
 
