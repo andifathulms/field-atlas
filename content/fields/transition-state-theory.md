@@ -249,6 +249,27 @@ further_reading:
   - citation: "Laidler, K. J. & King, M. C. (1983). The development of transition-state theory. Journal of Physical Chemistry 87: 2657–2664."
     url: null
     note: Where the theory came from, and the differences between Eyring's and Polanyi's versions.
+
+images:
+  - id: potential-surface
+    src: /images/fields/transition-state-theory/potential-surface.png
+    alt: A contour map of energy against two bond distances, with two valleys meeting at a corner, an orange path running along both valley floors, and a dot at the saddle point where they meet.
+    caption: >-
+      The landscape for three hydrogen atoms in a line, computed with the London–Eyring–Polanyi–Sato
+      formula. The reaction runs along one valley floor, over the pass where the two bonds are
+      equally long, and out along the other. The top of that pass is the transition state.
+    credit: Drawn for Field Atlas from the LEPS surface
+    license: Field Atlas original
+    source: https://github.com/andifathulms/field-atlas/blob/main/scripts/diagrams/reaction.py
+  - id: barrier-cost
+    src: /images/fields/transition-state-theory/barrier-cost.png
+    alt: A straight rising line of half-life on a logarithmic scale against barrier height from 40 to 140 kJ/mol, with 100 kJ/mol marked at about 10.5 hours.
+    caption: >-
+      Half-life at room temperature from Eyring's equation. A 100 kJ/mol barrier gives about ten
+      and a half hours, and every 5.7 kJ/mol more makes the reaction ten times slower.
+    credit: Drawn for Field Atlas from the numbers above
+    license: Field Atlas original
+    source: https://github.com/andifathulms/field-atlas/blob/main/scripts/diagrams/reaction.py
 ---
 
 ## A Map Instead of a Fitting Parameter
@@ -258,6 +279,8 @@ Arrhenius's $E_a$ was a number extracted from a graph. It said how strongly a ra
 The replacement came from the new quantum mechanics, applied not to a molecule but to a reaction. {{fig:fritz-london|Fritz London}} produced an approximate expression in 1929 for the energy of three hydrogen atoms as a function of their mutual distances, and {{fig:eyring|Henry Eyring}} and {{fig:polanyi|Michael Polanyi}} turned it into a contour map. On that map the reaction $\mathrm{H} + \mathrm{H_2} \rightarrow \mathrm{H_2} + \mathrm{H}$ is a journey: up a valley in which one bond is long and one short, over a pass where both are intermediate, and down a symmetric valley on the other side.
 
 The potential energy surface gave the subject its working vocabulary — reaction coordinate, barrier, saddle point — and it made the activation energy a *height on a landscape* rather than a fitted constant. It also made clear what the species at the top is. It is a definite arrangement of atoms, stable against every distortion except one: along the reaction coordinate it is at a maximum, so that one vibration has an imaginary frequency and tears the thing apart. It cannot be bottled, and it has a structure.
+
+{{img:potential-surface}}
 
 ## The Assumption at the Top
 
@@ -302,6 +325,8 @@ $$
 $$
 
 In the units organic chemists grew up with that is 1.36 kcal/mol per decade — the single most useful number in physical organic chemistry. It means a barrier computed to ±10 kJ/mol, which is about as well as a good density functional manages, gives a rate uncertain by a factor of fifty. It also means a reaction can be made a million times faster by finding 34 kJ/mol, which is less than half a hydrogen bond.
+
+{{img:barrier-cost}}
 
 **Splitting the barrier in two.** Writing $\Delta G^{\ddagger} = \Delta H^{\ddagger} - T\Delta S^{\ddagger}$ separates two different obstacles. The enthalpy is the bonds that must be stretched. The entropy is how much order the reaction has to impose: bringing two molecules together into one transition state is a large entropy loss, so bimolecular reactions have $\Delta S^{\ddagger}$ of around $-100$ J/K/mol, worth 30 kJ/mol of free energy at room temperature — a factor of $10^{5}$ in rate, paid simply for having to meet. That is why tethering two reacting groups into one molecule can accelerate a reaction enormously without changing any bond energy, and it is a large part of what enzymes do.
 
