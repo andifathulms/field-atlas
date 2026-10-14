@@ -252,11 +252,51 @@ further_reading:
   - citation: "Fenner, F. et al. (1988). Smallpox and its Eradication. World Health Organization."
     url: null
     note: 1,460 pages of how an eradication campaign actually works, free online, and unmatched as a record.
+
+images:
+  - id: ross-notebook
+    src: /images/fields/infectious-disease-dynamics/ross-notebook.jpg
+    alt: A handwritten notebook page with small circular drawings of cells among the notes.
+    caption: >-
+      Ross's notebook for 20 August 1897, recording the pigmented bodies he found in mosquitoes
+      that had fed on a malaria patient, later shown to be the parasite.
+    credit: Ronald Ross
+    license: Public domain
+    source: https://commons.wikimedia.org/wiki/File:Ross,_20.Aug.1897.jpg
+  - id: smallpox-niger
+    src: /images/fields/infectious-disease-dynamics/smallpox-niger.jpg
+    alt: A young man in Niger being vaccinated in the arm with a jet injector.
+    caption: >-
+      Vaccination in Niger in February 1969, during the smallpox eradication and measles control
+      programme in West Africa.
+    credit: Dr J. D. Millar, CDC
+    license: Public domain
+    source: https://commons.wikimedia.org/wiki/File:Fighting_smallpox_in_Niger,_1969.jpg
+  - id: sir-epidemic
+    src: /images/fields/infectious-disease-dynamics/sir-epidemic.png
+    alt: SIR curves over 220 days, susceptible falling, infectious peaking at about 24 per cent and recovered rising to 89 per cent, with the 60 per cent herd-immunity threshold marked.
+    caption: >-
+      The equations above run for $R_0 = 2.5$. Infections peak when the susceptibles fall to
+      $1/R_0$, at the 60% threshold, and the epidemic keeps going until 89% have been infected.
+    credit: Drawn for Field Atlas from the equations above
+    license: Field Atlas original
+    source: https://github.com/andifathulms/field-atlas/blob/main/scripts/diagrams/disease.py
+  - id: final-size
+    src: /images/fields/infectious-disease-dynamics/final-size.png
+    alt: Bars for four values of R0, each showing the herd-immunity threshold in blue and the final epidemic size beyond it.
+    caption: >-
+      The table as bars: the immunity that stops growth against the share infected if the
+      epidemic is left to run.
+    credit: Drawn for Field Atlas from the table above
+    license: Field Atlas original
+    source: https://github.com/andifathulms/field-atlas/blob/main/scripts/diagrams/disease.py
 ---
 
 ## A Threshold Instead of an Extermination
 
 {{fig:ronald-ross|Ronald Ross}} proved in 1897 that mosquitoes carry malaria, which won him a Nobel Prize and left the practical question open. Colonial sanitary officers concluded that eradication meant eliminating mosquitoes, which was obviously impossible, and therefore that nothing could be done.
+
+{{img:ross-notebook}}
 
 Ross, who had trained in mathematics before medicine, answered with equations. Track two quantities — the fraction of people infected and the fraction of mosquitoes infected — each feeding the other. Infected people infect mosquitoes that bite them; infected mosquitoes infect people. Both populations lose infection through recovery or death. Writing down the balance shows that the system has two possible fates, and which one obtains depends on the product of the rates. Below a critical mosquito density per person, each infection fails on average to replace itself and malaria dies out, whatever its current prevalence. You do not have to kill every mosquito. You have to get below the threshold.
 
@@ -269,6 +309,8 @@ That second result contradicted intuition then and still does. Epidemics do not 
 The reproduction number was being used to make decisions before anyone had written it down carefully. {{fig:macdonald|George Macdonald}} did for malaria in 1952 what Ross had begun, with field data in hand, and extracted a conclusion that reorganised a global programme. The reproduction number for a vector-borne infection depends on the biting rate *squared* — the mosquito must bite once to acquire the parasite and once to transmit it — and on mosquito survival raised to a high power, because the parasite needs about ten days of development inside the insect before it can be passed on. An intervention that shortens adult mosquito life therefore does far more than one that reduces larval numbers. Indoor residual spraying follows directly from the exponent.
 
 The smallpox campaign supplied the other great practical result. The WHO's stated plan was to vaccinate 80% of the population of every endemic country, and in much of west Africa that was not achievable. {{fig:foege|William Foege}}, short of vaccine in eastern Nigeria, instead found each case and vaccinated the people around it, and the people around them. Surveillance and containment worked because smallpox has a visible rash, no symptomless carriers, and relatively slow spread — so cases could be found faster than they transmitted. The last natural case was in 1977, and the disease is the only human infection eradicated. The method does not transfer: polio, with mostly symptomless infection, has resisted the same approach for three decades.
+
+{{img:smallpox-niger}}
 
 {{fig:roy-anderson|Roy Anderson}} and {{fig:robert-may|Robert May}}, arriving from ecology rather than medicine, completed the unification in 1979. Hosts are a resource that infection depletes and birth replenishes; immunity is depletion; virulence is a trait under selection. The framework explained the two-year cycles of measles in pre-vaccination cities as the time taken for births to restock the susceptible pool, and it yielded a warning that has repeatedly proved right: a vaccination programme that reduces transmission without reaching the threshold raises the average age at infection, and for rubella, chickenpox and polio, infection at an older age is more dangerous.
 
@@ -294,6 +336,8 @@ $$
 
 At the peak, however, a large number of people are *currently infectious*, and each of them still infects someone — just fewer than one person each on average. Those infections continue, so the epidemic overshoots. Dividing the first equation by the third and integrating gives the final size relation for the fraction $z$ ever infected:
 
+{{img:sir-epidemic}}
+
 $$
 1 - z = e^{-R_0 z}.
 $$
@@ -308,6 +352,8 @@ Solving numerically:
 | 15 (measles) | 93% | >99.99% |
 
 For an infection with $R_0 = 2.5$, letting the epidemic run infects 89% of the population, while reaching the same immunity by vaccination requires 60%. The gap — 29 percentage points of a population — is the overshoot, and it is the entire quantitative case for not relying on infection to produce herd immunity.
+
+{{img:final-size}}
 
 Two cautions belong with the table. First, $R_0$ is an average, and the variance matters enormously. If a minority of cases cause most transmission — measured by the dispersion parameter $k$, estimated near 0.1 for SARS-CoV-2 and for SARS before it — then most introductions fizzle out while occasional events infect dozens. With $R_0 = 2.5$ and $k = 0.1$, roughly 10 to 20% of cases account for 80% of transmission. The same mean produces a different epidemic: more failed chains, faster explosions when a chain catches, and interventions aimed at crowded indoor gatherings doing far more than their share.
 
