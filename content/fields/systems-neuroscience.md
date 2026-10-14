@@ -219,6 +219,35 @@ further_reading:
   - citation: "Kandel, E. R. et al. (2021). Principles of Neural Science (6th ed.). McGraw-Hill."
     url: null
     note: The standard textbook of neuroscience.
+
+images:
+  - id: place-cells
+    src: /images/fields/systems-neuroscience/place-cells.png
+    alt: A winding track drawn from above, with coloured dots along it marking where each of several neurons fired as a rat ran the track.
+    caption: >-
+      Place cells in the hippocampus: each colour is one neuron's spikes, plotted where the rat was
+      on the track when it fired.
+    credit: Stuartlayton
+    license: CC BY-SA 3.0
+    source: https://commons.wikimedia.org/wiki/File:Place_Cell_Spiking_Activity_Example.png
+  - id: fmri
+    src: /images/fields/systems-neuroscience/fmri.jpg
+    alt: A grey MRI image of a human brain cut front to back, showing folded cortex, ventricles and cerebellum.
+    caption: >-
+      A coronal slice from an fMRI session. Each pixel of the activity map laid over an image like
+      this is a voxel holding hundreds of thousands of neurons.
+    credit: Nathanial Luceus
+    license: CC BY 2.0
+    source: https://commons.wikimedia.org/wiki/File:FMRI_coronal_scan_of_Nathanial_Bradford.png
+  - id: voxel-neurons
+    src: /images/fields/systems-neuroscience/voxel-neurons.png
+    alt: Bars of cortical neurons per voxel, about 33,000 for 1 mm, 260,000 for 2 mm and 880,000 for 3 mm.
+    caption: >-
+      The table's voxels. A 3 mm voxel averages over nearly a million neurons and some eight
+      billion synapses.
+    credit: Drawn for Field Atlas from the table above
+    license: Field Atlas original
+    source: https://github.com/andifathulms/field-atlas/blob/main/scripts/diagrams/brain.py
 ---
 
 ## From Cells to Circuits
@@ -235,7 +264,11 @@ In 1958, at Johns Hopkins, {{fig:david-hubel|David Hubel}} and {{fig:torsten-wie
 
 In 1971 {{fig:john-okeefe|John O'Keefe}} and Jonathan Dostrovsky at University College London recorded from the hippocampus of rats running freely and found place cells, each firing only when the rat was in one part of its enclosure. The hippocampus that H.M. had lost seemed to hold a map. In 2005 {{fig:may-britt-moser|May-Britt Moser}} and {{fig:edvard-moser|Edvard Moser}} found the coordinates behind it. Grid cells in the entorhinal cortex fire at many places, arranged in a triangular lattice across the floor, like the points of a honeycomb pattern. Grids of different spacings together can specify a position much as digits specify a number. Other cells signal the direction the head faces and the distance to walls.
 
+{{img:place-cells}}
+
 Recording electrodes see only a few neurons at a time. In 1990 {{fig:seiji-ogawa|Seiji Ogawa}} found that magnetic resonance imaging can detect the changes in blood oxygen that follow neural activity, and in 1992 several groups used it to watch the working human brain. Functional MRI showed regions for faces, places and words, and it became the main tool for studying the human brain in action.
+
+{{img:fmri}}
 
 ## A Closer Look: What a Voxel Sees
 
@@ -254,6 +287,8 @@ $$
 | 3 mm | 27 mm³ | 880,000 |
 
 With about $1.5 \times 10^{14}$ synapses in the same volume, a 3 mm voxel also holds about $3 \times 10^{8} \times 27 \approx 8$ billion synapses. A single signal from a voxel is an average over nearly a million neurons, which may include cells doing opposite things.
+
+{{img:voxel-neurons}}
 
 Time is blurred as well. A nerve impulse lasts about a millisecond. The blood-flow response it triggers peaks about five seconds later, some $5 / 0.001 = 5{,}000$ times longer, and a typical scanner takes one image of the whole brain every two seconds. A ten-minute scan yields only 300 images.
 
