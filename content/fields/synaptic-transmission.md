@@ -210,6 +210,26 @@ further_reading:
   - citation: "Kandel, E. R. (2006). In Search of Memory: The Emergence of a New Science of Mind. W. W. Norton."
     url: null
     note: Kandel's memoir and account of the biology of memory.
+
+images:
+  - id: dale-loewi
+    src: /images/fields/synaptic-transmission/dale-loewi.jpg
+    alt: Two men in overcoats and bowler hats shaking hands outside a building.
+    caption: >-
+      Henry Dale and Otto Loewi in Stockholm in 1936, when they shared the Nobel Prize for the
+      chemical transmission of nerve impulses.
+    credit: Unknown photographer
+    license: CC BY 4.0
+    source: https://commons.wikimedia.org/wiki/File:Henry_Hallett_Dale_and_Otto_Loewi_1936.jpg
+  - id: quantal-release
+    src: /images/fields/synaptic-transmission/quantal-release.png
+    alt: A bar chart of expected impulses out of 400 by the number of packets released, 40.1 failures, 92.2 with one packet, 106.1 with two, falling to 3.7 with seven or more.
+    caption: >-
+      The table's Poisson counts as a histogram: responses should cluster at whole multiples of
+      0.4 mV, with about forty failures in four hundred.
+    credit: Drawn for Field Atlas from the table above
+    license: Field Atlas original
+    source: https://github.com/andifathulms/field-atlas/blob/main/scripts/diagrams/brain.py
 ---
 
 ## Soups
@@ -217,6 +237,8 @@ further_reading:
 [Neuroanatomy](/biology/neuroanatomy/) had shown that neurons are separate cells, and [electrophysiology](/biology/electrophysiology/) that they signal with electrical pulses. How did a pulse cross the gap? In 1904 Thomas Elliott, a Cambridge student, noticed that adrenaline mimics the effects of certain nerves and suggested that the nerves might release it. Few followed up.
 
 The decisive experiment, by his own account, came to {{fig:otto-loewi|Otto Loewi}} in a dream on the night before Easter Sunday 1921. He woke, scribbled a note, and in the morning could not read it. The next night the dream returned, and he went straight to his laboratory in Graz. He stimulated the vagus nerve of a frog's heart, which slowed it, then moved the fluid bathing that heart to a second heart. The second heart slowed as well. The nerve had released a substance. It proved to be acetylcholine, and in 1936 {{fig:henry-dale|Henry Dale}} in London showed that it also carries the signal from nerve to skeletal muscle. Loewi and Dale shared the Nobel prize that year. Two years later Loewi, who was Jewish, was arrested after the Nazi annexation of Austria and released only after handing over his prize money.
+
+{{img:dale-loewi}}
 
 ## And Sparks
 
@@ -258,6 +280,8 @@ The Poisson formula then predicts how often an impulse releases nothing at all, 
 | 7 or more | 3.7 | 2.8 mV and up |
 
 A histogram of measured responses showed peaks at multiples of 0.4 mV, in roughly these proportions. In normal calcium the same junction releases a hundred packets or more per impulse, and the chance of a failure is about $e^{-100}$, which is effectively zero. That is why a nerve impulse reliably makes a muscle contract, while many synapses in the brain, which release only a few packets, fail often and by design.
+
+{{img:quantal-release}}
 
 ## Synapses That Learn
 
