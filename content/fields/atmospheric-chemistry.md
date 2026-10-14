@@ -269,11 +269,33 @@ further_reading:
   - citation: "Levy, H. (1971). Normal atmosphere: large radical and formaldehyde concentrations predicted. Science 173: 141–143."
     url: null
     note: Two pages that identified the oxidant of the troposphere before anyone could measure it.
+
+images:
+  - id: earth-limb
+    src: /images/fields/atmospheric-chemistry/earth-limb.jpg
+    alt: The Moon above the curved edge of the Earth, with the atmosphere a thin blue band between the clouds and black space.
+    caption: >-
+      The atmosphere seen edge-on from the International Space Station, with the Moon above: the
+      whole photochemical reactor is that thin blue line.
+    credit: NASA
+    license: Public domain
+    source: https://commons.wikimedia.org/wiki/File:ISS-51_Moon,_Earth%27s_limb_and_the_thin_blue_atmosphere.jpg
+  - id: lifetimes
+    src: /images/fields/atmospheric-chemistry/lifetimes.png
+    alt: Bars on a log scale of atmospheric lifetime, carbon monoxide about two months, methane about 11 years, CFC-12 about 100 years and SF6 about 3,200 years.
+    caption: >-
+      The lifetimes from the table. The two gases hydroxyl can attack last months and years;
+      the two with no hydrogen to give up last a century and millennia.
+    credit: Drawn for Field Atlas from the table above
+    license: Field Atlas original
+    source: https://github.com/andifathulms/field-atlas/blob/main/scripts/diagrams/environment.py
 ---
 
 ## Why the Atmosphere Is Not Full of Everything Ever Emitted
 
 Wetlands, livestock, rice paddies and leaking gas infrastructure put several hundred million tonnes of methane into the air each year. Fires and engines add several hundred million tonnes of carbon monoxide. Forests emit a comparable mass of volatile hydrocarbons — isoprene alone is around five hundred million tonnes a year, more than all human hydrocarbon emissions combined. None of it accumulates indefinitely. Something takes it out.
+
+{{img:earth-limb}}
 
 Not oxygen. Oxygen makes up a fifth of the atmosphere and is thermodynamically more than capable of burning methane, but it does not, because the reaction is spin-forbidden and has a large barrier: a mixture of methane and air sits indefinitely at room temperature, which is why natural gas can be stored. Thermodynamics permits and kinetics forbids, which is the distinction [chemical kinetics](/chemistry/chemical-kinetics/) exists to make.
 
@@ -347,6 +369,8 @@ Now the same calculation for other gases, and the spread is the whole subject:
 | SF₆ | nothing below the mesosphere | — | ~3,200 years |
 
 Carbon monoxide and methane differ by a factor of seventy in rate constant and therefore in lifetime: one is a regional pollutant, the other a global greenhouse gas, and the difference is one Arrhenius exponent.
+
+{{img:lifetimes}}
 
 The bottom two rows are the important ones, and they are not a continuation of the trend. CFC-12 is CF₂Cl₂. It has **no hydrogen atom**, so the one reaction hydroxyl performs — abstracting a hydrogen — is unavailable, and it does not absorb in the solar spectrum that reaches the lower atmosphere. The troposphere has no mechanism to begin on it. The molecule simply circulates, mixing through the whole atmosphere over a year or two, until it eventually reaches altitudes above 25 kilometres where the ultraviolet is short enough to break a C–Cl bond. That journey takes about a century, and what happens on arrival is the subject of [stratospheric ozone](/chemistry/stratospheric-ozone/). Sulphur hexafluoride, chosen as an insulator for exactly its inertness as noted in [main-group chemistry](/chemistry/main-group-chemistry/), lasts thirty times longer again.
 
