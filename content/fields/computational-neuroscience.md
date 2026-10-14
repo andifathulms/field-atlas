@@ -219,6 +219,17 @@ further_reading:
   - citation: "Marr, D. (1982). Vision. W. H. Freeman."
     url: null
     note: A founding book, still read for its first chapter on levels of explanation.
+
+images:
+  - id: xor-network
+    src: /images/fields/computational-neuroscience/xor-network.png
+    alt: A network diagram, inputs x1 and x2 each feeding an OR unit and an AND unit, which feed an output unit with weights +1 and −2, beside its truth table.
+    caption: >-
+      The two-layer network from the text, with its truth table: OR and AND units feed one more
+      threshold unit, weighted +1 and −2, and together they compute exclusive or.
+    credit: Drawn for Field Atlas from the text above
+    license: Field Atlas original
+    source: https://github.com/andifathulms/field-atlas/blob/main/scripts/diagrams/brain.py
 ---
 
 ## Neurons as Logic
@@ -255,6 +266,8 @@ where $\theta$ is its threshold. With two inputs of weight 1, a threshold of 2 m
 The last column, exclusive or, fires when exactly one input is active. No single unit can compute it. The unit must be silent for input $(0,0)$, so $0 < \theta$. It must fire for $(1,0)$ and $(0,1)$, so $w_1 \geq \theta$ and $w_2 \geq \theta$. Adding these gives $w_1 + w_2 \geq 2\theta$, which is greater than $\theta$ because $\theta$ is positive. So the unit would also fire for $(1,1)$, which is wrong. A computer search over every integer weight and threshold from $-5$ to $5$ finds none that works, as the argument says it must.
 
 Two layers solve it. Feed $x_1$ and $x_2$ to an OR unit and an AND unit, then feed those to a third unit with weights $+1$ from OR and $-2$ from AND, and threshold 1. For $(1,0)$ the third unit receives $1 - 0 = 1$ and fires. For $(1,1)$ it receives $1 - 2 = -1$ and stays silent. This is the whole of Minsky and Papert's objection and its answer in miniature: one layer cannot, two layers can, and the difficulty was finding the weights of the hidden layer by learning rather than by hand.
+
+{{img:xor-network}}
 
 ## Energy, Errors and Wiring
 
