@@ -265,6 +265,44 @@ further_reading:
   - citation: "Patterson, C. C. (1965). Contaminated and natural lead environments of man. Archives of Environmental Health 11: 344–360."
     url: null
     note: A paper that is simultaneously an analytical argument and a public health one.
+
+images:
+  - id: goldschmidt-oslo
+    src: /images/fields/geochemistry/goldschmidt-oslo.jpg
+    alt: Three people at a bench of mineral specimens and a microscope in a museum workroom, a woman on the left and two men.
+    caption: >-
+      Victor Moritz Goldschmidt (right) with Mimi Johnson and Endre Berner at the geological
+      museum in Oslo, 1915.
+    credit: Unknown photographer, Geological Survey of Norway
+    license: Public domain
+    source: https://commons.wikimedia.org/wiki/File:1915-Goldschmit-VM.jpg
+  - id: banded-iron
+    src: /images/fields/geochemistry/banded-iron.jpg
+    alt: A cliff of red and dark grey rock folded in thin bands, with two geologists standing on the slope below.
+    caption: >-
+      Banded iron formation in the Hamersley Range, Western Australia. Iron could only travel
+      dissolved in the sea to build these layers while the water held no oxygen.
+    credit: USGS
+    license: Public domain
+    source: https://commons.wikimedia.org/wiki/File:Banded_Iron_Formation_of_Hamersley_Range_DSCN2938.jpg
+  - id: patterson
+    src: /images/fields/geochemistry/patterson.jpg
+    alt: Photograph of Clair Patterson smiling, wearing glasses, in a laboratory.
+    caption: >-
+      Clair Patterson, who dated the Earth from meteorite lead and then found that the
+      laboratory, and the modern world, was full of lead.
+    credit: Unknown photographer
+    license: Public domain
+    source: https://commons.wikimedia.org/wiki/File:Clair-patterson.jpg-e1660456364696.jpg
+  - id: ice-lead
+    src: /images/fields/geochemistry/ice-lead.png
+    alt: Three bars on a log scale of lead in Greenland ice, about 0.001 micrograms per kilogram around 800 BC, 0.01 in 1750 and 0.2 in 1965.
+    caption: >-
+      Lead in Greenland ice, from the table. Ten times the ancient level by 1750 and two hundred
+      times by 1965, most of the rise after leaded petrol.
+    credit: Drawn for Field Atlas from the table above
+    license: Field Atlas original
+    source: https://github.com/andifathulms/field-atlas/blob/main/scripts/diagrams/environment.py
 ---
 
 ## Eight Elements and Everything Else
@@ -288,6 +326,8 @@ Two questions follow immediately, and the field is largely the history of answer
 
 {{fig:goldschmidt|Victor Goldschmidt}} supplied the global answer in the 1920s and 1930s, and it is one idea applied consistently.
 
+{{img:goldschmidt-oslo}}
+
 A molten planet containing iron, sulphur, silicate and gas separates into those four phases, and each element distributes itself between them according to which it prefers — a partition coefficient, exactly as in a solvent extraction. Goldschmidt sorted the periodic table accordingly:
 
 - **Siderophile**: dissolves in molten iron. Nickel, cobalt, gold, platinum, iridium.
@@ -309,9 +349,13 @@ The field's second instrument is the isotope ratio, and it works because the eff
 
 The sharpest piece of dating came last. {{fig:cloud|Preston Cloud}} and {{fig:heinrich-holland|Heinrich Holland}} argued from the rocks that the early atmosphere contained almost no oxygen — banded iron formations require dissolved iron, which needs anoxic water, and they give way to oxidised red beds at a definite horizon. {{fig:farquhar|James Farquhar}} found the decisive marker in 2000. Sulphur isotopes in rocks older than about 2.4 billion years are fractionated in a way that does not scale with mass, which ordinary chemical reactions cannot produce and ultraviolet photochemistry can. The pattern vanishes at 2.4 billion years, which is when an ozone layer appeared to block the ultraviolet — so a measurement of sulphur in rock dates the oxygenation of the atmosphere, and in doing so hands the problem to [atmospheric chemistry](/chemistry/atmospheric-chemistry/).
 
+{{img:banded-iron}}
+
 ## A Closer Look: A Number Is Only as Good as Its Blank
 
 {{fig:clair-patterson|Clair Patterson}} set out in the 1950s to measure lead isotopes in meteorites precisely enough to date the Earth, and found that he could not, because everything he touched contained lead. What followed is the clearest case in chemistry of a measurement limit being a scientific result in itself.
+
+{{img:patterson}}
 
 Consider the arithmetic. The lead concentration of deep Pacific water is a few thousandths of a microgram per kilogram. To measure that in a one-kilogram sample is to measure a few nanograms of lead in total. Now consider the laboratory. Urban air in the 1960s carried on the order of one microgram of lead per cubic metre, which is **one nanogram per litre of air**. A single litre of room air therefore contains as much lead as the entire sample.
 
@@ -328,6 +372,8 @@ Then came the consequence Patterson had not been looking for. If uncontaminated 
 | 1965 | ~0.2 |
 
 A **two-hundredfold** rise, with most of it in the few decades after tetraethyl lead was introduced as a petrol additive. The claim was contested for twenty years by scientists funded by the industry that made the additive, on the grounds that lead at these levels was natural and harmless. Patterson argued it with measurements, lost funding over it, and was left off the relevant national advisory panel.
+
+{{img:ice-lead}}
 
 The outcome is in the public health record. Leaded petrol was phased out in the United States through the late 1970s and 1980s, and the mean blood lead concentration of American children fell from about **16 micrograms per decilitre** at the end of the 1970s to under **1** today — the two curves, fuel lead sold and blood lead measured, tracking each other closely enough that they are usually plotted on the same axes. The global phase-out completed in 2021.
 
