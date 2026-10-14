@@ -202,21 +202,66 @@ further_reading:
   - citation: "Mitton, S. (2005). Fred Hoyle: A Life in Science. Aurum Press."
     url: null
     note: A biography of Hoyle, central to stellar nucleosynthesis.
+
+images:
+  - id: sun-sdo
+    src: /images/fields/stellar-astrophysics/sun-sdo.jpg
+    alt: The Sun in false colour from a space telescope, a textured disc with bright active regions and loops at its edge.
+    caption: >-
+      The Sun in extreme ultraviolet, seen by NASA's Solar Dynamics Observatory on 1 August
+      2010. It radiates $3.83 \times 10^{26}$ watts.
+    credit: NASA/SDO/AIA
+    license: Public domain
+    source: https://commons.wikimedia.org/wiki/File:Sun_-_August_1,_2010.jpg
+  - id: eddington
+    src: /images/fields/stellar-astrophysics/eddington.jpg
+    alt: Photograph of Arthur Eddington with short dark hair, in a dark suit and tie.
+    caption: >-
+      Arthur Eddington, who argued in 1920 that the stars shine by turning hydrogen into
+      helium.
+    credit: Bain Collection, Library of Congress
+    license: Public domain
+    source: https://commons.wikimedia.org/wiki/File:Arthur_Stanley_Eddington.jpg
+  - id: triple-alpha
+    src: /images/fields/stellar-astrophysics/triple-alpha.png
+    alt: A diagram of two helium-4 nuclei fusing into beryllium-8, which captures a third helium-4 to become carbon-12, with gamma rays emitted.
+    caption: >-
+      The triple-alpha process: two helium nuclei make beryllium-8, which falls apart almost
+      at once unless a third arrives in time to make carbon-12. Hoyle predicted the carbon
+      resonance that makes the last step fast enough.
+    credit: Borb
+    license: CC BY-SA 3.0
+    source: https://commons.wikimedia.org/wiki/File:Triple-Alpha_Process.svg
+  - id: hr-diagram
+    src: /images/fields/stellar-astrophysics/hr-diagram.jpg
+    alt: A Hertzsprung-Russell diagram of thousands of stars, luminosity against colour, showing the diagonal main sequence, the giants at upper right and the white dwarfs at lower left.
+    caption: >-
+      The Hertzsprung–Russell diagram: brightness against colour for about 23,000 stars from the Hipparcos and Gliese catalogues. Most
+      lie on the main sequence, burning hydrogen; giants sit above it and white dwarfs below.
+    credit: Richard Powell
+    license: CC BY-SA 2.5
+    source: https://commons.wikimedia.org/wiki/File:HRDiagram.png
 ---
 
 ## Not Enough Fuel
 
 By the 1850s physicists knew the Sun radiates an enormous power, and asked what supplies it. Burning coal would last a few thousand years. {{fig:william-thomson|William Thomson}} and Hermann von Helmholtz proposed that the Sun shines by slowly shrinking, turning gravitational energy into heat. That could last a few tens of millions of years. Geologists and Darwin wanted hundreds of millions. Thomson used his estimate to argue against Darwin's timescale for evolution, and the physicists seemed to have the stronger case.
 
+{{img:sun-sdo}}
+
 ## Mass Into Energy
 
 The answer came from a new kind of physics. In 1920 Francis Aston measured that a helium atom weighs about 0.7% less than four hydrogen atoms. {{fig:eddington|Arthur Eddington}} saw what this meant. By Einstein's $E = mc^2$, turning hydrogen into helium would release that missing mass as energy, enough to keep the Sun shining for billions of years. Critics objected that the Sun's core, at around 15 million degrees, was far too cool for protons to overcome their electrical repulsion. Eddington told them to go and find a hotter place.
+
+{{img:eddington}}
 
 [Quantum mechanics](/physics/quantum-mechanics/) settled the matter. In 1928 {{fig:george-gamow|George Gamow}} showed that particles can tunnel through energy barriers they could not classically cross, and in 1929 {{fig:robert-atkinson|Robert Atkinson}} and {{fig:fritz-houtermans|Fritz Houtermans}} applied it to stars. Protons fuse rarely, but a star has enough of them. In 1938–39 {{fig:hans-bethe|Hans Bethe}} worked out the actual reactions, the proton–proton chain and the carbon–nitrogen–oxygen cycle, and {{fig:carl-von-weizsacker|Carl Friedrich von Weizsäcker}} found the second independently.
 
 ## Forging the Elements
 
 If stars make helium, might they make the rest? The Big Bang made mostly hydrogen and helium. {{fig:fred-hoyle|Fred Hoyle}} argued that everything heavier was cooked in stars. One step seemed impossible: three helium nuclei must meet almost at once to make carbon, and the rate was far too low. In 1953 Hoyle predicted that carbon has an energy level at about 7.65 MeV that makes the reaction resonant, and persuaded {{fig:william-fowler|William Fowler}}'s sceptical group at Caltech to look. It was there.
+
+{{img:triple-alpha}}
 
 In 1957 {{fig:margaret-burbidge|Margaret Burbidge}}, {{fig:geoffrey-burbidge|Geoffrey Burbidge}}, Fowler and Hoyle set out how stars build almost every element: fusion up to iron in the cores of massive stars, then slow neutron capture in ageing giants and rapid neutron capture in violent explosions. {{fig:alastair-cameron|Alastair Cameron}} reached similar conclusions independently. The calcium in bones and the iron in blood were made in stars that died before the Sun formed.
 
@@ -243,3 +288,6 @@ Compare Kelvin's source, gravitational contraction. The energy a shrinking Sun c
 ## Stellar Lives
 
 Stellar astrophysics now explains the Hertzsprung–Russell diagram from [spectroscopy](/physics/astronomical-spectroscopy/) as a map of stellar lives. Stars spend most of their time on the main sequence burning hydrogen, swell into giants when the core's hydrogen runs out, and end in ways set by their mass, the subject of [compact objects](/physics/compact-objects/). Neutrinos from the Sun's core, detected since 1968 and from the CNO cycle since 2020, confirm that fusion is happening there now. The origin of the heaviest elements, gold and uranium among them, is still being settled.
+
+
+{{img:hr-diagram}}
