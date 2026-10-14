@@ -214,6 +214,35 @@ further_reading:
   - citation: "Kittel, C. (2005). Introduction to Solid State Physics (8th ed.). Wiley."
     url: null
     note: The classic undergraduate textbook.
+
+images:
+  - id: band-filling
+    src: /images/fields/solid-state-physics/band-filling.png
+    alt: Sketches of electron bands for a metal, a semimetal, semiconductors and an insulator, with a dashed Fermi level crossing a band in the metal and falling in a gap in the insulator.
+    caption: >-
+      Bands and the Fermi level (dashed). In a metal it falls inside a band, so electrons can
+      move up into empty states; in an insulator it sits in a wide gap. Semiconductors have a
+      narrow gap that heat or impurities can bridge.
+    credit: Nanite, after Kittel
+    license: CC0
+    source: https://commons.wikimedia.org/wiki/File:Band_filling_diagram.svg
+  - id: first-transistor
+    src: /images/fields/solid-state-physics/first-transistor.jpg
+    alt: A replica of the first point-contact transistor under a glass dome, a small triangle of plastic with gold foil contacts pressed onto a germanium block.
+    caption: >-
+      A replica of the point-contact transistor built at Bell Labs in December 1947: two gold
+      contacts pressed onto a slab of germanium.
+    credit: Lucent Technologies replica, U.S. federal photo
+    license: Public domain
+    source: https://commons.wikimedia.org/wiki/File:Replica-of-first-transistor.jpg
+  - id: silicon-wafer
+    src: /images/fields/solid-state-physics/silicon-wafer.jpg
+    alt: A large round silicon wafer covered in a grid of chips, reflecting rainbow colours.
+    caption: >-
+      A 12-inch silicon wafer patterned with chips, each holding billions of transistors.
+    credit: Peellden
+    license: CC BY-SA 3.0
+    source: https://commons.wikimedia.org/wiki/File:12-inch_silicon_wafer.jpg
 ---
 
 ## A Gas of Electrons
@@ -230,9 +259,13 @@ A year later {{fig:felix-bloch|Felix Bloch}} asked how an electron wave moves th
 
 The allowed energies in a crystal form *bands* separated by *gaps*. In 1931 {{fig:alan-herries-wilson|Alan Herries Wilson}} saw what this meant. If the highest occupied band is only partly full, electrons can shift to nearby empty states and carry a current: the solid is a metal. If the band is completely full, there is nowhere to go, and the solid is an insulator. A *semiconductor* is an insulator with a gap small enough that heat or impurities can put a few electrons across it. Wolfgang Pauli wrote that year that one should not work on semiconductors, which were a filthy mess. Their behaviour depended on traces of impurity no one could yet control.
 
+{{img:band-filling}}
+
 ## The Transistor
 
 The Second World War changed that. Radar needed crystal detectors, and wartime work produced germanium and silicon of unprecedented purity. After the war Bell Laboratories set up a group to build a solid replacement for the vacuum tube. In December 1947 {{fig:john-bardeen|John Bardeen}} and {{fig:walter-brattain|Walter Brattain}} pressed two gold contacts close together on a germanium crystal and found that a small current into one controlled a larger current through the other. Their leader, {{fig:william-shockley|William Shockley}}, who had not been present, spent the following weeks designing the junction transistor, which was easier to make and became the standard.
+
+{{img:first-transistor}}
 
 Shockley later left to found his own company in California. His management was so difficult that eight of his staff left in 1957 to form Fairchild Semiconductor, the seed of Silicon Valley. He spent his later years promoting discredited theories about race and intelligence. At Texas Instruments in 1958 {{fig:jack-kilby|Jack Kilby}} built a whole circuit on one piece of germanium. At Fairchild in 1959 {{fig:robert-noyce|Robert Noyce}} designed an integrated circuit on flat silicon with its connections printed on the surface, the form every chip has taken since.
 
@@ -266,3 +299,6 @@ The same numbers explain the heat capacity. At room temperature the thermal ener
 ## Everything Electronic
 
 Solid-state physics, renamed condensed matter physics in the 1970s, is now the largest branch of physics. Its devices are everywhere: transistors, lasers made of semiconductors, light-emitting diodes and solar cells. It also branched into stranger territory. Some metals lose their resistance entirely, a problem that defeated band theory for decades and became [superconductivity](/physics/superconductivity/). The magnetism of iron needed quantum mechanics of its own, in [magnetism](/physics/magnetism/). And a closer look at electrons in two dimensions revealed a new kind of order, [topological matter](/physics/topological-matter/).
+
+
+{{img:silicon-wafer}}
