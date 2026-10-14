@@ -285,6 +285,37 @@ further_reading:
   - citation: "Housecroft, C. E. & Sharpe, A. G. (2018). Inorganic Chemistry, 5th edition. Pearson."
     url: null
     note: The standard modern course, where coordination numbers, isomerism and stability constants are set out systematically.
+
+images:
+  - id: werner
+    src: /images/fields/coordination-chemistry/werner.jpg
+    alt: Portrait of Alfred Werner, heavy-set with a large moustache, in a dark suit.
+    caption: >-
+      Alfred Werner, who proposed in 1893 that a metal has a fixed number of positions around it
+      as well as a charge to balance.
+    credit: Unknown photographer
+    license: Public domain
+    source: https://commons.wikimedia.org/wiki/File:Alfred_Werner_(1866-1919).jpg
+  - id: hexol
+    src: /images/fields/coordination-chemistry/hexol.png
+    alt: A ball-and-stick model of four cobalt atoms, a central one joined to three outer ones by pairs of oxygen bridges, the outer ones each carrying four ammonias.
+    caption: >-
+      The hexol cation as found in a crystal: a central cobalt held by three pairs of hydroxide
+      bridges to three outer cobalts, each with four ammonias. It contains no carbon, and Werner
+      separated it into mirror-image forms.
+    credit: Ben Mills
+    license: Public domain
+    source: https://commons.wikimedia.org/wiki/File:Hexol-cation-from-xtal-2000-3D-balls.png
+  - id: fac-mer
+    src: /images/fields/coordination-chemistry/fac-mer.png
+    alt: Two structural drawings of cobalt with three glycinate ligands, one with the three nitrogens on one face of the octahedron and one with them around a meridian.
+    caption: >-
+      The two isomers of an octahedral MA₃B₃ complex, here cobalt tris(glycinate): facial, with
+      the three nitrogens on one face, and meridional, with them around a meridian. The octahedron
+      allows exactly these two.
+    credit: Smokefoot
+    license: Public domain
+    source: https://commons.wikimedia.org/wiki/File:Fac%26merCo(gly)3.svg
 ---
 
 ## More Ammonia Than the Valence Allows
@@ -298,6 +329,8 @@ The explanation on offer came from {{fig:blomstrand|Christian Wilhelm Blomstrand
 ## Two Kinds of Valence
 
 {{fig:alfred-werner|Alfred Werner}} was twenty-six when he proposed, in 1893, that the trouble was the assumption of a single kind of valence. A metal atom has two. The first balances ionic charge and can be satisfied by an ion anywhere in the solution. The second is a fixed number of positions, arranged in a definite geometry in contact with the metal, which can be occupied by *whole neutral molecules*.
+
+{{img:werner}}
 
 For cobalt(III) that number is six, and it is six regardless of the charge. This makes the whole luteo–purpureo–praseo series one pattern:
 
@@ -317,6 +350,8 @@ The isomer and ion counts, set out below, left one alternative standing in princ
 Since {{fig:louis-pasteur|Pasteur}}, optical activity had been tied to the asymmetric carbon atom — and, in the hands of those who wanted it to be, to the chemistry of living things. If a complex is octahedral, then one with three identical two-point ligands exists in two mirror-image forms, with nothing organic required. Werner and {{fig:victor-king|Victor King}} resolved such a cobalt complex into its enantiomers in 1911.
 
 Then in 1914 he did it with the hexol: a central cobalt bridged by pairs of hydroxide groups to three more cobalts, each carrying four ammonias. Four cobalt atoms, twelve ammonias, six hydroxides, six bromides as counter-ions, and **not one carbon atom**. The two forms rotate the plane of polarised light in opposite directions by equal amounts. Handedness, it turned out, is a property of arrangement in space and is available to any element that has a shape — the point taken up in [stereochemistry](/chemistry/stereochemistry/) from the organic side.
+
+{{img:hexol}}
 
 ## A Closer Look: Deciding Between Three Geometries by Counting
 
@@ -342,6 +377,8 @@ Both staircases were found. The last entry is the striking one: a compound built
 | **Octahedron** | **2** (cis, trans) | **2** (facial, meridional) |
 
 The octahedron is the only one of the three that predicts **two**. And two was what existed: praseo-green and violeo-violet CoCl₃·4NH₃, with every search for a third — including Jørgensen's, conducted in the hope of refuting Werner — failing. The argument is of a particular kind, and worth naming: it is not that the octahedron explains the two known isomers, but that its rivals require a third compound which repeated, motivated, competent searching could not find.
+
+{{img:fac-mer}}
 
 The hexol finishes it. Of the three arrangements, only the octahedron is chiral when three two-point ligands are fitted to it; the hexagon and the prism both have a mirror plane in that case and cannot give optical isomers. So a resolution into enantiomers excludes the other two outright. Three counts — ions, geometric isomers, optical isomers — none of them requiring any apparatus beyond a conductivity bridge, a balance and a polarimeter, and the structure of a class of thousands of compounds was fixed.
 
