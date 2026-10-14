@@ -244,6 +244,25 @@ further_reading:
   - citation: "Vargesson, N. (2015). Thalidomide-induced teratogenesis. Birth Defects Research C 105: 140–156."
     url: null
     note: The mechanism, the regulatory consequences, and the parts still unknown.
+
+images:
+  - id: pasteur-tartrate
+    src: /images/fields/stereochemistry/pasteur-tartrate.jpg
+    alt: An old glass bottle with a cork, holding pale crystals, with a handwritten label in French.
+    caption: >-
+      Left-handed ammonium tartrate crystals in a labelled bottle from the Musée Pasteur in Paris.
+    credit: Marie-Lan Taÿ Pamart
+    license: CC BY 4.0
+    source: https://commons.wikimedia.org/wiki/File:Left_ammonium_tartrate_crystals_Mus%C3%A9e_Pasteur_Cr%C3%A9er_le_cristal.jpg
+  - id: hands
+    src: /images/fields/stereochemistry/hands.png
+    alt: Two hands held up as mirror images, each holding a model amino acid whose four groups are arranged as mirror images of the other.
+    caption: >-
+      A carbon with four different groups comes in two forms related like a pair of hands:
+      mirror images, and no rotation turns one into the other.
+    credit: NASA Astrobiology Institute, vectorised by πϵρήλιο
+    license: Public domain
+    source: https://commons.wikimedia.org/wiki/File:Chirality_with_hands.svg
 ---
 
 ## A Difference With Almost No Signature
@@ -252,6 +271,8 @@ Tartaric acid, crystallised from wine lees, rotates the plane of polarised light
 
 He separated them with tweezers into two piles, dissolved each, and put both in a polarimeter. One solution rotated light to the right by the amount tartaric acid does; the other rotated it to the left by exactly as much; an equal mixture did nothing. So racemic acid is a one-to-one mixture of two substances that are mirror images, and the handedness survives dissolution — which means it belongs to the molecules and not to the crystal.
 
+{{img:pasteur-tartrate}}
+
 This is an inference about molecular architecture made in 1848, drawn from the shape of crystals and the rotation of light, with no theory of structure in existence. Pasteur then did something that mattered even more for biology: he found that a mould fed on the mixture consumed one hand and left the other untouched.
 
 ## Four Bonds to the Corners of a Tetrahedron
@@ -259,6 +280,8 @@ This is an inference about molecular architecture made in 1848, drawn from the s
 The explanation waited until 1874 and arrived twice in the same year. {{fig:vant-hoff|Jacobus Henricus van 't Hoff}}, aged 22, and {{fig:le-bel|Joseph Le Bel}} independently proposed that carbon's four bonds are not drawn in a plane, as the structural formulas of the day implied, but point towards the corners of a tetrahedron.
 
 Everything follows. A carbon carrying four *different* groups can be assembled in two ways related as object and mirror image, and no rotation brings one onto the other — exactly like a pair of hands. A molecule with one such centre is optically active and comes in two forms; a molecule with $n$ independent centres has up to $2^n$ stereoisomers. Glucose has four, so sixteen are possible, and all sixteen exist.
+
+{{img:hands}}
 
 {{fig:kolbe|Hermann Kolbe}}'s review of the proposal is worth quoting as a reminder of what a correct idea can sound like to a competent contemporary: he complained of a Dr J. H. van 't Hoff, employed at a veterinary college, who had no taste for exact chemical research and had mounted his Pegasus to proclaim how, on the chemical Parnassus, atoms appeared to him arranged in space.
 
