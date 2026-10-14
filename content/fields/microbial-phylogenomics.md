@@ -269,6 +269,26 @@ further_reading:
   - citation: "Quince, C., Walker, A. W., Simpson, J. T., Loman, N. J. & Segata, N. (2017). Shotgun metagenomics, from sampling to analysis. Nature Biotechnology 35: 833–844."
     url: null
     note: How metagenome-assembled genomes are actually produced, and where they go wrong.
+
+images:
+  - id: woese-tree
+    src: /images/fields/microbial-phylogenomics/woese-tree.png
+    alt: A rooted tree of life from ribosomal RNA with three branches, Bacteria, Archaea and Eucarya, each with named groups at the tips.
+    caption: >-
+      The universal tree from ribosomal RNA, after Woese and colleagues in 1990: three domains,
+      with animals, plants and fungi as small twigs within Eucarya.
+    credit: Maulucioni, after Woese et al. (1990)
+    license: CC BY-SA 3.0
+    source: https://commons.wikimedia.org/wiki/File:PhylogeneticTree,_Woese_1990.svg
+  - id: detection
+    src: /images/fields/microbial-phylogenomics/detection.png
+    alt: Two S-shaped curves of the chance of detecting a taxon against its abundance, one for 100 clones and one for 100,000 reads, three orders of magnitude apart.
+    caption: >-
+      The chance of seeing a taxon at least once. A hundred clones miss most taxa below 0.1%; a
+      hundred thousand reads see taxa at 0.01% almost every time.
+    credit: Drawn for Field Atlas from the numbers above
+    license: Field Atlas original
+    source: https://github.com/andifathulms/field-atlas/blob/main/scripts/diagrams/phylogeny.py
 ---
 
 ## The Ninety-Nine Per Cent
@@ -288,6 +308,8 @@ Metagenome-assembled genomes are a strange kind of object. They are consensus se
 ## The Tree, the Web, and Two Domains
 
 Whole genomes brought a harder problem than diversity. Genes move sideways in microbes. A gene for antibiotic resistance, for a metabolic step, for a toxin, can pass between unrelated organisms by conjugation, by virus, or by uptake of DNA from the water, and once arrived it is inherited normally. {{fig:ford-doolittle|W. Ford Doolittle}} argued in 1999 that if this happens often enough, the universal tree is not an approximation to microbial history but the wrong shape for it. A genome is a mosaic, and each tile may have its own ancestry.
+
+{{img:woese-tree}}
 
 The partial reply is that not all genes travel equally. Those of the ribosome and the transcription machinery are embedded in so many interactions that a transferred copy rarely works, and trees built from them agree with one another far more than chance allows. That core is what deep phylogenies use, and it is why a universal tree is still drawn — with the understanding that it is the history of a conserved core, not of every gene in any genome.
 
@@ -314,6 +336,8 @@ $$
 $$
 
 so nine times out of ten the organism is simply absent from the result. A survey of a hundred clones is blind below about one part in a thousand, and it is blind in a way that leaves no trace: the output looks like a complete community of a dozen abundant types.
+
+{{img:detection}}
 
 Modern amplicon sequencing returns $n = 10^{5}$ reads from one sample. For a taxon at $f = 10^{-4}$ the expected number of reads is $nf = 10$, and
 
