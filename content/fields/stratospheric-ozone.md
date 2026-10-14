@@ -273,6 +273,26 @@ further_reading:
   - citation: "World Meteorological Organization (2022). Scientific Assessment of Ozone Depletion: 2022. WMO Report 278."
     url: null
     note: "The quadrennial assessment: current chlorine burdens, recovery projections and what is still unresolved."
+
+images:
+  - id: ozone-hole-2012
+    src: /images/fields/stratospheric-ozone/ozone-hole-2012.jpg
+    alt: A satellite map of the southern hemisphere coloured by ozone, with a large blue and purple region of low ozone over Antarctica.
+    caption: >-
+      The Antarctic ozone hole on 22 September 2012, from NASA satellite data. Blue and purple
+      mark the lowest columns.
+    credit: NASA
+    license: Public domain
+    source: https://commons.wikimedia.org/wiki/File:2012_Antarctic_Ozone_Hole.jpg
+  - id: ozone-column
+    src: /images/fields/stratospheric-ozone/ozone-column.png
+    alt: Bars of the ozone column, about 300 Dobson units at mid-latitudes, about 280 in Antarctic October before 1980, and 90 to 120 in the 1990s and 2000s.
+    caption: >-
+      The ozone column from the table. The Antarctic October minimum fell from about 280 Dobson
+      units before 1980 to between 90 and 120.
+    credit: Drawn for Field Atlas from the table above
+    license: Field Atlas original
+    source: https://github.com/andifathulms/field-atlas/blob/main/scripts/diagrams/environment.py
 ---
 
 ## Molecules That Arrive Where Nothing Else Does
@@ -290,6 +310,8 @@ The groundwork had been laid by a different scare. {{fig:johnston|Harold Johnsto
 The expectation through the early 1980s was a gradual global thinning of a few per cent, concentrated at mid-latitudes and arriving over decades. Industry disputed even that, and the models' predictions were revised downward more than once, so the issue stalled.
 
 {{fig:farman|Joe Farman}}, {{fig:gardiner|Brian Gardiner}} and {{fig:shanklin|Jonathan Shanklin}} reported in 1985 that the ozone column above Halley Bay in Antarctica had been collapsing by about forty per cent every October since the late 1970s. The instrument was a Dobson spectrophotometer, a design from the 1920s, operated by hand.
+
+{{img:ozone-hole-2012}}
 
 Two things about that report are worth dwelling on. The first is that no model predicted it, and the chemistry then known could not produce it. The second is that the satellite in orbit had been measuring the same collapse for years. Its processing software contained a plausibility filter — values far outside the expected range were presumed to be instrument malfunction — and the Antarctic readings were so low that they were being flagged and set aside. The data existed; the expectation of what the data could look like prevented it from being seen. A ground station with one old instrument found what a satellite had been rejecting.
 
@@ -363,6 +385,8 @@ The hundred thousand is a *lifetime-integrated* total, and the reason it is so l
 | Loss between 14 and 20 km altitude | approaching 100% |
 
 Within that altitude band, in that season, essentially all of the ozone is destroyed. Not thinned — removed. And the mechanism that does it was absent from every model until a year after the observation, which is the honest summary of how well the field understood the stratosphere in 1985.
+
+{{img:ozone-column}}
 
 ## What It Was a Rehearsal For
 
