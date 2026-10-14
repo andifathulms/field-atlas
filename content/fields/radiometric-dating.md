@@ -231,6 +231,36 @@ further_reading:
   - citation: "Taylor, R. E. & Bar-Yosef, O. (2014). Radiocarbon Dating: An Archaeological Perspective. 2nd edition. Left Coast Press."
     url: null
     note: A thorough guide to how radiocarbon dating works and how archaeologists use it.
+
+images:
+  - id: canyon-diablo
+    src: /images/fields/radiometric-dating/canyon-diablo.jpg
+    alt: A heavy, pitted iron meteorite on display.
+    caption: >-
+      A piece of the Canyon Diablo meteorite. Its iron holds almost no uranium, so its lead is a
+      sample of the lead the solar system started with: the baseline Patterson needed.
+    credit: Vahe Martirosyan, UCLA Meteorite Gallery
+    license: CC BY-SA 2.0
+    source: https://commons.wikimedia.org/wiki/File:Canyon_Diablo,_UCLA_Meteorite_Gallery.jpg
+  - id: zircon
+    src: /images/fields/radiometric-dating/zircon.jpg
+    alt: A cluster of reddish-brown zircon crystals.
+    caption: >-
+      Zircon crystals. Zircon takes in uranium as it grows but almost no lead, so all the lead
+      found in it later came from decay; the oldest grains are 4.4 billion years old.
+    credit: Robert M. Lavinsky
+    license: CC BY-SA 3.0
+    source: https://commons.wikimedia.org/wiki/File:Zircon-200980.jpg
+  - id: lead-clock
+    src: /images/fields/radiometric-dating/lead-clock.png
+    alt: A rising curve of the ratio of lead-207 to lead-206 against age from 0 to 5 billion years, with the point for 4.55 billion years and a ratio of 0.618 marked.
+    caption: >-
+      The lead clock: the ratio of lead-207 to lead-206 made by decay, against age. It steepens
+      with age because uranium-235 was once far more plentiful. At 4.55 billion years it is
+      0.618, the table's value.
+    credit: Drawn for Field Atlas from the table above
+    license: Field Atlas original
+    source: https://github.com/andifathulms/field-atlas/blob/main/scripts/diagrams/nucleus.py
 ---
 
 ## Kelvin's Clock
@@ -243,9 +273,13 @@ In 1862 {{fig:william-thomson|William Thomson}}, later Lord Kelvin, calculated h
 
 Helium leaks out of rocks, so these ages were too low. In 1907 {{fig:bertram-boltwood|Bertram Boltwood}} at Yale found that lead is the stable end of uranium's decay chain, and dated minerals from the lead they contained, at up to 2.2 billion years. {{fig:arthur-holmes|Arthur Holmes}}, a student in London, used the method in 1911 to put the first numbers on the geological periods, and argued in 1913 for an Earth of at least 1.6 billion years. Geologists who had fought Kelvin for more time now found they had more than they wanted.
 
+{{img:zircon}}
+
 ## Four and a Half Billion Years
 
 Measuring the age of the Earth itself was harder. The Earth's surface is constantly recycled, so no rock survives from its formation. The answer lay in meteorites, which formed with the planets and have been unchanged since. At Chicago and then at Caltech, {{fig:clair-patterson|Clair Patterson}} spent years building a laboratory clean enough to measure tiny amounts of lead without contamination. In 1953 he measured the lead isotopes in the Canyon Diablo meteorite, and in 1956 published an age for the Earth and meteorites of 4.55 billion years. Along the way he discovered that the lead contamination he fought in his laboratory was everywhere, and spent the rest of his career campaigning against leaded petrol.
+
+{{img:canyon-diablo}}
 
 Rocks date the Earth. {{fig:willard-libby|Willard Libby}} found a clock for living things. Cosmic rays make carbon-14 high in the atmosphere, and plants and animals absorb it until they die. Afterwards it decays with a half-life of about 5,700 years. In 1949 Libby dated wood from Egyptian tombs of known age and got the right answers. Archaeology had its first absolute calendar. {{fig:hans-suess|Hans Suess}}, a chemist who had helped build the [shell model](/physics/nuclear-structure/) of the nucleus, showed in 1955 that burning fossil fuels was diluting the carbon-14 in the air, and later used ancient bristlecone pines to calibrate the clock against tree rings.
 
@@ -283,6 +317,8 @@ where $\lambda = \ln 2$ divided by the half-life. No measurement of the amount o
 | 4.60 | 0.639 |
 
 The ratio climbs quickly with age because uranium-235 was once far more plentiful. At the Earth's birth there was one atom of uranium-235 for every three of uranium-238. A shift of 50 million years changes the ratio by more than 3%, which is why Patterson could pin down 4.55 billion years so precisely.
+
+{{img:lead-clock}}
 
 ## Deep Time
 
