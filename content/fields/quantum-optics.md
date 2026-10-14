@@ -243,6 +243,27 @@ further_reading:
   - citation: "Hanbury Brown, R. (1991). Boffin: A Personal Story of the Early Days of Radar, Radio Astronomy and Quantum Optics. Adam Hilger."
     url: null
     note: A first-hand account of the intensity interferometer, including the hostility it met.
+
+images:
+  - id: photon-statistics
+    src: /images/fields/quantum-optics/photon-statistics.png
+    alt: Three rows of dots on time lines; the top row evenly spaced, the middle row at random, the bottom row in clumps.
+    caption: >-
+      Photon arrivals for the three kinds of light: antibunched, $g^{(2)}(0) < 1$, from a
+      single emitter (top); random, $g^{(2)}(0) = 1$, from a laser (middle); bunched,
+      $g^{(2)}(0) > 1$, from thermal light (bottom).
+    credit: Ajbura
+    license: CC BY-SA 4.0
+    source: https://commons.wikimedia.org/wiki/File:Photon_bunching.svg
+  - id: mot-cloud
+    src: /images/fields/quantum-optics/mot-cloud.jpg
+    alt: A glass vacuum cell with windows on each side, a small glowing red cloud of atoms suspended in the middle.
+    caption: >-
+      A cloud of ultracold atoms held by laser light in a magneto-optical trap, glowing in the
+      middle of a glass vacuum cell. Every photon an atom scatters slows it a little.
+    credit: Balping
+    license: CC BY-SA 4.0
+    source: https://commons.wikimedia.org/wiki/File:Cloud_of_ultracold_atoms_levitated_in_a_magneto-optical_trap.webp
 ---
 
 ## Correlating Intensities Instead of Amplitudes
@@ -256,6 +277,8 @@ The by-product was more important than the instrument. The correlation at zero b
 {{fig:glauber|Roy Glauber}} supplied the framework in 1963. The question "is this light coherent?" had meant "does it produce fringes?", a statement about the first-order correlation of the field. Glauber showed that a photodetector does not measure the field; it measures normally ordered correlations of the quantised field, and there is a whole hierarchy of them. Light can be first-order coherent and second-order anything.
 
 The second-order quantity, written $g^{(2)}(0)$, is the probability of detecting two photons at once divided by what it would be if detections were independent. It takes three characteristic values. For thermal light — a star, a filament, any hot body — the field amplitude itself fluctuates, bright moments deliver pairs, and $g^{(2)}(0) = 2$: the Hanbury Brown–Twiss bunching. For a laser well above threshold, the amplitude is steady and photon arrivals are Poisson, giving $g^{(2)}(0) = 1$. And for a single atom, $g^{(2)}(0) = 0$, because having just emitted, it has nothing left to emit until it is re-excited.
+
+{{img:photon-statistics}}
 
 That third case is the one classical physics cannot reach. Any classical field, however exotic, has $g^{(2)}(0) \ge 1$. {{fig:kimble|Jeff Kimble}}, {{fig:dagenais|Mario Dagenais}} and {{fig:mandel|Leonard Mandel}} measured $g^{(2)}(0) < 1$ from sodium atoms in 1977, and in doing so produced the first light that demonstrably required quantisation of the field, rather than merely of the matter absorbing it.
 
@@ -296,6 +319,8 @@ The same arithmetic run backwards is the shot-noise limit. Counting $N$ photons 
 ## Light as a Tool on Matter
 
 The last part of the subject turns the relationship around: instead of using matter to make interesting light, use light to control matter. An atom absorbing a photon takes its momentum, $h/\lambda$, which at sodium's 589 nm is $1.1 \times 10^{-27}$ kg·m/s. Divided by the mass of a sodium atom, $3.8 \times 10^{-26}$ kg, that is a velocity change of 2.9 cm/s per photon. Do it ten thousand times a second with a laser tuned slightly below resonance, so that only atoms moving towards the beam are Doppler-shifted into resonance, and the atoms are slowed. Six beams make a viscous medium for atoms, and {{fig:chu|Steven Chu}}, {{fig:phillips|William Phillips}} and {{fig:cohen-tannoudji|Claude Cohen-Tannoudji}} brought sodium to microkelvin temperatures this way — colder, by then, than anything else known. The [Bose–Einstein condensate](/physics/statistical-mechanics/) of 1995 was made from laser-cooled atoms, and the optical lattice clock followed.
+
+{{img:mot-cloud}}
 
 {{fig:haroche|Serge Haroche}} took the complementary route: trap the photon and send atoms past it. Microwave photons between superconducting mirrors of extraordinary quality survive more than a tenth of a second, during which the photon travels some 40,000 kilometres between reflections. A Rydberg atom crossing the cavity acquires a phase shift that depends on whether a photon is there, without absorbing it, so the same photon can be interrogated hundreds of times and its eventual disappearance watched as a quantum jump.
 
