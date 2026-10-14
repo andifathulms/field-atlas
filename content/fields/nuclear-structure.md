@@ -242,6 +242,26 @@ further_reading:
   - citation: "Brown, A. (1997). The Neutron and the Bomb: A Biography of Sir James Chadwick. Oxford University Press."
     url: null
     note: A life of the discoverer of the neutron, who later led the British team at Los Alamos.
+
+images:
+  - id: goeppert-mayer
+    src: /images/fields/nuclear-structure/goeppert-mayer.jpg
+    alt: Photograph of Maria Goeppert Mayer with short dark hair, in a dark dress.
+    caption: >-
+      Maria Goeppert Mayer, who explained the magic numbers with the nuclear shell model.
+    credit: Nobel Foundation
+    license: Public domain
+    source: https://commons.wikimedia.org/wiki/File:Maria_Goeppert-Mayer.jpg
+  - id: binding-energy
+    src: /images/fields/nuclear-structure/binding-energy.png
+    alt: Binding energy per particle against mass number, rising steeply from deuterium at 1.1 MeV to a peak near iron at 8.8 MeV and falling slowly to uranium at 7.6 MeV.
+    caption: >-
+      The table's five nuclei on the binding-energy curve, each computed from its mass. Moving
+      up the curve from either side releases energy: by joining light nuclei, or by splitting
+      heavy ones.
+    credit: Drawn for Field Atlas from the table above
+    license: Field Atlas original
+    source: https://github.com/andifathulms/field-atlas/blob/main/scripts/diagrams/nucleus.py
 ---
 
 ## Too Many Elements
@@ -261,6 +281,8 @@ In 1932 {{fig:james-chadwick|James Chadwick}} found the missing piece. The Jolio
 [Quantum mechanics](/physics/quantum-mechanics/) could not yet calculate a nucleus from its parts. Physicists used models instead. In 1935 {{fig:carl-von-weizsacker|Carl Friedrich von Weizsäcker}} treated the nucleus as a drop of liquid, whose binding energy grows with its volume, is reduced at its surface, and is weakened by the protons' repulsion. The formula fitted the measured masses remarkably well. {{fig:niels-bohr|Niels Bohr}} used the same picture to explain how a nucleus swallows a neutron. Four years later it would explain fission.
 
 Yet some nuclei did not fit. Those with 2, 8, 20, 28, 50, 82 or 126 protons or neutrons were unusually stable and common, like the noble gases among atoms. In 1949 {{fig:maria-goeppert-mayer|Maria Goeppert Mayer}}, an unpaid "voluntary associate professor" at the University of Chicago, found the explanation after Enrico Fermi asked her whether there was any evidence of spin–orbit coupling. There was. If each particle's spin is strongly tied to its orbit, the energy levels group into shells that close at exactly those numbers. {{fig:hans-jensen|Hans Jensen}}, with Otto Haxel and {{fig:hans-suess|Hans Suess}}, found the same answer in Germany. A drop and a set of orbits were both right, for different questions.
+
+{{img:goeppert-mayer}}
 
 ## A Closer Look: Weighing the Glue
 
@@ -289,6 +311,8 @@ Doing the same for other nuclei gives the binding energy per particle:
 | Uranium-235 | 235.043930 | 1783.9 | 7.6 |
 
 The numbers rise steeply among the light nuclei, peak near iron, and fall slowly towards uranium. This curve is the most important fact in nuclear energy. Joining light nuclei moves up the steep side and releases energy, which is fusion. Splitting a heavy nucleus into two medium ones moves up the gentle side, about 0.9 MeV per particle, which is fission. Iron sits at the top, and neither process can get energy out of it.
+
+{{img:binding-energy}}
 
 ## Splitting and Joining
 
