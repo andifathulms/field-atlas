@@ -234,6 +234,44 @@ further_reading:
   - citation: "Frankel, G. S. (1998). Pitting corrosion of metals. Journal of the Electrochemical Society 145: 2186–2198."
     url: null
     note: Why localised attack is hard to predict, by someone who has spent a career on it.
+
+images:
+  - id: sacrificial-anode
+    src: /images/fields/corrosion/sacrificial-anode.jpg
+    alt: A pitted, partly eaten-away block of metal bolted to a painted ship's hull.
+    caption: >-
+      A sacrificial anode on a ship's hull, half consumed. It corrodes in place of the steel,
+      which is Davy's remedy still in use.
+    credit: Zwergelstern
+    license: CC BY-SA 3.0
+    source: https://commons.wikimedia.org/wiki/File:Sacrificial_anode.jpg
+  - id: pilling-bedworth
+    src: /images/fields/corrosion/pilling-bedworth.png
+    alt: Bars of the Pilling–Bedworth ratio, magnesium 0.81, aluminium 1.29 and iron 2.15, with the usual protective range of 1 to 2 shaded.
+    caption: >-
+      The three ratios worked above. Magnesium's oxide is too little to cover the metal, iron's
+      too much to stay on; aluminium's sits just above one, and seals.
+    credit: Drawn for Field Atlas from the numbers above
+    license: Field Atlas original
+    source: https://github.com/andifathulms/field-atlas/blob/main/scripts/diagrams/electrochemistry.py
+  - id: flaking-rust
+    src: /images/fields/corrosion/flaking-rust.jpg
+    alt: An underwater photograph of a steel hull plate with layers of orange rust peeling away from it.
+    caption: >-
+      Layers of rust flaking off the hull of the wreck of the MV *Rockeater*. Each layer that
+      falls away exposes fresh steel.
+    credit: Pbsouthwood
+    license: CC BY-SA 4.0
+    source: https://commons.wikimedia.org/wiki/File:Layers_of_rust_succsessively_flaking_off_the_hull_of_the_MV_Rockeater_P6090649.jpg
+  - id: pipeline-pit
+    src: /images/fields/corrosion/pipeline-pit.jpg
+    alt: Two photographs of a buried steel pipe surface, before and after blasting, showing a deep pit.
+    caption: >-
+      A corrosion pit on a buried gas pipeline, before and after abrasive blasting. The
+      surrounding metal is nearly untouched.
+    credit: Derek Mawhinney
+    license: CC BY-SA 3.0
+    source: https://commons.wikimedia.org/wiki/File:Corrosion.Pit.jpg
 ---
 
 ## A Cell Nobody Wanted
@@ -243,6 +281,8 @@ In 1763 the Royal Navy sheathed the hull of HMS *Alarm* in copper, to stop shipw
 Sixty years later the Admiralty asked {{fig:davy|Humphry Davy}} what was happening. His answer was correct and is the foundation of the subject: copper and iron in contact in seawater constitute an electrical cell, and the iron, being the less noble metal, is the one that dissolves. The cure follows from the diagnosis. Attach to the copper a block of some metal still less noble — zinc, or iron itself — and that block will be consumed while the copper, and anything coupled to it, is protected.
 
 Davy's remedy is used today on every ship, pipeline and harbour pile in the world. Its first trial was a failure of a kind worth recording. Protected copper no longer releases copper ions into the water, and it was the copper ions that had been poisoning the shipworm. The Navy got hulls that did not corrode and did foul, and went back to unprotected copper.
+
+{{img:sacrificial-anode}}
 
 What made the subject quantitative was {{fig:ulick-evans|Ulick Evans}}'s demonstration, a century later, that a *single* metal corroding behaves the same way. Put a drop of salt solution containing an indicator on a clean steel plate and watch: the centre of the drop, where oxygen cannot reach, turns blue as iron dissolves, the rim turns pink as oxygen is reduced, and rust forms in a ring between them. The metal has separated itself into anode and cathode millimetres apart, and the current flowing between them can be measured. Corrosion became electrochemistry rather than description, with a rate in amperes.
 
@@ -300,15 +340,21 @@ $$
 
 Now read the three numbers.
 
+{{img:pilling-bedworth}}
+
 Aluminium's 1.29 is in the protective range. The oxide occupies slightly more space than the metal it replaced, so it covers the surface completely and sits in mild compression — enough to seal, not enough to buckle. The film is 2 to 4 nm thick, it forms within milliseconds of exposure to air, and if scratched it reforms instantly. Everything useful about aluminium follows from that one number being a little above one.
 
 Magnesium's 0.81 is below one: there is *not enough oxide to cover the metal*. The film is porous by necessity, oxygen reaches the surface through it, and oxidation continues without limit. Magnesium alloys must be coated or they corrode steadily, and magnesium burns.
 
 Iron's 2.15 is too large. The oxide occupies more than twice the volume of the metal consumed, so it grows in compression, buckles, cracks and flakes away, exposing fresh metal to repeat the process. Rust is not a protective film; it is a film that keeps failing, which is why iron corrodes to destruction while aluminium stops.
 
+{{img:flaking-rust}}
+
 The ratio is a necessary condition and nothing like a sufficient one — it says nothing about whether the oxide conducts ions, adheres, or survives chloride — and it is the only predictive law in the subject that needs no measurement at all. Stainless steel is the ratio exploited deliberately: add more than about 12% chromium to iron and the film that forms is chromium-rich, with a ratio near 2.0 and, crucially, adherent, so the alloy passivates where the iron alone does not.
 
 **Where the calculation stops being useful.** Everything above concerns *uniform* attack, and uniform attack is rarely what destroys a structure. Stainless steel in seawater does not rust generally; it pits. A chloride ion breaks the film at one point, the metal inside dissolves, the trapped solution becomes acidic by hydrolysis, and the acidity prevents the film from reforming — while the entire passive surface outside serves as the cathode feeding the reaction. A pit a tenth of a millimetre across, with square metres of cathode behind it, can bore through a plate in a year while the plate looks new. That asymmetry of areas, which Davy had identified in the iron nails, is what makes localised corrosion the hardest thing in the field to predict, and the open problem above.
+
+{{img:pipeline-pit}}
 
 ## What It Costs
 
