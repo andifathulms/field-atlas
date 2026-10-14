@@ -240,6 +240,35 @@ further_reading:
   - citation: "Kühlbrandt, W. (2014). The resolution revolution. Science 343: 1443–1444."
     url: null
     note: Two pages on why cryo-EM suddenly worked, written as it was happening.
+
+images:
+  - id: lysozyme
+    src: /images/fields/structural-biology/lysozyme.jpg
+    alt: A ribbon model of lysozyme inside a translucent surface, with red helices, yellow strands and a cleft across it.
+    caption: >-
+      Hen egg-white lysozyme, the first enzyme whose structure was solved, with the cleft where the
+      sugar chain binds.
+    credit: Yikrazuul, from PDB entry 132L
+    license: CC BY-SA 3.0
+    source: https://commons.wikimedia.org/wiki/File:Lysozyme.png
+  - id: ribosome-50s
+    src: /images/fields/structural-biology/ribosome-50s.jpg
+    alt: A dense model of the large ribosomal subunit, ochre RNA with blue proteins on its surface and a red mark at the active site.
+    caption: >-
+      The large ribosomal subunit of *Haloarcula marismortui*: RNA in ochre, proteins in blue on
+      the outside, and the active site, in red, deep in the RNA.
+    credit: Yikrazuul, from PDB entry 3CC2
+    license: CC BY-SA 3.0
+    source: https://commons.wikimedia.org/wiki/File:50S-subunit_of_the_ribosome_3CC2.png
+  - id: active-site-distance
+    src: /images/fields/structural-biology/active-site-distance.png
+    alt: Bars of distance, 1.5 angstroms for a covalent bond, 2.8 for a hydrogen bond, 3 to 4 for van der Waals contact, and 18 to the nearest protein atom.
+    caption: >-
+      The table's distances. Chemistry happens within about 4 Å; the nearest protein is 18 Å
+      from the active site, so the catalyst is RNA.
+    credit: Drawn for Field Atlas from the table above
+    license: Field Atlas original
+    source: https://github.com/andifathulms/field-atlas/blob/main/scripts/diagrams/structure.py
 ---
 
 ## A Mechanism Read Off a Map
@@ -247,6 +276,8 @@ further_reading:
 The first protein structure, [myoglobin](/biology/protein-crystallography/), explained very little. Myoglobin stores oxygen, and seeing where the haem sits confirmed that it has a pocket for it, which was not news. The question was whether structures would ever explain chemistry.
 
 Lysozyme answered it. {{fig:david-phillips|David Phillips}}'s group solved the enzyme at 2 Å in 1965, and then did the decisive experiment: solved it again with a sugar inhibitor bound. The substrate lies in a long groove across the molecule's face. Two acidic residues sit on either side of the bond that gets cut — Glu35 positioned to donate a proton to the leaving oxygen, Asp52 positioned to stabilise the positive charge that develops on the sugar. And the sugar in the fourth subsite cannot fit without being distorted out of its relaxed shape, towards the flattened geometry it must adopt in the transition state.
+
+{{img:lysozyme}}
 
 Everything in that paragraph is visible in the map. An enzyme accelerates a reaction by binding the transition state better than the substrate, and here was a picture of it being done. After lysozyme, "solve the structure" became the standard move for understanding any protein, and the rest of the field is about extending the range of what can be solved.
 
@@ -257,6 +288,8 @@ Everything in that paragraph is visible in the map. An enzyme accelerates a reac
 **Membranes.** A membrane protein has a hydrophobic belt that must be in contact with lipid, so it will not dissolve in water, and the detergents that keep it soluble interfere with crystal packing. The consensus was that these proteins could not be crystallised, which was awkward, since they are about a quarter of the proteome and most drug targets. {{fig:hartmut-michel|Hartmut Michel}} found conditions that worked for a bacterial photosynthetic reaction centre, and {{fig:deisenhofer|Johann Deisenhofer}} and {{fig:huber|Robert Huber}} solved it in 1985. The structure shows the pigments down which an electron hops after a photon is absorbed, at spacings that explain the direction and speed of the transfer — a result that belongs as much to [wave optics](/physics/wave-optics/) and quantum mechanics as to biology.
 
 **Size.** By the late 1990s the frontier was the ribosome: two subunits, three RNA chains of several thousand bases, more than fifty proteins, a quarter of a million atoms, and a crystal that diffracts badly. Three groups solved it between 1999 and 2001, in a race described frankly by one of the participants.
+
+{{img:ribosome-50s}}
 
 ## A Closer Look: Eighteen Ångströms of Nothing
 
@@ -272,6 +305,8 @@ The argument from the structure is a distance measurement. In the 2.4 Å map of 
 | 18 Å | five water molecules' worth of nothing |
 
 No chemistry reaches 18 Å. Acid–base catalysis requires a proton donor in hydrogen-bonding range; electrostatic stabilisation falls off with distance and, through water, is screened within a few ångströms. Whatever the ribosomal proteins do — and they do stabilise the structure, and assist assembly — they cannot be performing the catalysis. The catalytic site is lined by RNA bases, and the ribosome is therefore a ribozyme.
+
+{{img:active-site-distance}}
 
 The consequence reaches back four billion years. Protein synthesis cannot have required proteins to begin with, so the machine that makes proteins is made of the other polymer. {{fig:crick|Crick}}, Orgel and {{fig:woese|Woese}} had each suggested in the 1960s that RNA came first, on the grounds that it can both carry information and fold; catalytic RNAs were found in the 1980s, which showed it was possible; the ribosome structure showed that the most fundamental process in the cell still works that way.
 
