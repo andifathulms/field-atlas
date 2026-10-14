@@ -220,11 +220,41 @@ further_reading:
   - citation: "Hodgkin, A. L. (1964). The Conduction of the Nervous Impulse. Liverpool University Press."
     url: null
     note: A short, clear account of the ionic theory by one of its authors.
+
+images:
+  - id: galvani
+    src: /images/fields/electrophysiology/galvani.jpg
+    alt: An eighteenth-century engraving of a laboratory with an electrostatic machine on a table and dissected frog legs hanging from wires.
+    caption: >-
+      A plate from Galvani's 1791 account of his experiments: an electrostatic machine and
+      dissected frog legs, connected by wires.
+    credit: Luigi Galvani
+    license: Public domain
+    source: https://commons.wikimedia.org/wiki/File:Luigi_Galvani_Experiment.jpeg
+  - id: squid-axon
+    src: /images/fields/electrophysiology/squid-axon.jpg
+    alt: A hand holding a fine glass pipette over a dish containing a pale, threadlike squid giant axon.
+    caption: >-
+      A squid giant axon in a dish, wide enough to take an electrode down its length.
+    credit: NIH History Office
+    license: Public domain
+    source: https://commons.wikimedia.org/wiki/File:Giant_Axon_of_Squid_(14356033761).jpg
+  - id: membrane-voltages
+    src: /images/fields/electrophysiology/membrane-voltages.png
+    alt: A voltage scale from −100 to +80 millivolts marking potassium only at −75, rest at −60, the impulse peak at +42 and sodium only at +55.
+    caption: >-
+      The chapter's four voltages on one scale. Rest sits near potassium's −75 mV; at the
+      impulse's peak, when sodium dominates, the membrane swings towards sodium's +55.
+    credit: Drawn for Field Atlas from the numbers above
+    license: Field Atlas original
+    source: https://github.com/andifathulms/field-atlas/blob/main/scripts/diagrams/brain.py
 ---
 
 ## Animal Electricity
 
 In the 1780s {{fig:luigi-galvani|Luigi Galvani}}, a professor of anatomy in Bologna, found that the legs of a dissected frog twitched when a nerve and muscle were joined by an arc of metal. He concluded that animals make their own electricity, stored in the muscle and carried by the nerves, and published in 1791. {{fig:alessandro-volta|Alessandro Volta}} at first agreed, then argued that the current came from the contact of two different metals, with the frog merely detecting it. To prove his point, in 1800 he stacked discs of zinc and copper separated by wet card and made the first battery. Galvani's reply, that a nerve touching a muscle could make it twitch with no metal at all, attracted less notice.
+
+{{img:galvani}}
 
 Both were partly right, and the instruments to settle the matter came slowly. In the 1840s {{fig:emil-du-bois-reymond|Emil du Bois-Reymond}} in Berlin wound galvanometers with thousands of turns of wire, sensitive enough to detect the currents of living tissue. He found that a stimulated nerve showed a "negative variation", a brief drop in its resting current that ran along the nerve with the impulse. It was the first detection of the action potential.
 
@@ -237,6 +267,8 @@ What the process was remained unclear. In 1902 Julius Bernstein proposed that th
 ## The Squid Axon
 
 The answer to Bernstein's question came from the squid, whose giant axons, up to a millimetre across, control its jet escape. In 1939 {{fig:alan-hodgkin|Alan Hodgkin}} and {{fig:andrew-huxley|Andrew Huxley}} at Plymouth slid a fine wire inside one and recorded the voltage directly. During an impulse it did not just fall to zero, as Bernstein's theory said. It overshot to about 40 millivolts positive. Then the war intervened.
+
+{{img:squid-axon}}
 
 Afterwards they used the voltage clamp, developed by Kenneth Cole and George Marmont, which holds the membrane voltage fixed and measures the current needed to hold it. By replacing the sodium in the seawater, they separated the current into two parts. When the voltage rises, the membrane first opens to sodium ions, which rush in and drive the voltage higher, then closes to sodium and opens to potassium, which flows out and restores it. In 1952 they fitted the measurements with four differential equations. Huxley solved them on a hand-cranked calculator, and they reproduced the shape of the action potential and predicted a speed of 18.8 metres per second against a measured 21.2.
 
@@ -269,6 +301,8 @@ V = 25.1 \ln \frac{1 \times 20 + 0.04 \times 440 + 0.45 \times 52}{1 \times 400 
 $$
 
 At the peak of an impulse the sodium permeability rises to about 20 times that of potassium. The same equation then gives $25.1 \ln (8843/1652) \approx +42$ mV, close to the overshoot Hodgkin and Huxley measured. The action potential is a switch between two permeabilities.
+
+{{img:membrane-voltages}}
 
 How many ions does this take? The membrane stores about 1 microfarad per square centimetre, so a 100 millivolt swing moves $10^{-7}$ coulombs per square centimetre, about $6 \times 10^{11}$ ions. One centimetre of a half-millimetre squid axon has 0.16 cm² of membrane, so about $10^{11}$ ions cross it per impulse. The same length contains about $5 \times 10^{17}$ potassium ions. One impulse changes the inside by roughly one part in five million, which is why an axon can fire thousands of times with its pumps switched off.
 
