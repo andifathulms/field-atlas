@@ -234,6 +234,46 @@ further_reading:
   - citation: "Compton, R. G. & Banks, C. E. (2018). Understanding Voltammetry, 3rd edition. World Scientific."
     url: null
     note: Modern, practical, and clear about the difference between thermodynamic and kinetic limits.
+
+images:
+  - id: ph-millivolts
+    src: /images/fields/electrode-potentials/ph-millivolts.png
+    alt: A straight line of electrode potential against pH, rising 59.2 mV per pH unit to 830 mV across fourteen units.
+    caption: >-
+      The Nernst equation for a pH electrode: 59.2 mV per unit, 830 mV across the whole scale.
+      Because the range is a factor of $10^{14}$, each millivolt of error is 3.9% in
+      concentration.
+    credit: Drawn for Field Atlas from the numbers above
+    license: Field Atlas original
+    source: https://github.com/andifathulms/field-atlas/blob/main/scripts/diagrams/electrochemistry.py
+  - id: polarograph
+    src: /images/fields/electrode-potentials/polarograph.jpg
+    alt: A cream-coloured instrument with dials and knobs on a museum plinth.
+    caption: >-
+      A manual polarograph, model LP 54, at the J. Heyrovský Institute of Physical Chemistry in
+      Prague.
+    credit: Pavlína Jáchimová, Czech Academy of Sciences
+    license: CC BY-SA 4.0
+    source: https://commons.wikimedia.org/wiki/File:Manual_polarograph_LP_54_at_J._Heyrovsky_Institute_of_Physical_Chemistry.jpg
+  - id: beckman-ph-meter
+    src: /images/fields/electrode-potentials/beckman-ph-meter.jpg
+    alt: A wooden box with its lid open, showing a meter face, knobs and printed instructions inside the lid.
+    caption: >-
+      Beckman's Model G pH meter in its wooden case, with the instructions pasted inside the lid.
+      Its dial reads pH 0 to 13.
+    credit: Beckman Instruments, Science History Institute
+    license: Public domain
+    source: https://commons.wikimedia.org/wiki/File:Beckman_Model_G_Glass_Electrode_pH_Meter_-_DPLA_-_69becaef69db5a86aa485bd56de37e7d.jpg
+  - id: iron-pourbaix
+    src: /images/fields/electrode-potentials/iron-pourbaix.png
+    alt: A diagram of potential against pH divided into regions labelled Fe, Fe2+, Fe3+, Fe2O3, Fe3O4 and Fe(OH)2, with two dashed lines marking where water itself is oxidised and reduced.
+    caption: >-
+      Pourbaix's map for iron. Low down, the metal itself is stable; at low pH and higher
+      potential it dissolves as ions; elsewhere it is covered by an oxide. The dashed lines bound
+      the region where water is stable.
+    credit: Tem5psu
+    license: CC BY-SA 4.0
+    source: https://commons.wikimedia.org/wiki/File:Fe-pourbaix.png
 ---
 
 ## Where the Voltage Comes From
@@ -272,6 +312,8 @@ So for a one-electron electrode, a **tenfold** change in concentration moves the
 
 That is why a pH meter reads what it reads. A glass electrode responds to hydrogen ion activity, each pH unit is a factor of ten, and the instrument is therefore a voltmeter with a scale of 59.2 mV per pH unit — which is exactly what the slope control on the back of the meter is calibrating when it is standardised against two buffers.
 
+{{img:ph-millivolts}}
+
 The logarithm has a second consequence, less often stated. Differentiating, a voltage error $\delta E$ corresponds to a relative concentration error
 
 $$
@@ -290,6 +332,13 @@ Three instruments came out of this, and between them they account for a large sh
 
 {{fig:heyrovsky|Jaroslav Heyrovský}}'s polarograph, from 1922, uses an electrode made of mercury dripping from a capillary, so that each measurement is made on a surface a few seconds old and nothing accumulates on it. Sweeping the potential and recording the current gives a series of steps, one per reducible species, positioned by identity and sized by concentration. It was the first instrument that could identify and quantify several metals in one run at micromolar levels, and it dominated trace analysis for decades.
 
+{{img:polarograph}}
+
 The pH meter required an amplifier before it could exist. {{fig:haber|Fritz Haber}} and {{fig:klemensiewicz|Zygmunt Klemensiewicz}} established in 1909 that a thin glass membrane develops a potential proportional to the difference in hydrogen ion activity across it — but glass thin enough to respond has a resistance of hundreds of megohms, which no galvanometer can read without loading the signal to nothing. {{fig:beckman|Arnold Beckman}} solved it in 1934 with vacuum tubes, in a sealed and portable box, because a chemist at the California Fruit Growers Exchange needed to measure the acidity of lemon juice. The company he founded on it supplied much of the instrumentation of twentieth-century chemistry.
 
+{{img:beckman-ph-meter}}
+
 {{fig:pourbaix|Marcel Pourbaix}}'s contribution was not an instrument but a map. For each element he computed which species is thermodynamically stable at every combination of potential and pH, and drew the regions: where the metal itself is stable, where it dissolves, where it coats itself in an oxide. A glance at the diagram for iron shows why it rusts in most of the ordinary world and is protected in concrete, whose pore water is strongly alkaline. The diagrams were worked out in occupied Belgium during the war and are still the first thing a corrosion engineer consults — which is where this thread goes next, in [corrosion](/chemistry/corrosion/).
+
+
+{{img:iron-pourbaix}}
