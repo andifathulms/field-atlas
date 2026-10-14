@@ -239,6 +239,46 @@ further_reading:
   - citation: "Heilbron, J. L. (1974). H. G. J. Moseley. University of California Press."
     url: null
     note: The short life of the man who found what the table was actually ordered by.
+
+images:
+  - id: mendeleev-table
+    src: /images/fields/periodic-system/mendeleev-table.jpg
+    alt: A printed table in Russian of the elements with their atomic weights, arranged in rows and columns by group.
+    caption: >-
+      Mendeleev's periodic table as printed in his textbook *Osnovy khimii* (Principles of
+      Chemistry), 1869–71.
+    credit: Dmitri Mendeleev, Science History Institute
+    license: Public domain
+    source: https://commons.wikimedia.org/wiki/File:Dmitry_Mendeleyev_Osnovy_Khimii_1869-1871_first_periodic_table.jpg
+  - id: argon-tube
+    src: /images/fields/periodic-system/argon-tube.jpg
+    alt: A glass discharge tube bent into the letters Ar, glowing violet-pink against black.
+    caption: >-
+      Argon glowing in a discharge tube shaped into its symbol. It reacts with nothing, which is
+      how Rayleigh and Ramsay found it: it was what remained of air after everything known had
+      been removed.
+    credit: Pslawinski
+    license: CC BY-SA 2.5
+    source: https://commons.wikimedia.org/wiki/File:ArTube.jpg
+  - id: germanium
+    src: /images/fields/periodic-system/germanium.jpg
+    alt: A shiny, silver-grey chunk of germanium with sharp, faceted surfaces.
+    caption: >-
+      Twelve grams of germanium, the element Mendeleev described as eka-silicon fifteen years
+      before Winkler isolated it.
+    credit: Hi-Res Images of Chemical Elements
+    license: CC BY 3.0
+    source: https://commons.wikimedia.org/wiki/File:Ultrapure_chunk_of_polycrystalline_germanium,_12_grams.jpg
+  - id: moseley-spectra
+    src: /images/fields/periodic-system/moseley-spectra.jpg
+    alt: Photographic X-ray spectra stacked in a staircase, one strip per element from calcium at the top through titanium, vanadium, chromium, manganese, iron, cobalt, nickel and copper to brass.
+    caption: >-
+      Moseley's X-ray spectra, calcium to copper, as reproduced by the Braggs in 1915. The lines
+      step along evenly, one step per element, and cobalt comes before nickel although it is
+      the heavier. Brass shows the lines of copper and of zinc.
+    credit: Henry Moseley, in W. H. and W. L. Bragg, X Rays and Crystal Structure (1915)
+    license: Public domain
+    source: https://commons.wikimedia.org/wiki/File:X_rays_and_crystal_structure_(1915)_(14591321950).jpg
 ---
 
 ## The Pattern Several People Saw
@@ -249,6 +289,8 @@ Karlsruhe left chemistry with one agreed table of atomic weights, and within a d
 
 {{fig:mendeleev|Dmitri Mendeleev}} came to it in 1869 through a textbook — he needed an order in which to present the elements to students — and his table was not notably better than Odling's. What he did with it was different in kind. He left gaps, asserting that elements must exist to fill them. He put tellurium before iodine although tellurium weighs more, because their chemistry demanded it. And he revised published atomic weights that conflicted with the position he thought an element should occupy: beryllium from 13.5 to 9, indium, uranium from 120 to 240. Those were measurements made by competent people, overruled by a pattern.
 
+{{img:mendeleev-table}}
+
 {{fig:lothar-meyer|Lothar Meyer}} had the same arrangement independently, and published a graph of atomic volume against weight in 1864 that shows the periodicity more vividly than any table. The two later argued about priority. The conventional verdict — Meyer found it, Mendeleev bet on it — is roughly right and flatters both of them, since the arrangement was in the air.
 
 ## A Family With No Column
@@ -256,6 +298,8 @@ Karlsruhe left chemistry with one agreed table of atomic weights, and within a d
 The table's sternest test came from an element nobody had looked for, and it was found because of a discrepancy in the fourth decimal place.
 
 {{fig:rayleigh|Lord Rayleigh}} had been measuring gas densities carefully for years when he noticed that nitrogen prepared from the air was consistently denser than nitrogen prepared from ammonia — by about half a per cent, reproducibly, well beyond his errors. With {{fig:ramsay|William Ramsay}} he set about removing everything known from a sample of air, burning away the oxygen and absorbing the nitrogen with hot magnesium, and found a residue of about one per cent of the original volume that would react with nothing at all. They named it argon, from the Greek for idle.
+
+{{img:argon-tube}}
 
 An element that forms no compounds is awkward in a system built on valency, and the table had no column for it. {{fig:mendeleev|Mendeleev}} initially doubted that it was an element, suggesting it might be a triatomic form of nitrogen. Within four years Ramsay had found helium in a uranium mineral, and then neon, krypton and xenon by fractionating liquid air — a whole family, all unreactive, with atomic weights that placed them between the halogens and the alkali metals.
 
@@ -287,6 +331,8 @@ Density is harder, because density does not interpolate linearly — but *atomic
 
 Every entry agrees to within about a per cent. Check the consistency: $72.3 / 5.47 = 13.2$, which is the atomic volume, exactly as the interpolation required.
 
+{{img:germanium}}
+
 This is not what a classification does. A classification sorts what is already in hand; this made five quantitative statements about a substance nobody possessed, any one of which could have failed. Gallium in 1875 came close to failing: {{fig:lecoq|Lecoq de Boisbaudran}} measured its density as 4.7 against a prediction of 5.9, and Mendeleev wrote to tell him his sample was contaminated. On repurification it came out at 5.9.
 
 **What the predictions cost.** It is worth recording the failures too, because the atlas's business is what a method can and cannot do. Mendeleev predicted elements lighter than hydrogen — coronium, and an "element zero" filling the role of the ether — which do not exist. He initially refused to accept argon, suggesting it was a triatomic form of nitrogen, because it fitted nowhere. And the pattern he was predicting *from* had no explanation at all: nothing in the table said why periods should be eight long, or why the length should change further down. A method can be reliable and unexplained at the same time, and for forty-four years this one was.
@@ -296,6 +342,8 @@ This is not what a classification does. A classification sorts what is already i
 The explanation came from physics, and it arrived in two parts.
 
 The first was a correction to the ordering itself. {{fig:moseley|Henry Moseley}} bombarded element after element with electrons and measured the frequency of the characteristic X-rays each emitted. Plotting the square root of frequency against position gave a straight line with equal steps, one per element, and the step corresponds to one unit of positive nuclear charge. So the ordering principle is an integer — the atomic number — and not the weight. All three of the inversions that had embarrassed the table disappear, because tellurium has a lower atomic number than iodine while weighing more. The integer also did something the weights could not: it said how many elements can lie between two known ones, so the remaining gaps could be counted rather than guessed. Seven were outstanding between hydrogen and uranium; all seven were eventually found or made.
+
+{{img:moseley-spectra}}
 
 The second part was the shell structure of the atom, which says why periods have the lengths they do — and that belongs to [old quantum theory](/physics/old-quantum-theory/) and to [chemical bonding](/chemistry/chemical-bonding/).
 
