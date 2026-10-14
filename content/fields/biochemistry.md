@@ -219,6 +219,35 @@ further_reading:
   - citation: "Berg, J. M., Tymoczko, J. L., Gatto, G. J. & Stryer, L. (2019). Biochemistry (9th ed.). W. H. Freeman."
     url: null
     note: The standard textbook.
+
+images:
+  - id: citric-acid-cycle
+    src: /images/fields/biochemistry/citric-acid-cycle.jpg
+    alt: A circular diagram of the citric acid cycle, from acetyl-CoA joining oxaloacetate to form citrate around to oxaloacetate again, with the enzymes and molecules at each step.
+    caption: >-
+      The citric acid cycle Krebs found in 1937: a two-carbon unit enters, is burned to carbon
+      dioxide step by step, and the carrier it joined is regenerated.
+    credit: Narayanese, WikiUserPedia, YassineMrabet and TotoBaggins
+    license: CC BY-SA 3.0
+    source: https://commons.wikimedia.org/wiki/File:Citric_acid_cycle_with_aconitate_2.svg
+  - id: atp-synthase
+    src: /images/fields/biochemistry/atp-synthase.jpg
+    alt: A ribbon model of a large protein complex in grey, with one subunit highlighted in green.
+    caption: >-
+      The head of ATP synthase, from John Walker's 1994 structure: the rotary machine that uses
+      the proton gradient Mitchell predicted to make ATP.
+    credit: Abrahams, Leslie, Lutter and Walker, PDB 1BMF
+    license: CC0
+    source: https://commons.wikimedia.org/wiki/File:ATP5A1_within_ATP_synthase_-_1BMF.png
+  - id: atp-turnover
+    src: /images/fields/biochemistry/atp-turnover.png
+    alt: Two bars, about 40 kg of ATP made and used in a day against about 250 g in the body at any moment.
+    caption: >-
+      A resting adult's ATP: about 40 kg made and spent a day from a stock of about 250 g, so
+      each molecule is rebuilt about 160 times a day.
+    credit: Drawn for Field Atlas from the numbers above
+    license: Field Atlas original
+    source: https://github.com/andifathulms/field-atlas/blob/main/scripts/diagrams/cell.py
 ---
 
 ## Chemistry or Life?
@@ -232,6 +261,8 @@ Fermentation was the test case. {{fig:louis-pasteur|Pasteur}} showed that it nee
 What were enzymes? In 1913 {{fig:leonor-michaelis|Leonor Michaelis}} and {{fig:maud-menten|Maud Menten}} described how fast they work, treating each enzyme as binding its target before transforming it. In 1926 {{fig:james-sumner|James Sumner}} crystallised the enzyme urease and showed it was a protein. The eminent chemist Richard Willstätter disputed it for years, but by the 1930s it was clear: enzymes are proteins, each shaped to catalyse one reaction.
 
 Biochemists then traced how cells break down food. Sugar is split step by step, and in 1937 {{fig:hans-krebs|Hans Krebs}}, who had fled Nazi Germany, found the cycle of reactions in which the fragments are burned to carbon dioxide. Fritz Lipmann identified ATP as the molecule in which the energy is captured and spent. Every living thing, from bacteria to people, turned out to use the same core pathways.
+
+{{img:citric-acid-cycle}}
 
 ## A Closer Look: Your Weight in ATP
 
@@ -247,8 +278,12 @@ A mole of ATP weighs about 507 grams, so that is roughly 40 kilograms of ATP mad
 
 Yet the body contains only about 250 grams of ATP at any moment. So each ATP molecule must be rebuilt from its breakdown products, about $40{,}000 / 250 = 160$ times a day, roughly every nine minutes. The machine that rebuilds it is ATP synthase, a rotary motor in the mitochondrial membrane. Protons flowing through it turn a rotor about a hundred times a second, and each full turn makes three ATP molecules. That protons drive it is what {{fig:peter-mitchell|Peter Mitchell}} proposed in 1961. The rotary motor itself was worked out later, by Paul Boyer and John Walker.
 
+{{img:atp-turnover}}
+
 ## Energy From a Membrane
 
 Mitchell's chemiosmotic theory was the last great surprise of classical biochemistry. For years biochemists had searched for a chemical intermediate that links burning food to making ATP. Mitchell, working from a private laboratory in a restored Cornish manor house, argued that there was none. Respiration pumps protons across a membrane, and their flow back drives ATP synthesis. It was ridiculed for a decade and then confirmed. Bacteria, mitochondria and chloroplasts all make ATP this way, a sign of their shared ancestry.
+
+{{img:atp-synthase}}
 
 By the 1950s biochemistry had also merged with genetics. The one gene–one enzyme idea tied genes to proteins, and [molecular biology](/biology/molecular-biology/) found how genes encode them. The structures of cell parts and how enzymes are organised in space became [cell biology](/biology/cell-biology/).
