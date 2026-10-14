@@ -207,6 +207,44 @@ further_reading:
   - citation: "Futuyma, D. J. & Kirkpatrick, M. (2017). Evolution (4th ed.). Sinauer Associates."
     url: null
     note: The standard university textbook.
+
+images:
+  - id: darwin-i-think
+    src: /images/fields/evolutionary-biology/darwin-i-think.jpg
+    alt: A notebook page in Darwin's handwriting headed "I think", with a small branching tree sketched below it.
+    caption: >-
+      Darwin's notebook, 1837: "I think", above the first sketch of a tree of descent. The
+      branches marked with bars are living species; those ending without them have gone extinct.
+    credit: Charles Darwin, Notebook B
+    license: Public domain
+    source: https://commons.wikimedia.org/wiki/File:Darwin_Tree_1837.png
+  - id: wallace
+    src: /images/fields/evolutionary-biology/wallace.jpg
+    alt: Photograph of Alfred Russel Wallace, white-bearded and wearing glasses, seated in a chair.
+    caption: >-
+      Alfred Russel Wallace around 1895, whose letter from the Malay Archipelago in 1858 held the
+      same theory as Darwin's.
+    credit: London Stereoscopic and Photographic Company
+    license: Public domain
+    source: https://commons.wikimedia.org/wiki/File:Alfred-Russel-Wallace-c1895.jpg
+  - id: archaeopteryx
+    src: /images/fields/evolutionary-biology/archaeopteryx.jpg
+    alt: A fossil slab showing a bird-like skeleton with feathered wings, clawed fingers and a long bony tail.
+    caption: >-
+      The Berlin specimen of *Archaeopteryx*: feathers and wings, but also teeth, clawed fingers
+      and a long bony tail.
+    credit: Uwe Jelting
+    license: CC BY 3.0
+    source: https://commons.wikimedia.org/wiki/File:Archaeopteryx_Plate_In_Berlin_(184272019).jpg
+  - id: eye-time
+    src: /images/fields/evolutionary-biology/eye-time.png
+    alt: A row of 55 short blocks, each 364,000 years long, laid end to end along a 20-million-year bar for the Cambrian explosion.
+    caption: >-
+      Nilsson and Pelger's estimate of about 364,000 generations for a camera eye, laid end to end
+      along the Cambrian: it fits 55 times.
+    credit: Drawn for Field Atlas from the numbers above
+    license: Field Atlas original
+    source: https://github.com/andifathulms/field-atlas/blob/main/scripts/diagrams/heredity.py
 ---
 
 ## A Theory in a Notebook
@@ -215,11 +253,17 @@ The idea that species change was not new in the nineteenth century. Lamarck had 
 
 {{fig:darwin|Charles Darwin}} found one after returning from the five-year voyage of the *Beagle*. In 1838, reading Malthus on population, he saw that if more individuals are born than can survive, and if they vary in heritable ways, then favourable variations will accumulate. Breeders did this deliberately with pigeons and dogs. Nature would do it blindly, over far longer times. He wrote it up privately in 1844 and then spent fourteen years gathering evidence.
 
+{{img:darwin-i-think}}
+
 ## Wallace's Letter
 
 In June 1858 a letter arrived from {{fig:wallace|Alfred Russel Wallace}}, collecting beetles and birds in the Malay Archipelago. It contained the same theory. Darwin's friends arranged for both men's papers to be read at the Linnean Society, and Darwin rushed out an "abstract" of his planned big book. That was *On the Origin of Species* (1859). Booksellers ordered more than its whole first printing of 1,250 copies before it was even published.
 
+{{img:wallace}}
+
 The argument had two parts. The first, that species share common ancestors and change over time, persuaded most naturalists within about fifteen years, helped by fossils like *Archaeopteryx*, described by {{fig:owen|Richard Owen}} in 1863. The second, that natural selection is the main cause, did not. Darwin could not explain inheritance. The theory of his day, that offspring blend their parents' traits, would dilute any favourable variation to nothing within a few generations. Around 1900 many biologists doubted selection altogether, a period later called the "eclipse of Darwinism".
+
+{{img:archaeopteryx}}
 
 ## A Closer Look: Time Enough for an Eye
 
@@ -236,6 +280,8 @@ an eighty-million-fold change in the relevant proportions. But each step is tiny
 How many generations does a 1% change take? From measurements of heritability and selection in natural populations, they deliberately chose pessimistic values: heritability of 0.5, and selection so weak that each generation changes the average by only 0.005% of the trait. That gives about 364,000 generations for the whole sequence. For small aquatic animals, a generation is typically a year. So a complete camera eye could evolve in fewer than 400,000 years.
 
 The Cambrian explosion, when eyes first appear in the fossil record, lasted around twenty million years. By this estimate, eyes could have evolved from scratch dozens of times over in that span. And eyes have evolved independently many times, in molluscs, vertebrates and arthropods. The calculation does not show how eyes did evolve, which depends on genes and development. It shows that the time available is not a problem.
+
+{{img:eye-time}}
 
 ## The Synthesis and After
 
