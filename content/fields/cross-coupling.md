@@ -242,6 +242,35 @@ further_reading:
   - citation: "Sletten, E. M. & Bertozzi, C. R. (2009). Bioorthogonal chemistry. Angewandte Chemie International Edition 48: 6974–6998."
     url: null
     note: How a reaction is designed to ignore an entire cell's worth of chemistry.
+
+images:
+  - id: catalytic-cycle
+    src: /images/fields/cross-coupling/catalytic-cycle.png
+    alt: A circular diagram of a palladium catalyst passing through oxidative addition of R–X, transmetalation with a boron reagent, and reductive elimination of R–R′.
+    caption: >-
+      The Suzuki cycle. Palladium inserts into the carbon–halogen bond, takes the second carbon
+      from boron, then releases the two carbons joined and returns to the start.
+    credit: LibreTexts
+    license: CC BY 4.0
+    source: https://commons.wikimedia.org/wiki/File:Suzuki_catalytic_cycle.svg
+  - id: nobel-2010
+    src: /images/fields/cross-coupling/nobel-2010.jpg
+    alt: Three elderly men in dark suits standing together on a stage.
+    caption: >-
+      Akira Suzuki, Ei-ichi Negishi and Richard Heck, who shared the 2010 Nobel Prize in
+      Chemistry for palladium-catalysed cross-coupling.
+    credit: BloodIce
+    license: CC BY-SA 4.0
+    source: https://commons.wikimedia.org/wiki/File:Nobel_Laureates_for_Chemistry_2010.jpg
+  - id: selectivity
+    src: /images/fields/cross-coupling/selectivity.png
+    alt: A straight rising line of selectivity on a log scale against the difference in barrier from 0 to 40 kJ/mol, marking 95 to 5 at 7.3 kJ/mol and a million to one at 34 kJ/mol.
+    caption: >-
+      Selectivity between two sites against the difference in their barriers. A 95 : 5
+      preference needs only 7.3 kJ/mol; an enzyme's million to one needs 34.
+    credit: Drawn for Field Atlas from the numbers above
+    license: Field Atlas original
+    source: https://github.com/andifathulms/field-atlas/blob/main/scripts/diagrams/synthesis.py
 ---
 
 ## Reactive Enough to Be a Nuisance
@@ -256,9 +285,13 @@ Its defect is the same sentence read differently: *almost any* carbon bearing an
 
 The modern solution to selectivity is to let a metal do the joining. The cycle, in outline, is the same for all the named reactions: palladium takes up the first partner, usually by inserting into a carbon–halogen bond; the second partner, carried on boron, zinc or tin, transfers its organic group to the metal; the two groups, now adjacent on the same atom, join and leave; and the metal returns to its starting state ready to do it again.
 
+{{img:catalytic-cycle}}
+
 Two consequences follow, and they are what made the chemistry so widely used. First, turnover: the metal is regenerated, so catalyst loadings of a few hundredths of a mole per cent suffice, and a few grams of palladium can convert a tonne of material. Second, and more important, *tolerance*. Neither partner is reactive on its own — an aryl boronic acid is a stable solid you can weigh out in air — so the reagents ignore the esters, amides, alcohols and heterocycles that a drug molecule carries. A Grignard reagent cannot be let near those; a Suzuki coupling can.
 
 {{fig:heck|Richard Heck}}, {{fig:negishi|Ei-ichi Negishi}} and {{fig:suzuki|Akira Suzuki}} developed the variants that bear their names between 1968 and 1979 and shared the 2010 Nobel Prize. The boron version spread furthest, for unglamorous reasons: boronic acids are stable, cheap, available by the thousand, and their by-products are harmless. Surveys of how marketed drugs are actually manufactured find these couplings among the most used carbon–carbon bond-forming steps in the industry.
+
+{{img:nobel-2010}}
 
 {{fig:chauvin|Yves Chauvin}}, {{fig:schrock|Richard Schrock}} and {{fig:grubbs|Robert Grubbs}} did the equivalent for double bonds. In olefin metathesis two alkenes exchange their ends — the mechanism is a metal–carbon double bond that adds across the alkene and comes apart the other way — so a chain with alkenes at both ends can be closed into a large ring, an operation that is otherwise extremely difficult. Grubbs's ruthenium catalysts tolerate air, water and most functional groups, which took the reaction from a curiosity of industrial polymer chemistry to a standard step in total synthesis.
 
@@ -279,6 +312,8 @@ $$
 $$
 
 Seven kilojoules. That is less than a hydrogen bond, about a tenth of a typical reaction barrier, and well inside the error of a routine quantum chemical calculation.
+
+{{img:selectivity}}
 
 This cuts both ways, and that is the point. On the optimistic side, controlling selectivity does not require a large energetic difference — a modest steric preference or a weak attraction between catalyst and substrate suffices, which is why enzymes can be so selective using nothing but shape. On the pessimistic side, differences that small are produced by almost anything: a change of solvent, a nearby substituent, a slight distortion of the catalyst. So selectivity achieved on one substrate frequently vanishes on the next, and a method that works on toluene fails on a molecule with four other aromatic rings.
 
