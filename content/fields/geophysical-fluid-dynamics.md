@@ -242,6 +242,36 @@ further_reading:
   - citation: "Friedman, R. M. (1989). Appropriating the Weather. Cornell University Press."
     url: null
     note: How Bjerknes turned forecasting into physics, and how much of that was institutional politics.
+
+images:
+  - id: hurricane-maria
+    src: /images/fields/geophysical-fluid-dynamics/hurricane-maria.jpg
+    alt: A satellite image of a hurricane, a spiral of white cloud bands around a small clear eye over the Caribbean.
+    caption: >-
+      Hurricane Maria from a GOES weather satellite in September 2017. In the northern
+      hemisphere the inflow is deflected to the right, and the storm turns anticlockwise.
+    credit: U.S. Navy / NOAA GOES
+    license: Public domain
+    source: https://commons.wikimedia.org/wiki/File:A_GOES_satellite_image_of_Hurricane_Maria_in_the_Caribbean_Sea._(36905931020).jpg
+  - id: great-red-spot
+    src: /images/fields/geophysical-fluid-dynamics/great-red-spot.jpg
+    alt: Jupiter's Great Red Spot, a huge oval storm among banded clouds, photographed by Voyager 1.
+    caption: >-
+      Jupiter's Great Red Spot from Voyager 1 in 1979: a storm larger than the Earth, held by the
+      same balance of pressure and rotation as a terrestrial cyclone.
+    credit: NASA
+    license: Public domain
+    source: https://commons.wikimedia.org/wiki/File:Great_Red_Spot_From_Voyager_1.jpg
+  - id: ocean-conveyor
+    src: /images/fields/geophysical-fluid-dynamics/ocean-conveyor.jpg
+    alt: A world map with a looping ribbon showing warm shallow currents and cold salty deep currents linking the oceans.
+    caption: >-
+      The ocean's overturning circulation, much simplified: warm surface water flows north in
+      the Atlantic, cools, sinks, and returns deep and salty. Stommel's two boxes are the
+      simplest model of the North Atlantic leg.
+    credit: Thomas Splettstoesser
+    license: Public domain
+    source: https://commons.wikimedia.org/wiki/File:Ocean_circulation_conveyor_belt.jpg
 ---
 
 ## Two Facts That Change Everything
@@ -252,9 +282,13 @@ The second fact is rotation. {{fig:coriolis|Gaspard-Gustave de Coriolis}} derive
 
 The deep consequence is not the deflection itself but what it balances against. On a small scale a pressure difference accelerates fluid from high pressure to low. On a large scale the deflection grows until it cancels the pressure gradient entirely, and the flow settles into motion *along* the isobars rather than across them. This geostrophic balance is why a weather map, which shows pressure, can be read directly as a map of wind.
 
+{{img:hurricane-maria}}
+
 ## Forecasting, and Its Limit
 
 {{fig:vilhelm-bjerknes|Vilhelm Bjerknes}} stated the programme in 1904. The atmosphere obeys known equations; measure its present state and integrate. He also knew what stood in the way: enough observations, and an impossible quantity of arithmetic. {{fig:lewis-fry-richardson|Lewis Fry Richardson}} attempted the arithmetic by hand during the First World War, for a single six-hour forecast, and got a pressure change of 145 millibars where the real change was almost nothing — an account of which belongs to [numerical methods for partial differential equations](/math/numerical-pdes/).
+
+{{img:great-red-spot}}
 
 {{fig:jule-charney|Jule Charney}} found the reason in 1948, and it was not arithmetic error. The full equations support sound waves and other fast oscillations that carry almost no energy but dominate the rate of change at any instant. Richardson's initial pressures and winds, taken from independent measurements, were not in geostrophic balance with each other, and the imbalance rang the atmosphere like a bell. Charney derived a filtered system — the quasi-geostrophic equations — that keeps the slow weather-bearing motions and removes the fast ones. Those were the equations integrated on the ENIAC in 1950, for the first successful numerical forecast.
 
@@ -305,3 +339,6 @@ That is the size of a weather system, and it is not a coincidence: the instabili
 The distinction between weather and climate is the distinction between a trajectory and a statistical attractor, and it is why a chaotic system can be unpredictable next month and predictable next century. What cannot be computed is the part of the system below the grid scale. A global climate model has cells tens of kilometres across; a cumulus cloud is a kilometre, and the droplets that determine whether it reflects or traps radiation are microns. Those processes are represented by parameterisations fitted to present-day observations, and the leading uncertainty in how much the planet warms — the open problem above — is whether those fits hold in a climate that has changed.
 
 {{fig:stommel|Henry Stommel}}'s 1961 paper is the other thing this field contributed to that argument, and it required only two boxes and two equations. A circulation driven by both temperature and salinity carries the salinity contrast that drives it, which makes the system self-reinforcing and permits two stable states under identical forcing. A gradual change in forcing can therefore produce an abrupt switch that does not reverse when the forcing does. Whether the Atlantic overturning circulation is near such a threshold is among the most consequential open questions in the earth sciences, and the mathematical structure behind it is the same bistability that [dynamical systems](/math/dynamical-systems/) studies in the abstract.
+
+
+{{img:ocean-conveyor}}
