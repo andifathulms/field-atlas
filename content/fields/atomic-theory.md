@@ -232,6 +232,37 @@ further_reading:
   - citation: "Brock, W. H. (1992). The Fontana History of Chemistry. Fontana."
     url: null
     note: Good short treatment of Dalton, Avogadro and Karlsruhe in sequence.
+
+images:
+  - id: dalton-elements
+    src: /images/fields/atomic-theory/dalton-elements.jpg
+    alt: A handwritten chart headed Elements, listing twenty substances each with a circular symbol and a weight, from hydrogen 1 to mercury 167.
+    caption: >-
+      Dalton's elements, with his circular symbols and weights relative to hydrogen. Oxygen is 7:
+      he took water to be one atom of each, and the analyses of his day put too little oxygen in
+      it. The true figure is 16.
+    credit: John Dalton
+    license: Public domain
+    source: https://commons.wikimedia.org/wiki/File:Dalton%27s_Element_List.jpg
+  - id: cannizzaro
+    src: /images/fields/atomic-theory/cannizzaro.jpg
+    alt: Photograph of Stanislao Cannizzaro, white-bearded, seated with his hands folded.
+    caption: >-
+      Stanislao Cannizzaro, whose pamphlet, handed out at Karlsruhe in 1860, gave chemistry one
+      agreed set of atomic weights.
+    credit: Science History Institute
+    license: Public domain
+    source: https://commons.wikimedia.org/wiki/File:Portrait_of_Stanislao_Cannizzaro_-_DPLA.jpg
+  - id: perrin-spread
+    src: /images/fields/atomic-theory/perrin-spread.png
+    alt: Several hundred dots scattered around a centre inside a set of concentric circles, densest in the middle.
+    caption: >-
+      Perrin's plot of where 500 grains had wandered after 30 seconds of Brownian motion, each
+      displacement drawn from a common centre. How fast the cloud spreads gave Avogadro's
+      constant through Einstein's formula.
+    credit: Jean Perrin, Les Atomes (1913), redrawn by ElioPrrl
+    license: Public domain
+    source: https://commons.wikimedia.org/wiki/File:PerrinPlot3.svg
 ---
 
 ## Whole Numbers Where None Were Expected
@@ -241,6 +272,8 @@ By 1800 chemistry had the law of definite proportions: a compound's composition 
 Continuous matter has no reason to behave like that. Indivisible units do: a molecule contains one oxygen atom or two, never one and a half. Dalton drew the conclusion, and then drew out its consequence — if atoms have characteristic weights, an analysis can be inverted to find them.
 
 His 1808 table is the first attempt, and it is wrong almost throughout. The reason is a gap in the method rather than in the measurements. Analysis gives the *proportion by mass*; converting it to an atomic weight requires knowing the formula, and nothing in the analysis supplies one. Dalton adopted a rule of greatest simplicity: water, having one known composition, should be one atom of each. Water is 11.2% hydrogen by mass, so on that assumption oxygen weighs about eight times hydrogen. The true figure is sixteen, and every weight derived through a wrong formula inherited the error.
+
+{{img:dalton-elements}}
 
 ## The Information Was Already There
 
@@ -259,6 +292,8 @@ So chemistry proceeded for fifty years with two systems of weights, the choice b
 ## A Closer Look: How Cannizzaro Broke the Circle
 
 {{fig:cannizzaro|Stanislao Cannizzaro}}'s 1858 pamphlet is a procedure, and its merit is that it is self-checking. Two steps.
+
+{{img:cannizzaro}}
 
 **Step one: molecular weights from vapour densities.** Measure the density of a vapour relative to hydrogen gas by {{fig:dumas|Dumas}}'s method. Equal volumes hold equal numbers of molecules, so the density ratio is the ratio of molecular weights. Setting hydrogen gas at 2 — because it is $\mathrm{H_2}$ — gives the molecular weight directly as twice the relative density.
 
@@ -287,5 +322,7 @@ At the Karlsruhe congress in September 1860 — the first international meeting 
 One feature of this whole episode deserves a note, because it is easy to miss from the modern side. Every weight in Cannizzaro's table is *relative*. Chemistry ranked and compared the masses of particles for a century without the least idea how many particles were in a gram, and it did not need one: a balanced equation only ever uses ratios.
 
 The absolute number came from outside. {{fig:jean-perrin|Jean Perrin}}'s measurements of Brownian particles — how they settle in a column, how far they wander — gave Avogadro's constant to within a few per cent and were widely taken as the end of the argument about whether atoms are real or a useful fiction, as [kinetic theory](/physics/kinetic-theory/) describes. Chemistry had been doing exact arithmetic on objects whose existence was still in dispute, which is a reasonable summary of how the subject got to 1900.
+
+{{img:perrin-spread}}
 
 The inheritance is the mole, and a last twist. An atomic weight is an average over isotopes, and that average depends on where the sample was dug up. Since 2009, the standard atomic weights of fourteen elements have been published not as values but as intervals — sulfur lies somewhere between 32.059 and 32.076 — because for those elements there is no universal constant to be measured, only a range that provenance selects from.
