@@ -235,6 +235,45 @@ further_reading:
   - citation: "Frisch, O. R. (1979). What Little I Remember. Cambridge University Press."
     url: null
     note: Frisch's memoir, including the walk in the snow that explained fission.
+
+images:
+  - id: hahn-bench
+    src: /images/fields/nuclear-fission/hahn-bench.jpg
+    alt: A wooden table in a museum display with valve amplifiers, Geiger counters, lead blocks and a notebook.
+    caption: >-
+      The bench at which Hahn and Strassmann found barium among uranium's products in December
+      1938, as assembled at the Deutsches Museum in Munich.
+    credit: Luidger, derivative work by Hic et nunc
+    license: CC BY-SA 3.0
+    source: https://commons.wikimedia.org/wiki/File:Versuchsaufbau_Hahn_Deutsches_Museum-2.jpg
+  - id: meitner
+    src: /images/fields/nuclear-fission/meitner.jpg
+    alt: Photograph of Lise Meitner lecturing at a blackboard.
+    caption: >-
+      Lise Meitner lecturing in Washington in 1946. With Otto Frisch she explained Hahn's barium
+      as the uranium nucleus splitting in two.
+    credit: Smithsonian Institution
+    license: Public domain
+    source: https://commons.wikimedia.org/wiki/File:Lise_Meitner_(1878-1968),_lecturing_at_Catholic_University,_Washington,_D.C.,_1946.jpg
+  - id: chain-reaction
+    src: /images/fields/nuclear-fission/chain-reaction.png
+    alt: A diagram of a neutron splitting a uranium-235 nucleus into two fragments and three neutrons, one lost, one absorbed by uranium-238, and one splitting another uranium-235.
+    caption: >-
+      A chain reaction. Each fission releases two or three neutrons; some escape or are caught by
+      uranium-238, and the reaction grows only if on average more than one goes on to split
+      another uranium-235 nucleus.
+    credit: Fastfission, after the Smyth Report
+    license: Public domain
+    source: https://commons.wikimedia.org/wiki/File:Fission_chain_reaction.svg
+  - id: chicago-pile-1
+    src: /images/fields/nuclear-fission/chicago-pile-1.jpg
+    alt: A painting of a group of men on a balcony watching instruments beside a large stacked pile of graphite blocks in a squash court.
+    caption: >-
+      Chicago Pile-1 going critical at 3:22 p.m. on 2 December 1942, in a painting by Gary
+      Sheahan. No photograph of the moment exists.
+    credit: Gary Sheahan, U.S. National Archives
+    license: Public domain
+    source: https://commons.wikimedia.org/wiki/File:Time,_3-22_p.m,_December_2,_1942._Place,_Racquets_Court_under_West_Stands_of_Stagg_Field,_University_of_Chicago...._-_NARA_-_542144.tif
 ---
 
 ## Beyond Uranium
@@ -247,13 +286,21 @@ The chemist {{fig:ida-noddack|Ida Noddack}} objected in print that the uranium n
 
 In Berlin, the chemist {{fig:otto-hahn|Otto Hahn}} and the physicist {{fig:lise-meitner|Lise Meitner}} had worked together for thirty years. In July 1938 Meitner, Jewish by birth and no longer protected by her Austrian citizenship after the annexation of Austria, fled Germany. Hahn and {{fig:fritz-strassmann|Fritz Strassmann}} continued the uranium work. In December they found that one product, which they took for radium, behaved exactly like barium. It was barium, element 56. Hahn wrote to Meitner asking for "some fantastic explanation".
 
+{{img:hahn-bench}}
+
 Over Christmas, in the Swedish village of Kungälv, Meitner and her nephew {{fig:otto-frisch|Otto Frisch}} found one. Bohr's [liquid-drop picture](/physics/nuclear-structure/) of the nucleus suggested that a uranium nucleus, with so many protons repelling each other, is barely held together. A neutron can set it wobbling until it pinches in two. Meitner remembered how to compute the masses, and the missing mass came to about 200 MeV, just the energy the fragments should have. Frisch called the process fission, after the division of cells.
+
+{{img:meitner}}
 
 ## The Chain Reaction
 
 {{fig:niels-bohr|Niels Bohr}} carried the news to America in January 1939. Within weeks the fission fragments had been seen in several laboratories, and each fission was found to release two or three neutrons. Bohr and {{fig:john-wheeler|John Wheeler}} showed that slow neutrons split only the rare isotope uranium-235. If the released neutrons could split more uranium-235, the reaction could sustain itself. {{fig:leo-szilard|Leo Szilard}}, who had imagined a nuclear chain reaction in 1933, persuaded Einstein to warn President Roosevelt.
 
+{{img:chain-reaction}}
+
 On 2 December 1942, under the stands of a sports ground at the University of Chicago, Fermi's team withdrew the last control rod from a pile of graphite and uranium, and the neutron count rose steadily. The chain reaction worked. The Manhattan Project, led at Los Alamos by {{fig:robert-oppenheimer|J. Robert Oppenheimer}}, turned it into weapons. One bomb destroyed Hiroshima on 6 August 1945 and another Nagasaki three days later. After the war, reactors were built to make electricity.
+
+{{img:chicago-pile-1}}
 
 In 1972 French analysts found uranium from the Oklo mine in Gabon depleted in uranium-235. Two billion years earlier, uranium-235 had made up a larger share of natural uranium, and groundwater had moderated natural chain reactions in the ore. {{fig:paul-kuroda|Paul Kuroda}} had predicted exactly this in 1956.
 
