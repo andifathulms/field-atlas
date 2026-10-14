@@ -223,13 +223,57 @@ further_reading:
   - citation: "Pancaldi, G. (2003). Volta: Science and Culture in the Age of Enlightenment. Princeton University Press."
     url: null
     note: The pile, the dispute with Galvani, and what each of them thought they were demonstrating.
+
+images:
+  - id: voltaic-pile
+    src: /images/fields/electrochemistry/voltaic-pile.jpg
+    alt: A column of stacked metal discs held between wooden rods on a wooden base, in a museum case.
+    caption: >-
+      A voltaic pile at the Tempio Voltiano in Como: discs of two different metals stacked
+      alternately, each pair separated by brine-soaked card.
+    credit: Dario Crespi
+    license: CC BY-SA 4.0
+    source: https://commons.wikimedia.org/wiki/File:Pila_di_Volta_presso_il_Tempio_Voltiano_a_Como.jpg
+  - id: davy-potassium
+    src: /images/fields/electrochemistry/davy-potassium.png
+    alt: An engraving of a block of caustic potash resting on a metal sheet, with a wire dipping into a small pool of mercury in a hollow on its top.
+    caption: >-
+      A setup for repeating Davy's 1807 experiment: a block of moist caustic potash on a
+      platinum sheet, with current led in through mercury held in a hollow on top. Potassium
+      collects at the negative side.
+    credit: Nevil Monroe Hopkins, Experimental Electrochemistry (1905)
+    license: Public domain
+    source: https://commons.wikimedia.org/wiki/File:Schema_dell%27apparecchiatura_di_Davy_per_isolare_sodio_e_potassio_-_Hopkins.png
+  - id: aluminium-energy
+    src: /images/fields/electrochemistry/aluminium-energy.png
+    alt: A horizontal bar of electricity per tonne of aluminium, 3,600 kWh for the 1.2 volts thermodynamics requires and the rest up to 13,400 kWh lost to overpotential and resistance, beside a shaded band for real smelters at 13,000 to 15,000.
+    caption: >-
+      Faraday's arithmetic for a tonne of aluminium. At the 1.2 volts the reaction itself needs
+      it would take about 3,600 kWh; at a real cell's 4.5 volts it takes 13,400, inside the
+      13,000 to 15,000 that smelters actually use.
+    credit: Drawn for Field Atlas from the numbers above
+    license: Field Atlas original
+    source: https://github.com/andifathulms/field-atlas/blob/main/scripts/diagrams/electrochemistry.py
+  - id: daniell-cell
+    src: /images/fields/electrochemistry/daniell-cell.jpg
+    alt: A cross-section engraving of a cylindrical cell with an outer vessel, an inner porous pot and a central rod.
+    caption: >-
+      Daniell's cell in cross-section, from his 1839 textbook: copper and zinc each in its own
+      solution, the two kept apart by a porous pot.
+    credit: John Frederic Daniell, An Introduction to the Study of Chemical Philosophy (1839)
+    license: Public domain
+    source: https://commons.wikimedia.org/wiki/File:Daniell_cell.jpg
 ---
 
 ## A Current That Does Not Stop
 
 Static electricity could be stored in a Leyden jar and released in a spark. What nobody had before 1800 was a current that flowed steadily for hours, and {{fig:alessandro-volta|Alessandro Volta}} produced one by stacking discs of two different metals separated by brine-soaked card. His purpose was polemical — he was arguing against {{fig:galvani|Galvani}}'s claim that frog legs twitch because of an electricity peculiar to animals, and wanted to show that dissimilar metals in contact with moisture suffice.
 
+{{img:voltaic-pile}}
+
 The chemical consequences arrived within weeks. Nicholson and Carlisle connected a pile to two wires in water and collected hydrogen at one and oxygen at the other. {{fig:davy|Humphry Davy}} then saw what the tool was for. If current decomposes water, it should decompose anything, and the Royal Institution had the largest battery in the world. In 1807 he electrolysed moist potash and obtained globules of a metal so reactive it skims across water while burning: potassium. Sodium followed in days, then calcium, barium, strontium and magnesium.
+
+{{img:davy-potassium}}
 
 {{fig:lavoisier|Lavoisier}}'s table of simple substances had listed potash and soda. Davy showed they were compounds, using a method that reaches further than any reagent, because the oxidising or reducing power of an electrode can be turned up simply by raising the voltage.
 
@@ -279,11 +323,15 @@ $$
 
 Real smelters consume 13,000 to 15,000 kWh per tonne. The estimate is a one-line calculation from a constant Faraday measured in 1834, and it is why aluminium plants are sited next to hydroelectric dams, why the metal is sometimes called solid electricity, and why recycling it — which needs about 5% of that energy — is so overwhelmingly worthwhile.
 
+{{img:aluminium-energy}}
+
 Run the same arithmetic for any electrochemical process and it gives the floor on its energy cost. The gap between that floor and what a real cell uses is the overpotential, and reducing it is what [electrocatalysis](/chemistry/batteries/) is about.
 
 ## Cells That Keep Working
 
 Volta's pile had a defect that limited every early experiment: within minutes the current collapsed. The cause is polarisation — hydrogen accumulates on one electrode and blocks it — and the fix, found by {{fig:daniell|John Frederic Daniell}} in 1836, is to give each electrode its own solution. Zinc in zinc sulfate, copper in copper sulfate, separated by a porous pot that passes ions and not reactants. Each electrode then has an unlimited supply of what it consumes, and the cell holds 1.1 volts for hours.
+
+{{img:daniell-cell}}
 
 That architecture — two half-cells, each with its own chemistry, joined by something that conducts ions but keeps the reactants apart — is what a battery is. It powered the electric telegraph, and it is the ancestor of the lithium cell described under [batteries and electrolysers](/chemistry/batteries/).
 
