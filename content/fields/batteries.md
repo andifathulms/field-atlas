@@ -229,6 +229,35 @@ further_reading:
   - citation: "Fletcher, S. (2011). Bottled Lightning. Hill & Wang."
     url: null
     note: A readable history of the lithium battery, including the industrial politics.
+
+images:
+  - id: plante-cell
+    src: /images/fields/batteries/plante-cell.jpg
+    alt: An engraving of a tall glass jar holding a spiral roll of lead sheets, with two wires leading out of the lid.
+    caption: >-
+      Planté's lead–acid cell: two lead sheets rolled together into a spiral, kept apart, and
+      stood in dilute sulfuric acid.
+    credit: Gaston Planté, The Storage of Electrical Energy
+    license: Public domain
+    source: https://commons.wikimedia.org/wiki/File:Plante_lead_acid_cell.jpg
+  - id: leclanche-cell
+    src: /images/fields/batteries/leclanche-cell.jpg
+    alt: An engraving of a square glass jar holding a porous pot with a carbon plate and a zinc rod, with terminals on top.
+    caption: >-
+      A Leclanché cell: a zinc rod in sal ammoniac solution, and a carbon plate packed round with
+      manganese dioxide inside a porous pot.
+    credit: William Edward Ayrton, Practical Electricity
+    license: Public domain
+    source: https://commons.wikimedia.org/wiki/File:Leclanch%C3%A9_Cell.jpg
+  - id: energy-per-kilogram
+    src: /images/fields/batteries/energy-per-kilogram.png
+    alt: Bars of energy per kilogram, petrol 46 MJ against a lithium cell's 0.9 MJ stored, and 11.5 against 0.81 MJ at the wheels.
+    caption: >-
+      Petrol against a lithium cell. Stored, the gap is a factor of 51; after the engine's and
+      the motor's losses, a factor of 14.
+    credit: Drawn for Field Atlas from the numbers above
+    license: Field Atlas original
+    source: https://github.com/andifathulms/field-atlas/blob/main/scripts/diagrams/electrochemistry.py
 ---
 
 ## A Reaction Held Apart
@@ -237,7 +266,11 @@ Every battery is the same trick. Take a reaction that would release energy if th
 
 {{fig:plante|Gaston Planté}}'s lead–acid cell of 1859 was the first that could be *refilled* by reversing the current. Lead and lead dioxide in sulfuric acid give slightly over two volts — the highest of any aqueous chemistry, since beyond about that the water itself decomposes — and the materials are cheap and conduct superbly, so the cell can deliver hundreds of amperes for the few seconds needed to turn an engine. It is still manufactured in enormous numbers for that one job, and its specific energy, about 35 watt-hours per kilogram, has barely improved in 160 years.
 
+{{img:plante-cell}}
+
 The {{fig:leclanche|Leclanché}} cell and {{fig:gassner|Gassner}}'s sealed paste version made electricity portable, which mattered more at the time than anything about efficiency: a dry cell works in any orientation, does not spill acid, and is still essentially the alkaline cell sold today.
+
+{{img:leclanche-cell}}
 
 What neither could do was be recharged many times without destroying itself, because in both the electrodes dissolve and are rebuilt, and material does not return to where it came from.
 
@@ -288,6 +321,8 @@ $$
 $$
 
 A fourteenfold gap in useful energy per kilogram, not fifty. That number explains the pattern of electrification precisely. A car can carry a 400 kg pack, because wheels bear the weight and braking returns some energy; the gap costs range and is tolerable. An airliner cannot, because weight must be lifted continuously and fuel is nearly half its take-off mass — so a fourteenfold penalty is not a range problem but an impossibility, and aviation is arguing about fuels rather than batteries.
+
+{{img:energy-per-kilogram}}
 
 **Why hydrogen is not a battery.** Splitting water requires 1.23 V thermodynamically; a working electrolyser needs 1.8 to 2.0 V because of the overpotentials described under [electrode potentials](/chemistry/electrode-potentials/). So about a third of the electricity is lost on the way in. Running the hydrogen back through a fuel cell loses a comparable fraction again, giving a round trip of roughly
 
