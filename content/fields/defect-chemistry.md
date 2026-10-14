@@ -282,6 +282,27 @@ further_reading:
   - citation: "Mott, N. F. & Gurney, R. W. (1940). Electronic Processes in Ionic Crystals. Oxford University Press."
     url: null
     note: Written when colour centres were new; a model of reasoning from a spectrum to a structure.
+
+images:
+  - id: schottky-frenkel
+    src: /images/fields/defect-chemistry/schottky-frenkel.png
+    alt: Two square lattices of large and small ions; the left has one large and one small ion missing, the right has a small ion moved from its site into the gap between sites.
+    caption: >-
+      The two neutral defects of an ionic crystal. In a Schottky defect a cation and an anion are
+      both missing; in a Frenkel defect a cation has left its site for a gap between sites.
+    credit: Drawn for Field Atlas
+    license: Field Atlas original
+    source: https://github.com/andifathulms/field-atlas/blob/main/scripts/diagrams/materials.py
+  - id: vacancies
+    src: /images/fields/defect-chemistry/vacancies.png
+    alt: Three bars on a logarithmic scale of vacancies per cubic centimetre, about a thousand at 300 K, 3.5 times 10 to the 16 at 1,000 K, and 2.2 times 10 to the 19 with 0.1 per cent calcium.
+    caption: >-
+      The table's three routes to sodium vacancies in salt. Heating to near the melting point
+      gains thirteen orders of magnitude; a part in a thousand of calcium gains another factor of
+      six hundred, at any temperature.
+    credit: Drawn for Field Atlas from the table above
+    license: Field Atlas original
+    source: https://github.com/andifathulms/field-atlas/blob/main/scripts/diagrams/materials.py
 ---
 
 ## A Perfect Crystal Is Not the Lowest Free Energy
@@ -291,6 +312,8 @@ Crystals are introduced as perfect repetition, and the picture is a good first a
 {{fig:frenkel|Yakov Frenkel}} made the argument in 1926. Removing an atom from its site costs energy — call it $\Delta H$ per defect. But a crystal with $n$ vacancies distributed among $N$ sites can be arranged in an enormous number of ways, and that configurational entropy lowers the free energy. The first few vacancies are almost free, entropically speaking, because there are so many places to put them; the cost grows only logarithmically. So the free energy has a minimum at some finite $n$, and the perfect crystal is not it.
 
 {{fig:schottky|Walter Schottky}} and {{fig:carl-wagner|Carl Wagner}} worked out the statistics and identified the two neutral combinations an ionic crystal can use: a vacancy paired with the displaced ion in an interstitial position, or vacancies on the cation and anion sublattices together. A crystal in equilibrium therefore contains a definite, calculable number of defects, and the number rises steeply with temperature.
+
+{{img:schottky-frenkel}}
 
 That reframes the subject. Defects stop being damage to be minimised and become a property to be computed — and then, once the chemistry is understood, a property to be set.
 
@@ -355,6 +378,8 @@ Compare the three figures:
 | 0.1% Ca²⁺ doping, any temperature | $2.2 \times 10^{19}$ |
 
 One part in a thousand of an impurity beats heating to near the melting point by a factor of six hundred, and it does so at room temperature — and, crucially, the concentration no longer depends on temperature at all, because it is fixed by charge balance rather than by an equilibrium. **The defect population has become a composition.** That is the whole method of the field in one line.
+
+{{img:vacancies}}
 
 Push it further and the consequence is a solid electrolyte. Zirconia doped with 8 mole per cent yttria has roughly 15% of its cation sites occupied by yttrium, which forces about **3.7% of all oxygen sites to be vacant**. With that many empty sites to hop into, oxide ions migrate freely: at 1,000 °C the conductivity is about 0.1 S cm⁻¹, which is the conductivity of a molar solution of potassium chloride at room temperature. A dense, hard, chemically inert ceramic conducts ions as well as brine does.
 
