@@ -288,6 +288,35 @@ further_reading:
   - citation: "Benton, M. J. (2015). When Life Nearly Died, revised edition. Thames & Hudson."
     url: null
     note: The end-Permian extinction, and how its magnitude was established.
+
+images:
+  - id: horse-feet-teeth
+    src: /images/fields/macroevolution/horse-feet-teeth.jpg
+    alt: A page of drawings of horse leg bones and molar teeth in a sequence, from many-toed early forms to the single-toed modern horse.
+    caption: >-
+      Feet and teeth of the fossil horse series, from a 1922 textbook: toes reduced to one and
+      teeth heightened over some 55 million years, the lineage Simpson measured.
+    credit: Joseph LeConte, Evolution (1922)
+    license: Public domain
+    source: https://commons.wikimedia.org/wiki/File:Evolution;_its_nature,_its_evidences,_and_its_relation_to_religious_thought_(1922)_(14596533377).jpg
+  - id: extinction-intensity
+    src: /images/fields/macroevolution/extinction-intensity.png
+    alt: A bar chart of marine genus extinction intensity over 542 million years, with the end-Ordovician, Late Devonian, end-Permian, end-Triassic and end-Cretaceous peaks labelled.
+    caption: >-
+      Extinction intensity of marine genera through the Phanerozoic, from Sepkoski's compendium,
+      with the five great peaks marked.
+    credit: Dragons flight, redrawn by Rursus
+    license: CC BY-SA 3.0
+    source: https://commons.wikimedia.org/wiki/File:Extinction_Intensity.svg
+  - id: darwins
+    src: /images/fields/macroevolution/darwins.png
+    alt: Two bars on a log scale of evolutionary rate, 0.054 darwins for horses over 55 million years and 45,000 for guppies over 11 years.
+    caption: >-
+      The two rates on one scale: the long-term horse trend and a measured guppy response, nearly
+      a million times apart.
+    credit: Drawn for Field Atlas from the numbers above
+    license: Field Atlas original
+    source: https://github.com/andifathulms/field-atlas/blob/main/scripts/diagrams/phylogeny.py
 ---
 
 ## Palaeontology Joins the Synthesis
@@ -295,6 +324,8 @@ further_reading:
 By the 1930s population genetics had shown how selection, mutation and drift change gene frequencies, and the mathematics was unambiguous. It was also unverifiable over any interesting span of time, and palaeontologists, who had the span, were widely suspected of believing in internal drives and inherent directions. {{fig:george-gaylord-simpson|George Gaylord Simpson}} removed the suspicion in 1944.
 
 *Tempo and Mode in Evolution* did a simple and decisive thing: it measured. Simpson took well-sampled lineages — horse teeth above all — expressed their change as rates, and compared those rates with what selection coefficients of the size population geneticists discussed would produce. The fossil rates were, if anything, embarrassingly slow. Nothing extra was needed to explain them. He also found that rates vary enormously between lineages, with some groups static for tens of millions of years, and described the rapid shifts by which a lineage enters a new way of life.
+
+{{img:horse-feet-teeth}}
 
 The settlement held for nearly thirty years, and it contained an assumption: that the history of life is microevolution run for a long time.
 
@@ -309,6 +340,8 @@ That reframing turns an absence into a phenomenon. If lineages routinely sit sti
 ## Counting Catastrophes
 
 {{fig:jack-sepkoski|Jack Sepkoski}} did something no theory required and everything since has depended on: he read the palaeontological literature and recorded the first and last known appearance of every marine animal family, and then every genus. With {{fig:david-raup|David Raup}} he turned the compendium into a time series of extinction rates, and in 1982 reported that five intervals rise far above the background — the end-Ordovician, the late Devonian, the end-Permian, the end-Triassic and the end-Cretaceous. The end-Permian is the worst, with something like four-fifths of marine species lost.
+
+{{img:extinction-intensity}}
 
 Then they overreached, instructively. In 1984 they reported that the extinction peaks recur about every 26 million years, which prompted astronomers to propose a dim companion star to the Sun, nicknamed Nemesis, that periodically disturbed the Oort cloud. Better dating and more careful statistics dissolved the periodicity, and no companion was found. The episode is worth remembering whenever a time series of a few dozen events yields a period.
 
@@ -335,6 +368,8 @@ $$
 $$
 
 Horses had roughly a million times longer than they needed. Something cancelled almost all of the change.
+
+{{img:darwins}}
 
 {{fig:philip-gingerich|Philip Gingerich}} showed in 1983 what the cancellation looks like when plotted. Collect rate measurements over intervals from one year to ten million years, plot log rate against log interval, and the points fall on a line of slope close to $-1$. A slope of $-1$ means the *total* change, rate times interval, is roughly constant regardless of how long you watch — which is the signature of a random walk with reversals rather than a trend. Lineages move, and then move back.
 
