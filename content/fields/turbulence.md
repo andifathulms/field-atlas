@@ -251,11 +251,43 @@ further_reading:
   - citation: "Pope, S. B. (2000). Turbulent Flows. Cambridge University Press."
     url: null
     note: The reference for the modelling side, honest about where the constants come from.
+
+images:
+  - id: reynolds-1883
+    src: /images/fields/turbulence/reynolds-1883.png
+    alt: Three sketches of a pipe with a dye streak; in the first the streak stays a straight line, in the second it breaks into a dark cloud, in the third, seen by spark light, into curled eddies.
+    caption: >-
+      Reynolds's own drawings from 1883. At low speed the dye stays a thin thread; above the
+      critical value it suddenly breaks up and fills the pipe. Lit by an electric spark, the
+      cloud resolves into distinct eddies.
+    credit: Osborne Reynolds, 1883
+    license: Public domain
+    source: https://commons.wikimedia.org/wiki/File:Reynolds_observations_turbulence_1883.svg
+  - id: leonardo-water
+    src: /images/fields/turbulence/leonardo-water.jpg
+    alt: A pen drawing of a jet of water falling into a pool, the pool filled with swirling eddies large and small, above lines of mirror script.
+    caption: >-
+      Leonardo da Vinci's study of water falling into a pool, around 1510: eddies within eddies,
+      four centuries before Richardson's rhyme.
+    credit: Leonardo da Vinci, Royal Collection
+    license: Public domain
+    source: https://commons.wikimedia.org/wiki/File:Studies_of_water,_by_Leonardo_da_Vinci.png
+  - id: turbulent-jet
+    src: /images/fields/turbulence/turbulent-jet.jpg
+    alt: A false-colour image of a turbulent jet, red at its core on the left, breaking into blue and yellow filaments and swirls of every size to the right.
+    caption: >-
+      A turbulent jet made visible with laser-induced fluorescence, coloured by dye concentration.
+      Structures of every size, from the width of the jet down to fine filaments, coexist.
+    credit: C. Fukushima and J. Westerweel, TU Delft
+    license: CC BY 3.0
+    source: https://commons.wikimedia.org/wiki/File:False_color_image_of_the_far_field_of_a_submerged_turbulent_jet.jpg
 ---
 
 ## When Smooth Flow Stops Being Available
 
 {{fig:reynolds|Osborne Reynolds}} built an apparatus of great simplicity: a glass pipe, a tank of still water, and a fine nozzle introducing dye at the entrance. At low flow rates the dye travelled the whole length of the pipe as a straight thread. Open the valve further and at some point the thread wavered, then broke into eddies that mixed through the entire cross-section within a few diameters.
+
+{{img:reynolds-1883}}
 
 The transition happened at a fixed value of $UD/\nu$, whatever the pipe diameter and whatever the liquid. It was also sensitive to how disturbed the inlet was: with care, laminar flow could be maintained to much higher speeds. Both facts point the same way. Turbulence is not a property of the fluid but a question about the *stability* of a solution — above a critical Reynolds number the smooth flow still satisfies the equations, and no longer survives being nudged.
 
@@ -267,7 +299,11 @@ What takes its place is a flow that is irregular in space, unsteady in time, sen
 
 > Big whirls have little whirls that feed on their velocity, and little whirls have lesser whirls and so on to viscosity.
 
+{{img:leonardo-water}}
+
 Energy enters at the scale of whatever stirs the flow — the pipe diameter, the aircraft, the width of the ocean current. Viscosity can only remove energy where velocity gradients are steep, which means at very small scales. The nonlinear term does the transport in between, breaking large motions into smaller ones. In the middle of that range, energy is neither added nor dissipated; it merely passes through at a rate $\varepsilon$.
+
+{{img:turbulent-jet}}
 
 {{fig:gi-taylor|G. I. Taylor}} made the statistics precise in 1935, defining turbulence by the correlation between velocities at two points and introducing homogeneous isotropic turbulence — an idealisation that no real flow satisfies and in which nearly all theory is still done.
 
