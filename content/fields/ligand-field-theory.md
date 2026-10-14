@@ -278,6 +278,39 @@ further_reading:
   - citation: "Burns, R. G. (1993). Mineralogical Applications of Crystal Field Theory, 2nd edition. Cambridge University Press."
     url: null
     note: What the theory looks like when the ligands are a mineral rather than a chemist's choice.
+
+images:
+  - id: metal-solutions
+    src: /images/fields/ligand-field-theory/metal-solutions.jpg
+    alt: Six glass vessels of coloured solutions in a row, red, orange, yellow, green, blue and violet.
+    caption: >-
+      Solutions of cobalt(II) nitrate, potassium dichromate, potassium chromate, nickel(II)
+      chloride, copper(II) sulfate and potassium permanganate. The cobalt, nickel and copper
+      colours are d-to-d transitions; dichromate, chromate and permanganate have no d electrons,
+      and their colours come from charge moving from oxygen to the metal.
+    credit: Benjah-bmm27
+    license: Public domain
+    source: https://commons.wikimedia.org/wiki/File:Coloured-transition-metal-solutions.jpg
+  - id: chromium-colours
+    src: /images/fields/ligand-field-theory/chromium-colours.png
+    alt: Four chromium complexes placed on a visible spectrum by the wavelength they absorb, from 735 nm for the chloride to 376 nm, in the ultraviolet, for the cyanide.
+    caption: >-
+      The table's four chromium(III) complexes on the spectrum. Each stronger ligand widens the
+      splitting and moves the absorption towards the blue, until cyanide's lies in the
+      ultraviolet.
+    credit: Drawn for Field Atlas from the table above
+    license: Field Atlas original
+    source: https://github.com/andifathulms/field-atlas/blob/main/scripts/diagrams/coordination.py
+  - id: ruby
+    src: /images/fields/ligand-field-theory/ruby.jpg
+    alt: A small rough pinkish-red ruby crystal standing on a wooden surface.
+    caption: >-
+      An uncut ruby. It is aluminium oxide with a little chromium(III) in place of aluminium; the
+      oxygens around the chromium split its d orbitals, and the absorption that results makes
+      the stone red.
+    credit: Marco Hazard
+    license: CC BY-SA 2.0
+    source: https://commons.wikimedia.org/wiki/File:Gemstone_Collection_-_Ruby_Crystal_(15635576253).jpg
 ---
 
 ## Why a Copper Solution Is Blue
@@ -297,7 +330,11 @@ The size of the gap is the whole subject. For chromium(III), changing nothing bu
 
 Same metal, same oxidation state, same coordination number, same geometry. The colour is reporting on the ligand.
 
+{{img:chromium-colours}}
+
 There is a second kind of colour in these compounds, and the difference between the two is a matter of intensity rather than wavelength. A d-to-d transition is forbidden by a symmetry rule and occurs only because vibrations spoil the symmetry, so it is weak: the molar absorptivity of [Cu(H₂O)₆]²⁺ is about **10** L mol⁻¹ cm⁻¹. Permanganate's purple is not a d-to-d transition at all — manganese(VII) has no d electrons — but an electron moving from the oxygens to the metal, which no rule forbids, and its absorptivity is about **2,400**. The ratio is why a permanganate solution 240 times more dilute is just as strongly coloured, and why a titration can be run to a permanganate endpoint with no indicator.
+
+{{img:metal-solutions}}
 
 ## What the Ligands Do to the d Orbitals
 
@@ -369,3 +406,6 @@ Second, the inequality $\Delta > P$ is a statement about design. Both quantities
 Ligand field theory displaced {{fig:pauling|Pauling}}'s valence-bond account of complexes, which assigned a set of hybrid orbitals to each compound after the fact and predicted neither a colour nor a trend. The replacement was decided on coverage: colours, magnetic moments, the Irving–Williams order of stabilities, the double-humped hydration energies, the anomalous radii and the distortions all came out of one picture.
 
 What it bought beyond explanation is a design variable. Mineralogy reads the field backwards, inferring the site a transition-metal impurity occupies from the colour it produces — which is how ruby and emerald turn out to be the same chromium ion in two different holes. Phosphor chemistry tunes the emission of a lighting-grade material by changing the host lattice around the activator. And in [bioinorganic chemistry](/chemistry/bioinorganic-chemistry/) the spin state of an iron centre is not a spectroscopic curiosity but the thing that decides whether oxygen binds reversibly or tears a molecule apart — a protein holding its metal at a chosen point on the inequality above.
+
+
+{{img:ruby}}
