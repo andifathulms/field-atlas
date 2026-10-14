@@ -244,6 +244,37 @@ further_reading:
   - citation: "Gordon, J. E. (1976). The New Science of Strong Materials. Penguin."
     url: null
     note: Includes the clearest popular account of why rubber behaves as it does.
+
+images:
+  - id: nematic-texture
+    src: /images/fields/soft-matter/nematic-texture.jpg
+    alt: A vividly coloured microscope image of a liquid crystal, with black brushes radiating from point defects across pink, yellow and blue regions.
+    caption: >-
+      A nematic liquid crystal between crossed polarisers. It flows like a liquid, yet it is
+      birefringent like a crystal, which is what Lehmann saw; the dark brushes meet at defects
+      where the molecules' alignment cannot be defined.
+    credit: Ingo Dierking
+    license: CC BY-SA 4.0
+    source: https://commons.wikimedia.org/wiki/File:Nematic_liquid_crystal.jpg
+  - id: polymer-coil
+    src: /images/fields/soft-matter/polymer-coil.png
+    alt: A tangled random walk drawn in blue, with its two ends joined by a straight orange line, beside a 10 nanometre scale bar and the chain's statistics.
+    caption: >-
+      One random chain of 1,000 segments of 0.25 nm, drawn flat. Stretched out it would be
+      250 nm long; coiled, its ends are 7.7 nm apart, close to the typical $b\sqrt{N}$ of
+      7.9 nm. The scale bar is 10 nm.
+    credit: Simulated for Field Atlas
+    license: Field Atlas original
+    source: https://github.com/andifathulms/field-atlas/blob/main/scripts/diagrams/flow.py
+  - id: murmuration
+    src: /images/fields/soft-matter/murmuration.jpg
+    alt: A dense swirling cloud of thousands of starlings against an evening sky over a coastal town.
+    caption: >-
+      A starling murmuration at Eyemouth, Scotland. Each bird responds only to its neighbours,
+      as in Vicsek's model, yet the flock moves as one.
+    credit: Walter Baxter
+    license: CC BY-SA 2.0
+    source: https://commons.wikimedia.org/wiki/File:A_starling_murmuration_at_Eyemouth_-_geograph.org.uk_-_6378649.jpg
 ---
 
 ## Materials Made Soft by Temperature
@@ -255,6 +286,8 @@ That is the organising principle of the whole field, and it covers an unlikely l
 {{fig:thomas-graham|Thomas Graham}} drew the first boundary in 1861, by noticing that substances separate into two classes by how fast they cross a membrane. Salts pass quickly and crystallise; gelatin, starch and albumin crawl and form glues. He called the second class colloids and invented dialysis to exploit the difference. The distinction is about size, not chemistry — particles between roughly a nanometre and a micron are large enough to be treated as objects and small enough to be shoved around by thermal collisions.
 
 {{fig:reinitzer|Friedrich Reinitzer}} found the strangest member of the family in 1888: a cholesterol derivative that melts twice, into a cloudy liquid at 145 °C and a clear one at 179 °C. {{fig:lehmann|Otto Lehmann}} put the cloudy phase under a polarising microscope and found it birefringent. A substance that flows should be optically isotropic; this one was ordered. Most chemists concluded the sample was impure. It took until 1922 for the phases to be classified properly, and until 1968 for anyone to find a use.
+
+{{img:nematic-texture}}
 
 ## One Long Molecule, Against the Establishment
 
@@ -279,6 +312,8 @@ R = 0.25\sqrt{1000} = 7.9\ \mathrm{nm}.
 $$
 
 The chain is coiled into a ball about thirty times smaller than its own length, for the same reason that a thousand coin flips rarely come out all heads: there are vastly more configurations with the ends close together than with them far apart.
+
+{{img:polymer-coil}}
 
 That count *is* the elasticity. The number of configurations with end-to-end vector $R$ falls off as a Gaussian, so the entropy is
 
@@ -311,5 +346,7 @@ Second, stretching must release heat. The work done goes into reducing entropy a
 The newest part of the field breaks the thermodynamic frame rather than extending it. In ordinary soft matter, energy enters at the boundaries and the interior relaxes towards equilibrium. In active matter each unit consumes fuel and propels itself, so momentum is injected everywhere at once.
 
 {{fig:vicsek|Tamás Vicsek}}'s 1995 model is about as simple as a model can be: particles move at fixed speed and each turns to match the average heading of its neighbours, with some noise. Below a noise threshold, order appears — the whole crowd moves together, with no leader, no attraction, and in two dimensions, where equilibrium statistical mechanics forbids such long-range order. Bacteria in suspension, vibrated rods, synthetic swimmers and mixtures of cytoskeletal filaments with their motor proteins all show the predicted behaviour, including spontaneous flows and density fluctuations far larger than equilibrium allows.
+
+{{img:murmuration}}
 
 This is where the thread rejoins biology. A cell's interior is a crosslinked network of semiflexible filaments driven by motors burning ATP, which is the definitional case of active matter, and treating it as such predicts the flows seen during division and the way a tissue behaves as a fluid over hours and a solid over seconds — the mechanics described from the other side under [cell biology](/biology/cell-biology/). Meanwhile the oldest question in the field remains the glass transition: cool a liquid fast and its viscosity rises by fourteen orders of magnitude while its structure stays liquid, and sixty years of argument have not settled whether anything is actually transitioning.
