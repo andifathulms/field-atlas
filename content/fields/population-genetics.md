@@ -208,6 +208,34 @@ further_reading:
   - citation: "Hartl, D. L. & Clark, A. G. (2007). Principles of Population Genetics (4th ed.). Sinauer Associates."
     url: null
     note: The standard textbook.
+
+images:
+  - id: fisher-ford
+    src: /images/fields/population-genetics/fisher-ford.jpg
+    alt: Two men in hats and coats standing in a field, the older one on the left with a white beard.
+    caption: >-
+      Ronald Fisher (left) with E. B. Ford, who tested his theory on selection in wild moth and
+      butterfly populations.
+    credit: Unknown photographer
+    license: Public domain
+    source: https://commons.wikimedia.org/wiki/File:FisherFord.png
+  - id: carriers
+    src: /images/fields/population-genetics/carriers.png
+    alt: Three bars on a log scale of people in every 2,500, one affected, 98 carriers and 2,401 with no copy.
+    caption: >-
+      Cystic fibrosis at an allele frequency of 0.02: in every 2,500 people, one affected child,
+      ninety-eight healthy carriers.
+    credit: Drawn for Field Atlas from the numbers above
+    license: Field Atlas original
+    source: https://github.com/andifathulms/field-atlas/blob/main/scripts/diagrams/heredity.py
+  - id: selection-sweep
+    src: /images/fields/population-genetics/selection-sweep.png
+    alt: An S-shaped curve of allele frequency against generations, rising from 1 per cent to 99 per cent by about 920 generations.
+    caption: >-
+      An allele with a 1% advantage, spreading from 1% to 99% in about 920 generations.
+    credit: Drawn for Field Atlas from the numbers above
+    license: Field Atlas original
+    source: https://github.com/andifathulms/field-atlas/blob/main/scripts/diagrams/heredity.py
 ---
 
 ## Two Camps That Could Not Agree
@@ -219,6 +247,8 @@ The first bridge came from mathematics. In 1908 {{fig:gh-hardy|G. H. Hardy}}, a 
 ## The Mathematics of Evolution
 
 {{fig:fisher|Ronald Fisher}} ended the feud in 1918. Many Mendelian genes, each with a small effect, add up to exactly the smooth variation and family resemblances the biometricians measured. Discrete inheritance and continuous traits were compatible after all. To prove it he invented new statistics, including the analysis of variance.
+
+{{img:fisher-ford}}
 
 Over the next fourteen years Fisher, {{fig:haldane|J. B. S. Haldane}} and {{fig:sewall-wright|Sewall Wright}} built a full mathematical theory of evolution in terms of allele frequencies. They worked out how fast selection spreads a favourable allele, how mutation supplies new variation, how migration mixes populations, and how chance, *genetic drift*, can fix or erase alleles in small populations. Fisher and Wright disagreed for the rest of their lives about how much evolution is selection and how much is drift.
 
@@ -242,6 +272,8 @@ $$
 
 about 1 person in 25. For every affected child there are about a hundred healthy carriers. This is why selection against rare recessive diseases is so slow: almost all copies of the allele are hidden in carriers, where selection cannot see them.
 
+{{img:carriers}}
+
 **Selection at work.** Now take an allele that gives its carriers a 1% advantage in survival or reproduction, a difference far too small to notice in any one family. Fisher and Haldane showed how its frequency changes. When the allele's effect adds up in each copy, the time to rise from a frequency of 1% to 99% is roughly
 
 $$
@@ -249,6 +281,8 @@ t \approx \frac{1}{s} \ln\!\left(\frac{0.99/0.01}{0.01/0.99}\right) = \frac{\ln 
 $$
 
 For humans, with generations of about 25 years, that is some 23,000 years. For bacteria dividing every half hour, it is under three weeks. On the timescale of evolution this is almost instantaneous. Haldane's calculations of this kind convinced biologists that small, invisible advantages were enough to drive evolution, and they are why antibiotic resistance spreads through bacterial populations within years of a new drug's introduction.
+
+{{img:selection-sweep}}
 
 ## Molecules and Neutrality
 
