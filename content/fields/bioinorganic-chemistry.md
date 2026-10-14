@@ -288,6 +288,35 @@ further_reading:
   - citation: "Keilin, D. (1966). The History of Cell Respiration and Cytochrome. Cambridge University Press."
     url: null
     note: Written by the discoverer; a model of how an optical observation becomes a mechanism.
+
+images:
+  - id: haemoglobin
+    src: /images/fields/bioinorganic-chemistry/haemoglobin.jpg
+    alt: A ribbon model of protein helices surrounding a flat haem group shown as balls and sticks.
+    caption: >-
+      A haem group nested in the helices of human haemoglobin, from the 1.25 Å crystal
+      structure. The iron at its centre is what carries the oxygen.
+    credit: Protein Data Bank entry 2DN1
+    license: CC0
+    source: https://commons.wikimedia.org/wiki/File:Human_Oxy-Hemoglobin_Protein.jpg
+  - id: carbonic-anhydrase
+    src: /images/fields/bioinorganic-chemistry/carbonic-anhydrase.png
+    alt: A close-up of a protein active site with a grey zinc atom held by three histidine side chains and a hydroxide.
+    caption: >-
+      The active site of human carbonic anhydrase II: a zinc ion held by three histidines, with
+      the fourth position taken by the water-derived hydroxide that attacks carbon dioxide.
+    credit: Wikimedia Commons user, from PDB entry 1CA2
+    license: Public domain
+    source: https://commons.wikimedia.org/wiki/File:Carbonic_anhydrase_1CA2_active_site.png
+  - id: cisplatin
+    src: /images/fields/bioinorganic-chemistry/cisplatin.png
+    alt: Two square-planar platinum structures, one with the two chlorides side by side and one with them opposite.
+    caption: >-
+      Cisplatin (left) and its trans isomer. Only the cis form is an anticancer drug: its two
+      chlorides, side by side, leave two adjacent sites free to bind DNA.
+    credit: Puppy8800
+    license: Public domain
+    source: https://commons.wikimedia.org/wiki/File:Cisplatin_%26_its_isomer.png
 ---
 
 ## What a Metal Does That an Amino Acid Cannot
@@ -315,6 +344,8 @@ The split in the middle of that table is the organising distinction of the field
 An iron atom in a haem ring carries oxygen reversibly in haemoglobin, reduces oxygen to water in cytochrome oxidase, destroys hydrogen peroxide in catalase, and inserts an oxygen atom into an unreactive C–H bond in cytochrome P450. Same metal, same ring. The difference is what else is coordinated and what surrounds it.
 
 Two numbers from haemoglobin show how little it takes. {{fig:christian-bohr|Christian Bohr}} found in 1904 that the oxygen binding curve is sigmoid: the Hill coefficient is about 2.8, where an independent binding site would give 1.0, so the four subunits are communicating. {{fig:perutz|Max Perutz}}'s structures said what the signal is. Deoxygenated iron(II) is high-spin, five-coordinate, and sits about half an ångström out of the plane of its ring. On binding oxygen it becomes low-spin, smaller, and pulls into the plane — a spin-state change of exactly the kind [ligand field theory](/chemistry/ligand-field-theory/) describes — dragging the attached histidine with it and setting off a rearrangement of the whole assembly. A motion of half an ångström at one atom, amplified into a change of affinity at three others fifteen ångströms away.
+
+{{img:haemoglobin}}
 
 The blue copper proteins make the point in the opposite direction, by showing the protein imposing a geometry on the metal. Their colour is roughly a thousand times more intense than an ordinary copper complex's, because it is a charge transfer from a coordinated sulphur rather than a forbidden d-to-d transition. Crystallography showed the copper held in a distorted site it would never adopt in solution. That distortion is the point: the site is already partway to the geometry the oxidised form wants, so almost no reorganisation is needed when the electron leaves, and the transfer is fast — the **entatic state**, a metal kept uncomfortable on purpose. The rate theory this draws on is {{fig:marcus|Marcus}}'s, set out under [transition state theory](/chemistry/transition-state-theory/).
 
@@ -350,6 +381,8 @@ $$
 
 Coordinate that water to a zinc ion held by three histidines, and the metal's positive charge pulls electron density from the oxygen and makes the O–H bond far easier to break. The measured $\mathrm{p}K_a$ of the zinc-bound water in carbonic anhydrase is about **7.0**. So at physiological pH half of the enzyme molecules carry a hydroxide, against two in a billion for free water: an increase in the concentration of the actual nucleophile of roughly
 
+{{img:carbonic-anhydrase}}
+
 $$
 \frac{0.5}{2 \times 10^{-9}} \approx 2 \times 10^{8}.
 $$
@@ -369,6 +402,8 @@ Two conclusions follow. First, the choice of zinc is not arbitrary. A metal is w
 Because the metal is the function, a metal in the wrong place is a disease or a drug, and both show up here.
 
 {{fig:rosenberg|Barnett Rosenberg}} found the drug by accident in 1965. Looking for an effect of electric fields on cell division, he saw bacteria elongate without dividing, and traced it to platinum dissolving from his electrodes. The active compound was *cis*-diamminedichloroplatinum; the *trans* isomer does nothing. The reason is geometric — the cis arrangement can bind two adjacent guanines on one DNA strand and kink it, the trans arrangement reaches two sites that are too far apart to matter — and the only reason the pure cis isomer can be made at all is {{fig:chernyaev|Chernyaev}}'s trans effect from [coordination chemistry](/chemistry/coordination-chemistry/). Approved in 1978, it turned metastatic testicular cancer from a disease that killed almost everyone into one that is usually cured.
+
+{{img:cisplatin}}
 
 The failures run the other way. Wilson's disease is copper accumulating because the protein that exports it is defective; Menkes' disease is copper never arriving. Both are treated with the chelating ligands of coordination chemistry, chosen by stability constant. And the commonest nutritional deficiency in the world is not a shortage of iron in the diet but iron bound up by phytate in cereal grains tightly enough that it is never absorbed — a public health problem whose decisive quantity is an equilibrium constant.
 
