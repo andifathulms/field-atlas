@@ -262,6 +262,36 @@ further_reading:
   - citation: "Siegman, A. E. (1986). Lasers. University Science Books."
     url: null
     note: The standard technical reference on resonators, gain and modes.
+
+images:
+  - id: ruby-laser
+    src: /images/fields/lasers-photonics/ruby-laser.jpg
+    alt: A cutaway illustration of a ruby laser, a rod inside a coiled flashlamp in a cylindrical housing, emitting a red beam.
+    caption: >-
+      A ruby laser of Maiman's type: a ruby rod inside a coiled photographic flashlamp. The flash
+      excites the chromium ions, and light bouncing between the rod's mirrored ends comes out as
+      a red beam at 694.3 nm.
+    credit: Lawrence Livermore National Laboratory
+    license: Public domain
+    source: https://commons.wikimedia.org/wiki/File:Ruby_laser.jpg
+  - id: fibre-loss
+    src: /images/fields/lasers-photonics/fibre-loss.png
+    alt: Three curves of light lost against fibre length on a logarithmic scale, crossing a 50 decibel line at 0.05, 2.5 and 250 kilometres.
+    caption: >-
+      How far light gets before 50 dB is gone: 50 metres in the glass of 1965, 2.5 km at Kao's
+      20 dB/km, 250 km in modern fibre. The distance scale is logarithmic.
+    credit: Drawn for Field Atlas from the numbers above
+    license: Field Atlas original
+    source: https://github.com/andifathulms/field-atlas/blob/main/scripts/diagrams/light.py
+  - id: frequency-comb
+    src: /images/fields/lasers-photonics/frequency-comb.png
+    alt: A diagram of evenly spaced spectral lines under a bell-shaped envelope, with the spacing marked f_rep and the offset from zero marked f_CEO.
+    caption: >-
+      A frequency comb. Each line sits at $f_n = f_{\text{CEO}} + n f_{\text{rep}}$; both
+      numbers are radio frequencies electronics can count, so every optical line is known.
+    credit: HartmutG
+    license: CC BY-SA 3.0
+    source: https://commons.wikimedia.org/wiki/File:FrequencyComb-CEOphase.svg
 ---
 
 ## A Term in a Rate Equation
@@ -273,6 +303,8 @@ That last clause is the whole of laser physics. A photon entering a medium of ex
 {{fig:townes|Charles Townes}} built one for microwaves in 1954, by sending a beam of ammonia molecules through an electrostatic sorter that discarded the ground-state ones, and letting the survivors into a cavity. {{fig:basov|Nikolai Basov}} and {{fig:prokhorov|Alexander Prokhorov}} did the equivalent in Moscow. In 1958 Townes and {{fig:schawlow|Arthur Schawlow}} published what it would take to do the same at optical wavelengths, where the cavity has to be two mirrors tens of thousands of wavelengths apart, and several laboratories started racing.
 
 {{fig:maiman|Theodore Maiman}} won with the least fashionable approach. The consensus was that ruby would not work, because its chromium ions must be pumped very hard. Maiman noticed that the available photographic flashlamps were absurdly bright, coiled one around a ruby rod with silvered ends, and in May 1960 produced a narrow pulse at 694.3 nm. The paper was rejected by *Physical Review Letters* as yet another maser result and appeared in *Nature* instead.
+
+{{img:ruby-laser}}
 
 ## From Curiosity to Infrastructure
 
@@ -306,6 +338,8 @@ which is roughly what copper coaxial cable managed, and fibre carries far more b
 
 Now put in the modern figure of 0.2 dB/km at 1550 nm:
 
+{{img:fibre-loss}}
+
 $$
 \frac{50}{0.2} = 250 \text{ km}.
 $$
@@ -325,5 +359,7 @@ an attenuation factor of $10^{132}$. For comparison, the Sun will emit on the or
 The last entry in the thread is a measuring instrument. A frequency is counted by comparing cycles, and electronics counts to about $10^{10}$ Hz. Optical frequencies are near $5 \times 10^{14}$ Hz, four orders of magnitude out of reach, so measuring one meant building a chain of lasers and nonlinear multipliers that filled a laboratory and worked for one frequency.
 
 {{fig:john-hall|John Hall}} and {{fig:hansch|Theodor Hänsch}} found the shortcut. A mode-locked laser emitting a train of very short pulses has a spectrum that is a comb of lines spaced by the pulse repetition rate — a radio frequency, around 100 MHz, which electronics counts easily. The comb's lines sit at $f_n = n f_{\text{rep}} + f_0$, and if the comb is broadened until it spans a full octave, the offset $f_0$ can be measured by comparing the low end doubled against the high end. Both parameters then being known, every tooth's absolute frequency is known. Beat an unknown laser against the nearest tooth and the optical frequency is reduced to counting.
+
+{{img:frequency-comb}}
 
 This is what makes the optical clocks of [quantum optics](/physics/quantum-optics/) usable as clocks rather than as very narrow lamps, and it is the reason a 1999 tabletop result sits underneath a proposed redefinition of the second. What happens when the pulses are made shorter and more intense still — short enough to resolve an electron's motion, intense enough to tear atoms apart and rebuild the light at harmonics of itself — is [nonlinear and nano-optics](/physics/nonlinear-optics/).
