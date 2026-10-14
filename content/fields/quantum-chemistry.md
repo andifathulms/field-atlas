@@ -248,6 +248,28 @@ further_reading:
   - citation: "Jensen, F. (2017). Introduction to Computational Chemistry, 3rd edition. Wiley."
     url: null
     note: The standard text; unusually candid about which methods fail on which problems.
+
+images:
+  - id: diatomic-orbitals
+    src: /images/fields/quantum-chemistry/diatomic-orbitals.png
+    alt: Two molecular-orbital energy diagrams side by side, each combining the 2s and 2p levels of two atoms into bonding and starred antibonding orbitals.
+    caption: >-
+      Molecular-orbital levels for the second-row diatomic molecules: lithium to nitrogen on the
+      left, oxygen and fluorine on the right. Oxygen's last two electrons go one each into the
+      paired antibonding π* orbitals, unpaired, which is why liquid oxygen sticks to a magnet.
+    credit: Tem5psu
+    license: CC0
+    source: https://commons.wikimedia.org/wiki/File:2nd_row_diatomic_MOs.png
+  - id: exponential-wall
+    src: /images/fields/quantum-chemistry/exponential-wall.png
+    alt: A straight rising line on a logarithmic scale of numbers needed against number of electrons, passing water at 10 to the 30, crossing the number of atoms in the universe at 27 electrons, and reaching benzene at 10 to the 126.
+    caption: >-
+      The exponential wall. Ten grid points per coordinate means $10^{3N}$ numbers for $N$
+      electrons: $10^{30}$ for water, more than there are atoms in the observable universe from
+      27 electrons on, and $10^{126}$ for benzene.
+    credit: Drawn for Field Atlas from the numbers above
+    license: Field Atlas original
+    source: https://github.com/andifathulms/field-atlas/blob/main/scripts/diagrams/substance.py
 ---
 
 ## A Bond From First Principles
@@ -265,6 +287,8 @@ Everything in this field follows from how right he was about both halves.
 Heitler and London's method — pair the electrons, localise them between the atoms — became the valence-bond approach that {{fig:pauling|Pauling}} developed into [chemical bonding](/chemistry/chemical-bonding/) as chemists learned it. {{fig:hund|Friedrich Hund}}, {{fig:mulliken|Robert Mulliken}} and John Lennard-Jones built the alternative. Combine the atomic orbitals of every atom into orbitals spanning the whole molecule, order them by energy, and fill them two at a time.
 
 The molecular-orbital picture is harder to draw and wins on evidence. The decisive case is oxygen. $\mathrm{O_2}$ is paramagnetic — liquid oxygen sticks to a magnet, a lecture demonstration that works every time — which requires two unpaired electrons. The valence-bond structure $\mathrm{O{=}O}$ has every electron paired and predicts no such thing. Molecular orbital theory puts the last two electrons in a pair of degenerate antibonding orbitals, one each, and gets it immediately. Spectra, excited states, colour and photochemistry all come out of the delocalised picture too.
+
+{{img:diatomic-orbitals}}
 
 Neither is correct. They are two approximations that converge to the same answer as each is improved, and the long argument over which is fundamental — conducted sharply enough that resonance theory was denounced as idealist in the Soviet Union in 1951 — was an argument about which approximation to be loyal to.
 
@@ -285,6 +309,8 @@ $$
 $$
 
 There are about $10^{80}$ atoms in the observable universe. The wavefunction of benzene cannot be written down on any conceivable hardware — not because computers are slow but because the object has too many dimensions. {{fig:kohn|Walter Kohn}} called this the exponential wall and put the practical limit at a few dozen electrons for a full treatment.
+
+{{img:exponential-wall}}
 
 So quantum chemistry approximates, and the approximations form a ladder whose rungs trade cost against accuracy:
 
