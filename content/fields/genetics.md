@@ -185,6 +185,43 @@ further_reading:
   - citation: "Griffiths, A. J. F., Wessler, S. R., Carroll, S. B. & Doebley, J. (2015). Introduction to Genetic Analysis (11th ed.). W. H. Freeman."
     url: null
     note: A standard university textbook.
+
+images:
+  - id: mendel
+    src: /images/fields/genetics/mendel.jpg
+    alt: Portrait of Gregor Mendel wearing glasses and a dark clerical coat.
+    caption: >-
+      Gregor Mendel, friar and teacher at the Augustinian monastery in Brno.
+    credit: Unknown photographer
+    license: Public domain
+    source: https://commons.wikimedia.org/wiki/File:Gregor_Mendel.jpg
+  - id: drosophila-1919
+    src: /images/fields/genetics/drosophila-1919.jpg
+    alt: A line drawing of a fruit fly from above, with parts of its body hatched differently.
+    caption: >-
+      A fruit fly drawn for *Contributions to the Genetics of Drosophila melanogaster* (1919), the
+      collected results of Morgan's fly room.
+    credit: Thomas Hunt Morgan, Calvin Bridges and Alfred Sturtevant, Carnegie Institution
+    license: Public domain
+    source: https://commons.wikimedia.org/wiki/File:Contributions_to_the_genetics_of_Drosophila_melanogaster_(1919)_(20689317285).jpg
+  - id: mendel-peas
+    src: /images/fields/genetics/mendel-peas.jpg
+    alt: A painting of two open pea pods, one with round and wrinkled seeds and one with yellow and green seeds.
+    caption: >-
+      Seed shape and seed colour, the two traits in the table, as painted for the Mendelianum
+      in Brno.
+    credit: Daniel J. Fairbanks, Moravian Museum
+    license: CC BY-SA 4.0
+    source: https://commons.wikimedia.org/wiki/File:Fairbanks_-_Mendel_Seed_Shape_%26_Color.jpg
+  - id: punnett
+    src: /images/fields/genetics/punnett.png
+    alt: A two-by-two grid crossing R and r pollen with R and r eggs to give RR, Rr, Rr and rr, beside bars of Mendel's counts for seed shape and colour.
+    caption: >-
+      The hybrid cross worked as a square: one RR, two Rr and one rr, so three round to one
+      wrinkled. Beside it, Mendel's counts from the table.
+    credit: Drawn for Field Atlas from the table above
+    license: Field Atlas original
+    source: https://github.com/andifathulms/field-atlas/blob/main/scripts/diagrams/heredity.py
 ---
 
 ## Counting Peas
@@ -193,15 +230,21 @@ Before genetics, heredity was thought to blend. A child was a mixture of its par
 
 {{fig:mendel|Gregor Mendel}}, a friar and teacher at the Augustinian monastery in Brno, took a different approach: choose simple traits, breed carefully, and count. Crossing purple-flowered with white-flowered peas gave all purple offspring. Crossing those with each other gave purple and white again, in a ratio of about three to one. The white trait had not blended away. It had been hidden. Mendel explained it with paired factors, one from each parent, that separate cleanly when sex cells form. He presented the work in 1865 and published it in 1866. For thirty-four years almost no one took notice.
 
+{{img:mendel}}
+
 ## Rediscovery and the Fly Room
 
 In 1900 three botanists, {{fig:de-vries|Hugo de Vries}}, {{fig:correns|Carl Correns}} and Erich von Tschermak, reported similar results and found Mendel's paper. William Bateson made himself its champion and gave the new science its name. Wilhelm Johannsen coined *gene* in 1909.
 
 Where were the genes? Chromosomes, the thread-like bodies that pair up and separate when cells divide, behaved exactly as Mendel's factors should. In 1910 {{fig:morgan|Thomas Hunt Morgan}} found a single white-eyed male fruit fly in his crowded Columbia lab and traced the trait to the X chromosome. His student {{fig:sturtevant|Alfred Sturtevant}}, then an undergraduate, realised overnight that how often linked genes are separated measures their distance, and drew the first genetic map.
 
+{{img:drosophila-1919}}
+
 ## A Closer Look: Mendel's Counts
 
 Mendel's key experiment crossed pure-breeding round-seeded peas with pure-breeding wrinkled ones. All the offspring were round. He then let those hybrids self-fertilise and counted their seeds:
+
+{{img:mendel-peas}}
 
 | Trait | Dominant | Recessive | Ratio |
 |---|---|---|---|
@@ -215,6 +258,8 @@ $$
 $$
 
 Anything with at least one $R$ looks round, so three-quarters are round and a quarter wrinkled. The wrinkled factor was hidden in the hybrids, not lost.
+
+{{img:punnett}}
 
 Mendel then tracked two traits at once. If the genes for shape and colour are passed on independently, the combinations should appear in the proportions $\tfrac34 \times \tfrac34$, $\tfrac34 \times \tfrac14$, $\tfrac14 \times \tfrac34$ and $\tfrac14 \times \tfrac14$, a ratio of 9 : 3 : 3 : 1. Of 556 seeds, the expected numbers are 312.75, 104.25, 104.25 and 34.75. He counted 315 round yellow, 101 wrinkled yellow, 108 round green and 32 wrinkled green.
 
